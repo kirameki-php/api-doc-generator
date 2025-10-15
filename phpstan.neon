@@ -1,0 +1,9 @@
+parameters:
+    level: 8
+    treatPhpDocTypesAsCertain: false
+    paths:
+        - src/
+    excludePaths:
+        - tests/*
+    ignoreErrors:
+        - identifier: new.static
