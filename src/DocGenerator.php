@@ -9,6 +9,7 @@ use Kirameki\Text\Str;
 use ReflectionClass;
 use ReflectionEnum;
 use ReflectionException;
+use UnitEnum;
 use function array_flip;
 use function class_exists;
 use function dump;
@@ -40,16 +41,24 @@ class DocGenerator
             foreach ($dir->scanRecursively() as $storable) {
                 $reflection = $this->getClassIfExists($storable, $path, $namespace);
                 if ($reflection !== null) {
-                    dump(new ClassInfo($reflection));
+                    if ($reflection instanceof ReflectionEnum) {
+                        // TODO implement EnumInfo
+                    } else {
+                        dump(new ClassInfo($reflection));
+                    }
                 }
             }
         }
     }
 
     /**
+     * @param Storable $storable
+     * @param string $path
+     * @param string $namespace
+     * @return ReflectionClass<object>|ReflectionEnum<UnitEnum>|null
      * @throws ReflectionException
      */
-    protected function getClassIfExists(Storable $storable, string $path, string $namespace): ?ReflectionClass
+    protected function getClassIfExists(Storable $storable, string $path, string $namespace): ReflectionClass|null
     {
         $classString = Str::of($storable->pathname)
             ->substringAfter($this->projectRoot . '/' . $path)

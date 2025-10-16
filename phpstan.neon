@@ -5,5 +5,3 @@ parameters:
         - src/
     excludePaths:
         - tests/*
-    ignoreErrors:
-        - identifier: new.static
