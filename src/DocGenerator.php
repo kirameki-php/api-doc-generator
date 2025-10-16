@@ -1,6 +1,4 @@
-<?php
-
-declare(strict_types=1);
+<?php declare(strict_types=1);
 
 namespace Kirameki\ApiDocTools;
 
@@ -40,8 +38,10 @@ class DocGenerator
         foreach ($this->pathMap as $path => $namespace) {
             $dir = new Directory("{$this->projectRoot}/{$path}");
             foreach ($dir->scanRecursively() as $storable) {
-                $class = $this->getClassIfExists($storable, $path, $namespace);
-                dump($class?->getName());
+                $reflection = $this->getClassIfExists($storable, $path, $namespace);
+                if ($reflection !== null) {
+                    dump(new ClassInfo($reflection));
+                }
             }
         }
     }
