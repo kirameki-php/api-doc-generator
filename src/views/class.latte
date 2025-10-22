@@ -1,0 +1,80 @@
+{layout layout.latte}
+{varType Kirameki\ApiDocTools\ClassInfo $class}
+{block content}
+  {$sidebarHtml|noescape}
+  <main>
+    <div class="structure-namespace">
+      namespace <b>{$class->namespace}</b>
+    </div>
+    <div class="structure-header">
+      <span class="structure-modifiers">
+        {if $class->isFinal}
+        final
+        {/if}
+        {if $class->isAbstract}
+        abstract
+        {/if}
+        {if $class->isReadOnly}
+        readonly
+        {/if}
+        class
+      </span>
+      <span class="structure-name">{$class->basename}</span>
+    </div>
+    <div class="structure-extends">
+      {if $class->parent !== null}
+        extends:
+        <ul>
+          {php $current = $class}
+          {while ($current = $current->parent) !== null}
+            {varType Kirameki\ApiDocTools\ClassInfo $current}
+            <li>
+              <a href="{$current->getHtmlPath()}">{str_replace($class->namespace . '\\', '', $current->name)}</a>
+            </li>
+          {/while}
+        </ul>
+      {/if}
+    </div>
+    <div class="structure-implements">
+      {if $class->interfaces !== []}
+        implements:
+        <ul>
+          {foreach $class->interfaces as $interface}
+            {varType Kirameki\ApiDocTools\ClassInfo $interface}
+            <li>
+              <a href="{$interface->getHtmlPath()}">{str_replace($class->namespace . '\\', '', $interface->name)}</a>
+            </li>
+          {/foreach}
+        </ul>
+      {/if}
+    </div>
+    <div class="methods">
+      <h3>Methods</h3>
+      <ul>
+        {foreach $class->methods as $method}
+          {varType Kirameki\ApiDocTools\MethodInfo $method}
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                {if $method->isFinal}
+                  final
+                {/if}
+                {$method->visibility->value}
+                {if $method->isStatic}
+                  static
+                {/if}
+                {if $method->isAbstract}
+                  abstract
+                {/if}
+              </span>
+              {$method->name}()
+            </div>
+            <div class="method-comment">
+              {$method->commentAsMarkdown()|noescape}
+            </div>
+          </li>
+        {/foreach}
+      </ul>
+    </div>
+  </main>
+{/block}

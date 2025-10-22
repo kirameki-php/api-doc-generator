@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base href="file:///Users/taka-mac/Projects/kirameki/api-doc-tools/docs/">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Kirameki API Doc</title>
+</head>
+<body>
+  <ul class="sidebar">
+    <li>
+      <a href="classes/kirameki/backoff/exponential-backoff.html">Kirameki\Backoff\ExponentialBackoff</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/backoff/jitter-strategy.html">Kirameki\Backoff\JitterStrategy</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/clock/clock-interface.html">Kirameki\Clock\ClockInterface</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/clock/fixed-clock.html">Kirameki\Clock\FixedClock</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/clock/stopwatch.html">Kirameki\Clock\Stopwatch</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/clock/system-clock.html">Kirameki\Clock\SystemClock</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/clock/timer.html">Kirameki\Clock\Timer</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/enumerator.html">Kirameki\Collections\Enumerator</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/exceptions/collection-exception.html">Kirameki\Collections\Exceptions\CollectionException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/exceptions/count-mismatch-exception.html">Kirameki\Collections\Exceptions\CountMismatchException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/exceptions/duplicate-key-exception.html">Kirameki\Collections\Exceptions\DuplicateKeyException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/exceptions/empty-not-allowed-exception.html">Kirameki\Collections\Exceptions\EmptyNotAllowedException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/exceptions/excess-key-exception.html">Kirameki\Collections\Exceptions\ExcessKeyException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/exceptions/index-out-of-bounds-exception.html">Kirameki\Collections\Exceptions\IndexOutOfBoundsException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/exceptions/invalid-element-exception.html">Kirameki\Collections\Exceptions\InvalidElementException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/exceptions/invalid-key-exception.html">Kirameki\Collections\Exceptions\InvalidKeyException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/exceptions/invalid-order-exception.html">Kirameki\Collections\Exceptions\InvalidOrderException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/exceptions/missing-key-exception.html">Kirameki\Collections\Exceptions\MissingKeyException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/exceptions/no-match-found-exception.html">Kirameki\Collections\Exceptions\NoMatchFoundException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/lazy-iterator.html">Kirameki\Collections\LazyIterator</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/map.html">Kirameki\Collections\Map</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/map-mutable.html">Kirameki\Collections\MapMutable</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/range.html">Kirameki\Collections\Range</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/sort-order.html">Kirameki\Collections\SortOrder</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/utils/arr.html">Kirameki\Collections\Utils\Arr</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/utils/iter.html">Kirameki\Collections\Utils\Iter</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/vec.html">Kirameki\Collections\Vec</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/vec-mutable.html">Kirameki\Collections\VecMutable</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/comparable.html">Kirameki\Core\Comparable</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/error-exception.html">Kirameki\Core\Exceptions\ErrorException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/exception.html">Kirameki\Core\Exceptions\Exception</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/exceptionable.html">Kirameki\Core\Exceptions\Exceptionable</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/extension-required-exception.html">Kirameki\Core\Exceptions\ExtensionRequiredException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/invalid-argument-exception.html">Kirameki\Core\Exceptions\InvalidArgumentException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/invalid-config-exception.html">Kirameki\Core\Exceptions\InvalidConfigException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/invalid-type-exception.html">Kirameki\Core\Exceptions\InvalidTypeException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/json-exception.html">Kirameki\Core\Exceptions\JsonException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/key-not-found-exception.html">Kirameki\Core\Exceptions\KeyNotFoundException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/logic-exception.html">Kirameki\Core\Exceptions\LogicException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/not-supported-exception.html">Kirameki\Core\Exceptions\NotSupportedException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/over-limit-exception.html">Kirameki\Core\Exceptions\OverLimitException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/runtime-exception.html">Kirameki\Core\Exceptions\RuntimeException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/type-conversion-exception.html">Kirameki\Core\Exceptions\TypeConversionException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/type-mismatch-exception.html">Kirameki\Core\Exceptions\TypeMismatchException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/undefined-method-exception.html">Kirameki\Core\Exceptions\UndefinedMethodException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/unreachable-exception.html">Kirameki\Core\Exceptions\UnreachableException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/func.html">Kirameki\Core\Func</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/json.html">Kirameki\Core\Json</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/lazy.html">Kirameki\Core\Lazy</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/media-type.html">Kirameki\Core\MediaType</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/static-class.html">Kirameki\Core\StaticClass</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/type.html">Kirameki\Core\Type</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/uri.html">Kirameki\Core\Uri</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/version.html">Kirameki\Core\Version</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/config.html">Kirameki\Dumper\Config</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/configs/debug-info.html">Kirameki\Dumper\Configs\DebugInfo</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/decorators/ansi-decorator.html">Kirameki\Dumper\Decorators\AnsiDecorator</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/decorators/decorator.html">Kirameki\Dumper\Decorators\Decorator</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/decorators/html-decorator.html">Kirameki\Dumper\Decorators\HtmlDecorator</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/decorators/plain-decorator.html">Kirameki\Dumper\Decorators\PlainDecorator</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/dumper.html">Kirameki\Dumper\Dumper</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/formatter.html">Kirameki\Dumper\Formatter</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/handlers/array-handler.html">Kirameki\Dumper\Handlers\ArrayHandler</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/handlers/class-handler.html">Kirameki\Dumper\Handlers\ClassHandler</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/handlers/class-handler-factory.html">Kirameki\Dumper\Handlers\ClassHandlerFactory</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/handlers/closure-handler.html">Kirameki\Dumper\Handlers\ClosureHandler</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/handlers/date-time-handler.html">Kirameki\Dumper\Handlers\DateTimeHandler</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/handlers/enum-handler.html">Kirameki\Dumper\Handlers\EnumHandler</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/handlers/handler.html">Kirameki\Dumper\Handlers\Handler</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/handlers/null-handler.html">Kirameki\Dumper\Handlers\NullHandler</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/handlers/placeholder-handler.html">Kirameki\Dumper\Handlers\PlaceholderHandler</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/handlers/resource-handler.html">Kirameki\Dumper\Handlers\ResourceHandler</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/handlers/scalar-handler.html">Kirameki\Dumper\Handlers\ScalarHandler</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/handlers/spl-file-info-handler.html">Kirameki\Dumper\Handlers\SplFileInfoHandler</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/handlers/throwable-handler.html">Kirameki\Dumper\Handlers\ThrowableHandler</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/object-tracker.html">Kirameki\Dumper\ObjectTracker</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/placeholder.html">Kirameki\Dumper\Placeholder</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/writer.html">Kirameki\Dumper\Writer</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/event/event.html">Kirameki\Event\Event</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/event/event-handler.html">Kirameki\Event\EventHandler</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/event/listeners/callback-listener.html">Kirameki\Event\Listeners\CallbackListener</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/event/listeners/callback-once-listener.html">Kirameki\Event\Listeners\CallbackOnceListener</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/event/listeners/event-listener.html">Kirameki\Event\Listeners\EventListener</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/http/http-method.html">Kirameki\Http\HttpMethod</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/http/status-code.html">Kirameki\Http\StatusCode</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/process/events/process-finished.html">Kirameki\Process\Events\ProcessFinished</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/process/events/process-started.html">Kirameki\Process\Events\ProcessStarted</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/process/exceptions/process-exception.html">Kirameki\Process\Exceptions\ProcessException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/process/exceptions/process-failed-exception.html">Kirameki\Process\Exceptions\ProcessFailedException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/process/exit-code.html">Kirameki\Process\ExitCode</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/process/process-builder.html">Kirameki\Process\ProcessBuilder</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/process/process-info.html">Kirameki\Process\ProcessInfo</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/process/process-observer.html">Kirameki\Process\ProcessObserver</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/process/process-result.html">Kirameki\Process\ProcessResult</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/process/process-runner.html">Kirameki\Process\ProcessRunner</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/process/signal.html">Kirameki\Process\Signal</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/process/signal-event.html">Kirameki\Process\SignalEvent</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/process/timeout-info.html">Kirameki\Process\TimeoutInfo</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/storage/directory.html">Kirameki\Storage\Directory</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/storage/file.html">Kirameki\Storage\File</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/storage/file-type.html">Kirameki\Storage\FileType</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/storage/path.html">Kirameki\Storage\Path</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/storage/storable.html">Kirameki\Storage\Storable</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/storage/symlink.html">Kirameki\Storage\Symlink</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/exceptions/stream-error-exception.html">Kirameki\Stream\Exceptions\StreamErrorException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/file-reader.html">Kirameki\Stream\FileReader</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/file-stream.html">Kirameki\Stream\FileStream</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/file-writer.html">Kirameki\Stream\FileWriter</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/memory-stream.html">Kirameki\Stream\MemoryStream</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/resource-streamable.html">Kirameki\Stream\ResourceStreamable</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/stderr-stream.html">Kirameki\Stream\StderrStream</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/stdin-stream.html">Kirameki\Stream\StdinStream</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/stdout-stream.html">Kirameki\Stream\StdoutStream</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/stream-lockable.html">Kirameki\Stream\StreamLockable</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/stream-readable.html">Kirameki\Stream\StreamReadable</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/stream-seekable.html">Kirameki\Stream\StreamSeekable</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/stream-writable.html">Kirameki\Stream\StreamWritable</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/streamable.html">Kirameki\Stream\Streamable</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/temp-stream.html">Kirameki\Stream\TempStream</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/tmp-file-stream.html">Kirameki\Stream\TmpFileStream</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/system/env.html">Kirameki\System\Env</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/system/sleep.html">Kirameki\System\Sleep</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/system/sleep-mock.html">Kirameki\System\SleepMock</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/testing/test-case.html">Kirameki\Testing\TestCase</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/text/exceptions/no-match-exception.html">Kirameki\Text\Exceptions\NoMatchException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/text/exceptions/parse-exception.html">Kirameki\Text\Exceptions\ParseException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/text/str.html">Kirameki\Text\Str</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/text/str-object.html">Kirameki\Text\StrObject</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/text/utf8.html">Kirameki\Text\Utf8</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/text/utf8-object.html">Kirameki\Text\Utf8Object</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/time/day-of-week.html">Kirameki\Time\DayOfWeek</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/time/exceptions/invalid-format-exception.html">Kirameki\Time\Exceptions\InvalidFormatException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/time/instant.html">Kirameki\Time\Instant</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/time/time.html">Kirameki\Time\Time</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/time/unit.html">Kirameki\Time\Unit</a>
+    </li>
+</ul>
+
+  <main>
+    <div class="structure-namespace">
+      namespace <b>Kirameki\Collections\Exceptions</b>
+    </div>
+    <div class="structure-header">
+      <span class="structure-modifiers">
+        class
+      </span>
+      <span class="structure-name">InvalidKeyException</span>
+    </div>
+    <div class="structure-extends">
+        extends:
+        <ul>
+            <li>
+              <a href="classes/kirameki/collections/exceptions/collection-exception.html">CollectionException</a>
+            </li>
+            <li>
+              <a href="classes/kirameki/core/exceptions/logic-exception.html">Kirameki\Core\Exceptions\LogicException</a>
+            </li>
+            <li>
+              <a href="classes/logic-exception.html">LogicException</a>
+            </li>
+            <li>
+              <a href="classes/exception.html">Exception</a>
+            </li>
+        </ul>
+    </div>
+    <div class="structure-implements">
+        implements:
+        <ul>
+            <li>
+              <a href="classes/throwable.html">Throwable</a>
+            </li>
+            <li>
+              <a href="classes/stringable.html">Stringable</a>
+            </li>
+            <li>
+              <a href="classes/kirameki/core/exceptions/exceptionable.html">Kirameki\Core\Exceptions\Exceptionable</a>
+            </li>
+            <li>
+              <a href="classes/json-serializable.html">JsonSerializable</a>
+            </li>
+        </ul>
+    </div>
+    <div class="methods">
+      <h3>Methods</h3>
+      <ul>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              __construct()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$message</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(iterable<string, mixed> | null)</span> <span class="phpdoc-var-name">$context</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$code</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Throwable | null)</span> <span class="phpdoc-var-name">$previous</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              __wakeup()
+            </div>
+            <div class="method-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                  final
+                public
+              </span>
+              getMessage()
+            </div>
+            <div class="method-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                  final
+                public
+              </span>
+              getCode()
+            </div>
+            <div class="method-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                  final
+                public
+              </span>
+              getFile()
+            </div>
+            <div class="method-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                  final
+                public
+              </span>
+              getLine()
+            </div>
+            <div class="method-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                  final
+                public
+              </span>
+              getTrace()
+            </div>
+            <div class="method-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                  final
+                public
+              </span>
+              getPrevious()
+            </div>
+            <div class="method-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                  final
+                public
+              </span>
+              getTraceAsString()
+            </div>
+            <div class="method-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              __toString()
+            </div>
+            <div class="method-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              getContext()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@inheritDoc</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              setContext()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(iterable<string, mixed> | null)</span> <span class="phpdoc-var-name">$context</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">$this</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              addContext()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$key</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">mixed</span> <span class="phpdoc-var-name">$val</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">$this</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              mergeContext()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<string, mixed></span> <span class="phpdoc-var-name">$context</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">$this</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              jsonSerialize()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">array&lt;string, mixed&gt;</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                protected
+              </span>
+              toJson()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Throwable</span> <span class="phpdoc-var-name">$throwable</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">array&lt;string, mixed&gt;</span></div>
+            </div>
+          </li>
+      </ul>
+    </div>
+  </main>
+</body>
+</html>

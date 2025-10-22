@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LattePluginSettings">
+    <option name="variableSettings">
+      <list>
+        <LatteVariableSettings VarName="references" VarType="mixed">
+          <option name="vendor" value="OTHER" />
+        </LatteVariableSettings>
+        <LatteVariableSettings VarName="sidebarHtml" VarType="mixed">
+          <option name="vendor" value="OTHER" />
+        </LatteVariableSettings>
+        <LatteVariableSettings VarName="current" VarType="mixed">
+          <option name="vendor" value="OTHER" />
+        </LatteVariableSettings>
+      </list>
+    </option>
+  </component>
+</project>

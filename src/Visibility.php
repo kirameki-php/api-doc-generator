@@ -8,4 +8,5 @@ enum Visibility: string
     case Protected = 'protected';
     case Private = 'private';
     case PublicPrivateSet = 'public private(set)';
+    case ProtectedPrivateSet = 'protected private(set)';
 }

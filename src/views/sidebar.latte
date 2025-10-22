@@ -1,0 +1,9 @@
+{varType array $references}
+<ul class="sidebar">
+  {foreach $references as $ref}
+    {varType Kirameki\ApiDocTools\ClassInfo $ref}
+    <li>
+      <a href="{$ref->getHtmlPath()}">{$ref->name}</a>
+    </li>
+  {/foreach}
+</ul>

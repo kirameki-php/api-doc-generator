@@ -2,6 +2,8 @@
 
 namespace Kirameki\ApiDocTools;
 
+use Kirameki\Collections\Vec;
+use Kirameki\Text\Str;
 use ReflectionClass;
 use function array_map;
 use function array_values;
@@ -13,6 +15,20 @@ class ClassInfo
      */
     public string $name {
         get => $this->reflection->getName();
+    }
+
+    /**
+     * @var string
+     */
+    public string $namespace {
+        get => $this->reflection->getNamespaceName();
+    }
+
+    /**
+     * @var string
+     */
+    public string $basename {
+        get => Str::substringAfterLast($this->name, '\\');
     }
 
     /**
@@ -41,7 +57,7 @@ class ClassInfo
      */
     public ?self $parent {
         get => $this->parent ??= $this->reflection->getParentClass()
-            ? new self($this->reflection->getParentClass())
+            ? new self($this->reflection->getParentClass(), $this->docParser)
             : null;
     }
 
@@ -61,10 +77,20 @@ class ClassInfo
 
     /**
      * @param ReflectionClass<object> $reflection
+     * @param DocParser $docParser
      */
     public function __construct(
         protected ReflectionClass $reflection,
+        protected DocParser $docParser,
     ) {
+    }
+
+    public function getHtmlPath(): string
+    {
+        return new Vec(Str::split($this->name, '\\'))
+            ->map(Str::toKebabCase(...))
+            ->prepend('classes')
+            ->join('/') . '.html';
     }
 
     /**
@@ -73,7 +99,7 @@ class ClassInfo
     public function resolveInterfaces(): array
     {
         return array_values(array_map(
-            static fn(ReflectionClass $i) => new self($i),
+            fn(ReflectionClass $i) => new self($i, $this->docParser),
             $this->reflection->getInterfaces(),
         ));
     }
@@ -85,7 +111,7 @@ class ClassInfo
     {
         $methods = [];
         foreach ($this->reflection->getMethods() as $method) {
-            $methods[$method->getName()] = new MethodInfo($this->reflection, $method);
+            $methods[$method->getName()] = new MethodInfo($this->reflection, $method, $this->docParser);
         }
         return $methods;
     }

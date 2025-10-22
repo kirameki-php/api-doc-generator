@@ -1,0 +1,2664 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base href="file:///Users/taka-mac/Projects/kirameki/api-doc-tools/docs/">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Kirameki API Doc</title>
+</head>
+<body>
+  <ul class="sidebar">
+    <li>
+      <a href="classes/kirameki/backoff/exponential-backoff.html">Kirameki\Backoff\ExponentialBackoff</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/backoff/jitter-strategy.html">Kirameki\Backoff\JitterStrategy</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/clock/clock-interface.html">Kirameki\Clock\ClockInterface</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/clock/fixed-clock.html">Kirameki\Clock\FixedClock</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/clock/stopwatch.html">Kirameki\Clock\Stopwatch</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/clock/system-clock.html">Kirameki\Clock\SystemClock</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/clock/timer.html">Kirameki\Clock\Timer</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/enumerator.html">Kirameki\Collections\Enumerator</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/exceptions/collection-exception.html">Kirameki\Collections\Exceptions\CollectionException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/exceptions/count-mismatch-exception.html">Kirameki\Collections\Exceptions\CountMismatchException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/exceptions/duplicate-key-exception.html">Kirameki\Collections\Exceptions\DuplicateKeyException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/exceptions/empty-not-allowed-exception.html">Kirameki\Collections\Exceptions\EmptyNotAllowedException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/exceptions/excess-key-exception.html">Kirameki\Collections\Exceptions\ExcessKeyException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/exceptions/index-out-of-bounds-exception.html">Kirameki\Collections\Exceptions\IndexOutOfBoundsException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/exceptions/invalid-element-exception.html">Kirameki\Collections\Exceptions\InvalidElementException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/exceptions/invalid-key-exception.html">Kirameki\Collections\Exceptions\InvalidKeyException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/exceptions/invalid-order-exception.html">Kirameki\Collections\Exceptions\InvalidOrderException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/exceptions/missing-key-exception.html">Kirameki\Collections\Exceptions\MissingKeyException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/exceptions/no-match-found-exception.html">Kirameki\Collections\Exceptions\NoMatchFoundException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/lazy-iterator.html">Kirameki\Collections\LazyIterator</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/map.html">Kirameki\Collections\Map</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/map-mutable.html">Kirameki\Collections\MapMutable</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/range.html">Kirameki\Collections\Range</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/sort-order.html">Kirameki\Collections\SortOrder</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/utils/arr.html">Kirameki\Collections\Utils\Arr</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/utils/iter.html">Kirameki\Collections\Utils\Iter</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/vec.html">Kirameki\Collections\Vec</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/vec-mutable.html">Kirameki\Collections\VecMutable</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/comparable.html">Kirameki\Core\Comparable</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/error-exception.html">Kirameki\Core\Exceptions\ErrorException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/exception.html">Kirameki\Core\Exceptions\Exception</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/exceptionable.html">Kirameki\Core\Exceptions\Exceptionable</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/extension-required-exception.html">Kirameki\Core\Exceptions\ExtensionRequiredException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/invalid-argument-exception.html">Kirameki\Core\Exceptions\InvalidArgumentException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/invalid-config-exception.html">Kirameki\Core\Exceptions\InvalidConfigException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/invalid-type-exception.html">Kirameki\Core\Exceptions\InvalidTypeException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/json-exception.html">Kirameki\Core\Exceptions\JsonException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/key-not-found-exception.html">Kirameki\Core\Exceptions\KeyNotFoundException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/logic-exception.html">Kirameki\Core\Exceptions\LogicException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/not-supported-exception.html">Kirameki\Core\Exceptions\NotSupportedException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/over-limit-exception.html">Kirameki\Core\Exceptions\OverLimitException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/runtime-exception.html">Kirameki\Core\Exceptions\RuntimeException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/type-conversion-exception.html">Kirameki\Core\Exceptions\TypeConversionException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/type-mismatch-exception.html">Kirameki\Core\Exceptions\TypeMismatchException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/undefined-method-exception.html">Kirameki\Core\Exceptions\UndefinedMethodException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/unreachable-exception.html">Kirameki\Core\Exceptions\UnreachableException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/func.html">Kirameki\Core\Func</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/json.html">Kirameki\Core\Json</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/lazy.html">Kirameki\Core\Lazy</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/media-type.html">Kirameki\Core\MediaType</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/static-class.html">Kirameki\Core\StaticClass</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/type.html">Kirameki\Core\Type</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/uri.html">Kirameki\Core\Uri</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/version.html">Kirameki\Core\Version</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/config.html">Kirameki\Dumper\Config</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/configs/debug-info.html">Kirameki\Dumper\Configs\DebugInfo</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/decorators/ansi-decorator.html">Kirameki\Dumper\Decorators\AnsiDecorator</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/decorators/decorator.html">Kirameki\Dumper\Decorators\Decorator</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/decorators/html-decorator.html">Kirameki\Dumper\Decorators\HtmlDecorator</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/decorators/plain-decorator.html">Kirameki\Dumper\Decorators\PlainDecorator</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/dumper.html">Kirameki\Dumper\Dumper</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/formatter.html">Kirameki\Dumper\Formatter</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/handlers/array-handler.html">Kirameki\Dumper\Handlers\ArrayHandler</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/handlers/class-handler.html">Kirameki\Dumper\Handlers\ClassHandler</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/handlers/class-handler-factory.html">Kirameki\Dumper\Handlers\ClassHandlerFactory</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/handlers/closure-handler.html">Kirameki\Dumper\Handlers\ClosureHandler</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/handlers/date-time-handler.html">Kirameki\Dumper\Handlers\DateTimeHandler</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/handlers/enum-handler.html">Kirameki\Dumper\Handlers\EnumHandler</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/handlers/handler.html">Kirameki\Dumper\Handlers\Handler</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/handlers/null-handler.html">Kirameki\Dumper\Handlers\NullHandler</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/handlers/placeholder-handler.html">Kirameki\Dumper\Handlers\PlaceholderHandler</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/handlers/resource-handler.html">Kirameki\Dumper\Handlers\ResourceHandler</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/handlers/scalar-handler.html">Kirameki\Dumper\Handlers\ScalarHandler</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/handlers/spl-file-info-handler.html">Kirameki\Dumper\Handlers\SplFileInfoHandler</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/handlers/throwable-handler.html">Kirameki\Dumper\Handlers\ThrowableHandler</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/object-tracker.html">Kirameki\Dumper\ObjectTracker</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/placeholder.html">Kirameki\Dumper\Placeholder</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/dumper/writer.html">Kirameki\Dumper\Writer</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/event/event.html">Kirameki\Event\Event</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/event/event-handler.html">Kirameki\Event\EventHandler</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/event/listeners/callback-listener.html">Kirameki\Event\Listeners\CallbackListener</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/event/listeners/callback-once-listener.html">Kirameki\Event\Listeners\CallbackOnceListener</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/event/listeners/event-listener.html">Kirameki\Event\Listeners\EventListener</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/http/http-method.html">Kirameki\Http\HttpMethod</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/http/status-code.html">Kirameki\Http\StatusCode</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/process/events/process-finished.html">Kirameki\Process\Events\ProcessFinished</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/process/events/process-started.html">Kirameki\Process\Events\ProcessStarted</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/process/exceptions/process-exception.html">Kirameki\Process\Exceptions\ProcessException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/process/exceptions/process-failed-exception.html">Kirameki\Process\Exceptions\ProcessFailedException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/process/exit-code.html">Kirameki\Process\ExitCode</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/process/process-builder.html">Kirameki\Process\ProcessBuilder</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/process/process-info.html">Kirameki\Process\ProcessInfo</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/process/process-observer.html">Kirameki\Process\ProcessObserver</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/process/process-result.html">Kirameki\Process\ProcessResult</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/process/process-runner.html">Kirameki\Process\ProcessRunner</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/process/signal.html">Kirameki\Process\Signal</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/process/signal-event.html">Kirameki\Process\SignalEvent</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/process/timeout-info.html">Kirameki\Process\TimeoutInfo</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/storage/directory.html">Kirameki\Storage\Directory</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/storage/file.html">Kirameki\Storage\File</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/storage/file-type.html">Kirameki\Storage\FileType</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/storage/path.html">Kirameki\Storage\Path</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/storage/storable.html">Kirameki\Storage\Storable</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/storage/symlink.html">Kirameki\Storage\Symlink</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/exceptions/stream-error-exception.html">Kirameki\Stream\Exceptions\StreamErrorException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/file-reader.html">Kirameki\Stream\FileReader</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/file-stream.html">Kirameki\Stream\FileStream</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/file-writer.html">Kirameki\Stream\FileWriter</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/memory-stream.html">Kirameki\Stream\MemoryStream</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/resource-streamable.html">Kirameki\Stream\ResourceStreamable</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/stderr-stream.html">Kirameki\Stream\StderrStream</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/stdin-stream.html">Kirameki\Stream\StdinStream</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/stdout-stream.html">Kirameki\Stream\StdoutStream</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/stream-lockable.html">Kirameki\Stream\StreamLockable</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/stream-readable.html">Kirameki\Stream\StreamReadable</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/stream-seekable.html">Kirameki\Stream\StreamSeekable</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/stream-writable.html">Kirameki\Stream\StreamWritable</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/streamable.html">Kirameki\Stream\Streamable</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/temp-stream.html">Kirameki\Stream\TempStream</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/tmp-file-stream.html">Kirameki\Stream\TmpFileStream</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/system/env.html">Kirameki\System\Env</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/system/sleep.html">Kirameki\System\Sleep</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/system/sleep-mock.html">Kirameki\System\SleepMock</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/testing/test-case.html">Kirameki\Testing\TestCase</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/text/exceptions/no-match-exception.html">Kirameki\Text\Exceptions\NoMatchException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/text/exceptions/parse-exception.html">Kirameki\Text\Exceptions\ParseException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/text/str.html">Kirameki\Text\Str</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/text/str-object.html">Kirameki\Text\StrObject</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/text/utf8.html">Kirameki\Text\Utf8</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/text/utf8-object.html">Kirameki\Text\Utf8Object</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/time/day-of-week.html">Kirameki\Time\DayOfWeek</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/time/exceptions/invalid-format-exception.html">Kirameki\Time\Exceptions\InvalidFormatException</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/time/instant.html">Kirameki\Time\Instant</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/time/time.html">Kirameki\Time\Time</a>
+    </li>
+    <li>
+      <a href="classes/kirameki/time/unit.html">Kirameki\Time\Unit</a>
+    </li>
+</ul>
+
+  <main>
+    <div class="structure-namespace">
+      namespace <b>Kirameki\Collections</b>
+    </div>
+    <div class="structure-header">
+      <span class="structure-modifiers">
+        class
+      </span>
+      <span class="structure-name">Map</span>
+    </div>
+    <div class="structure-extends">
+        extends:
+        <ul>
+            <li>
+              <a href="classes/kirameki/collections/enumerator.html">Enumerator</a>
+            </li>
+        </ul>
+    </div>
+    <div class="structure-implements">
+        implements:
+        <ul>
+            <li>
+              <a href="classes/countable.html">Countable</a>
+            </li>
+            <li>
+              <a href="classes/iterator-aggregate.html">IteratorAggregate</a>
+            </li>
+            <li>
+              <a href="classes/traversable.html">Traversable</a>
+            </li>
+            <li>
+              <a href="classes/array-access.html">ArrayAccess</a>
+            </li>
+            <li>
+              <a href="classes/json-serializable.html">JsonSerializable</a>
+            </li>
+        </ul>
+    </div>
+    <div class="methods">
+      <h3>Methods</h3>
+      <ul>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              instantiate()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@inheritDoc</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                protected
+              </span>
+              getItemsAsRef()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">array&lt;TKey, TValue&gt;</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              offsetExists()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@inheritDoc</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">TKey</span> <span class="phpdoc-var-name">$offset</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              offsetGet()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@inheritDoc</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">TKey</span> <span class="phpdoc-var-name">$offset</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">TValue</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              offsetSet()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@private</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">TKey</span> <span class="phpdoc-var-name">$offset</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">TValue</span> <span class="phpdoc-var-name">$value</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">void</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              offsetUnset()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@private</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">TKey</span> <span class="phpdoc-var-name">$offset</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">void</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              jsonSerialize()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@inheritDoc</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">object</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              containsAllKeys()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns <strong>true</strong> if <code>$iterable</code> contains all the provided <code>$keys</code>,<br />
+<strong>false</strong> otherwise.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<int, TKey></span> <span class="phpdoc-var-name">$keys</span><div class="phpdoc-description"><p>Keys to be searched.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              containsAnyKeys()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns <strong>true</strong> if <code>$iterable</code> contains any of the provided <code>$keys</code>,<br />
+<strong>false</strong> otherwise.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<int, TKey></span> <span class="phpdoc-var-name">$keys</span><div class="phpdoc-description"><p>Keys to be searched.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              containsKey()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns <strong>true</strong> if a given key exists within iterable, <strong>false</strong> otherwise.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">TKey</span> <span class="phpdoc-var-name">$key</span><div class="phpdoc-description"><p>Key to be searched.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              diffKeys()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Compares the keys from the collection against the keys from <code>$items</code> and returns the difference.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<TKey, TValue></span> <span class="phpdoc-var-name">$items</span><div class="phpdoc-description"><p>Items to be compared with the collection.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure(TKey, TKey): int | null)</span> <span class="phpdoc-var-name">$by</span><div class="phpdoc-description"><p>[Optional] Callback which can be used for comparison of items in both iterables.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              doesNotContainKey()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns <strong>false</strong> if a given key exists within iterable, <strong>true</strong> otherwise.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">TKey</span> <span class="phpdoc-var-name">$key</span><div class="phpdoc-description"><p>Key to be searched.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              dropKeys()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a new instance with the given keys removed. Missing keys will be ignored.<br />
+If <code>$safe</code> is set to <strong>true</strong>, <code>MissingKeyException</code> will be thrown if a key does not exist.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<int, TKey></span> <span class="phpdoc-var-name">$keys</span><div class="phpdoc-description"><p>Keys to be excluded.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$safe</span><div class="phpdoc-description"><p>[Optional] If this is set to <strong>true</strong>, <code>MissingKeyException</code> will be<br />
+thrown if key does not exist in the collection.<br />
+If set to <strong>false</strong>, non-existing keys will be filled with <strong>null</strong>.<br />
+Defaults to <strong>true</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              ensureExactKeys()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Ensures that collection only contains the given <code>$keys</code>.<br />
+Throws <code>ExcessKeyException</code> if <code>$iterable</code> contains more keys than <code>$keys</code>.<br />
+Throws <code>MissingKeyException</code> if <code>$iterable</code> contains fewer keys than <code>$keys</code>.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<int, TKey></span> <span class="phpdoc-var-name">$keys</span><div class="phpdoc-description"><p>Keys to be checked.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">$this</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              firstKey()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the first key of the collection which meets the given <code>$condition</code>.<br />
+Throws <code>NoMatchFoundException</code> if no condition is met.<br />
+Throws <code>EmptyNotAllowedException</code> if the collection is empty.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure(TValue, TKey): bool | null)</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>[Optional] User defined condition callback. The callback must return a boolean value.<br />
+Defaults to <strong>null</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">TKey</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              firstKeyOrNull()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the first key of the collection which meets the given <code>$condition</code>.<br />
+Returns <strong>null</strong> if the collection is empty or if there were no matching conditions.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure(TValue, TKey): bool | null)</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>[Optional] User defined condition callback. The callback must return a boolean value.<br />
+Defaults to <strong>null</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(TKey | null)</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              get()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the element of <code>$key</code>.<br />
+Throws <code>InvalidKeyException</code> if key does not exist.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">TKey</span> <span class="phpdoc-var-name">$key</span><div class="phpdoc-description"><p>Key to look for.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">TValue</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              getOr()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the element of <code>$key</code> if it exists, <code>$default</code> is returned otherwise.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">TDefault</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">TKey</span> <span class="phpdoc-var-name">$key</span><div class="phpdoc-description"><p>Key to look for.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">TDefault</span> <span class="phpdoc-var-name">$default</span><div class="phpdoc-description"><p>Default value to return if key is not found.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(TValue | TDefault)</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              getOrNull()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the element of <code>$key</code> if it exists, <code>null</code> otherwise.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">TKey</span> <span class="phpdoc-var-name">$index</span><div class="phpdoc-description"><p>Index to look for.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(TValue | null)</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              keyAt()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the key at <code>$index</code>.<br />
+Throws <code>IndexOutOfBoundsException</code> if the index does not exist.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$index</span><div class="phpdoc-description"><p>Index to look for.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">TKey</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              keyAtOrNull()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the key at <code>$index</code>.<br />
+Returns <strong>null</strong> if the index does not exist.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$index</span><div class="phpdoc-description"><p>Index to look for.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(TKey | null)</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              keys()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns all the keys as <code>Vec</code>.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">Vec&lt;TKey&gt;</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              intersectKeys()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the intersection of the collection using keys for comparison.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<TKey, TValue></span> <span class="phpdoc-var-name">$items</span><div class="phpdoc-description"><p>Items to be intersected.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              lastKey()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the last key of the collection which meets the <code>$condition</code>.<br />
+Throws <code>NoMatchFoundException</code> if no condition is met.<br />
+Throws <code>EmptyNotAllowedException</code> if the collection is empty.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure(TValue, TKey): bool | null)</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>[Optional] User defined condition callback. The callback must return a boolean value.<br />
+Defaults to <strong>null</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">TKey</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              lastKeyOrNull()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the last key of the collection which meets the <code>$condition</code>.<br />
+Returns <strong>null</strong> if condition is not met.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure(TValue, TKey): bool | null)</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>[Optional] User defined condition callback. The callback must return a boolean value.<br />
+Defaults to <strong>null</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(TKey | null)</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              map()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a new instance containing results returned from invoking<br />
+<code>$callback</code> on each element of the collection.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">TMapValue</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, TKey): TMapValue</span> <span class="phpdoc-var-name">$callback</span><div class="phpdoc-description"><p>Callback to be used to map the values.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">self&lt;TKey, TMapValue&gt;</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              mutable()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Converts collection to a mutable instance.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">MapMutable&lt;TKey, TValue&gt;</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              sampleKey()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a random key picked from the collection.<br />
+Throws <code>EmptyNotAllowedException</code> if the collection is empty.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Randomizer | null)</span> <span class="phpdoc-var-name">$randomizer</span><div class="phpdoc-description"><p>[Optional] Randomizer to be used.<br />
+Default randomizer (Secure) will be used if <strong>null</strong>.<br />
+Defaults to <strong>null</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">TKey</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              sampleKeyOrNull()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a random key picked from the collection.<br />
+Returns <strong>null</strong> if the collection is empty.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Randomizer | null)</span> <span class="phpdoc-var-name">$randomizer</span><div class="phpdoc-description"><p>[Optional] Randomizer to be used.<br />
+Default randomizer (Secure) will be used if <strong>null</strong>.<br />
+Defaults to <strong>null</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(TKey | null)</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              sampleKeys()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a list of random elements picked as <code>Vec</code>.<br />
+If <code>$replace</code> is set to <strong>false</strong>, each key will be chosen only once.<br />
+Throws <code>InvalidArgumentException</code> if <code>$amount</code> is larger than <code>$iterable</code>'s size.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$amount</span><div class="phpdoc-description"><p>Amount of items to sample.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$replace</span><div class="phpdoc-description"><p>If <strong>true</strong>, same elements can be chosen more than once.<br />
+Defaults to <strong>false</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Randomizer | null)</span> <span class="phpdoc-var-name">$randomizer</span><div class="phpdoc-description"><p>[Optional] Randomizer to be used.<br />
+Default randomizer (Secure) will be used if <strong>null</strong>.<br />
+Defaults to <strong>null</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">Vec&lt;TKey&gt;</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              sortByKey()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Sort the collection by key in ascending order.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$ascending</span><div class="phpdoc-description"><p>Sort in ascending order if <strong>true</strong>, descending order if <strong>false</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$flag</span><div class="phpdoc-description"><p>[Optional] Sort flag to change the behavior of the sort.<br />
+See <a href="https://www.php.net/manual/en/function.sort.php">https://www.php.net/manual/en/function.sort.php</a> for more info.<br />
+Defaults to <code>SORT_REGULAR</code>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              sortByKeyAsc()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Sort the <code>$iterable</code> by key in ascending order.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$flag</span><div class="phpdoc-description"><p>[Optional] Sort flag to change the behavior of the sort.<br />
+See <a href="https://www.php.net/manual/en/function.sort.php">https://www.php.net/manual/en/function.sort.php</a> for more info.<br />
+Defaults to <code>SORT_REGULAR</code>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              sortByKeyDesc()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Sort the <code>$iterable</code> by key in descending order.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$flag</span><div class="phpdoc-description"><p>[Optional] Sort flag to change the behavior of the sort.<br />
+See <a href="https://www.php.net/manual/en/function.sort.php">https://www.php.net/manual/en/function.sort.php</a> for more info.<br />
+Defaults to <code>SORT_REGULAR</code>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              sortWithKey()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Sorts the <code>$iterable</code> by key using the provided comparison function.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TKey, TKey): int</span> <span class="phpdoc-var-name">$comparator</span><div class="phpdoc-description"><p>The comparison function to use.<br />
+Utilize the spaceship operator (<code>&lt;=&gt;</code>) to easily compare two values.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              swap()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a new collection with the elements of the two keys swapped.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">TKey</span> <span class="phpdoc-var-name">$key1</span><div class="phpdoc-description"><p>Key to be swapped.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">TKey</span> <span class="phpdoc-var-name">$key2</span><div class="phpdoc-description"><p>Key to be swapped.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              takeKeys()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a new collection which only contains the elements that has matching<br />
+keys in the collection. Non-existent keys will be ignored.<br />
+If <code>$safe</code> is set to <strong>true</strong>, <code>MissingKeyException</code> will be thrown<br />
+if a key does not exist in the collection.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<int, TKey></span> <span class="phpdoc-var-name">$keys</span><div class="phpdoc-description"><p>Keys to be included.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$safe</span><div class="phpdoc-description"><p>[Optional] If this is set to <strong>true</strong>, <code>MissingKeyException</code> will be<br />
+thrown if key does not exist in the collection.<br />
+If set to <strong>false</strong>, non-existing keys will be filled with <strong>null</strong>.<br />
+Defaults to <strong>true</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              toUrlQuery()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Generates URL encoded query string from the elements of the collection.<br />
+Encoding follows RFC3986 (spaces will be converted to <code>%20</code>).</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(string | null)</span> <span class="phpdoc-var-name">$namespace</span><div class="phpdoc-description"><p>[Optional] Adds namespace to wrap the iterable.<br />
+Defaults to <strong>null</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">string</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              withDefaults()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a copy of collection with the specified <code>$defaults</code> merged in if<br />
+the corresponding key does not exist <code>$iterable</code>.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<TKey, TValue></span> <span class="phpdoc-var-name">$defaults</span><div class="phpdoc-description"><p>Iterable to be set as default.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              values()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a new <code>Vec</code> which contains the values of the collection.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">Vec&lt;TValue&gt;</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                protected
+              </span>
+              reindex()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@inheritDoc</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              __construct()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<TKey, TValue></span> <span class="phpdoc-var-name">$items</span><div class="phpdoc-description"><p>Iterable elements to be used in collection.</p>
+</div></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              getIterator()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@inheritDoc</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">Traversable&lt;TKey, TValue&gt;</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              count()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>NOTE: Overridden to prevent calling Arr::count() directly since it calls count()<br />
+internally if the given <code>$iterable</code> implements Countable, which will call itself<br />
+again and cause an infinite loop.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@inheritDoc</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              lazy()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a new instance which collection is iterated lazily for<br />
+some functions like <code>chunk</code>, <code>each</code>, <code>map</code>, and <code>filter</code>.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              eager()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a new instance as an eager collection.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              isLazy()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns <strong>true</strong> if collection is lazy. <strong>false</strong> otherwise.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              isEager()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns <strong>false</strong> if collection is lazy. <strong>true</strong> otherwise.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              tap()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Invokes <code>$callback</code> with <code>$this</code> as argument and returns <code>$this</code>.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure($this): mixed</span> <span class="phpdoc-var-name">$callback</span><div class="phpdoc-description"><p>Callback to be invoked.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">$this</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              all()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the inner items as array.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">array&lt;TKey, TValue&gt;</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              at()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the value at the given index.<br />
+Throws <code>IndexOutOfBoundsException</code> if the index does not exist.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$index</span><div class="phpdoc-description"><p>Index of iterable starting with 0. Negative index will traverse from tail.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">TValue</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              atOr()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the value at the given index.<br />
+Returns <code>$default</code> if the given index does not exist.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">TDefault</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$index</span><div class="phpdoc-description"><p>Index of iterable starting with 0. Negative index will traverse from tail.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">TDefault</span> <span class="phpdoc-var-name">$default</span><div class="phpdoc-description"><p>Value that is used when the given index did not exist.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(TValue | TDefault)</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              atOrNull()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the value at the given index.<br />
+Returns <strong>null</strong> if the given index does not exist.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$index</span><div class="phpdoc-description"><p>Index of iterable starting with 0. Negative index will traverse from tail.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(TValue | null)</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              chunk()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Splits the collection into chunks of the given size.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int<1, max></span> <span class="phpdoc-var-name">$size</span><div class="phpdoc-description"><p>Size of each chunk. Must be &gt;= 1.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">Vec&lt;static&gt;</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              coalesce()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the first non-null value.<br />
+Throws <code>InvalidArgumentException</code> if empty or all elements are <strong>null</strong>.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">TValue</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              coalesceOrNull()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the first non-null value.<br />
+Returns <strong>null</strong> if collection is empty or if all elements are <strong>null</strong>.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(TValue | null)</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              contains()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns <strong>true</strong> if value exists, <strong>false</strong> otherwise.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">TValue</span> <span class="phpdoc-var-name">$value</span><div class="phpdoc-description"><p>Value to be searched.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              containsAll()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns <strong>true</strong> if all given values exist in the collection,<br />
+<strong>false</strong> otherwise.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<int, TValue></span> <span class="phpdoc-var-name">$values</span><div class="phpdoc-description"><p>Values to be searched.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              containsAny()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns <strong>true</strong> if any given values exist in the collection,<br />
+<strong>false</strong> otherwise.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<int, TValue></span> <span class="phpdoc-var-name">$values</span><div class="phpdoc-description"><p>Values to be searched.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              containsNone()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns <strong>true</strong> if none of the given values exist in the<br />
+collection, <strong>false</strong> otherwise.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<int, TValue></span> <span class="phpdoc-var-name">$values</span><div class="phpdoc-description"><p>Values to be searched.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              containsSlice()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns <strong>true</strong> if collection contains the given slice of <code>$values</code>,<br />
+<strong>false</strong> otherwise.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<int, TValue></span> <span class="phpdoc-var-name">$values</span><div class="phpdoc-description"><p>Values to be searched.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              traitCount()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Counts all the elements in the collection.<br />
+If a condition is given, it will only increase the count if the condition returns <strong>true</strong>.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure(TValue, TKey): bool | null)</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>[Optional] Condition to determine if given item should be counted.<br />
+Defaults to <strong>null</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">int&lt;0, max&gt;</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              countIs()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Counts and checks the collection to see if the amount is equal to <code>$size</code>.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$size</span><div class="phpdoc-description"><p>Size to be compared to.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              countIsBetween()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Checks and returns <strong>true</strong> if count of collection is between <code>$start</code> and <code>$end</code>,<br />
+<strong>false</strong> otherwise. The range is inclusive meaning countIsBetween(1, 10) will include<br />
+the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end</code> is smaller than <code>$start</code>.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$start</span><div class="phpdoc-description"><p>Start of the range.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$end</span><div class="phpdoc-description"><p>End of the range.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              diff()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Compares the keys against the values from <code>$items</code> and returns the difference.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<TKey, TValue></span> <span class="phpdoc-var-name">$items</span><div class="phpdoc-description"><p>Iterable to be compared with.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure(TValue, TValue): int<-1, 1> | null)</span> <span class="phpdoc-var-name">$by</span><div class="phpdoc-description"><p>[Optional] Callback which can be used for comparison of items.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              doesNotContain()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns <strong>false</strong> if value exists, <strong>true</strong> otherwise.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">TValue</span> <span class="phpdoc-var-name">$value</span><div class="phpdoc-description"><p>Value to be searched.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              dropEvery()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a new instance with every nth elements dropped.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$nth</span><div class="phpdoc-description"><p>Nth value to drop. Must be &gt;= 1.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              dropFirst()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a new instance with the first n elements dropped.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$amount</span><div class="phpdoc-description"><p>Amount of elements to drop from the front. Must be &gt;= 0.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              dropIf()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a new collection that contains all elements where the <code>$condition</code> returned <strong>false</strong>.</p>
+<p>Iterable to be traversed.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, TKey): bool</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>A condition that should return a boolean.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              dropLast()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a new instance with the last n elements dropped.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$amount</span><div class="phpdoc-description"><p>Amount of items to be dropped from the end. Must be &gt;= 0.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              dropUntil()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a new instance with the values dropped until the condition returns <strong>true</strong>.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, TKey): bool</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>A condition that should return a boolean value.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              dropWhile()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a new instance with the values dropped while the condition returns <strong>true</strong>.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, TKey): bool</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>A condition that should return a boolean value.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              duplicates()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns duplicate values.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              each()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Iterates through the collection and invoke <code>$callback</code> for each element.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, TKey): (mixed | void)</span> <span class="phpdoc-var-name">$callback</span><div class="phpdoc-description"><p>Callback which is called for every element of the collection.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              ensureCountIs()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Ensures that count of this collection is equal to <code>$size</code>.<br />
+Throws <code>CountMismatchException</code> if count is not equal to <code>$size</code>.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$size</span><div class="phpdoc-description"><p>Expected size of the iterable.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">$this</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              ensureElementType()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Ensures that all elements of the collection are of the given <code>$type</code>.<br />
+Throws <code>InvalidTypeException</code> if <code>$type</code> is not a valid type.<br />
+Throws <code>TypeMismatchException</code> if any element is not of the expected type.<br />
+Empty collections are considered valid.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$type</span><div class="phpdoc-description"><p>Type(s) to be checked against. Ex: 'int|string|null'</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">$this</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              endsWith()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns <strong>true</strong> if the collection ends with the given <code>$values</code>, <strong>false</strong> otherwise.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<int, TValue></span> <span class="phpdoc-var-name">$values</span><div class="phpdoc-description"><p>Values to be searched.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              filter()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a new collection that contains all elements where the <code>$condition</code> returned <strong>true</strong>.</p>
+<p>Alias of <code>static::takeIf()</code></p>
+<p>Iterable to be traversed.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, TKey): bool</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>A condition that should return a boolean.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              first()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the first element in the collection.<br />
+If <code>$condition</code> is set, the first element which meets the condition is returned instead.<br />
+Throws <code>NoMatchFoundException</code> if no condition is met.<br />
+Throws <code>EmptyNotAllowedException</code> if collection is empty.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure(TValue, TKey): bool | null)</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>[Optional] User defined condition callback. The callback must return a boolean value.<br />
+Defaults to <strong>null</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">TValue</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              firstIndex()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the first index of the collection which meets the given <code>$condition</code>.<br />
+Throws <code>NoMatchFoundException</code> if no condition is met.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, TKey): bool</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>User defined condition callback. The callback must return a boolean value.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">int</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              firstIndexOrNull()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the first index of the collection which meets the given <code>$condition</code>.<br />
+Returns <strong>null</strong> if there were no matches.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, TKey): bool</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>User defined condition callback. The callback must return a boolean value.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(int | null)</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              firstOr()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the first element in the collection.<br />
+If <code>$condition</code> is set, the first element which meets the condition is returned instead.<br />
+If condition has no matches, value of <code>$default</code> is returned.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">TDefault</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">TDefault</span> <span class="phpdoc-var-name">$default</span><div class="phpdoc-description"><p>Value that is used when the given <code>$condition</code> has no match.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure(TValue, TKey): bool | null)</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>[Optional] User defined condition callback. The callback must return a boolean value.<br />
+Defaults to <strong>null</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(TValue | null)</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              firstOrNull()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the first element in the collection.<br />
+If <code>$condition</code> is set, the first element which meets the condition is returned instead.<br />
+<strong>null</strong> is returned, if no element matches the <code>$condition</code> or is empty.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure(TValue, TKey): bool | null)</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>[Optional] User defined condition callback. The callback must return a boolean value.<br />
+Defaults to <strong>null</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(TValue | null)</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              fold()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Take all the values in the collection and fold it into a single value.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">U</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">U</span> <span class="phpdoc-var-name">$initial</span><div class="phpdoc-description"><p>The initial value passed to the first Closure as result.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(U, TValue, TKey): U</span> <span class="phpdoc-var-name">$callback</span><div class="phpdoc-description"><p>Callback which is called for every key-value pair in the collection.<br />
+The callback arguments are <code>(mixed $result, mixed $value, mixed $key)</code>.<br />
+The returned value would be used as $result for the subsequent call.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">U</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              groupBy()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Groups the elements of the collection according to the string<br />
+returned by <code>$callback</code>.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">TGroupKey</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, TKey): TGroupKey</span> <span class="phpdoc-var-name">$callback</span><div class="phpdoc-description"><p>Callback to determine the group of the element.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">Map&lt;TGroupKey, static&gt;</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              intersect()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the intersection of collection's values.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<TKey, TValue></span> <span class="phpdoc-var-name">$items</span><div class="phpdoc-description"><p>Iterable to be intersected.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              isEmpty()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns <strong>true</strong> if empty, <strong>false</strong> otherwise.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              isNotEmpty()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns <strong>true</strong> if not empty, <strong>false</strong> otherwise.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              join()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Concatenates all the elements in the collection into a single<br />
+string using the provided <code>$glue</code>. Optional prefix and suffix can<br />
+also be added to the result string.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$glue</span><div class="phpdoc-description"><p>String used to join the elements.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(string | null)</span> <span class="phpdoc-var-name">$prefix</span><div class="phpdoc-description"><p>[Optional] Prefix added to the joined string.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(string | null)</span> <span class="phpdoc-var-name">$suffix</span><div class="phpdoc-description"><p>[Optional] Suffix added to the joined string.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">string</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              keyBy()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a map which contains values from the collection with the keys<br />
+being the results of running <code>$callback($val, $key)</code> on each element.</p>
+<p>Throws <code>DuplicateKeyException</code> when the value returned by <code>$callback</code><br />
+already exist in <code>$array</code> as a key. Set <code>$overwrite</code> to <strong>true</strong> to<br />
+suppress this error.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">TNewKey</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, TKey): TNewKey</span> <span class="phpdoc-var-name">$callback</span><div class="phpdoc-description"><p>Callback which returns the key for the new map.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$overwrite</span><div class="phpdoc-description"><p>[Optional] If <strong>true</strong>, duplicate keys will be overwritten. Defaults to <strong>false</strong>.<br />
+If <strong>false</strong>, exception will be thrown on duplicate keys.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">Map&lt;TNewKey, TValue&gt;</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              last()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the last element in the collection.<br />
+If <code>$condition</code> is set, the last element which meets the condition is returned instead.<br />
+Throws <code>NoMatchFoundException</code> if no condition is met.<br />
+Throws <code>EmptyNotAllowedException</code> if collection is empty.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure(TValue, TKey): bool | null)</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>[Optional] User defined condition callback. The callback must return a boolean value.<br />
+Defaults to <strong>null</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">TValue</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              lastIndex()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the last index which meets the given <code>$condition</code>.<br />
+Throws <code>NoMatchFoundException</code> if no condition is met.<br />
+Throws <code>EmptyNotAllowedException</code> if collection is empty.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure(TValue, TKey): bool | null)</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>[Optional] User defined condition callback. The callback must return a boolean value.<br />
+Defaults to <strong>null</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">int</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              lastIndexOrNull()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the last index which meets the given <code>$condition</code>.<br />
+Returns <strong>null</strong> if there were no matches.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure(TValue, TKey): bool | null)</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>[Optional] User defined condition callback. The callback must return a boolean value.<br />
+Defaults to <strong>null</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(int | null)</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              lastOr()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the last element in the collection.<br />
+If <code>$condition</code> is set, the last element which meets the condition is returned instead.<br />
+Returns the value of <code>$default</code> if no condition met.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">TDefault</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">TDefault</span> <span class="phpdoc-var-name">$default</span><div class="phpdoc-description"><p>Value that is used when the given <code>$condition</code> has no match.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure(TValue, TKey): bool | null)</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>[Optional] User defined condition callback. The callback must return a boolean value.<br />
+Defaults to <strong>null</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(TValue | TDefault)</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              lastOrNull()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the last element in the collection.<br />
+If <code>$condition</code> is set, the last element which meets the condition is returned instead.<br />
+Returns <strong>null</strong> if no element matches the <code>$condition</code> or is empty.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure(TValue, TKey): bool | null)</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>[Optional] User defined condition callback. The callback must return a boolean value.<br />
+Defaults to <strong>null</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(TValue | null)</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              mapWithKey()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a new Map with key value pair returned for each iterable returned by calling <code>$callback</code>.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">TMapKey</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">TMapValue</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, int): iterable<TMapKey, TMapValue></span> <span class="phpdoc-var-name">$callback</span><div class="phpdoc-description"><p>Callback to be used to map the values.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$overwrite</span><div class="phpdoc-description"><p>[Optional] If <strong>true</strong>, duplicate keys will be overwritten. Defaults to <strong>false</strong>.<br />
+If <strong>false</strong>, exception will be thrown on duplicate keys.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">Map&lt;TMapKey, TMapValue&gt;</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              max()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the largest element in the collection.<br />
+If <code>$by</code> is given, each element will be passed to the closure and the<br />
+largest value returned from the closure will be returned instead.<br />
+Throws <code>InvalidElementException</code>, If collection contains NAN.<br />
+Throws <code>EmptyNotAllowedException</code> if collection is empty.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure(TValue, TKey): mixed | null)</span> <span class="phpdoc-var-name">$by</span><div class="phpdoc-description"><p>[Optional] Called for every element in the collection.<br />
+Returned value will be used to determine the largest number.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">TValue</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              maxOrNull()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the largest element in the collection.<br />
+If <code>$by</code> is given, each element will be passed to the closure and the<br />
+largest value returned from the closure will be returned instead.<br />
+Returns <strong>null</strong> if the collection is empty.<br />
+Throws <code>InvalidElementException</code> if collection contains NAN.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure(TValue, TKey): mixed | null)</span> <span class="phpdoc-var-name">$by</span><div class="phpdoc-description"><p>[Optional] Called for every element in the collection.<br />
+Returned value will be used to determine the largest number.<br />
+Must be int or float.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(TValue | null)</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              merge()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Merges one or more iterables into a single collection.</p>
+<p>If the given keys are numeric, the keys will be re-numbered with<br />
+an incremented number from the last number in the new collection.</p>
+<p>If the two iterables have the same keys, the value inside the<br />
+iterable that comes later will overwrite the value in the key.</p>
+<p>This method will only merge the key value pairs of the root depth.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<TKey, TValue></span> <span class="phpdoc-var-name">$iterables</span><div class="phpdoc-description"><p>Iterable(s) to be merged.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              mergeRecursive()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Merges one or more iterables recursively into a single collection.<br />
+Will merge recursively up to the given depth.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@see</span><div class="phpdoc-type">merge for details on how keys and values are merged.</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<TKey, TValue></span> <span class="phpdoc-var-name">$iterable</span><div class="phpdoc-description"><p>Iterable to be merged.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int<1, max></span> <span class="phpdoc-var-name">$depth</span><div class="phpdoc-description"><p>[Optional] Depth of recursion. Defaults to <strong>PHP_INT_MAX</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              min()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the smallest element in the collection.<br />
+If <code>$by</code> is given, each element will be passed to the closure and the<br />
+smallest value returned from the closure will be returned instead.<br />
+Throws <code>EmptyNotAllowedException</code> if collection is empty.<br />
+Throws <code>InvalidElementException</code> if collection contains NAN.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure(TValue, TKey): mixed | null)</span> <span class="phpdoc-var-name">$by</span><div class="phpdoc-description"><p>[Optional] Called for every element in the collection.<br />
+Returned value will be used to determine the smallest number.<br />
+Must be int or float.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">TValue</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              minOrNull()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the smallest element in the collection.<br />
+If <code>$by</code> is given, each element will be passed to the closure and the<br />
+smallest value returned from the closure will be returned instead.<br />
+Returns <strong>null</strong> if the collection is empty.<br />
+Throws <code>InvalidElementException</code> if collection contains NAN.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure(TValue, TKey): mixed | null)</span> <span class="phpdoc-var-name">$by</span><div class="phpdoc-description"><p>[Optional] Called for every element in the collection.<br />
+Returned value will be used to determine the smallest number.<br />
+Must be int or float.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(TValue | null)</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              minMax()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the smallest and largest element from the collection as array{ min: , max: }.<br />
+If <code>$by</code> is given, each element will be passed to the closure and the<br />
+smallest and largest value returned from the closure will be returned instead.<br />
+Throws <code>EmptyNotAllowedException</code> if collection is empty.<br />
+Throws <code>InvalidElementException</code> if collection contains NAN.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure(TValue, TKey): mixed | null)</span> <span class="phpdoc-var-name">$by</span><div class="phpdoc-description"><p>[Optional] Called for every element.<br />
+Returned value will be used to determine the highest number.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">array&lt;TValue&gt;</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              partition()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a list with two collection elements.<br />
+All elements in the collection evaluated to be <strong>true</strong> will be pushed to<br />
+the first collection. Elements evaluated to be <strong>false</strong> will be pushed to<br />
+the second collection.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, TKey): bool</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>Closure to evaluate each element.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">array{static, static}</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              pipe()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Passes <code>$this</code> to the given callback and returns the result,<br />
+so it can be used in a chain.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">TPipe</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure($this): TPipe</span> <span class="phpdoc-var-name">$callback</span><div class="phpdoc-description"><p>Callback which will receive $this as argument.<br />
+The result of the callback will be returned.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">TPipe</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              prioritize()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Move items which match the condition to the front of the collection.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, TKey): bool</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>User defined condition callback. The callback must return a boolean value.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(int | null)</span> <span class="phpdoc-var-name">$limit</span><div class="phpdoc-description"><p>[Optional] Limits the number of items to prioritize.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              ratio()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the ratio of values that satisfy the <code>$condition</code>.<br />
+Throws <code>EmptyNotAllowedException</code> if collection is empty.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, TKey): bool</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>User defined condition callback. The callback must return a boolean value.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">float</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              ratioOrNull()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the ratio of values that satisfy the <code>$condition</code>.<br />
+Returns <strong>null</strong> if the collection is empty.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, TKey): bool</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>User defined condition callback. The callback must return a boolean value.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(float | null)</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              reduce()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Iteratively reduce collection to a single value by invoking<br />
+<code>$callback($reduced, $val, $key)</code>.<br />
+Throws <code>EmptyNotAllowedException</code> if the collection is empty.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, TValue, TKey): TValue</span> <span class="phpdoc-var-name">$callback</span><div class="phpdoc-description"><p>First argument contains the reduced value.<br />
+Second argument contains the current value.<br />
+Third argument contains the current key.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">TValue</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              reduceOr()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Iteratively reduce collection to a single value by invoking<br />
+<code>$callback($reduced, $val, $key)</code>.<br />
+Returns <code>$default</code> if the collection is empty.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">TDefault</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, TValue, TKey): TValue</span> <span class="phpdoc-var-name">$callback</span><div class="phpdoc-description"><p>First argument contains the reduced value.<br />
+Second argument contains the current value.<br />
+Third argument contains the current key.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">TDefault</span> <span class="phpdoc-var-name">$default</span><div class="phpdoc-description"><p>Value that is used when iterable is empty.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">TValue</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              reduceOrNull()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Iteratively reduce collection to a single value by invoking<br />
+<code>$callback($reduced, $val, $key)</code>.<br />
+Returns <strong>null</strong> if the collection is empty.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, TValue, TKey): TValue</span> <span class="phpdoc-var-name">$callback</span><div class="phpdoc-description"><p>First argument contains the reduced value.<br />
+Second argument contains the current value.<br />
+Third argument contains the current key.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(TValue | null)</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              replace()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a new collection which contains keys and values from the collection<br />
+but with the <code>$search</code> value replaced with the <code>$replacement</code> value.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">TValue</span> <span class="phpdoc-var-name">$search</span><div class="phpdoc-description"><p>The value to replace.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">TValue</span> <span class="phpdoc-var-name">$replacement</span><div class="phpdoc-description"><p>Replacement for the searched value.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(int | null)</span> <span class="phpdoc-var-name">$limit</span><div class="phpdoc-description"><p>[Optional] Sets a limit to number of times a replacement can take place.<br />
+Defaults to <strong>null</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">&$count</span><div class="phpdoc-description"><p>[Optional][Reference] Sets the number of times replacements occurred.<br />
+Any value previously set will be reset.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              reverse()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a new collection which contain all elements of the collection<br />
+in reverse order.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              rotate()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Converts the collection to an array and rotate the array to the right<br />
+by <code>$steps</code>. If <code>$steps</code> is a negative value, the array will rotate<br />
+to the left instead.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$steps</span><div class="phpdoc-description"><p>Number of times the key/value will be rotated.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              sample()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a random element from the collection.<br />
+Throws <code>EmptyNotAllowedException</code> if the collection is empty.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Randomizer | null)</span> <span class="phpdoc-var-name">$randomizer</span><div class="phpdoc-description"><p>[Optional] Randomizer to be used.<br />
+Secure randomizer will be used if <strong>null</strong>.<br />
+Defaults to <strong>null</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">TValue</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              sampleMany()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a list of random elements picked from the collection.<br />
+If <code>$replace</code> is set to <strong>false</strong>, each key will be chosen only once.<br />
+Throws <code>InvalidArgumentException</code> if <code>$amount</code> is larger than the collection's size.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$amount</span><div class="phpdoc-description"><p>Amount of items to sample.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$replace</span><div class="phpdoc-description"><p>If <strong>true</strong>, same elements can be chosen more than once.<br />
+Defaults to <strong>false</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Randomizer | null)</span> <span class="phpdoc-var-name">$randomizer</span><div class="phpdoc-description"><p>[Optional] Randomizer to be used.<br />
+Default randomizer (Secure) will be used if <strong>null</strong>.<br />
+Defaults to <strong>null</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">Vec&lt;TValue&gt;</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              sampleOr()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a random element from the collection.<br />
+Returns <code>$default</code> if the collection is empty.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">TDefault</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">TDefault</span> <span class="phpdoc-var-name">$default</span><div class="phpdoc-description"><p>Value that is used when the collection is empty.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Randomizer | null)</span> <span class="phpdoc-var-name">$randomizer</span><div class="phpdoc-description"><p>[Optional] Randomizer to be used.<br />
+Default randomizer (Secure) will be used if <strong>null</strong>.<br />
+Defaults to <strong>null</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(TValue | TDefault)</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              sampleOrNull()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a random element from the collection.<br />
+Returns <strong>null</strong> if the collection is empty.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Randomizer | null)</span> <span class="phpdoc-var-name">$randomizer</span><div class="phpdoc-description"><p>[Optional] Randomizer to be used.<br />
+Secure randomizer will be used if <strong>null</strong>.<br />
+Defaults to <strong>null</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(TValue | null)</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              satisfyAll()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Runs the condition though each element of the collection and will return <strong>true</strong><br />
+if all iterations that run through the condition returned <strong>true</strong> or if<br />
+the collection is empty, <strong>false</strong> otherwise.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, TKey): bool</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>User defined condition callback. The callback must return a boolean value.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              satisfyAny()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Runs the condition though each element of the collection and will return <strong>true</strong><br />
+if any iterations that run through the <code>$condition</code> returned <strong>true</strong>,<br />
+<strong>false</strong> otherwise (including empty iterable).</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, TKey): bool</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>User defined condition callback. The callback must return a boolean value.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              satisfyNone()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Runs the condition though each element of the collection and will return <strong>true</strong><br />
+if all the iterations that run through the <code>$condition</code> returned <strong>false</strong>.<br />
+<strong>false</strong> otherwise.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, TKey): bool</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>User defined condition callback. The callback must return a boolean value.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              satisfyOnce()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Runs the condition though each element of the collection and will return <strong>true</strong><br />
+if iterations that run through the <code>$condition</code> returned <strong>true</strong> only once,<br />
+<strong>false</strong> otherwise (including empty iterable).</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, TKey): bool</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>User defined condition callback. The callback must return a boolean value.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              shuffle()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Shuffles the elements of the collection.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Randomizer | null)</span> <span class="phpdoc-var-name">$randomizer</span><div class="phpdoc-description"><p>[Optional] Randomizer to be used.<br />
+Default randomizer (Secure) will be used if <strong>null</strong>.<br />
+Defaults to <strong>null</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              single()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns the only element in the collection.<br />
+If a condition is also given, the sole element of a sequence that satisfies a specified<br />
+condition is returned instead.<br />
+Throws <code>InvalidArgumentException</code> if there are more than one element in <code>$iterable</code>.<br />
+Throws <code>NoMatchFoundException</code> if no condition is met.<br />
+Throws <code>EmptyNotAllowedException</code> if <code>$iterable</code> is empty.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure(TValue, TKey): bool | null)</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>[Optional] User defined condition callback. The callback must return a boolean value.<br />
+Defaults to <strong>null</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">TValue</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              slice()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a shallow copy of a portion of the collection into a new collection.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$offset</span><div class="phpdoc-description"><p>If offset is non-negative, the sequence will start at that offset.<br />
+If offset is negative, the sequence will start that far from the end.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$length</span><div class="phpdoc-description"><p>If length is given and is positive, then the sequence will have up to that many elements in it.<br />
+If the iterable is shorter than the length, then only the available array elements will be present.<br />
+If length is given and is negative then the sequence will stop that many elements from the end.<br />
+If it is omitted, then the sequence will have everything from offset up until the end.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              slide()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Converts the collection to an overlapping sub-slices of <code>$size</code>.<br />
+Also known as sliding window.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$size</span><div class="phpdoc-description"><p>Size of the window. Must be &gt;= 1.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">Vec&lt;static&gt;</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              sort()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Sort the collection by value in the given order.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">SortOrder</span> <span class="phpdoc-var-name">$order</span><div class="phpdoc-description"><p>Order of the sort.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure(TValue, TKey): mixed | null)</span> <span class="phpdoc-var-name">$by</span><div class="phpdoc-description"><p>[Optional] User defined comparison callback.<br />
+The value returned will be used to sort the array.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$flag</span><div class="phpdoc-description"><p>Sort flag to change the behavior of the sort.<br />
+Defaults to <code>SORT_REGULAR</code>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              sortAsc()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Sort the <code>$iterable</code> by value in ascending order.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure(TValue, TKey): mixed | null)</span> <span class="phpdoc-var-name">$by</span><div class="phpdoc-description"><p>[Optional] User defined comparison callback.<br />
+The value returned will be used to sort the array.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$flag</span><div class="phpdoc-description"><p>Sort flag to change the behavior of the sort.<br />
+Defaults to <code>SORT_REGULAR</code>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              sortDesc()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Sort the <code>$iterable</code> by value in descending order.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure(TValue, TKey): mixed | null)</span> <span class="phpdoc-var-name">$by</span><div class="phpdoc-description"><p>[Optional] User defined comparison callback.<br />
+The value returned will be used to sort the array.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$flag</span><div class="phpdoc-description"><p>Sort flag to change the behavior of the sort.<br />
+Defaults to <code>SORT_REGULAR</code>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              sortWith()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Sorts the collection by value using the provided <code>$comparator</code> function.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, TValue): int</span> <span class="phpdoc-var-name">$comparator</span><div class="phpdoc-description"><p>The comparison function to use.<br />
+Utilize the spaceship operator (<code>&lt;=&gt;</code>) to easily compare two values.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              splitAfter()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Splits the collection right after the index where <code>$condition</code> returned <strong>true</strong>.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, TKey): bool</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>User defined condition callback. The callback must return a boolean value.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">Vec&lt;static&gt;</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              splitAfterIndex()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Splits the collection after the given <code>$index</code>.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$index</span><div class="phpdoc-description"><p>The index where the <code>$iterable</code> will be split starting from 0.<br />
+Negative index will count from the end.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">Vec&lt;static&gt;</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              splitBefore()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Splits the collection right before the index where <code>$condition</code> returned <strong>true</strong>.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, TKey): bool</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>User defined condition callback. The callback must return a boolean value.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">Vec&lt;static&gt;</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              splitBeforeIndex()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Splits the collection before the given <code>$index</code>.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$index</span><div class="phpdoc-description"><p>The index where the <code>$iterable</code> will be split starting from 0.<br />
+Negative index will count from the end.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">Vec&lt;static&gt;</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              splitEvenly()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Splits the collection into the given size and return it as Vec.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$parts</span><div class="phpdoc-description"><p>Number of parts to split into.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">Vec&lt;static&gt;</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              startsWith()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns <strong>true</strong> if the collection starts with the given <code>$values</code>, <strong>false</strong> otherwise.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<int, TValue></span> <span class="phpdoc-var-name">$values</span><div class="phpdoc-description"><p>Values to be searched.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              takeEvery()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a new instance with every nth elements dropped.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$nth</span><div class="phpdoc-description"><p>Nth value to drop. Must be &gt;= 1.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              takeFirst()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Take the first n elements from the collection and return a new instance<br />
+with those elements.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$amount</span><div class="phpdoc-description"><p>Amount of elements to take. Must be &gt;= 0.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              takeIf()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a new collection that contains all elements where the <code>$condition</code> returned <strong>true</strong>.</p>
+<p>Iterable to be traversed.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, TKey): bool</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>A condition that should return a boolean.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              takeInstanceOf()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Iterates over each element in $iterable and takes only the elements that are instances of the given class.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">TClass</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">class-string<TClass></span> <span class="phpdoc-var-name">$class</span><div class="phpdoc-description"><p>Class name to check against.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              takeLast()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Take the last n elements from the collection and return a new instance<br />
+with those elements.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$amount</span><div class="phpdoc-description"><p>Amount of items to be dropped from the end. Must be &gt;= 0.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              takeUntil()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Takes elements in the collection until <code>$condition</code> returns <strong>true</strong>.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, TKey): bool</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>A break condition callback that should return <strong>false</strong> to stop the<br />
+taking of elements from the collection.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              takeWhile()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Takes elements in the collection while <code>$condition</code> returns <strong>true</strong>.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(TValue, TKey): bool</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>A break condition callback that should return <strong>false</strong> to stop the<br />
+taking of elements from the collection.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              toArray()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Converts the collection to an array recursively up to the given <code>$depth</code>.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int<1, max></span> <span class="phpdoc-var-name">$depth</span><div class="phpdoc-description"><p>[Optional] Defaults to INT_MAX</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">array&lt;TKey, TValue&gt;</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              toJson()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Converts the collection to a JSON string.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$pretty</span><div class="phpdoc-description"><p>[Optional] Whether to format the JSON as human-readable format.<br />
+Defaults to <strong>false</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">string</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              unique()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Removes duplicate values from <code>$iterable</code> and returns it as an array.</p>
+<p>This differs from <code>array_unique</code> in that, this does not do a<br />
+string conversion before comparing.<br />
+For example, <code>array_unique([1, true])</code> will result in: <code>[1]</code> but<br />
+doing <code>Arr::unique([1, true])</code> will result in: <code>[1, true]</code>.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure(TValue, TKey): bool | null)</span> <span class="phpdoc-var-name">$by</span><div class="phpdoc-description"><p>[Optional] Called for every element in <code>$iterable</code>.<br />
+Returned value will be used to check for duplicates.<br />
+[Optional] Defaults to <strong>null</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              when()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Calls <code>$callback</code> for every element in the collection if <code>$bool</code><br />
+is <strong>true</strong>, calls <code>$fallback</code> otherwise.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">TReturn</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(bool | Closure($this): bool)</span> <span class="phpdoc-var-name">$bool</span><div class="phpdoc-description"><p>Bool or callback to determine whether to execute <code>$callback</code> or <code>$fallback</code>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure($this): TReturn</span> <span class="phpdoc-var-name">$callback</span><div class="phpdoc-description"><p>Callback to be called if <code>$bool</code> is <strong>true</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure($this): TReturn | null)</span> <span class="phpdoc-var-name">$fallback</span><div class="phpdoc-description"><p>[Optional] Callback to be called if <code>$bool</code> is <strong>false</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">TReturn</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              whenEmpty()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Calls <code>$callback</code> for every element in the collection if collection is empty,<br />
+calls <code>$fallback</code> otherwise.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">TReturn</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure($this): TReturn</span> <span class="phpdoc-var-name">$callback</span><div class="phpdoc-description"><p>Callback to be called if <code>$bool</code> is <strong>true</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure($this): TReturn | null)</span> <span class="phpdoc-var-name">$fallback</span><div class="phpdoc-description"><p>[Optional] Callback to be called if <code>$bool</code> is <strong>false</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">TReturn</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              whenNotEmpty()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Calls <code>$callback</code> for every element in the collection if collection is not<br />
+empty, calls <code>$fallback</code> otherwise.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">TReturn</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure($this): TReturn</span> <span class="phpdoc-var-name">$callback</span><div class="phpdoc-description"><p>Callback to be called if <code>$bool</code> is <strong>true</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Closure($this): TReturn | null)</span> <span class="phpdoc-var-name">$fallback</span><div class="phpdoc-description"><p>[Optional] Callback to be called if <code>$bool</code> is <strong>false</strong>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">TReturn</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                public
+              </span>
+              without()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-description"><p>Returns a new instance with the specified <code>$value</code> excluded.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">TValue</span> <span class="phpdoc-var-name">$value</span><div class="phpdoc-description"><p>Value to be excluded.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                protected
+              </span>
+              asArrayRecursive()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<TKey, TValue></span> <span class="phpdoc-var-name">$items</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$depth</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$validate</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">array&lt;TKey, mixed&gt;</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                protected
+              </span>
+              newMap()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">TNewKey</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">TNewValue</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<TNewKey, TNewValue></span> <span class="phpdoc-var-name">$iterable</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">Map&lt;TNewKey, TNewValue&gt;</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                protected
+              </span>
+              newVec()
+            </div>
+            <div class="method-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">TNewValue</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<int, TNewValue></span> <span class="phpdoc-var-name">$iterable</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">Vec&lt;TNewValue&gt;</span></div>
+            </div>
+          </li>
+      </ul>
+    </div>
+  </main>
+</body>
+</html>
