@@ -6,7 +6,7 @@ services:
     volumes:
       - type: bind
         source: .
-        target: /src
+        target: /app
       - type: volume
         source: user
         target: /root

@@ -1,6 +1,6 @@
 {
-  "name": "kirameki/api-doc-tools",
-  "description": "Kirameki API Documentation Tools",
+  "name": "kirameki/api-doc-generator",
+  "description": "Kirameki API Documentation Generator",
   "type": "library",
   "license": "MIT",
   "require": {

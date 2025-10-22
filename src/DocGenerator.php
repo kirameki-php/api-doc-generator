@@ -31,6 +31,7 @@ class DocGenerator
      * @param string $basePath
      * @param string $projectRoot
      * @param PageRenderer $renderer
+     * @param DocParser $docParser
      */
     public function __construct(
         protected string $basePath,
