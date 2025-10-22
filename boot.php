@@ -1,15 +1,15 @@
 <?php declare(strict_types=1);
 
-use Kirameki\ApiDocTools\DocParser;
-use Kirameki\ApiDocTools\PageRenderer;
+use Kirameki\ApiDocGenerator\DocParser;
+use Kirameki\ApiDocGenerator\PageRenderer;
 
 require 'vendor/autoload.php';
 
 // raise memory limit
 ini_set('memory_limit', '512M');
 
-$app = new Kirameki\ApiDocTools\DocGenerator(
-    '/Users/taka-mac/Projects/kirameki/api-doc-tools/docs',
+$app = new Kirameki\ApiDocGenerator\DocGenerator(
+    '/Users/taka-mac/Projects/kirameki/api-doc-generator/docs',
     'vendor/kirameki/utils',
     new PageRenderer(),
     new DocParser(),

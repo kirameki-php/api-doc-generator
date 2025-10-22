@@ -16,12 +16,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Kirameki\\ApiDocTools\\": "src/"
+      "Kirameki\\ApiDocGenerator\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Tests\\App\\": "tests/app/"
+      "Tests\\Kirameki\\ApiDocGenerator\\": "tests/src/"
     }
   },
   "config": {

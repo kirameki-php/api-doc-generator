@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Kirameki\ApiDocTools;
+namespace Kirameki\ApiDocGenerator;
 
 use Kirameki\Collections\Vec;
 use Kirameki\Text\Str;
