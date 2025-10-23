@@ -1,12 +1,7 @@
-{varType array $references}
+{varType string $sidebarHtml}
 {layout layout.latte}
 {block content}
-  <ul class="sidebar">
-    {foreach $references as $ref}
-      {varType Kirameki\ApiDocGenerator\ClassInfo $ref}
-      <li>
-        <a href="{$ref->getHtmlPath()}">{$ref->name}</a>
-      </li>
-    {/foreach}
-  </ul>
+<nav class="sidebar">
+  {$sidebarHtml|noescape}
+</nav>
 {/block}

@@ -1,7 +1,9 @@
 {layout layout.latte}
 {varType Kirameki\ApiDocGenerator\ClassInfo $class}
 {block content}
+  <nav class="sidebar">
   {$sidebarHtml|noescape}
+  </nav>
   <main>
     <div class="structure-namespace">
       namespace <b>{$class->namespace}</b>

@@ -31,7 +31,10 @@ blockquote {
     height: 100%;
     overflow-y: auto;
     background-color: #f8f9fa;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
+}
+.sidebar ul {
+    padding-left: 1rem;
 }
 .sidebar li {
     margin-bottom: 0.25rem;

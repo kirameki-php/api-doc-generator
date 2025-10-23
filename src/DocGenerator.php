@@ -2,6 +2,7 @@
 
 namespace Kirameki\ApiDocGenerator;
 
+use Kirameki\Collections\Utils\Iter;
 use Kirameki\Core\Json;
 use Kirameki\Storage\Directory;
 use Kirameki\Storage\Path;
@@ -46,7 +47,7 @@ class DocGenerator
 
     public function generate(): void
     {
-        $classes = [];
+        $tree = [];
         foreach ($this->pathMap as $path => $namespace) {
             $dir = new Directory("{$this->projectRoot}/{$path}");
             foreach ($dir->scanRecursively() as $storable) {
@@ -56,29 +57,29 @@ class DocGenerator
                         // TODO implement EnumInfo
                     }
                     else if ($reflection->isTrait()) {
-//                        $classes[$reflection->name] = new ClassInfo($reflection);
+                        // TODO implement TraitInfo
                     }
                     else {
-                        $classes[$reflection->name] = new ClassInfo($reflection, $this->docParser);
+                        $this->appendToTree($tree, new ClassInfo($reflection, $this->docParser));
                     }
                 }
             }
         }
-        ksort($classes);
+        $this->sortTreeRecursively($tree);
+
+        $sidebarHtml = $this->renderer->render(Path::of(__DIR__ . '/views/sidebar.latte'), [
+            'tree' => $tree,
+        ]);
 
         $html = $this->renderer->render(Path::of(__DIR__ . '/views/index.latte'), [
             'basePath' => $this->basePath,
-            'references' => $classes,
-        ]);
-
-        $sidebarHtml = $this->renderer->render(Path::of(__DIR__ . '/views/sidebar.latte'), [
-            'references' => $classes,
+            'sidebarHtml' => $sidebarHtml,
         ]);
 
         @mkdir($this->projectRoot . '/docs', 0755);
         file_put_contents(Path::of(__DIR__ . '/../docs/main.html')->normalize(), $html);
 
-        foreach ($classes as $class) {
+        foreach (Iter::flatten($tree, 100) as $class) {
             $html = $this->renderer->render(Path::of(__DIR__ . '/views/class.latte'), [
                 'basePath' => $this->basePath,
                 'sidebarHtml' => $sidebarHtml,
@@ -113,5 +114,37 @@ class DocGenerator
             enum_exists($classString) => new ReflectionEnum($classString),
             default => null,
        };
+    }
+
+    /**
+     * @param array<string, mixed> $tree
+     * @param ClassInfo $classInfo
+     * @return void
+     */
+    protected function appendToTree(array &$tree, ClassInfo $classInfo): void
+    {
+        $parts = explode('\\', $classInfo->namespace);
+        $current = &$tree;
+        foreach ($parts as $part) {
+            if (!isset($current[$part])) {
+                $current[$part] = [];
+            }
+            $current = &$current[$part];
+        }
+        $current[$classInfo->basename] = $classInfo;
+    }
+
+    /**
+     * @param array<string, mixed> $tree
+     * @return void
+     */
+    protected function sortTreeRecursively(array &$tree): void
+    {
+        ksort($tree);
+        foreach ($tree as &$subtree) {
+            if (is_array($subtree)) {
+                $this->sortTreeRecursively($subtree);
+            }
+        }
     }
 }
