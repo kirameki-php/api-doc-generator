@@ -1,5 +1,5 @@
 {layout layout.latte}
-{varType Kirameki\ApiDocTools\ClassInfo $class}
+{varType Kirameki\ApiDocGenerator\ClassInfo $class}
 {block content}
   {$sidebarHtml|noescape}
   <main>
@@ -27,7 +27,7 @@
         <ul>
           {php $current = $class}
           {while ($current = $current->parent) !== null}
-            {varType Kirameki\ApiDocTools\ClassInfo $current}
+            {varType Kirameki\ApiDocGenerator\ClassInfo $current}
             <li>
               <a href="{$current->getHtmlPath()}">{str_replace($class->namespace . '\\', '', $current->name)}</a>
             </li>
@@ -40,7 +40,7 @@
         implements:
         <ul>
           {foreach $class->interfaces as $interface}
-            {varType Kirameki\ApiDocTools\ClassInfo $interface}
+            {varType Kirameki\ApiDocGenerator\ClassInfo $interface}
             <li>
               <a href="{$interface->getHtmlPath()}">{str_replace($class->namespace . '\\', '', $interface->name)}</a>
             </li>
@@ -52,7 +52,7 @@
       <h3>Methods</h3>
       <ul>
         {foreach $class->methods as $method}
-          {varType Kirameki\ApiDocTools\MethodInfo $method}
+          {varType Kirameki\ApiDocGenerator\MethodInfo $method}
           <li>
             <div class="method-signature">
               <span class="method-modifiers">

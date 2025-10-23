@@ -31,13 +31,13 @@ class DocGenerator
      * @param string $basePath
      * @param string $projectRoot
      * @param PageRenderer $renderer
-     * @param DocParser $docParser
+     * @param CommentParser $docParser
      */
     public function __construct(
         protected string $basePath,
         protected string $projectRoot,
         protected PageRenderer $renderer,
-        protected DocParser $docParser,
+        protected CommentParser $docParser,
     ) {
         $composerContent = file_get_contents($this->projectRoot . '/composer.json') ?: throw new \RuntimeException('Failed to read composer.json');
         $composer = Json::decode($composerContent);

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <base href="file:///Users/taka-mac/Projects/kirameki/api-doc-tools/docs/">
+  <base href="file:///Users/taka-mac/Projects/kirameki/api-doc-generator/docs/">
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Kirameki API Doc</title>
@@ -599,7 +599,7 @@ Calls and returns the result of calling basename() on the current string.</div><
               containsAll()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">array<string></span> <span class="phpdoc-var-name">$needles</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">array&lt;string&gt;</span> <span class="phpdoc-var-name">$needles</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
             </div>
           </li>
           <li>
@@ -610,7 +610,7 @@ Calls and returns the result of calling basename() on the current string.</div><
               containsAny()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">array<string></span> <span class="phpdoc-var-name">$needles</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">array&lt;string&gt;</span> <span class="phpdoc-var-name">$needles</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
             </div>
           </li>
           <li>
@@ -654,7 +654,7 @@ Calls and returns the result of calling basename() on the current string.</div><
               dirname()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int<1, max></span> <span class="phpdoc-var-name">$levels</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int&lt;1, max&gt;</span> <span class="phpdoc-var-name">$levels</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
             </div>
           </li>
           <li>
@@ -731,7 +731,7 @@ Calls and returns the result of calling basename() on the current string.</div><
               endsWithAny()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<array-key, string></span> <span class="phpdoc-var-name">$suffixes</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable&lt;array-key, string&gt;</span> <span class="phpdoc-var-name">$suffixes</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
             </div>
           </li>
           <li>
@@ -742,7 +742,7 @@ Calls and returns the result of calling basename() on the current string.</div><
               endsWithNone()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<array-key, string></span> <span class="phpdoc-var-name">$suffixes</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable&lt;array-key, string&gt;</span> <span class="phpdoc-var-name">$suffixes</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
             </div>
           </li>
           <li>
@@ -765,7 +765,7 @@ Calls and returns the result of calling basename() on the current string.</div><
               equalsAny()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<array-key, string></span> <span class="phpdoc-var-name">$strings</span><div class="phpdoc-description"><p>Strings to compare against.</p>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable&lt;array-key, string&gt;</span> <span class="phpdoc-var-name">$strings</span><div class="phpdoc-description"><p>Strings to compare against.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
             </div>
           </li>
@@ -810,7 +810,7 @@ Calls and returns the result of calling basename() on the current string.</div><
               interpolate()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<(int | float | string)></span> <span class="phpdoc-var-name">$replace</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$delimiterStart</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$delimiterEnd</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable&lt;(int | float | string)&gt;</span> <span class="phpdoc-var-name">$replace</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$delimiterStart</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$delimiterEnd</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
             </div>
           </li>
           <li>
@@ -1012,7 +1012,7 @@ The result of the callback will be returned.</p>
               repeat()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int<0, max></span> <span class="phpdoc-var-name">$times</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int&lt;0, max&gt;</span> <span class="phpdoc-var-name">$times</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
             </div>
           </li>
           <li>
@@ -1069,7 +1069,7 @@ Can be a string or a closure that returns a string.</p>
               replaceMatchWithCallback()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$pattern</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(array<(int | string), string>): string</span> <span class="phpdoc-var-name">$callback</span><div class="phpdoc-description"><p>Replacement for the found pattern.<br />
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$pattern</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(array&lt;(int | string), string&gt;): string</span> <span class="phpdoc-var-name">$callback</span><div class="phpdoc-description"><p>Replacement for the found pattern.<br />
 Can be a string or a closure that returns a string.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(int | null)</span> <span class="phpdoc-var-name">$limit</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
             </div>
@@ -1093,7 +1093,7 @@ Can be a string or a closure that returns a string.</p>
               split()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">non-empty-string</span> <span class="phpdoc-var-name">$separator</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(int<0, max> | null)</span> <span class="phpdoc-var-name">$limit</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">list&lt;string&gt;</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">non-empty-string</span> <span class="phpdoc-var-name">$separator</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(int&lt;0, max&gt; | null)</span> <span class="phpdoc-var-name">$limit</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">list&lt;string&gt;</span></div>
             </div>
           </li>
           <li>
@@ -1126,7 +1126,7 @@ Can be a string or a closure that returns a string.</p>
               startsWithAny()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<array-key, string></span> <span class="phpdoc-var-name">$prefixes</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable&lt;array-key, string&gt;</span> <span class="phpdoc-var-name">$prefixes</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
             </div>
           </li>
           <li>
@@ -1137,7 +1137,7 @@ Can be a string or a closure that returns a string.</p>
               startsWithNone()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<array-key, string></span> <span class="phpdoc-var-name">$prefixes</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable&lt;array-key, string&gt;</span> <span class="phpdoc-var-name">$prefixes</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
             </div>
           </li>
           <li>

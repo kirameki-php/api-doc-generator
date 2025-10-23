@@ -117,10 +117,11 @@ blockquote {
 }
 .phpdoc-tag-name {
     font-family: var(--code-font-family);
-    color: #2563eb;
+    color: #6791ec;
 }
 .phpdoc-type {
     font-family: var(--code-font-family);
+    color: #2563eb;
 }
 .phpdoc-var-name {
     font-family: var(--code-font-family);

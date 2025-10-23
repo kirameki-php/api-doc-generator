@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <base href="file:///Users/taka-mac/Projects/kirameki/api-doc-tools/docs/">
+  <base href="file:///Users/taka-mac/Projects/kirameki/api-doc-generator/docs/">
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Kirameki API Doc</title>
@@ -930,7 +930,7 @@ Will return <strong>true</strong> if empty iterable is given.</p>
 Str::containsAll('ab', ['a', 'b', 'd']); // false  
 </code></pre>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The string to search in.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<array-key, string></span> <span class="phpdoc-var-name">$substrings</span><div class="phpdoc-description"><p>The substrings to search for in the <code>$string</code>.<br />
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable&lt;array-key, string&gt;</span> <span class="phpdoc-var-name">$substrings</span><div class="phpdoc-description"><p>The substrings to search for in the <code>$string</code>.<br />
 This must contain at least one substring or exception is thrown.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span><div class="phpdoc-description"><p>Returns <strong>true</strong> if all strings in <code>$substrings</code> are in <code>$string</code>, <strong>false</strong> otherwise.</p>
 </div></div>
@@ -952,7 +952,7 @@ Will return <strong>true</strong> if empty iterable is given.</p>
 Str::containsAny('Foo Bar', ['Baz', 'Baz']); // false  
 </code></pre>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The string to search in.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<array-key, string></span> <span class="phpdoc-var-name">$substrings</span><div class="phpdoc-description"><p>The substrings to search for in the <code>$string</code>.<br />
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable&lt;array-key, string&gt;</span> <span class="phpdoc-var-name">$substrings</span><div class="phpdoc-description"><p>The substrings to search for in the <code>$string</code>.<br />
 This must contain at least one value or exception is thrown.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span><div class="phpdoc-description"><p>Returns true if any strings in <code>$substrings</code> are in <code>$string</code>, false otherwise.</p>
 </div></div>
@@ -974,7 +974,7 @@ Will return <strong>true</strong> if empty iterable is given.</p>
 Str::containsNone('Foo Bar', ['Foo', 'Baz']); // false  
 </code></pre>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The string to search in.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<array-key, string></span> <span class="phpdoc-var-name">$substrings</span><div class="phpdoc-description"><p>The substrings to search for in the <code>$string</code>.<br />
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable&lt;array-key, string&gt;</span> <span class="phpdoc-var-name">$substrings</span><div class="phpdoc-description"><p>The substrings to search for in the <code>$string</code>.<br />
 This must contain at least one value or exception is thrown.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span><div class="phpdoc-description"><p>Returns <strong>false</strong> if any strings in <code>$substrings</code> are in <code>$string</code>, <strong>true</strong> otherwise.</p>
 </div></div>
@@ -1162,7 +1162,7 @@ If the given amount is greater than the string length, an empty string is return
 Str::endsWithAny('abc', ['a', 'b']); // false  
 </code></pre>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The string to look in.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<array-key, string></span> <span class="phpdoc-var-name">$suffixes</span><div class="phpdoc-description"><p>The suffixes to search for in <code>$string</code>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable&lt;array-key, string&gt;</span> <span class="phpdoc-var-name">$suffixes</span><div class="phpdoc-description"><p>The suffixes to search for in <code>$string</code>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span><div class="phpdoc-description"><p>Returns <strong>true</strong> if <code>$string</code> ends with <code>$suffix</code>, <strong>false</strong> otherwise.</p>
 </div></div>
             </div>
@@ -1183,7 +1183,7 @@ Str::endsWithAny('abc', ['a', 'b']); // false
 Str::endsWithNone('abc', 'x'); // true because 'abc' ends with 'c'  
 </code></pre>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The string to look in.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<array-key, string></span> <span class="phpdoc-var-name">$suffixes</span><div class="phpdoc-description"><p>The suffixes to search for in <code>$string</code>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable&lt;array-key, string&gt;</span> <span class="phpdoc-var-name">$suffixes</span><div class="phpdoc-description"><p>The suffixes to search for in <code>$string</code>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span><div class="phpdoc-description"><p>Returns <strong>true</strong> if <code>$string</code> does not end with <code>$suffix</code>, <strong>false</strong> otherwise.</p>
 </div></div>
             </div>
@@ -1220,7 +1220,7 @@ Str::firstIndexOf('abb', 'b', 3); // null
               <div class="phpdoc-description"><p>Compares a string to a list of strings to determine if they are equal.<br />
 Will return <strong>true</strong> if at least one string in the list is equal to the given string.</p>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The string to be compared.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<array-key, string></span> <span class="phpdoc-var-name">$others</span><div class="phpdoc-description"><p>The other strings to be compared.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable&lt;array-key, string&gt;</span> <span class="phpdoc-var-name">$others</span><div class="phpdoc-description"><p>The other strings to be compared.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
             </div>
           </li>
@@ -1255,7 +1255,7 @@ Str::insertAt('abc', 'xyz', -1); // 'abcxyz'
               interpolate()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$text</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<string, (int | float | string)></span> <span class="phpdoc-var-name">$replace</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$delimiterStart</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$delimiterEnd</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">string</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$text</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable&lt;string, (int | float | string)&gt;</span> <span class="phpdoc-var-name">$replace</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$delimiterStart</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$delimiterEnd</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">string</span></div>
             </div>
           </li>
           <li>
@@ -1678,7 +1678,7 @@ Any value previously set will be reset.</p>
 </code></pre>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The string to be matched and replaced.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$pattern</span><div class="phpdoc-description"><p>The pattern to search for. Must be a valid regex.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(array<(int | string), string>): string</span> <span class="phpdoc-var-name">$callback</span><div class="phpdoc-description"><p>Replacement for the found pattern.<br />
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(array&lt;(int | string), string&gt;): string</span> <span class="phpdoc-var-name">$callback</span><div class="phpdoc-description"><p>Replacement for the found pattern.<br />
 Must be a closure that returns a string.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(int | null)</span> <span class="phpdoc-var-name">$limit</span><div class="phpdoc-description"><p>[Optional] The maximum possible replacements for each pattern.<br />
 Unlimited, if <strong>null</strong> is given.<br />
@@ -1738,7 +1738,7 @@ Str::split('abcbd', 'b', 2); // ['a', 'cbd']
 Str::startsWithAny('abc', ['b', 'c']); // false  
 </code></pre>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The string to look in.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<array-key, string></span> <span class="phpdoc-var-name">$prefixes</span><div class="phpdoc-description"><p>The substrings to search for in <code>$string</code>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable&lt;array-key, string&gt;</span> <span class="phpdoc-var-name">$prefixes</span><div class="phpdoc-description"><p>The substrings to search for in <code>$string</code>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span><div class="phpdoc-description"><p>Returns <strong>true</strong> if <code>$string</code> starts with <code>$prefix</code>, <strong>false</strong> otherwise.</p>
 </div></div>
             </div>
@@ -1759,7 +1759,7 @@ Str::startsWithAny('abc', ['b', 'c']); // false
 Str::startsWithNone('abc', ['x', 'y', 'z']); // true  
 </code></pre>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The string to look in.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable<array-key, string></span> <span class="phpdoc-var-name">$prefixes</span><div class="phpdoc-description"><p>The prefixes to search for in <code>$string</code>.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable&lt;array-key, string&gt;</span> <span class="phpdoc-var-name">$prefixes</span><div class="phpdoc-description"><p>The prefixes to search for in <code>$string</code>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span><div class="phpdoc-description"><p>Returns <strong>true</strong> if <code>$string</code> does not start with <code>$prefix</code>, <strong>false</strong> otherwise.</p>
 </div></div>
             </div>

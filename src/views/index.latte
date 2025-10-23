@@ -3,7 +3,7 @@
 {block content}
   <ul class="sidebar">
     {foreach $references as $ref}
-      {varType Kirameki\ApiDocTools\ClassInfo $ref}
+      {varType Kirameki\ApiDocGenerator\ClassInfo $ref}
       <li>
         <a href="{$ref->getHtmlPath()}">{$ref->name}</a>
       </li>

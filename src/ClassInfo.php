@@ -77,11 +77,11 @@ class ClassInfo
 
     /**
      * @param ReflectionClass<object> $reflection
-     * @param DocParser $docParser
+     * @param CommentParser $docParser
      */
     public function __construct(
         protected ReflectionClass $reflection,
-        protected DocParser $docParser,
+        protected CommentParser $docParser,
     ) {
     }
 

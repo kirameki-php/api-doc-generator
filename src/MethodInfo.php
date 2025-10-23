@@ -94,12 +94,12 @@ class MethodInfo
     /**
      * @param ReflectionClass<object> $reflectionClass
      * @param ReflectionMethod $reflection
-     * @param DocParser $docParser
+     * @param CommentParser $docParser
      */
     public function __construct(
         protected ReflectionClass $reflectionClass,
         protected ReflectionMethod $reflection,
-        protected DocParser $docParser,
+        protected CommentParser $docParser,
     ) {
     }
 
@@ -137,7 +137,7 @@ class MethodInfo
                         throw new UnreachableException();
                     }
                 } elseif ($value instanceof TemplateTagValueNode) {
-                    $inner .= '<div class="phpdoc-type">' . $value->name . '</div>';
+                    $inner .= '<div class="phpdoc-type">' . $this->toHtml($value->name) . '</div>';
                 } elseif ($value instanceof ReturnTagValueNode) {
                     $inner .= ' <span class="phpdoc-return">';
                     $inner .= $this->toHtml($value->type);
@@ -150,7 +150,7 @@ class MethodInfo
                 } elseif ($value instanceof ParamOutTagValueNode) {
                     $inner .= $this->paramOutAsHtml($value->type, $value);
                 } elseif ($value instanceof ThrowsTagValueNode) {
-                    $inner .= '<div class="phpdoc-type">' . $value->type . '</div>';
+                    $inner .= '<div class="phpdoc-type">' . $this->toHtml($value->type) . '</div>';
                     $inner .= $this->descriptionAsMarkdown($value->description);
                 } elseif ($value instanceof AssertTagMethodValueNode) {
                     $inner .= '<div class="phpdoc-assert">' . $value . '</div>';
@@ -198,7 +198,7 @@ class MethodInfo
     protected function paramAsHtml(TypeNode $type, ParamTagValueNode $value): string
     {
         $content = '';
-        $content .= ' <span class="phpdoc-type">' . $type . '</span>';
+        $content .= ' <span class="phpdoc-type">' . $this->toHtml($type) . '</span>';
         $content .= ' <span class="phpdoc-var-name">';
         if ($value->isVariadic) {
             $content .= '...';
