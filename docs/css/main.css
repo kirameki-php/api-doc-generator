@@ -34,24 +34,29 @@ blockquote {
     padding: 0.5rem 0;
     font-family: var(--code-font-family);
     font-size: var(--code-font-size);
-}
-.sidebar ul {
-    padding-left: 1rem;
-}
-.sidebar li {
-    margin: 0.5rem 0;
-    list-style-type: none;
-    font-size: 0.75rem;
-}
-.sidebar .sidebar-folder {
-    color: #4b5563;
-}
-.sidebar a {
-    text-decoration: none;
-    color: #1d4ed8;
-}
-.sidebar a:hover {
-    text-decoration: underline;
+
+    ul {
+        padding-left: 1rem;
+    }
+
+    li {
+        margin: 0.5rem 0;
+        list-style-type: none;
+        font-size: 0.75rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: #1d4ed8;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .sidebar-folder {
+        color: #4b5563;
+    }
 }
 .structure-namespace {
     font-family: var(--code-font-family);
