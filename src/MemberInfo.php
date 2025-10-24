@@ -146,7 +146,11 @@ abstract class MemberInfo
                 } elseif ($value instanceof DeprecatedTagValueNode) {
                     $inner .= '<div class="phpdoc-deprecated">' . $value . '</div>';
                 } elseif ($value instanceof VarTagValueNode) {
-                    $inner .= '<div class="phpdoc-type">' . $this->toHtml($value->type) . '</div>';
+                    $inner .= ' <div class="phpdoc-type">';
+                    $inner .= ($value->type instanceof UnionTypeNode)
+                        ? $this->fixUnionOutput($this->toHtml($value->type))
+                        : $this->toHtml($value->type);
+                    $inner .= '</div>';
                 } else {
                     dump($value);
                     throw new UnreachableException();

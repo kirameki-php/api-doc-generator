@@ -138,6 +138,10 @@ blockquote {
 .property-comment {
     padding: 0.2rem;
 }
+.property-comment > .phpdoc-description {
+    margin-bottom: 1rem;
+    opacity: 60%;
+}
 .methods {
     padding-top: 1rem;
 }
@@ -171,6 +175,7 @@ blockquote {
 .method-comment > .phpdoc-description {
     margin-bottom: 1rem;
     opacity: 60%;
+    line-height: 1.4;
 }
 .phpdoc-description code {
     font-family: var(--code-font-family);
@@ -178,6 +183,12 @@ blockquote {
     background-color: #f2f2f4;
     padding: 0.2rem;
     border-radius: 0.25rem;
+}
+.phpdoc-description pre code {
+    display: block;
+    padding: 0.4rem 0.5rem;
+    margin: 0.25rem 0;
+    overflow-x: auto;
 }
 .phpdoc-tag {
     display: flex;
