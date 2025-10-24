@@ -563,9 +563,23 @@
       </span>
       <span class="structure-name">Sleep</span>
     </div>
-    <div class="structure-extends">
-    </div>
-    <div class="structure-implements">
+    <div class="properties">
+      <h3>Properties</h3>
+      <ul>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                protected
+                array
+              </span>
+              <span class="property-name">$sleepHistory</span>
+            </div>
+            <div class="property-comment">
+              <div class="phpdoc-description"><p>Keeps track of all sleep durations in microseconds.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span><div class="phpdoc-type">list&lt;int&gt;</div></div>
+            </div>
+          </li>
+      </ul>
     </div>
     <div class="methods">
       <h3>Methods</h3>
@@ -574,6 +588,7 @@
             <div class="method-signature">
               <span class="method-modifiers">
                 protected
+                function
               </span>
               executeUsleep()
             </div>
@@ -585,6 +600,7 @@
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               microseconds()
             </div>
@@ -596,6 +612,7 @@
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               milliseconds()
             </div>
@@ -607,6 +624,7 @@
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               seconds()
             </div>
@@ -618,6 +636,7 @@
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               until()
             </div>
@@ -629,22 +648,24 @@
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               getHistory()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">list&lt;int&gt;</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">list&lt;int&gt;</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               clearHistory()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">void</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">void</span></div>
             </div>
           </li>
       </ul>

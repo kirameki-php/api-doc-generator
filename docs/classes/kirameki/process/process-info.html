@@ -564,9 +564,114 @@
       </span>
       <span class="structure-name">ProcessInfo</span>
     </div>
-    <div class="structure-extends">
-    </div>
-    <div class="structure-implements">
+    <div class="properties">
+      <h3>Properties</h3>
+      <ul>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                  readonly
+                public
+                array|string
+              </span>
+              <span class="property-name">$definedCommand</span>
+            </div>
+            <div class="property-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                  readonly
+                public
+                array|string
+              </span>
+              <span class="property-name">$executedCommand</span>
+            </div>
+            <div class="property-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                  readonly
+                public
+                string
+              </span>
+              <span class="property-name">$workingDirectory</span>
+            </div>
+            <div class="property-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                  readonly
+                public
+                ?array
+              </span>
+              <span class="property-name">$envs</span>
+            </div>
+            <div class="property-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                  readonly
+                public
+                ?Kirameki\Process\TimeoutInfo
+              </span>
+              <span class="property-name">$timeout</span>
+            </div>
+            <div class="property-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                  readonly
+                public
+                int
+              </span>
+              <span class="property-name">$termSignal</span>
+            </div>
+            <div class="property-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                  readonly
+                public
+                array
+              </span>
+              <span class="property-name">$exceptedExitCodes</span>
+            </div>
+            <div class="property-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                  readonly
+                public
+                int
+              </span>
+              <span class="property-name">$pid</span>
+            </div>
+            <div class="property-comment">
+              
+            </div>
+          </li>
+      </ul>
     </div>
     <div class="methods">
       <h3>Methods</h3>
@@ -575,11 +680,12 @@
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               __construct()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(string | array&lt;int, string&gt;)</span> <span class="phpdoc-var-name">$definedCommand</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(string | array&lt;int, string&gt;)</span> <span class="phpdoc-var-name">$executedCommand</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$workingDirectory</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(array&lt;string, string&gt; | null)</span> <span class="phpdoc-var-name">$envs</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(TimeoutInfo | null)</span> <span class="phpdoc-var-name">$timeout</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$termSignal</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">array&lt;int&gt;</span> <span class="phpdoc-var-name">$exceptedExitCodes</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$pid</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(string|array&lt;int, string&gt;)</span> <span class="phpdoc-var-name">$definedCommand</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(string|array&lt;int, string&gt;)</span> <span class="phpdoc-var-name">$executedCommand</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$workingDirectory</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(array&lt;string, string&gt;|null)</span> <span class="phpdoc-var-name">$envs</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(TimeoutInfo|null)</span> <span class="phpdoc-var-name">$timeout</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$termSignal</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">array&lt;int&gt;</span> <span class="phpdoc-var-name">$exceptedExitCodes</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$pid</span></div>
             </div>
           </li>
       </ul>

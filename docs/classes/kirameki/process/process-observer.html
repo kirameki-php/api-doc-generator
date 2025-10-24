@@ -563,9 +563,73 @@
       </span>
       <span class="structure-name">ProcessObserver</span>
     </div>
-    <div class="structure-extends">
-    </div>
-    <div class="structure-implements">
+    <div class="properties">
+      <h3>Properties</h3>
+      <ul>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                  static
+                protected
+                self
+              </span>
+              <span class="property-name">$instance</span>
+            </div>
+            <div class="property-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span><div class="phpdoc-type">static</div></div>
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                  static
+                protected
+                int
+              </span>
+              <span class="property-name">$processCount</span>
+            </div>
+            <div class="property-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span><div class="phpdoc-type">int</div></div>
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                  static
+                protected
+                ?Kirameki\Event\Listeners\EventListener
+              </span>
+              <span class="property-name">$signalHandler</span>
+            </div>
+            <div class="property-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span><div class="phpdoc-type">(EventListener&lt;SignalEvent&gt; | null)</div></div>
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                protected
+                array
+              </span>
+              <span class="property-name">$exitedBeforeRegistered</span>
+            </div>
+            <div class="property-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span><div class="phpdoc-type">array&lt;int, int&gt;</div></div>
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                protected
+                array
+              </span>
+              <span class="property-name">$exitCallbacks</span>
+            </div>
+            <div class="property-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span><div class="phpdoc-type">array&lt;int, Closure(int): void&gt;</div></div>
+            </div>
+          </li>
+      </ul>
     </div>
     <div class="methods">
       <h3>Methods</h3>
@@ -575,13 +639,14 @@
               <span class="method-modifiers">
                 public
                   static
+                function
               </span>
               observe()
             </div>
             <div class="method-comment">
               <div class="phpdoc-description"><p>Observation MUST start before any process is spawned or there is a chance<br />
 a process exits before the observer has a change to register a handler.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">self</span></div>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">self</span></div>
             </div>
           </li>
           <li>
@@ -589,17 +654,19 @@ a process exits before the observer has a change to register a handler.</p>
               <span class="method-modifiers">
                 public
                   static
+                function
               </span>
               getProcessCount()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">int</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">int</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 protected
+                function
               </span>
               __construct()
             </div>
@@ -614,6 +681,7 @@ people don't initialize this accidentally.</p>
             <div class="method-signature">
               <span class="method-modifiers">
                 protected
+                function
               </span>
               handleSignal()
             </div>
@@ -623,24 +691,26 @@ that were not called through ProcessManager (e.g. calling proc_open() directly).
 Which means that $this-&gt;exitedBeforeRegistered may contain exit codes that are not<br />
 related to ProcessManager. Thus, we will clear this array when all process called<br />
 through ProcessManager have exited.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">SignalEvent</span> <span class="phpdoc-var-name">$event</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">void</span></div>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">SignalEvent</span> <span class="phpdoc-var-name">$event</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">void</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               onExit()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$pid</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(int): void</span> <span class="phpdoc-var-name">$callback</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">void</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$pid</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(int): void</span> <span class="phpdoc-var-name">$callback</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">void</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 protected
+                function
               </span>
               preProcessExit()
             </div>

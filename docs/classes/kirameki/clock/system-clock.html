@@ -563,18 +563,37 @@
       </span>
       <span class="structure-name">SystemClock</span>
     </div>
-    <div class="structure-extends">
-    </div>
-    <div class="structure-implements">
+      <div class="structure-implements">
         implements:
         <ul>
             <li>
-              <a href="classes/kirameki/clock/clock-interface.html">ClockInterface</a>
+                <a href="classes/kirameki/clock/clock-interface.html">
+                  ClockInterface
+                </a>
             </li>
             <li>
-              <a href="classes/psr/clock/clock-interface.html">Psr\Clock\ClockInterface</a>
+                <span class="no-link">
+                  Psr\Clock\ClockInterface
+                </span>
             </li>
         </ul>
+      </div>
+    <div class="properties">
+      <h3>Properties</h3>
+      <ul>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                protected
+                DateTimeZone
+              </span>
+              <span class="property-name">$timezone</span>
+            </div>
+            <div class="property-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span><div class="phpdoc-type">DateTimeZone</div></div>
+            </div>
+          </li>
+      </ul>
     </div>
     <div class="methods">
       <h3>Methods</h3>
@@ -583,33 +602,36 @@
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               __construct()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(DateTimeZone | null)</span> <span class="phpdoc-var-name">$timezone</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(DateTimeZone|null)</span> <span class="phpdoc-var-name">$timezone</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               now()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">Time</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">Time</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               getTimezone()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">DateTimeZone</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">DateTimeZone</span></div>
             </div>
           </li>
       </ul>

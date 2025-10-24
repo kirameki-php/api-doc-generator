@@ -563,21 +563,53 @@
       </span>
       <span class="structure-name">CallbackOnceListener</span>
     </div>
-    <div class="structure-extends">
+      <div class="structure-extends">
         extends:
         <ul>
             <li>
-              <a href="classes/kirameki/event/listeners/callback-listener.html">CallbackListener</a>
+                <a href="classes/kirameki/event/listeners/callback-listener.html">CallbackListener</a>
             </li>
         </ul>
-    </div>
-    <div class="structure-implements">
+      </div>
+      <div class="structure-implements">
         implements:
         <ul>
             <li>
-              <a href="classes/kirameki/event/listeners/event-listener.html">EventListener</a>
+                <a href="classes/kirameki/event/listeners/event-listener.html">
+                  EventListener
+                </a>
             </li>
         </ul>
+      </div>
+    <div class="properties">
+      <h3>Properties</h3>
+      <ul>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                public
+                string
+              </span>
+              <span class="property-name">$eventClass</span>
+            </div>
+            <div class="property-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span><div class="phpdoc-type">class-string&lt;TEvent&gt;</div></div>
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                  readonly
+                protected
+                Closure
+              </span>
+              <span class="property-name">$callback</span>
+            </div>
+            <div class="property-comment">
+              
+            </div>
+          </li>
+      </ul>
     </div>
     <div class="methods">
       <h3>Methods</h3>
@@ -586,6 +618,7 @@
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               evictAfterInvocation()
             </div>
@@ -597,6 +630,7 @@
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               __construct()
             </div>
@@ -608,6 +642,7 @@
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               __invoke()
             </div>

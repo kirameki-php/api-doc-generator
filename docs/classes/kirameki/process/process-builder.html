@@ -563,9 +563,130 @@
       </span>
       <span class="structure-name">ProcessBuilder</span>
     </div>
-    <div class="structure-extends">
-    </div>
-    <div class="structure-implements">
+    <div class="properties">
+      <h3>Properties</h3>
+      <ul>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                protected
+                ?Kirameki\Event\EventHandler
+              </span>
+              <span class="property-name">$onStarted</span>
+            </div>
+            <div class="property-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span><div class="phpdoc-type">(EventHandler&lt;ProcessStarted&gt; | null)</div></div>
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                protected
+                ?Kirameki\Event\EventHandler
+              </span>
+              <span class="property-name">$onFinished</span>
+            </div>
+            <div class="property-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span><div class="phpdoc-type">(EventHandler&lt;ProcessFinished&gt; | null)</div></div>
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                protected
+                array|string
+              </span>
+              <span class="property-name">$command</span>
+            </div>
+            <div class="property-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                protected
+                ?string
+              </span>
+              <span class="property-name">$directory</span>
+            </div>
+            <div class="property-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                protected
+                ?array
+              </span>
+              <span class="property-name">$envs</span>
+            </div>
+            <div class="property-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                protected
+                ?Kirameki\Process\TimeoutInfo
+              </span>
+              <span class="property-name">$timeout</span>
+            </div>
+            <div class="property-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                protected
+                ?int
+              </span>
+              <span class="property-name">$termSignal</span>
+            </div>
+            <div class="property-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                protected
+                ?array
+              </span>
+              <span class="property-name">$exceptedExitCodes</span>
+            </div>
+            <div class="property-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                protected
+                ?Kirameki\Stream\FileStream
+              </span>
+              <span class="property-name">$stdout</span>
+            </div>
+            <div class="property-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                protected
+                ?Kirameki\Stream\FileStream
+              </span>
+              <span class="property-name">$stderr</span>
+            </div>
+            <div class="property-comment">
+              
+            </div>
+          </li>
+      </ul>
     </div>
     <div class="methods">
       <h3>Methods</h3>
@@ -574,143 +695,156 @@
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               __construct()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(string | array&lt;int, string&gt;)</span> <span class="phpdoc-var-name">$command</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(string | null)</span> <span class="phpdoc-var-name">$directory</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(array&lt;string, string&gt; | null)</span> <span class="phpdoc-var-name">$envs</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(TimeoutInfo | null)</span> <span class="phpdoc-var-name">$timeout</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$termSignal</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">array&lt;int, int&gt;</span> <span class="phpdoc-var-name">$exceptedExitCodes</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(FileStream | null)</span> <span class="phpdoc-var-name">$stdout</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(FileStream | null)</span> <span class="phpdoc-var-name">$stderr</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(string|array&lt;int, string&gt;)</span> <span class="phpdoc-var-name">$command</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(string|null)</span> <span class="phpdoc-var-name">$directory</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(array&lt;string, string&gt;|null)</span> <span class="phpdoc-var-name">$envs</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(TimeoutInfo|null)</span> <span class="phpdoc-var-name">$timeout</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$termSignal</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">array&lt;int, int&gt;</span> <span class="phpdoc-var-name">$exceptedExitCodes</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(FileStream|null)</span> <span class="phpdoc-var-name">$stdout</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(FileStream|null)</span> <span class="phpdoc-var-name">$stderr</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               inDirectory()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(string | null)</span> <span class="phpdoc-var-name">$path</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">$this</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(string|null)</span> <span class="phpdoc-var-name">$path</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">$this</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               envs()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">array&lt;string, string&gt;</span> <span class="phpdoc-var-name">$envs</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">$this</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">array&lt;string, string&gt;</span> <span class="phpdoc-var-name">$envs</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">$this</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               timeout()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(float | null)</span> <span class="phpdoc-var-name">$durationSeconds</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$signal</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(float | null)</span> <span class="phpdoc-var-name">$killAfterSeconds</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">$this</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(float|null)</span> <span class="phpdoc-var-name">$durationSeconds</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$signal</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(float|null)</span> <span class="phpdoc-var-name">$killAfterSeconds</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">$this</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               termSignal()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$signal</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">$this</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$signal</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">$this</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               exceptedExitCodes()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">...$codes</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">$this</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">...$codes</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">$this</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               onStarted()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(ProcessStarted): mixed</span> <span class="phpdoc-var-name">$callback</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">$this</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(ProcessStarted): mixed</span> <span class="phpdoc-var-name">$callback</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">$this</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               onFinished()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(ProcessFinished): mixed</span> <span class="phpdoc-var-name">$callback</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">$this</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(ProcessFinished): mixed</span> <span class="phpdoc-var-name">$callback</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">$this</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               start()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">ProcessRunner</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">ProcessRunner</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 protected
+                function
               </span>
               buildInfo()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(string | list&lt;string&gt;)</span> <span class="phpdoc-var-name">$executedCommand</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$pid</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">ProcessInfo</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(string|list&lt;string&gt;)</span> <span class="phpdoc-var-name">$executedCommand</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$pid</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">ProcessInfo</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               buildShellCommand()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(string | list&lt;string&gt;)</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">(string|list&lt;string&gt;)</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 protected
+                function
               </span>
               buildTimeoutCommand()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@see</span><div class="phpdoc-type">https://man7.org/linux/man-pages/man1/timeout.1.html</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">list&lt;string&gt;</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@see</span><div class="phpdoc-type">https://man7.org/linux/man-pages/man1/timeout.1.html</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">list&lt;string&gt;</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 protected
+                function
               </span>
               getFileDescriptorSpec()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">array&lt;int, mixed&gt;</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">array&lt;int, mixed&gt;</span></div>
             </div>
           </li>
       </ul>

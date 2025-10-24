@@ -564,15 +564,18 @@
       </span>
       <span class="structure-name">Type</span>
     </div>
-    <div class="structure-extends">
+      <div class="structure-extends">
         extends:
         <ul>
             <li>
-              <a href="classes/kirameki/core/static-class.html">StaticClass</a>
+                <a href="classes/kirameki/core/static-class.html">StaticClass</a>
             </li>
         </ul>
-    </div>
-    <div class="structure-implements">
+      </div>
+    <div class="properties">
+      <h3>Properties</h3>
+      <ul>
+      </ul>
     </div>
     <div class="methods">
       <h3>Methods</h3>
@@ -582,12 +585,13 @@
               <span class="method-modifiers">
                 public
                   static
+                function
               </span>
               for()
             </div>
             <div class="method-comment">
               <div class="phpdoc-description"><p>Get the name of the type of <code>$value</code> as string.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">mixed</span> <span class="phpdoc-var-name">$value</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">string</span></div>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">mixed</span> <span class="phpdoc-var-name">$value</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">string</span></div>
             </div>
           </li>
           <li>
@@ -595,12 +599,13 @@
               <span class="method-modifiers">
                 public
                   static
+                function
               </span>
               is()
             </div>
             <div class="method-comment">
               <div class="phpdoc-description"><p>Check if <code>$value</code> matches the given type(s).</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">mixed</span> <span class="phpdoc-var-name">$value</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$type</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">mixed</span> <span class="phpdoc-var-name">$value</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$type</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">bool</span></div>
             </div>
           </li>
           <li>
@@ -608,11 +613,12 @@
               <span class="method-modifiers">
                 protected
                   static
+                function
               </span>
               checkIntersectionType()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">mixed</span> <span class="phpdoc-var-name">$value</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$type</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$fullType</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$requiresParentheses</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">mixed</span> <span class="phpdoc-var-name">$value</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$type</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$fullType</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$requiresParentheses</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">bool</span></div>
             </div>
           </li>
           <li>
@@ -620,11 +626,12 @@
               <span class="method-modifiers">
                 protected
                   static
+                function
               </span>
               checkSingleType()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">mixed</span> <span class="phpdoc-var-name">$value</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$type</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">mixed</span> <span class="phpdoc-var-name">$value</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$type</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">bool</span></div>
             </div>
           </li>
           <li>
@@ -632,6 +639,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               __construct()
             </div>

@@ -563,15 +563,184 @@
       </span>
       <span class="structure-name">Uri</span>
     </div>
-    <div class="structure-extends">
-    </div>
-    <div class="structure-implements">
+      <div class="structure-implements">
         implements:
         <ul>
             <li>
-              <a href="classes/stringable.html">Stringable</a>
+                <span class="no-link">
+                  Stringable
+                </span>
             </li>
         </ul>
+      </div>
+    <div class="properties">
+      <h3>Properties</h3>
+      <ul>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                public
+                string
+              </span>
+              <span class="property-name">$protocol</span>
+            </div>
+            <div class="property-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span><div class="phpdoc-type">string</div></div>
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                public
+                string
+              </span>
+              <span class="property-name">$userinfo</span>
+            </div>
+            <div class="property-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">string</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                public
+                string
+              </span>
+              <span class="property-name">$host</span>
+            </div>
+            <div class="property-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">string</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                public
+                string
+              </span>
+              <span class="property-name">$authority</span>
+            </div>
+            <div class="property-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">string</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                public
+                string
+              </span>
+              <span class="property-name">$origin</span>
+            </div>
+            <div class="property-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">string</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                  readonly
+                public
+                string
+              </span>
+              <span class="property-name">$scheme</span>
+            </div>
+            <div class="property-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                  readonly
+                public
+                string
+              </span>
+              <span class="property-name">$hostname</span>
+            </div>
+            <div class="property-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                  readonly
+                public
+                ?int
+              </span>
+              <span class="property-name">$port</span>
+            </div>
+            <div class="property-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                  readonly
+                public
+                string
+              </span>
+              <span class="property-name">$path</span>
+            </div>
+            <div class="property-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                  readonly
+                public
+                string
+              </span>
+              <span class="property-name">$query</span>
+            </div>
+            <div class="property-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                  readonly
+                public
+                string
+              </span>
+              <span class="property-name">$fragment</span>
+            </div>
+            <div class="property-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                  readonly
+                public
+                string
+              </span>
+              <span class="property-name">$username</span>
+            </div>
+            <div class="property-comment">
+              
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                  readonly
+                public
+                string
+              </span>
+              <span class="property-name">$password</span>
+            </div>
+            <div class="property-comment">
+              
+            </div>
+          </li>
+      </ul>
     </div>
     <div class="methods">
       <h3>Methods</h3>
@@ -581,17 +750,19 @@
               <span class="method-modifiers">
                 public
                   static
+                function
               </span>
               parse()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$uri</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">static</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$uri</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">static</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               __construct()
             </div>
@@ -603,77 +774,84 @@
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               parseQuery()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">array&lt;(array&lt;string, mixed&gt; | string)&gt;</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">array&lt;(array&lt;string, mixed&gt; | string)&gt;</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               getProtocolComponent()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">string</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">string</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               getUserInfoComponent()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">string</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">string</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               getQueryComponent()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">string</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">string</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               getFragmentComponent()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">string</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">string</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               toString()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">string</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">string</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               __toString()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">string</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">string</span></div>
             </div>
           </li>
       </ul>

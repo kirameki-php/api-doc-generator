@@ -564,33 +564,94 @@
       </span>
       <span class="structure-name">TestCase</span>
     </div>
-    <div class="structure-extends">
+      <div class="structure-extends">
         extends:
         <ul>
             <li>
-              <a href="classes/php-unit/framework/test-case.html">PHPUnit\Framework\TestCase</a>
+                <span class="no-link">PHPUnit\Framework\TestCase</span>
             </li>
             <li>
-              <a href="classes/php-unit/framework/assert.html">PHPUnit\Framework\Assert</a>
+                <span class="no-link">PHPUnit\Framework\Assert</span>
             </li>
         </ul>
-    </div>
-    <div class="structure-implements">
+      </div>
+      <div class="structure-implements">
         implements:
         <ul>
             <li>
-              <a href="classes/countable.html">Countable</a>
+                <span class="no-link">
+                  Countable
+                </span>
             </li>
             <li>
-              <a href="classes/php-unit/framework/test.html">PHPUnit\Framework\Test</a>
+                <span class="no-link">
+                  PHPUnit\Framework\Test
+                </span>
             </li>
             <li>
-              <a href="classes/php-unit/framework/self-describing.html">PHPUnit\Framework\SelfDescribing</a>
+                <span class="no-link">
+                  PHPUnit\Framework\SelfDescribing
+                </span>
             </li>
             <li>
-              <a href="classes/php-unit/framework/reorderable.html">PHPUnit\Framework\Reorderable</a>
+                <span class="no-link">
+                  PHPUnit\Framework\Reorderable
+                </span>
             </li>
         </ul>
+      </div>
+    <div class="properties">
+      <h3>Properties</h3>
+      <ul>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                private
+                array
+              </span>
+              <span class="property-name">$beforeSetupCallbacks</span>
+            </div>
+            <div class="property-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span><div class="phpdoc-type">list&lt;Closure(): mixed&gt;</div></div>
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                private
+                array
+              </span>
+              <span class="property-name">$afterSetupCallbacks</span>
+            </div>
+            <div class="property-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span><div class="phpdoc-type">list&lt;Closure(): mixed&gt;</div></div>
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                private
+                array
+              </span>
+              <span class="property-name">$beforeTearDownCallbacks</span>
+            </div>
+            <div class="property-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span><div class="phpdoc-type">list&lt;Closure(): mixed&gt;</div></div>
+            </div>
+          </li>
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                private
+                array
+              </span>
+              <span class="property-name">$afterTearDownCallbacks</span>
+            </div>
+            <div class="property-comment">
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span><div class="phpdoc-type">list&lt;Closure(): mixed&gt;</div></div>
+            </div>
+          </li>
+      </ul>
     </div>
     <div class="methods">
       <h3>Methods</h3>
@@ -599,83 +660,91 @@
             <div class="method-signature">
               <span class="method-modifiers">
                 protected
+                function
               </span>
               runBeforeSetup()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(): mixed</span> <span class="phpdoc-var-name">$callback</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">void</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(): mixed</span> <span class="phpdoc-var-name">$callback</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">void</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 protected
+                function
               </span>
               runAfterSetup()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(): mixed</span> <span class="phpdoc-var-name">$callback</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">void</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(): mixed</span> <span class="phpdoc-var-name">$callback</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">void</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 protected
+                function
               </span>
               runBeforeTearDown()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(): mixed</span> <span class="phpdoc-var-name">$callback</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">void</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(): mixed</span> <span class="phpdoc-var-name">$callback</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">void</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 protected
+                function
               </span>
               runAfterTearDown()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(): mixed</span> <span class="phpdoc-var-name">$callback</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">void</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Closure(): mixed</span> <span class="phpdoc-var-name">$callback</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">void</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 protected
+                function
               </span>
               setUp()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">void</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">void</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 protected
+                function
               </span>
               tearDown()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">void</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">void</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 protected
+                function
               </span>
               throwOnError()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$level</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">void</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$level</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">void</span></div>
             </div>
           </li>
           <li>
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               expectErrorMessage()
             </div>
@@ -687,6 +756,7 @@
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               expectWarningMessage()
             </div>
@@ -699,6 +769,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               __construct()
             </div>
@@ -711,6 +782,7 @@
               <span class="method-modifiers">
                 public
                   static
+                function
               </span>
               setUpBeforeClass()
             </div>
@@ -724,6 +796,7 @@
               <span class="method-modifiers">
                 public
                   static
+                function
               </span>
               tearDownAfterClass()
             </div>
@@ -736,6 +809,7 @@
             <div class="method-signature">
               <span class="method-modifiers">
                 protected
+                function
               </span>
               assertPreConditions()
             </div>
@@ -749,6 +823,7 @@
             <div class="method-signature">
               <span class="method-modifiers">
                 protected
+                function
               </span>
               assertPostConditions()
             </div>
@@ -762,6 +837,7 @@
             <div class="method-signature">
               <span class="method-modifiers">
                 public
+                function
               </span>
               toString()
             </div>
@@ -775,6 +851,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               count()
             </div>
@@ -787,6 +864,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               status()
             </div>
@@ -799,6 +877,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               run()
             </div>
@@ -811,11 +890,12 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               groups()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">list&lt;string&gt;</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@internal</span><div class="phpdoc-type">This method is not covered by the backward compatibility promise for PHPUnit</div></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">list&lt;string&gt;</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@internal</span><div class="phpdoc-type">This method is not covered by the backward compatibility promise for PHPUnit</div></div>
             </div>
           </li>
           <li>
@@ -823,6 +903,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               setGroups()
             </div>
@@ -835,6 +916,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               nameWithDataSet()
             </div>
@@ -847,11 +929,12 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               name()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">non-empty-string</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@internal</span><div class="phpdoc-type">This method is not covered by the backward compatibility promise for PHPUnit</div></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">non-empty-string</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@internal</span><div class="phpdoc-type">This method is not covered by the backward compatibility promise for PHPUnit</div></div>
             </div>
           </li>
           <li>
@@ -859,6 +942,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               size()
             </div>
@@ -871,6 +955,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               hasUnexpectedOutput()
             </div>
@@ -883,6 +968,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               output()
             </div>
@@ -895,6 +981,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               doesNotPerformAssertions()
             </div>
@@ -907,6 +994,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               expectsOutput()
             </div>
@@ -919,6 +1007,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               runBare()
             </div>
@@ -931,6 +1020,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               setDependencies()
             </div>
@@ -943,6 +1033,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               setDependencyInput()
             </div>
@@ -955,11 +1046,12 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               dependencyInput()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">array&lt;non-empty-string, array&lt;mixed&gt;&gt;</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@internal</span><div class="phpdoc-type">This method is not covered by the backward compatibility promise for PHPUnit</div></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">array&lt;non-empty-string, array&lt;mixed&gt;&gt;</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@internal</span><div class="phpdoc-type">This method is not covered by the backward compatibility promise for PHPUnit</div></div>
             </div>
           </li>
           <li>
@@ -967,6 +1059,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               hasDependencyInput()
             </div>
@@ -979,6 +1072,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               setBackupGlobals()
             </div>
@@ -991,6 +1085,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               setBackupGlobalsExcludeList()
             </div>
@@ -1003,6 +1098,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               setBackupStaticProperties()
             </div>
@@ -1015,6 +1111,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               setBackupStaticPropertiesExcludeList()
             </div>
@@ -1027,6 +1124,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               setRunTestInSeparateProcess()
             </div>
@@ -1039,6 +1137,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               setRunClassInSeparateProcess()
             </div>
@@ -1051,6 +1150,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               setPreserveGlobalState()
             </div>
@@ -1063,6 +1163,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               setInIsolation()
             </div>
@@ -1075,6 +1176,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               result()
             </div>
@@ -1087,6 +1189,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               setResult()
             </div>
@@ -1099,6 +1202,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               registerMockObject()
             </div>
@@ -1111,6 +1215,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               addToAssertionCount()
             </div>
@@ -1123,11 +1228,12 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               numberOfAssertionsPerformed()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@internal</span><div class="phpdoc-type">This method is not covered by the backward compatibility promise for PHPUnit</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(0 | positive-int)</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@internal</span><div class="phpdoc-type">This method is not covered by the backward compatibility promise for PHPUnit</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">(0|positive-int)</span></div>
             </div>
           </li>
           <li>
@@ -1135,6 +1241,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               usesDataProvider()
             </div>
@@ -1147,6 +1254,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               dataName()
             </div>
@@ -1159,6 +1267,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               dataSetAsString()
             </div>
@@ -1171,6 +1280,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               dataSetAsStringWithData()
             </div>
@@ -1183,11 +1293,12 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               providedData()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">array&lt;mixed&gt;</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@internal</span><div class="phpdoc-type">This method is not covered by the backward compatibility promise for PHPUnit</div></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">array&lt;mixed&gt;</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@internal</span><div class="phpdoc-type">This method is not covered by the backward compatibility promise for PHPUnit</div></div>
             </div>
           </li>
           <li>
@@ -1195,6 +1306,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               sortId()
             </div>
@@ -1207,11 +1319,12 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               provides()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">list&lt;ExecutionOrderDependency&gt;</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@internal</span><div class="phpdoc-type">This method is not covered by the backward compatibility promise for PHPUnit</div></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">list&lt;ExecutionOrderDependency&gt;</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@internal</span><div class="phpdoc-type">This method is not covered by the backward compatibility promise for PHPUnit</div></div>
             </div>
           </li>
           <li>
@@ -1219,11 +1332,12 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               requires()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">list&lt;ExecutionOrderDependency&gt;</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@internal</span><div class="phpdoc-type">This method is not covered by the backward compatibility promise for PHPUnit</div></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">list&lt;ExecutionOrderDependency&gt;</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@internal</span><div class="phpdoc-type">This method is not covered by the backward compatibility promise for PHPUnit</div></div>
             </div>
           </li>
           <li>
@@ -1231,6 +1345,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               setData()
             </div>
@@ -1243,6 +1358,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               valueObjectForEvents()
             </div>
@@ -1255,6 +1371,7 @@
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               wasPrepared()
             </div>
@@ -1267,6 +1384,7 @@
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               any()
             </div>
@@ -1281,6 +1399,7 @@ zero or more times.</p>
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               never()
             </div>
@@ -1294,6 +1413,7 @@ zero or more times.</p>
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               atLeast()
             </div>
@@ -1308,6 +1428,7 @@ at least N times.</p>
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               atLeastOnce()
             </div>
@@ -1321,6 +1442,7 @@ at least N times.</p>
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               once()
             </div>
@@ -1334,6 +1456,7 @@ at least N times.</p>
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               exactly()
             </div>
@@ -1348,6 +1471,7 @@ exactly $count times.</p>
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               atMost()
             </div>
@@ -1362,6 +1486,7 @@ at most N times.</p>
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               throwException()
             </div>
@@ -1374,6 +1499,7 @@ at most N times.</p>
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               getActualOutputForAssertion()
             </div>
@@ -1386,6 +1512,7 @@ at most N times.</p>
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               expectOutputRegex()
             </div>
@@ -1398,6 +1525,7 @@ at most N times.</p>
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               expectOutputString()
             </div>
@@ -1410,6 +1538,7 @@ at most N times.</p>
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               expectErrorLog()
             </div>
@@ -1422,6 +1551,7 @@ at most N times.</p>
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               expectException()
             </div>
@@ -1434,6 +1564,7 @@ at most N times.</p>
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               expectExceptionCode()
             </div>
@@ -1446,6 +1577,7 @@ at most N times.</p>
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               expectExceptionMessage()
             </div>
@@ -1458,6 +1590,7 @@ at most N times.</p>
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               expectExceptionMessageMatches()
             </div>
@@ -1470,6 +1603,7 @@ at most N times.</p>
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               expectExceptionObject()
             </div>
@@ -1485,6 +1619,7 @@ expected exception code are retrieved from a given Exception object.</p>
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               expectNotToPerformAssertions()
             </div>
@@ -1497,6 +1632,7 @@ expected exception code are retrieved from a given Exception object.</p>
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               expectUserDeprecationMessage()
             </div>
@@ -1509,6 +1645,7 @@ expected exception code are retrieved from a given Exception object.</p>
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               expectUserDeprecationMessageMatches()
             </div>
@@ -1521,12 +1658,13 @@ expected exception code are retrieved from a given Exception object.</p>
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               getMockBuilder()
             </div>
             <div class="method-comment">
               <div class="phpdoc-description"><p>Returns a builder object to create mock objects using a fluent interface.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">RealInstanceType</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">class-string&lt;RealInstanceType&gt;</span> <span class="phpdoc-var-name">$className</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">MockBuilder&lt;RealInstanceType&gt;</span></div>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">RealInstanceType</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">class-string&lt;RealInstanceType&gt;</span> <span class="phpdoc-var-name">$className</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">MockBuilder&lt;RealInstanceType&gt;</span></div>
             </div>
           </li>
           <li>
@@ -1534,6 +1672,7 @@ expected exception code are retrieved from a given Exception object.</p>
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               registerComparator()
             </div>
@@ -1546,6 +1685,7 @@ expected exception code are retrieved from a given Exception object.</p>
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               registerFailureType()
             </div>
@@ -1558,12 +1698,13 @@ expected exception code are retrieved from a given Exception object.</p>
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               createMock()
             </div>
             <div class="method-comment">
               <div class="phpdoc-description"><p>Creates a mock object for the specified interface or class.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">RealInstanceType</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">class-string&lt;RealInstanceType&gt;</span> <span class="phpdoc-var-name">$type</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">InvalidArgumentException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">MockObjectException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">NoPreviousThrowableException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(MockObject &amp; RealInstanceType)</span></div>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">RealInstanceType</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">class-string&lt;RealInstanceType&gt;</span> <span class="phpdoc-var-name">$type</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">InvalidArgumentException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">MockObjectException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">NoPreviousThrowableException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">(MockObject &amp; RealInstanceType)</span></div>
             </div>
           </li>
           <li>
@@ -1571,6 +1712,7 @@ expected exception code are retrieved from a given Exception object.</p>
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               createMockForIntersectionOfInterfaces()
             </div>
@@ -1583,12 +1725,13 @@ expected exception code are retrieved from a given Exception object.</p>
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               createConfiguredMock()
             </div>
             <div class="method-comment">
               <div class="phpdoc-description"><p>Creates (and configures) a mock object for the specified interface or class.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">RealInstanceType</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">class-string&lt;RealInstanceType&gt;</span> <span class="phpdoc-var-name">$type</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">array&lt;non-empty-string, mixed&gt;</span> <span class="phpdoc-var-name">$configuration</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">InvalidArgumentException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">MockObjectException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">NoPreviousThrowableException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(MockObject &amp; RealInstanceType)</span></div>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">RealInstanceType</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">class-string&lt;RealInstanceType&gt;</span> <span class="phpdoc-var-name">$type</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">array&lt;non-empty-string, mixed&gt;</span> <span class="phpdoc-var-name">$configuration</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">InvalidArgumentException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">MockObjectException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">NoPreviousThrowableException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">(MockObject &amp; RealInstanceType)</span></div>
             </div>
           </li>
           <li>
@@ -1596,12 +1739,13 @@ expected exception code are retrieved from a given Exception object.</p>
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               createPartialMock()
             </div>
             <div class="method-comment">
               <div class="phpdoc-description"><p>Creates a partial mock object for the specified interface or class.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">class-string&lt;RealInstanceType&gt;</span> <span class="phpdoc-var-name">$type</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">list&lt;non-empty-string&gt;</span> <span class="phpdoc-var-name">$methods</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">RealInstanceType</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">InvalidArgumentException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">MockObjectException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(MockObject &amp; RealInstanceType)</span></div>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">class-string&lt;RealInstanceType&gt;</span> <span class="phpdoc-var-name">$type</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">list&lt;non-empty-string&gt;</span> <span class="phpdoc-var-name">$methods</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">RealInstanceType</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">InvalidArgumentException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">MockObjectException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">(MockObject &amp; RealInstanceType)</span></div>
             </div>
           </li>
           <li>
@@ -1609,6 +1753,7 @@ expected exception code are retrieved from a given Exception object.</p>
               <span class="method-modifiers">
                   final
                 protected
+                function
               </span>
               provideAdditionalInformation()
             </div>
@@ -1620,6 +1765,7 @@ expected exception code are retrieved from a given Exception object.</p>
             <div class="method-signature">
               <span class="method-modifiers">
                 protected
+                function
               </span>
               transformException()
             </div>
@@ -1631,6 +1777,7 @@ expected exception code are retrieved from a given Exception object.</p>
             <div class="method-signature">
               <span class="method-modifiers">
                 protected
+                function
               </span>
               onNotSuccessfulTest()
             </div>
@@ -1645,12 +1792,13 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 protected
                   static
+                function
               </span>
               createStub()
             </div>
             <div class="method-comment">
               <div class="phpdoc-description"><p>Creates a test stub for the specified interface or class.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">RealInstanceType</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">class-string&lt;RealInstanceType&gt;</span> <span class="phpdoc-var-name">$type</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">InvalidArgumentException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">MockObjectException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">NoPreviousThrowableException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(RealInstanceType &amp; Stub)</span></div>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">RealInstanceType</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">class-string&lt;RealInstanceType&gt;</span> <span class="phpdoc-var-name">$type</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">InvalidArgumentException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">MockObjectException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">NoPreviousThrowableException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">(RealInstanceType &amp; Stub)</span></div>
             </div>
           </li>
           <li>
@@ -1659,6 +1807,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 protected
                   static
+                function
               </span>
               createStubForIntersectionOfInterfaces()
             </div>
@@ -1672,12 +1821,13 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 protected
                   static
+                function
               </span>
               createConfiguredStub()
             </div>
             <div class="method-comment">
               <div class="phpdoc-description"><p>Creates (and configures) a test stub for the specified interface or class.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">RealInstanceType</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">class-string&lt;RealInstanceType&gt;</span> <span class="phpdoc-var-name">$type</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">array&lt;non-empty-string, mixed&gt;</span> <span class="phpdoc-var-name">$configuration</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">InvalidArgumentException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">MockObjectException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">NoPreviousThrowableException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">(RealInstanceType &amp; Stub)</span></div>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">RealInstanceType</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">class-string&lt;RealInstanceType&gt;</span> <span class="phpdoc-var-name">$type</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">array&lt;non-empty-string, mixed&gt;</span> <span class="phpdoc-var-name">$configuration</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">InvalidArgumentException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">MockObjectException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">NoPreviousThrowableException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">(RealInstanceType &amp; Stub)</span></div>
             </div>
           </li>
           <li>
@@ -1686,6 +1836,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertArrayIsEqualToArrayOnlyConsideringListOfKeys()
             </div>
@@ -1700,6 +1851,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertArrayIsEqualToArrayIgnoringListOfKeys()
             </div>
@@ -1714,6 +1866,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertArrayIsIdenticalToArrayOnlyConsideringListOfKeys()
             </div>
@@ -1728,6 +1881,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertArrayIsIdenticalToArrayIgnoringListOfKeys()
             </div>
@@ -1742,12 +1896,13 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertArrayHasKey()
             </div>
             <div class="method-comment">
               <div class="phpdoc-description"><p>Asserts that an array has a specified key.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(array&lt;mixed&gt; | ArrayAccess&lt;array-key, mixed&gt;)</span> <span class="phpdoc-var-name">$array</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">Exception</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">ExpectationFailedException</div></div>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(array&lt;mixed&gt;|ArrayAccess&lt;array-key, mixed&gt;)</span> <span class="phpdoc-var-name">$array</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">Exception</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">ExpectationFailedException</div></div>
             </div>
           </li>
           <li>
@@ -1756,12 +1911,13 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertArrayNotHasKey()
             </div>
             <div class="method-comment">
               <div class="phpdoc-description"><p>Asserts that an array does not have a specified key.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(array&lt;mixed&gt; | ArrayAccess&lt;array-key, mixed&gt;)</span> <span class="phpdoc-var-name">$array</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">Exception</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">ExpectationFailedException</div></div>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(array&lt;mixed&gt;|ArrayAccess&lt;array-key, mixed&gt;)</span> <span class="phpdoc-var-name">$array</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">Exception</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">ExpectationFailedException</div></div>
             </div>
           </li>
           <li>
@@ -1770,6 +1926,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsList()
             </div>
@@ -1783,6 +1940,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContains()
             </div>
@@ -1797,6 +1955,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsEquals()
             </div>
@@ -1810,6 +1969,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertNotContains()
             </div>
@@ -1824,6 +1984,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertNotContainsEquals()
             </div>
@@ -1837,12 +1998,13 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsOnly()
             </div>
             <div class="method-comment">
               <div class="phpdoc-description"><p>Asserts that a haystack contains only values of a given type.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(&#039;array&#039; | &#039;bool&#039; | &#039;boolean&#039; | &#039;callable&#039; | &#039;double&#039; | &#039;float&#039; | &#039;int&#039; | &#039;integer&#039; | &#039;iterable&#039; | &#039;null&#039; | &#039;numeric&#039; | &#039;object&#039; | &#039;real&#039; | &#039;resource (closed)&#039; | &#039;resource&#039; | &#039;scalar&#039; | &#039;string&#039;)</span> <span class="phpdoc-var-name">$type</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable&lt;mixed&gt;</span> <span class="phpdoc-var-name">$haystack</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">Exception</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">ExpectationFailedException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@deprecated</span><div class="phpdoc-deprecated">https://github.com/sebastianbergmann/phpunit/issues/6056</div></div>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(&#039;array&#039;|&#039;bool&#039;|&#039;boolean&#039;|&#039;callable&#039;|&#039;double&#039;|&#039;float&#039;|&#039;int&#039;|&#039;integer&#039;|&#039;iterable&#039;|&#039;null&#039;|&#039;numeric&#039;|&#039;object&#039;|&#039;real&#039;|&#039;resource (closed)&#039;|&#039;resource&#039;|&#039;scalar&#039;|&#039;string&#039;)</span> <span class="phpdoc-var-name">$type</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable&lt;mixed&gt;</span> <span class="phpdoc-var-name">$haystack</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">Exception</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">ExpectationFailedException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@deprecated</span><div class="phpdoc-deprecated">https://github.com/sebastianbergmann/phpunit/issues/6056</div></div>
             </div>
           </li>
           <li>
@@ -1851,6 +2013,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsOnlyArray()
             </div>
@@ -1865,6 +2028,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsOnlyBool()
             </div>
@@ -1879,6 +2043,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsOnlyCallable()
             </div>
@@ -1893,6 +2058,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsOnlyFloat()
             </div>
@@ -1907,6 +2073,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsOnlyInt()
             </div>
@@ -1921,6 +2088,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsOnlyIterable()
             </div>
@@ -1935,6 +2103,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsOnlyNull()
             </div>
@@ -1949,6 +2118,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsOnlyNumeric()
             </div>
@@ -1963,6 +2133,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsOnlyObject()
             </div>
@@ -1977,6 +2148,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsOnlyResource()
             </div>
@@ -1991,6 +2163,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsOnlyClosedResource()
             </div>
@@ -2005,6 +2178,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsOnlyScalar()
             </div>
@@ -2019,6 +2193,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsOnlyString()
             </div>
@@ -2033,6 +2208,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsOnlyInstancesOf()
             </div>
@@ -2047,12 +2223,13 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertNotContainsOnly()
             </div>
             <div class="method-comment">
               <div class="phpdoc-description"><p>Asserts that a haystack does not contain only values of a given type.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(&#039;array&#039; | &#039;bool&#039; | &#039;boolean&#039; | &#039;callable&#039; | &#039;double&#039; | &#039;float&#039; | &#039;int&#039; | &#039;integer&#039; | &#039;iterable&#039; | &#039;null&#039; | &#039;numeric&#039; | &#039;object&#039; | &#039;real&#039; | &#039;resource (closed)&#039; | &#039;resource&#039; | &#039;scalar&#039; | &#039;string&#039;)</span> <span class="phpdoc-var-name">$type</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable&lt;mixed&gt;</span> <span class="phpdoc-var-name">$haystack</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">Exception</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">ExpectationFailedException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@deprecated</span><div class="phpdoc-deprecated">https://github.com/sebastianbergmann/phpunit/issues/6056</div></div>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(&#039;array&#039;|&#039;bool&#039;|&#039;boolean&#039;|&#039;callable&#039;|&#039;double&#039;|&#039;float&#039;|&#039;int&#039;|&#039;integer&#039;|&#039;iterable&#039;|&#039;null&#039;|&#039;numeric&#039;|&#039;object&#039;|&#039;real&#039;|&#039;resource (closed)&#039;|&#039;resource&#039;|&#039;scalar&#039;|&#039;string&#039;)</span> <span class="phpdoc-var-name">$type</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable&lt;mixed&gt;</span> <span class="phpdoc-var-name">$haystack</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">Exception</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">ExpectationFailedException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@deprecated</span><div class="phpdoc-deprecated">https://github.com/sebastianbergmann/phpunit/issues/6056</div></div>
             </div>
           </li>
           <li>
@@ -2061,6 +2238,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsNotOnlyArray()
             </div>
@@ -2075,6 +2253,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsNotOnlyBool()
             </div>
@@ -2089,6 +2268,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsNotOnlyCallable()
             </div>
@@ -2103,6 +2283,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsNotOnlyFloat()
             </div>
@@ -2117,6 +2298,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsNotOnlyInt()
             </div>
@@ -2131,6 +2313,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsNotOnlyIterable()
             </div>
@@ -2145,6 +2328,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsNotOnlyNull()
             </div>
@@ -2159,6 +2343,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsNotOnlyNumeric()
             </div>
@@ -2173,6 +2358,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsNotOnlyObject()
             </div>
@@ -2187,6 +2373,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsNotOnlyResource()
             </div>
@@ -2201,6 +2388,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsNotOnlyClosedResource()
             </div>
@@ -2215,6 +2403,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsNotOnlyScalar()
             </div>
@@ -2229,6 +2418,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsNotOnlyString()
             </div>
@@ -2243,6 +2433,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertContainsNotOnlyInstancesOf()
             </div>
@@ -2257,12 +2448,13 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertCount()
             </div>
             <div class="method-comment">
               <div class="phpdoc-description"><p>Asserts the number of elements of an array, Countable or Traversable.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Countable | iterable&lt;mixed&gt;)</span> <span class="phpdoc-var-name">$haystack</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">Exception</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">ExpectationFailedException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">GeneratorNotSupportedException</div></div>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Countable|iterable&lt;mixed&gt;)</span> <span class="phpdoc-var-name">$haystack</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">Exception</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">ExpectationFailedException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">GeneratorNotSupportedException</div></div>
             </div>
           </li>
           <li>
@@ -2271,12 +2463,13 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertNotCount()
             </div>
             <div class="method-comment">
               <div class="phpdoc-description"><p>Asserts the number of elements of an array, Countable or Traversable.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Countable | iterable&lt;mixed&gt;)</span> <span class="phpdoc-var-name">$haystack</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">Exception</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">ExpectationFailedException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">GeneratorNotSupportedException</div></div>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Countable|iterable&lt;mixed&gt;)</span> <span class="phpdoc-var-name">$haystack</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">Exception</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">ExpectationFailedException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">GeneratorNotSupportedException</div></div>
             </div>
           </li>
           <li>
@@ -2285,6 +2478,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertEquals()
             </div>
@@ -2299,6 +2493,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertEqualsCanonicalizing()
             </div>
@@ -2313,6 +2508,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertEqualsIgnoringCase()
             </div>
@@ -2327,6 +2523,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertEqualsWithDelta()
             </div>
@@ -2341,6 +2538,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertNotEquals()
             </div>
@@ -2355,6 +2553,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertNotEqualsCanonicalizing()
             </div>
@@ -2369,6 +2568,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertNotEqualsIgnoringCase()
             </div>
@@ -2383,6 +2583,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertNotEqualsWithDelta()
             </div>
@@ -2397,6 +2598,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertObjectEquals()
             </div>
@@ -2410,6 +2612,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertObjectNotEquals()
             </div>
@@ -2423,6 +2626,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertEmpty()
             </div>
@@ -2437,6 +2641,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertNotEmpty()
             </div>
@@ -2451,6 +2656,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertGreaterThan()
             </div>
@@ -2465,6 +2671,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertGreaterThanOrEqual()
             </div>
@@ -2479,6 +2686,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertLessThan()
             </div>
@@ -2493,6 +2701,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertLessThanOrEqual()
             </div>
@@ -2507,6 +2716,7 @@ expected exception code are retrieved from a given Exception object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertFileEquals()
             </div>
@@ -2522,6 +2732,7 @@ file.</p>
                   final
                 public
                   static
+                function
               </span>
               assertFileEqualsCanonicalizing()
             </div>
@@ -2537,6 +2748,7 @@ file (canonicalizing).</p>
                   final
                 public
                   static
+                function
               </span>
               assertFileEqualsIgnoringCase()
             </div>
@@ -2552,6 +2764,7 @@ file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertFileNotEquals()
             </div>
@@ -2567,6 +2780,7 @@ another file.</p>
                   final
                 public
                   static
+                function
               </span>
               assertFileNotEqualsCanonicalizing()
             </div>
@@ -2582,6 +2796,7 @@ file (canonicalizing).</p>
                   final
                 public
                   static
+                function
               </span>
               assertFileNotEqualsIgnoringCase()
             </div>
@@ -2597,6 +2812,7 @@ file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertStringEqualsFile()
             </div>
@@ -2612,6 +2828,7 @@ to the contents of a file.</p>
                   final
                 public
                   static
+                function
               </span>
               assertStringEqualsFileCanonicalizing()
             </div>
@@ -2627,6 +2844,7 @@ to the contents of a file (canonicalizing).</p>
                   final
                 public
                   static
+                function
               </span>
               assertStringEqualsFileIgnoringCase()
             </div>
@@ -2642,6 +2860,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertStringNotEqualsFile()
             </div>
@@ -2657,6 +2876,7 @@ to the contents of a file.</p>
                   final
                 public
                   static
+                function
               </span>
               assertStringNotEqualsFileCanonicalizing()
             </div>
@@ -2672,6 +2892,7 @@ to the contents of a file (canonicalizing).</p>
                   final
                 public
                   static
+                function
               </span>
               assertStringNotEqualsFileIgnoringCase()
             </div>
@@ -2687,6 +2908,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsReadable()
             </div>
@@ -2701,6 +2923,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsNotReadable()
             </div>
@@ -2715,6 +2938,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsWritable()
             </div>
@@ -2729,6 +2953,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsNotWritable()
             </div>
@@ -2743,6 +2968,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertDirectoryExists()
             </div>
@@ -2757,6 +2983,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertDirectoryDoesNotExist()
             </div>
@@ -2771,6 +2998,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertDirectoryIsReadable()
             </div>
@@ -2785,6 +3013,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertDirectoryIsNotReadable()
             </div>
@@ -2799,6 +3028,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertDirectoryIsWritable()
             </div>
@@ -2813,6 +3043,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertDirectoryIsNotWritable()
             </div>
@@ -2827,6 +3058,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertFileExists()
             </div>
@@ -2841,6 +3073,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertFileDoesNotExist()
             </div>
@@ -2855,6 +3088,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertFileIsReadable()
             </div>
@@ -2869,6 +3103,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertFileIsNotReadable()
             </div>
@@ -2883,6 +3118,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertFileIsWritable()
             </div>
@@ -2897,6 +3133,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertFileIsNotWritable()
             </div>
@@ -2911,6 +3148,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertTrue()
             </div>
@@ -2925,6 +3163,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertNotTrue()
             </div>
@@ -2939,6 +3178,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertFalse()
             </div>
@@ -2953,6 +3193,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertNotFalse()
             </div>
@@ -2967,6 +3208,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertNull()
             </div>
@@ -2981,6 +3223,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertNotNull()
             </div>
@@ -2995,6 +3238,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertFinite()
             </div>
@@ -3009,6 +3253,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertInfinite()
             </div>
@@ -3023,6 +3268,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertNan()
             </div>
@@ -3037,6 +3283,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertObjectHasProperty()
             </div>
@@ -3051,6 +3298,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertObjectNotHasProperty()
             </div>
@@ -3065,6 +3313,7 @@ to the contents of a file (ignoring case).</p>
                   final
                 public
                   static
+                function
               </span>
               assertSame()
             </div>
@@ -3081,6 +3330,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertNotSame()
             </div>
@@ -3097,6 +3347,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertInstanceOf()
             </div>
@@ -3111,6 +3362,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertNotInstanceOf()
             </div>
@@ -3125,6 +3377,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsArray()
             </div>
@@ -3139,6 +3392,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsBool()
             </div>
@@ -3153,6 +3407,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsFloat()
             </div>
@@ -3167,6 +3422,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsInt()
             </div>
@@ -3181,6 +3437,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsNumeric()
             </div>
@@ -3195,6 +3452,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsObject()
             </div>
@@ -3209,6 +3467,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsResource()
             </div>
@@ -3223,6 +3482,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsClosedResource()
             </div>
@@ -3237,6 +3497,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsString()
             </div>
@@ -3251,6 +3512,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsScalar()
             </div>
@@ -3265,6 +3527,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsCallable()
             </div>
@@ -3279,6 +3542,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsIterable()
             </div>
@@ -3293,6 +3557,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsNotArray()
             </div>
@@ -3307,6 +3572,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsNotBool()
             </div>
@@ -3321,6 +3587,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsNotFloat()
             </div>
@@ -3335,6 +3602,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsNotInt()
             </div>
@@ -3349,6 +3617,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsNotNumeric()
             </div>
@@ -3363,6 +3632,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsNotObject()
             </div>
@@ -3377,6 +3647,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsNotResource()
             </div>
@@ -3391,6 +3662,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsNotClosedResource()
             </div>
@@ -3405,6 +3677,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsNotString()
             </div>
@@ -3419,6 +3692,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsNotScalar()
             </div>
@@ -3433,6 +3707,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsNotCallable()
             </div>
@@ -3447,6 +3722,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertIsNotIterable()
             </div>
@@ -3461,6 +3737,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertMatchesRegularExpression()
             </div>
@@ -3475,6 +3752,7 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertDoesNotMatchRegularExpression()
             </div>
@@ -3489,13 +3767,14 @@ the same object.</p>
                   final
                 public
                   static
+                function
               </span>
               assertSameSize()
             </div>
             <div class="method-comment">
               <div class="phpdoc-description"><p>Assert that the size of two arrays (or <code>Countable</code> or <code>Traversable</code> objects)<br />
 is the same.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Countable | iterable&lt;mixed&gt;)</span> <span class="phpdoc-var-name">$expected</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Countable | iterable&lt;mixed&gt;)</span> <span class="phpdoc-var-name">$actual</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">Exception</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">ExpectationFailedException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">GeneratorNotSupportedException</div></div>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Countable|iterable&lt;mixed&gt;)</span> <span class="phpdoc-var-name">$expected</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Countable|iterable&lt;mixed&gt;)</span> <span class="phpdoc-var-name">$actual</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">Exception</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">ExpectationFailedException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">GeneratorNotSupportedException</div></div>
             </div>
           </li>
           <li>
@@ -3504,13 +3783,14 @@ is the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertNotSameSize()
             </div>
             <div class="method-comment">
               <div class="phpdoc-description"><p>Assert that the size of two arrays (or <code>Countable</code> or <code>Traversable</code> objects)<br />
 is not the same.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Countable | iterable&lt;mixed&gt;)</span> <span class="phpdoc-var-name">$expected</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Countable | iterable&lt;mixed&gt;)</span> <span class="phpdoc-var-name">$actual</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">Exception</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">ExpectationFailedException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">GeneratorNotSupportedException</div></div>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Countable|iterable&lt;mixed&gt;)</span> <span class="phpdoc-var-name">$expected</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Countable|iterable&lt;mixed&gt;)</span> <span class="phpdoc-var-name">$actual</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">Exception</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">ExpectationFailedException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">GeneratorNotSupportedException</div></div>
             </div>
           </li>
           <li>
@@ -3519,6 +3799,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertStringContainsStringIgnoringLineEndings()
             </div>
@@ -3532,6 +3813,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertStringEqualsStringIgnoringLineEndings()
             </div>
@@ -3546,6 +3828,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertFileMatchesFormat()
             </div>
@@ -3560,6 +3843,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertFileMatchesFormatFile()
             </div>
@@ -3574,6 +3858,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertStringMatchesFormat()
             </div>
@@ -3588,6 +3873,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertStringMatchesFormatFile()
             </div>
@@ -3602,6 +3888,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertStringStartsWith()
             </div>
@@ -3616,6 +3903,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertStringStartsNotWith()
             </div>
@@ -3630,6 +3918,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertStringContainsString()
             </div>
@@ -3643,6 +3932,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertStringContainsStringIgnoringCase()
             </div>
@@ -3656,6 +3946,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertStringNotContainsString()
             </div>
@@ -3669,6 +3960,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertStringNotContainsStringIgnoringCase()
             </div>
@@ -3682,6 +3974,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertStringEndsWith()
             </div>
@@ -3696,6 +3989,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertStringEndsNotWith()
             </div>
@@ -3710,6 +4004,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertXmlFileEqualsXmlFile()
             </div>
@@ -3724,6 +4019,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertXmlFileNotEqualsXmlFile()
             </div>
@@ -3738,6 +4034,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertXmlStringEqualsXmlFile()
             </div>
@@ -3752,6 +4049,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertXmlStringNotEqualsXmlFile()
             </div>
@@ -3766,6 +4064,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertXmlStringEqualsXmlString()
             </div>
@@ -3780,6 +4079,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertXmlStringNotEqualsXmlString()
             </div>
@@ -3794,6 +4094,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertThat()
             </div>
@@ -3808,6 +4109,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertJson()
             </div>
@@ -3822,6 +4124,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertJsonStringEqualsJsonString()
             </div>
@@ -3836,6 +4139,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertJsonStringNotEqualsJsonString()
             </div>
@@ -3850,6 +4154,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertJsonStringEqualsJsonFile()
             </div>
@@ -3864,6 +4169,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertJsonStringNotEqualsJsonFile()
             </div>
@@ -3878,6 +4184,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertJsonFileEqualsJsonFile()
             </div>
@@ -3892,6 +4199,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               assertJsonFileNotEqualsJsonFile()
             </div>
@@ -3906,6 +4214,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               logicalAnd()
             </div>
@@ -3919,6 +4228,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               logicalOr()
             </div>
@@ -3932,6 +4242,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               logicalNot()
             </div>
@@ -3945,6 +4256,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               logicalXor()
             </div>
@@ -3958,6 +4270,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               anything()
             </div>
@@ -3971,6 +4284,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               isTrue()
             </div>
@@ -3984,11 +4298,12 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               callback()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">CallbackInput</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">callable(CallbackInput $callback): bool</span> <span class="phpdoc-var-name">$callback</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">Callback&lt;CallbackInput&gt;</span></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span><div class="phpdoc-type">CallbackInput</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">callable(CallbackInput $callback): bool</span> <span class="phpdoc-var-name">$callback</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">Callback&lt;CallbackInput&gt;</span></div>
             </div>
           </li>
           <li>
@@ -3997,6 +4312,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               isFalse()
             </div>
@@ -4010,6 +4326,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               isJson()
             </div>
@@ -4023,6 +4340,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               isNull()
             </div>
@@ -4036,6 +4354,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               isFinite()
             </div>
@@ -4049,6 +4368,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               isInfinite()
             </div>
@@ -4062,6 +4382,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               isNan()
             </div>
@@ -4075,6 +4396,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               containsEqual()
             </div>
@@ -4088,6 +4410,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               containsIdentical()
             </div>
@@ -4101,11 +4424,12 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               containsOnly()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(&#039;array&#039; | &#039;bool&#039; | &#039;boolean&#039; | &#039;callable&#039; | &#039;double&#039; | &#039;float&#039; | &#039;int&#039; | &#039;integer&#039; | &#039;iterable&#039; | &#039;null&#039; | &#039;numeric&#039; | &#039;object&#039; | &#039;real&#039; | &#039;resource (closed)&#039; | &#039;resource&#039; | &#039;scalar&#039; | &#039;string&#039;)</span> <span class="phpdoc-var-name">$type</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">Exception</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@deprecated</span><div class="phpdoc-deprecated">https://github.com/sebastianbergmann/phpunit/issues/6060</div></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(&#039;array&#039;|&#039;bool&#039;|&#039;boolean&#039;|&#039;callable&#039;|&#039;double&#039;|&#039;float&#039;|&#039;int&#039;|&#039;integer&#039;|&#039;iterable&#039;|&#039;null&#039;|&#039;numeric&#039;|&#039;object&#039;|&#039;real&#039;|&#039;resource (closed)&#039;|&#039;resource&#039;|&#039;scalar&#039;|&#039;string&#039;)</span> <span class="phpdoc-var-name">$type</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">Exception</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@deprecated</span><div class="phpdoc-deprecated">https://github.com/sebastianbergmann/phpunit/issues/6060</div></div>
             </div>
           </li>
           <li>
@@ -4114,6 +4438,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               containsOnlyArray()
             </div>
@@ -4127,6 +4452,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               containsOnlyBool()
             </div>
@@ -4140,6 +4466,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               containsOnlyCallable()
             </div>
@@ -4153,6 +4480,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               containsOnlyFloat()
             </div>
@@ -4166,6 +4494,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               containsOnlyInt()
             </div>
@@ -4179,6 +4508,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               containsOnlyIterable()
             </div>
@@ -4192,6 +4522,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               containsOnlyNull()
             </div>
@@ -4205,6 +4536,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               containsOnlyNumeric()
             </div>
@@ -4218,6 +4550,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               containsOnlyObject()
             </div>
@@ -4231,6 +4564,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               containsOnlyResource()
             </div>
@@ -4244,6 +4578,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               containsOnlyClosedResource()
             </div>
@@ -4257,6 +4592,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               containsOnlyScalar()
             </div>
@@ -4270,6 +4606,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               containsOnlyString()
             </div>
@@ -4283,6 +4620,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               containsOnlyInstancesOf()
             </div>
@@ -4296,6 +4634,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               arrayHasKey()
             </div>
@@ -4309,6 +4648,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               isList()
             </div>
@@ -4322,6 +4662,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               equalTo()
             </div>
@@ -4335,6 +4676,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               equalToCanonicalizing()
             </div>
@@ -4348,6 +4690,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               equalToIgnoringCase()
             </div>
@@ -4361,6 +4704,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               equalToWithDelta()
             </div>
@@ -4374,6 +4718,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               isEmpty()
             </div>
@@ -4387,6 +4732,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               isWritable()
             </div>
@@ -4400,6 +4746,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               isReadable()
             </div>
@@ -4413,6 +4760,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               directoryExists()
             </div>
@@ -4426,6 +4774,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               fileExists()
             </div>
@@ -4439,6 +4788,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               greaterThan()
             </div>
@@ -4452,6 +4802,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               greaterThanOrEqual()
             </div>
@@ -4465,6 +4816,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               identicalTo()
             </div>
@@ -4478,6 +4830,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               isInstanceOf()
             </div>
@@ -4491,6 +4844,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               isArray()
             </div>
@@ -4504,6 +4858,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               isBool()
             </div>
@@ -4517,6 +4872,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               isCallable()
             </div>
@@ -4530,6 +4886,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               isFloat()
             </div>
@@ -4543,6 +4900,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               isInt()
             </div>
@@ -4556,6 +4914,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               isIterable()
             </div>
@@ -4569,6 +4928,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               isNumeric()
             </div>
@@ -4582,6 +4942,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               isObject()
             </div>
@@ -4595,6 +4956,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               isResource()
             </div>
@@ -4608,6 +4970,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               isClosedResource()
             </div>
@@ -4621,6 +4984,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               isScalar()
             </div>
@@ -4634,6 +4998,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               isString()
             </div>
@@ -4647,11 +5012,12 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               isType()
             </div>
             <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(&#039;array&#039; | &#039;bool&#039; | &#039;boolean&#039; | &#039;callable&#039; | &#039;double&#039; | &#039;float&#039; | &#039;int&#039; | &#039;integer&#039; | &#039;iterable&#039; | &#039;null&#039; | &#039;numeric&#039; | &#039;object&#039; | &#039;real&#039; | &#039;resource (closed)&#039; | &#039;resource&#039; | &#039;scalar&#039; | &#039;string&#039;)</span> <span class="phpdoc-var-name">$type</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">UnknownNativeTypeException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@deprecated</span><div class="phpdoc-deprecated">https://github.com/sebastianbergmann/phpunit/issues/6053</div></div>
+              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(&#039;array&#039;|&#039;bool&#039;|&#039;boolean&#039;|&#039;callable&#039;|&#039;double&#039;|&#039;float&#039;|&#039;int&#039;|&#039;integer&#039;|&#039;iterable&#039;|&#039;null&#039;|&#039;numeric&#039;|&#039;object&#039;|&#039;real&#039;|&#039;resource (closed)&#039;|&#039;resource&#039;|&#039;scalar&#039;|&#039;string&#039;)</span> <span class="phpdoc-var-name">$type</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span><div class="phpdoc-type">UnknownNativeTypeException</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@deprecated</span><div class="phpdoc-deprecated">https://github.com/sebastianbergmann/phpunit/issues/6053</div></div>
             </div>
           </li>
           <li>
@@ -4660,6 +5026,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               lessThan()
             </div>
@@ -4673,6 +5040,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               lessThanOrEqual()
             </div>
@@ -4686,6 +5054,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               matchesRegularExpression()
             </div>
@@ -4699,6 +5068,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               matches()
             </div>
@@ -4712,6 +5082,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               stringStartsWith()
             </div>
@@ -4725,6 +5096,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               stringContains()
             </div>
@@ -4738,6 +5110,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               stringEndsWith()
             </div>
@@ -4751,6 +5124,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               stringEqualsStringIgnoringLineEndings()
             </div>
@@ -4764,6 +5138,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               countOf()
             </div>
@@ -4777,6 +5152,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               objectEquals()
             </div>
@@ -4790,6 +5166,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               fail()
             </div>
@@ -4804,6 +5181,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               markTestIncomplete()
             </div>
@@ -4818,6 +5196,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               markTestSkipped()
             </div>
@@ -4832,6 +5211,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               getCount()
             </div>
@@ -4846,6 +5226,7 @@ is not the same.</p>
                   final
                 public
                   static
+                function
               </span>
               resetCount()
             </div>

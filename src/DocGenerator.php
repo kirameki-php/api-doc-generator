@@ -28,6 +28,8 @@ class DocGenerator
      */
     protected array $pathMap;
 
+    protected StructureMap $structureMap;
+
     /**
      * @param string $basePath
      * @param string $projectRoot
@@ -43,6 +45,7 @@ class DocGenerator
         $composerContent = file_get_contents($this->projectRoot . '/composer.json') ?: throw new \RuntimeException('Failed to read composer.json');
         $composer = Json::decode($composerContent);
         $this->pathMap = array_flip((array) $composer->autoload->{'psr-4'});
+        $this->structureMap = new StructureMap();
     }
 
     public function generate(): void
@@ -60,7 +63,9 @@ class DocGenerator
                         // TODO implement TraitInfo
                     }
                     else {
-                        $this->appendToTree($tree, new ClassInfo($reflection, $this->docParser));
+                        $classInfo = new ClassInfo($this->structureMap, $reflection, $this->docParser);
+                        $this->structureMap->add($classInfo);
+                        $this->appendToTree($tree, $classInfo);
                     }
                 }
             }
@@ -82,6 +87,7 @@ class DocGenerator
         foreach (Iter::flatten($tree, 100) as $class) {
             $html = $this->renderer->render(Path::of(__DIR__ . '/views/class.latte'), [
                 'basePath' => $this->basePath,
+                'structureMap' => $this->structureMap,
                 'sidebarHtml' => $sidebarHtml,
                 'class' => $class,
             ]);

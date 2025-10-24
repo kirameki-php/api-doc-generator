@@ -9,7 +9,7 @@ body {
     font-size: 14px;
 }
 main {
-    margin-left: 400px;
+    margin-left: 300px;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -27,23 +27,28 @@ blockquote {
     position: fixed;
     top: 0;
     left: 0;
-    width: 400px;
+    width: 300px;
     height: 100%;
     overflow-y: auto;
     background-color: #f8f9fa;
     padding: 0.5rem 0;
+    font-family: var(--code-font-family);
+    font-size: var(--code-font-size);
 }
 .sidebar ul {
     padding-left: 1rem;
 }
 .sidebar li {
-    margin-bottom: 0.25rem;
+    margin: 0.5rem 0;
     list-style-type: none;
+    font-size: 0.75rem;
+}
+.sidebar .sidebar-folder {
+    color: #4b5563;
 }
 .sidebar a {
-    font-family: var(--code-font-family);
-    font-size: var(--code-font-size);
     text-decoration: none;
+    color: #1d4ed8;
 }
 .sidebar a:hover {
     text-decoration: underline;
@@ -55,6 +60,7 @@ blockquote {
 .structure-header {
     font-family: var(--code-font-family);
     font-size: 1rem;
+    margin: 0.5rem 0;
 }
 .structure-modifiers {
     color: #3e68ba;
@@ -66,32 +72,87 @@ blockquote {
 .structure-implements {
     font-family: var(--code-font-family);
     font-size: var(--code-font-size);
+    display: flex;
+    flex-direction: row;
 }
 .structure-extends ul,
 .structure-implements ul {
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 0.5rem;
 }
 .structure-extends li,
 .structure-implements li {
-    display: inline;
     list-style-type: none;
+    margin-right: 0.25rem;
+    display: flex;
+    flex-direction: row;
 }
 .structure-extends li:not(:last-child)::after {
-    content: " » ";
+    margin-left: 0.25rem;
+    content: "›";
+    color: #bababa;
+}
+.structure-implements li:not(:last-child)::after {
+    margin-left: 0.25rem;
+    content: "|";
+    color: #dadada;
+}
+.structure-extends a,
+.structure-implements a {
+    display: flex;
+    flex-direction: row;
+}
+.structure-extends .no-link,
+.structure-implements .no-link {
     color: #6b7280;
 }
+.properties {
+    padding-top: 1rem;
+}
+.properties h3 {
+    padding: 0.25rem 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+.properties ul {
+    display: flex;
+    flex-direction: column;
+}
+.properties li {
+    border-bottom: 1px dashed #c7cdd5;
+    list-style-type: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.property-signature {
+    font-family: var(--code-font-family);
+    padding: 0.5rem;
+    background-color: #f6f7f8;
+    border-radius: 0.25rem;
+    margin: 0.75rem 0;
+}
+.property-modifiers {
+    color: #3e68ba;
+}
+.property-comment {
+    padding: 0.2rem;
+}
+.methods {
+    padding-top: 1rem;
+}
 .methods h3 {
-    padding: 0.5rem 0;
+    padding: 0.25rem 0;
+    border-bottom: 1px solid #e5e7eb;
 }
 .methods ul {
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
 }
 .methods li {
-    border-top: 1px dashed #c7cdd5;
+    border-bottom: 1px dashed #c7cdd5;
     list-style-type: none;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     padding-bottom: 1rem;
 }
 .method-signature {
@@ -107,9 +168,9 @@ blockquote {
 .method-comment {
     padding: 0.2rem;
 }
-.phpdoc-description {
-    margin-top: 0.3rem;
-    margin-bottom: 1.0rem;
+.method-comment > .phpdoc-description {
+    margin-bottom: 1rem;
+    opacity: 60%;
 }
 .phpdoc-description code {
     font-family: var(--code-font-family);
@@ -118,19 +179,28 @@ blockquote {
     padding: 0.2rem;
     border-radius: 0.25rem;
 }
+.phpdoc-tag {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-top: 0.3rem;
+    margin-bottom: 1.0rem;
+}
 .phpdoc-tag-name {
     font-family: var(--code-font-family);
+    font-size: var(--code-font-size);
     color: #6791ec;
 }
 .phpdoc-type {
     font-family: var(--code-font-family);
+    font-size: var(--code-font-size);
     color: #2563eb;
 }
 .phpdoc-var-name {
     font-family: var(--code-font-family);
+    font-size: var(--code-font-size);
 }
 .phpdoc-tag .phpdoc-description {
-    margin-left: 0.1rem;
     padding-left: 0.5rem;
-    border-left: 3px solid #d1d5db;
+    opacity: 60%;
 }

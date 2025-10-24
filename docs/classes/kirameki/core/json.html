@@ -564,15 +564,18 @@
       </span>
       <span class="structure-name">Json</span>
     </div>
-    <div class="structure-extends">
+      <div class="structure-extends">
         extends:
         <ul>
             <li>
-              <a href="classes/kirameki/core/static-class.html">StaticClass</a>
+                <a href="classes/kirameki/core/static-class.html">StaticClass</a>
             </li>
         </ul>
-    </div>
-    <div class="structure-implements">
+      </div>
+    <div class="properties">
+      <h3>Properties</h3>
+      <ul>
+      </ul>
     </div>
     <div class="methods">
       <h3>Methods</h3>
@@ -582,6 +585,7 @@
               <span class="method-modifiers">
                 public
                   static
+                function
               </span>
               encode()
             </div>
@@ -594,7 +598,7 @@ Json::encode(['a' =&gt; 1], true); // &quot;{\n    &quot;a&quot;: 1\n}&quot;
 </code></pre>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">mixed</span> <span class="phpdoc-var-name">$data</span><div class="phpdoc-description"><p>The data being encoded. String data must be UTF-8 encoded.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$formatted</span><div class="phpdoc-description"><p>[Optional] Format JSON in a human-readable format. Defaults to <strong>false</strong>.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">string</span><div class="phpdoc-description"><p>JSON encoded string.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>JSON encoded string.</p>
 </div></div>
             </div>
           </li>
@@ -603,6 +607,7 @@ Json::encode(['a' =&gt; 1], true); // &quot;{\n    &quot;a&quot;: 1\n}&quot;
               <span class="method-modifiers">
                 public
                   static
+                function
               </span>
               decode()
             </div>
@@ -613,7 +618,7 @@ Json::encode(['a' =&gt; 1], true); // &quot;{\n    &quot;a&quot;: 1\n}&quot;
 Json::decode('{&quot;a&quot;:1}'); // ['a' =&gt; 1]  
 </code></pre>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$json</span><div class="phpdoc-description"><p>The value being decoded. Must be a valid UTF-8 encoded string.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">mixed</span><div class="phpdoc-description"><p>Decoded data.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">mixed</span><div class="phpdoc-description"><p>Decoded data.</p>
 </div></div>
             </div>
           </li>
@@ -622,6 +627,7 @@ Json::decode('{&quot;a&quot;:1}'); // ['a' =&gt; 1]
               <span class="method-modifiers">
                 public
                   static
+                function
               </span>
               validate()
             </div>
@@ -634,7 +640,7 @@ Json::validate('{&quot;a&quot;:1}'); // true
 Json::validate('{'); // false  
 </code></pre>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$json</span><div class="phpdoc-description"><p>The value being validated. Must be a valid UTF-8 encoded string.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-return">bool</span><div class="phpdoc-description"><p><strong>true</strong> if valid JSON, <strong>false</strong> otherwise.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">bool</span><div class="phpdoc-description"><p><strong>true</strong> if valid JSON, <strong>false</strong> otherwise.</p>
 </div></div>
             </div>
           </li>
@@ -643,6 +649,7 @@ Json::validate('{'); // false
               <span class="method-modifiers">
                   final
                 public
+                function
               </span>
               __construct()
             </div>

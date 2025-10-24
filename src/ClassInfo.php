@@ -8,7 +8,7 @@ use ReflectionClass;
 use function array_map;
 use function array_values;
 
-class ClassInfo
+class ClassInfo implements StructureInfo
 {
     /**
      * @var string
@@ -57,7 +57,7 @@ class ClassInfo
      */
     public ?self $parent {
         get => $this->parent ??= $this->reflection->getParentClass()
-            ? new self($this->reflection->getParentClass(), $this->docParser)
+            ? $this->instantiate($this->reflection->getParentClass())
             : null;
     }
 
@@ -69,6 +69,13 @@ class ClassInfo
     }
 
     /**
+     * @var array<string, PropertyInfo>
+     */
+    public array $properties {
+        get => $this->properties ??= $this->resolveProperties();
+    }
+
+    /**
      * @var array<string, MethodInfo>
      */
     public array $methods {
@@ -76,15 +83,29 @@ class ClassInfo
     }
 
     /**
+     * @param StructureMap $structureMap
      * @param ReflectionClass<object> $reflection
      * @param CommentParser $docParser
      */
     public function __construct(
+        protected StructureMap $structureMap,
         protected ReflectionClass $reflection,
         protected CommentParser $docParser,
     ) {
     }
 
+    /**
+     * @param ReflectionClass<object> $reflection
+     * @return self
+     */
+    protected function instantiate(ReflectionClass $reflection): self
+    {
+        return new self($this->structureMap, $reflection, $this->docParser);
+    }
+
+    /**
+     * @return string
+     */
     public function getHtmlPath(): string
     {
         return new Vec(Str::split($this->name, '\\'))
@@ -99,9 +120,26 @@ class ClassInfo
     public function resolveInterfaces(): array
     {
         return array_values(array_map(
-            fn(ReflectionClass $i) => new self($i, $this->docParser),
+            $this->instantiate(...),
             $this->reflection->getInterfaces(),
         ));
+    }
+
+    /**
+     * @return array<string, PropertyInfo>
+     */
+    public function resolveProperties(): array
+    {
+        $properties = [];
+        foreach ($this->reflection->getProperties() as $property) {
+            $properties[$property->name] = new PropertyInfo(
+                $this->structureMap,
+                $this->reflection,
+                $property,
+                $this->docParser,
+            );
+        }
+        return $properties;
     }
 
     /**
@@ -111,7 +149,12 @@ class ClassInfo
     {
         $methods = [];
         foreach ($this->reflection->getMethods() as $method) {
-            $methods[$method->getName()] = new MethodInfo($this->reflection, $method, $this->docParser);
+            $methods[$method->getName()] = new MethodInfo(
+                $this->structureMap,
+                $this->reflection,
+                $method,
+                $this->docParser,
+            );
         }
         return $methods;
     }
