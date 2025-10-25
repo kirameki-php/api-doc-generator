@@ -122,7 +122,7 @@ abstract class MemberInfo
                         throw new UnreachableException();
                     }
                 } elseif ($value instanceof TemplateTagValueNode) {
-                    $inner .= '<div class="phpdoc-type">' . $this->toHtml($value->name) . '</div>';
+                    $inner .= '<span class="phpdoc-type">' . $this->toHtml($value->name) . '</span>';
                 } elseif ($value instanceof ReturnTagValueNode) {
                     $inner .= ' <span class="phpdoc-type">';
                     $inner .= ($value->type instanceof UnionTypeNode)
@@ -132,12 +132,12 @@ abstract class MemberInfo
                     $inner .= $this->descriptionAsMarkdown($value->description);
                 } elseif ($value instanceof GenericTagValueNode) {
                     if ($value->value !== '') {
-                        $inner .= '<div class="phpdoc-type">' . $this->toHtml($value) . '</div>';
+                        $inner .= '<span class="phpdoc-type">' . $this->toHtml($value) . '</span>';
                     }
                 } elseif ($value instanceof ParamOutTagValueNode) {
                     $inner .= $this->paramOutAsHtml($value->type, $value);
                 } elseif ($value instanceof ThrowsTagValueNode) {
-                    $inner .= '<div class="phpdoc-type">' . $this->toHtml($value->type) . '</div>';
+                    $inner .= '<span class="phpdoc-type">' . $this->toHtml($value->type) . '</span>';
                     $inner .= $this->descriptionAsMarkdown($value->description);
                 } elseif ($value instanceof AssertTagMethodValueNode) {
                     $inner .= '<div class="phpdoc-assert">' . $value . '</div>';
@@ -146,17 +146,17 @@ abstract class MemberInfo
                 } elseif ($value instanceof DeprecatedTagValueNode) {
                     $inner .= '<div class="phpdoc-deprecated">' . $value . '</div>';
                 } elseif ($value instanceof VarTagValueNode) {
-                    $inner .= ' <div class="phpdoc-type">';
+                    $inner .= ' <span class="phpdoc-type">';
                     $inner .= ($value->type instanceof UnionTypeNode)
                         ? $this->fixUnionOutput($this->toHtml($value->type))
                         : $this->toHtml($value->type);
-                    $inner .= '</div>';
+                    $inner .= '</span>';
                 } else {
                     dump($value);
                     throw new UnreachableException();
                 }
                 $content .= '<div class="phpdoc-tag">';
-                $content .= '<span class="phpdoc-tag-name">' . $child->name . '</span>';
+                $content .= '<span class="phpdoc-tag-name">' . $child->name . '</span> ';
                 $content .= $inner;
                 $content .= '</div>';
             }

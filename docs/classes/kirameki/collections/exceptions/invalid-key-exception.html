@@ -5,875 +5,331 @@
   <base href="file:///Users/taka-mac/Projects/kirameki/api-doc-generator/docs/">
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <script src="https://kit.fontawesome.com/e95d1c3544.js" crossorigin="anonymous"></script>
   <title>Kirameki API Doc</title>
 </head>
 <body>
-  <nav class="sidebar">
-  <ul>
-    <li>
-        <div class="sidebar-folder">Kirameki</div>
-<ul>
-    <li>
-        <div class="sidebar-folder">Backoff</div>
-<ul>
-    <li>
-        <a href="classes/kirameki/backoff/exponential-backoff.html">ExponentialBackoff</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/backoff/jitter-strategy.html">JitterStrategy</a>
-    </li>
-</ul>
-    </li>
-    <li>
-        <div class="sidebar-folder">Clock</div>
-<ul>
-    <li>
-        <a href="classes/kirameki/clock/clock-interface.html">ClockInterface</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/clock/fixed-clock.html">FixedClock</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/clock/stopwatch.html">Stopwatch</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/clock/system-clock.html">SystemClock</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/clock/timer.html">Timer</a>
-    </li>
-</ul>
-    </li>
-    <li>
-        <div class="sidebar-folder">Collections</div>
-<ul>
-    <li>
-        <a href="classes/kirameki/collections/enumerator.html">Enumerator</a>
-    </li>
-    <li>
-        <div class="sidebar-folder">Exceptions</div>
-<ul>
-    <li>
-        <a href="classes/kirameki/collections/exceptions/collection-exception.html">CollectionException</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/collections/exceptions/count-mismatch-exception.html">CountMismatchException</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/collections/exceptions/duplicate-key-exception.html">DuplicateKeyException</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/collections/exceptions/empty-not-allowed-exception.html">EmptyNotAllowedException</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/collections/exceptions/excess-key-exception.html">ExcessKeyException</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/collections/exceptions/index-out-of-bounds-exception.html">IndexOutOfBoundsException</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/collections/exceptions/invalid-element-exception.html">InvalidElementException</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/collections/exceptions/invalid-key-exception.html">InvalidKeyException</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/collections/exceptions/invalid-order-exception.html">InvalidOrderException</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/collections/exceptions/missing-key-exception.html">MissingKeyException</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/collections/exceptions/no-match-found-exception.html">NoMatchFoundException</a>
-    </li>
-</ul>
-    </li>
-    <li>
-        <a href="classes/kirameki/collections/lazy-iterator.html">LazyIterator</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/collections/map.html">Map</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/collections/map-mutable.html">MapMutable</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/collections/range.html">Range</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/collections/sort-order.html">SortOrder</a>
-    </li>
-    <li>
-        <div class="sidebar-folder">Utils</div>
-<ul>
-    <li>
-        <a href="classes/kirameki/collections/utils/arr.html">Arr</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/collections/utils/iter.html">Iter</a>
-    </li>
-</ul>
-    </li>
-    <li>
-        <a href="classes/kirameki/collections/vec.html">Vec</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/collections/vec-mutable.html">VecMutable</a>
-    </li>
-</ul>
-    </li>
-    <li>
-        <div class="sidebar-folder">Core</div>
-<ul>
-    <li>
-        <a href="classes/kirameki/core/comparable.html">Comparable</a>
-    </li>
-    <li>
-        <div class="sidebar-folder">Exceptions</div>
-<ul>
-    <li>
-        <a href="classes/kirameki/core/exceptions/error-exception.html">ErrorException</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/core/exceptions/exception.html">Exception</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/core/exceptions/exceptionable.html">Exceptionable</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/core/exceptions/extension-required-exception.html">ExtensionRequiredException</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/core/exceptions/invalid-argument-exception.html">InvalidArgumentException</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/core/exceptions/invalid-config-exception.html">InvalidConfigException</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/core/exceptions/invalid-type-exception.html">InvalidTypeException</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/core/exceptions/json-exception.html">JsonException</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/core/exceptions/key-not-found-exception.html">KeyNotFoundException</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/core/exceptions/logic-exception.html">LogicException</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/core/exceptions/not-supported-exception.html">NotSupportedException</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/core/exceptions/over-limit-exception.html">OverLimitException</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/core/exceptions/runtime-exception.html">RuntimeException</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/core/exceptions/type-conversion-exception.html">TypeConversionException</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/core/exceptions/type-mismatch-exception.html">TypeMismatchException</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/core/exceptions/undefined-method-exception.html">UndefinedMethodException</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/core/exceptions/unreachable-exception.html">UnreachableException</a>
-    </li>
-</ul>
-    </li>
-    <li>
-        <a href="classes/kirameki/core/func.html">Func</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/core/json.html">Json</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/core/lazy.html">Lazy</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/core/media-type.html">MediaType</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/core/static-class.html">StaticClass</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/core/type.html">Type</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/core/uri.html">Uri</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/core/version.html">Version</a>
-    </li>
-</ul>
-    </li>
-    <li>
-        <div class="sidebar-folder">Dumper</div>
-<ul>
-    <li>
-        <a href="classes/kirameki/dumper/config.html">Config</a>
-    </li>
-    <li>
-        <div class="sidebar-folder">Configs</div>
-<ul>
-    <li>
-        <a href="classes/kirameki/dumper/configs/debug-info.html">DebugInfo</a>
-    </li>
-</ul>
-    </li>
-    <li>
-        <div class="sidebar-folder">Decorators</div>
-<ul>
-    <li>
-        <a href="classes/kirameki/dumper/decorators/ansi-decorator.html">AnsiDecorator</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/dumper/decorators/decorator.html">Decorator</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/dumper/decorators/html-decorator.html">HtmlDecorator</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/dumper/decorators/plain-decorator.html">PlainDecorator</a>
-    </li>
-</ul>
-    </li>
-    <li>
-        <a href="classes/kirameki/dumper/dumper.html">Dumper</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/dumper/formatter.html">Formatter</a>
-    </li>
-    <li>
-        <div class="sidebar-folder">Handlers</div>
-<ul>
-    <li>
-        <a href="classes/kirameki/dumper/handlers/array-handler.html">ArrayHandler</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/dumper/handlers/class-handler.html">ClassHandler</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/dumper/handlers/class-handler-factory.html">ClassHandlerFactory</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/dumper/handlers/closure-handler.html">ClosureHandler</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/dumper/handlers/date-time-handler.html">DateTimeHandler</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/dumper/handlers/enum-handler.html">EnumHandler</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/dumper/handlers/handler.html">Handler</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/dumper/handlers/null-handler.html">NullHandler</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/dumper/handlers/placeholder-handler.html">PlaceholderHandler</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/dumper/handlers/resource-handler.html">ResourceHandler</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/dumper/handlers/scalar-handler.html">ScalarHandler</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/dumper/handlers/spl-file-info-handler.html">SplFileInfoHandler</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/dumper/handlers/throwable-handler.html">ThrowableHandler</a>
-    </li>
-</ul>
-    </li>
-    <li>
-        <a href="classes/kirameki/dumper/object-tracker.html">ObjectTracker</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/dumper/placeholder.html">Placeholder</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/dumper/writer.html">Writer</a>
-    </li>
-</ul>
-    </li>
-    <li>
-        <div class="sidebar-folder">Event</div>
-<ul>
-    <li>
-        <a href="classes/kirameki/event/event.html">Event</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/event/event-handler.html">EventHandler</a>
-    </li>
-    <li>
-        <div class="sidebar-folder">Listeners</div>
-<ul>
-    <li>
-        <a href="classes/kirameki/event/listeners/callback-listener.html">CallbackListener</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/event/listeners/callback-once-listener.html">CallbackOnceListener</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/event/listeners/event-listener.html">EventListener</a>
-    </li>
-</ul>
-    </li>
-</ul>
-    </li>
-    <li>
-        <div class="sidebar-folder">Http</div>
-<ul>
-    <li>
-        <a href="classes/kirameki/http/http-method.html">HttpMethod</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/http/status-code.html">StatusCode</a>
-    </li>
-</ul>
-    </li>
-    <li>
-        <div class="sidebar-folder">Process</div>
-<ul>
-    <li>
-        <div class="sidebar-folder">Events</div>
-<ul>
-    <li>
-        <a href="classes/kirameki/process/events/process-finished.html">ProcessFinished</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/process/events/process-started.html">ProcessStarted</a>
-    </li>
-</ul>
-    </li>
-    <li>
-        <div class="sidebar-folder">Exceptions</div>
-<ul>
-    <li>
-        <a href="classes/kirameki/process/exceptions/process-exception.html">ProcessException</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/process/exceptions/process-failed-exception.html">ProcessFailedException</a>
-    </li>
-</ul>
-    </li>
-    <li>
-        <a href="classes/kirameki/process/exit-code.html">ExitCode</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/process/process-builder.html">ProcessBuilder</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/process/process-info.html">ProcessInfo</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/process/process-observer.html">ProcessObserver</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/process/process-result.html">ProcessResult</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/process/process-runner.html">ProcessRunner</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/process/signal.html">Signal</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/process/signal-event.html">SignalEvent</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/process/timeout-info.html">TimeoutInfo</a>
-    </li>
-</ul>
-    </li>
-    <li>
-        <div class="sidebar-folder">Storage</div>
-<ul>
-    <li>
-        <a href="classes/kirameki/storage/directory.html">Directory</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/storage/file.html">File</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/storage/file-type.html">FileType</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/storage/path.html">Path</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/storage/storable.html">Storable</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/storage/symlink.html">Symlink</a>
-    </li>
-</ul>
-    </li>
-    <li>
-        <div class="sidebar-folder">Stream</div>
-<ul>
-    <li>
-        <div class="sidebar-folder">Exceptions</div>
-<ul>
-    <li>
-        <a href="classes/kirameki/stream/exceptions/stream-error-exception.html">StreamErrorException</a>
-    </li>
-</ul>
-    </li>
-    <li>
-        <a href="classes/kirameki/stream/file-reader.html">FileReader</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/stream/file-stream.html">FileStream</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/stream/file-writer.html">FileWriter</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/stream/memory-stream.html">MemoryStream</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/stream/resource-streamable.html">ResourceStreamable</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/stream/stderr-stream.html">StderrStream</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/stream/stdin-stream.html">StdinStream</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/stream/stdout-stream.html">StdoutStream</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/stream/stream-lockable.html">StreamLockable</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/stream/stream-readable.html">StreamReadable</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/stream/stream-seekable.html">StreamSeekable</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/stream/stream-writable.html">StreamWritable</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/stream/streamable.html">Streamable</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/stream/temp-stream.html">TempStream</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/stream/tmp-file-stream.html">TmpFileStream</a>
-    </li>
-</ul>
-    </li>
-    <li>
-        <div class="sidebar-folder">System</div>
-<ul>
-    <li>
-        <a href="classes/kirameki/system/env.html">Env</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/system/sleep.html">Sleep</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/system/sleep-mock.html">SleepMock</a>
-    </li>
-</ul>
-    </li>
-    <li>
-        <div class="sidebar-folder">Testing</div>
-<ul>
-    <li>
-        <a href="classes/kirameki/testing/test-case.html">TestCase</a>
-    </li>
-</ul>
-    </li>
-    <li>
-        <div class="sidebar-folder">Text</div>
-<ul>
-    <li>
-        <div class="sidebar-folder">Exceptions</div>
-<ul>
-    <li>
-        <a href="classes/kirameki/text/exceptions/no-match-exception.html">NoMatchException</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/text/exceptions/parse-exception.html">ParseException</a>
-    </li>
-</ul>
-    </li>
-    <li>
-        <a href="classes/kirameki/text/str.html">Str</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/text/str-object.html">StrObject</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/text/utf8.html">Utf8</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/text/utf8-object.html">Utf8Object</a>
-    </li>
-</ul>
-    </li>
-    <li>
-        <div class="sidebar-folder">Time</div>
-<ul>
-    <li>
-        <a href="classes/kirameki/time/day-of-week.html">DayOfWeek</a>
-    </li>
-    <li>
-        <div class="sidebar-folder">Exceptions</div>
-<ul>
-    <li>
-        <a href="classes/kirameki/time/exceptions/invalid-format-exception.html">InvalidFormatException</a>
-    </li>
-</ul>
-    </li>
-    <li>
-        <a href="classes/kirameki/time/instant.html">Instant</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/time/time.html">Time</a>
-    </li>
-    <li>
-        <a href="classes/kirameki/time/unit.html">Unit</a>
-    </li>
-</ul>
-    </li>
-</ul>
-    </li>
-</ul>
-
-  </nav>
-  <main>
-    <div class="structure-namespace">
-      namespace <b>Kirameki\Collections\Exceptions</b>
-    </div>
-    <div class="structure-header">
-      <span class="structure-modifiers">
-        class
-      </span>
-      <span class="structure-name">InvalidKeyException</span>
-    </div>
-      <div class="structure-extends">
-        extends:
-        <ul>
-            <li>
-                <a href="classes/kirameki/collections/exceptions/collection-exception.html">CollectionException</a>
-            </li>
-            <li>
-                <a href="classes/kirameki/core/exceptions/logic-exception.html">Kirameki\Core\Exceptions\LogicException</a>
-            </li>
-            <li>
-                <span class="no-link">LogicException</span>
-            </li>
-            <li>
-                <span class="no-link">Exception</span>
-            </li>
-        </ul>
-      </div>
-      <div class="structure-implements">
-        implements:
-        <ul>
-            <li>
-                <span class="no-link">
-                  Throwable
-                </span>
-            </li>
-            <li>
-                <span class="no-link">
-                  Stringable
-                </span>
-            </li>
-            <li>
-                <a href="classes/kirameki/core/exceptions/exceptionable.html">
-                  Kirameki\Core\Exceptions\Exceptionable
-                </a>
-            </li>
-            <li>
-                <span class="no-link">
-                  JsonSerializable
-                </span>
-            </li>
-        </ul>
-      </div>
-    <div class="properties">
-      <h3>Properties</h3>
+<main>
+  <div class="structure-namespace">
+    namespace <b>Kirameki\Collections\Exceptions</b>
+  </div>
+  <div class="structure-header">
+    <span class="structure-modifiers">
+      class
+    </span>
+    <span class="structure-name">InvalidKeyException</span>
+  </div>
+    <div class="structure-extends">
+      extends:
       <ul>
           <li>
-            <div class="property-signature">
-              <span class="property-modifiers">
-                protected
-                
-              </span>
-              <span class="property-name">$message</span>
-            </div>
-            <div class="property-comment">
-              
-            </div>
+              <a href="classes/kirameki/collections/exceptions/collection-exception.html">Kirameki\Collections\Exceptions\CollectionException</a>
           </li>
           <li>
-            <div class="property-signature">
-              <span class="property-modifiers">
-                protected
-                
-              </span>
-              <span class="property-name">$code</span>
-            </div>
-            <div class="property-comment">
-              
-            </div>
+              <a href="classes/kirameki/core/exceptions/logic-exception.html">Kirameki\Core\Exceptions\LogicException</a>
           </li>
           <li>
-            <div class="property-signature">
-              <span class="property-modifiers">
-                protected
-                string
-              </span>
-              <span class="property-name">$file</span>
-            </div>
-            <div class="property-comment">
-              
-            </div>
+              <span class="no-link">LogicException</span>
           </li>
           <li>
-            <div class="property-signature">
-              <span class="property-modifiers">
-                protected
-                int
-              </span>
-              <span class="property-name">$line</span>
-            </div>
-            <div class="property-comment">
-              
-            </div>
-          </li>
-          <li>
-            <div class="property-signature">
-              <span class="property-modifiers">
-                protected
-                ?array
-              </span>
-              <span class="property-name">$context</span>
-            </div>
-            <div class="property-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span> <div class="phpdoc-type">(array&lt;string, mixed&gt;|null)</div></div>
-            </div>
+              <span class="no-link">Exception</span>
           </li>
       </ul>
     </div>
-    <div class="methods">
-      <h3>Methods</h3>
+    <div class="structure-implements">
+      implements:
       <ul>
           <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                function
+              <span class="no-link">
+                Throwable
               </span>
-              __construct()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$message</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(iterable&lt;string, mixed&gt;|null)</span> <span class="phpdoc-var-name">$context</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$code</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(Throwable|null)</span> <span class="phpdoc-var-name">$previous</span></div>
-            </div>
           </li>
           <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                function
+              <span class="no-link">
+                Stringable
               </span>
-              __wakeup()
-            </div>
-            <div class="method-comment">
-              
-            </div>
           </li>
           <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                  final
-                public
-                function
-              </span>
-              getMessage()
-            </div>
-            <div class="method-comment">
-              
-            </div>
+              <a href="classes/kirameki/core/exceptions/exceptionable.html">
+                Kirameki\Core\Exceptions\Exceptionable
+              </a>
           </li>
           <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                  final
-                public
-                function
+              <span class="no-link">
+                JsonSerializable
               </span>
-              getCode()
-            </div>
-            <div class="method-comment">
-              
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                  final
-                public
-                function
-              </span>
-              getFile()
-            </div>
-            <div class="method-comment">
-              
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                  final
-                public
-                function
-              </span>
-              getLine()
-            </div>
-            <div class="method-comment">
-              
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                  final
-                public
-                function
-              </span>
-              getTrace()
-            </div>
-            <div class="method-comment">
-              
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                  final
-                public
-                function
-              </span>
-              getPrevious()
-            </div>
-            <div class="method-comment">
-              
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                  final
-                public
-                function
-              </span>
-              getTraceAsString()
-            </div>
-            <div class="method-comment">
-              
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                function
-              </span>
-              __toString()
-            </div>
-            <div class="method-comment">
-              
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                function
-              </span>
-              getContext()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@inheritDoc</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                function
-              </span>
-              setContext()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">(iterable&lt;string, mixed&gt;|null)</span> <span class="phpdoc-var-name">$context</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">$this</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                function
-              </span>
-              addContext()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$key</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">mixed</span> <span class="phpdoc-var-name">$val</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">$this</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                function
-              </span>
-              mergeContext()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">iterable&lt;string, mixed&gt;</span> <span class="phpdoc-var-name">$context</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">$this</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                function
-              </span>
-              jsonSerialize()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">array&lt;string, mixed&gt;</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                protected
-                function
-              </span>
-              toJson()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span> <span class="phpdoc-type">Throwable</span> <span class="phpdoc-var-name">$throwable</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span> <span class="phpdoc-type">array&lt;string, mixed&gt;</span></div>
-            </div>
           </li>
       </ul>
     </div>
-  </main>
+  <div class="properties">
+    <h3>Properties</h3>
+    <ul>
+        <li>
+          <div class="property-signature">
+            <span class="property-modifiers">
+              protected
+              
+            </span>
+            <span class="property-name">$message</span>
+          </div>
+          <div class="property-comment">
+            
+          </div>
+        </li>
+        <li>
+          <div class="property-signature">
+            <span class="property-modifiers">
+              protected
+              
+            </span>
+            <span class="property-name">$code</span>
+          </div>
+          <div class="property-comment">
+            
+          </div>
+        </li>
+        <li>
+          <div class="property-signature">
+            <span class="property-modifiers">
+              protected
+              string
+            </span>
+            <span class="property-name">$file</span>
+          </div>
+          <div class="property-comment">
+            
+          </div>
+        </li>
+        <li>
+          <div class="property-signature">
+            <span class="property-modifiers">
+              protected
+              int
+            </span>
+            <span class="property-name">$line</span>
+          </div>
+          <div class="property-comment">
+            
+          </div>
+        </li>
+        <li>
+          <div class="property-signature">
+            <span class="property-modifiers">
+              protected
+              ?array
+            </span>
+            <span class="property-name">$context</span>
+          </div>
+          <div class="property-comment">
+            <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span>  <span class="phpdoc-type">(array&lt;string, mixed&gt;|null)</span></div>
+          </div>
+        </li>
+    </ul>
+  </div>
+  <div class="methods">
+    <h3>Methods</h3>
+    <ul>
+        <li>
+          <div class="method-signature">
+            <span class="method-modifiers">
+              public
+              function
+            </span>
+            __construct()
+          </div>
+          <div class="method-comment">
+            <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$message</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(iterable&lt;string, mixed&gt;|null)</span> <span class="phpdoc-var-name">$context</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$code</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(Throwable|null)</span> <span class="phpdoc-var-name">$previous</span></div>
+          </div>
+        </li>
+        <li>
+          <div class="method-signature">
+            <span class="method-modifiers">
+              public
+              function
+            </span>
+            __wakeup()
+          </div>
+          <div class="method-comment">
+            
+          </div>
+        </li>
+        <li>
+          <div class="method-signature">
+            <span class="method-modifiers">
+                final
+              public
+              function
+            </span>
+            getMessage()
+          </div>
+          <div class="method-comment">
+            
+          </div>
+        </li>
+        <li>
+          <div class="method-signature">
+            <span class="method-modifiers">
+                final
+              public
+              function
+            </span>
+            getCode()
+          </div>
+          <div class="method-comment">
+            
+          </div>
+        </li>
+        <li>
+          <div class="method-signature">
+            <span class="method-modifiers">
+                final
+              public
+              function
+            </span>
+            getFile()
+          </div>
+          <div class="method-comment">
+            
+          </div>
+        </li>
+        <li>
+          <div class="method-signature">
+            <span class="method-modifiers">
+                final
+              public
+              function
+            </span>
+            getLine()
+          </div>
+          <div class="method-comment">
+            
+          </div>
+        </li>
+        <li>
+          <div class="method-signature">
+            <span class="method-modifiers">
+                final
+              public
+              function
+            </span>
+            getTrace()
+          </div>
+          <div class="method-comment">
+            
+          </div>
+        </li>
+        <li>
+          <div class="method-signature">
+            <span class="method-modifiers">
+                final
+              public
+              function
+            </span>
+            getPrevious()
+          </div>
+          <div class="method-comment">
+            
+          </div>
+        </li>
+        <li>
+          <div class="method-signature">
+            <span class="method-modifiers">
+                final
+              public
+              function
+            </span>
+            getTraceAsString()
+          </div>
+          <div class="method-comment">
+            
+          </div>
+        </li>
+        <li>
+          <div class="method-signature">
+            <span class="method-modifiers">
+              public
+              function
+            </span>
+            __toString()
+          </div>
+          <div class="method-comment">
+            
+          </div>
+        </li>
+        <li>
+          <div class="method-signature">
+            <span class="method-modifiers">
+              public
+              function
+            </span>
+            getContext()
+          </div>
+          <div class="method-comment">
+            <div class="phpdoc-tag"><span class="phpdoc-tag-name">@inheritDoc</span> </div>
+          </div>
+        </li>
+        <li>
+          <div class="method-signature">
+            <span class="method-modifiers">
+              public
+              function
+            </span>
+            setContext()
+          </div>
+          <div class="method-comment">
+            <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(iterable&lt;string, mixed&gt;|null)</span> <span class="phpdoc-var-name">$context</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">$this</span></div>
+          </div>
+        </li>
+        <li>
+          <div class="method-signature">
+            <span class="method-modifiers">
+              public
+              function
+            </span>
+            addContext()
+          </div>
+          <div class="method-comment">
+            <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$key</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">mixed</span> <span class="phpdoc-var-name">$val</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">$this</span></div>
+          </div>
+        </li>
+        <li>
+          <div class="method-signature">
+            <span class="method-modifiers">
+              public
+              function
+            </span>
+            mergeContext()
+          </div>
+          <div class="method-comment">
+            <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;string, mixed&gt;</span> <span class="phpdoc-var-name">$context</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">$this</span></div>
+          </div>
+        </li>
+        <li>
+          <div class="method-signature">
+            <span class="method-modifiers">
+              public
+              function
+            </span>
+            jsonSerialize()
+          </div>
+          <div class="method-comment">
+            <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">array&lt;string, mixed&gt;</span></div>
+          </div>
+        </li>
+        <li>
+          <div class="method-signature">
+            <span class="method-modifiers">
+              protected
+              function
+            </span>
+            toJson()
+          </div>
+          <div class="method-comment">
+            <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Throwable</span> <span class="phpdoc-var-name">$throwable</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">array&lt;string, mixed&gt;</span></div>
+          </div>
+        </li>
+    </ul>
+  </div>
+</main>
 </body>
 </html>

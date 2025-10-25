@@ -72,26 +72,21 @@ class DocGenerator
         }
         $this->sortTreeRecursively($tree);
 
-        $sidebarHtml = $this->renderer->render(Path::of(__DIR__ . '/views/sidebar.latte'), [
-            'tree' => $tree,
-        ]);
+        $docsPath = dirname(__DIR__) . '/docs';
+        @mkdir($docsPath, 0755);
 
         $html = $this->renderer->render(Path::of(__DIR__ . '/views/index.latte'), [
-            'basePath' => $this->basePath,
-            'sidebarHtml' => $sidebarHtml,
+            'structureMap' => $this->structureMap,
+            'tree' => $tree,
         ]);
-
-        @mkdir($this->projectRoot . '/docs', 0755);
-        file_put_contents(Path::of(__DIR__ . '/../docs/main.html')->normalize(), $html);
+        file_put_contents("{$docsPath}/main.html", $html);
 
         foreach (Iter::flatten($tree, 100) as $class) {
             $html = $this->renderer->render(Path::of(__DIR__ . '/views/class.latte'), [
-                'basePath' => $this->basePath,
                 'structureMap' => $this->structureMap,
-                'sidebarHtml' => $sidebarHtml,
                 'class' => $class,
             ]);
-            $filePath = Path::of(__DIR__ . '/../docs/' . $class->getHtmlPath())->normalize();
+            $filePath = "{$docsPath}/{$class->getHtmlPath()}";
             @mkdir(dirname($filePath), 0755, true);
             file_put_contents($filePath, $html);
         }

@@ -1,7 +1,11 @@
-{varType string $sidebarHtml}
 {layout layout.latte}
+{varType array $tree}
 {block content}
-<nav class="sidebar">
-  {$sidebarHtml|noescape}
-</nav>
+<div class="root">
+  <nav class="sidebar">
+    <h2>Classes</h2>
+    {include sidebar.latte, tree: $tree}
+  </nav>
+  <iframe class="content" name="content"></iframe>
+</div>
 {/block}
