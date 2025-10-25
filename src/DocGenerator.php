@@ -50,7 +50,7 @@ class DocGenerator
 
     public function generate(): void
     {
-        $tree = [];
+        $tree = new Tree();
         foreach ($this->pathMap as $path => $namespace) {
             $dir = new Directory("{$this->projectRoot}/{$path}");
             foreach ($dir->scanRecursively() as $storable) {
@@ -70,7 +70,7 @@ class DocGenerator
                 }
             }
         }
-        $this->sortTreeRecursively($tree);
+        $tree->sortRecursively();
 
         $docsPath = dirname(__DIR__) . '/docs';
         @mkdir($docsPath, 0755);
@@ -118,34 +118,17 @@ class DocGenerator
     }
 
     /**
-     * @param array<string, mixed> $tree
+     * @param Tree $tree
      * @param ClassInfo $classInfo
      * @return void
      */
-    protected function appendToTree(array &$tree, ClassInfo $classInfo): void
+    protected function appendToTree(Tree $tree, ClassInfo $classInfo): void
     {
         $parts = explode('\\', $classInfo->namespace);
-        $current = &$tree;
+        $current = $tree;
         foreach ($parts as $part) {
-            if (!isset($current[$part])) {
-                $current[$part] = [];
-            }
-            $current = &$current[$part];
+            $current = $current->namespaces[$part] ??= new Tree();
         }
-        $current[$classInfo->basename] = $classInfo;
-    }
-
-    /**
-     * @param array<string, mixed> $tree
-     * @return void
-     */
-    protected function sortTreeRecursively(array &$tree): void
-    {
-        ksort($tree);
-        foreach ($tree as &$subtree) {
-            if (is_array($subtree)) {
-                $this->sortTreeRecursively($subtree);
-            }
-        }
+        $current->classes[$classInfo->basename] = $classInfo;
     }
 }

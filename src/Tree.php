@@ -2,33 +2,45 @@
 
 namespace Kirameki\ApiDocGenerator;
 
-class Tree
+use IteratorAggregate;
+use Traversable;
+
+class Tree implements IteratorAggregate
 {
     /**
-     * @var array<string, mixed>
+     * @var array<string, Tree>
      */
-    protected array $directories = [];
+    public array $namespaces = [];
 
     /**
-     * @var list<string>
+     * @var array<string, ClassInfo>
      */
-    protected array $files = [];
+    public array $classes = [];
 
     /**
-     * @param string $directory
-     * @return Tree
+     * @return void
      */
-    public function getDirectory(string $directory): Tree
+    public function sortRecursively(): void
     {
-        return $this->directories[$directory] ??= new Tree();
+        ksort($this->namespaces);
+        foreach ($this->namespaces as $namespace) {
+            $namespace->sortRecursively();
+        }
+        ksort($this->classes);
     }
 
     /**
-     * @param string $file
-     * @return void
+     * @return Traversable<string, ClassInfo>
      */
-    public function addFile(string $file): void
+    public function getIterator(): Traversable
     {
-        $this->files[] = $file;
+        foreach ($this->namespaces as $namespace) {
+            foreach ($namespace as $name => $class) {
+                yield $name => $class;
+            }
+        }
+        foreach ($this->classes as $name => $class) {
+            yield $name => $class;
+        }
     }
 }

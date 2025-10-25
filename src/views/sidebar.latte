@@ -1,14 +1,15 @@
-{varType array $tree}
+{varType Kirameki\ApiDocGenerator\Tree $tree}
 <ul>
-  {foreach $tree as $name => $leaf}
+  {foreach $tree->namespaces as $name => $leaf}
     <li>
-      {if is_array($leaf)}
-        <div class="sidebar-folder">{$name}</div>
-        {include sidebar.latte, tree: $leaf}
-      {else}
-        {varType Kirameki\ApiDocGenerator\ClassInfo $leaf}
-        <a href="{$leaf->getHtmlPath()}" target="content">{$leaf->basename}</a>
-      {/if}
+      <div class="sidebar-folder">{$name}</div>
+      {include sidebar.latte, tree: $leaf}
+    </li>
+  {/foreach}
+  {foreach $tree->classes as $leaf}
+    <li>
+      {varType Kirameki\ApiDocGenerator\ClassInfo $leaf}
+      <a href="{$leaf->getHtmlPath()}" target="content">{$leaf->basename}</a>
     </li>
   {/foreach}
 </ul>
