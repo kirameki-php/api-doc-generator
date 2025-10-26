@@ -90,61 +90,98 @@
       </ul>
     </div>
     {/if}
-    <div class="properties">
-      <h3>Properties</h3>
-      <ul>
-        {foreach $class->properties as $property}
-          {varType Kirameki\ApiDocGenerator\PropertyInfo $property}
-          <li>
-            <div class="property-signature">
-              <span class="property-modifiers">
-                {if $property->isReadOnly}
-                  readonly
+    {if $class->constants !== []}
+      <div class="constants">
+        <h3>Constants</h3>
+        <ul>
+          {foreach $class->constants as $constant}
+            {varType Kirameki\ApiDocGenerator\ConstantInfo $constant}
+            <li>
+              <div class="constant-signature">
+                <span class="modifiers">
+                  {if $constant->isFinal}
+                    final
+                  {/if}
+                  {$constant->visibility->value}
+                </span>
+                <span class="type">{$constant->type}</span>
+                <span class="name">{$constant->name}</span>
+                <span class="assignment"> = </span>
+                {var $value = $constant->value}
+                {if $value instanceof \UnitEnum}
+                  <span class="value value-enum">{$value::class}::{$value->name}</span>
+                {elseif is_array($value)}
+                  {dump($value)}
+                {elseif is_string($value)}
+                  <span class="value value-string">"{$value}"</span>
+                {else}
+                  <span class="value value-default">{$value}</span>
                 {/if}
-                {if $property->isStatic}
-                  static
-                {/if}
-                {$property->visibility->value}
-                {$property->type}
-              </span>
-              <span class="property-name">${$property->name}</span>
-            </div>
-            <div class="property-comment">
-              {$property->commentAsMarkdown()|noescape}
-            </div>
-          </li>
-        {/foreach}
-      </ul>
-    </div>
-    <div class="methods">
-      <h3>Methods</h3>
-      <ul>
-        {foreach $class->methods as $method}
-          {varType Kirameki\ApiDocGenerator\MethodInfo $method}
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                {if $method->isFinal}
-                  final
-                {/if}
-                {$method->visibility->value}
-                {if $method->isStatic}
-                  static
-                {/if}
-                {if $method->isAbstract}
-                  abstract
-                {/if}
-                function
-              </span>
-              {$method->name}()
-            </div>
-            <div class="method-comment">
-              {$method->commentAsMarkdown()|noescape}
-            </div>
-          </li>
-        {/foreach}
-      </ul>
-    </div>
+              </div>
+            </li>
+          {/foreach}
+        </ul>
+      </div>
+    {/if}
+    {if $class->properties !== []}
+      <div class="properties">
+        <h3>Properties</h3>
+        <ul>
+          {foreach $class->properties as $property}
+            {varType Kirameki\ApiDocGenerator\PropertyInfo $property}
+            <li>
+              <div class="property-signature">
+                <span class="property-modifiers">
+                  {if $property->isReadOnly}
+                    readonly
+                  {/if}
+                  {if $property->isStatic}
+                    static
+                  {/if}
+                  {$property->visibility->value}
+                  {$property->type}
+                </span>
+                <span class="property-name">${$property->name}</span>
+              </div>
+              <div class="property-comment">
+                {$property->commentAsMarkdown()|noescape}
+              </div>
+            </li>
+          {/foreach}
+        </ul>
+      </div>
+    {/if}
+    {if $class->methods !== []}
+      <div class="methods">
+        <h3>Methods</h3>
+        <ul>
+          {foreach $class->methods as $method}
+            {varType Kirameki\ApiDocGenerator\MethodInfo $method}
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  {if $method->isFinal}
+                    final
+                  {/if}
+                  {$method->visibility->value}
+                  {if $method->isStatic}
+                    static
+                  {/if}
+                  {if $method->isAbstract}
+                    abstract
+                  {/if}
+                  function
+                </span>
+                {$method->name}()
+              </div>
+              <div class="method-comment">
+                {$method->commentAsMarkdown()|noescape}
+              </div>
+            </li>
+          {/foreach}
+        </ul>
+      </div>
+    {/if}
   </div>
 </main>
 {/block}

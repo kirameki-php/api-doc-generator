@@ -907,163 +907,163 @@
     </div>
   </div>
   <div class="details">
-    <div class="properties">
-      <h3>Properties</h3>
-      <ul>
-          <li>
-            <div class="property-signature">
-              <span class="property-modifiers">
-                  static
-                protected
-                self
-              </span>
-              <span class="property-name">$instance</span>
-            </div>
-            <div class="property-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span>  <span class="phpdoc-type">static</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="property-signature">
-              <span class="property-modifiers">
-                  static
-                protected
-                int
-              </span>
-              <span class="property-name">$processCount</span>
-            </div>
-            <div class="property-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span>  <span class="phpdoc-type">int</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="property-signature">
-              <span class="property-modifiers">
-                  static
-                protected
-                ?Kirameki\Event\Listeners\EventListener
-              </span>
-              <span class="property-name">$signalHandler</span>
-            </div>
-            <div class="property-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span>  <span class="phpdoc-type">(EventListener&lt;SignalEvent&gt;|null)</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="property-signature">
-              <span class="property-modifiers">
-                protected
-                array
-              </span>
-              <span class="property-name">$exitedBeforeRegistered</span>
-            </div>
-            <div class="property-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span>  <span class="phpdoc-type">array&lt;int, int&gt;</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="property-signature">
-              <span class="property-modifiers">
-                protected
-                array
-              </span>
-              <span class="property-name">$exitCallbacks</span>
-            </div>
-            <div class="property-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span>  <span class="phpdoc-type">array&lt;int, Closure(int): void&gt;</span></div>
-            </div>
-          </li>
-      </ul>
-    </div>
-    <div class="methods">
-      <h3>Methods</h3>
-      <ul>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              observe()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Observation MUST start before any process is spawned or there is a chance<br />
+      <div class="properties">
+        <h3>Properties</h3>
+        <ul>
+            <li>
+              <div class="property-signature">
+                <span class="property-modifiers">
+                    static
+                  protected
+                  self
+                </span>
+                <span class="property-name">$instance</span>
+              </div>
+              <div class="property-comment">
+                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span>  <span class="phpdoc-type">static</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="property-signature">
+                <span class="property-modifiers">
+                    static
+                  protected
+                  int
+                </span>
+                <span class="property-name">$processCount</span>
+              </div>
+              <div class="property-comment">
+                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span>  <span class="phpdoc-type">int</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="property-signature">
+                <span class="property-modifiers">
+                    static
+                  protected
+                  ?Kirameki\Event\Listeners\EventListener
+                </span>
+                <span class="property-name">$signalHandler</span>
+              </div>
+              <div class="property-comment">
+                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span>  <span class="phpdoc-type">(EventListener&lt;SignalEvent&gt;|null)</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="property-signature">
+                <span class="property-modifiers">
+                  protected
+                  array
+                </span>
+                <span class="property-name">$exitedBeforeRegistered</span>
+              </div>
+              <div class="property-comment">
+                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span>  <span class="phpdoc-type">array&lt;int, int&gt;</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="property-signature">
+                <span class="property-modifiers">
+                  protected
+                  array
+                </span>
+                <span class="property-name">$exitCallbacks</span>
+              </div>
+              <div class="property-comment">
+                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span>  <span class="phpdoc-type">array&lt;int, Closure(int): void&gt;</span></div>
+              </div>
+            </li>
+        </ul>
+      </div>
+      <div class="methods">
+        <h3>Methods</h3>
+        <ul>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                observe()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Observation MUST start before any process is spawned or there is a chance<br />
 a process exits before the observer has a change to register a handler.</p>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">self</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              getProcessCount()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">int</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                protected
-                function
-              </span>
-              __construct()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>There should only be one observer instance which is registered<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                getProcessCount()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">int</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  protected
+                  function
+                </span>
+                __construct()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>There should only be one observer instance which is registered<br />
 through observeSignal, so make this private to make sure<br />
 people don't initialize this accidentally.</p>
 </div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                protected
-                function
-              </span>
-              handleSignal()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>WARNING: this method is called even for ALL SIGCHLD signals, which include signals<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  protected
+                  function
+                </span>
+                handleSignal()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>WARNING: this method is called even for ALL SIGCHLD signals, which include signals<br />
 that were not called through ProcessManager (e.g. calling proc_open() directly).<br />
 Which means that $this-&gt;exitedBeforeRegistered may contain exit codes that are not<br />
 related to ProcessManager. Thus, we will clear this array when all process called<br />
 through ProcessManager have exited.</p>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">SignalEvent</span> <span class="phpdoc-var-name">$event</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                function
-              </span>
-              onExit()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$pid</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Closure(int): void</span> <span class="phpdoc-var-name">$callback</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                protected
-                function
-              </span>
-              preProcessExit()
-            </div>
-            <div class="method-comment">
-              
-            </div>
-          </li>
-      </ul>
-    </div>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                  function
+                </span>
+                onExit()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$pid</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Closure(int): void</span> <span class="phpdoc-var-name">$callback</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  protected
+                  function
+                </span>
+                preProcessExit()
+              </div>
+              <div class="method-comment">
+                
+              </div>
+            </li>
+        </ul>
+      </div>
   </div>
 </main>
 </body>

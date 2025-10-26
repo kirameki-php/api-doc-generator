@@ -916,25 +916,20 @@
           </li>
       </ul>
     </div>
-    <div class="properties">
-      <h3>Properties</h3>
-      <ul>
-      </ul>
-    </div>
-    <div class="methods">
-      <h3>Methods</h3>
-      <ul>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              encode()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Encode data as JSON string.</p>
+      <div class="methods">
+        <h3>Methods</h3>
+        <ul>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                encode()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Encode data as JSON string.</p>
 <p>Example:</p>
 <pre><code class="language-php">Json::encode(true); // 'true'  
 Json::encode(['a' =&gt; 1]); // '{&quot;a&quot;:1}'  
@@ -944,19 +939,19 @@ Json::encode(['a' =&gt; 1], true); // &quot;{\n    &quot;a&quot;: 1\n}&quot;
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$formatted</span><div class="phpdoc-description"><p>[Optional] Format JSON in a human-readable format. Defaults to <strong>false</strong>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>JSON encoded string.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              decode()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Decodes a JSON string.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                decode()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Decodes a JSON string.</p>
 <p>Example:</p>
 <pre><code class="language-php">Json::decode('true'); // true  
 Json::decode('{&quot;a&quot;:1}'); // ['a' =&gt; 1]  
@@ -964,19 +959,19 @@ Json::decode('{&quot;a&quot;:1}'); // ['a' =&gt; 1]
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$json</span><div class="phpdoc-description"><p>The value being decoded. Must be a valid UTF-8 encoded string.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">mixed</span><div class="phpdoc-description"><p>Decoded data.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              validate()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Validate a JSON string.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                validate()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Validate a JSON string.</p>
 <p>Example:</p>
 <pre><code class="language-php">Json::validate('true'); // true  
 Json::validate('[]'); // true  
@@ -986,23 +981,23 @@ Json::validate('{'); // false
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$json</span><div class="phpdoc-description"><p>The value being validated. Must be a valid UTF-8 encoded string.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span><div class="phpdoc-description"><p><strong>true</strong> if valid JSON, <strong>false</strong> otherwise.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                  final
-                public
-                function
-              </span>
-              __construct()
-            </div>
-            <div class="method-comment">
-              
-            </div>
-          </li>
-      </ul>
-    </div>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                    final
+                  public
+                  function
+                </span>
+                __construct()
+              </div>
+              <div class="method-comment">
+                
+              </div>
+            </li>
+        </ul>
+      </div>
   </div>
 </main>
 </body>

@@ -907,38 +907,62 @@
     </div>
   </div>
   <div class="details">
-    <div class="properties">
-      <h3>Properties</h3>
-      <ul>
-      </ul>
-    </div>
-    <div class="methods">
-      <h3>Methods</h3>
-      <ul>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              of()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">StrObject</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              between()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Extract string between the first occurrence of <code>$from</code> and <code>$to</code>.</p>
+      <div class="constants">
+        <h3>Constants</h3>
+        <ul>
+            <li>
+              <div class="constant-signature">
+                <span class="modifiers">
+                    final
+                  public
+                </span>
+                <span class="type"></span>
+                <span class="name">EMPTY</span>
+                <span class="assignment"> = </span>
+                  <span class="value value-string">""</span>
+              </div>
+            </li>
+            <li>
+              <div class="constant-signature">
+                <span class="modifiers">
+                  public
+                </span>
+                <span class="type"></span>
+                <span class="name">WHITESPACE</span>
+                <span class="assignment"> = </span>
+                  <span class="value value-string">" 	
+ "</span>
+              </div>
+            </li>
+        </ul>
+      </div>
+      <div class="methods">
+        <h3>Methods</h3>
+        <ul>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                of()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">StrObject</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                between()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Extract string between the first occurrence of <code>$from</code> and <code>$to</code>.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::between('[a] to [b]', '[', ']'); // 'a'  
 Str::between('no tag', '&lt;', '&gt;'); // 'no tag'  
@@ -948,19 +972,19 @@ Str::between('no tag', '&lt;', '&gt;'); // 'no tag'
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$to</span><div class="phpdoc-description"><p>The ending string to look for.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>The extracted part of the string.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              betweenFurthest()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Extract string between the first occurrence of <code>$from</code> and last occurrence of <code>$to</code>.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                betweenFurthest()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Extract string between the first occurrence of <code>$from</code> and last occurrence of <code>$to</code>.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::betweenFurthest('&lt;tag&gt;', '&lt;', '&gt;'); // 'tag'  
 Str::betweenFurthest('no tag', '&lt;', '&gt;'); // 'no tag'  
@@ -970,19 +994,19 @@ Str::betweenFurthest('no tag', '&lt;', '&gt;'); // 'no tag'
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$to</span><div class="phpdoc-description"><p>The ending string to look for.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>The extracted part of the string.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              betweenLast()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Extract string between the last occurrence of <code>$from</code> and <code>$to</code>.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                betweenLast()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Extract string between the last occurrence of <code>$from</code> and <code>$to</code>.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::betweenLast('[a] to [b]', '[', ']'); // 'b'  
 Str::betweenLast('no tag', '&lt;', '&gt;'); // 'no tag'  
@@ -992,19 +1016,19 @@ Str::betweenLast('no tag', '&lt;', '&gt;'); // 'no tag'
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$to</span><div class="phpdoc-description"><p>The ending string to look for.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>The extracted part of the string.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              capitalize()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Convert the first character to upper case letter.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                capitalize()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Convert the first character to upper case letter.<br />
 Works on all multibyte characters that can be capitalized.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::capitalize('foo bar'); // 'Foo bar'  
@@ -1013,19 +1037,19 @@ Str::capitalize('éclore'); // 'Éclore'
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The string that will be capitalized.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>The string that was capitalized.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              chunk()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Chunks string into the given size.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                chunk()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Chunks string into the given size.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::chunk('abc', 1); // ['a', 'b', 'c']  
 Str::chunk('TestTestTest', 4); // ['Test', 'Test', 'Test']  
@@ -1035,38 +1059,38 @@ Str::chunk('TestTestTest', 4, 2); // ['Test', 'Test']
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$size</span><div class="phpdoc-description"><p>Size of each chunk. Must be &gt;= 1.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|null)</span> <span class="phpdoc-var-name">$limit</span><div class="phpdoc-description"><p>Maximum number times to chunk the string.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">list&lt;string&gt;</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              concat()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Concatenate strings into a single string.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                concat()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Concatenate strings into a single string.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::concat('combine', ' ', 'me'); // 'combine me'  
 </code></pre>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">...$string</span><div class="phpdoc-description"><p>Variable number of strings to be concatenated.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>The string that was concatenated.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              contains()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Determine if a string contains a given substring.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                contains()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Determine if a string contains a given substring.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::contains('Foo bar', 'bar'); // true  
 Str::contains('👨‍👨‍👧‍👧‍', '👨'); // true  
@@ -1077,19 +1101,19 @@ Str::contains('', ''); // true
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$substring</span><div class="phpdoc-description"><p>The substring to search for in the <code>$string</code>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span><div class="phpdoc-description"><p>Returns <strong>true</strong> if <code>$substring</code> is in <code>$string</code>, <strong>false</strong> otherwise.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              containsAll()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Determine if a string contains all given substrings.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                containsAll()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Determine if a string contains all given substrings.<br />
 Will return <strong>true</strong> if empty iterable is given.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::containsAll('Foo bar baz', ['foo', 'bar', 'baz']); // true  
@@ -1100,19 +1124,19 @@ Str::containsAll('ab', ['a', 'b', 'd']); // false
 This must contain at least one substring or exception is thrown.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span><div class="phpdoc-description"><p>Returns <strong>true</strong> if all strings in <code>$substrings</code> are in <code>$string</code>, <strong>false</strong> otherwise.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              containsAny()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Determine if string contains any given substrings.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                containsAny()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Determine if string contains any given substrings.<br />
 Will return <strong>true</strong> if empty iterable is given.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::containsAny('Foo Bar', ['Foo', 'Baz']); // true  
@@ -1123,19 +1147,19 @@ Str::containsAny('Foo Bar', ['Baz', 'Baz']); // false
 This must contain at least one value or exception is thrown.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span><div class="phpdoc-description"><p>Returns true if any strings in <code>$substrings</code> are in <code>$string</code>, false otherwise.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              containsNone()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Determine if string contains none of the given substrings.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                containsNone()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Determine if string contains none of the given substrings.<br />
 Will return <strong>true</strong> if empty iterable is given.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::containsNone('Foo Bar', ['Baz', 'Baz']); // true  
@@ -1146,19 +1170,19 @@ Str::containsNone('Foo Bar', ['Foo', 'Baz']); // false
 This must contain at least one value or exception is thrown.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span><div class="phpdoc-description"><p>Returns <strong>false</strong> if any strings in <code>$substrings</code> are in <code>$string</code>, <strong>true</strong> otherwise.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              containsPattern()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Determine if a string contains any matches to given pattern.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                containsPattern()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Determine if a string contains any matches to given pattern.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::containsPattern('foo', '/[A-z\d]+/'); // true  
 Str::containsPattern('foo', '/bar/'); // false  
@@ -1167,19 +1191,19 @@ Str::containsPattern('foo', '/bar/'); // false
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$pattern</span><div class="phpdoc-description"><p>The pattern to search for in the string.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span><div class="phpdoc-description"><p>Returns <strong>true</strong> if the pattern matches <strong>false</strong> otherwise.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              count()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Count the number of substring occurrences.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                count()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Count the number of substring occurrences.<br />
 Unlike PHP's <code>substr_count</code>, this will count overlapping strings.</p>
 <p>Warning: empty search string will throw an exception.</p>
 <p>Example:</p>
@@ -1191,19 +1215,19 @@ Str::count('foo', ''); // Exception: Search string must be non-empty.
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$substring</span><div class="phpdoc-description"><p>The substring to search for.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">int</span><div class="phpdoc-description"><p>Number of substrings that occurred in given string.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              decapitalize()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Convert the first character to lower case letter.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                decapitalize()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Convert the first character to lower case letter.<br />
 Works on all multibyte characters that can be decapitalized.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::decapitalize('Foo Bar'); // 'foo Bar'  
@@ -1211,19 +1235,19 @@ Works on all multibyte characters that can be decapitalized.</p>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The string that will be de-capitalized.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>The string that was de-capitalized.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              doesNotContain()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Determine if a substring is not contained in a given string.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                doesNotContain()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Determine if a substring is not contained in a given string.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::doesNotContains('Foo bar', 'baz'); // true  
 </code></pre>
@@ -1231,19 +1255,19 @@ Works on all multibyte characters that can be decapitalized.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$substring</span><div class="phpdoc-description"><p>The substring to search for in the <code>$string</code>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span><div class="phpdoc-description"><p>Returns <strong>false</strong> if <code>$substring</code> is in <code>$string</code>, <strong>true</strong> otherwise.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              doesNotEndWith()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Checks if a string does not end with a given substring(s).<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                doesNotEndWith()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Checks if a string does not end with a given substring(s).<br />
 <code>$suffix</code> can be a string or an iterable list of strings.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::doesNotEndWith('abc', 'c'); // true  
@@ -1253,19 +1277,19 @@ Str::doesNotEndWith('abc', ['a', 'b', 'c', 'd']); // false because 'abc' ends wi
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$suffix</span><div class="phpdoc-description"><p>The suffix to search for in <code>$string</code>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span><div class="phpdoc-description"><p>Returns <strong>true</strong> if <code>$string</code> does not end with <code>$suffix</code>, <strong>false</strong> otherwise.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              doesNotStartWith()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Checks if a string does not start with a given prefix(s).<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                doesNotStartWith()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Checks if a string does not start with a given prefix(s).<br />
 <code>$prefix</code> can be a string or an iterable list of strings.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::doesNotStartWith('abc', 'b'); // true  
@@ -1275,19 +1299,19 @@ Str::doesNotStartWith('abc', 'a'); // false
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$prefix</span><div class="phpdoc-description"><p>The prefix to search for in <code>$string</code>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span><div class="phpdoc-description"><p>Returns <strong>true</strong> if <code>$string</code> does not start with <code>$prefix</code>, <strong>false</strong> otherwise.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              dropFirst()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Return a string with the first n characters removed.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                dropFirst()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Return a string with the first n characters removed.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::dropFirst('framework', 5); // 'work'  
 Str::dropFirst('framework', 100); // ''  
@@ -1298,19 +1322,19 @@ If the given amount is dropped from the front.<br />
 If the given amount is greater than the string length, an empty string is returned.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>The extracted part of the string.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              dropLast()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Return a string with the last n characters removed.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                dropLast()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Return a string with the last n characters removed.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::dropLast('framework', 4); // 'frame'  
 Str::dropLast('framework', 100); // ''  
@@ -1320,19 +1344,19 @@ Str::dropLast('framework', 100); // ''
 If the given amount is greater than the string length, an empty string is returned.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>The extracted part of the string.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              endsWith()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Checks if a string ends with a given suffix(s).<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                endsWith()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Checks if a string ends with a given suffix(s).<br />
 <code>$suffix</code> can be a string or an iterable list of strings.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::endsWith('abc', 'c'); // true  
@@ -1342,19 +1366,19 @@ Str::endsWith('abc', ['a', 'b']); // false
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$suffix</span><div class="phpdoc-description"><p>The suffix to search for in <code>$string</code>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span><div class="phpdoc-description"><p>Returns <strong>true</strong> if <code>$string</code> ends with <code>$suffix</code>, <strong>false</strong> otherwise.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              endsWithAny()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Checks if a string ends with a given suffixes.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                endsWithAny()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Checks if a string ends with a given suffixes.<br />
 <code>$suffix</code> can be a string or an iterable list of strings.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::endsWithAny('abc', ['a', 'c']); // true  
@@ -1364,19 +1388,19 @@ Str::endsWithAny('abc', ['a', 'b']); // false
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;array-key, string&gt;</span> <span class="phpdoc-var-name">$suffixes</span><div class="phpdoc-description"><p>The suffixes to search for in <code>$string</code>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span><div class="phpdoc-description"><p>Returns <strong>true</strong> if <code>$string</code> ends with <code>$suffix</code>, <strong>false</strong> otherwise.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              endsWithNone()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Checks if a string does not end with a given substring(s).<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                endsWithNone()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Checks if a string does not end with a given substring(s).<br />
 <code>$suffix</code> can be a string or an iterable list of strings.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::endsWithNone('abc', 'c'); // true  
@@ -1386,19 +1410,19 @@ Str::endsWithNone('abc', 'x'); // true because 'abc' ends with 'c'
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;array-key, string&gt;</span> <span class="phpdoc-var-name">$suffixes</span><div class="phpdoc-description"><p>The suffixes to search for in <code>$string</code>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span><div class="phpdoc-description"><p>Returns <strong>true</strong> if <code>$string</code> does not end with <code>$suffix</code>, <strong>false</strong> otherwise.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              equals()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Compares two strings to determine if they are equal.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                equals()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Compares two strings to determine if they are equal.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::firstIndexOf('abb', 'b'); // 1  
 Str::firstIndexOf('abb', 'b', 2); // 2  
@@ -1407,36 +1431,36 @@ Str::firstIndexOf('abb', 'b', 3); // null
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The string to be compared.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$other</span><div class="phpdoc-description"><p>The other string to be compared.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              equalsAny()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Compares a string to a list of strings to determine if they are equal.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                equalsAny()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Compares a string to a list of strings to determine if they are equal.<br />
 Will return <strong>true</strong> if at least one string in the list is equal to the given string.</p>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The string to be compared.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;array-key, string&gt;</span> <span class="phpdoc-var-name">$others</span><div class="phpdoc-description"><p>The other strings to be compared.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              indexOfFirst()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Find position (in grapheme units) of first occurrence of substring in string.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                indexOfFirst()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Find position (in grapheme units) of first occurrence of substring in string.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::firstIndexOf('abb', 'b'); // 1  
 Str::firstIndexOf('abb', 'b', 2); // 2  
@@ -1448,19 +1472,19 @@ Str::firstIndexOf('abb', 'b', 3); // null
 start searching as an offset in grapheme units. Defaults to <strong>0</strong>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">(int|null)</span><div class="phpdoc-description"><p>Position where the substring was found. <strong>null</strong> if no match was found.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              indexOfLast()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Find position (in grapheme units) of last occurrence of substring in string.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                indexOfLast()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Find position (in grapheme units) of last occurrence of substring in string.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::indexOfLast('abb', 'b'); // 2  
 Str::indexOfLast('abb', 'b', 2); // 2  
@@ -1472,19 +1496,19 @@ Str::indexOfLast('abb', 'b', 3); // null
 start searching as an offset in grapheme units. Defaults to <strong>0</strong>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">(int|null)</span><div class="phpdoc-description"><p>Position where the substring was found. <strong>null</strong> if no match was found.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              insertAt()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Insert a substring before the given position.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                insertAt()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Insert a substring before the given position.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::insertAt('abc', 'xyz', 0); // 'xyzabc'  
 Str::insertAt('abc', 'xyz', 3); // 'abcxyz'  
@@ -1495,32 +1519,32 @@ Str::insertAt('abc', 'xyz', -1); // 'abcxyz'
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$position</span><div class="phpdoc-description"><p>Position where the <code>$insert</code> will be inserted.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>String which contains <code>$insert</code> string at <code>$position</code>.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              interpolate()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$text</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;string, (int | float | string)&gt;</span> <span class="phpdoc-var-name">$replace</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$delimiterStart</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$delimiterEnd</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              isBlank()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Determine whether a given string is blank.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                interpolate()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$text</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;string, (int | float | string)&gt;</span> <span class="phpdoc-var-name">$replace</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$delimiterStart</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$delimiterEnd</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                isBlank()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Determine whether a given string is blank.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::isBlank(''); // true  
 Str::isBlank('0'); // false  
@@ -1528,19 +1552,19 @@ Str::isBlank('0'); // false
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p><strong>string</strong> or <strong>null</strong> variable to be checked.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span><div class="phpdoc-description"><p>Returns <strong>true</strong> if variable is an empty string or null. <strong>false</strong> otherwise.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              isNotBlank()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Determine whether a given string is not blank.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                isNotBlank()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Determine whether a given string is not blank.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::isNotBlank('a'); // true  
 Str::isNotBlank('0'); // true  
@@ -1549,19 +1573,19 @@ Str::isNotBlank(''); // false
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p><strong>string</strong> or <strong>null</strong> variable to be checked.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span><div class="phpdoc-description"><p>Returns <strong>false</strong> if variable is empty string or null. <strong>true</strong> otherwise.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              length()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Returns the length of the given string.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                length()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Returns the length of the given string.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::length(''); // 0  
 Str::length('開発'); // 4  
@@ -1570,19 +1594,19 @@ Str::length('👨‍👨‍👧‍👦'); // 25
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The target input string.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">int</span><div class="phpdoc-description"><p>The length of the string.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              matchAll()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Perform a global regular expression match on given string.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                matchAll()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Perform a global regular expression match on given string.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::matchAll('abcabc', '/a/'); // [['a', 'a']]  
 Str::matchAll('abcabc', '/(?&lt;p1&gt;a)bc/'); // [['abc', 'abc'], 'p1' =&gt; ['a', 'a'], ['a', 'a']]  
@@ -1591,19 +1615,19 @@ Str::matchAll('abcabc', '/(?&lt;p1&gt;a)bc/'); // [['abc', 'abc'], 'p1' =&gt; ['
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$pattern</span><div class="phpdoc-description"><p>The pattern to search for. Must be a valid regex.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">array&lt;int, array&lt;string&gt;&gt;</span><div class="phpdoc-description"><p>Array of all matches in multidimensional array.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              matchFirst()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Perform a regular expression match on given string and return the first match.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                matchFirst()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Perform a regular expression match on given string and return the first match.<br />
 Throws a NoMatchException if no match is found.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::matchFirst('abcabc', '/a/'); // 'a'  
@@ -1612,19 +1636,19 @@ Str::matchFirst('abcabc', '/z/'); // NoMatchException
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The string to be matched.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$pattern</span><div class="phpdoc-description"><p>The pattern to search for. Must be a valid regex.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              matchFirstOrNull()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Perform a regular expression match on given string and return the first match.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                matchFirstOrNull()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Perform a regular expression match on given string and return the first match.<br />
 Returns <strong>null</strong> if no match is found.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::matchFirstOrNull('a12c34', '/\d/'); // '12'  
@@ -1633,19 +1657,19 @@ Str::matchFirstOrNull('abcabc', '/z/'); // null
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The string to be matched.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$pattern</span><div class="phpdoc-description"><p>The pattern to search for. Must be a valid regex.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">(string|null)</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              matchLast()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Perform a regular expression match on given string and return the last match.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                matchLast()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Perform a regular expression match on given string and return the last match.<br />
 Throws a NoMatchException if no match is found.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::matchLast('12a34a', '/\d+/'); // '34'  
@@ -1654,19 +1678,19 @@ Str::matchLast('abcabc', '/z/'); // NoMatchException
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The string to be matched.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$pattern</span><div class="phpdoc-description"><p>The pattern to search for. Must be a valid regex.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              matchLastOrNull()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Perform a regular expression match on given string and return the last match.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                matchLastOrNull()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Perform a regular expression match on given string and return the last match.<br />
 Returns <strong>null</strong> if no match is found.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::matchLastOrNull('12a34a', '/\d/'); // '34'  
@@ -1675,19 +1699,19 @@ Str::matchLastOrNull('abcabc', '/z/'); // null
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The string to be matched.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$pattern</span><div class="phpdoc-description"><p>The pattern to search for. Must be a valid regex.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">(string|null)</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              pad()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Pad a string to a certain length with another string.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                pad()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Pad a string to a certain length with another string.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::pad('a', 3, '_'); // 'a__'  
 Str::pad('a', 3, '_', STR_PAD_LEFT); // '__a'  
@@ -1700,19 +1724,19 @@ If the value is lower than the length of <code>$string</code>, the current strin
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$type</span><div class="phpdoc-description"><p>[Optional] The padding type. Type can be STR_PAD_RIGHT, STR_PAD_LEFT, STR_PAD_BOTH. Defaults to <strong>STR_PAD_RIGHT</strong></p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>The padded string.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              padBoth()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Pad a string on both ends to a certain length with another string.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                padBoth()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Pad a string on both ends to a certain length with another string.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::padBoth('a', 6, '_'); // '__a___'  
 Str::padBoth('hello', 10, '123'); // '12hello123'  
@@ -1723,19 +1747,19 @@ If the value is lower than the length, the current string will be returned as-is
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$padding</span><div class="phpdoc-description"><p>The string used for padding. Defaults to <strong>' '</strong>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>The padded string.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              padEnd()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Pad string on the beginning of <code>$string</code> to a certain length.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                padEnd()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Pad string on the beginning of <code>$string</code> to a certain length.<br />
 Padding will be repeated until it the given length is reached.<br />
 Any part of the padding that overflows will be cut.</p>
 <p>Example:</p>
@@ -1748,19 +1772,19 @@ If the value is lower than the length, the current string will be returned as-is
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$padding</span><div class="phpdoc-description"><p>[Optional] The string used for padding. Defaults to <strong>' '</strong>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>The padded string.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              padStart()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Pad string on the beginning of <code>$string</code> to a certain length.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                padStart()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Pad string on the beginning of <code>$string</code> to a certain length.<br />
 Padding will be repeated until it the given length is reached.<br />
 Any part of the padding that overflows will be cut.</p>
 <p>Example:</p>
@@ -1773,38 +1797,38 @@ If the value is lower than the length, the current string will be returned as-is
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$padding</span><div class="phpdoc-description"><p>[Optional] The string used for padding. Defaults to <strong>' '</strong>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>The padded string.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              range()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Returns a substring of given string defined by starting and ending index.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                range()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Returns a substring of given string defined by starting and ending index.<br />
 The starting index must be bigger or equal to the ending index.</p>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The string to be range of.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$start</span><div class="phpdoc-description"><p>The starting index of substring.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$end</span><div class="phpdoc-description"><p>The ending index of substring.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>The substring of given range.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              remove()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Remove all occurrence of <code>$substring</code> from <code>$string</code>.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                remove()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Remove all occurrence of <code>$substring</code> from <code>$string</code>.<br />
 If <code>$limit</code> is set, substring will only be removed from string that many times.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::remove('aaa', 'a'); // ''  
@@ -1819,19 +1843,19 @@ Defaults to <strong>null</strong>.</p>
 Any value previously set will be reset.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>Returns string with <code>$substring</code> removed.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              removeFirst()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Remove the first occurrence of <code>$substring</code> from <code>$string</code>.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                removeFirst()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Remove the first occurrence of <code>$substring</code> from <code>$string</code>.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::removeFirst('abac', 'a'); // 'bac'  
 </code></pre>
@@ -1839,19 +1863,19 @@ Any value previously set will be reset.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$substring</span><div class="phpdoc-description"><p>The substring to search for in the <code>$string</code>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>Returns string with <code>$substring</code> removed.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              removeLast()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Remove the first occurrence of <code>$substring</code> from <code>$string</code>.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                removeLast()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Remove the first occurrence of <code>$substring</code> from <code>$string</code>.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::removeLast('abac', 'a'); // 'abc'  
 </code></pre>
@@ -1859,19 +1883,19 @@ Any value previously set will be reset.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$substring</span><div class="phpdoc-description"><p>The substring to search for in the <code>$string</code>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>Returns string with <code>$substring</code> removed.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              repeat()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Repeat the given string n times.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                repeat()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Repeat the given string n times.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::repeat('a', 3); // 'aaa'  
 Str::repeat('abc', 2); // 'abcabc'  
@@ -1880,19 +1904,19 @@ Str::repeat('abc', 2); // 'abcabc'
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$times</span><div class="phpdoc-description"><p>Number of times to repeat <code>$string</code>. Must be &gt;= 0.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>The repeated string.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              replace()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Replace occurrences of the search string with the replacement string.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                replace()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Replace occurrences of the search string with the replacement string.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::replace('bb', 'b', 'a'); // 'aa'  
 Str::replace('aaa', 'a', '', 2); // 'a'  
@@ -1907,19 +1931,19 @@ Defaults to <strong>null</strong>.</p>
 Any value previously set will be reset.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>String with the replaced values.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              replaceFirst()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Replace the first occurrence of the search string with the replacement string.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                replaceFirst()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Replace the first occurrence of the search string with the replacement string.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::replaceFirst('bbb', 'b', 'a'); // 'abb'  
 </code></pre>
@@ -1929,19 +1953,19 @@ Any value previously set will be reset.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">&$replaced</span><div class="phpdoc-description"><p>[Optional][Reference] Set to <strong>true</strong> if string was replaced, <strong>false</strong> otherwise.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>String with the replaced values.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              replaceLast()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Replace the last occurrence of the search string with the replacement string.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                replaceLast()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Replace the last occurrence of the search string with the replacement string.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::replaceLast('bbb', 'b', 'a'); // 'bba'  
 </code></pre>
@@ -1951,19 +1975,19 @@ Any value previously set will be reset.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">&$replaced</span><div class="phpdoc-description"><p>[Optional][Reference] Set to <strong>true</strong> if string was replaced, <strong>false</strong> otherwise.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>String with the replaced values.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              replaceMatch()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Replace substring that match the pattern with the replacement string.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                replaceMatch()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Replace substring that match the pattern with the replacement string.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::replaceMatch('abcc', '/c/', 'b'); // 'abbb'  
 Str::replaceMatch('abcde', '/[A-Za-z]+/', 'x'); // 'x'  
@@ -1978,19 +2002,19 @@ Defaults to <strong>null</strong>.</p>
 Any value previously set will be reset.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>String with the replaced values.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              replaceMatchWithCallback()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Replace substring that match the pattern with the replacement string.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                replaceMatchWithCallback()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Replace substring that match the pattern with the replacement string.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::replaceMatchWithCallback('abc', '/[ac]/', fn() =&gt; 'b'); // 'bbb'  
 </code></pre>
@@ -2005,38 +2029,38 @@ Defaults to <strong>null</strong>.</p>
 Any value previously set will be reset.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>String with the replaced values.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              reverse()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Reverse a string (single byte).</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                reverse()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Reverse a string (single byte).</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::reverse('Foo'); // 'ooF'  
 </code></pre>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The string to be reversed.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>Reversed string.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              split()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Split a string into an array using a given string.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                split()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Split a string into an array using a given string.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::split('abcbd', 'b'); // ['a', 'c', 'd']  
 Str::split('abcbd', 'b', 2); // ['a', 'cbd']  
@@ -2046,32 +2070,32 @@ Str::split('abcbd', 'b', 2); // ['a', 'cbd']
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|null)</span> <span class="phpdoc-var-name">$limit</span><div class="phpdoc-description"><p>[Optional] Maximum number of chunks. Defaults to <strong>null</strong>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">list&lt;string&gt;</span><div class="phpdoc-description"><p>Returns an array of strings created by splitting.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              splitMatch()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$pattern</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|null)</span> <span class="phpdoc-var-name">$limit</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">list&lt;string&gt;</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              startsWith()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Checks if a string starts with a given substring(s).<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                splitMatch()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$pattern</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|null)</span> <span class="phpdoc-var-name">$limit</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">list&lt;string&gt;</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                startsWith()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Checks if a string starts with a given substring(s).<br />
 <code>$prefix</code> can be a string or an iterable list of strings.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::startsWith('abc', 'a'); // true  
@@ -2081,19 +2105,19 @@ Str::startsWith('abc', 'b'); // false
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$prefix</span><div class="phpdoc-description"><p>The substring(s) to search for in <code>$string</code>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span><div class="phpdoc-description"><p>Returns <strong>true</strong> if <code>$string</code> starts with <code>$prefix</code>, <strong>false</strong> otherwise.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              startsWithAny()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Checks if a string starts with a given substring(s).<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                startsWithAny()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Checks if a string starts with a given substring(s).<br />
 <code>$prefix</code> can be a string or an iterable list of strings.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::startsWithAny('abc', ['a', 'c']); // true  
@@ -2103,19 +2127,19 @@ Str::startsWithAny('abc', ['b', 'c']); // false
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;array-key, string&gt;</span> <span class="phpdoc-var-name">$prefixes</span><div class="phpdoc-description"><p>The substrings to search for in <code>$string</code>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span><div class="phpdoc-description"><p>Returns <strong>true</strong> if <code>$string</code> starts with <code>$prefix</code>, <strong>false</strong> otherwise.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              startsWithNone()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Checks if a string does not start with a given prefix(s).<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                startsWithNone()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Checks if a string does not start with a given prefix(s).<br />
 <code>$prefix</code> can be a string or an iterable list of strings.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::startsWithNone('abc', ['a', 'c', 'd']); // false because 'abc' starts with 'a'  
@@ -2125,19 +2149,19 @@ Str::startsWithNone('abc', ['x', 'y', 'z']); // true
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;array-key, string&gt;</span> <span class="phpdoc-var-name">$prefixes</span><div class="phpdoc-description"><p>The prefixes to search for in <code>$string</code>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span><div class="phpdoc-description"><p>Returns <strong>true</strong> if <code>$string</code> does not start with <code>$prefix</code>, <strong>false</strong> otherwise.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              substring()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Return a subset of <code>$string</code> starting at <code>$offset</code>.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                substring()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Return a subset of <code>$string</code> starting at <code>$offset</code>.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::substring('abc', 1); // 'a'  
 Str::substring('abc', 0, 1); // 'a'  
@@ -2150,19 +2174,19 @@ Str::substring('a', 1); // ''
 Defaults to <strong>null</strong>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>The extracted part of string.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              substringAfter()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Extract string after the specified substring.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                substringAfter()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Extract string after the specified substring.<br />
 Returns the original string if substring is not found.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::substringAfter('buffer', 'f'); // 'fer'  
@@ -2172,19 +2196,19 @@ Str::substringAfter('abc', '_'); // 'abc'
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$substring</span><div class="phpdoc-description"><p>The substring to look for.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>The extracted part of the string.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              substringAfterLast()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Extract string after the last occurrence of the specified substring.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                substringAfterLast()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Extract string after the last occurrence of the specified substring.<br />
 Returns the original string if substring is not found.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::substringAfterLast('buffer', 'f'); // 'er'  
@@ -2195,19 +2219,19 @@ Str::substringAfterLast('abc', '_'); // 'abc'
 If no match is found, the entire <code>$string</code> is returned.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>The extracted part of the string.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              substringBefore()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Extract string before the specified substring.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                substringBefore()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Extract string before the specified substring.<br />
 Returns the original string if substring is not found.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::substringBefore('buffer', 'f'); // 'bu'  
@@ -2217,19 +2241,19 @@ Str::substringBefore('abc', '_'); // 'abc'
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$substring</span><div class="phpdoc-description"><p>The substring to look for.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>The extracted part of the string.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              substringBeforeLast()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Extract string before the last occurrence of the specified substring.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                substringBeforeLast()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Extract string before the last occurrence of the specified substring.<br />
 Original string is returned if substring is not found.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::substringBeforeLast('buffer', 'f'); // 'buf'  
@@ -2239,19 +2263,19 @@ Str::substringBeforeLast('abc', '_'); // 'abc'
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$substring</span><div class="phpdoc-description"><p>The substring to look for.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>The extracted part of the string.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              surround()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Surround given string with <code>$before</code> and <code>$after</code>.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                surround()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Surround given string with <code>$before</code> and <code>$after</code>.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::surround('foo', '&quot;', '&quot;'); // &quot;foo&quot;  
 Str::surround('bar', '[', ']'); // [bar]  
@@ -2260,19 +2284,19 @@ Str::surround('bar', '[', ']'); // [bar]
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$before</span><div class="phpdoc-description"><p>String that will be prepended.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$after</span><div class="phpdoc-description"><p>String that will be appended.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              takeFirst()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Return a string which only contain the first n characters.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                takeFirst()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Return a string which only contain the first n characters.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::takeFirst('framework', 5); // 'frame'  
 Str::takeFirst('framework', 100); // 'framework'  
@@ -2282,19 +2306,19 @@ Str::takeFirst('framework', 100); // 'framework'
 If the given amount is greater than the string length, the given string is returned.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>The extracted part of the string.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              takeLast()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Return a string which only contain the last n characters.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                takeLast()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Return a string which only contain the last n characters.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::takeLast('framework', 4); // 'work'  
 Str::takeLast('framework', 100); // 'framework'  
@@ -2304,19 +2328,19 @@ Str::takeLast('framework', 100); // 'framework'
 If the given amount is greater than the string length, the given string is returned.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>The extracted part of the string.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              toBoolOrNull()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Converts the string to boolean value.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                toBoolOrNull()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Converts the string to boolean value.<br />
 &quot;1&quot;, &quot;true&quot;, &quot;TRUE&quot; will be converted to <code>true</code>.<br />
 &quot;0&quot;, &quot;false&quot;, &quot;FALSE&quot; will be converted to <code>false</code>.<br />
 Any other string will return <strong>null</strong>.</p>
@@ -2329,19 +2353,19 @@ Str::toBoolOrNull('👨‍👨‍👧‍👦'); // null
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The string to be converted.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">(bool|null)</span><div class="phpdoc-description"><p>Returns bool if string is compatible, <code>null</code> otherwise.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              toBool()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Converts the string to boolean value.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                toBool()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Converts the string to boolean value.<br />
 &quot;1&quot;, &quot;true&quot;, &quot;TRUE&quot; will be converted to <code>true</code>.<br />
 &quot;0&quot;, &quot;false&quot;, &quot;FALSE&quot; will be converted to <code>false</code>.<br />
 Any other string will throw a RuntimeException.</p>
@@ -2356,19 +2380,19 @@ Str::toBool('👨‍👨‍👧‍👦'); // ParseException: &quot;👨‍👨�
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The string to be converted.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span><div class="phpdoc-description"><p>Returns bool if string is compatible, <code>null</code> otherwise.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              toCamelCase()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Convert string to camel case.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                toCamelCase()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Convert string to camel case.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::toCamelCase('Camel case'); // 'camelCase'  
 Str::toCamelCase('camel-case'); // 'camelCase'  
@@ -2377,19 +2401,19 @@ Str::toCamelCase('camel_case'); // 'camelCase'
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The string to be camel cased.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>The string converted to camel case.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              toFloat()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Convert the string to floating point value.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                toFloat()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Convert the string to floating point value.<br />
 If string contains anything other than a number or precision is lost,<br />
 a RuntimeException is thrown.</p>
 <p>Example:</p>
@@ -2401,19 +2425,19 @@ Str::toFloat(''); // ParseException: &quot;&quot; is not a valid float string.
 </code></pre>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The string to be converted.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">float</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              toFloatOrNull()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Convert the string to floating point value.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                toFloatOrNull()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Convert the string to floating point value.<br />
 If string contains anything other than a number or precision is lost, <code>null</code> is returned.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::toFloatOrNull('1.1'); // 1.1  
@@ -2428,32 +2452,32 @@ Str::toFloatOrNull(''); // null
 For internal use. Defaults to <strong>false</strong>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">(float|null)</span><div class="phpdoc-description"><p>Returns float if string is compatible, <code>null</code> otherwise.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                protected
-                  static
-                function
-              </span>
-              matchFloatFormat()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">(string|null)</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              toInt()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Convert the string to integer value.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  protected
+                    static
+                  function
+                </span>
+                matchFloatFormat()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">(string|null)</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                toInt()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Convert the string to integer value.<br />
 If string contains anything other than a number or is larger than PHP_INT_MAX,<br />
 a RuntimeException will be thrown.</p>
 <p>Example:</p>
@@ -2464,19 +2488,19 @@ Str::toInt('1.0'); // RuntimeException: &quot;1.0&quot; is not a valid integer s
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The string to be converted.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">int</span><div class="phpdoc-description"><p>Converted integer.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              toIntOrNull()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Convert the string to integer value.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                toIntOrNull()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Convert the string to integer value.<br />
 If string contains anything other than a number or is larger than PHP_INT_MAX,<br />
 <strong>null</strong> is returned.</p>
 <p>Example:</p>
@@ -2488,19 +2512,19 @@ Str::toIntOrNull(str_repeat('1', 20)); // null
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The string to be converted.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">(int|null)</span><div class="phpdoc-description"><p>Returns converted int if string is compatible, <code>null</code> otherwise.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              toKebabCase()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Convert the given string to kebab-case.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                toKebabCase()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Convert the given string to kebab-case.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::toKebabCase('foo bar'); // 'foo-bar'  
 Str::toKebabCase('foo_bar'); // 'foo-bar'  
@@ -2510,38 +2534,38 @@ Str::toKebabCase('HTTPClient'); // 'http-client'
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>String to be converted to kebab-case.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>Kebab-cased string.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              toLowerCase()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Convert the given string to lower case.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                toLowerCase()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Convert the given string to lower case.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::toLowerCase('AbCd'); // 'abcd'  
 </code></pre>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The string being lower-cased.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>String with all alphabetic characters converted to lower case.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              toPascalCase()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Convert the given string to pascal-case.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                toPascalCase()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Convert the given string to pascal-case.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::toPascalCase('foo bar'); // 'FooBar'  
 Str::toPascalCase('foo-bar'); // 'FooBar'  
@@ -2551,19 +2575,19 @@ Str::toPascalCase('FooBar'); // 'FooBar'
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>String to be converted to pascal-case.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>Pascal-cased string.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              toSnakeCase()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Convert the given string to snake-case.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                toSnakeCase()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Convert the given string to snake-case.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::toSnakeCase('foo bar'); // 'foo_bar'  
 Str::toSnakeCase('foo_bar'); // 'foo_bar'  
@@ -2573,38 +2597,38 @@ Str::toSnakeCase('HTTPClient'); // 'http_client'
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>String to be converted to snake-case.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>Snake-cased string.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              toUpperCase()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Convert the given string to upper case.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                toUpperCase()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Convert the given string to upper case.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::toUpperCase('AbCd'); // 'ABCD'  
 </code></pre>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span><div class="phpdoc-description"><p>The string being upper-cased.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>String with all alphabetic characters converted to upper case.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              trim()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Strip whitespace (or other characters) from the beginning and end of a string.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                trim()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Strip whitespace (or other characters) from the beginning and end of a string.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::trim(' foo bar '); // 'foo bar'  
 Str::trim(&quot;\t\rfoo bar\n\r&quot;); // 'foo bar'  
@@ -2614,19 +2638,19 @@ Str::trim(&quot;\t\rfoo bar\n\r&quot;); // 'foo bar'
 Defaults to PCRE spaces. (<a href="https://www.pcre.org/original/doc/html/pcrepattern.html">https://www.pcre.org/original/doc/html/pcrepattern.html</a>)</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>The trimmed string.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              trimEnd()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Strip whitespace (or other characters) from the end of a string.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                trimEnd()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Strip whitespace (or other characters) from the end of a string.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::trimEnd(' foo bar '); // ' foo bar'  
 Str::trimEnd(&quot;\t\rfoo bar\n\r&quot;); // &quot;\t\rfoo bar&quot;  
@@ -2636,19 +2660,19 @@ Str::trimEnd(&quot;\t\rfoo bar\n\r&quot;); // &quot;\t\rfoo bar&quot;
 Defaults to PCRE spaces. (<a href="https://www.pcre.org/original/doc/html/pcrepattern.html">https://www.pcre.org/original/doc/html/pcrepattern.html</a>)</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>The trimmed string.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              trimStart()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Strip whitespace (or other characters) from the start of a string.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                trimStart()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Strip whitespace (or other characters) from the start of a string.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::trimStart(' foo bar '); // 'foo bar '  
 Str::trimStart(&quot;\t\rfoo bar\n\r&quot;); // &quot;foo bar\n\r&quot;  
@@ -2658,19 +2682,19 @@ Str::trimStart(&quot;\t\rfoo bar\n\r&quot;); // &quot;foo bar\n\r&quot;
 Defaults to PCRE spaces. (<a href="https://www.pcre.org/original/doc/html/pcrepattern.html">https://www.pcre.org/original/doc/html/pcrepattern.html</a>)</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>The trimmed string.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              withPrefix()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Prepend string with given prefix if it is not already present.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                withPrefix()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Prepend string with given prefix if it is not already present.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::withPrefix('foo', '_'); // &quot;_foo&quot;  
 Str::withPrefix('_foo', '_'); // &quot;_foo&quot;  
@@ -2679,19 +2703,19 @@ Str::withPrefix('_foo', '_'); // &quot;_foo&quot;
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$prefix</span><div class="phpdoc-description"><p>Prefix which will be applied if it is not present in <code>$string</code>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>String with the given prefix.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              withSuffix()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Append string with given suffix if it is not already present.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                withSuffix()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Append string with given suffix if it is not already present.</p>
 <p>Example:</p>
 <pre><code class="language-php">Str::withSuffix('foo', '_'); // &quot;foo_&quot;  
 Str::withSuffix('foo_', '_'); // &quot;foo_&quot;  
@@ -2700,10 +2724,10 @@ Str::withSuffix('foo_', '_'); // &quot;foo_&quot;
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$suffix</span><div class="phpdoc-description"><p>Suffix which will be applied if it is not present in <code>$string</code>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span><div class="phpdoc-description"><p>String with the given suffix.</p>
 </div></div>
-            </div>
-          </li>
-      </ul>
-    </div>
+              </div>
+            </li>
+        </ul>
+      </div>
   </div>
 </main>
 </body>

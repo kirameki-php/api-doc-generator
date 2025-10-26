@@ -9,7 +9,6 @@ use PHPStan\PhpDocParser\Ast\PhpDoc\TemplateTagValueNode;
 use ReflectionClass;
 use function array_map;
 use function array_values;
-use function htmlspecialchars;
 
 class ClassInfo implements StructureInfo
 {
@@ -76,6 +75,13 @@ class ClassInfo implements StructureInfo
      */
     public array $interfaces {
         get => $this->interfaces ??= $this->resolveInterfaces();
+    }
+
+    /**
+     * @var array<string, ConstantInfo>
+     */
+    public array $constants {
+        get => $this->constants ??= $this->resolveConstants();
     }
 
     /**
@@ -176,6 +182,18 @@ class ClassInfo implements StructureInfo
             $this->instantiate(...),
             $this->reflection->getInterfaces(),
         ));
+    }
+
+    /**
+     * @return array<string, ConstantInfo>
+     */
+    protected function resolveConstants(): array
+    {
+        $constants = [];
+        foreach ($this->reflection->getReflectionConstants() as $constant) {
+            $constants[$constant->name] = new ConstantInfo($this, $constant);
+        }
+        return $constants;
     }
 
     /**

@@ -3,32 +3,9 @@
 namespace Kirameki\ApiDocGenerator;
 
 use Kirameki\Core\Exceptions\UnreachableException;
-use League\CommonMark\GithubFlavoredMarkdownConverter;
-use League\CommonMark\MarkdownConverter;
-use PHPStan\PhpDocParser\Ast\PhpDoc\AssertTagMethodValueNode;
-use PHPStan\PhpDocParser\Ast\PhpDoc\AssertTagValueNode;
-use PHPStan\PhpDocParser\Ast\PhpDoc\DeprecatedTagValueNode;
-use PHPStan\PhpDocParser\Ast\PhpDoc\GenericTagValueNode;
-use PHPStan\PhpDocParser\Ast\PhpDoc\ParamOutTagValueNode;
-use PHPStan\PhpDocParser\Ast\PhpDoc\ParamTagValueNode;
-use PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocTagNode;
-use PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocTextNode;
-use PHPStan\PhpDocParser\Ast\PhpDoc\ReturnTagValueNode;
-use PHPStan\PhpDocParser\Ast\PhpDoc\TemplateTagValueNode;
-use PHPStan\PhpDocParser\Ast\PhpDoc\ThrowsTagValueNode;
-use PHPStan\PhpDocParser\Ast\Type\ArrayShapeNode;
-use PHPStan\PhpDocParser\Ast\Type\CallableTypeNode;
-use PHPStan\PhpDocParser\Ast\Type\GenericTypeNode;
-use PHPStan\PhpDocParser\Ast\Type\IdentifierTypeNode;
-use PHPStan\PhpDocParser\Ast\Type\TypeNode;
-use PHPStan\PhpDocParser\Ast\Type\UnionTypeNode;
 
 use ReflectionClass;
 use ReflectionMethod;
-use Stringable;
-use function dump;
-use function htmlspecialchars;
-use function str_replace;
 
 class MethodInfo extends MemberInfo
 {

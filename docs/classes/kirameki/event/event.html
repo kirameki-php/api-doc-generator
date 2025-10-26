@@ -908,106 +908,106 @@
     </div>
   </div>
   <div class="details">
-    <div class="properties">
-      <h3>Properties</h3>
-      <ul>
-          <li>
-            <div class="property-signature">
-              <span class="property-modifiers">
-                protected
-                bool
-              </span>
-              <span class="property-name">$evictCallback</span>
-            </div>
-            <div class="property-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span>  <span class="phpdoc-type">bool</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="property-signature">
-              <span class="property-modifiers">
-                protected
-                bool
-              </span>
-              <span class="property-name">$cancelled</span>
-            </div>
-            <div class="property-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span>  <span class="phpdoc-type">bool</span></div>
-            </div>
-          </li>
-      </ul>
-    </div>
-    <div class="methods">
-      <h3>Methods</h3>
-      <ul>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                function
-              </span>
-              evictCallback()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Mark signal callback for removal.<br />
+      <div class="properties">
+        <h3>Properties</h3>
+        <ul>
+            <li>
+              <div class="property-signature">
+                <span class="property-modifiers">
+                  protected
+                  bool
+                </span>
+                <span class="property-name">$evictCallback</span>
+              </div>
+              <div class="property-comment">
+                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span>  <span class="phpdoc-type">bool</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="property-signature">
+                <span class="property-modifiers">
+                  protected
+                  bool
+                </span>
+                <span class="property-name">$cancelled</span>
+              </div>
+              <div class="property-comment">
+                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span>  <span class="phpdoc-type">bool</span></div>
+              </div>
+            </li>
+        </ul>
+      </div>
+      <div class="methods">
+        <h3>Methods</h3>
+        <ul>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                  function
+                </span>
+                evictCallback()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Mark signal callback for removal.<br />
 When this is set to <strong>true</strong>, the signal callback will be removed.</p>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">$this</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                function
-              </span>
-              willEvictCallback()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Returns whether the signal callback should be removed.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                  function
+                </span>
+                willEvictCallback()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Returns whether the signal callback should be removed.</p>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                function
-              </span>
-              cancel()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                function
-              </span>
-              isCancelled()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                function
-              </span>
-              resetAfterCall()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Resets all changes after passing it to each callback.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                  function
+                </span>
+                cancel()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                  function
+                </span>
+                isCancelled()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                  function
+                </span>
+                resetAfterCall()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Resets all changes after passing it to each callback.</p>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@internal</span> <span class="phpdoc-type">
 This is called by the EventHandler after each emit.
 Do not call from user land.</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
-            </div>
-          </li>
-      </ul>
-    </div>
+              </div>
+            </li>
+        </ul>
+      </div>
   </div>
 </main>
 </body>

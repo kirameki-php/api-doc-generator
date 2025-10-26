@@ -916,194 +916,211 @@
           </li>
       </ul>
     </div>
-    <div class="properties">
-      <h3>Properties</h3>
-      <ul>
-          <li>
-            <div class="property-signature">
-              <span class="property-modifiers">
-                  static
-                private
-                array
-              </span>
-              <span class="property-name">$callbacks</span>
-            </div>
-            <div class="property-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span>  <span class="phpdoc-type">array&lt;int, EventHandler&lt;SignalEvent&gt;&gt;</span></div>
-            </div>
-          </li>
-      </ul>
-    </div>
-    <div class="methods">
-      <h3>Methods</h3>
-      <ul>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              handle()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Adds <code>$callback</code> to the signal handler.</p>
+      <div class="constants">
+        <h3>Constants</h3>
+        <ul>
+            <li>
+              <div class="constant-signature">
+                <span class="modifiers">
+                    final
+                  public
+                </span>
+                <span class="type"></span>
+                <span class="name">TermSignals</span>
+                <span class="assignment"> = </span>
+                  
+              </div>
+            </li>
+        </ul>
+      </div>
+      <div class="properties">
+        <h3>Properties</h3>
+        <ul>
+            <li>
+              <div class="property-signature">
+                <span class="property-modifiers">
+                    static
+                  private
+                  array
+                </span>
+                <span class="property-name">$callbacks</span>
+              </div>
+              <div class="property-comment">
+                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span>  <span class="phpdoc-type">array&lt;int, EventHandler&lt;SignalEvent&gt;&gt;</span></div>
+              </div>
+            </li>
+        </ul>
+      </div>
+      <div class="methods">
+        <h3>Methods</h3>
+        <ul>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                handle()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Adds <code>$callback</code> to the signal handler.</p>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$signal</span><div class="phpdoc-description"><p>Signal number to handle.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Closure(SignalEvent): mixed</span> <span class="phpdoc-var-name">$callback</span><div class="phpdoc-description"><p>Callback to be invoked when the signal is received.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">CallbackListener&lt;SignalEvent&gt;</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              addListener()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TListener</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$signal</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">TListener</span> <span class="phpdoc-var-name">$listener</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">TListener</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                protected
-                  static
-                function
-              </span>
-              captureSignal()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Register a callback for the given signal which will call invoke() when the signal is received.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                addListener()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TListener</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$signal</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">TListener</span> <span class="phpdoc-var-name">$listener</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">TListener</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  protected
+                    static
+                  function
+                </span>
+                captureSignal()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Register a callback for the given signal which will call invoke() when the signal is received.</p>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$signal</span><div class="phpdoc-description"><p>Signal number to be invoked.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                protected
-                  static
-                function
-              </span>
-              invoke()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Invokes all callbacks for the given signal.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  protected
+                    static
+                  function
+                </span>
+                invoke()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Invokes all callbacks for the given signal.<br />
 If the signal is marked for termination, this process will exit<br />
 with the given (signal number + 128) as specified in<br />
 <a href="https://tldp.org/LDP/abs/html/exitcodes.html">https://tldp.org/LDP/abs/html/exitcodes.html</a></p>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$signal</span><div class="phpdoc-description"><p>Signal number to be invoked.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">array{pid: int, status: (int | false), code: int}</span> <span class="phpdoc-var-name">$sigInfo</span><div class="phpdoc-description"><p>Information about the signal from <code>pcntl_signal(...)</code>.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              registeredSignals()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Returns all the registered signals.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                registeredSignals()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Returns all the registered signals.</p>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">array&lt;int, int&gt;</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              clearHandler()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Clear the given <code>$callback</code> for the specified signal.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                clearHandler()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Clear the given <code>$callback</code> for the specified signal.<br />
 Returns the number of callbacks removed.</p>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$signal</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">EventListener&lt;SignalEvent&gt;</span> <span class="phpdoc-var-name">$listener</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">int</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              clearHandlers()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Clears the signal handlers for the specified signal.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                clearHandlers()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Clears the signal handlers for the specified signal.</p>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$signal</span><div class="phpdoc-description"><p>Signal to clear.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              clearAllHandlers()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Clears all the signal handlers.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                clearAllHandlers()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Clears all the signal handlers.</p>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                  static
-                function
-              </span>
-              getNameOf()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Get the name of the signal from the signal number.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                getNameOf()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Get the name of the signal from the signal number.</p>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int&lt;1, 31&gt;</span> <span class="phpdoc-var-name">$signal</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                protected
-                  static
-                function
-              </span>
-              createSignalEvent()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Creates a new signal event.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  protected
+                    static
+                  function
+                </span>
+                createSignalEvent()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Creates a new signal event.<br />
 Event will be marked for termination if the signal is a termination signal.</p>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$signal</span><div class="phpdoc-description"><p>Signal number to be set.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">array{pid: int, status: (int | false), code: int}</span> <span class="phpdoc-var-name">$siginfo</span><div class="phpdoc-description"><p>Signal information from <code>pcntl_signal(...)</code> to be set.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">SignalEvent</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                  final
-                public
-                function
-              </span>
-              __construct()
-            </div>
-            <div class="method-comment">
-              
-            </div>
-          </li>
-      </ul>
-    </div>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                    final
+                  public
+                  function
+                </span>
+                __construct()
+              </div>
+              <div class="method-comment">
+                
+              </div>
+            </li>
+        </ul>
+      </div>
   </div>
 </main>
 </body>

@@ -102,6 +102,28 @@ blockquote {
         flex-direction: column;
         gap: 1rem;
         margin: 1rem;
+
+        .constants {
+            padding-top: 1rem;
+            h3 {
+                padding: 0.25rem 0;
+                border-bottom: 1px solid #e5e7eb;
+            }
+            .constant-signature {
+                font-family: var(--code-font-family);
+                margin: 1rem 0.5rem;
+
+                .modifiers {
+                    color: #3e68ba;
+                }
+                .type {
+                    color: #2563eb;
+                }
+                .name {
+                    color: #811f5a;
+                }
+            }
+        }
     }
 }
 .structure-extends,

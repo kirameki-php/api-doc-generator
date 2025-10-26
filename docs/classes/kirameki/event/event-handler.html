@@ -916,187 +916,187 @@
     </div>
   </div>
   <div class="details">
-    <div class="properties">
-      <h3>Properties</h3>
-      <ul>
-          <li>
-            <div class="property-signature">
-              <span class="property-modifiers">
-                public
-                array
-              </span>
-              <span class="property-name">$listeners</span>
-            </div>
-            <div class="property-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span>  <span class="phpdoc-type">list&lt;EventListener&lt;TEvent&gt;&gt;</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="property-signature">
-              <span class="property-modifiers">
-                  readonly
-                public
-                string
-              </span>
-              <span class="property-name">$class</span>
-            </div>
-            <div class="property-comment">
-              
-            </div>
-          </li>
-      </ul>
-    </div>
-    <div class="methods">
-      <h3>Methods</h3>
-      <ul>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                function
-              </span>
-              __construct()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">class-string&lt;TEvent&gt;</span> <span class="phpdoc-var-name">$class</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                function
-              </span>
-              do()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Appends a listener to the beginning of the list for the given event.<br />
+      <div class="properties">
+        <h3>Properties</h3>
+        <ul>
+            <li>
+              <div class="property-signature">
+                <span class="property-modifiers">
+                  public
+                  array
+                </span>
+                <span class="property-name">$listeners</span>
+              </div>
+              <div class="property-comment">
+                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span>  <span class="phpdoc-type">list&lt;EventListener&lt;TEvent&gt;&gt;</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="property-signature">
+                <span class="property-modifiers">
+                    readonly
+                  public
+                  string
+                </span>
+                <span class="property-name">$class</span>
+              </div>
+              <div class="property-comment">
+                
+              </div>
+            </li>
+        </ul>
+      </div>
+      <div class="methods">
+        <h3>Methods</h3>
+        <ul>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                  function
+                </span>
+                __construct()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">class-string&lt;TEvent&gt;</span> <span class="phpdoc-var-name">$class</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                  function
+                </span>
+                do()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Appends a listener to the beginning of the list for the given event.<br />
 This method must have an Event as the first parameter.</p>
 <p>This method is useful and cleaner than using append() but is slower since<br />
 it needs to extract the event class name from the callback using reflections.</p>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Closure(TEvent): mixed</span> <span class="phpdoc-var-name">$callback</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">CallbackListener&lt;TEvent&gt;</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                function
-              </span>
-              doOnce()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Appends a listener to the beginning of the list for the given event.<br />
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                  function
+                </span>
+                doOnce()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Appends a listener to the beginning of the list for the given event.<br />
 This method must have an Event as the first parameter. Listener will be<br />
 removed after it's called once.</p>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Closure(TEvent): mixed</span> <span class="phpdoc-var-name">$callback</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">CallbackOnceListener&lt;TEvent&gt;</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                function
-              </span>
-              append()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Append a listener to the end of the list.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                  function
+                </span>
+                append()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Append a listener to the end of the list.</p>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TListener</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">TListener</span> <span class="phpdoc-var-name">$listener</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">TListener</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                function
-              </span>
-              prepend()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Prepend a listener to the end of the list.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                  function
+                </span>
+                prepend()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Prepend a listener to the end of the list.</p>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TListener</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">TListener</span> <span class="phpdoc-var-name">$listener</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">TListener</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                function
-              </span>
-              removeListener()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Returns the number of listeners that were removed.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                  function
+                </span>
+                removeListener()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Returns the number of listeners that were removed.</p>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">EventListener&lt;TEvent&gt;</span> <span class="phpdoc-var-name">$listener</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">int&lt;0, max&gt;</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                function
-              </span>
-              removeAllListeners()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-description"><p>Returns the number of listeners that were removed.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                  function
+                </span>
+                removeAllListeners()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Returns the number of listeners that were removed.</p>
 </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">int&lt;0, max&gt;</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                function
-              </span>
-              hasListeners()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                function
-              </span>
-              hasNoListeners()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                public
-                function
-              </span>
-              emit()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">TEvent</span> <span class="phpdoc-var-name">$event</span><div class="phpdoc-description"><p>Event to be emitted.</p>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                  function
+                </span>
+                hasListeners()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                  function
+                </span>
+                hasNoListeners()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                  function
+                </span>
+                emit()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">TEvent</span> <span class="phpdoc-var-name">$event</span><div class="phpdoc-description"><p>Event to be emitted.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$wasCanceled</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param-out</span>  <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$wasCanceled</span><div class="phpdoc-description"><p>Flag to be set to true if the event propagation was stopped.</p>
 </div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">int&lt;0, max&gt;</span><div class="phpdoc-description"><p>The number of listeners that were called.</p>
 </div></div>
-            </div>
-          </li>
-          <li>
-            <div class="method-signature">
-              <span class="method-modifiers">
-                protected
-                function
-              </span>
-              evictListeners()
-            </div>
-            <div class="method-comment">
-              <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">list&lt;int&gt;</span> <span class="phpdoc-var-name">$indexes</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
-            </div>
-          </li>
-      </ul>
-    </div>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  protected
+                  function
+                </span>
+                evictListeners()
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">list&lt;int&gt;</span> <span class="phpdoc-var-name">$indexes</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
+              </div>
+            </li>
+        </ul>
+      </div>
   </div>
 </main>
 </body>
