@@ -2,26 +2,47 @@
 {varType Kirameki\ApiDocGenerator\ClassInfo $class}
 {varType Kirameki\ApiDocGenerator\StructureMap $structureMap}
 {block content}
-<main>
-  <div class="structure-namespace">
-    namespace <b>{$class->namespace}</b>
+<main class="structure">
+  <div class="basic-info">
+    <div class="namespace">
+      namespace <b>{$class->namespace}</b>
+    </div>
+    <div class="declaration">
+      <span class="modifiers">
+        {if $class->isFinal}
+          final
+        {/if}
+        {if $class->isAbstract}
+          abstract
+        {/if}
+        {if $class->isReadOnly}
+          readonly
+        {/if}
+        class
+      </span>
+      <span class="structure-name">
+        {$class->basename|noescape}
+        {if $class->generics !== []}
+        <span class="generics">
+          <span class="brace">&lt;</span>
+          {foreach $class->generics as $generic}
+            <span class="generic">
+              <span class="name">{$generic->name}</span>
+              {if $generic->bound !== null}
+                <span class="bound-delimiter"> as </span>
+                <span class="bound-">{$generic->bound}</span>
+              {/if}
+            </span>
+            {sep}<span class="delimiter">,</span>{/sep}
+          {/foreach}
+          <span class="brace">&gt;</span>
+        {/if}
+        </span>
+      </span>
+    </div>
   </div>
-  <div class="structure-header">
-    <span class="structure-modifiers">
-      {if $class->isFinal}
-      final
-      {/if}
-      {if $class->isAbstract}
-      abstract
-      {/if}
-      {if $class->isReadOnly}
-      readonly
-      {/if}
-      class
-    </span>
-    <span class="structure-name">{$class->basename}</span>
-  </div>
-  {if $class->parent !== null}
+  <div class="details">
+    {if $class->parent !== null}
     <div class="structure-extends">
       extends:
       <ul>
@@ -31,6 +52,10 @@
           <li>
             {if $structureMap->exists($current->name)}
               <a href="{$current->getHtmlPath()}">{$current->name}</a>
+            {elseif $current->namespace === ''}
+              <a href="https://www.php.net/manual/class.{$current->name|lower}.php">
+                {$current->name}
+              </a>
             {else}
               <span class="no-link">{$current->name}</span>
             {/if}
@@ -38,8 +63,8 @@
         {/while}
       </ul>
     </div>
-  {/if}
-  {if $class->interfaces !== []}
+    {/if}
+    {if $class->interfaces !== []}
     <div class="structure-implements">
       implements:
       <ul>
@@ -50,6 +75,11 @@
               <a href="{$interface->getHtmlPath()}">
                 {$interface->name}
               </a>
+            {elseif $interface->namespace === ''}
+              <a href="https://www.php.net/manual/class.{$interface->name|lower}.php" class="external-link" target="_blank">
+                {$interface->name}
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
             {else}
               <span class="no-link">
                 {$interface->name}
@@ -59,61 +89,62 @@
         {/foreach}
       </ul>
     </div>
-  {/if}
-  <div class="properties">
-    <h3>Properties</h3>
-    <ul>
-      {foreach $class->properties as $property}
-        {varType Kirameki\ApiDocGenerator\PropertyInfo $property}
-        <li>
-          <div class="property-signature">
-            <span class="property-modifiers">
-              {if $property->isReadOnly}
-                readonly
-              {/if}
-              {if $property->isStatic}
-                static
-              {/if}
-              {$property->visibility->value}
-              {$property->type}
-            </span>
-            <span class="property-name">${$property->name}</span>
-          </div>
-          <div class="property-comment">
-            {$property->commentAsMarkdown()|noescape}
-          </div>
-        </li>
-      {/foreach}
-    </ul>
-  </div>
-  <div class="methods">
-    <h3>Methods</h3>
-    <ul>
-      {foreach $class->methods as $method}
-        {varType Kirameki\ApiDocGenerator\MethodInfo $method}
-        <li>
-          <div class="method-signature">
-            <span class="method-modifiers">
-              {if $method->isFinal}
-                final
-              {/if}
-              {$method->visibility->value}
-              {if $method->isStatic}
-                static
-              {/if}
-              {if $method->isAbstract}
-                abstract
-              {/if}
-              function
-            </span>
-            {$method->name}()
-          </div>
-          <div class="method-comment">
-            {$method->commentAsMarkdown()|noescape}
-          </div>
-        </li>
-      {/foreach}
-    </ul>
+    {/if}
+    <div class="properties">
+      <h3>Properties</h3>
+      <ul>
+        {foreach $class->properties as $property}
+          {varType Kirameki\ApiDocGenerator\PropertyInfo $property}
+          <li>
+            <div class="property-signature">
+              <span class="property-modifiers">
+                {if $property->isReadOnly}
+                  readonly
+                {/if}
+                {if $property->isStatic}
+                  static
+                {/if}
+                {$property->visibility->value}
+                {$property->type}
+              </span>
+              <span class="property-name">${$property->name}</span>
+            </div>
+            <div class="property-comment">
+              {$property->commentAsMarkdown()|noescape}
+            </div>
+          </li>
+        {/foreach}
+      </ul>
+    </div>
+    <div class="methods">
+      <h3>Methods</h3>
+      <ul>
+        {foreach $class->methods as $method}
+          {varType Kirameki\ApiDocGenerator\MethodInfo $method}
+          <li>
+            <div class="method-signature">
+              <span class="method-modifiers">
+                {if $method->isFinal}
+                  final
+                {/if}
+                {$method->visibility->value}
+                {if $method->isStatic}
+                  static
+                {/if}
+                {if $method->isAbstract}
+                  abstract
+                {/if}
+                function
+              </span>
+              {$method->name}()
+            </div>
+            <div class="method-comment">
+              {$method->commentAsMarkdown()|noescape}
+            </div>
+          </li>
+        {/foreach}
+      </ul>
+    </div>
   </div>
 </main>
 {/block}

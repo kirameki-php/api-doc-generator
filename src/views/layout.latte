@@ -1,3 +1,4 @@
+{varType string $sidebarHtml}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +8,24 @@
   <link rel="stylesheet" href="css/main.css">
   <script src="https://kit.fontawesome.com/e95d1c3544.js" crossorigin="anonymous"></script>
   <title>Kirameki API Doc</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const sidebar = document.querySelector(".sidebar");
+      const savedScrollTop = sessionStorage.getItem("sidebarScrollTop");
+      if (savedScrollTop) {
+        sidebar.scrollTop = parseInt(savedScrollTop, 10);
+      }
+      sidebar.addEventListener("scroll", function() {
+        sessionStorage.setItem("sidebarScrollTop", sidebar.scrollTop);
+      });
+    });
+  </script>
 </head>
 <body>
+<nav class="sidebar">
+  <h2>Classes</h2>
+  {$sidebarHtml|noescape}
+</nav>
 {include content}
 </body>
 </html>

@@ -4,9 +4,12 @@ namespace Kirameki\ApiDocGenerator;
 
 use Kirameki\Collections\Vec;
 use Kirameki\Text\Str;
+use PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocTagNode;
+use PHPStan\PhpDocParser\Ast\PhpDoc\TemplateTagValueNode;
 use ReflectionClass;
 use function array_map;
 use function array_values;
+use function htmlspecialchars;
 
 class ClassInfo implements StructureInfo
 {
@@ -53,6 +56,13 @@ class ClassInfo implements StructureInfo
     }
 
     /**
+     * @var list<GenericInfo>
+     */
+    public array $generics {
+        get => $this->generics ??= $this->resolveGenerics();
+    }
+
+    /**
      * @var self|null
      */
     public ?self $parent {
@@ -81,6 +91,11 @@ class ClassInfo implements StructureInfo
     public array $methods {
         get => $this->methods ??= $this->resolveMethods();
     }
+
+    /**
+     * @var list<PhpDocTagNode>|null
+     */
+    protected ?array $phpDocTags = null;
 
     /**
      * @param StructureMap $structureMap
@@ -115,9 +130,47 @@ class ClassInfo implements StructureInfo
     }
 
     /**
+     * @return list<PhpDocTagNode>
+     */
+    protected function parsePhpDoc(): array
+    {
+        if ($this->phpDocTags !== null) {
+            return $this->phpDocTags;
+        }
+
+        $this->phpDocTags = [];
+        if (($comment = $this->reflection->getDocComment()) !== false) {
+            foreach ($this->docParser->parse($comment)->children as $doc) {
+                if ($doc instanceof PhpDocTagNode) {
+                    $this->phpDocTags[] = $doc;
+                }
+            }
+        }
+        return $this->phpDocTags;
+    }
+
+    /**
+     * @return list<GenericInfo>
+     */
+    protected function resolveGenerics(): array
+    {
+        $generics = [];
+        foreach ($this->parsePhpDoc() as $tag) {
+            $value = $tag->value;
+            if ($value instanceof TemplateTagValueNode) {
+                $generics[] = new GenericInfo(
+                    $value->name,
+                    $value->bound ? (string) $value->bound : null,
+                );
+            }
+        }
+        return $generics;
+    }
+
+    /**
      * @return list<self>
      */
-    public function resolveInterfaces(): array
+    protected function resolveInterfaces(): array
     {
         return array_values(array_map(
             $this->instantiate(...),
@@ -128,7 +181,7 @@ class ClassInfo implements StructureInfo
     /**
      * @return array<string, PropertyInfo>
      */
-    public function resolveProperties(): array
+    protected function resolveProperties(): array
     {
         $properties = [];
         foreach ($this->reflection->getProperties() as $property) {
@@ -145,7 +198,7 @@ class ClassInfo implements StructureInfo
     /**
      * @return array<string, MethodInfo>
      */
-    public function resolveMethods(): array
+    protected function resolveMethods(): array
     {
         $methods = [];
         foreach ($this->reflection->getMethods() as $method) {

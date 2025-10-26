@@ -75,14 +75,18 @@ class DocGenerator
         $docsPath = dirname(__DIR__) . '/docs';
         @mkdir($docsPath, 0755);
 
-        $html = $this->renderer->render(Path::of(__DIR__ . '/views/index.latte'), [
-            'structureMap' => $this->structureMap,
+        $sidebarHtml = $this->renderer->render(Path::of(__DIR__ . '/views/sidebar.latte'), [
             'tree' => $tree,
+        ]);
+
+        $html = $this->renderer->render(Path::of(__DIR__ . '/views/index.latte'), [
+            'sidebarHtml' => $sidebarHtml,
         ]);
         file_put_contents("{$docsPath}/main.html", $html);
 
         foreach (Iter::flatten($tree, 100) as $class) {
             $html = $this->renderer->render(Path::of(__DIR__ . '/views/class.latte'), [
+                'sidebarHtml' => $sidebarHtml,
                 'structureMap' => $this->structureMap,
                 'class' => $class,
             ]);

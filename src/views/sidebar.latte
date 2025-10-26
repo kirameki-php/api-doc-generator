@@ -1,15 +1,19 @@
 {varType Kirameki\ApiDocGenerator\Tree $tree}
 <ul>
-  {foreach $tree->namespaces as $name => $leaf}
+  {foreach $tree->namespaces as $name => $_tree}
     <li>
-      <div class="sidebar-folder">{$name}</div>
-      {include sidebar.latte, tree: $leaf}
+      <div class="sidebar-folder">
+        {$name}
+      </div>
+      {include sidebar.latte, tree: $_tree}
     </li>
   {/foreach}
-  {foreach $tree->classes as $leaf}
+  {foreach $tree->classes as $basename => $leaf}
     <li>
       {varType Kirameki\ApiDocGenerator\ClassInfo $leaf}
-      <a href="{$leaf->getHtmlPath()}" target="content">{$leaf->basename}</a>
+      <a href="{$leaf->getHtmlPath()}" title="{$leaf->name}">
+        {$basename}
+      </a>
     </li>
   {/foreach}
 </ul>
