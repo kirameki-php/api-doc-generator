@@ -24,6 +24,9 @@
       "Tests\\Kirameki\\ApiDocGenerator\\": "tests/src/"
     }
   },
+  "replace": {
+    "symfony/polyfill-php80": "*"
+  },
   "config": {
     "discard-changes": true,
     "preferred-install": "dist",

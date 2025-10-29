@@ -1,6 +1,6 @@
 {layout layout.latte}
-{varType Kirameki\ApiDocGenerator\ClassInfo $class}
-{varType Kirameki\ApiDocGenerator\StructureMap $structureMap}
+{varType Kirameki\ApiDocGenerator\Components\ClassDefinition $class}
+{varType Kirameki\ApiDocGenerator\Support\StructureMap $structureMap}
 {block content}
 <main class="structure">
   <div class="basic-info">
@@ -22,22 +22,26 @@
       </span>
       <span class="structure-name">
         {$class->basename|noescape}
-        {if $class->generics !== []}
+        {if $class->templates !== []}
         <span class="generics">
           <span class="brace">&lt;</span>
-          {foreach $class->generics as $generic}
+          {foreach $class->templates as $template}
+            {varType Kirameki\ApiDocGenerator\Components\TemplateDefinition $template}
             <span class="generic">
-              <span class="name">{$generic->name}</span>
-              {if $generic->bound !== null}
+              <span class="name">{$template->name}</span>
+              {if $template->bound instanceof Kirameki\ApiDocGenerator\Components\StructureInfo}
                 <span class="bound-delimiter"> as </span>
-                <span class="bound-">{$generic->bound}</span>
+                <span class="bound">
+                  <a href="{$template->bound->getHtmlPath()}">{$template->bound->name}</a></span>
+              {elseif is_string($template->bound)}
+                <span class="bound-delimiter"> as </span>
+                <span class="bound">{$template->bound}</span>
               {/if}
             </span>
             {sep}<span class="delimiter">,</span>{/sep}
           {/foreach}
           <span class="brace">&gt;</span>
         {/if}
-        </span>
       </span>
     </div>
   </div>
@@ -46,21 +50,21 @@
     <div class="structure-extends">
       extends:
       <ul>
-        {php $current = $class}
-        {while ($current = $current->parent) !== null}
-          {varType Kirameki\ApiDocGenerator\ClassInfo $current}
-          <li>
-            {if $structureMap->exists($current->name)}
-              <a href="{$current->getHtmlPath()}">{$current->name}</a>
-            {elseif $current->namespace === ''}
-              <a href="https://www.php.net/manual/class.{$current->name|lower}.php">
-                {$current->name}
-              </a>
-            {else}
-              <span class="no-link">{$current->name}</span>
-            {/if}
-          </li>
-        {/while}
+        {varType Kirameki\ApiDocGenerator\Components\ExtendInfo $extend}
+        {php $extend = $class->parent}
+        <li>
+          {if $structureMap->exists($extend->def->name)}
+            <a href="{$extend->def->getHtmlPath()}">{$extend->def->name}</a>
+            {include generics.latte, generics: $extend->generics}
+          {elseif $extend->def->namespace === ''}
+            <a href="https://www.php.net/manual/class.{$extend->def->name|lower}.php">
+              {$extend->def->name}
+              {include generics.latte, generics: $extend->generics}
+            </a>
+          {else}
+            <span class="no-link">{$extend->def->name}</span>
+          {/if}
+        </li>
       </ul>
     </div>
     {/if}
@@ -69,20 +73,21 @@
       implements:
       <ul>
         {foreach $class->interfaces as $interface}
-          {varType Kirameki\ApiDocGenerator\ClassInfo $interface}
+          {varType Kirameki\ApiDocGenerator\Components\InterfaceInfo $interface}
           <li>
-            {if $structureMap->exists($interface->name)}
-              <a href="{$interface->getHtmlPath()}">
-                {$interface->name}
+            {if $structureMap->exists($interface->def->name)}
+              <a href="{$interface->def->getHtmlPath()}">
+                {$interface->def->name}
               </a>
-            {elseif $interface->namespace === ''}
-              <a href="https://www.php.net/manual/class.{$interface->name|lower}.php" class="external-link" target="_blank">
-                {$interface->name}
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              {include generics.latte, generics: $interface->generics}
+            {elseif $interface->def->namespace === ''}
+              <a href="https://www.php.net/manual/class.{$interface->def->name|lower}.php" class="external-link" target="_blank">
+                {$interface->def->name}
               </a>
+              {include generics.latte, generics: $interface->generics}
             {else}
               <span class="no-link">
-                {$interface->name}
+                {$interface->def->name}
               </span>
             {/if}
           </li>
@@ -95,7 +100,7 @@
         <h3>Constants</h3>
         <ul>
           {foreach $class->constants as $constant}
-            {varType Kirameki\ApiDocGenerator\ConstantInfo $constant}
+            {varType Kirameki\ApiDocGenerator\Components\ConstantDefinition $constant}
             <li>
               <div class="constant-signature">
                 <span class="modifiers">
@@ -111,7 +116,25 @@
                 {if $value instanceof \UnitEnum}
                   <span class="value value-enum">{$value::class}::{$value->name}</span>
                 {elseif is_array($value)}
-                  {dump($value)}
+                  <span class="value value-array">
+                    [
+                    <ul>
+                      {foreach $value as $key => $item}
+                        <li>
+                          {if is_string($key)}
+                            "<span class="array-key-string">{$key}</span>" =>
+                          {else}
+                            <span class="array-key-int">{$key}</span> =>
+                          {/if}
+                          {if is_string($item)}
+                            <span class="value value-string">"{$value}"</span>
+                          {else}
+                            <span class="array-value-default">{$item}</span>
+                          {/if}
+                        </li>
+                      {/foreach}
+                    ]
+                  </span>
                 {elseif is_string($value)}
                   <span class="value value-string">"{$value}"</span>
                 {else}
@@ -128,7 +151,7 @@
         <h3>Properties</h3>
         <ul>
           {foreach $class->properties as $property}
-            {varType Kirameki\ApiDocGenerator\PropertyInfo $property}
+            {varType Kirameki\ApiDocGenerator\Components\PropertyDefinition $property}
             <li>
               <div class="property-signature">
                 <span class="property-modifiers">
@@ -156,7 +179,7 @@
         <h3>Methods</h3>
         <ul>
           {foreach $class->methods as $method}
-            {varType Kirameki\ApiDocGenerator\MethodInfo $method}
+            {varType Kirameki\ApiDocGenerator\Components\MethodDefinition $method}
             <li>
               <div class="method-signature">
                 <span class="method-modifiers">

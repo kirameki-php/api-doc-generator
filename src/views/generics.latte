@@ -1,0 +1,18 @@
+{varType array $generics}
+{if $generics !== []}
+<span class="generics">
+  <span class="brace">&lt;</span>
+  {foreach $generics as $template}
+    {varType Kirameki\ApiDocGenerator\Components\GenericInfo $template}
+    <span class="generic">
+      {if $template->variance !== null}
+        <span class="variance">{$template->variance}</span>
+      {/if}
+      <span class="name">
+        {$template->type}
+      </span>
+    </span>
+    {sep}<span class="delimiter">,</span>{/sep}
+  {/foreach}
+  <span class="brace">&gt;</span>
+{/if}

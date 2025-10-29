@@ -1,27 +1,20 @@
 <?php declare(strict_types=1);
 
-namespace Kirameki\ApiDocGenerator;
+namespace Kirameki\ApiDocGenerator\Components;
 
+use Kirameki\ApiDocGenerator\Support\CommentParser;
+use Kirameki\ApiDocGenerator\Support\StructureMap;
 use Kirameki\Core\Exceptions\UnreachableException;
 use ReflectionClass;
-use ReflectionProperty;
+use ReflectionMethod;
 
-class PropertyInfo extends MemberInfo
+class MethodDefinition extends MemberDefinition
 {
     /**
      * @var string
      */
     public string $name {
         get => $this->reflection->getName();
-    }
-
-    /**
-     * @var string|null
-     */
-    public ?string $type {
-        get => $this->type ??= $this->reflection->hasType()
-            ? (string) $this->reflection->getType()
-            : null;
     }
 
     /**
@@ -53,13 +46,6 @@ class PropertyInfo extends MemberInfo
     }
 
     /**
-     * @var bool
-     */
-    public bool $isReadOnly {
-        get => $this->reflection->isReadOnly();
-    }
-
-    /**
      * @var Visibility
      */
     public Visibility $visibility {
@@ -74,13 +60,13 @@ class PropertyInfo extends MemberInfo
     /**
      * @param StructureMap $structureMap
      * @param ReflectionClass<object> $reflectionClass
-     * @param ReflectionProperty $reflection
+     * @param ReflectionMethod $reflection
      * @param CommentParser $docParser
      */
     public function __construct(
         protected StructureMap $structureMap,
         protected ReflectionClass $reflectionClass,
-        protected ReflectionProperty $reflection,
+        protected ReflectionMethod $reflection,
         protected CommentParser $docParser,
     ) {
         parent::__construct($reflectionClass, $docParser);

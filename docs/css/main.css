@@ -80,21 +80,6 @@ blockquote {
         .structure-name {
             font-weight: bold;
             display: inline-flex;
-
-            .generics {
-                display: inline-flex;
-                flex-direction: row;
-                .brace {
-                    color: #6b7280;
-                }
-                .bound-delimiter {
-                    color: #6b7280;
-                }
-                .delimiter {
-                    color: #6b7280;
-                    margin-right: 0.25rem;
-                }
-            }
         }
     }
     .details {
@@ -123,6 +108,20 @@ blockquote {
                     color: #811f5a;
                 }
             }
+        }
+    }
+    .generics {
+        display: inline-flex;
+        flex-direction: row;
+        .brace {
+            color: #6b7280;
+        }
+        .bound-delimiter {
+            color: #6b7280;
+        }
+        .delimiter {
+            color: #6b7280;
+            margin-right: 0.25rem;
         }
     }
 }

@@ -1,7 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Kirameki\ApiDocGenerator;
+namespace Kirameki\ApiDocGenerator\Components;
 
+use Kirameki\ApiDocGenerator\Support\CommentParser;
 use Kirameki\Core\Exceptions\UnreachableException;
 use League\CommonMark\GithubFlavoredMarkdownConverter;
 use League\CommonMark\MarkdownConverter;
@@ -26,11 +27,10 @@ use PHPStan\PhpDocParser\Ast\Type\UnionTypeNode;
 use ReflectionClass;
 use Stringable;
 use function dump;
-use function get_class;
 use function htmlspecialchars;
 use function str_replace;
 
-abstract class MemberInfo
+abstract class MemberDefinition
 {
     /**
      * @var string

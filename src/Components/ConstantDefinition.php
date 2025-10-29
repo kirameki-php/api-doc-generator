@@ -1,18 +1,18 @@
 <?php declare(strict_types=1);
 
-namespace Kirameki\ApiDocGenerator;
+namespace Kirameki\ApiDocGenerator\Components;
 
 use Kirameki\Core\Exceptions\UnreachableException;
 use Kirameki\Text\Str;
 use ReflectionClassConstant;
 
-class ConstantInfo
+class ConstantDefinition
 {
     /**
      * @var string
      */
     public string $name {
-        get => $this->reflection->name;
+        get => $this->class->name;
     }
 
     /**
@@ -30,17 +30,10 @@ class ConstantInfo
     }
 
     /**
-     * @var mixed
-     */
-    public mixed $value {
-        get => $this->reflection->getValue();
-    }
-
-    /**
      * @var bool
      */
     public bool $isFinal {
-        get => $this->reflection->isFinal();
+        get => $this->class->isFinal;
     }
 
     /**
@@ -63,13 +56,19 @@ class ConstantInfo
     }
 
     /**
-     * @param ClassInfo $class
+     * @var mixed
+     */
+    public mixed $value {
+        get => $this->reflection->getValue();
+    }
+
+    /**
+     * @param ClassDefinition $class
      * @param ReflectionClassConstant $reflection
      */
     public function __construct(
-        protected ClassInfo $class,
+        protected ClassDefinition $class,
         protected ReflectionClassConstant $reflection,
-    )
-    {
+    ) {
     }
 }

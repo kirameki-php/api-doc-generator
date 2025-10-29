@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Kirameki\ApiDocGenerator;
+namespace Kirameki\ApiDocGenerator\Components;
 
 interface StructureInfo
 {
@@ -24,4 +24,17 @@ interface StructureInfo
     public string $basename {
         get;
     }
+
+    /**
+     * @var list<GenericInfo|string>
+     */
+    public protected(set) array $generics {
+        get;
+        set;
+    }
+
+    /**
+     * @return string
+     */
+    public function getHtmlPath(): string;
 }

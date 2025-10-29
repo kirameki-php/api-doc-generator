@@ -2,6 +2,10 @@
 
 namespace Kirameki\ApiDocGenerator;
 
+use Kirameki\ApiDocGenerator\Components\ClassDefinition;
+use Kirameki\ApiDocGenerator\Support\CommentParser;
+use Kirameki\ApiDocGenerator\Support\StructureMap;
+use Kirameki\ApiDocGenerator\Support\Tree;
 use Kirameki\Collections\Utils\Iter;
 use Kirameki\Core\Json;
 use Kirameki\Storage\Directory;
@@ -54,7 +58,12 @@ class DocGenerator
             $dir = new Directory("{$this->projectRoot}/{$path}");
             foreach ($dir->scanRecursively() as $storable) {
                 $reflection = $this->getClassIfExists($storable, $path, $namespace);
-                if ($reflection !== null) {
+                if ($reflection !== null &&
+                    (
+                        $reflection->getShortName() === 'Map' ||
+                        $reflection->getShortName() === 'Enumerator'
+                    )
+                ) {
                     if ($reflection instanceof ReflectionEnum) {
                         // TODO implement EnumInfo
                     }
@@ -62,9 +71,9 @@ class DocGenerator
                         // TODO implement TraitInfo
                     }
                     else {
-                        $classInfo = new ClassInfo($this->structureMap, $reflection, $this->docParser);
-                        $this->structureMap->add($classInfo);
-                        $this->appendToTree($tree, $classInfo);
+                        $classDef = new ClassDefinition($this->structureMap, $reflection, $this->docParser);
+                        $this->structureMap->add($classDef);
+                        $this->appendToTree($tree, $classDef);
                     }
                 }
             }
@@ -122,10 +131,10 @@ class DocGenerator
 
     /**
      * @param Tree $tree
-     * @param ClassInfo $classInfo
+     * @param ClassDefinition $classInfo
      * @return void
      */
-    protected function appendToTree(Tree $tree, ClassInfo $classInfo): void
+    protected function appendToTree(Tree $tree, ClassDefinition $classInfo): void
     {
         $parts = explode('\\', $classInfo->namespace);
         $current = $tree;

@@ -1,6 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Kirameki\ApiDocGenerator;
+namespace Kirameki\ApiDocGenerator\Support;
+
+use Kirameki\ApiDocGenerator\Components\StructureInfo;
 
 class StructureMap
 {

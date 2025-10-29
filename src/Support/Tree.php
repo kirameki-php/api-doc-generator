@@ -1,8 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Kirameki\ApiDocGenerator;
+namespace Kirameki\ApiDocGenerator\Support;
 
 use IteratorAggregate;
+use Kirameki\ApiDocGenerator\Components\ClassDefinition;
 use Traversable;
 
 class Tree implements IteratorAggregate
@@ -13,7 +14,7 @@ class Tree implements IteratorAggregate
     public array $namespaces = [];
 
     /**
-     * @var array<string, ClassInfo>
+     * @var array<string, ClassDefinition>
      */
     public array $classes = [];
 
@@ -30,7 +31,7 @@ class Tree implements IteratorAggregate
     }
 
     /**
-     * @return Traversable<string, ClassInfo>
+     * @return Traversable<string, ClassDefinition>
      */
     public function getIterator(): Traversable
     {
