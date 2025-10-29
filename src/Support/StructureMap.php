@@ -3,6 +3,7 @@
 namespace Kirameki\ApiDocGenerator\Support;
 
 use Kirameki\ApiDocGenerator\Components\StructureInfo;
+use Stringable;
 
 class StructureMap
 {
@@ -21,11 +22,11 @@ class StructureMap
     }
 
     /**
-     * @param string $name
+     * @param string|Stringable $name
      * @return bool
      */
-    public function exists(string $name): bool
+    public function exists(string|Stringable $name): bool
     {
-        return isset($this->map[$name]);
+        return isset($this->map[(string) $name]);
     }
 }

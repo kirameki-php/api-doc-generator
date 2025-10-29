@@ -47,7 +47,7 @@
   </div>
   <div class="details">
     {if $class->parent !== null}
-    <div class="structure-extends">
+    <div class="extends">
       extends:
       <ul>
         {varType Kirameki\ApiDocGenerator\Components\ExtendInfo $extend}
@@ -69,7 +69,7 @@
     </div>
     {/if}
     {if $class->interfaces !== []}
-    <div class="structure-implements">
+    <div class="implements">
       implements:
       <ul>
         {foreach $class->interfaces as $interface}
@@ -116,7 +116,7 @@
                 {if $value instanceof \UnitEnum}
                   <span class="value value-enum">{$value::class}::{$value->name}</span>
                 {elseif is_array($value)}
-                  <span class="value value-array">
+                  <div class="value value-array">
                     [
                     <ul>
                       {foreach $value as $key => $item}
@@ -134,7 +134,7 @@
                         </li>
                       {/foreach}
                     ]
-                  </span>
+                  </div>
                 {elseif is_string($value)}
                   <span class="value value-string">"{$value}"</span>
                 {else}
@@ -195,7 +195,10 @@
                   {/if}
                   function
                 </span>
-                {$method->name}()
+                {$method->name}():
+                <span class="return">
+                  {include type.latte, info: $method->returnType}
+                </span>
               </div>
               <div class="method-comment">
                 {$method->commentAsMarkdown()|noescape}

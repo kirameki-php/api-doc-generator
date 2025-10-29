@@ -50,7 +50,7 @@ blockquote {
 
     li {
         margin: 0.5rem 0;
-        font-size: 0.75rem;
+        font-size: 0.8rem;
     }
 
     .sidebar-folder {
@@ -85,8 +85,8 @@ blockquote {
     .details {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
-        margin: 1rem;
+        gap: 1.5rem;
+        margin: 1.5rem;
 
         .constants {
             padding-top: 1rem;
@@ -109,6 +109,44 @@ blockquote {
                 }
             }
         }
+        .extends,
+        .implements {
+            font-family: var(--code-font-family);
+            font-size: var(--code-font-size);
+            display: flex;
+            flex-direction: row;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-left: 0.5rem;
+
+                li {
+                    margin-right: 0.25rem;
+                    display: flex;
+                    flex-direction: row;
+
+                    a {
+                        display: flex;
+                        flex-direction: row;
+                    }
+                    .no-link {
+                        color: #6b7280;
+                    }
+                }
+            }
+        }
+        .extends li:not(:last-child)::after {
+            margin-left: 0.25rem;
+            content: "›";
+            color: #bababa;
+        }
+        .implements li:not(:last-child)::after {
+            margin-left: 0.25rem;
+            content: "|";
+            color: #dadada;
+        }
     }
     .generics {
         display: inline-flex;
@@ -125,60 +163,26 @@ blockquote {
         }
     }
 }
-.structure-extends,
-.structure-implements {
-    font-family: var(--code-font-family);
-    font-size: var(--code-font-size);
-    display: flex;
-    flex-direction: row;
-}
-.structure-extends ul,
-.structure-implements ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 0.5rem;
-}
-.structure-extends li,
-.structure-implements li {
-    margin-right: 0.25rem;
-    display: flex;
-    flex-direction: row;
-}
-.structure-extends li:not(:last-child)::after {
-    margin-left: 0.25rem;
-    content: "›";
-    color: #bababa;
-}
-.structure-implements li:not(:last-child)::after {
-    margin-left: 0.25rem;
-    content: "|";
-    color: #dadada;
-}
-.structure-extends a,
-.structure-implements a {
-    display: flex;
-    flex-direction: row;
-}
-.structure-extends .no-link,
-.structure-implements .no-link {
-    color: #6b7280;
-}
 .properties {
     padding-top: 1rem;
-}
-.properties h3 {
-    padding: 0.25rem 0;
-    border-bottom: 1px solid #e5e7eb;
-}
-.properties ul {
-    display: flex;
-    flex-direction: column;
-}
-.properties li {
-    border-bottom: 1px dashed #c7cdd5;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+
+    h3 {
+        padding: 0.25rem 0;
+        border-bottom: 1px solid #e5e7eb;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+
+        li {
+            border-bottom: 1px dashed #c7cdd5;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+    }
 }
 .property-signature {
     font-family: var(--code-font-family);
@@ -202,19 +206,25 @@ blockquote {
 }
 .methods {
     padding-top: 1rem;
-}
-.methods h3 {
-    padding: 0.25rem 0;
-    border-bottom: 1px solid #e5e7eb;
-}
-.methods ul {
-    display: flex;
-    flex-direction: column;
-}
-.methods li {
-    border-bottom: 1px dashed #c7cdd5;
-    padding-top: 0.5rem;
-    padding-bottom: 1rem;
+
+    h3 {
+        padding: 0.25rem 0;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+
+        li {
+            border-bottom: 1px dashed #c7cdd5;
+            padding-top: 0.5rem;
+            padding-bottom: 1rem;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+    }
 }
 .method-signature {
     font-family: var(--code-font-family);
@@ -231,7 +241,7 @@ blockquote {
 }
 .method-comment .phpdoc-description {
     margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     opacity: 60%;
     line-height: 1.5;
 }
@@ -269,6 +279,6 @@ blockquote {
     color: #1f8135;
 }
 .phpdoc-tag .phpdoc-description {
-    padding-left: 0.5rem;
+    padding-left: 0.25rem;
     opacity: 60%;
 }

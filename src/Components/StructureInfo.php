@@ -26,7 +26,7 @@ interface StructureInfo
     }
 
     /**
-     * @var list<GenericInfo|string>
+     * @var list<TypeInfo|string>
      */
     public protected(set) array $generics {
         get;

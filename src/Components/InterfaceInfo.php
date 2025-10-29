@@ -6,7 +6,7 @@ class InterfaceInfo
 {
     /**
      * @param StructureInfo $def
-     * @param list<GenericInfo|string> $generics
+     * @param list<TypeInfo|string> $generics
      */
     public function __construct(
         public readonly StructureInfo $def,

@@ -179,7 +179,7 @@ class ClassDefinition extends ClassInfo
         foreach ($this->getDocTagOfType(ExtendsTagValueNode::class) as $node) {
             foreach ($node->type->genericTypes as $genericType) {
                 if ($genericType instanceof IdentifierTypeNode) {
-                    $generics[] = new GenericInfo($this->lookUpType($genericType));
+                    $generics[] = new NamedTypeInfo($this->lookUpType($genericType));
                 } else {
                     throw new UnreachableException();
                 }
@@ -200,7 +200,7 @@ class ClassDefinition extends ClassInfo
             $generics = [];
             foreach ($node->type->genericTypes as $genericType) {
                 if ($genericType instanceof IdentifierTypeNode) {
-                    $generics[] = new GenericInfo($this->lookUpType($genericType));
+                    $generics[] = new NamedTypeInfo($this->lookUpType($genericType));
                 } else {
                     throw new UnreachableException();
                 }

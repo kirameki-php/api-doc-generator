@@ -33,7 +33,7 @@ class ClassInfo implements StructureInfo, Stringable
     }
 
     /**
-     * @var list<GenericInfo>
+     * @var list<TypeInfo|string>
      */
     public protected(set) array $generics {
         get => $this->generics;
@@ -44,7 +44,7 @@ class ClassInfo implements StructureInfo, Stringable
      * @param StructureMap $structureMap
      * @param ReflectionClass<object> $reflection
      * @param CommentParser $docParser
-     * @param list<GenericInfo> $generics
+     * @param list<TypeInfo> $generics
      */
     public function __construct(
         protected StructureMap $structureMap,

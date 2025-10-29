@@ -1,0 +1,32 @@
+{varType Kirameki\ApiDocGenerator\Components\TypeInfo $info}
+{if ($info instanceof Kirameki\ApiDocGenerator\Components\IntersectionTypeInfo)}
+  {varType Kirameki\ApiDocGenerator\Components\IntersectionTypeInfo $info}
+  {foreach $info->types as $innerInfo}
+    {include type.latte, info: $innerInfo}
+    {sep}<span class="delimiter">&amp;</span>{/sep}
+  {/foreach}
+{elseif ($info instanceof Kirameki\ApiDocGenerator\Components\UnionTypeInfo)}
+  {varType Kirameki\ApiDocGenerator\Components\UnionTypeInfo $info}
+  {foreach $info->types as $innerInfo}
+    {include type.latte, info: $innerInfo}
+    {sep}<span class="delimiter">|</span>{/sep}
+  {/foreach}
+{else}
+  {varType Kirameki\ApiDocGenerator\Components\NamedTypeInfo $info}
+  {if ($info->type instanceof Kirameki\ApiDocGenerator\Components\StructureInfo)}
+    {if $info->type->namespace !== ''}
+      <a href="{$info->type->getHtmlPath()}">
+        {$info->type}
+      </a>
+    {else}
+      <a href="https://www.php.net/manual/class.{$info->type->name|lower}.php" class="external-link" target="_blank">
+        {$info->type}
+      </a>
+    {/if}
+    {include generics.latte, generics: $info->type->generics}
+  {else}
+    <span class="no-link">
+      {$info->type}
+    </span>
+  {/if}
+{/if}

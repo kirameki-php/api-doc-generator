@@ -13,17 +13,13 @@ use function trim;
 use const T_CLASS;
 use const T_ENUM;
 use const T_IMPLEMENTS;
-use const T_NAME_FULLY_QUALIFIED;
-use const T_NAME_RELATIVE;
-use const T_REQUIRE;
-use const T_REQUIRE_ONCE;
 use const T_STRING;
 
 class ClassFile
 {
     /**
      * @param ReflectionClass<object> $reflection
-     * @param list<string> $implements
+     * @param list<class-string> $implements
      * @param array<string, class-string> $imports
      */
     public function __construct(
@@ -66,7 +62,7 @@ class ClassFile
                 $j = $i + 1;
                 while (($curr = $tokens[$j] ?? null) && $tokens[$j] !== '{') {
                     if (is_array($curr)) {
-                        if ($curr[0] === T_STRING) {
+                        if ($curr[0] === T_STRING && class_exists($curr[1])) {
                             $this->implements[] = $curr[1];
                         }
                     }

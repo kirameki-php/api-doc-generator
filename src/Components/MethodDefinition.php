@@ -6,7 +6,12 @@ use Kirameki\ApiDocGenerator\Support\CommentParser;
 use Kirameki\ApiDocGenerator\Support\StructureMap;
 use Kirameki\Core\Exceptions\UnreachableException;
 use ReflectionClass;
+use ReflectionIntersectionType;
 use ReflectionMethod;
+use ReflectionNamedType;
+use ReflectionType;
+use ReflectionUnionType;
+use function array_map;
 
 class MethodDefinition extends MemberDefinition
 {
@@ -22,6 +27,13 @@ class MethodDefinition extends MemberDefinition
      */
     public string $comment {
         get => $this->comment ??= (string) $this->reflection->getDocComment();
+    }
+
+    /**
+     * @var TypeInfo
+     */
+    public TypeInfo $returnType {
+        get => $this->returnType ??= $this->convertToTypeInfo($this->reflection->getReturnType());
     }
 
     /**
@@ -70,5 +82,32 @@ class MethodDefinition extends MemberDefinition
         protected CommentParser $docParser,
     ) {
         parent::__construct($reflectionClass, $docParser);
+    }
+
+    /**
+     * @param ReflectionType|null $type
+     * @return TypeInfo
+     */
+    protected function convertToTypeInfo(?ReflectionType $type): TypeInfo
+    {
+        if ($type instanceof ReflectionIntersectionType) {
+            return new IntersectionTypeInfo(
+                array_map($this->convertToTypeInfo(...), $type->getTypes()),
+                $type->allowsNull()
+            );
+        }
+
+        if ($type instanceof ReflectionUnionType) {
+            return new UnionTypeInfo(
+                array_map($this->convertToTypeInfo(...), $type->getTypes()),
+                $type->allowsNull()
+            );
+        }
+
+        if ($type instanceof ReflectionNamedType) {
+            return new NamedTypeInfo($type->getName(), $type->allowsNull());
+        }
+
+        return new NamedTypeInfo('mixed', false);
     }
 }
