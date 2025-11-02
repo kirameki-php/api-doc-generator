@@ -22,7 +22,6 @@
 </head>
 <body>
 <nav class="sidebar">
-  <h2>Classes</h2>
   <ul>
     <li>
       <div class="sidebar-folder">
@@ -984,7 +983,12 @@
                     static
                   function
                 </span>
-                observe()
+                observe():
+                <span class="return">
+    <span class="no-link">
+      self
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Observation MUST start before any process is spawned or there is a chance<br />
@@ -999,7 +1003,12 @@ a process exits before the observer has a change to register a handler.</p>
                     static
                   function
                 </span>
-                getProcessCount()
+                getProcessCount():
+                <span class="return">
+    <span class="no-link">
+      int
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">int</span></div>
@@ -1011,7 +1020,12 @@ a process exits before the observer has a change to register a handler.</p>
                   protected
                   function
                 </span>
-                __construct()
+                __construct():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>There should only be one observer instance which is registered<br />
@@ -1026,7 +1040,12 @@ people don't initialize this accidentally.</p>
                   protected
                   function
                 </span>
-                handleSignal()
+                handleSignal():
+                <span class="return">
+    <span class="no-link">
+      void
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>WARNING: this method is called even for ALL SIGCHLD signals, which include signals<br />
@@ -1043,7 +1062,12 @@ through ProcessManager have exited.</p>
                   public
                   function
                 </span>
-                onExit()
+                onExit():
+                <span class="return">
+    <span class="no-link">
+      void
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$pid</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Closure(int): void</span> <span class="phpdoc-var-name">$callback</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
@@ -1055,7 +1079,12 @@ through ProcessManager have exited.</p>
                   protected
                   function
                 </span>
-                preProcessExit()
+                preProcessExit():
+                <span class="return">
+    <span class="no-link">
+      void
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 

@@ -22,7 +22,6 @@
 </head>
 <body>
 <nav class="sidebar">
-  <h2>Classes</h2>
   <ul>
     <li>
       <div class="sidebar-folder">
@@ -907,7 +906,7 @@
     </div>
   </div>
   <div class="details">
-    <div class="structure-extends">
+    <div class="extends">
       extends:
       <ul>
         <li>
@@ -925,7 +924,12 @@
                     static
                   function
                 </span>
-                encode()
+                encode():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Encode data as JSON string.</p>
@@ -947,7 +951,12 @@ Json::encode(['a' =&gt; 1], true); // &quot;{\n    &quot;a&quot;: 1\n}&quot;
                     static
                   function
                 </span>
-                decode()
+                decode():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Decodes a JSON string.</p>
@@ -967,7 +976,12 @@ Json::decode('{&quot;a&quot;:1}'); // ['a' =&gt; 1]
                     static
                   function
                 </span>
-                validate()
+                validate():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Validate a JSON string.</p>
@@ -989,7 +1003,12 @@ Json::validate('{'); // false
                   public
                   function
                 </span>
-                __construct()
+                __construct():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 

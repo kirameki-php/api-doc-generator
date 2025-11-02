@@ -22,7 +22,6 @@
 </head>
 <body>
 <nav class="sidebar">
-  <h2>Classes</h2>
   <ul>
     <li>
       <div class="sidebar-folder">
@@ -906,6 +905,31 @@
     </div>
   </div>
   <div class="details">
+    <div class="implements">
+      implements:
+      <ul>
+          <li>
+              <a href="https://www.php.net/manual/class.iteratoraggregate.php" class="external-link" target="_blank">
+                IteratorAggregate
+              </a>
+<span class="generics">
+  <span class="brace">&lt;</span>
+    <span class="generic">
+      <span class="name">
+        int
+      </span>
+    </span>
+    <span class="delimiter">,</span>
+    <span class="generic">
+      <span class="name">
+        string
+      </span>
+    </span>
+
+  <span class="brace">&gt;</span>
+          </li>
+      </ul>
+    </div>
       <div class="properties">
         <h3>Properties</h3>
         <ul>
@@ -1032,7 +1056,12 @@
                   public
                   function
                 </span>
-                __construct()
+                __construct():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">resource</span> <span class="phpdoc-var-name">$process</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">ProcessObserver</span> <span class="phpdoc-var-name">$observer</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">ProcessInfo</span> <span class="phpdoc-var-name">$info</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">array&lt;int, resource&gt;</span> <span class="phpdoc-var-name">$pipes</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">EventHandler&lt;ProcessFinished&gt;</span> <span class="phpdoc-var-name">$onFinished</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(ProcessResult|null)</span> <span class="phpdoc-var-name">$result</span></div>
@@ -1044,7 +1073,12 @@
                   public
                   function
                 </span>
-                __destruct()
+                __destruct():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
@@ -1056,7 +1090,12 @@
                   public
                   function
                 </span>
-                isRunning()
+                isRunning():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
@@ -1068,7 +1107,12 @@
                   public
                   function
                 </span>
-                isDone()
+                isDone():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
@@ -1080,7 +1124,12 @@
                   public
                   function
                 </span>
-                getIterator()
+                getIterator():
+                <span class="return">
+    <span class="no-link">
+      Iterator
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Iterator&lt;int, string&gt;</span></div>
@@ -1092,7 +1141,12 @@
                   public
                   function
                 </span>
-                wait()
+                wait():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Process\ProcessResult
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$usleep</span><div class="phpdoc-description"><p>[Optional] Defaults to 10ms.</p>
@@ -1105,7 +1159,12 @@
                   public
                   function
                 </span>
-                signal()
+                signal():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$signal</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
@@ -1117,7 +1176,12 @@
                   public
                   function
                 </span>
-                terminate()
+                terminate():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(float|null)</span> <span class="phpdoc-var-name">$timeoutSeconds</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
@@ -1129,7 +1193,12 @@
                   public
                   function
                 </span>
-                writeToStdin()
+                writeToStdin():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$input</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$appendEol</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
@@ -1141,7 +1210,12 @@
                   public
                   function
                 </span>
-                readStdoutBuffer()
+                readStdoutBuffer():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span></div>
@@ -1153,7 +1227,12 @@
                   public
                   function
                 </span>
-                readStderrBuffer()
+                readStderrBuffer():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span></div>
@@ -1165,7 +1244,12 @@
                   protected
                   function
                 </span>
-                onSigChld()
+                onSigChld():
+                <span class="return">
+    <span class="no-link">
+      void
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$exitCode</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
@@ -1177,7 +1261,12 @@
                   protected
                   function
                 </span>
-                handleExit()
+                handleExit():
+                <span class="return">
+    <span class="no-link">
+      void
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$code</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
@@ -1189,7 +1278,12 @@
                   protected
                   function
                 </span>
-                readPipe()
+                readPipe():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">resource</span> <span class="phpdoc-var-name">$pipe</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">FileStream</span> <span class="phpdoc-var-name">$buffer</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span></div>
@@ -1201,7 +1295,12 @@
                   protected
                   function
                 </span>
-                drainPipes()
+                drainPipes():
+                <span class="return">
+    <span class="no-link">
+      void
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
@@ -1213,7 +1312,12 @@
                   protected
                   function
                 </span>
-                makeStdioStream()
+                makeStdioStream():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Stream\FileStream
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">FileStream</span></div>
@@ -1225,7 +1329,12 @@
                   protected
                   function
                 </span>
-                buildResult()
+                buildResult():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Process\ProcessResult
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$exitCode</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">ProcessResult</span></div>
@@ -1237,7 +1346,12 @@
                   protected
                   function
                 </span>
-                getResult()
+                getResult():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Process\ProcessResult
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">ProcessResult</span></div>

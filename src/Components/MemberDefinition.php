@@ -3,6 +3,7 @@
 namespace Kirameki\ApiDocGenerator\Components;
 
 use Kirameki\ApiDocGenerator\Support\CommentParser;
+use Kirameki\ApiDocGenerator\Support\PhpDoc;
 use Kirameki\Core\Exceptions\UnreachableException;
 use League\CommonMark\GithubFlavoredMarkdownConverter;
 use League\CommonMark\MarkdownConverter;
@@ -24,7 +25,6 @@ use PHPStan\PhpDocParser\Ast\Type\GenericTypeNode;
 use PHPStan\PhpDocParser\Ast\Type\IdentifierTypeNode;
 use PHPStan\PhpDocParser\Ast\Type\TypeNode;
 use PHPStan\PhpDocParser\Ast\Type\UnionTypeNode;
-use ReflectionClass;
 use Stringable;
 use function dump;
 use function htmlspecialchars;
@@ -80,12 +80,14 @@ abstract class MemberDefinition
     }
 
     /**
-     * @param ReflectionClass<object> $reflectionClass
-     * @param CommentParser $docParser
+     * @var PhpDoc
      */
+    protected PhpDoc $phpDoc {
+        get => $this->phpDoc ??= $this->docParser->parse($this->comment);
+    }
+
     public function __construct(
-        protected ReflectionClass $reflectionClass,
-        protected CommentParser $docParser,
+        protected readonly CommentParser $docParser,
     ) {
     }
 
@@ -94,10 +96,8 @@ abstract class MemberDefinition
      */
     public function commentAsMarkdown(): string
     {
-        if ($this->comment === '') {
-            return '';
-        }
         $content = '';
+        return $content;
         $docNode = $this->docParser->parse($this->comment);
         foreach ($docNode->children as $child) {
             if ($child instanceof PhpDocTextNode) {

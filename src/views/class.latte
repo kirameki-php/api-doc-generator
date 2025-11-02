@@ -29,13 +29,11 @@
             {varType Kirameki\ApiDocGenerator\Components\TemplateDefinition $template}
             <span class="generic">
               <span class="name">{$template->name}</span>
-              {if $template->bound instanceof Kirameki\ApiDocGenerator\Components\StructureInfo}
+              {if $template->bound instanceof Kirameki\ApiDocGenerator\Types\VarType}
                 <span class="bound-delimiter"> as </span>
                 <span class="bound">
-                  <a href="{$template->bound->getHtmlPath()}">{$template->bound->name}</a></span>
-              {elseif is_string($template->bound)}
-                <span class="bound-delimiter"> as </span>
-                <span class="bound">{$template->bound}</span>
+                  {include type.latte, type: $template->bound}
+                </span>
               {/if}
             </span>
             {sep}<span class="delimiter">,</span>{/sep}
@@ -50,20 +48,8 @@
     <div class="extends">
       extends:
       <ul>
-        {varType Kirameki\ApiDocGenerator\Components\ExtendInfo $extend}
-        {php $extend = $class->parent}
         <li>
-          {if $structureMap->exists($extend->def->name)}
-            <a href="{$extend->def->getHtmlPath()}">{$extend->def->name}</a>
-            {include generics.latte, generics: $extend->generics}
-          {elseif $extend->def->namespace === ''}
-            <a href="https://www.php.net/manual/class.{$extend->def->name|lower}.php">
-              {$extend->def->name}
-              {include generics.latte, generics: $extend->generics}
-            </a>
-          {else}
-            <span class="no-link">{$extend->def->name}</span>
-          {/if}
+          {include type.latte, type: $class->parent}
         </li>
       </ul>
     </div>
@@ -73,23 +59,8 @@
       implements:
       <ul>
         {foreach $class->interfaces as $interface}
-          {varType Kirameki\ApiDocGenerator\Components\InterfaceInfo $interface}
           <li>
-            {if $structureMap->exists($interface->def->name)}
-              <a href="{$interface->def->getHtmlPath()}">
-                {$interface->def->name}
-              </a>
-              {include generics.latte, generics: $interface->generics}
-            {elseif $interface->def->namespace === ''}
-              <a href="https://www.php.net/manual/class.{$interface->def->name|lower}.php" class="external-link" target="_blank">
-                {$interface->def->name}
-              </a>
-              {include generics.latte, generics: $interface->generics}
-            {else}
-              <span class="no-link">
-                {$interface->def->name}
-              </span>
-            {/if}
+            {include type.latte, type: $interface}
           </li>
         {/foreach}
       </ul>
@@ -197,7 +168,7 @@
                 </span>
                 {$method->name}():
                 <span class="return">
-                  {include type.latte, info: $method->returnType}
+                  {include type.latte, type: $method->returnType}
                 </span>
               </div>
               <div class="method-comment">

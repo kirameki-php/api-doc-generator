@@ -3,9 +3,12 @@
 namespace Kirameki\ApiDocGenerator;
 
 use Kirameki\ApiDocGenerator\Components\ClassDefinition;
-use Kirameki\ApiDocGenerator\Support\CommentParser;
+use Kirameki\ApiDocGenerator\Support\ClassFile;
+use Kirameki\ApiDocGenerator\Support\CommentParserFactory;
 use Kirameki\ApiDocGenerator\Support\StructureMap;
 use Kirameki\ApiDocGenerator\Support\Tree;
+use Kirameki\ApiDocGenerator\Support\TypeResolver;
+use Kirameki\ApiDocGenerator\Support\UrlResolver;
 use Kirameki\Collections\Utils\Iter;
 use Kirameki\Core\Json;
 use Kirameki\Storage\Directory;
@@ -33,22 +36,23 @@ class DocGenerator
 
     protected StructureMap $structureMap;
 
+    protected CommentParserFactory $docParserFactory;
+
     /**
      * @param string $basePath
      * @param string $projectRoot
      * @param PageRenderer $renderer
-     * @param CommentParser $docParser
      */
     public function __construct(
         protected string $basePath,
         protected string $projectRoot,
         protected PageRenderer $renderer,
-        protected CommentParser $docParser,
     ) {
         $composerContent = file_get_contents($this->projectRoot . '/composer.json') ?: throw new \RuntimeException('Failed to read composer.json');
         $composer = Json::decode($composerContent);
         $this->pathMap = array_flip((array) $composer->autoload->{'psr-4'});
         $this->structureMap = new StructureMap();
+        $this->docParserFactory = new CommentParserFactory();
     }
 
     public function generate(): void
@@ -60,6 +64,7 @@ class DocGenerator
                 $reflection = $this->getClassIfExists($storable, $path, $namespace);
                 if ($reflection !== null &&
                     (
+                        //true ||
                         $reflection->getShortName() === 'Map' ||
                         $reflection->getShortName() === 'Enumerator'
                     )
@@ -71,7 +76,11 @@ class DocGenerator
                         // TODO implement TraitInfo
                     }
                     else {
-                        $classDef = new ClassDefinition($this->structureMap, $reflection, $this->docParser);
+                        $file = new ClassFile($reflection);
+                        $docParser = $this->docParserFactory->createFor($file);
+                        $urlResolver = new UrlResolver($this->structureMap);
+                        $typeResolver = new TypeResolver($file, $docParser, $urlResolver);
+                        $classDef = new ClassDefinition($reflection, $file, $docParser, $typeResolver, $urlResolver);
                         $this->structureMap->add($classDef);
                         $this->appendToTree($tree, $classDef);
                     }

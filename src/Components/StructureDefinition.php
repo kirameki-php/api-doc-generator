@@ -2,7 +2,7 @@
 
 namespace Kirameki\ApiDocGenerator\Components;
 
-interface StructureInfo
+interface StructureDefinition
 {
     /**
      * @var string
@@ -23,14 +23,6 @@ interface StructureInfo
      */
     public string $basename {
         get;
-    }
-
-    /**
-     * @var list<TypeInfo|string>
-     */
-    public protected(set) array $generics {
-        get;
-        set;
     }
 
     /**

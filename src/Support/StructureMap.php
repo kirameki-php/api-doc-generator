@@ -2,21 +2,21 @@
 
 namespace Kirameki\ApiDocGenerator\Support;
 
-use Kirameki\ApiDocGenerator\Components\StructureInfo;
+use Kirameki\ApiDocGenerator\Components\StructureDefinition;
 use Stringable;
 
 class StructureMap
 {
     /**
-     * @var array<string, StructureInfo>
+     * @var array<string, StructureDefinition>
      */
     protected array $map = [];
 
     /**
-     * @param StructureInfo $info
+     * @param StructureDefinition $info
      * @return void
      */
-    public function add(StructureInfo $info): void
+    public function add(StructureDefinition $info): void
     {
         $this->map[$info->name] = $info;
     }

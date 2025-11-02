@@ -22,7 +22,6 @@
 </head>
 <body>
 <nav class="sidebar">
-  <h2>Classes</h2>
   <ul>
     <li>
       <div class="sidebar-folder">
@@ -1040,7 +1039,12 @@
                   public
                   function
                 </span>
-                __construct()
+                __construct():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(string|array&lt;int, string&gt;)</span> <span class="phpdoc-var-name">$command</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(string|null)</span> <span class="phpdoc-var-name">$directory</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(array&lt;string, string&gt;|null)</span> <span class="phpdoc-var-name">$envs</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(TimeoutInfo|null)</span> <span class="phpdoc-var-name">$timeout</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$termSignal</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">array&lt;int, int&gt;</span> <span class="phpdoc-var-name">$exceptedExitCodes</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(FileStream|null)</span> <span class="phpdoc-var-name">$stdout</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(FileStream|null)</span> <span class="phpdoc-var-name">$stderr</span></div>
@@ -1052,7 +1056,12 @@
                   public
                   function
                 </span>
-                inDirectory()
+                inDirectory():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(string|null)</span> <span class="phpdoc-var-name">$path</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">$this</span></div>
@@ -1064,7 +1073,12 @@
                   public
                   function
                 </span>
-                envs()
+                envs():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">array&lt;string, string&gt;</span> <span class="phpdoc-var-name">$envs</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">$this</span></div>
@@ -1076,7 +1090,12 @@
                   public
                   function
                 </span>
-                timeout()
+                timeout():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(float|null)</span> <span class="phpdoc-var-name">$durationSeconds</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$signal</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(float|null)</span> <span class="phpdoc-var-name">$killAfterSeconds</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">$this</span></div>
@@ -1088,7 +1107,12 @@
                   public
                   function
                 </span>
-                termSignal()
+                termSignal():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$signal</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">$this</span></div>
@@ -1100,7 +1124,12 @@
                   public
                   function
                 </span>
-                exceptedExitCodes()
+                exceptedExitCodes():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">...$codes</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">$this</span></div>
@@ -1112,7 +1141,12 @@
                   public
                   function
                 </span>
-                onStarted()
+                onStarted():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Closure(ProcessStarted): mixed</span> <span class="phpdoc-var-name">$callback</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">$this</span></div>
@@ -1124,7 +1158,12 @@
                   public
                   function
                 </span>
-                onFinished()
+                onFinished():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Closure(ProcessFinished): mixed</span> <span class="phpdoc-var-name">$callback</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">$this</span></div>
@@ -1136,7 +1175,12 @@
                   public
                   function
                 </span>
-                start()
+                start():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Process\ProcessRunner
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">ProcessRunner</span></div>
@@ -1148,7 +1192,12 @@
                   protected
                   function
                 </span>
-                buildInfo()
+                buildInfo():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Process\ProcessInfo
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(string|list&lt;string&gt;)</span> <span class="phpdoc-var-name">$executedCommand</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$pid</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">ProcessInfo</span></div>
@@ -1160,7 +1209,17 @@
                   public
                   function
                 </span>
-                buildShellCommand()
+                buildShellCommand():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+    <span class="delimiter">|</span>
+    <span class="no-link">
+      string
+    </span>
+
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">(string|list&lt;string&gt;)</span></div>
@@ -1172,7 +1231,12 @@
                   protected
                   function
                 </span>
-                buildTimeoutCommand()
+                buildTimeoutCommand():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@see</span> <span class="phpdoc-type">https://man7.org/linux/man-pages/man1/timeout.1.html</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">list&lt;string&gt;</span></div>
@@ -1184,7 +1248,12 @@
                   protected
                   function
                 </span>
-                getFileDescriptorSpec()
+                getFileDescriptorSpec():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">array&lt;int, mixed&gt;</span></div>

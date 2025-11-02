@@ -22,7 +22,6 @@
 </head>
 <body>
 <nav class="sidebar">
-  <h2>Classes</h2>
   <ul>
     <li>
       <div class="sidebar-folder">
@@ -917,7 +916,12 @@
                     static
                   function
                 </span>
-                chunk()
+                chunk():
+                <span class="return">
+    <span class="no-link">
+      Generator
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Creates a Generator which chunks elements into given size and passes it to the Generator.</p>
@@ -934,7 +938,33 @@
                     static
                   function
                 </span>
-                dropFirst()
+                collect():
+                <span class="return">
+    <span class="no-link">
+      Generator
+    </span>
+                </span>
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Creates a Generator that will send the result of the Generator returned by the <code>$callback</code>.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TMapValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TKey, TValue&gt;</span> <span class="phpdoc-var-name">$iterable</span><div class="phpdoc-description"><p>Iterable to be traversed.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Closure(TValue, TKey): Generator&lt;int, TMapValue&gt;</span> <span class="phpdoc-var-name">$callback</span><div class="phpdoc-description"><p>Closure that will be called for each key/value. The returned value will be yielded.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Generator&lt;int, TMapValue&gt;</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                    static
+                  function
+                </span>
+                dropFirst():
+                <span class="return">
+    <span class="no-link">
+      Generator
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Creates a Generator which iterates after the given amount.</p>
@@ -951,7 +981,12 @@
                     static
                   function
                 </span>
-                dropIf()
+                dropIf():
+                <span class="return">
+    <span class="no-link">
+      Generator
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Creates a Generator that will send the key/value to the generator if the condition is <strong>false</strong>.</p>
@@ -968,7 +1003,12 @@
                     static
                   function
                 </span>
-                dropUntil()
+                dropUntil():
+                <span class="return">
+    <span class="no-link">
+      Generator
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Creates a Generator which iterates and drop values until the condition returns <strong>true</strong>.</p>
@@ -985,7 +1025,12 @@
                     static
                   function
                 </span>
-                dropWhile()
+                dropWhile():
+                <span class="return">
+    <span class="no-link">
+      Generator
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Creates a Generator which iterates and drop values while the condition returns <strong>true</strong>.</p>
@@ -1002,7 +1047,12 @@
                     static
                   function
                 </span>
-                each()
+                each():
+                <span class="return">
+    <span class="no-link">
+      Generator
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Iterates through <code>$iterable</code> and invoke <code>$callback</code> for each element.</p>
@@ -1018,7 +1068,12 @@
                     static
                   function
                 </span>
-                flatMap()
+                flatMap():
+                <span class="return">
+    <span class="no-link">
+      Generator
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Creates a Generator that will map and also flatten the result of the callback.</p>
@@ -1034,7 +1089,12 @@
                     static
                   function
                 </span>
-                flatten()
+                flatten():
+                <span class="return">
+    <span class="no-link">
+      Generator
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Creates a Generator that will flatten any iterable value.</p>
@@ -1050,7 +1110,12 @@
                     static
                   function
                 </span>
-                flattenImpl()
+                flattenImpl():
+                <span class="return">
+    <span class="no-link">
+      Generator
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Actual implementation for flatten.</p>
@@ -1066,7 +1131,12 @@
                     static
                   function
                 </span>
-                replace()
+                replace():
+                <span class="return">
+    <span class="no-link">
+      Generator
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns an array which contains keys and values from <code>$iterable</code><br />
@@ -1088,7 +1158,12 @@ Any value previously set will be reset.</p>
                     static
                   function
                 </span>
-                keys()
+                keys():
+                <span class="return">
+    <span class="no-link">
+      Generator
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Creates a Generator that will send the key to the generator as value.</p>
@@ -1103,7 +1178,12 @@ Any value previously set will be reset.</p>
                     static
                   function
                 </span>
-                map()
+                map():
+                <span class="return">
+    <span class="no-link">
+      Generator
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Creates a Generator that will send the result of the closure as value to the generator.</p>
@@ -1119,7 +1199,12 @@ Any value previously set will be reset.</p>
                     static
                   function
                 </span>
-                mapWithKey()
+                mapWithKey():
+                <span class="return">
+    <span class="no-link">
+      Generator
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Creates a Generator that will map and also flatten the result of the callback.</p>
@@ -1135,7 +1220,12 @@ Any value previously set will be reset.</p>
                     static
                   function
                 </span>
-                repeat()
+                repeat():
+                <span class="return">
+    <span class="no-link">
+      Generator
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Creates a Generator that will repeat through the iterable for a given amount of times.</p>
@@ -1151,7 +1241,12 @@ Any value previously set will be reset.</p>
                     static
                   function
                 </span>
-                slice()
+                slice():
+                <span class="return">
+    <span class="no-link">
+      Generator
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Creates a Generator that will iterate starting from the offset up to the given length.</p>
@@ -1173,7 +1268,12 @@ If it is omitted, then the sequence will have everything from offset up until th
                     static
                   function
                 </span>
-                takeFirst()
+                takeFirst():
+                <span class="return">
+    <span class="no-link">
+      Generator
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Creates a Generator which takes the given amount of values.</p>
@@ -1189,7 +1289,12 @@ If it is omitted, then the sequence will have everything from offset up until th
                     static
                   function
                 </span>
-                slide()
+                slide():
+                <span class="return">
+    <span class="no-link">
+      Generator
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Creates a Generator that yields sub-slices of <code>$size</code>.<br />
@@ -1207,7 +1312,12 @@ Also known as sliding window.</p>
                     static
                   function
                 </span>
-                takeIf()
+                takeIf():
+                <span class="return">
+    <span class="no-link">
+      Generator
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Creates a Generator that will send the key/value to the generator if the condition is <strong>true</strong>.</p>
@@ -1224,7 +1334,12 @@ Also known as sliding window.</p>
                     static
                   function
                 </span>
-                takeInstanceOf()
+                takeInstanceOf():
+                <span class="return">
+    <span class="no-link">
+      Generator
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Iterates over each element in $iterable and takes only the elements that are instances of the given class.</p>
@@ -1241,7 +1356,12 @@ Also known as sliding window.</p>
                     static
                   function
                 </span>
-                takeUntil()
+                takeUntil():
+                <span class="return">
+    <span class="no-link">
+      Generator
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Creates a Generator which iterates and sends key/value to the generator until the condition returns <strong>true</strong>.</p>
@@ -1257,7 +1377,12 @@ Also known as sliding window.</p>
                     static
                   function
                 </span>
-                takeWhile()
+                takeWhile():
+                <span class="return">
+    <span class="no-link">
+      Generator
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Creates a Generator which iterates and sends key/value to the generator while the condition returns <strong>true</strong>.</p>
@@ -1273,7 +1398,12 @@ Also known as sliding window.</p>
                     static
                   function
                 </span>
-                values()
+                values():
+                <span class="return">
+    <span class="no-link">
+      Generator
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Creates a Generator that will send only the value to the generator.</p>
@@ -1288,7 +1418,12 @@ Also known as sliding window.</p>
                     static
                   function
                 </span>
-                verifyBool()
+                verifyBool():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Invoke the condition closure and make sure that it returns a boolean value.</p>
@@ -1305,7 +1440,12 @@ Also known as sliding window.</p>
                     static
                   function
                 </span>
-                verifyIterable()
+                verifyIterable():
+                <span class="return">
+    <span class="no-link">
+      iterable
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Invoke the condition closure and make sure that it returns an iterable value.</p>

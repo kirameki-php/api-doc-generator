@@ -3,9 +3,8 @@
 namespace Kirameki\ApiDocGenerator\Components;
 
 use Kirameki\ApiDocGenerator\Support\CommentParser;
-use Kirameki\ApiDocGenerator\Support\StructureMap;
+use Kirameki\ApiDocGenerator\Support\TypeResolver;
 use Kirameki\Core\Exceptions\UnreachableException;
-use ReflectionClass;
 use ReflectionProperty;
 
 class PropertyDefinition extends MemberDefinition
@@ -74,17 +73,15 @@ class PropertyDefinition extends MemberDefinition
     }
 
     /**
-     * @param StructureMap $structureMap
-     * @param ReflectionClass<object> $reflectionClass
      * @param ReflectionProperty $reflection
      * @param CommentParser $docParser
+     * @param TypeResolver $typeResolver
      */
     public function __construct(
-        protected StructureMap $structureMap,
-        protected ReflectionClass $reflectionClass,
         protected ReflectionProperty $reflection,
-        protected CommentParser $docParser,
+        CommentParser $docParser,
+        protected TypeResolver $typeResolver,
     ) {
-        parent::__construct($reflectionClass, $docParser);
+        parent::__construct($docParser);
     }
 }

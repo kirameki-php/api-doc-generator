@@ -22,7 +22,6 @@
 </head>
 <body>
 <nav class="sidebar">
-  <h2>Classes</h2>
   <ul>
     <li>
       <div class="sidebar-folder">
@@ -902,26 +901,43 @@
       </span>
       <span class="structure-name">
         MapMutable
-<span class="generics">
-  <span class="brace">&lt;</span>
-    <span class="generic">
-      <span class="name">TKey</span>
-    </span>
-    <span class="delimiter">,</span>
-    <span class="generic">
-      <span class="name">TValue</span>
-    </span>
+        <span class="generics">
+          <span class="brace">&lt;</span>
+            <span class="generic">
+              <span class="name">TKey</span>
+                <span class="bound-delimiter"> as </span>
+                <span class="bound">array-key</span>
+            </span>
+            <span class="delimiter">,</span>
+            <span class="generic">
+              <span class="name">TValue</span>
+            </span>
 
-  <span class="brace">&gt;</span>
+          <span class="brace">&gt;</span>
       </span>
     </div>
   </div>
   <div class="details">
-    <div class="structure-extends">
+    <div class="extends">
       extends:
       <ul>
         <li>
             <a href="classes/kirameki/collections/map.html">Kirameki\Collections\Map</a>
+<span class="generics">
+  <span class="brace">&lt;</span>
+    <span class="generic">
+      <span class="name">
+        TKey
+      </span>
+    </span>
+    <span class="delimiter">,</span>
+    <span class="generic">
+      <span class="name">
+        TValue
+      </span>
+    </span>
+
+  <span class="brace">&gt;</span>
         </li>
       </ul>
     </div>
@@ -951,7 +967,12 @@
                   public
                   function
                 </span>
-                __construct()
+                __construct():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TKey, TValue&gt;</span> <span class="phpdoc-var-name">$items</span></div>
@@ -963,7 +984,12 @@
                   public
                   function
                 </span>
-                instantiate()
+                instantiate():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@inheritDoc</span> </div>
@@ -975,7 +1001,12 @@
                   public
                   function
                 </span>
-                immutable()
+                immutable():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Collections\Map
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns an immutable copy of this map.</p>
@@ -988,7 +1019,12 @@
                   public
                   function
                 </span>
-                set()
+                set():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Set the given key value pair to the collection.</p>
@@ -1003,7 +1039,12 @@
                   public
                   function
                 </span>
-                setIfExists()
+                setIfExists():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Set the given key value pair to the collection only if the entry already exists.</p>
@@ -1019,7 +1060,12 @@
                   public
                   function
                 </span>
-                setIfNotExists()
+                setIfNotExists():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Set the given key value pair to the collection only if the entry does exist.</p>
@@ -1035,7 +1081,12 @@
                   protected
                   function
                 </span>
-                getItemsAsRef()
+                getItemsAsRef():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">array&lt;TKey, TValue&gt;</span></div>
@@ -1047,7 +1098,12 @@
                   public
                   function
                 </span>
-                offsetExists()
+                offsetExists():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@inheritDoc</span> </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">TKey</span> <span class="phpdoc-var-name">$offset</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
@@ -1059,7 +1115,12 @@
                   public
                   function
                 </span>
-                offsetGet()
+                offsetGet():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@inheritDoc</span> </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">TKey</span> <span class="phpdoc-var-name">$offset</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">TValue</span></div>
@@ -1071,7 +1132,12 @@
                   public
                   function
                 </span>
-                offsetSet()
+                offsetSet():
+                <span class="return">
+    <span class="no-link">
+      void
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@inheritDoc</span> </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|string|null)</span> <span class="phpdoc-var-name">$offset</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">TValue</span> <span class="phpdoc-var-name">$value</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
@@ -1083,7 +1149,12 @@
                   public
                   function
                 </span>
-                offsetUnset()
+                offsetUnset():
+                <span class="return">
+    <span class="no-link">
+      void
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@inheritDoc</span> </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">mixed</span> <span class="phpdoc-var-name">$offset</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
@@ -1095,7 +1166,12 @@
                   public
                   function
                 </span>
-                jsonSerialize()
+                jsonSerialize():
+                <span class="return">
+    <span class="no-link">
+      object
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@inheritDoc</span> </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">object</span></div>
@@ -1107,7 +1183,12 @@
                   public
                   function
                 </span>
-                containsAllKeys()
+                containsAllKeys():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>true</strong> if <code>$iterable</code> contains all the provided <code>$keys</code>,<br />
@@ -1122,7 +1203,12 @@
                   public
                   function
                 </span>
-                containsAnyKeys()
+                containsAnyKeys():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>true</strong> if <code>$iterable</code> contains any of the provided <code>$keys</code>,<br />
@@ -1137,7 +1223,12 @@
                   public
                   function
                 </span>
-                containsKey()
+                containsKey():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>true</strong> if a given key exists within iterable, <strong>false</strong> otherwise.</p>
@@ -1151,7 +1242,12 @@
                   public
                   function
                 </span>
-                diffKeys()
+                diffKeys():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Compares the keys from the collection against the keys from <code>$items</code> and returns the difference.</p>
@@ -1166,7 +1262,12 @@
                   public
                   function
                 </span>
-                doesNotContainKey()
+                doesNotContainKey():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>false</strong> if a given key exists within iterable, <strong>true</strong> otherwise.</p>
@@ -1180,7 +1281,12 @@
                   public
                   function
                 </span>
-                dropKeys()
+                dropKeys():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a new instance with the given keys removed. Missing keys will be ignored.<br />
@@ -1199,7 +1305,12 @@ Defaults to <strong>true</strong>.</p>
                   public
                   function
                 </span>
-                ensureExactKeys()
+                ensureExactKeys():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Ensures that collection only contains the given <code>$keys</code>.<br />
@@ -1215,7 +1326,12 @@ Throws <code>MissingKeyException</code> if <code>$iterable</code> contains fewer
                   public
                   function
                 </span>
-                firstKey()
+                firstKey():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the first key of the collection which meets the given <code>$condition</code>.<br />
@@ -1232,7 +1348,12 @@ Defaults to <strong>null</strong>.</p>
                   public
                   function
                 </span>
-                firstKeyOrNull()
+                firstKeyOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the first key of the collection which meets the given <code>$condition</code>.<br />
@@ -1248,7 +1369,12 @@ Defaults to <strong>null</strong>.</p>
                   public
                   function
                 </span>
-                get()
+                get():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the element of <code>$key</code>.<br />
@@ -1263,7 +1389,12 @@ Throws <code>InvalidKeyException</code> if key does not exist.</p>
                   public
                   function
                 </span>
-                getOr()
+                getOr():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the element of <code>$key</code> if it exists, <code>$default</code> is returned otherwise.</p>
@@ -1278,7 +1409,12 @@ Throws <code>InvalidKeyException</code> if key does not exist.</p>
                   public
                   function
                 </span>
-                getOrNull()
+                getOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the element of <code>$key</code> if it exists, <code>null</code> otherwise.</p>
@@ -1292,7 +1428,17 @@ Throws <code>InvalidKeyException</code> if key does not exist.</p>
                   public
                   function
                 </span>
-                keyAt()
+                keyAt():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+    <span class="delimiter">|</span>
+    <span class="no-link">
+      int
+    </span>
+
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the key at <code>$index</code>.<br />
@@ -1307,7 +1453,21 @@ Throws <code>IndexOutOfBoundsException</code> if the index does not exist.</p>
                   public
                   function
                 </span>
-                keyAtOrNull()
+                keyAtOrNull():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+    <span class="delimiter">|</span>
+    <span class="no-link">
+      int
+    </span>
+    <span class="delimiter">|</span>
+    <span class="no-link">
+      null
+    </span>
+
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the key at <code>$index</code>.<br />
@@ -1322,7 +1482,12 @@ Returns <strong>null</strong> if the index does not exist.</p>
                   public
                   function
                 </span>
-                keys()
+                keys():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Collections\Vec
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns all the keys as <code>Vec</code>.</p>
@@ -1335,7 +1500,12 @@ Returns <strong>null</strong> if the index does not exist.</p>
                   public
                   function
                 </span>
-                intersectKeys()
+                intersectKeys():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the intersection of the collection using keys for comparison.</p>
@@ -1349,7 +1519,12 @@ Returns <strong>null</strong> if the index does not exist.</p>
                   public
                   function
                 </span>
-                lastKey()
+                lastKey():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the last key of the collection which meets the <code>$condition</code>.<br />
@@ -1366,7 +1541,12 @@ Defaults to <strong>null</strong>.</p>
                   public
                   function
                 </span>
-                lastKeyOrNull()
+                lastKeyOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the last key of the collection which meets the <code>$condition</code>.<br />
@@ -1382,7 +1562,12 @@ Defaults to <strong>null</strong>.</p>
                   public
                   function
                 </span>
-                map()
+                map():
+                <span class="return">
+    <span class="no-link">
+      self
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a new instance containing results returned from invoking<br />
@@ -1397,7 +1582,12 @@ Defaults to <strong>null</strong>.</p>
                   public
                   function
                 </span>
-                mutable()
+                mutable():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Collections\MapMutable
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Converts collection to a mutable instance.</p>
@@ -1410,7 +1600,12 @@ Defaults to <strong>null</strong>.</p>
                   public
                   function
                 </span>
-                sampleKey()
+                sampleKey():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a random key picked from the collection.<br />
@@ -1427,7 +1622,12 @@ Defaults to <strong>null</strong>.</p>
                   public
                   function
                 </span>
-                sampleKeyOrNull()
+                sampleKeyOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a random key picked from the collection.<br />
@@ -1444,7 +1644,12 @@ Defaults to <strong>null</strong>.</p>
                   public
                   function
                 </span>
-                sampleKeys()
+                sampleKeys():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Collections\Vec
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a list of random elements picked as <code>Vec</code>.<br />
@@ -1465,7 +1670,12 @@ Defaults to <strong>null</strong>.</p>
                   public
                   function
                 </span>
-                sortByKey()
+                sortByKey():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Sort the collection by key in ascending order.</p>
@@ -1482,7 +1692,12 @@ Defaults to <code>SORT_REGULAR</code>.</p>
                   public
                   function
                 </span>
-                sortByKeyAsc()
+                sortByKeyAsc():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Sort the <code>$iterable</code> by key in ascending order.</p>
@@ -1498,7 +1713,12 @@ Defaults to <code>SORT_REGULAR</code>.</p>
                   public
                   function
                 </span>
-                sortByKeyDesc()
+                sortByKeyDesc():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Sort the <code>$iterable</code> by key in descending order.</p>
@@ -1514,7 +1734,12 @@ Defaults to <code>SORT_REGULAR</code>.</p>
                   public
                   function
                 </span>
-                sortWithKey()
+                sortWithKey():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Sorts the <code>$iterable</code> by key using the provided comparison function.</p>
@@ -1529,7 +1754,12 @@ Utilize the spaceship operator (<code>&lt;=&gt;</code>) to easily compare two va
                   public
                   function
                 </span>
-                swap()
+                swap():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a new collection with the elements of the two keys swapped.</p>
@@ -1544,7 +1774,12 @@ Utilize the spaceship operator (<code>&lt;=&gt;</code>) to easily compare two va
                   public
                   function
                 </span>
-                takeKeys()
+                takeKeys():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a new collection which only contains the elements that has matching<br />
@@ -1565,7 +1800,12 @@ Defaults to <strong>true</strong>.</p>
                   public
                   function
                 </span>
-                toUrlQuery()
+                toUrlQuery():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Generates URL encoded query string from the elements of the collection.<br />
@@ -1581,7 +1821,12 @@ Defaults to <strong>null</strong>.</p>
                   public
                   function
                 </span>
-                withDefaults()
+                withDefaults():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a copy of collection with the specified <code>$defaults</code> merged in if<br />
@@ -1596,7 +1841,12 @@ the corresponding key does not exist <code>$iterable</code>.</p>
                   public
                   function
                 </span>
-                values()
+                values():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Collections\Vec
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a new <code>Vec</code> which contains the values of the collection.</p>
@@ -1609,7 +1859,12 @@ the corresponding key does not exist <code>$iterable</code>.</p>
                   protected
                   function
                 </span>
-                reindex()
+                reindex():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@inheritDoc</span> </div>
@@ -1621,7 +1876,12 @@ the corresponding key does not exist <code>$iterable</code>.</p>
                   public
                   function
                 </span>
-                getIterator()
+                getIterator():
+                <span class="return">
+    <span class="no-link">
+      Traversable
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@inheritDoc</span> </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Traversable&lt;TKey, TValue&gt;</span></div>
@@ -1633,7 +1893,12 @@ the corresponding key does not exist <code>$iterable</code>.</p>
                   public
                   function
                 </span>
-                count()
+                count():
+                <span class="return">
+    <span class="no-link">
+      int
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>NOTE: Overridden to prevent calling Arr::count() directly since it calls count()<br />
@@ -1648,7 +1913,12 @@ again and cause an infinite loop.</p>
                   public
                   function
                 </span>
-                lazy()
+                lazy():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a new instance which collection is iterated lazily for<br />
@@ -1662,7 +1932,12 @@ some functions like <code>chunk</code>, <code>each</code>, <code>map</code>, and
                   public
                   function
                 </span>
-                eager()
+                eager():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a new instance as an eager collection.</p>
@@ -1675,7 +1950,12 @@ some functions like <code>chunk</code>, <code>each</code>, <code>map</code>, and
                   public
                   function
                 </span>
-                isLazy()
+                isLazy():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>true</strong> if collection is lazy. <strong>false</strong> otherwise.</p>
@@ -1688,7 +1968,12 @@ some functions like <code>chunk</code>, <code>each</code>, <code>map</code>, and
                   public
                   function
                 </span>
-                isEager()
+                isEager():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>false</strong> if collection is lazy. <strong>true</strong> otherwise.</p>
@@ -1701,7 +1986,12 @@ some functions like <code>chunk</code>, <code>each</code>, <code>map</code>, and
                   public
                   function
                 </span>
-                tap()
+                tap():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Invokes <code>$callback</code> with <code>$this</code> as argument and returns <code>$this</code>.</p>
@@ -1715,7 +2005,12 @@ some functions like <code>chunk</code>, <code>each</code>, <code>map</code>, and
                   public
                   function
                 </span>
-                all()
+                all():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the inner items as array.</p>
@@ -1728,7 +2023,12 @@ some functions like <code>chunk</code>, <code>each</code>, <code>map</code>, and
                   public
                   function
                 </span>
-                at()
+                at():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the value at the given index.<br />
@@ -1743,7 +2043,12 @@ Throws <code>IndexOutOfBoundsException</code> if the index does not exist.</p>
                   public
                   function
                 </span>
-                atOr()
+                atOr():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the value at the given index.<br />
@@ -1759,7 +2064,12 @@ Returns <code>$default</code> if the given index does not exist.</p>
                   public
                   function
                 </span>
-                atOrNull()
+                atOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the value at the given index.<br />
@@ -1774,7 +2084,12 @@ Returns <strong>null</strong> if the given index does not exist.</p>
                   public
                   function
                 </span>
-                chunk()
+                chunk():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Collections\Vec
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Splits the collection into chunks of the given size.</p>
@@ -1788,7 +2103,12 @@ Returns <strong>null</strong> if the given index does not exist.</p>
                   public
                   function
                 </span>
-                coalesce()
+                coalesce():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the first non-null value.<br />
@@ -1802,7 +2122,12 @@ Throws <code>InvalidArgumentException</code> if empty or all elements are <stron
                   public
                   function
                 </span>
-                coalesceOrNull()
+                coalesceOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the first non-null value.<br />
@@ -1816,7 +2141,31 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
                   public
                   function
                 </span>
-                contains()
+                collect():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Collections\Vec
+    </span>
+                </span>
+              </div>
+              <div class="method-comment">
+                <div class="phpdoc-description"><p>Returns a new <code>Vec</code> that contains the results sent from the Generator returned by the <code>$callback</code>.</p>
+</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TMapValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Closure(TValue, TKey): Generator&lt;int, TMapValue&gt;</span> <span class="phpdoc-var-name">$callback</span><div class="phpdoc-description"><p>Closure that will be called for each key/value. The returned value will be yielded.</p>
+</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Vec&lt;TMapValue&gt;</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                  public
+                  function
+                </span>
+                contains():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>true</strong> if value exists, <strong>false</strong> otherwise.</p>
@@ -1830,7 +2179,12 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
                   public
                   function
                 </span>
-                containsAll()
+                containsAll():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>true</strong> if all given values exist in the collection,<br />
@@ -1845,7 +2199,12 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
                   public
                   function
                 </span>
-                containsAny()
+                containsAny():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>true</strong> if any given values exist in the collection,<br />
@@ -1860,7 +2219,12 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
                   public
                   function
                 </span>
-                containsNone()
+                containsNone():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>true</strong> if none of the given values exist in the<br />
@@ -1875,7 +2239,12 @@ collection, <strong>false</strong> otherwise.</p>
                   public
                   function
                 </span>
-                containsSlice()
+                containsSlice():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>true</strong> if collection contains the given slice of <code>$values</code>,<br />
@@ -1890,7 +2259,12 @@ collection, <strong>false</strong> otherwise.</p>
                   public
                   function
                 </span>
-                traitCount()
+                traitCount():
+                <span class="return">
+    <span class="no-link">
+      int
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Counts all the elements in the collection.<br />
@@ -1906,7 +2280,12 @@ Defaults to <strong>null</strong>.</p>
                   public
                   function
                 </span>
-                countIs()
+                countIs():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Counts and checks the collection to see if the amount is equal to <code>$size</code>.</p>
@@ -1920,7 +2299,12 @@ Defaults to <strong>null</strong>.</p>
                   public
                   function
                 </span>
-                countIsBetween()
+                countIsBetween():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Checks and returns <strong>true</strong> if count of collection is between <code>$start</code> and <code>$end</code>,<br />
@@ -1937,7 +2321,12 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                   public
                   function
                 </span>
-                diff()
+                diff():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Compares the keys against the values from <code>$items</code> and returns the difference.</p>
@@ -1952,7 +2341,12 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                   public
                   function
                 </span>
-                doesNotContain()
+                doesNotContain():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>false</strong> if value exists, <strong>true</strong> otherwise.</p>
@@ -1966,7 +2360,12 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                   public
                   function
                 </span>
-                dropEvery()
+                dropEvery():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a new instance with every nth elements dropped.</p>
@@ -1980,7 +2379,12 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                   public
                   function
                 </span>
-                dropFirst()
+                dropFirst():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a new instance with the first n elements dropped.</p>
@@ -1994,7 +2398,12 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                   public
                   function
                 </span>
-                dropIf()
+                dropIf():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a new collection that contains all elements where the <code>$condition</code> returned <strong>false</strong>.</p>
@@ -2009,7 +2418,12 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                   public
                   function
                 </span>
-                dropLast()
+                dropLast():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a new instance with the last n elements dropped.</p>
@@ -2023,7 +2437,12 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                   public
                   function
                 </span>
-                dropUntil()
+                dropUntil():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a new instance with the values dropped until the condition returns <strong>true</strong>.</p>
@@ -2037,7 +2456,12 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                   public
                   function
                 </span>
-                dropWhile()
+                dropWhile():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a new instance with the values dropped while the condition returns <strong>true</strong>.</p>
@@ -2051,7 +2475,12 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                   public
                   function
                 </span>
-                duplicates()
+                duplicates():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns duplicate values.</p>
@@ -2064,7 +2493,12 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                   public
                   function
                 </span>
-                each()
+                each():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Iterates through the collection and invoke <code>$callback</code> for each element.</p>
@@ -2078,7 +2512,12 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                   public
                   function
                 </span>
-                ensureCountIs()
+                ensureCountIs():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Ensures that count of this collection is equal to <code>$size</code>.<br />
@@ -2093,7 +2532,12 @@ Throws <code>CountMismatchException</code> if count is not equal to <code>$size<
                   public
                   function
                 </span>
-                ensureElementType()
+                ensureElementType():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Ensures that all elements of the collection are of the given <code>$type</code>.<br />
@@ -2110,7 +2554,12 @@ Empty collections are considered valid.</p>
                   public
                   function
                 </span>
-                endsWith()
+                endsWith():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>true</strong> if the collection ends with the given <code>$values</code>, <strong>false</strong> otherwise.</p>
@@ -2124,7 +2573,12 @@ Empty collections are considered valid.</p>
                   public
                   function
                 </span>
-                filter()
+                filter():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a new collection that contains all elements where the <code>$condition</code> returned <strong>true</strong>.</p>
@@ -2140,7 +2594,12 @@ Empty collections are considered valid.</p>
                   public
                   function
                 </span>
-                first()
+                first():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the first element in the collection.<br />
@@ -2158,7 +2617,12 @@ Defaults to <strong>null</strong>.</p>
                   public
                   function
                 </span>
-                firstIndex()
+                firstIndex():
+                <span class="return">
+    <span class="no-link">
+      int
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the first index of the collection which meets the given <code>$condition</code>.<br />
@@ -2173,7 +2637,12 @@ Throws <code>NoMatchFoundException</code> if no condition is met.</p>
                   public
                   function
                 </span>
-                firstIndexOrNull()
+                firstIndexOrNull():
+                <span class="return">
+    <span class="no-link">
+      int
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the first index of the collection which meets the given <code>$condition</code>.<br />
@@ -2188,7 +2657,12 @@ Returns <strong>null</strong> if there were no matches.</p>
                   public
                   function
                 </span>
-                firstOr()
+                firstOr():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the first element in the collection.<br />
@@ -2206,7 +2680,12 @@ Defaults to <strong>null</strong>.</p>
                   public
                   function
                 </span>
-                firstOrNull()
+                firstOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the first element in the collection.<br />
@@ -2223,7 +2702,12 @@ Defaults to <strong>null</strong>.</p>
                   public
                   function
                 </span>
-                fold()
+                fold():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Take all the values in the collection and fold it into a single value.</p>
@@ -2240,7 +2724,12 @@ The returned value would be used as $result for the subsequent call.</p>
                   public
                   function
                 </span>
-                groupBy()
+                groupBy():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Collections\Map
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Groups the elements of the collection according to the string<br />
@@ -2255,7 +2744,12 @@ returned by <code>$callback</code>.</p>
                   public
                   function
                 </span>
-                intersect()
+                intersect():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the intersection of collection's values.</p>
@@ -2269,7 +2763,12 @@ returned by <code>$callback</code>.</p>
                   public
                   function
                 </span>
-                isEmpty()
+                isEmpty():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>true</strong> if empty, <strong>false</strong> otherwise.</p>
@@ -2282,7 +2781,12 @@ returned by <code>$callback</code>.</p>
                   public
                   function
                 </span>
-                isNotEmpty()
+                isNotEmpty():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>true</strong> if not empty, <strong>false</strong> otherwise.</p>
@@ -2295,7 +2799,12 @@ returned by <code>$callback</code>.</p>
                   public
                   function
                 </span>
-                join()
+                join():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Concatenates all the elements in the collection into a single<br />
@@ -2313,7 +2822,12 @@ also be added to the result string.</p>
                   public
                   function
                 </span>
-                keyBy()
+                keyBy():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Collections\Map
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a map which contains values from the collection with the keys<br />
@@ -2333,7 +2847,12 @@ If <strong>false</strong>, exception will be thrown on duplicate keys.</p>
                   public
                   function
                 </span>
-                last()
+                last():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the last element in the collection.<br />
@@ -2351,7 +2870,12 @@ Defaults to <strong>null</strong>.</p>
                   public
                   function
                 </span>
-                lastIndex()
+                lastIndex():
+                <span class="return">
+    <span class="no-link">
+      int
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the last index which meets the given <code>$condition</code>.<br />
@@ -2368,7 +2892,12 @@ Defaults to <strong>null</strong>.</p>
                   public
                   function
                 </span>
-                lastIndexOrNull()
+                lastIndexOrNull():
+                <span class="return">
+    <span class="no-link">
+      int
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the last index which meets the given <code>$condition</code>.<br />
@@ -2384,7 +2913,12 @@ Defaults to <strong>null</strong>.</p>
                   public
                   function
                 </span>
-                lastOr()
+                lastOr():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the last element in the collection.<br />
@@ -2402,7 +2936,12 @@ Defaults to <strong>null</strong>.</p>
                   public
                   function
                 </span>
-                lastOrNull()
+                lastOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the last element in the collection.<br />
@@ -2419,7 +2958,12 @@ Defaults to <strong>null</strong>.</p>
                   public
                   function
                 </span>
-                mapWithKey()
+                mapWithKey():
+                <span class="return">
+    <span class="no-link">
+      self
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a new Map with key value pair returned for each iterable returned by calling <code>$callback</code>.</p>
@@ -2435,7 +2979,12 @@ If <strong>false</strong>, exception will be thrown on duplicate keys.</p>
                   public
                   function
                 </span>
-                max()
+                max():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the largest element in the collection.<br />
@@ -2454,7 +3003,12 @@ Returned value will be used to determine the largest number.</p>
                   public
                   function
                 </span>
-                maxOrNull()
+                maxOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the largest element in the collection.<br />
@@ -2474,7 +3028,12 @@ Must be int or float.</p>
                   public
                   function
                 </span>
-                merge()
+                merge():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Merges one or more iterables into a single collection.</p>
@@ -2493,7 +3052,12 @@ iterable that comes later will overwrite the value in the key.</p>
                   public
                   function
                 </span>
-                mergeRecursive()
+                mergeRecursive():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Merges one or more iterables recursively into a single collection.<br />
@@ -2509,7 +3073,12 @@ Will merge recursively up to the given depth.</p>
                   public
                   function
                 </span>
-                min()
+                min():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the smallest element in the collection.<br />
@@ -2529,7 +3098,12 @@ Must be int or float.</p>
                   public
                   function
                 </span>
-                minOrNull()
+                minOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the smallest element in the collection.<br />
@@ -2549,7 +3123,12 @@ Must be int or float.</p>
                   public
                   function
                 </span>
-                minMax()
+                minMax():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the smallest and largest element from the collection as array{ min: , max: }.<br />
@@ -2568,7 +3147,12 @@ Returned value will be used to determine the highest number.</p>
                   public
                   function
                 </span>
-                partition()
+                partition():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a list with two collection elements.<br />
@@ -2585,7 +3169,12 @@ the second collection.</p>
                   public
                   function
                 </span>
-                pipe()
+                pipe():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Passes <code>$this</code> to the given callback and returns the result,<br />
@@ -2601,7 +3190,12 @@ The result of the callback will be returned.</p>
                   public
                   function
                 </span>
-                prioritize()
+                prioritize():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Move items which match the condition to the front of the collection.</p>
@@ -2616,7 +3210,12 @@ The result of the callback will be returned.</p>
                   public
                   function
                 </span>
-                ratio()
+                ratio():
+                <span class="return">
+    <span class="no-link">
+      float
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the ratio of values that satisfy the <code>$condition</code>.<br />
@@ -2631,7 +3230,12 @@ Throws <code>EmptyNotAllowedException</code> if collection is empty.</p>
                   public
                   function
                 </span>
-                ratioOrNull()
+                ratioOrNull():
+                <span class="return">
+    <span class="no-link">
+      float
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the ratio of values that satisfy the <code>$condition</code>.<br />
@@ -2646,7 +3250,12 @@ Returns <strong>null</strong> if the collection is empty.</p>
                   public
                   function
                 </span>
-                reduce()
+                reduce():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Iteratively reduce collection to a single value by invoking<br />
@@ -2664,7 +3273,12 @@ Third argument contains the current key.</p>
                   public
                   function
                 </span>
-                reduceOr()
+                reduceOr():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Iteratively reduce collection to a single value by invoking<br />
@@ -2683,7 +3297,12 @@ Third argument contains the current key.</p>
                   public
                   function
                 </span>
-                reduceOrNull()
+                reduceOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Iteratively reduce collection to a single value by invoking<br />
@@ -2701,7 +3320,12 @@ Third argument contains the current key.</p>
                   public
                   function
                 </span>
-                replace()
+                replace():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a new collection which contains keys and values from the collection<br />
@@ -2721,7 +3345,12 @@ Any value previously set will be reset.</p>
                   public
                   function
                 </span>
-                reverse()
+                reverse():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a new collection which contain all elements of the collection<br />
@@ -2735,7 +3364,12 @@ in reverse order.</p>
                   public
                   function
                 </span>
-                rotate()
+                rotate():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Converts the collection to an array and rotate the array to the right<br />
@@ -2751,7 +3385,12 @@ to the left instead.</p>
                   public
                   function
                 </span>
-                sample()
+                sample():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a random element from the collection.<br />
@@ -2768,7 +3407,12 @@ Defaults to <strong>null</strong>.</p>
                   public
                   function
                 </span>
-                sampleMany()
+                sampleMany():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Collections\Vec
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a list of random elements picked from the collection.<br />
@@ -2789,7 +3433,12 @@ Defaults to <strong>null</strong>.</p>
                   public
                   function
                 </span>
-                sampleOr()
+                sampleOr():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a random element from the collection.<br />
@@ -2807,7 +3456,12 @@ Defaults to <strong>null</strong>.</p>
                   public
                   function
                 </span>
-                sampleOrNull()
+                sampleOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a random element from the collection.<br />
@@ -2824,7 +3478,12 @@ Defaults to <strong>null</strong>.</p>
                   public
                   function
                 </span>
-                satisfyAll()
+                satisfyAll():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Runs the condition though each element of the collection and will return <strong>true</strong><br />
@@ -2840,7 +3499,12 @@ the collection is empty, <strong>false</strong> otherwise.</p>
                   public
                   function
                 </span>
-                satisfyAny()
+                satisfyAny():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Runs the condition though each element of the collection and will return <strong>true</strong><br />
@@ -2856,7 +3520,12 @@ if any iterations that run through the <code>$condition</code> returned <strong>
                   public
                   function
                 </span>
-                satisfyNone()
+                satisfyNone():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Runs the condition though each element of the collection and will return <strong>true</strong><br />
@@ -2872,7 +3541,12 @@ if all the iterations that run through the <code>$condition</code> returned <str
                   public
                   function
                 </span>
-                satisfyOnce()
+                satisfyOnce():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Runs the condition though each element of the collection and will return <strong>true</strong><br />
@@ -2888,7 +3562,12 @@ if iterations that run through the <code>$condition</code> returned <strong>true
                   public
                   function
                 </span>
-                shuffle()
+                shuffle():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Shuffles the elements of the collection.</p>
@@ -2904,7 +3583,12 @@ Defaults to <strong>null</strong>.</p>
                   public
                   function
                 </span>
-                single()
+                single():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the only element in the collection.<br />
@@ -2924,7 +3608,12 @@ Defaults to <strong>null</strong>.</p>
                   public
                   function
                 </span>
-                slice()
+                slice():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a shallow copy of a portion of the collection into a new collection.</p>
@@ -2943,7 +3632,12 @@ If it is omitted, then the sequence will have everything from offset up until th
                   public
                   function
                 </span>
-                slide()
+                slide():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Collections\Vec
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Converts the collection to an overlapping sub-slices of <code>$size</code>.<br />
@@ -2958,7 +3652,12 @@ Also known as sliding window.</p>
                   public
                   function
                 </span>
-                sort()
+                sort():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Sort the collection by value in the given order.</p>
@@ -2976,7 +3675,12 @@ Defaults to <code>SORT_REGULAR</code>.</p>
                   public
                   function
                 </span>
-                sortAsc()
+                sortAsc():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Sort the <code>$iterable</code> by value in ascending order.</p>
@@ -2993,7 +3697,12 @@ Defaults to <code>SORT_REGULAR</code>.</p>
                   public
                   function
                 </span>
-                sortDesc()
+                sortDesc():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Sort the <code>$iterable</code> by value in descending order.</p>
@@ -3010,7 +3719,12 @@ Defaults to <code>SORT_REGULAR</code>.</p>
                   public
                   function
                 </span>
-                sortWith()
+                sortWith():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Sorts the collection by value using the provided <code>$comparator</code> function.</p>
@@ -3025,7 +3739,12 @@ Utilize the spaceship operator (<code>&lt;=&gt;</code>) to easily compare two va
                   public
                   function
                 </span>
-                splitAfter()
+                splitAfter():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Collections\Vec
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Splits the collection right after the index where <code>$condition</code> returned <strong>true</strong>.</p>
@@ -3039,7 +3758,12 @@ Utilize the spaceship operator (<code>&lt;=&gt;</code>) to easily compare two va
                   public
                   function
                 </span>
-                splitAfterIndex()
+                splitAfterIndex():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Collections\Vec
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Splits the collection after the given <code>$index</code>.</p>
@@ -3054,7 +3778,12 @@ Negative index will count from the end.</p>
                   public
                   function
                 </span>
-                splitBefore()
+                splitBefore():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Collections\Vec
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Splits the collection right before the index where <code>$condition</code> returned <strong>true</strong>.</p>
@@ -3068,7 +3797,12 @@ Negative index will count from the end.</p>
                   public
                   function
                 </span>
-                splitBeforeIndex()
+                splitBeforeIndex():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Collections\Vec
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Splits the collection before the given <code>$index</code>.</p>
@@ -3083,7 +3817,12 @@ Negative index will count from the end.</p>
                   public
                   function
                 </span>
-                splitEvenly()
+                splitEvenly():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Collections\Vec
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Splits the collection into the given size and return it as Vec.</p>
@@ -3097,7 +3836,12 @@ Negative index will count from the end.</p>
                   public
                   function
                 </span>
-                startsWith()
+                startsWith():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>true</strong> if the collection starts with the given <code>$values</code>, <strong>false</strong> otherwise.</p>
@@ -3111,7 +3855,12 @@ Negative index will count from the end.</p>
                   public
                   function
                 </span>
-                takeEvery()
+                takeEvery():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a new instance with every nth elements dropped.</p>
@@ -3125,7 +3874,12 @@ Negative index will count from the end.</p>
                   public
                   function
                 </span>
-                takeFirst()
+                takeFirst():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Take the first n elements from the collection and return a new instance<br />
@@ -3140,7 +3894,12 @@ with those elements.</p>
                   public
                   function
                 </span>
-                takeIf()
+                takeIf():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a new collection that contains all elements where the <code>$condition</code> returned <strong>true</strong>.</p>
@@ -3155,7 +3914,12 @@ with those elements.</p>
                   public
                   function
                 </span>
-                takeInstanceOf()
+                takeInstanceOf():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Iterates over each element in $iterable and takes only the elements that are instances of the given class.</p>
@@ -3169,7 +3933,12 @@ with those elements.</p>
                   public
                   function
                 </span>
-                takeLast()
+                takeLast():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Take the last n elements from the collection and return a new instance<br />
@@ -3184,7 +3953,12 @@ with those elements.</p>
                   public
                   function
                 </span>
-                takeUntil()
+                takeUntil():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Takes elements in the collection until <code>$condition</code> returns <strong>true</strong>.</p>
@@ -3199,7 +3973,12 @@ taking of elements from the collection.</p>
                   public
                   function
                 </span>
-                takeWhile()
+                takeWhile():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Takes elements in the collection while <code>$condition</code> returns <strong>true</strong>.</p>
@@ -3214,7 +3993,12 @@ taking of elements from the collection.</p>
                   public
                   function
                 </span>
-                toArray()
+                toArray():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Converts the collection to an array recursively up to the given <code>$depth</code>.</p>
@@ -3228,7 +4012,12 @@ taking of elements from the collection.</p>
                   public
                   function
                 </span>
-                toJson()
+                toJson():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Converts the collection to a JSON string.</p>
@@ -3243,7 +4032,12 @@ Defaults to <strong>false</strong>.</p>
                   public
                   function
                 </span>
-                unique()
+                unique():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Removes duplicate values from <code>$iterable</code> and returns it as an array.</p>
@@ -3263,7 +4057,12 @@ Returned value will be used to check for duplicates.<br />
                   public
                   function
                 </span>
-                when()
+                when():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Calls <code>$callback</code> for every element in the collection if <code>$bool</code><br />
@@ -3280,7 +4079,12 @@ is <strong>true</strong>, calls <code>$fallback</code> otherwise.</p>
                   public
                   function
                 </span>
-                whenEmpty()
+                whenEmpty():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Calls <code>$callback</code> for every element in the collection if collection is empty,<br />
@@ -3296,7 +4100,12 @@ calls <code>$fallback</code> otherwise.</p>
                   public
                   function
                 </span>
-                whenNotEmpty()
+                whenNotEmpty():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Calls <code>$callback</code> for every element in the collection if collection is not<br />
@@ -3312,7 +4121,12 @@ empty, calls <code>$fallback</code> otherwise.</p>
                   public
                   function
                 </span>
-                without()
+                without():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a new instance with the specified <code>$value</code> excluded.</p>
@@ -3326,7 +4140,12 @@ empty, calls <code>$fallback</code> otherwise.</p>
                   protected
                   function
                 </span>
-                asArrayRecursive()
+                asArrayRecursive():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TKey, TValue&gt;</span> <span class="phpdoc-var-name">$items</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$depth</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$validate</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">array&lt;TKey, mixed&gt;</span></div>
@@ -3338,7 +4157,12 @@ empty, calls <code>$fallback</code> otherwise.</p>
                   protected
                   function
                 </span>
-                newMap()
+                newMap():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Collections\Map
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TNewKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TNewValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TNewKey, TNewValue&gt;</span> <span class="phpdoc-var-name">$iterable</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Map&lt;TNewKey, TNewValue&gt;</span></div>
@@ -3350,7 +4174,12 @@ empty, calls <code>$fallback</code> otherwise.</p>
                   protected
                   function
                 </span>
-                newVec()
+                newVec():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Collections\Vec
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TNewValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;int, TNewValue&gt;</span> <span class="phpdoc-var-name">$iterable</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Vec&lt;TNewValue&gt;</span></div>
@@ -3362,7 +4191,12 @@ empty, calls <code>$fallback</code> otherwise.</p>
                   public
                   function
                 </span>
-                clear()
+                clear():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Clears all items in the collection.</p>
@@ -3375,7 +4209,12 @@ empty, calls <code>$fallback</code> otherwise.</p>
                   public
                   function
                 </span>
-                insertAt()
+                insertAt():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Inserts <code>$values</code> at the given <code>$index</code>.</p>
@@ -3395,7 +4234,12 @@ Defaults to <strong>false</strong>.</p>
                   public
                   function
                 </span>
-                pop()
+                pop():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Pops the element off the end of the collection.<br />
@@ -3409,7 +4253,12 @@ Throws <code>EmptyNotAllowedException</code>, if the collection is empty.</p>
                   public
                   function
                 </span>
-                popOrNull()
+                popOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Pops the element off the end of the collection.<br />
@@ -3423,7 +4272,12 @@ Returns <strong>null</strong>, if the collection is empty.</p>
                   public
                   function
                 </span>
-                popMany()
+                popMany():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Pops elements off the end of the collection.<br />
@@ -3438,7 +4292,12 @@ Returns the popped elements in a new instance.</p>
                   public
                   function
                 </span>
-                pull()
+                pull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Removes <code>$key</code> from the collection and returns the pulled value.<br />
@@ -3453,7 +4312,12 @@ Throws <code>InvalidKeyException</code> if <code>$key</code> is not found.</p>
                   public
                   function
                 </span>
-                pullOr()
+                pullOr():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Removes <code>$key</code> from the collection and returns the pulled value.<br />
@@ -3469,7 +4333,12 @@ If <code>$key</code> is not found, value of <code>$default</code> is returned in
                   public
                   function
                 </span>
-                pullOrNull()
+                pullOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Removes <code>$key</code> from the collection and returns the pulled value.<br />
@@ -3484,7 +4353,12 @@ If <code>$key</code> is not found, <strong>null</strong> is returned instead.</p
                   public
                   function
                 </span>
-                pullMany()
+                pullMany():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Removes <code>$keys</code> from the collection and returns the pulled values as list.<br />
@@ -3500,7 +4374,12 @@ If <code>$key</code> does not exist, the missing key will be added to <code>$mis
                   public
                   function
                 </span>
-                remove()
+                remove():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Collections\Vec
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Removes <code>$value</code> from the collection.<br />
@@ -3517,7 +4396,12 @@ Returns the keys of the removed value.</p>
                   public
                   function
                 </span>
-                shift()
+                shift():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Shift an element off the beginning of the collection.<br />
@@ -3531,7 +4415,12 @@ Returns <strong>null</strong> if the collection is empty.</p>
                   public
                   function
                 </span>
-                shiftOrNull()
+                shiftOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Shift an element off the beginning of the collection.<br />
@@ -3545,7 +4434,12 @@ Returns <strong>null</strong> if the collection is empty.</p>
                   public
                   function
                 </span>
-                shiftMany()
+                shiftMany():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Shift an element off the beginning of the collection up to <code>$amount</code>.<br />

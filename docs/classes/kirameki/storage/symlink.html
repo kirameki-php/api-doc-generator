@@ -22,7 +22,6 @@
 </head>
 <body>
 <nav class="sidebar">
-  <h2>Classes</h2>
   <ul>
     <li>
       <div class="sidebar-folder">
@@ -906,7 +905,7 @@
     </div>
   </div>
   <div class="details">
-    <div class="structure-extends">
+    <div class="extends">
       extends:
       <ul>
         <li>
@@ -1096,7 +1095,12 @@
                   public
                   function
                 </span>
-                getTarget()
+                getTarget():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Storage\Storable
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Storable</span></div>
@@ -1108,7 +1112,12 @@
                   public
                   function
                 </span>
-                delete()
+                delete():
+                <span class="return">
+    <span class="no-link">
+      void
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@inheritDoc</span> </div>
@@ -1121,7 +1130,12 @@
                     static
                   function
                 </span>
-                fromInfo()
+                fromInfo():
+                <span class="return">
+    <span class="no-link">
+      self
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">SplFileInfo</span> <span class="phpdoc-var-name">$info</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$followSymlink</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">(Directory|File|Symlink)</span></div>
@@ -1133,7 +1147,12 @@
                   public
                   function
                 </span>
-                __construct()
+                __construct():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$pathname</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(SplFileInfo|null)</span> <span class="phpdoc-var-name">$info</span></div>
@@ -1145,7 +1164,12 @@
                   public
                   function
                 </span>
-                basename()
+                basename():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$suffix</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span></div>
@@ -1157,7 +1181,12 @@
                   public
                   function
                 </span>
-                dirname()
+                dirname():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int&lt;1, max&gt;</span> <span class="phpdoc-var-name">$levels</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span></div>
@@ -1169,7 +1198,12 @@
                   public
                   function
                 </span>
-                realPath()
+                realPath():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span></div>
@@ -1181,7 +1215,12 @@
                   public
                   function
                 </span>
-                isWritable()
+                isWritable():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
@@ -1193,7 +1232,12 @@
                   public
                   function
                 </span>
-                isReadable()
+                isReadable():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
@@ -1205,7 +1249,12 @@
                   public
                   function
                 </span>
-                isExecutable()
+                isExecutable():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
@@ -1217,7 +1266,12 @@
                   public
                   function
                 </span>
-                isLink()
+                isLink():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
@@ -1229,7 +1283,12 @@
                   public
                   function
                 </span>
-                exists()
+                exists():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
@@ -1241,7 +1300,12 @@
                   public
                   function
                 </span>
-                chmod()
+                chmod():
+                <span class="return">
+    <span class="no-link">
+      void
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$permissions</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
@@ -1253,7 +1317,12 @@
                   public
                   function
                 </span>
-                chown()
+                chown():
+                <span class="return">
+    <span class="no-link">
+      void
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|string)</span> <span class="phpdoc-var-name">$uid</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|string|null)</span> <span class="phpdoc-var-name">$gid</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
@@ -1265,7 +1334,12 @@
                   public
                   function
                 </span>
-                chgrp()
+                chgrp():
+                <span class="return">
+    <span class="no-link">
+      void
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|string)</span> <span class="phpdoc-var-name">$gid</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
@@ -1277,7 +1351,12 @@
                   public
                   function
                 </span>
-                moveTo()
+                moveTo():
+                <span class="return">
+    <span class="no-link">
+      void
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$destination</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
@@ -1289,7 +1368,12 @@
                   protected
                   function
                 </span>
-                resolveType()
+                resolveType():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Storage\FileType
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 
@@ -1301,7 +1385,12 @@
                   protected
                   function
                 </span>
-                resolveDirectory()
+                resolveDirectory():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Storage\Directory
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Directory</span></div>
@@ -1313,7 +1402,12 @@
                   protected
                   function
                 </span>
-                newFileInfo()
+                newFileInfo():
+                <span class="return">
+    <span class="no-link">
+      SplFileInfo
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">SplFileInfo</span></div>

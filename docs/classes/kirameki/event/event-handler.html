@@ -22,7 +22,6 @@
 </head>
 <body>
 <nav class="sidebar">
-  <h2>Classes</h2>
   <ul>
     <li>
       <div class="sidebar-folder">
@@ -902,16 +901,16 @@
       </span>
       <span class="structure-name">
         EventHandler
-<span class="generics">
-  <span class="brace">&lt;</span>
-    <span class="generic">
-      <span class="name">TEvent</span>
-        <span class="bound-delimiter"> as </span>
-        <span class="bound">
-          <a href="classes/kirameki/event/event.html">Kirameki\Event\Event</a></span>
-    </span>
+        <span class="generics">
+          <span class="brace">&lt;</span>
+            <span class="generic">
+              <span class="name">TEvent</span>
+                <span class="bound-delimiter"> as </span>
+                <span class="bound">
+                  <a href="classes/kirameki/event/event.html">Kirameki\Event\Event</a></span>
+            </span>
 
-  <span class="brace">&gt;</span>
+          <span class="brace">&gt;</span>
       </span>
     </div>
   </div>
@@ -955,7 +954,12 @@
                   public
                   function
                 </span>
-                __construct()
+                __construct():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">class-string&lt;TEvent&gt;</span> <span class="phpdoc-var-name">$class</span></div>
@@ -967,7 +971,12 @@
                   public
                   function
                 </span>
-                do()
+                do():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Event\Listeners\CallbackListener
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Appends a listener to the beginning of the list for the given event.<br />
@@ -983,7 +992,12 @@ it needs to extract the event class name from the callback using reflections.</p
                   public
                   function
                 </span>
-                doOnce()
+                doOnce():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Event\Listeners\CallbackOnceListener
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Appends a listener to the beginning of the list for the given event.<br />
@@ -998,7 +1012,12 @@ removed after it's called once.</p>
                   public
                   function
                 </span>
-                append()
+                append():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Event\Listeners\EventListener
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Append a listener to the end of the list.</p>
@@ -1011,7 +1030,12 @@ removed after it's called once.</p>
                   public
                   function
                 </span>
-                prepend()
+                prepend():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Event\Listeners\EventListener
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Prepend a listener to the end of the list.</p>
@@ -1024,7 +1048,12 @@ removed after it's called once.</p>
                   public
                   function
                 </span>
-                removeListener()
+                removeListener():
+                <span class="return">
+    <span class="no-link">
+      int
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the number of listeners that were removed.</p>
@@ -1037,7 +1066,12 @@ removed after it's called once.</p>
                   public
                   function
                 </span>
-                removeAllListeners()
+                removeAllListeners():
+                <span class="return">
+    <span class="no-link">
+      int
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the number of listeners that were removed.</p>
@@ -1050,7 +1084,12 @@ removed after it's called once.</p>
                   public
                   function
                 </span>
-                hasListeners()
+                hasListeners():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
@@ -1062,7 +1101,12 @@ removed after it's called once.</p>
                   public
                   function
                 </span>
-                hasNoListeners()
+                hasNoListeners():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
@@ -1074,7 +1118,12 @@ removed after it's called once.</p>
                   public
                   function
                 </span>
-                emit()
+                emit():
+                <span class="return">
+    <span class="no-link">
+      int
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">TEvent</span> <span class="phpdoc-var-name">$event</span><div class="phpdoc-description"><p>Event to be emitted.</p>
@@ -1089,7 +1138,12 @@ removed after it's called once.</p>
                   protected
                   function
                 </span>
-                evictListeners()
+                evictListeners():
+                <span class="return">
+    <span class="no-link">
+      void
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">list&lt;int&gt;</span> <span class="phpdoc-var-name">$indexes</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>

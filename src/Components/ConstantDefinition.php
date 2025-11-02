@@ -12,7 +12,7 @@ class ConstantDefinition
      * @var string
      */
     public string $name {
-        get => $this->class->name;
+        get => $this->reflection->name;
     }
 
     /**
@@ -33,7 +33,7 @@ class ConstantDefinition
      * @var bool
      */
     public bool $isFinal {
-        get => $this->class->isFinal;
+        get => $this->reflection->isFinal;
     }
 
     /**

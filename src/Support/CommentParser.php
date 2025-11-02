@@ -2,57 +2,73 @@
 
 namespace Kirameki\ApiDocGenerator\Support;
 
-use PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocNode;
+use Kirameki\Core\Exceptions\UnreachableException;
+use PHPStan\PhpDocParser\Ast\PhpDoc\ExtendsTagValueNode;
+use PHPStan\PhpDocParser\Ast\PhpDoc\ImplementsTagValueNode;
+use PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocTagNode;
+use PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocTextNode;
+use PHPStan\PhpDocParser\Ast\PhpDoc\ReturnTagValueNode;
+use PHPStan\PhpDocParser\Ast\PhpDoc\TemplateTagValueNode;
 use PHPStan\PhpDocParser\Lexer\Lexer;
-use PHPStan\PhpDocParser\Parser\ConstExprParser;
 use PHPStan\PhpDocParser\Parser\PhpDocParser;
 use PHPStan\PhpDocParser\Parser\TokenIterator;
-use PHPStan\PhpDocParser\Parser\TypeParser;
-use PHPStan\PhpDocParser\ParserConfig;
+use function dump;
 
 class CommentParser
 {
     /**
-     * @var ParserConfig
+     * @param Lexer $lexer
+     * @param PhpDocParser $parser
+     * @param ClassFile $file
      */
-    protected ParserConfig $config;
-
-    /**
-     * @var Lexer
-     */
-    protected Lexer $lexer {
-        get => $this->lexer ??= new Lexer($this->config);
-    }
-
-    /**
-     * @var PhpDocParser
-     */
-    protected PhpDocParser $parser {
-        get => $this->parser ??= new PhpDocParser(
-            $this->config,
-            new TypeParser($this->config, new ConstExprParser($this->config)),
-            new ConstExprParser($this->config)
-        );
-    }
-
     public function __construct(
-        ?ParserConfig $config = null,
-    )
-    {
-        $this->config = $config ?? new ParserConfig([
-            'lines' => true,
-            'indexes' => true,
-            'comments' => true,
-        ]);
+        protected Lexer $lexer,
+        protected PhpDocParser $parser,
+        protected ClassFile $file,
+    ) {
     }
 
     /**
      * @param string $comment
-     * @return PhpDocNode
+     * @return PhpDoc
      */
-    public function parse(string $comment): PhpDocNode
+    public function parse(string $comment): PhpDoc
     {
+        if ($comment === '') {
+            $comment = '/** */';
+        }
+
         $tokens = new TokenIterator($this->lexer->tokenize($comment));
-        return $this->parser->parse($tokens);
+        $nodes = $this->parser->parse($tokens)->children;
+
+        $templates = [];
+        $extends = null;
+        $implements = [];
+        $return = null;
+        $texts = [];
+
+        foreach ($nodes as $node) {
+            if ($node instanceof PhpDocTagNode) {
+                $val = $node->value;
+                match (true) {
+                    $val instanceof TemplateTagValueNode => $templates[] = $val,
+                    $val instanceof ImplementsTagValueNode => $implements[] = $val,
+                    $val instanceof ExtendsTagValueNode => $extends = $val,
+                    $val instanceof ReturnTagValueNode => $return = $val,
+                    default => null,
+                };
+            } elseif ($node instanceof PhpDocTextNode) {
+                $texts[]= $node->text;
+            } else {
+                throw new UnreachableException();
+            }
+        }
+        return new PhpDoc(
+            $templates,
+            $extends,
+            $implements,
+            $return,
+            $texts,
+        );
     }
 }

@@ -22,7 +22,6 @@
 </head>
 <body>
 <nav class="sidebar">
-  <h2>Classes</h2>
   <ul>
     <li>
       <div class="sidebar-folder">
@@ -919,7 +918,11 @@
                 <span class="type">array</span>
                 <span class="name">Kirameki\Collections\Utils\Arr</span>
                 <span class="assignment"> = </span>
-                  
+                  <div class="value value-array">
+                    [
+                    <ul>
+                    ]
+                  </div>
               </div>
             </li>
         </ul>
@@ -952,7 +955,12 @@
                   private
                   function
                 </span>
-                __construct()
+                __construct():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Only used for <code>self::miss()</code>.</p>
@@ -966,7 +974,12 @@
                     static
                   function
                 </span>
-                append()
+                append():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Append value(s) to the end of <code>$iterable</code>.<br />
@@ -988,7 +1001,12 @@ Arr::append([1, 2], 3, 4); // [1, 2, 3, 4]
                     static
                   function
                 </span>
-                at()
+                at():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the item at the given index.<br />
@@ -1011,7 +1029,12 @@ Arr::at([6], 1); // IndexOutOfBoundsException
                     static
                   function
                 </span>
-                atOr()
+                atOr():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the item at the given index.<br />
@@ -1034,7 +1057,12 @@ Arr::atOr(['a' =&gt; 1, 'b' =&gt; 2], 0); // 1
                     static
                   function
                 </span>
-                atOrNull()
+                atOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the item at the given index.</p>
@@ -1056,7 +1084,12 @@ Arr::atOrNull([6], 1); // null
                     static
                   function
                 </span>
-                average()
+                average():
+                <span class="return">
+    <span class="no-link">
+      float
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Get the average of the elements inside <code>$iterable</code>.<br />
@@ -1079,7 +1112,12 @@ Arr::average([0.1, 0.1]); // 0.1
                     static
                   function
                 </span>
-                averageOrNull()
+                averageOrNull():
+                <span class="return">
+    <span class="no-link">
+      float
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Get the average of the elements inside <code>$iterable</code>.<br />
@@ -1102,7 +1140,12 @@ Arr::averageOrNull([0.1, 0.1]); // 0.1
                     static
                   function
                 </span>
-                chunk()
+                chunk():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Splits the iterable into chunks of new arrays.</p>
@@ -1124,7 +1167,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                clear()
+                clear():
+                <span class="return">
+    <span class="no-link">
+      void
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Removes all elements in the given array (reference).</p>
@@ -1143,7 +1191,12 @@ $array = ['a' =&gt; 1, 'b' =&gt; 2]; Arr::clear($array); // []
                     static
                   function
                 </span>
-                coalesce()
+                coalesce():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the first non-null value in the array.<br />
@@ -1163,7 +1216,12 @@ Arr::coalesce([null, null]); // InvalidArgumentException
                     static
                   function
                 </span>
-                coalesceOrNull()
+                coalesceOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the first non-null value in the array.<br />
@@ -1184,7 +1242,12 @@ Arr::coalesceOrNull([]); // null
                     static
                   function
                 </span>
-                contains()
+                contains():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>true</strong> if value exists in <code>$iterable</code>, <strong>false</strong> otherwise.</p>
@@ -1206,7 +1269,12 @@ Arr::contains(['a' =&gt; 1], 'a'); // false
                     static
                   function
                 </span>
-                containsAll()
+                containsAll():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>true</strong> if <code>$iterable</code> contains all the provided <code>$values</code>,<br />
@@ -1228,7 +1296,12 @@ Arr::containsAll([1], []); // true
                     static
                   function
                 </span>
-                containsAllKeys()
+                containsAllKeys():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>true</strong> if <code>$iterable</code> contains all the provided <code>$keys</code>,<br />
@@ -1250,7 +1323,12 @@ Arr::containsAllKeys([1], []); // true
                     static
                   function
                 </span>
-                containsAny()
+                containsAny():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>true</strong> if <code>$iterable</code> contains any of the provided <code>$values</code>,<br />
@@ -1271,7 +1349,12 @@ Arr::containsAny([1, 2, 3], []) // false
                     static
                   function
                 </span>
-                containsAnyKeys()
+                containsAnyKeys():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>true</strong> if <code>$iterable</code> contains any of the provided <code>$keys</code>,<br />
@@ -1293,7 +1376,12 @@ Arr::containsAnyKeys(['a' =&gt; 1], []); // false
                     static
                   function
                 </span>
-                containsKey()
+                containsKey():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>true</strong> if a given key exists within iterable, <strong>false</strong> otherwise.</p>
@@ -1315,7 +1403,12 @@ Arr::containsKey(['a' =&gt; 1], 1); // false
                     static
                   function
                 </span>
-                containsNone()
+                containsNone():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>true</strong> if <code>$iterable</code> contains none of the provided <code>$values</code>,<br />
@@ -1336,7 +1429,12 @@ Arr::containsNone([1, 2], [2]); // false
                     static
                   function
                 </span>
-                containsSlice()
+                containsSlice():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>true</strong> if <code>$iterable</code> contains the given slice of <code>$values</code>,<br />
@@ -1357,7 +1455,12 @@ Arr::containsSlice([1, 2, 3, 4], [2, 4]); // false
                     static
                   function
                 </span>
-                count()
+                count():
+                <span class="return">
+    <span class="no-link">
+      int
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Counts all the elements in <code>$iterable</code>.<br />
@@ -1379,7 +1482,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                diff()
+                diff():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Compares the keys from <code>$iterable1</code> against the values from <code>$iterable2</code> and returns the difference.</p>
@@ -1404,7 +1512,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                diffKeys()
+                diffKeys():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Compares the keys from <code>$iterable1</code> against the keys from <code>$iterable2</code> and returns the difference.</p>
@@ -1428,7 +1541,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                doesNotContain()
+                doesNotContain():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>false</strong> if value exists in iterable, <strong>true</strong> otherwise.</p>
@@ -1450,7 +1568,12 @@ Arr::doesNotContain(['a' =&gt; 1], 'a'); // true
                     static
                   function
                 </span>
-                doesNotContainKey()
+                doesNotContainKey():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>false</strong> if a given key exists within iterable, <strong>true</strong> otherwise.</p>
@@ -1472,7 +1595,12 @@ Arr::notContainsKey(['a' =&gt; 1], 1); // true
                     static
                   function
                 </span>
-                dropEvery()
+                dropEvery():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Drop every <code>$nth</code> elements from <code>$iterable</code>.</p>
@@ -1488,7 +1616,12 @@ Arr::notContainsKey(['a' =&gt; 1], 1); // true
                     static
                   function
                 </span>
-                dropFirst()
+                dropFirst():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Drop the first n elements from <code>$iterable</code>.</p>
@@ -1512,7 +1645,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                dropIf()
+                dropIf():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Iterates over each element in iterable and passes them to the callback function.<br />
@@ -1536,7 +1674,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                dropKeys()
+                dropKeys():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a new array with the given keys removed from <code>$iterable</code>.<br />
@@ -1566,7 +1709,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                dropLast()
+                dropLast():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Drop the last n elements from <code>$iterable</code>.</p>
@@ -1587,7 +1735,12 @@ Arr::dropLast(['a' =&gt; 1, 'b' =&gt; 2], 1); // ['a' =&gt; 1]
                     static
                   function
                 </span>
-                dropUntil()
+                dropUntil():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Drops elements in iterable until <code>$condition</code> returns <strong>true</strong>.</p>
@@ -1610,7 +1763,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                dropWhile()
+                dropWhile():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Drops elements in iterable while <code>$condition</code> returns <strong>true</strong>.</p>
@@ -1633,7 +1791,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                duplicates()
+                duplicates():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns duplicate values in <code>$iterable</code>.</p>
@@ -1656,7 +1819,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                each()
+                each():
+                <span class="return">
+    <span class="no-link">
+      void
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Iterates through <code>$iterable</code> and invoke <code>$callback</code> for each element.</p>
@@ -1681,7 +1849,12 @@ Arr::each(['a' =&gt; 1, 'b' =&gt; 2], function($v, $k) =&gt; {
                     static
                   function
                 </span>
-                endsWith()
+                endsWith():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>true</strong> if <code>$iterable</code> ends with the given <code>$values</code>, <strong>false</strong> otherwise.</p>
@@ -1702,7 +1875,12 @@ Arr::endsWith([1, 2, 3], [1, 2, 3, 4]); // false
                     static
                   function
                 </span>
-                ensureCountIs()
+                ensureCountIs():
+                <span class="return">
+    <span class="no-link">
+      void
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Ensures that count of <code>$iterable</code> is equal to <code>$size</code>.<br />
@@ -1719,7 +1897,12 @@ Throws <code>CountMismatchException</code> if count is not equal to <code>$size<
                     static
                   function
                 </span>
-                ensureElementType()
+                ensureElementType():
+                <span class="return">
+    <span class="no-link">
+      void
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Ensures that all elements of <code>$iterable</code> are of the given <code>$type</code>.<br />
@@ -1738,7 +1921,12 @@ Empty <code>$iterable</code> are considered valid.</p>
                     static
                   function
                 </span>
-                ensureExactKeys()
+                ensureExactKeys():
+                <span class="return">
+    <span class="no-link">
+      void
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Ensures that <code>$iterable</code> only contains the given <code>$keys</code>.<br />
@@ -1756,7 +1944,12 @@ Throws <code>MissingKeyException</code> if <code>$iterable</code> contains fewer
                     static
                   function
                 </span>
-                filter()
+                filter():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Iterates over each element in iterable and passes them to the callback function.<br />
@@ -1782,7 +1975,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                first()
+                first():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the first element in <code>$iterable</code>.<br />
@@ -1807,7 +2005,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                firstIndex()
+                firstIndex():
+                <span class="return">
+    <span class="no-link">
+      int
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the first index of <code>$iterable</code> which meets the given <code>$condition</code>.<br />
@@ -1830,7 +2033,12 @@ Arr::firstIndex([1], fn($v, $k) =&gt; false); // NoMatchFoundException
                     static
                   function
                 </span>
-                firstIndexOrNull()
+                firstIndexOrNull():
+                <span class="return">
+    <span class="no-link">
+      int
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the first index of <code>$iterable</code> which meets the given <code>$condition</code>.<br />
@@ -1853,7 +2061,17 @@ Arr::firstIndexOrNull([1], fn($v, $k) =&gt; false); // null
                     static
                   function
                 </span>
-                firstKey()
+                firstKey():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+    <span class="delimiter">|</span>
+    <span class="no-link">
+      int
+    </span>
+
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the first key of <code>$iterable</code> which meets the given <code>$condition</code>.<br />
@@ -1877,7 +2095,21 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                firstKeyOrNull()
+                firstKeyOrNull():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+    <span class="delimiter">|</span>
+    <span class="no-link">
+      int
+    </span>
+    <span class="delimiter">|</span>
+    <span class="no-link">
+      null
+    </span>
+
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the first key of <code>$iterable</code> which meets the given <code>$condition</code>.<br />
@@ -1900,7 +2132,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                firstOr()
+                firstOr():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the first element in <code>$iterable</code>.<br />
@@ -1924,7 +2161,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                firstOrNull()
+                firstOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the first element in <code>$iterable</code>.<br />
@@ -1949,7 +2191,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                flatMap()
+                flatMap():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Applies the <code>$callback</code> to every element in the array, and flatten the results.</p>
@@ -1969,7 +2216,12 @@ Arr::flatMap([['a' =&gt; 1], [2]], fn($a) =&gt; $a); // [1, 2]
                     static
                   function
                 </span>
-                flatten()
+                flatten():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Collapse <code>$iterable</code> up to the given <code>$depth</code> and turn it into a<br />
@@ -1987,7 +2239,12 @@ Depth must be &gt;= 1. Default: 1.</p>
                     static
                   function
                 </span>
-                flip()
+                flip():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Flip <code>$iterable</code> so that keys become values and values become keys.<br />
@@ -2012,7 +2269,12 @@ If set to <strong>false</strong> and a duplicate key is found, a DuplicateKeyExc
                     static
                   function
                 </span>
-                fold()
+                fold():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Take all the values in <code>$iterable</code> and fold it into a single value.</p>
@@ -2035,7 +2297,12 @@ The returned value would be used as $result for the subsequent call.</p>
                     static
                   function
                 </span>
-                from()
+                from():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Converts iterable to array.</p>
@@ -2057,7 +2324,12 @@ Arr::from((function () {
                     static
                   function
                 </span>
-                get()
+                get():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the element of the given key.<br />
@@ -2079,7 +2351,12 @@ Arr::get(['a' =&gt; 1], key: 'c'); // InvalidKeyException: Undefined array key &
                     static
                   function
                 </span>
-                getOr()
+                getOr():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the element of the given key if it exists, <code>$default</code> is returned otherwise.</p>
@@ -2101,7 +2378,12 @@ Arr::getOr([1, 2], key: 0, default: 9); // 1
                     static
                   function
                 </span>
-                getOrNull()
+                getOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the element of the given key if it exists, <code>null</code> otherwise.</p>
@@ -2123,7 +2405,12 @@ Arr::getOrNull(['a' =&gt; 1], 'b'); // null
                     static
                   function
                 </span>
-                groupBy()
+                groupBy():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Groups the elements of the given <code>$iterable</code> according to the string<br />
@@ -2146,7 +2433,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                insertAt()
+                insertAt():
+                <span class="return">
+    <span class="no-link">
+      void
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Takes an <code>$array</code> (reference) and insert <code>$values</code> at the given <code>$index</code>.</p>
@@ -2178,7 +2470,12 @@ Defaults to <strong>false</strong>.</p>
                     static
                   function
                 </span>
-                intersect()
+                intersect():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the intersection of given iterable's values.</p>
@@ -2201,7 +2498,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                intersectKeys()
+                intersectKeys():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the intersection of <code>$iterables</code> using keys for comparison.</p>
@@ -2221,7 +2523,12 @@ Arr::intersectKeys([1, 2, 3], [1, 3]); // [1, 2]
                     static
                   function
                 </span>
-                isEmpty()
+                isEmpty():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>true</strong> if iterable is empty, <strong>false</strong> otherwise.</p>
@@ -2240,7 +2547,12 @@ Arr::isEmpty([]); // true
                     static
                   function
                 </span>
-                isList()
+                isList():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>true</strong> if iterable is a list or empty, <strong>false</strong> if it's a map.</p>
@@ -2260,7 +2572,12 @@ Arr::isList([]); // true
                     static
                   function
                 </span>
-                isMap()
+                isMap():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>true</strong> if iterable is a map or empty, <strong>false</strong> if it's a list.</p>
@@ -2280,7 +2597,12 @@ Arr::isMap([]); // true
                     static
                   function
                 </span>
-                isNotEmpty()
+                isNotEmpty():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>true</strong> if iterable is not empty, <strong>false</strong> otherwise.</p>
@@ -2299,7 +2621,12 @@ Arr::isNotEmpty([]); // false
                     static
                   function
                 </span>
-                join()
+                join():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Concatenates all the elements in <code>$iterable</code> into a single<br />
@@ -2323,7 +2650,17 @@ Arr::join([1, 2], ', ', '[', ']'); // &quot;[1, 2]&quot;
                     static
                   function
                 </span>
-                keyAt()
+                keyAt():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+    <span class="delimiter">|</span>
+    <span class="no-link">
+      int
+    </span>
+
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the key at the given index.<br />
@@ -2343,7 +2680,21 @@ Arr::keyAt(['a' =&gt; 1, 'b' =&gt; 2], -2); // &quot;a&quot;
                     static
                   function
                 </span>
-                keyAtOrNull()
+                keyAtOrNull():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+    <span class="delimiter">|</span>
+    <span class="no-link">
+      int
+    </span>
+    <span class="delimiter">|</span>
+    <span class="no-link">
+      null
+    </span>
+
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the key at the given index.<br />
@@ -2363,7 +2714,12 @@ Arr::keyAtOrNull(['a' =&gt; 1, 'b' =&gt; 2], -2); // &quot;a&quot;
                     static
                   function
                 </span>
-                keyBy()
+                keyBy():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns an array which contains values from <code>$iterable</code> with the keys<br />
@@ -2388,7 +2744,12 @@ If <strong>false</strong>, exception will be thrown on duplicate keys.</p>
                     static
                   function
                 </span>
-                keys()
+                keys():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns all the keys of <code>$iterable</code> as an array.</p>
@@ -2407,7 +2768,12 @@ Arr::keys(['a' =&gt; 1, 'b' =&gt; 2]); // ['a', 'b']
                     static
                   function
                 </span>
-                last()
+                last():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the last element in <code>$iterable</code>.<br />
@@ -2432,7 +2798,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                lastIndex()
+                lastIndex():
+                <span class="return">
+    <span class="no-link">
+      int
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the last index of <code>$iterable</code> which meets the given <code>$condition</code>.<br />
@@ -2456,7 +2827,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                lastIndexOrNull()
+                lastIndexOrNull():
+                <span class="return">
+    <span class="no-link">
+      int
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the last index of <code>$iterable</code> which meets the given <code>$condition</code>.<br />
@@ -2479,7 +2855,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                lastKey()
+                lastKey():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the last key of <code>$iterable</code> which meets the <code>$condition</code>.<br />
@@ -2503,7 +2884,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                lastKeyOrNull()
+                lastKeyOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the last key of <code>$iterable</code> which meets the <code>$condition</code>.<br />
@@ -2526,7 +2912,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                lastOr()
+                lastOr():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the last element in <code>$iterable</code>.<br />
@@ -2551,7 +2942,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                lastOrNull()
+                lastOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the last element in iterable.<br />
@@ -2576,7 +2972,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                map()
+                map():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a new array containing results returned from invoking<br />
@@ -2599,7 +3000,12 @@ Arr::map(['a', 'b', 'c'], fn($i, $k) =&gt; $k) // [0, 1, 2]
                     static
                   function
                 </span>
-                mapWithKey()
+                mapWithKey():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Applies the <code>$callback</code> to every element in the array, and flatten the results.</p>
@@ -2620,7 +3026,12 @@ If <strong>false</strong>, exception will be thrown on duplicate keys.</p>
                     static
                   function
                 </span>
-                max()
+                max():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the largest element from <code>$iterable</code>.<br />
@@ -2648,7 +3059,12 @@ Must be int or float.</p>
                     static
                   function
                 </span>
-                maxOrNull()
+                maxOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the largest element from <code>$iterable</code>.<br />
@@ -2676,7 +3092,12 @@ Must be int or float.</p>
                     static
                   function
                 </span>
-                merge()
+                merge():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Merges one or more iterables into a single array.</p>
@@ -2706,7 +3127,12 @@ Arr::merge(['a' =&gt; 1], ['a' =&gt; 2]); // ['a' =&gt; 2]
                     static
                   function
                 </span>
-                mergeRecursive()
+                mergeRecursive():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Merges one or more iterables recursively into a single array.<br />
@@ -2732,7 +3158,12 @@ Arr::mergeRecursive(
                     static
                   function
                 </span>
-                min()
+                min():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the smallest element from the given array.<br />
@@ -2761,7 +3192,12 @@ Must be int or float.</p>
                     static
                   function
                 </span>
-                minOrNull()
+                minOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the smallest element from <code>$iterable</code>.<br />
@@ -2790,7 +3226,12 @@ Must be int or float.</p>
                     static
                   function
                 </span>
-                minMax()
+                minMax():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the smallest and largest element from <code>$iterable</code> as array{ min: , max: }.<br />
@@ -2816,7 +3257,12 @@ Returned value will be used to determine the highest number.</p>
                     static
                   function
                 </span>
-                minMaxOrNull()
+                minMaxOrNull():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the smallest and largest element from the given array.<br />
@@ -2841,7 +3287,12 @@ Returned value will be used to determine the smallest and highest number.</p>
                     static
                   function
                 </span>
-                of()
+                of():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">mixed</span> <span class="phpdoc-var-name">...$values</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">array&lt;array-key, mixed&gt;</span></div>
@@ -2854,7 +3305,12 @@ Returned value will be used to determine the smallest and highest number.</p>
                     static
                   function
                 </span>
-                padLeft()
+                padLeft():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a list (array) with a given value padded to the left side of<br />
@@ -2879,7 +3335,12 @@ Arr::padLeft(['a' =&gt; 1], 2, 2); // TypeMismatchException
                     static
                   function
                 </span>
-                padRight()
+                padRight():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a list (array) with a given value padded to the right side of<br />
@@ -2904,7 +3365,12 @@ Arr::padRight(['a' =&gt; 1], 2, 2); // TypeMismatchException
                     static
                   function
                 </span>
-                partition()
+                partition():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a list with two array elements.<br />
@@ -2930,7 +3396,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                pop()
+                pop():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Pops the element off the end of the given array (reference).<br />
@@ -2951,7 +3422,12 @@ Arr::pop($array); // EmptyNotAllowedException
                     static
                   function
                 </span>
-                popMany()
+                popMany():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Pops elements off the end of the given array (reference).<br />
@@ -2973,7 +3449,12 @@ Arr::popMany($array, 1); // null
                     static
                   function
                 </span>
-                popOrNull()
+                popOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Pops the element off the end of the given array (reference).<br />
@@ -2994,7 +3475,12 @@ Arr::popOrNull($array); // null
                     static
                   function
                 </span>
-                prepend()
+                prepend():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Prepend value(s) to the front of <code>$iterable</code>.<br />
@@ -3016,7 +3502,12 @@ Arr::prepend([1, 2], 3, 4); // $array will be [1, 2, 3, 4]
                     static
                   function
                 </span>
-                prioritize()
+                prioritize():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns an array with elements that match <code>$condition</code> moved to the top.</p>
@@ -3039,7 +3530,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                product()
+                product():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Get the sum of the elements inside <code>$iterable</code>.<br />
@@ -3062,7 +3558,12 @@ Arr::product([]) // 1
                     static
                   function
                 </span>
-                pull()
+                pull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Removes the given key from <code>&amp;$array</code> and returns the pulled value.<br />
@@ -3088,7 +3589,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                pullOr()
+                pullOr():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Removes the given key from the array and returns the pulled value.<br />
@@ -3115,7 +3621,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                pullOrNull()
+                pullOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Removes <code>$key</code> from <code>&amp;$array</code> and returns the pulled value.<br />
@@ -3141,7 +3652,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                pullMany()
+                pullMany():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Removes <code>$keys</code> from the <code>&amp;$array</code> and returns the pulled values as list.<br />
@@ -3168,7 +3684,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                push()
+                push():
+                <span class="return">
+    <span class="no-link">
+      void
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Pushes values to the end of the given list (reference).<br />
@@ -3190,7 +3711,12 @@ $array = ['a' =&gt; 1]; Arr::push($array, 1); // TypeMismatchException
                     static
                   function
                 </span>
-                ratio()
+                ratio():
+                <span class="return">
+    <span class="no-link">
+      float
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the ratio of values that satisfy the <code>$condition</code>.<br />
@@ -3212,7 +3738,12 @@ Arr::ratio([], fn($r, $v) =&gt; true); // null
                     static
                   function
                 </span>
-                ratioOrNull()
+                ratioOrNull():
+                <span class="return">
+    <span class="no-link">
+      float
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the ratio of values that satisfy the <code>$condition</code>.<br />
@@ -3234,7 +3765,12 @@ Arr::ratioOrNull([], fn($r, $v) =&gt; true); // null
                     static
                   function
                 </span>
-                reduce()
+                reduce():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Iteratively reduce <code>$iterable</code> to a single value by invoking<br />
@@ -3257,7 +3793,12 @@ Third argument contains the current key.</p>
                     static
                   function
                 </span>
-                reduceOr()
+                reduceOr():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Iteratively reduce <code>$iterable</code> to a single value by invoking<br />
@@ -3282,7 +3823,12 @@ Third argument contains the current key.</p>
                     static
                   function
                 </span>
-                reduceOrNull()
+                reduceOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Iteratively reduce <code>$iterable</code> to a single value by invoking<br />
@@ -3306,7 +3852,12 @@ Third argument contains the current key.</p>
                     static
                   function
                 </span>
-                reindex()
+                reindex():
+                <span class="return">
+    <span class="no-link">
+      void
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Given array will be converted into list.</p>
@@ -3325,7 +3876,12 @@ Arr::reindex($array); // $array will be [1]
                     static
                   function
                 </span>
-                remove()
+                remove():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Removes <code>$value</code> from <code>&amp;$array</code>.<br />
@@ -3351,7 +3907,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                repeat()
+                repeat():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns an array which contains <code>$iterable</code> for a given number of times.<br />
@@ -3371,7 +3932,12 @@ Note: All keys will be discarded.</p>
                     static
                   function
                 </span>
-                replace()
+                replace():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns an array which contains keys and values from <code>$iterable</code><br />
@@ -3397,7 +3963,12 @@ Any value previously set will be reset.</p>
                     static
                   function
                 </span>
-                reverse()
+                reverse():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns an array which contain all elements of <code>$iterable</code> in reverse order.</p>
@@ -3419,7 +3990,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                rotate()
+                rotate():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Converts <code>$iterable</code> to an array and rotate the array to the right<br />
@@ -3445,7 +4021,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                sample()
+                sample():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a random element from <code>$iterable</code>.<br />
@@ -3468,7 +4049,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                sampleKey()
+                sampleKey():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a random key picked from <code>$iterable</code>.<br />
@@ -3491,7 +4077,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                sampleKeyOrNull()
+                sampleKeyOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a random key picked from <code>$iterable</code>.<br />
@@ -3514,7 +4105,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                sampleKeys()
+                sampleKeys():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a list of random elements picked from <code>$iterable</code>.<br />
@@ -3542,7 +4138,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                sampleMany()
+                sampleMany():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a list of random elements picked from <code>$iterable</code>.<br />
@@ -3570,7 +4171,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                sampleOr()
+                sampleOr():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a random element from <code>$iterable</code>.<br />
@@ -3594,7 +4200,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                sampleOrNull()
+                sampleOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a random element from <code>$iterable</code>.<br />
@@ -3617,7 +4228,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                satisfyAll()
+                satisfyAll():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Runs the condition though each element of <code>$iterable</code> and will return <strong>true</strong><br />
@@ -3640,7 +4256,12 @@ Arr::satisfyAll([]); // true
                     static
                   function
                 </span>
-                satisfyAny()
+                satisfyAny():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Runs the condition though each element of <code>$iterable</code> and will return <strong>true</strong><br />
@@ -3663,7 +4284,12 @@ Arr::satisfyAny([]); // false
                     static
                   function
                 </span>
-                satisfyNone()
+                satisfyNone():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Runs the condition though each element of <code>$iterable</code> and will return <strong>true</strong><br />
@@ -3686,7 +4312,12 @@ Arr::satisfyNone([]); // true
                     static
                   function
                 </span>
-                satisfyOnce()
+                satisfyOnce():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Runs the condition though each element of <code>$iterable</code> and will return <strong>true</strong><br />
@@ -3709,7 +4340,12 @@ Arr::satisfyOnce([]); // false
                     static
                   function
                 </span>
-                set()
+                set():
+                <span class="return">
+    <span class="no-link">
+      void
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Add or update an entry in the <code>$array</code>.</p>
@@ -3731,7 +4367,12 @@ Arr::set($map, 'b', 3); // $map is now ['a' =&gt; 2, 'b' =&gt; 3]
                     static
                   function
                 </span>
-                setIfExists()
+                setIfExists():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Set an entry in the <code>&amp;$array</code> only if the entry already exists.</p>
@@ -3754,7 +4395,12 @@ Arr::setIfExists($map, 'b', 1); // false (and $map is still ['a' =&gt; 2])
                     static
                   function
                 </span>
-                setIfNotExists()
+                setIfNotExists():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Set an entry in the <code>&amp;$array</code> only if the entry does not exist.</p>
@@ -3777,7 +4423,12 @@ Arr::setIfNotExists($map, 'b', 1); // true (and $map is now ['a' =&gt; 1, 'b' =&
                     static
                   function
                 </span>
-                shift()
+                shift():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Shift an element off the beginning of <code>&amp;$array</code>.<br />
@@ -3801,7 +4452,12 @@ Arr::shift($empty); // EmptyNotAllowedException
                     static
                   function
                 </span>
-                shiftMany()
+                shiftMany():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Shift an element off the beginning of <code>&amp;$array</code> up to <code>$amount</code>.<br />
@@ -3824,7 +4480,12 @@ Must be an integer with value &gt;= 1.</p>
                     static
                   function
                 </span>
-                shiftOrNull()
+                shiftOrNull():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Shift an element off the beginning of <code>&amp;$array</code>.<br />
@@ -3848,7 +4509,12 @@ Arr::shiftOrNull($empty); // null
                     static
                   function
                 </span>
-                shuffle()
+                shuffle():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Converts <code>$iterable</code> to array and shuffles the array.</p>
@@ -3869,7 +4535,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                single()
+                single():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the only element in the <code>$iterable</code>.<br />
@@ -3895,7 +4566,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                slice()
+                slice():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a shallow copy of a portion of an iterable into a new array.</p>
@@ -3920,7 +4596,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                slide()
+                slide():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Converts <code>$iterable</code> to an overlapping sub-slices of <code>$size</code>.<br />
@@ -3943,7 +4624,12 @@ If <strong>null</strong>, the result will be re-indexed only if it's a list.</p>
                     static
                   function
                 </span>
-                sort()
+                sort():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Sort the <code>$iterable</code> by value in the given order.</p>
@@ -3966,7 +4652,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                sortAsc()
+                sortAsc():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Sort the <code>$iterable</code> by value in ascending order.</p>
@@ -3993,7 +4684,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                sortByKey()
+                sortByKey():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Sort <code>$iterable</code> by key in ascending order.</p>
@@ -4015,7 +4711,12 @@ Defaults to <code>SORT_REGULAR</code>.</p>
                     static
                   function
                 </span>
-                sortByKeyAsc()
+                sortByKeyAsc():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Sort the <code>$iterable</code> by key in ascending order.</p>
@@ -4036,7 +4737,12 @@ Defaults to <code>SORT_REGULAR</code>.</p>
                     static
                   function
                 </span>
-                sortByKeyDesc()
+                sortByKeyDesc():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Sort the <code>$iterable</code> by key in descending order.</p>
@@ -4057,7 +4763,12 @@ Defaults to <code>SORT_REGULAR</code>.</p>
                     static
                   function
                 </span>
-                sortDesc()
+                sortDesc():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Sort the <code>$iterable</code> by value in descending order.</p>
@@ -4083,7 +4794,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                sortWith()
+                sortWith():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Sorts the <code>$iterable</code> by value using the provided <code>$comparator</code> function.</p>
@@ -4106,7 +4822,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                sortWithKey()
+                sortWithKey():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Sorts the <code>$iterable</code> by key using the provided comparison function.</p>
@@ -4127,7 +4848,12 @@ Utilize the spaceship operator (<code>&lt;=&gt;</code>) to easily compare two va
                     static
                   function
                 </span>
-                splitAfter()
+                splitAfter():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Splits the <code>$iterable</code> after the index where <code>$condition</code> returned <strong>true</strong>.</p>
@@ -4150,7 +4876,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                splitAfterIndex()
+                splitAfterIndex():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Splits the <code>$iterable</code> after the given <code>$index</code>.</p>
@@ -4175,7 +4906,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                splitBefore()
+                splitBefore():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Splits the <code>$iterable</code> before the index where <code>$condition</code> returned <strong>true</strong>.</p>
@@ -4198,7 +4934,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                splitBeforeIndex()
+                splitBeforeIndex():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Splits the <code>$iterable</code> before the given <code>$index</code>.</p>
@@ -4222,7 +4963,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                splitEvenly()
+                splitEvenly():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Splits the <code>$iterable</code> into the given size.</p>
@@ -4246,7 +4992,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                startsWith()
+                startsWith():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns <strong>true</strong> if <code>$iterable</code> starts with the given <code>$values</code>, <strong>false</strong> otherwise.</p>
@@ -4265,7 +5016,12 @@ Arr::startsWith([1, 2, 3], [1, 2, 3, 4]); // false
                     static
                   function
                 </span>
-                sum()
+                sum():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Get the sum of the elements inside <code>$iterable</code>.<br />
@@ -4288,7 +5044,12 @@ Arr::sum([]) // 0
                     static
                   function
                 </span>
-                swap()
+                swap():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a copy of <code>$iterable</code> with the given keys swapped.<br />
@@ -4309,7 +5070,12 @@ Throws <code>InvalidArgumentException</code> if the given key does not exist.</p
                     static
                   function
                 </span>
-                symDiff()
+                symDiff():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the symmetric difference of the given iterables.<br />
@@ -4337,7 +5103,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                takeEvery()
+                takeEvery():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Take every <code>$nth</code> element from <code>$iterable</code>.</p>
@@ -4353,7 +5124,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                takeFirst()
+                takeFirst():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Take the first n elements from <code>$iterable</code>.</p>
@@ -4373,7 +5149,12 @@ Arr::takeFirst(['a' =&gt; 1, 'b' =&gt; 2], 1); // ['a' =&gt; 1]
                     static
                   function
                 </span>
-                takeIf()
+                takeIf():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Iterates over each element in $iterable and passes them to the callback function.<br />
@@ -4398,7 +5179,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                takeInstanceOf()
+                takeInstanceOf():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Iterates over each element in $iterable and takes only the elements that are instances of the given class.</p>
@@ -4417,7 +5203,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                takeKeys()
+                takeKeys():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a new array which only contain the elements that has matching<br />
@@ -4447,7 +5238,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                takeLast()
+                takeLast():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Take the last n elements from <code>$iterable</code>.</p>
@@ -4470,7 +5266,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                takeUntil()
+                takeUntil():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Takes elements in <code>$iterable</code> until <code>$condition</code> returns <strong>true</strong>.</p>
@@ -4490,7 +5291,12 @@ Arr::takeUntil(['b' =&gt; 1, 'a' =&gt; 3], fn($v) =&gt; $v &gt; 2); // ['b' =&gt
                     static
                   function
                 </span>
-                takeWhile()
+                takeWhile():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Takes elements in <code>$iterable</code> while <code>$condition</code> returns <strong>true</strong>.</p>
@@ -4510,7 +5316,12 @@ Arr::takeWhile(['a' =&gt; 1, 'b' =&gt; 4], fn($v) =&gt; $v &lt; 4); // ['a' =&gt
                     static
                   function
                 </span>
-                toUrlQuery()
+                toUrlQuery():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Generates URL encoded query string.<br />
@@ -4532,7 +5343,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                unique()
+                unique():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Removes duplicate values from <code>$iterable</code> and returns it as an array.</p>
@@ -4561,7 +5377,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                values()
+                values():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Converts <code>$iterable</code> to a list. Any keys will be dropped.</p>
@@ -4580,7 +5401,12 @@ Arr::values([1 =&gt; 1, 0 =&gt; 2]) // [1, 2]
                     static
                   function
                 </span>
-                withDefaults()
+                withDefaults():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a copy of <code>$iterable</code> as array with the specified <code>$defaults</code> merged in<br />
@@ -4597,7 +5423,12 @@ if the corresponding key does not exist <code>$iterable</code>.</p>
                     static
                   function
                 </span>
-                without()
+                without():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a copy of <code>$iterable</code> as array without the specified <code>$value</code> excluded.</p>
@@ -4619,7 +5450,12 @@ If <strong>null</strong>, the result will be re-indexed only if it's a list.</p>
                     static
                   function
                 </span>
-                zip()
+                zip():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a list consisting of sub lists where each sub array is an aggregate of<br />
@@ -4641,7 +5477,17 @@ Arr::zip([1], [2, 3]); // [[1, 2]]
                     static
                   function
                 </span>
-                ensureKeyType()
+                ensureKeyType():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+    <span class="delimiter">|</span>
+    <span class="no-link">
+      int
+    </span>
+
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Ensure that a given key is an int or string and return the key.</p>
@@ -4655,7 +5501,12 @@ Arr::zip([1], [2, 3]); // [[1, 2]]
                     static
                   function
                 </span>
-                valueToKeyString()
+                valueToKeyString():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Converts value into an identifiable string.<br />
@@ -4670,7 +5521,12 @@ Used for checking for duplicates.</p>
                     static
                   function
                 </span>
-                verifyBool()
+                verifyBool():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Runs the given condition with <code>$val</code> and <code>$key</code> as the argument.</p>
@@ -4687,7 +5543,12 @@ Used for checking for duplicates.</p>
                     static
                   function
                 </span>
-                setDefaultRandomizer()
+                setDefaultRandomizer():
+                <span class="return">
+    <span class="no-link">
+      void
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Set the default randomizer for the following methods.</p>
@@ -4701,7 +5562,12 @@ Used for checking for duplicates.</p>
                     static
                   function
                 </span>
-                getDefaultRandomizer()
+                getDefaultRandomizer():
+                <span class="return">
+    <span class="no-link">
+      Random\Randomizer
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Get the default randomizer used in this class.</p>
@@ -4715,7 +5581,12 @@ Used for checking for duplicates.</p>
                     static
                   function
                 </span>
-                isDifferentArrayType()
+                isDifferentArrayType():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">array&lt;array-key, mixed&gt;</span> <span class="phpdoc-var-name">$array1</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">array&lt;array-key, mixed&gt;</span> <span class="phpdoc-var-name">$array2</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
@@ -4728,7 +5599,12 @@ Used for checking for duplicates.</p>
                     static
                   function
                 </span>
-                getArrayType()
+                getArrayType():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">array&lt;array-key, mixed&gt;</span> <span class="phpdoc-var-name">$array</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span></div>
@@ -4741,7 +5617,12 @@ Used for checking for duplicates.</p>
                     static
                   function
                 </span>
-                miss()
+                miss():
+                <span class="return">
+    <span class="no-link">
+      self
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>A dummy instance used to check for miss in methods below.</p>

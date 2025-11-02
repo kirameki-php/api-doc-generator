@@ -1,32 +1,40 @@
-{varType Kirameki\ApiDocGenerator\Components\TypeInfo $info}
-{if ($info instanceof Kirameki\ApiDocGenerator\Components\IntersectionTypeInfo)}
-  {varType Kirameki\ApiDocGenerator\Components\IntersectionTypeInfo $info}
-  {foreach $info->types as $innerInfo}
-    {include type.latte, info: $innerInfo}
+{varType Kirameki\ApiDocGenerator\Types\VarType $type}
+{if ($type instanceof Kirameki\ApiDocGenerator\Types\IntersectionVarType)}
+  {varType Kirameki\ApiDocGenerator\Types\IntersectionVarType $type}
+  {foreach $type->types as $innerType}
+    {include type.latte, type: $innerType}
     {sep}<span class="delimiter">&amp;</span>{/sep}
   {/foreach}
-{elseif ($info instanceof Kirameki\ApiDocGenerator\Components\UnionTypeInfo)}
-  {varType Kirameki\ApiDocGenerator\Components\UnionTypeInfo $info}
-  {foreach $info->types as $innerInfo}
-    {include type.latte, info: $innerInfo}
+{elseif ($type instanceof Kirameki\ApiDocGenerator\Types\UnionVarType)}
+  {varType Kirameki\ApiDocGenerator\Types\UnionVarType $type}
+  {foreach $type->types as $innerType}
+    {include type.latte, type: $innerType}
     {sep}<span class="delimiter">|</span>{/sep}
   {/foreach}
-{else}
-  {varType Kirameki\ApiDocGenerator\Components\NamedTypeInfo $info}
-  {if ($info->type instanceof Kirameki\ApiDocGenerator\Components\StructureInfo)}
-    {if $info->type->namespace !== ''}
-      <a href="{$info->type->getHtmlPath()}">
-        {$info->type}
-      </a>
-    {else}
-      <a href="https://www.php.net/manual/class.{$info->type->name|lower}.php" class="external-link" target="_blank">
-        {$info->type}
-      </a>
-    {/if}
-    {include generics.latte, generics: $info->type->generics}
+{elseif ($type instanceof Kirameki\ApiDocGenerator\Types\StructureVarType)}
+  {varType Kirameki\ApiDocGenerator\Types\StructureVarType $type}
+  {if $type->structure->namespace !== ''}
+    <a href="{$type->structure->getHtmlPath()}">
+      {$type->structure}
+    </a>
   {else}
-    <span class="no-link">
-      {$info->type}
+    <a href="https://www.php.net/manual/class.{$type->structure->name|lower}.php" class="external-link" target="_blank">
+      {$type->structure}
+    </a>
+  {/if}
+  {if $type->generics !== []}
+    <span class="generics">
+      <span class="brace">&lt;</span>
+      {foreach $type->generics as $innerType}
+        {include type.latte, type: $innerType}
+        {sep}<span class="delimiter">,</span>{/sep}
+      {/foreach}
+      <span class="brace">&gt;</span>
     </span>
   {/if}
+{else}
+  {varType Kirameki\ApiDocGenerator\Types\NamedVarType $type}
+  <span class="no-link">
+    {$type->name}
+  </span>
 {/if}

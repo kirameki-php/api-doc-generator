@@ -22,7 +22,6 @@
 </head>
 <body>
 <nav class="sidebar">
-  <h2>Classes</h2>
   <ul>
     <li>
       <div class="sidebar-folder">
@@ -944,7 +943,12 @@
                     static
                   function
                 </span>
-                of()
+                of():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Text\StrObject
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">StrObject</span></div>
@@ -957,7 +961,12 @@
                     static
                   function
                 </span>
-                between()
+                between():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Extract string between the first occurrence of <code>$from</code> and <code>$to</code>.</p>
@@ -979,7 +988,12 @@ Str::between('no tag', '&lt;', '&gt;'); // 'no tag'
                     static
                   function
                 </span>
-                betweenFurthest()
+                betweenFurthest():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Extract string between the first occurrence of <code>$from</code> and last occurrence of <code>$to</code>.</p>
@@ -1001,7 +1015,12 @@ Str::betweenFurthest('no tag', '&lt;', '&gt;'); // 'no tag'
                     static
                   function
                 </span>
-                betweenLast()
+                betweenLast():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Extract string between the last occurrence of <code>$from</code> and <code>$to</code>.</p>
@@ -1023,7 +1042,12 @@ Str::betweenLast('no tag', '&lt;', '&gt;'); // 'no tag'
                     static
                   function
                 </span>
-                capitalize()
+                capitalize():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Convert the first character to upper case letter.<br />
@@ -1044,7 +1068,12 @@ Str::capitalize('éclore'); // 'Éclore'
                     static
                   function
                 </span>
-                chunk()
+                chunk():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Chunks string into the given size.</p>
@@ -1066,7 +1095,12 @@ Str::chunk('TestTestTest', 4, 2); // ['Test', 'Test']
                     static
                   function
                 </span>
-                concat()
+                concat():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Concatenate strings into a single string.</p>
@@ -1085,7 +1119,12 @@ Str::chunk('TestTestTest', 4, 2); // ['Test', 'Test']
                     static
                   function
                 </span>
-                contains()
+                contains():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Determine if a string contains a given substring.</p>
@@ -1108,7 +1147,12 @@ Str::contains('', ''); // true
                     static
                   function
                 </span>
-                containsAll()
+                containsAll():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Determine if a string contains all given substrings.<br />
@@ -1131,7 +1175,12 @@ This must contain at least one substring or exception is thrown.</p>
                     static
                   function
                 </span>
-                containsAny()
+                containsAny():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Determine if string contains any given substrings.<br />
@@ -1154,7 +1203,12 @@ This must contain at least one value or exception is thrown.</p>
                     static
                   function
                 </span>
-                containsNone()
+                containsNone():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Determine if string contains none of the given substrings.<br />
@@ -1177,7 +1231,12 @@ This must contain at least one value or exception is thrown.</p>
                     static
                   function
                 </span>
-                containsPattern()
+                containsPattern():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Determine if a string contains any matches to given pattern.</p>
@@ -1198,7 +1257,12 @@ Str::containsPattern('foo', '/bar/'); // false
                     static
                   function
                 </span>
-                count()
+                count():
+                <span class="return">
+    <span class="no-link">
+      int
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Count the number of substring occurrences.<br />
@@ -1222,7 +1286,12 @@ Str::count('foo', ''); // Exception: Search string must be non-empty.
                     static
                   function
                 </span>
-                decapitalize()
+                decapitalize():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Convert the first character to lower case letter.<br />
@@ -1242,7 +1311,12 @@ Works on all multibyte characters that can be decapitalized.</p>
                     static
                   function
                 </span>
-                doesNotContain()
+                doesNotContain():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Determine if a substring is not contained in a given string.</p>
@@ -1262,7 +1336,12 @@ Works on all multibyte characters that can be decapitalized.</p>
                     static
                   function
                 </span>
-                doesNotEndWith()
+                doesNotEndWith():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Checks if a string does not end with a given substring(s).<br />
@@ -1284,7 +1363,12 @@ Str::doesNotEndWith('abc', ['a', 'b', 'c', 'd']); // false because 'abc' ends wi
                     static
                   function
                 </span>
-                doesNotStartWith()
+                doesNotStartWith():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Checks if a string does not start with a given prefix(s).<br />
@@ -1306,7 +1390,12 @@ Str::doesNotStartWith('abc', 'a'); // false
                     static
                   function
                 </span>
-                dropFirst()
+                dropFirst():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Return a string with the first n characters removed.</p>
@@ -1329,7 +1418,12 @@ If the given amount is greater than the string length, an empty string is return
                     static
                   function
                 </span>
-                dropLast()
+                dropLast():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Return a string with the last n characters removed.</p>
@@ -1351,7 +1445,12 @@ If the given amount is greater than the string length, an empty string is return
                     static
                   function
                 </span>
-                endsWith()
+                endsWith():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Checks if a string ends with a given suffix(s).<br />
@@ -1373,7 +1472,12 @@ Str::endsWith('abc', ['a', 'b']); // false
                     static
                   function
                 </span>
-                endsWithAny()
+                endsWithAny():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Checks if a string ends with a given suffixes.<br />
@@ -1395,7 +1499,12 @@ Str::endsWithAny('abc', ['a', 'b']); // false
                     static
                   function
                 </span>
-                endsWithNone()
+                endsWithNone():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Checks if a string does not end with a given substring(s).<br />
@@ -1417,7 +1526,12 @@ Str::endsWithNone('abc', 'x'); // true because 'abc' ends with 'c'
                     static
                   function
                 </span>
-                equals()
+                equals():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Compares two strings to determine if they are equal.</p>
@@ -1438,7 +1552,12 @@ Str::firstIndexOf('abb', 'b', 3); // null
                     static
                   function
                 </span>
-                equalsAny()
+                equalsAny():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Compares a string to a list of strings to determine if they are equal.<br />
@@ -1455,7 +1574,12 @@ Will return <strong>true</strong> if at least one string in the list is equal to
                     static
                   function
                 </span>
-                indexOfFirst()
+                indexOfFirst():
+                <span class="return">
+    <span class="no-link">
+      int
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Find position (in grapheme units) of first occurrence of substring in string.</p>
@@ -1479,7 +1603,12 @@ start searching as an offset in grapheme units. Defaults to <strong>0</strong>.<
                     static
                   function
                 </span>
-                indexOfLast()
+                indexOfLast():
+                <span class="return">
+    <span class="no-link">
+      int
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Find position (in grapheme units) of last occurrence of substring in string.</p>
@@ -1503,7 +1632,12 @@ start searching as an offset in grapheme units. Defaults to <strong>0</strong>.<
                     static
                   function
                 </span>
-                insertAt()
+                insertAt():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Insert a substring before the given position.</p>
@@ -1526,7 +1660,12 @@ Str::insertAt('abc', 'xyz', -1); // 'abcxyz'
                     static
                   function
                 </span>
-                interpolate()
+                interpolate():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$text</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;string, (int | float | string)&gt;</span> <span class="phpdoc-var-name">$replace</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$delimiterStart</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$delimiterEnd</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span></div>
@@ -1539,7 +1678,12 @@ Str::insertAt('abc', 'xyz', -1); // 'abcxyz'
                     static
                   function
                 </span>
-                isBlank()
+                isBlank():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Determine whether a given string is blank.</p>
@@ -1559,7 +1703,12 @@ Str::isBlank('0'); // false
                     static
                   function
                 </span>
-                isNotBlank()
+                isNotBlank():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Determine whether a given string is not blank.</p>
@@ -1580,7 +1729,12 @@ Str::isNotBlank(''); // false
                     static
                   function
                 </span>
-                length()
+                length():
+                <span class="return">
+    <span class="no-link">
+      int
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns the length of the given string.</p>
@@ -1601,7 +1755,12 @@ Str::length('👨‍👨‍👧‍👦'); // 25
                     static
                   function
                 </span>
-                matchAll()
+                matchAll():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Perform a global regular expression match on given string.</p>
@@ -1622,7 +1781,12 @@ Str::matchAll('abcabc', '/(?&lt;p1&gt;a)bc/'); // [['abc', 'abc'], 'p1' =&gt; ['
                     static
                   function
                 </span>
-                matchFirst()
+                matchFirst():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Perform a regular expression match on given string and return the first match.<br />
@@ -1643,7 +1807,12 @@ Str::matchFirst('abcabc', '/z/'); // NoMatchException
                     static
                   function
                 </span>
-                matchFirstOrNull()
+                matchFirstOrNull():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Perform a regular expression match on given string and return the first match.<br />
@@ -1664,7 +1833,12 @@ Str::matchFirstOrNull('abcabc', '/z/'); // null
                     static
                   function
                 </span>
-                matchLast()
+                matchLast():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Perform a regular expression match on given string and return the last match.<br />
@@ -1685,7 +1859,12 @@ Str::matchLast('abcabc', '/z/'); // NoMatchException
                     static
                   function
                 </span>
-                matchLastOrNull()
+                matchLastOrNull():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Perform a regular expression match on given string and return the last match.<br />
@@ -1706,7 +1885,12 @@ Str::matchLastOrNull('abcabc', '/z/'); // null
                     static
                   function
                 </span>
-                pad()
+                pad():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Pad a string to a certain length with another string.</p>
@@ -1731,7 +1915,12 @@ If the value is lower than the length of <code>$string</code>, the current strin
                     static
                   function
                 </span>
-                padBoth()
+                padBoth():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Pad a string on both ends to a certain length with another string.</p>
@@ -1754,7 +1943,12 @@ If the value is lower than the length, the current string will be returned as-is
                     static
                   function
                 </span>
-                padEnd()
+                padEnd():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Pad string on the beginning of <code>$string</code> to a certain length.<br />
@@ -1779,7 +1973,12 @@ If the value is lower than the length, the current string will be returned as-is
                     static
                   function
                 </span>
-                padStart()
+                padStart():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Pad string on the beginning of <code>$string</code> to a certain length.<br />
@@ -1804,7 +2003,12 @@ If the value is lower than the length, the current string will be returned as-is
                     static
                   function
                 </span>
-                range()
+                range():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns a substring of given string defined by starting and ending index.<br />
@@ -1823,7 +2027,12 @@ The starting index must be bigger or equal to the ending index.</p>
                     static
                   function
                 </span>
-                remove()
+                remove():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Remove all occurrence of <code>$substring</code> from <code>$string</code>.<br />
@@ -1850,7 +2059,12 @@ Any value previously set will be reset.</p>
                     static
                   function
                 </span>
-                removeFirst()
+                removeFirst():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Remove the first occurrence of <code>$substring</code> from <code>$string</code>.</p>
@@ -1870,7 +2084,12 @@ Any value previously set will be reset.</p>
                     static
                   function
                 </span>
-                removeLast()
+                removeLast():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Remove the first occurrence of <code>$substring</code> from <code>$string</code>.</p>
@@ -1890,7 +2109,12 @@ Any value previously set will be reset.</p>
                     static
                   function
                 </span>
-                repeat()
+                repeat():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Repeat the given string n times.</p>
@@ -1911,7 +2135,12 @@ Str::repeat('abc', 2); // 'abcabc'
                     static
                   function
                 </span>
-                replace()
+                replace():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Replace occurrences of the search string with the replacement string.</p>
@@ -1938,7 +2167,12 @@ Any value previously set will be reset.</p>
                     static
                   function
                 </span>
-                replaceFirst()
+                replaceFirst():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Replace the first occurrence of the search string with the replacement string.</p>
@@ -1960,7 +2194,12 @@ Any value previously set will be reset.</p>
                     static
                   function
                 </span>
-                replaceLast()
+                replaceLast():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Replace the last occurrence of the search string with the replacement string.</p>
@@ -1982,7 +2221,12 @@ Any value previously set will be reset.</p>
                     static
                   function
                 </span>
-                replaceMatch()
+                replaceMatch():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Replace substring that match the pattern with the replacement string.</p>
@@ -2009,7 +2253,12 @@ Any value previously set will be reset.</p>
                     static
                   function
                 </span>
-                replaceMatchWithCallback()
+                replaceMatchWithCallback():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Replace substring that match the pattern with the replacement string.</p>
@@ -2036,7 +2285,12 @@ Any value previously set will be reset.</p>
                     static
                   function
                 </span>
-                reverse()
+                reverse():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Reverse a string (single byte).</p>
@@ -2055,7 +2309,12 @@ Any value previously set will be reset.</p>
                     static
                   function
                 </span>
-                split()
+                split():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Split a string into an array using a given string.</p>
@@ -2077,7 +2336,12 @@ Str::split('abcbd', 'b', 2); // ['a', 'cbd']
                     static
                   function
                 </span>
-                splitMatch()
+                splitMatch():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$pattern</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|null)</span> <span class="phpdoc-var-name">$limit</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">list&lt;string&gt;</span></div>
@@ -2090,7 +2354,12 @@ Str::split('abcbd', 'b', 2); // ['a', 'cbd']
                     static
                   function
                 </span>
-                startsWith()
+                startsWith():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Checks if a string starts with a given substring(s).<br />
@@ -2112,7 +2381,12 @@ Str::startsWith('abc', 'b'); // false
                     static
                   function
                 </span>
-                startsWithAny()
+                startsWithAny():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Checks if a string starts with a given substring(s).<br />
@@ -2134,7 +2408,12 @@ Str::startsWithAny('abc', ['b', 'c']); // false
                     static
                   function
                 </span>
-                startsWithNone()
+                startsWithNone():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Checks if a string does not start with a given prefix(s).<br />
@@ -2156,7 +2435,12 @@ Str::startsWithNone('abc', ['x', 'y', 'z']); // true
                     static
                   function
                 </span>
-                substring()
+                substring():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Return a subset of <code>$string</code> starting at <code>$offset</code>.</p>
@@ -2181,7 +2465,12 @@ Defaults to <strong>null</strong>.</p>
                     static
                   function
                 </span>
-                substringAfter()
+                substringAfter():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Extract string after the specified substring.<br />
@@ -2203,7 +2492,12 @@ Str::substringAfter('abc', '_'); // 'abc'
                     static
                   function
                 </span>
-                substringAfterLast()
+                substringAfterLast():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Extract string after the last occurrence of the specified substring.<br />
@@ -2226,7 +2520,12 @@ If no match is found, the entire <code>$string</code> is returned.</p>
                     static
                   function
                 </span>
-                substringBefore()
+                substringBefore():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Extract string before the specified substring.<br />
@@ -2248,7 +2547,12 @@ Str::substringBefore('abc', '_'); // 'abc'
                     static
                   function
                 </span>
-                substringBeforeLast()
+                substringBeforeLast():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Extract string before the last occurrence of the specified substring.<br />
@@ -2270,7 +2574,12 @@ Str::substringBeforeLast('abc', '_'); // 'abc'
                     static
                   function
                 </span>
-                surround()
+                surround():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Surround given string with <code>$before</code> and <code>$after</code>.</p>
@@ -2291,7 +2600,12 @@ Str::surround('bar', '[', ']'); // [bar]
                     static
                   function
                 </span>
-                takeFirst()
+                takeFirst():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Return a string which only contain the first n characters.</p>
@@ -2313,7 +2627,12 @@ If the given amount is greater than the string length, the given string is retur
                     static
                   function
                 </span>
-                takeLast()
+                takeLast():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Return a string which only contain the last n characters.</p>
@@ -2335,7 +2654,12 @@ If the given amount is greater than the string length, the given string is retur
                     static
                   function
                 </span>
-                toBoolOrNull()
+                toBoolOrNull():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Converts the string to boolean value.<br />
@@ -2360,7 +2684,12 @@ Str::toBoolOrNull('👨‍👨‍👧‍👦'); // null
                     static
                   function
                 </span>
-                toBool()
+                toBool():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Converts the string to boolean value.<br />
@@ -2387,7 +2716,12 @@ Str::toBool('👨‍👨‍👧‍👦'); // ParseException: &quot;👨‍👨�
                     static
                   function
                 </span>
-                toCamelCase()
+                toCamelCase():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Convert string to camel case.</p>
@@ -2408,7 +2742,12 @@ Str::toCamelCase('camel_case'); // 'camelCase'
                     static
                   function
                 </span>
-                toFloat()
+                toFloat():
+                <span class="return">
+    <span class="no-link">
+      float
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Convert the string to floating point value.<br />
@@ -2432,7 +2771,12 @@ Str::toFloat(''); // ParseException: &quot;&quot; is not a valid float string.
                     static
                   function
                 </span>
-                toFloatOrNull()
+                toFloatOrNull():
+                <span class="return">
+    <span class="no-link">
+      float
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Convert the string to floating point value.<br />
@@ -2459,7 +2803,12 @@ For internal use. Defaults to <strong>false</strong>.</p>
                     static
                   function
                 </span>
-                matchFloatFormat()
+                matchFloatFormat():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$string</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">(string|null)</span></div>
@@ -2472,7 +2821,12 @@ For internal use. Defaults to <strong>false</strong>.</p>
                     static
                   function
                 </span>
-                toInt()
+                toInt():
+                <span class="return">
+    <span class="no-link">
+      int
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Convert the string to integer value.<br />
@@ -2495,7 +2849,12 @@ Str::toInt('1.0'); // RuntimeException: &quot;1.0&quot; is not a valid integer s
                     static
                   function
                 </span>
-                toIntOrNull()
+                toIntOrNull():
+                <span class="return">
+    <span class="no-link">
+      int
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Convert the string to integer value.<br />
@@ -2519,7 +2878,12 @@ Str::toIntOrNull(str_repeat('1', 20)); // null
                     static
                   function
                 </span>
-                toKebabCase()
+                toKebabCase():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Convert the given string to kebab-case.</p>
@@ -2541,7 +2905,12 @@ Str::toKebabCase('HTTPClient'); // 'http-client'
                     static
                   function
                 </span>
-                toLowerCase()
+                toLowerCase():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Convert the given string to lower case.</p>
@@ -2560,7 +2929,12 @@ Str::toKebabCase('HTTPClient'); // 'http-client'
                     static
                   function
                 </span>
-                toPascalCase()
+                toPascalCase():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Convert the given string to pascal-case.</p>
@@ -2582,7 +2956,12 @@ Str::toPascalCase('FooBar'); // 'FooBar'
                     static
                   function
                 </span>
-                toSnakeCase()
+                toSnakeCase():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Convert the given string to snake-case.</p>
@@ -2604,7 +2983,12 @@ Str::toSnakeCase('HTTPClient'); // 'http_client'
                     static
                   function
                 </span>
-                toUpperCase()
+                toUpperCase():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Convert the given string to upper case.</p>
@@ -2623,7 +3007,12 @@ Str::toSnakeCase('HTTPClient'); // 'http_client'
                     static
                   function
                 </span>
-                trim()
+                trim():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Strip whitespace (or other characters) from the beginning and end of a string.</p>
@@ -2645,7 +3034,12 @@ Defaults to PCRE spaces. (<a href="https://www.pcre.org/original/doc/html/pcrepa
                     static
                   function
                 </span>
-                trimEnd()
+                trimEnd():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Strip whitespace (or other characters) from the end of a string.</p>
@@ -2667,7 +3061,12 @@ Defaults to PCRE spaces. (<a href="https://www.pcre.org/original/doc/html/pcrepa
                     static
                   function
                 </span>
-                trimStart()
+                trimStart():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Strip whitespace (or other characters) from the start of a string.</p>
@@ -2689,7 +3088,12 @@ Defaults to PCRE spaces. (<a href="https://www.pcre.org/original/doc/html/pcrepa
                     static
                   function
                 </span>
-                withPrefix()
+                withPrefix():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Prepend string with given prefix if it is not already present.</p>
@@ -2710,7 +3114,12 @@ Str::withPrefix('_foo', '_'); // &quot;_foo&quot;
                     static
                   function
                 </span>
-                withSuffix()
+                withSuffix():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Append string with given suffix if it is not already present.</p>

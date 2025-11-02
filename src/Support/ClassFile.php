@@ -23,7 +23,7 @@ class ClassFile
      * @param array<string, class-string> $imports
      */
     public function __construct(
-        protected ReflectionClass $reflection,
+        public ReflectionClass $reflection,
         public array $imports = [],
         public array $implements = [],
     ) {

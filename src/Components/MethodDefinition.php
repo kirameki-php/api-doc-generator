@@ -3,15 +3,11 @@
 namespace Kirameki\ApiDocGenerator\Components;
 
 use Kirameki\ApiDocGenerator\Support\CommentParser;
-use Kirameki\ApiDocGenerator\Support\StructureMap;
+use Kirameki\ApiDocGenerator\Support\TypeResolver;
+use Kirameki\ApiDocGenerator\Types\VarType;
 use Kirameki\Core\Exceptions\UnreachableException;
-use ReflectionClass;
-use ReflectionIntersectionType;
 use ReflectionMethod;
-use ReflectionNamedType;
-use ReflectionType;
-use ReflectionUnionType;
-use function array_map;
+use function dump;
 
 class MethodDefinition extends MemberDefinition
 {
@@ -30,10 +26,10 @@ class MethodDefinition extends MemberDefinition
     }
 
     /**
-     * @var TypeInfo
+     * @var VarType
      */
-    public TypeInfo $returnType {
-        get => $this->returnType ??= $this->convertToTypeInfo($this->reflection->getReturnType());
+    public VarType $returnType {
+        get => $this->returnType ??= $this->resolveReturnType();
     }
 
     /**
@@ -70,44 +66,25 @@ class MethodDefinition extends MemberDefinition
     }
 
     /**
-     * @param StructureMap $structureMap
-     * @param ReflectionClass<object> $reflectionClass
      * @param ReflectionMethod $reflection
      * @param CommentParser $docParser
+     * @param TypeResolver $typeResolver
      */
     public function __construct(
-        protected StructureMap $structureMap,
-        protected ReflectionClass $reflectionClass,
         protected ReflectionMethod $reflection,
-        protected CommentParser $docParser,
+        CommentParser $docParser,
+        protected TypeResolver $typeResolver,
     ) {
-        parent::__construct($reflectionClass, $docParser);
+        parent::__construct($docParser);
     }
 
     /**
-     * @param ReflectionType|null $type
-     * @return TypeInfo
+     * @return VarType
      */
-    protected function convertToTypeInfo(?ReflectionType $type): TypeInfo
+    protected function resolveReturnType(): VarType
     {
-        if ($type instanceof ReflectionIntersectionType) {
-            return new IntersectionTypeInfo(
-                array_map($this->convertToTypeInfo(...), $type->getTypes()),
-                $type->allowsNull()
-            );
-        }
-
-        if ($type instanceof ReflectionUnionType) {
-            return new UnionTypeInfo(
-                array_map($this->convertToTypeInfo(...), $type->getTypes()),
-                $type->allowsNull()
-            );
-        }
-
-        if ($type instanceof ReflectionNamedType) {
-            return new NamedTypeInfo($type->getName(), $type->allowsNull());
-        }
-
-        return new NamedTypeInfo('mixed', false);
+        return $this->phpDoc->return !== null
+            ? $this->typeResolver->resolveFromNode($this->phpDoc->return->type)
+            : $this->typeResolver->resolveFromReflection($this->reflection->getReturnType());
     }
 }

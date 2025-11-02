@@ -22,7 +22,6 @@
 </head>
 <body>
 <nav class="sidebar">
-  <h2>Classes</h2>
   <ul>
     <li>
       <div class="sidebar-folder">
@@ -906,7 +905,7 @@
     </div>
   </div>
   <div class="details">
-    <div class="structure-extends">
+    <div class="extends">
       extends:
       <ul>
         <li>
@@ -1001,7 +1000,12 @@
                     static
                   function
                 </span>
-                fromErrorGetLast()
+                fromErrorGetLast():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(iterable&lt;string, mixed&gt;|null)</span> <span class="phpdoc-var-name">$context</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$clearError</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
@@ -1013,7 +1017,12 @@
                   public
                   function
                 </span>
-                __construct()
+                __construct():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$message</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$severity</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(string|null)</span> <span class="phpdoc-var-name">$filename</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|null)</span> <span class="phpdoc-var-name">$line</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(iterable&lt;string, mixed&gt;|null)</span> <span class="phpdoc-var-name">$context</span></div>
@@ -1025,7 +1034,12 @@
                   public
                   function
                 </span>
-                jsonSerialize()
+                jsonSerialize():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">array&lt;string, mixed&gt;</span></div>
@@ -1038,7 +1052,12 @@
                   public
                   function
                 </span>
-                getSeverity()
+                getSeverity():
+                <span class="return">
+    <span class="no-link">
+      int
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 
@@ -1050,33 +1069,12 @@
                   public
                   function
                 </span>
-                __wakeup()
-              </div>
-              <div class="method-comment">
-                
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                    final
-                  public
-                  function
+                __wakeup():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
                 </span>
-                getMessage()
-              </div>
-              <div class="method-comment">
-                
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                    final
-                  public
-                  function
-                </span>
-                getCode()
               </div>
               <div class="method-comment">
                 
@@ -1089,7 +1087,12 @@
                   public
                   function
                 </span>
-                getFile()
+                getMessage():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 
@@ -1102,7 +1105,12 @@
                   public
                   function
                 </span>
-                getLine()
+                getCode():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 
@@ -1115,7 +1123,12 @@
                   public
                   function
                 </span>
-                getTrace()
+                getFile():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 
@@ -1128,7 +1141,12 @@
                   public
                   function
                 </span>
-                getPrevious()
+                getLine():
+                <span class="return">
+    <span class="no-link">
+      int
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 
@@ -1141,7 +1159,48 @@
                   public
                   function
                 </span>
-                getTraceAsString()
+                getTrace():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
+              </div>
+              <div class="method-comment">
+                
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                    final
+                  public
+                  function
+                </span>
+                getPrevious():
+                <span class="return">
+    <span class="no-link">
+      Throwable
+    </span>
+                </span>
+              </div>
+              <div class="method-comment">
+                
+              </div>
+            </li>
+            <li>
+              <div class="method-signature">
+                <span class="method-modifiers">
+                    final
+                  public
+                  function
+                </span>
+                getTraceAsString():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 
@@ -1153,7 +1212,12 @@
                   public
                   function
                 </span>
-                __toString()
+                __toString():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 
@@ -1165,7 +1229,12 @@
                   public
                   function
                 </span>
-                getContext()
+                getContext():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@inheritDoc</span> </div>
@@ -1177,7 +1246,12 @@
                   public
                   function
                 </span>
-                setContext()
+                setContext():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(iterable&lt;string, mixed&gt;|null)</span> <span class="phpdoc-var-name">$context</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">$this</span></div>
@@ -1189,7 +1263,12 @@
                   public
                   function
                 </span>
-                addContext()
+                addContext():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$key</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">mixed</span> <span class="phpdoc-var-name">$val</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">$this</span></div>
@@ -1201,7 +1280,12 @@
                   public
                   function
                 </span>
-                mergeContext()
+                mergeContext():
+                <span class="return">
+    <span class="no-link">
+      static
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;string, mixed&gt;</span> <span class="phpdoc-var-name">$context</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">$this</span></div>

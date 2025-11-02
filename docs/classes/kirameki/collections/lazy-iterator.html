@@ -22,7 +22,6 @@
 </head>
 <body>
 <nav class="sidebar">
-  <h2>Classes</h2>
   <ul>
     <li>
       <div class="sidebar-folder">
@@ -904,21 +903,48 @@
       </span>
       <span class="structure-name">
         LazyIterator
-<span class="generics">
-  <span class="brace">&lt;</span>
-    <span class="generic">
-      <span class="name">TKey</span>
-    </span>
-    <span class="delimiter">,</span>
-    <span class="generic">
-      <span class="name">TValue</span>
-    </span>
+        <span class="generics">
+          <span class="brace">&lt;</span>
+            <span class="generic">
+              <span class="name">TKey</span>
+                <span class="bound-delimiter"> as </span>
+                <span class="bound">array-key</span>
+            </span>
+            <span class="delimiter">,</span>
+            <span class="generic">
+              <span class="name">TValue</span>
+            </span>
 
-  <span class="brace">&gt;</span>
+          <span class="brace">&gt;</span>
       </span>
     </div>
   </div>
   <div class="details">
+    <div class="implements">
+      implements:
+      <ul>
+          <li>
+              <a href="https://www.php.net/manual/class.iteratoraggregate.php" class="external-link" target="_blank">
+                IteratorAggregate
+              </a>
+<span class="generics">
+  <span class="brace">&lt;</span>
+    <span class="generic">
+      <span class="name">
+        TKey
+      </span>
+    </span>
+    <span class="delimiter">,</span>
+    <span class="generic">
+      <span class="name">
+        TValue
+      </span>
+    </span>
+
+  <span class="brace">&gt;</span>
+          </li>
+      </ul>
+    </div>
       <div class="properties">
         <h3>Properties</h3>
         <ul>
@@ -946,7 +972,12 @@
                   public
                   function
                 </span>
-                __construct()
+                __construct():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TKey, TValue&gt;</span> <span class="phpdoc-var-name">$items</span><div class="phpdoc-description"><p>Iterable elements to be used in collection.</p>
@@ -959,7 +990,12 @@
                   public
                   function
                 </span>
-                getIterator()
+                getIterator():
+                <span class="return">
+    <span class="no-link">
+      Traversable
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@inheritDoc</span> </div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Traversable&lt;TKey, TValue&gt;</span></div>

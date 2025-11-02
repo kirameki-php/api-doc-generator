@@ -22,7 +22,6 @@
 </head>
 <body>
 <nav class="sidebar">
-  <h2>Classes</h2>
   <ul>
     <li>
       <div class="sidebar-folder">
@@ -907,7 +906,7 @@
     </div>
   </div>
   <div class="details">
-    <div class="structure-extends">
+    <div class="extends">
       extends:
       <ul>
         <li>
@@ -927,7 +926,27 @@
                 <span class="type"></span>
                 <span class="name">Kirameki\Process\Signal</span>
                 <span class="assignment"> = </span>
-                  
+                  <div class="value value-array">
+                    [
+                    <ul>
+                        <li>
+                            <span class="array-key-int">0</span> =>
+                            <span class="array-value-default">1</span>
+                        </li>
+                        <li>
+                            <span class="array-key-int">1</span> =>
+                            <span class="array-value-default">2</span>
+                        </li>
+                        <li>
+                            <span class="array-key-int">2</span> =>
+                            <span class="array-value-default">3</span>
+                        </li>
+                        <li>
+                            <span class="array-key-int">3</span> =>
+                            <span class="array-value-default">15</span>
+                        </li>
+                    ]
+                  </div>
               </div>
             </li>
         </ul>
@@ -960,7 +979,12 @@
                     static
                   function
                 </span>
-                handle()
+                handle():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Event\Listeners\CallbackListener
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Adds <code>$callback</code> to the signal handler.</p>
@@ -976,7 +1000,12 @@
                     static
                   function
                 </span>
-                addListener()
+                addListener():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Event\Listeners\EventListener
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TListener</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$signal</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">TListener</span> <span class="phpdoc-var-name">$listener</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">TListener</span></div>
@@ -989,7 +1018,12 @@
                     static
                   function
                 </span>
-                captureSignal()
+                captureSignal():
+                <span class="return">
+    <span class="no-link">
+      void
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Register a callback for the given signal which will call invoke() when the signal is received.</p>
@@ -1004,7 +1038,12 @@
                     static
                   function
                 </span>
-                invoke()
+                invoke():
+                <span class="return">
+    <span class="no-link">
+      void
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Invokes all callbacks for the given signal.<br />
@@ -1023,7 +1062,12 @@ with the given (signal number + 128) as specified in<br />
                     static
                   function
                 </span>
-                registeredSignals()
+                registeredSignals():
+                <span class="return">
+    <span class="no-link">
+      array
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Returns all the registered signals.</p>
@@ -1037,7 +1081,12 @@ with the given (signal number + 128) as specified in<br />
                     static
                   function
                 </span>
-                clearHandler()
+                clearHandler():
+                <span class="return">
+    <span class="no-link">
+      int
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Clear the given <code>$callback</code> for the specified signal.<br />
@@ -1052,7 +1101,12 @@ Returns the number of callbacks removed.</p>
                     static
                   function
                 </span>
-                clearHandlers()
+                clearHandlers():
+                <span class="return">
+    <span class="no-link">
+      bool
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Clears the signal handlers for the specified signal.</p>
@@ -1067,7 +1121,12 @@ Returns the number of callbacks removed.</p>
                     static
                   function
                 </span>
-                clearAllHandlers()
+                clearAllHandlers():
+                <span class="return">
+    <span class="no-link">
+      void
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Clears all the signal handlers.</p>
@@ -1081,7 +1140,12 @@ Returns the number of callbacks removed.</p>
                     static
                   function
                 </span>
-                getNameOf()
+                getNameOf():
+                <span class="return">
+    <span class="no-link">
+      string
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Get the name of the signal from the signal number.</p>
@@ -1095,7 +1159,12 @@ Returns the number of callbacks removed.</p>
                     static
                   function
                 </span>
-                createSignalEvent()
+                createSignalEvent():
+                <span class="return">
+    <span class="no-link">
+      Kirameki\Process\SignalEvent
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 <div class="phpdoc-description"><p>Creates a new signal event.<br />
@@ -1112,7 +1181,12 @@ Event will be marked for termination if the signal is a termination signal.</p>
                   public
                   function
                 </span>
-                __construct()
+                __construct():
+                <span class="return">
+    <span class="no-link">
+      mixed
+    </span>
+                </span>
               </div>
               <div class="method-comment">
                 

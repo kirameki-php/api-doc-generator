@@ -2,31 +2,47 @@
 
 namespace Kirameki\ApiDocGenerator\Components;
 
-use Kirameki\ApiDocGenerator\Support\CommentParser;
-use Kirameki\ApiDocGenerator\Support\StructureMap;
 use Kirameki\ApiDocGenerator\Support\ClassFile;
+use Kirameki\ApiDocGenerator\Support\CommentParser;
+use Kirameki\ApiDocGenerator\Support\PhpDoc;
+use Kirameki\ApiDocGenerator\Support\TypeResolver;
+use Kirameki\ApiDocGenerator\Support\UrlResolver;
+use Kirameki\ApiDocGenerator\Types\StructureVarType;
+use Kirameki\ApiDocGenerator\Types\VarType;
 use Kirameki\Collections\Vec;
-use Kirameki\Core\Exceptions\UnreachableException;
-use PHPStan\PhpDocParser\Ast\PhpDoc\ExtendsTagValueNode;
-use PHPStan\PhpDocParser\Ast\PhpDoc\ImplementsTagValueNode;
-use PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocTagNode;
-use PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocTagValueNode;
-use PHPStan\PhpDocParser\Ast\PhpDoc\TemplateTagValueNode;
-use PHPStan\PhpDocParser\Ast\Type\IdentifierTypeNode;
+use Kirameki\Text\Str;
 use ReflectionClass;
+use ReflectionClassConstant;
+use ReflectionMethod;
+use ReflectionProperty;
 use Stringable;
+use function array_map;
 use function array_values;
-use function assert;
-use function class_exists;
-use function dump;
-use function enum_exists;
-use function interface_exists;
-use function is_string;
 use function ksort;
-use function trait_exists;
 
-class ClassDefinition extends ClassInfo
+class ClassDefinition implements StructureDefinition, Stringable
 {
+    /**
+     * @var string
+     */
+    public string $name {
+        get => $this->reflection->getName();
+    }
+
+    /**
+     * @var string
+     */
+    public string $namespace {
+        get => $this->reflection->getNamespaceName();
+    }
+
+    /**
+     * @var string
+     */
+    public string $basename {
+        get => Str::substringAfterLast($this->name, '\\');
+    }
+
     /**
      * @var array<TemplateDefinition>
      */
@@ -56,247 +72,159 @@ class ClassDefinition extends ClassInfo
     }
 
     /**
-     * @var ExtendInfo|null
+     * @var VarType|null
      */
-    public ?ExtendInfo $parent {
+    public ?VarType $parent {
         get => $this->parent ??= $this->resolveParent();
     }
 
     /**
-     * @var list<InterfaceInfo>
+     * @var list<VarType>
      */
     public array $interfaces {
         get => $this->interfaces ??= $this->resolveInterfaces();
     }
 
     /**
-     * @var array<string, ConstantDefinition>
+     * @var list<ConstantDefinition>
      */
     public array $constants {
-        get => $this->constants ??= $this->resolveConstants();
+        get => $this->constants ??= array_map(
+            fn(ReflectionClassConstant $ref) => new ConstantDefinition($this, $ref),
+            $this->reflection->getReflectionConstants(),
+        );
     }
 
     /**
-     * @var array<string, PropertyDefinition>
+     * @var list<PropertyDefinition>
      */
     public array $properties {
-        get => $this->properties ??= $this->resolveProperties();
+        get => $this->properties ??= array_map(
+            fn(ReflectionProperty $ref) => new PropertyDefinition($ref, $this->docParser, $this->typeResolver),
+            $this->reflection->getProperties(),
+        );
     }
 
     /**
-     * @var array<string, MethodDefinition>
+     * @var list<MethodDefinition>
      */
     public array $methods {
-        get => $this->methods ??= $this->resolveMethods();
-    }
-
-    protected ClassFile $file {
-        get => $this->file ??= new ClassFile($this->reflection);
+        get => $this->methods ??= array_map(
+            fn(ReflectionMethod $ref) => new MethodDefinition($ref, $this->docParser, $this->typeResolver),
+            $this->reflection->getMethods(),
+        );
     }
 
     /**
-     * @var array<class-string<PhpDocTagValueNode>, list<PhpDocTagValueNode>>
+     * @var PhpDoc
      */
-    protected array $phpDocTags {
-        get => $this->phpDocTags ??= $this->parsePhpDoc();
+    protected PhpDoc $phpDoc {
+        get => $this->phpDoc ??= $this->docParser->parse((string) $this->reflection->getDocComment());
     }
 
     /**
-     * @param StructureMap $structureMap
      * @param ReflectionClass<object> $reflection
+     * @param ClassFile $file
      * @param CommentParser $docParser
+     * @param TypeResolver $typeResolver
+     * @param UrlResolver $urlResolver
      */
     public function __construct(
-        protected StructureMap $structureMap,
-        protected ReflectionClass $reflection,
-        protected CommentParser $docParser,
-    )
-    {
-        parent::__construct($structureMap, $docParser, $reflection);
+        protected readonly ReflectionClass $reflection,
+        protected readonly ClassFile $file,
+        protected readonly CommentParser $docParser,
+        protected readonly TypeResolver $typeResolver,
+        protected readonly UrlResolver $urlResolver,
+    ) {
     }
 
     /**
-     * @param ReflectionClass<object> $reflection
-     * @return self
-     */
-    protected function instantiate(ReflectionClass $reflection): self
-    {
-        return new self($this->structureMap, $reflection, $this->docParser);
-    }
-
-    /**
-     * @return array<class-string<PhpDocTagValueNode>, list<PhpDocTagValueNode>>
-     */
-    protected function parsePhpDoc(): array
-    {
-        $tags = [];
-        if (($comment = $this->reflection->getDocComment()) !== false) {
-            foreach ($this->docParser->parse($comment)->children as $doc) {
-                if ($doc instanceof PhpDocTagNode) {
-                    $tags[$doc->value::class][] = $doc->value;
-                }
-            }
-        }
-        return $tags;
-    }
-
-    /**
-     * @template T of PhpDocTagValueNode
-     * @param class-string<T> $type
-     * @return Vec<T>
-     */
-    protected function getDocTagOfType(string $type): Vec
-    {
-        /** @phpstan-ignore return.type */
-        return new Vec($this->phpDocTags[$type] ?? []);
-    }
-
-    /**
-     * @return array<TemplateDefinition>
+     * @return list<TemplateDefinition>
      */
     protected function resolveTemplates(): array
     {
-        return $this->getDocTagOfType(TemplateTagValueNode::class)
-            ->map(fn(TemplateTagValueNode $node) => new TemplateDefinition(
-                $node->name,
-                $node->bound ? $this->lookUpType($node->bound) : null,
-            ))
-            ->toArray();
+        $templates = [];
+        foreach ($this->phpDoc->templates as $tag) {
+            $templates[] = new TemplateDefinition(
+                $tag->name,
+                $tag->bound
+                    ? $this->typeResolver->resolveFromNode($tag->bound)
+                    : null,
+                $tag->default
+                    ? $this->typeResolver->resolveFromNode($tag->default)
+                    : null,
+            );
+        }
+        return $templates;
     }
 
     /**
-     * @return ExtendInfo|null
+     * @return VarType|null
      */
-    protected function resolveParent(): ?ExtendInfo
+    protected function resolveParent(): ?VarType
     {
-        $reflection = $this->reflection->getParentClass();
+        $node = $this->phpDoc->extends?->type;
+        if ($node !== null) {
+            return $this->typeResolver->resolveFromNode($node);
+        }
 
+        $reflection = $this->reflection->getParentClass();
         if ($reflection === false) {
             return null;
         }
-
-        $generics = [];
-        foreach ($this->getDocTagOfType(ExtendsTagValueNode::class) as $node) {
-            foreach ($node->type->genericTypes as $genericType) {
-                if ($genericType instanceof IdentifierTypeNode) {
-                    $generics[] = new NamedTypeInfo($this->lookUpType($genericType));
-                } else {
-                    throw new UnreachableException();
-                }
-            }
-        }
-        return new ExtendInfo($this->instantiate($reflection), $generics);
+        return new StructureVarType($this->instantiate($reflection));
     }
 
     /**
-     * @return list<InterfaceInfo>
+     * @return list<VarType>
      */
     protected function resolveInterfaces(): array
     {
-        $interfaces = [];
-        foreach ($this->getDocTagOfType(ImplementsTagValueNode::class) as $node) {
-            $type = $this->lookUpType($node->type->type);
-            assert($type instanceof StructureInfo);
-            $generics = [];
-            foreach ($node->type->genericTypes as $genericType) {
-                if ($genericType instanceof IdentifierTypeNode) {
-                    $generics[] = new NamedTypeInfo($this->lookUpType($genericType));
-                } else {
-                    throw new UnreachableException();
-                }
-            }
-            $interfaces[$type->name] = new InterfaceInfo($type, $generics);
+        $types = [];
+        foreach ($this->phpDoc->implements as $tag) {
+            $types[$tag->type->type->name] = $this->typeResolver->resolveFromNode($tag->type);
         }
 
-        foreach ($this->file->implements as $name) {
-            $interfaces[$name] ??= new InterfaceInfo($this->instantiate(new ReflectionClass($name)));
+        foreach ($this->reflection->getInterfaces() as $interface) {
+            $types[$interface->getName()] ??= new StructureVarType($this->instantiate($interface));
         }
-        ksort($interfaces);
-        return array_values($interfaces);
+
+        ksort($types, SORT_NATURAL);
+
+        return array_values($types);
     }
 
     /**
-     * @return array<string, ConstantDefinition>
+     * @param ReflectionClass<object> $reflection
+     * @return ClassDefinition
      */
-    protected function resolveConstants(): array
+    protected function instantiate(ReflectionClass $reflection): ClassDefinition
     {
-        $constants = [];
-        foreach ($this->reflection->getReflectionConstants() as $constant) {
-            $constants[$constant->name] = new ConstantDefinition($this, $constant);
-        }
-        return $constants;
+        return new ClassDefinition(
+            $reflection,
+            $this->file,
+            $this->docParser,
+            $this->typeResolver,
+            $this->urlResolver,
+        );
     }
 
     /**
-     * @return array<string, PropertyDefinition>
+     * @return string
      */
-    protected function resolveProperties(): array
+    public function getHtmlPath(): string
     {
-        $properties = [];
-        foreach ($this->reflection->getProperties() as $property) {
-            $properties[$property->name] = new PropertyDefinition(
-                $this->structureMap,
-                $this->reflection,
-                $property,
-                $this->docParser,
-            );
-        }
-        return $properties;
+        return new Vec(Str::split($this->name, '\\'))
+            ->map(Str::toKebabCase(...))
+            ->prepend('classes')
+            ->join('/') . '.html';
     }
 
     /**
-     * @return array<string, MethodDefinition>
+     * @return string
      */
-    protected function resolveMethods(): array
+    public function __toString(): string
     {
-        $methods = [];
-        foreach ($this->reflection->getMethods() as $method) {
-            $methods[$method->getName()] = new MethodDefinition(
-                $this->structureMap,
-                $this->reflection,
-                $method,
-                $this->docParser,
-            );
-        }
-        return $methods;
-    }
-
-    public function lookUpType(string|Stringable $name): StructureInfo|string
-    {
-        if ($name instanceof Stringable) {
-            $name = (string) $name;
-        }
-
-        // When the type is a fully qualified class name
-        if (class_exists($name) || interface_exists($name) || trait_exists($name) || enum_exists($name)) {
-            return new ClassInfo(
-                $this->structureMap,
-                $this->docParser,
-                new ReflectionClass($name),
-            );
-        }
-
-        // When the type is imported via use statement
-        $class = $this->file->imports[$name] ?? null;
-        if (is_string($class)) {
-            return new ClassInfo(
-                $this->structureMap,
-                $this->docParser,
-                new ReflectionClass($class),
-            );
-        }
-
-        // When the type is a sibling class in the same namespace
-        /** @var class-string $sibling */
-        $sibling = $this->namespace . '\\' . $name;
-        if ($this->structureMap->exists($sibling)) {
-            return new ClassInfo(
-                $this->structureMap,
-                $this->docParser,
-                new ReflectionClass($sibling),
-            );
-        }
-
-        return $name;
+        return $this->name;
     }
 }
