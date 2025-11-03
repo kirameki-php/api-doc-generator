@@ -7,6 +7,7 @@ use function class_exists;
 use function dump;
 use function file_get_contents;
 use function in_array;
+use function interface_exists;
 use function is_array;
 use function strrchr;
 use function trim;
@@ -27,13 +28,13 @@ class ClassFile
         public array $imports = [],
         public array $implements = [],
     ) {
-        $this->resolve();
+        $this->evaluate();
     }
 
     /**
      * @return void
      */
-    protected function resolve(): void
+    protected function evaluate(): void
     {
         $filePath = $this->reflection->getFileName();
         if ($filePath === false) {
@@ -62,7 +63,7 @@ class ClassFile
                 $j = $i + 1;
                 while (($curr = $tokens[$j] ?? null) && $tokens[$j] !== '{') {
                     if (is_array($curr)) {
-                        if ($curr[0] === T_STRING && class_exists($curr[1])) {
+                        if ($curr[0] === T_STRING && interface_exists($curr[1])) {
                             $this->implements[] = $curr[1];
                         }
                     }

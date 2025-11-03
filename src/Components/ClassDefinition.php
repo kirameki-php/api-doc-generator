@@ -18,6 +18,7 @@ use ReflectionProperty;
 use Stringable;
 use function array_map;
 use function array_values;
+use function dump;
 use function ksort;
 
 class ClassDefinition implements StructureDefinition, Stringable
@@ -185,8 +186,9 @@ class ClassDefinition implements StructureDefinition, Stringable
             $types[$tag->type->type->name] = $this->typeResolver->resolveFromNode($tag->type);
         }
 
-        foreach ($this->reflection->getInterfaces() as $interface) {
-            $types[$interface->getName()] ??= new StructureVarType($this->instantiate($interface));
+        foreach ($this->file->implements as $if) {
+            $reflection = new ReflectionClass($if);
+            $types[$reflection->getName()] ??= new StructureVarType($this->instantiate($reflection));
         }
 
         ksort($types, SORT_NATURAL);

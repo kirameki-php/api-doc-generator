@@ -1,0 +1,12 @@
+{varType array $generics}
+{if $generics !== []}
+  <span class="generics">
+    <span class="brace">&lt;</span>
+    {foreach $generics as $generic}
+      {varType Kirameki\ApiDocGenerator\Types\VarType $generic}
+      {include type.latte, type: $generic}
+      {sep}<span class="delimiter">,</span>{/sep}
+    {/foreach}
+    <span class="brace">&gt;</span>
+  </span>
+{/if}

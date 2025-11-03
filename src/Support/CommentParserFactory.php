@@ -2,6 +2,8 @@
 
 namespace Kirameki\ApiDocGenerator\Support;
 
+use League\CommonMark\GithubFlavoredMarkdownConverter;
+use League\CommonMark\MarkdownConverter;
 use PHPStan\PhpDocParser\Lexer\Lexer;
 use PHPStan\PhpDocParser\Parser\ConstExprParser;
 use PHPStan\PhpDocParser\Parser\PhpDocParser;
@@ -14,6 +16,8 @@ class CommentParserFactory
      * @var ParserConfig
      */
     protected ParserConfig $config;
+
+    protected MarkdownConverter $markdownConverter;
 
     /**
      * @var Lexer
@@ -45,10 +49,15 @@ class CommentParserFactory
             'indexes' => true,
             'comments' => true,
         ]);
+
+        $this->markdownConverter = new GithubFlavoredMarkdownConverter([
+            'html_input' => 'escape',
+            'allow_unsafe_links' => false,
+        ]);
     }
 
     public function createFor(ClassFile $file): CommentParser
     {
-        return new CommentParser($this->lexer, $this->parser, $file);
+        return new CommentParser($this->lexer, $this->parser, $file, $this->markdownConverter);
     }
 }

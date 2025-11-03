@@ -13,7 +13,7 @@ main {
 }
 a {
     text-decoration: none;
-    color: #1d4ed8;
+    color: #3e68ba;
 }
 a:hover {
     text-decoration: underline;
@@ -74,9 +74,6 @@ blockquote {
             font-size: var(--code-font-size);
             margin-bottom: 1rem;
         }
-        .modifiers {
-            color: #3e68ba;
-        }
         .structure-name {
             font-weight: bold;
             display: inline-flex;
@@ -99,7 +96,7 @@ blockquote {
                 margin: 1rem 0.5rem;
 
                 .modifiers {
-                    color: #3e68ba;
+                    color: #1663ff;
                 }
                 .type {
                     color: #2563eb;
@@ -127,12 +124,9 @@ blockquote {
                     display: flex;
                     flex-direction: row;
 
-                    a {
+                    .type {
                         display: flex;
                         flex-direction: row;
-                    }
-                    .no-link {
-                        color: #6b7280;
                     }
                 }
             }
@@ -178,31 +172,22 @@ blockquote {
             border-bottom: 1px dashed #c7cdd5;
             padding-top: 0.5rem;
             padding-bottom: 0.5rem;
+
+            .signature {
+                font-family: var(--code-font-family);
+                padding: 0.5rem;
+                background-color: #f6f7f8;
+                border-radius: 0.25rem;
+                margin: 0.75rem 0;
+            }
+            .var-name {
+                color: #1f8135;
+            }
         }
         li:last-child {
             border-bottom: none;
         }
     }
-}
-.property-signature {
-    font-family: var(--code-font-family);
-    padding: 0.5rem;
-    background-color: #f6f7f8;
-    border-radius: 0.25rem;
-    margin: 0.75rem 0;
-}
-.property-modifiers {
-    color: #3e68ba;
-}
-.property-name {
-    color: #1f8135;
-}
-.property-comment {
-    padding: 0.5rem;
-}
-.property-comment > .phpdoc-description {
-    margin-bottom: 1rem;
-    opacity: 60%;
 }
 .methods {
     padding-top: 1rem;
@@ -211,7 +196,6 @@ blockquote {
         padding: 0.25rem 0;
         border-bottom: 1px solid #e5e7eb;
     }
-
     ul {
         display: flex;
         flex-direction: column;
@@ -225,60 +209,39 @@ blockquote {
             border-bottom: none;
         }
     }
+    .signature {
+        font-family: var(--code-font-family);
+        padding: 0.5rem;
+        background-color: #f6f7f8;
+        border-radius: 0.25rem;
+        margin: 0.75rem 0;
+
+        .type {
+            display: inline-flex;
+        }
+    }
 }
-.method-signature {
-    font-family: var(--code-font-family);
+.modifiers {
+    color: #2453b5;
+}
+.comment {
     padding: 0.5rem;
-    background-color: #f6f7f8;
-    border-radius: 0.25rem;
-    margin: 0.75rem 0;
-}
-.method-modifiers {
-    color: #3e68ba;
-}
-.method-comment {
-    padding: 0.5rem;
-}
-.method-comment .phpdoc-description {
     margin-top: 0.5rem;
     margin-bottom: 1.5rem;
     opacity: 60%;
     line-height: 1.5;
-}
-.phpdoc-description code {
-    font-family: var(--code-font-family);
-    font-size: var(--phpdoc-code-font-size);
-    background-color: #f2f2f4;
-    padding: 0.15rem;
-    border-radius: 0.25rem;
-}
-.phpdoc-description pre code {
-    display: block;
-    padding: 0.4rem 0.5rem;
-    margin: 0.25rem 0;
-    overflow-x: auto;
-}
-.phpdoc-tag {
-    gap: 0.5rem;
-    margin-top: 0.3rem;
-    margin-bottom: 1.0rem;
-}
-.phpdoc-tag-name {
-    font-family: var(--code-font-family);
-    font-size: var(--code-font-size);
-    color: #6791ec;
-}
-.phpdoc-type {
-    font-family: var(--code-font-family);
-    font-size: var(--code-font-size);
-    color: #2563eb;
-}
-.phpdoc-var-name {
-    font-family: var(--code-font-family);
-    font-size: var(--code-font-size);
-    color: #1f8135;
-}
-.phpdoc-tag .phpdoc-description {
-    padding-left: 0.25rem;
-    opacity: 60%;
+
+    code {
+        font-family: var(--code-font-family);
+        font-size: var(--phpdoc-code-font-size);
+        background-color: #f2f2f4;
+        padding: 0.15rem;
+        border-radius: 0.25rem;
+    }
+    pre code {
+        display: block;
+        padding: 0.4rem 0.5rem;
+        margin: 0.25rem 0;
+        overflow-x: auto;
+    }
 }

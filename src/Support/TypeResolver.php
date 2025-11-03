@@ -24,14 +24,22 @@ use ReflectionIntersectionType;
 use ReflectionNamedType;
 use ReflectionType;
 use ReflectionUnionType;
+use Stringable;
 use function array_map;
 use function array_values;
 use function class_exists;
 use function enum_exists;
 use function interface_exists;
+use function is_string;
+use function trait_exists;
 
 class TypeResolver
 {
+    /**
+     * @param ClassFile $file
+     * @param CommentParser $docParser
+     * @param UrlResolver $urlResolver
+     */
     public function __construct(
         protected readonly ClassFile $file,
         protected readonly CommentParser $docParser,
@@ -39,6 +47,10 @@ class TypeResolver
     ) {
     }
 
+    /**
+     * @param TypeNode $node
+     * @return VarType
+     */
     public function resolveFromNode(TypeNode $node): VarType
     {
         if ($node instanceof UnionTypeNode) {
@@ -108,7 +120,7 @@ class TypeResolver
      */
     protected function convertNameToVarType(string $name, array $generics = []): VarType
     {
-        $fqn = StructureUtil::getFullyQualifiedName($this->file, $name) ?? $name;
+        $fqn = $this->getFullyQualifiedName($this->file, $name) ?? $name;
 
         if (class_exists($fqn)) {
             $reflection = new ReflectionClass($fqn);
@@ -128,6 +140,43 @@ class TypeResolver
             return new StructureVarType($definition, $generics);
         }
 
-        return new NamedVarType($fqn);
+        return new NamedVarType($fqn, $generics);
+    }
+
+    /**
+     * Resolves the fully qualified class name from a given name within the context of a class file.
+     *
+     * @param ClassFile $file
+     * @param string|Stringable $name
+     * @return string|null
+     */
+    public function getFullyQualifiedName(
+        ClassFile $file,
+        string|Stringable $name,
+    ): ?string
+    {
+        if ($name instanceof Stringable) {
+            $name = (string) $name;
+        }
+
+        // When the type is a fully qualified class name
+        if (class_exists($name) || interface_exists($name) || trait_exists($name) || enum_exists($name)) {
+            return $name;
+        }
+
+        // When the type is imported via use statement
+        $class = $file->imports[$name] ?? null;
+        if (is_string($class)) {
+            return $class;
+        }
+
+        // When the type is a sibling class in the same namespace
+        /** @var class-string $sibling */
+        $sibling = $file->reflection->getNamespaceName() . '\\' . $name;
+        if (class_exists($sibling) || interface_exists($sibling) || trait_exists($sibling) || enum_exists($sibling)) {
+            return $sibling;
+        }
+
+        return null;
     }
 }

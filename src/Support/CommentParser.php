@@ -3,6 +3,7 @@
 namespace Kirameki\ApiDocGenerator\Support;
 
 use Kirameki\Core\Exceptions\UnreachableException;
+use League\CommonMark\MarkdownConverter;
 use PHPStan\PhpDocParser\Ast\PhpDoc\ExtendsTagValueNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\ImplementsTagValueNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocTagNode;
@@ -13,6 +14,7 @@ use PHPStan\PhpDocParser\Lexer\Lexer;
 use PHPStan\PhpDocParser\Parser\PhpDocParser;
 use PHPStan\PhpDocParser\Parser\TokenIterator;
 use function dump;
+use function str_replace;
 
 class CommentParser
 {
@@ -20,11 +22,13 @@ class CommentParser
      * @param Lexer $lexer
      * @param PhpDocParser $parser
      * @param ClassFile $file
+     * @param MarkdownConverter $markdownConverter
      */
     public function __construct(
         protected Lexer $lexer,
         protected PhpDocParser $parser,
         protected ClassFile $file,
+        protected MarkdownConverter $markdownConverter,
     ) {
     }
 
@@ -58,7 +62,7 @@ class CommentParser
                     default => null,
                 };
             } elseif ($node instanceof PhpDocTextNode) {
-                $texts[]= $node->text;
+                $texts[]= $this->toMarkdown($node->text);
             } else {
                 throw new UnreachableException();
             }
@@ -70,5 +74,12 @@ class CommentParser
             $return,
             $texts,
         );
+    }
+
+    protected function toMarkdown(string $text): string
+    {
+        return $this->markdownConverter
+            ->convert(str_replace("\n", "  \n ", $text))
+            ->getContent();
     }
 }

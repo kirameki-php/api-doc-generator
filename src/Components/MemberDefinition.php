@@ -5,8 +5,6 @@ namespace Kirameki\ApiDocGenerator\Components;
 use Kirameki\ApiDocGenerator\Support\CommentParser;
 use Kirameki\ApiDocGenerator\Support\PhpDoc;
 use Kirameki\Core\Exceptions\UnreachableException;
-use League\CommonMark\GithubFlavoredMarkdownConverter;
-use League\CommonMark\MarkdownConverter;
 use PHPStan\PhpDocParser\Ast\PhpDoc\AssertTagMethodValueNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\AssertTagValueNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\DeprecatedTagValueNode;
@@ -15,8 +13,6 @@ use PHPStan\PhpDocParser\Ast\PhpDoc\ParamOutTagValueNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\ParamTagValueNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocTagNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocTextNode;
-use PHPStan\PhpDocParser\Ast\PhpDoc\ReturnTagValueNode;
-use PHPStan\PhpDocParser\Ast\PhpDoc\TemplateTagValueNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\ThrowsTagValueNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\VarTagValueNode;
 use PHPStan\PhpDocParser\Ast\Type\ArrayShapeNode;
@@ -28,6 +24,7 @@ use PHPStan\PhpDocParser\Ast\Type\UnionTypeNode;
 use Stringable;
 use function dump;
 use function htmlspecialchars;
+use function implode;
 use function str_replace;
 
 abstract class MemberDefinition
@@ -68,11 +65,6 @@ abstract class MemberDefinition
     }
 
     /**
-     * @var MarkdownConverter|null
-     */
-    private ?MarkdownConverter $converter = null;
-
-    /**
      * @var Visibility
      */
     abstract public Visibility $visibility {
@@ -96,13 +88,9 @@ abstract class MemberDefinition
      */
     public function commentAsMarkdown(): string
     {
-        $content = '';
-        return $content;
+        return implode("\n", $this->phpDoc->texts);
         $docNode = $this->docParser->parse($this->comment);
         foreach ($docNode->children as $child) {
-            if ($child instanceof PhpDocTextNode) {
-                $content .= $this->descriptionAsMarkdown($child->text);
-            }
             if ($child instanceof PhpDocTagNode) {
                 $inner = '';
                 $value = $child->value;
@@ -121,15 +109,6 @@ abstract class MemberDefinition
                     } else {
                         throw new UnreachableException();
                     }
-                } elseif ($value instanceof TemplateTagValueNode) {
-                    $inner .= '<span class="phpdoc-type">' . $this->toHtml($value->name) . '</span>';
-                } elseif ($value instanceof ReturnTagValueNode) {
-                    $inner .= ' <span class="phpdoc-type">';
-                    $inner .= ($value->type instanceof UnionTypeNode)
-                        ? $this->fixUnionOutput($this->toHtml($value->type))
-                        : $this->toHtml($value->type);
-                    $inner .= '</span>';
-                    $inner .= $this->descriptionAsMarkdown($value->description);
                 } elseif ($value instanceof GenericTagValueNode) {
                     if ($value->value !== '') {
                         $inner .= '<span class="phpdoc-type">' . $this->toHtml($value) . '</span>';
@@ -162,24 +141,6 @@ abstract class MemberDefinition
             }
         }
         return $content;
-    }
-
-    /**
-     * @return MarkdownConverter
-     */
-    protected function getMarkdownConverter(): MarkdownConverter
-    {
-        return $this->converter ??= new GithubFlavoredMarkdownConverter([
-            'html_input' => 'strip',
-            'allow_unsafe_links' => false,
-        ]);
-    }
-
-    protected function toMarkdown(string $text): string
-    {
-        return $this->getMarkdownConverter()
-            ->convert(str_replace("\n", "  \n ", $text))
-            ->getContent();
     }
 
     protected function toHtml(string|Stringable $text): string
