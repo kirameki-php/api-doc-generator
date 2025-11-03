@@ -5,21 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f11b0d80-afbf-412b-9a1d-8e88f298fae1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/views/type-generics.latte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/classes/kirameki/collections/enumerator.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/kirameki/collections/enumerator.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/classes/kirameki/collections/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/kirameki/collections/map.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ClassDefinition.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ClassDefinition.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MemberDefinition.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MemberDefinition.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Support/ClassFile.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Support/ClassFile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/PropertyDefinition.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/PropertyDefinition.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Support/CommentParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Support/CommentParser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Support/CommentParserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Support/CommentParserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Support/StructureUtil.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Support/TypeResolver.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Support/TypeResolver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Support/UrlResolver.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Support/UrlResolver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Support/PhpDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Support/PhpDoc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/class.latte" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/class.latte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/type.latte" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/type.latte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +161,7 @@
       <workItem from="1761401343874" duration="45287000" />
       <workItem from="1761744271175" duration="391000" />
       <workItem from="1761745350208" duration="19708000" />
-      <workItem from="1761996852156" duration="25752000" />
+      <workItem from="1761996852156" duration="27023000" />
     </task>
     <servers />
   </component>

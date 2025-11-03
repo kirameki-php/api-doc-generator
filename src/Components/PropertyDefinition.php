@@ -4,6 +4,7 @@ namespace Kirameki\ApiDocGenerator\Components;
 
 use Kirameki\ApiDocGenerator\Support\CommentParser;
 use Kirameki\ApiDocGenerator\Support\TypeResolver;
+use Kirameki\ApiDocGenerator\Types\VarType;
 use Kirameki\Core\Exceptions\UnreachableException;
 use ReflectionProperty;
 
@@ -17,12 +18,10 @@ class PropertyDefinition extends MemberDefinition
     }
 
     /**
-     * @var string|null
+     * @var VarType|null
      */
-    public ?string $type {
-        get => $this->type ??= $this->reflection->hasType()
-            ? (string) $this->reflection->getType()
-            : null;
+    public ?VarType $type {
+        get => $this->type ??= $this->resolveType();
     }
 
     /**
@@ -83,5 +82,12 @@ class PropertyDefinition extends MemberDefinition
         protected TypeResolver $typeResolver,
     ) {
         parent::__construct($docParser);
+    }
+
+    protected function resolveType(): VarType
+    {
+        return $this->phpDoc->var !== null
+            ? $this->typeResolver->resolveFromNode($this->phpDoc->var->type)
+            : $this->typeResolver->resolveFromReflection($this->reflection->getType());
     }
 }

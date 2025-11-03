@@ -6,6 +6,7 @@ use PHPStan\PhpDocParser\Ast\PhpDoc\ExtendsTagValueNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\ImplementsTagValueNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\ReturnTagValueNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\TemplateTagValueNode;
+use PHPStan\PhpDocParser\Ast\PhpDoc\VarTagValueNode;
 
 class PhpDoc
 {
@@ -14,6 +15,7 @@ class PhpDoc
      * @param ExtendsTagValueNode|null $extends
      * @param list<ImplementsTagValueNode> $implements
      * @param ReturnTagValueNode|null $return
+     * @param VarTagValueNode|null $var
      * @param list<string> $texts
      */
     public function __construct(
@@ -21,6 +23,7 @@ class PhpDoc
         public readonly ?ExtendsTagValueNode $extends,
         public readonly array $implements,
         public readonly ?ReturnTagValueNode $return,
+        public readonly ?VarTagValueNode $var,
         public readonly array $texts,
     ) {
     }

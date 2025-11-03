@@ -95,12 +95,6 @@ blockquote {
                 font-family: var(--code-font-family);
                 margin: 1rem 0.5rem;
 
-                .modifiers {
-                    color: #1663ff;
-                }
-                .type {
-                    color: #2563eb;
-                }
                 .name {
                     color: #811f5a;
                 }
@@ -215,14 +209,14 @@ blockquote {
         background-color: #f6f7f8;
         border-radius: 0.25rem;
         margin: 0.75rem 0;
-
-        .type {
-            display: inline-flex;
-        }
     }
 }
 .modifiers {
     color: #2453b5;
+}
+.type {
+    display: inline-flex;
+    flex-direction: row;
 }
 .comment {
     padding: 0.5rem;

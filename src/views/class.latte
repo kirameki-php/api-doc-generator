@@ -133,7 +133,9 @@
                     static
                   {/if}
                   {$property->visibility->value}
-                  {$property->type}
+                </span>
+                <span class="var-type">
+                  {include type.latte, type: $property->type}
                 </span>
                 <span class="var-name">${$property->name}</span>
               </div>
