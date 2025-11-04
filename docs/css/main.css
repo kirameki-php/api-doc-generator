@@ -238,10 +238,9 @@ blockquote {
 .type {
     display: inline-flex;
     flex-direction: row;
-
-    .template-var {
-        border-bottom: 1px dotted #c7cdd5;
-    }
+}
+.template-name {
+    color: #068baa;
 }
 .comment {
     padding: 0.5rem;

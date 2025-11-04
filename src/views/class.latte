@@ -27,7 +27,7 @@
           {foreach $class->templates as $template}
             {varType Kirameki\ApiDocGenerator\Components\TemplateDefinition $template}
             <span class="generic">
-              <span class="name">{$template->name}</span>
+              <span class="template-name">{$template->name}</span>
               {if $template->bound instanceof Kirameki\ApiDocGenerator\Types\VarType}
                 <span class="bound-delimiter"> as </span>
                 <span class="bound">
