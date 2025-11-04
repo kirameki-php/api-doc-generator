@@ -79,8 +79,7 @@ class DocGenerator
                         $file = new ClassFile($reflection);
                         $docParser = $this->docParserFactory->createFor($file);
                         $urlResolver = new UrlResolver($this->structureMap);
-                        $typeResolver = new TypeResolver($file, $docParser, $urlResolver);
-                        $classDef = new ClassDefinition($reflection, $file, $docParser, $typeResolver, $urlResolver);
+                        $classDef = new ClassDefinition($reflection, $file, $docParser, $urlResolver);
                         $this->structureMap->add($classDef);
                         $this->appendToTree($tree, $classDef);
                     }
@@ -102,12 +101,13 @@ class DocGenerator
         file_put_contents("{$docsPath}/main.html", $html);
 
         foreach (Iter::flatten($tree, 100) as $class) {
+            /** @var ClassDefinition $class */
             $html = $this->renderer->render(Path::of(__DIR__ . '/views/class.latte'), [
                 'sidebarHtml' => $sidebarHtml,
                 'structureMap' => $this->structureMap,
                 'class' => $class,
             ]);
-            $filePath = "{$docsPath}/{$class->getHtmlPath()}";
+            $filePath = "{$docsPath}/{$class->outputPath}";
             @mkdir(dirname($filePath), 0755, true);
             file_put_contents($filePath, $html);
         }

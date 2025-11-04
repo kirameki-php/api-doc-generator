@@ -2,6 +2,9 @@
 
 namespace Kirameki\ApiDocGenerator\Components;
 
+use Kirameki\Collections\Vec;
+use Kirameki\Text\Str;
+
 interface StructureDefinition
 {
     /**
@@ -26,7 +29,16 @@ interface StructureDefinition
     }
 
     /**
-     * @return string
+     * @var list<TemplateDefinition>
      */
-    public function getHtmlPath(): string;
+    public array $templates {
+        get;
+    }
+
+    /**
+     * @var string
+     */
+    public string $outputPath {
+        get;
+    }
 }

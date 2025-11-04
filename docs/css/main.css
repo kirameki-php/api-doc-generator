@@ -3,7 +3,10 @@
     --code-font-size: 13px;
     --phpdoc-code-font-size: 12px;
 }
-
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+}
 body {
     font-family: "inter", "inter Fallback",system-ui;
     font-size: 14px;
@@ -62,7 +65,7 @@ blockquote {
         position: sticky;
         top: 0;
         background-color: #f4f4ff;
-        padding: 1rem;
+        padding: 1rem 2rem;
         z-index: 10;
 
         .declaration {
@@ -83,7 +86,7 @@ blockquote {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
-        margin: 1.5rem;
+        margin: 1.5rem 2rem;
 
         .constants {
             padding-top: 1rem;
@@ -195,13 +198,23 @@ blockquote {
         flex-direction: column;
 
         li {
-            border-bottom: 1px dashed #c7cdd5;
-            padding-top: 0.5rem;
+            padding-top: 1rem;
             padding-bottom: 1rem;
+            position: relative;
         }
         li:last-child {
             border-bottom: none;
         }
+    }
+    .anchor {
+        position: absolute;
+        margin-left: -1.3rem;
+        margin-top: 1.3rem;
+        opacity: 0;
+        height: calc(100% - 1.5rem);
+    }
+    li:hover .anchor {
+        opacity: 1;
     }
     .signature {
         font-family: var(--code-font-family);
@@ -209,6 +222,14 @@ blockquote {
         background-color: #f6f7f8;
         border-radius: 0.25rem;
         margin: 0.75rem 0;
+
+        .return {
+            display: inline-flex;
+
+            .delimiter {
+                color: #6b7280;
+            }
+        }
     }
 }
 .modifiers {
@@ -217,6 +238,10 @@ blockquote {
 .type {
     display: inline-flex;
     flex-direction: row;
+
+    .template-var {
+        border-bottom: 1px dotted #c7cdd5;
+    }
 }
 .comment {
     padding: 0.5rem;

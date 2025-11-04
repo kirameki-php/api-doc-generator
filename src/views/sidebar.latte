@@ -11,7 +11,7 @@
   {foreach $tree->classes as $basename => $leaf}
     <li>
       {varType Kirameki\ApiDocGenerator\Components\ClassDefinition $leaf}
-      <a href="{$leaf->getHtmlPath()}" title="{$leaf->name}">
+      <a href="{$leaf->outputPath}" title="{$leaf->name}">
         {$basename}
       </a>
     </li>

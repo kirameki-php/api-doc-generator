@@ -15,7 +15,7 @@
   {varType Kirameki\ApiDocGenerator\Types\StructureVarType $type}
   <span class="type">
     {if $type->structure->namespace !== ''}
-      <a href="{$type->structure->getHtmlPath()}">
+      <a href="{$type->structure->outputPath}">
         {$type->structure}
       </a>
     {else}
@@ -25,10 +25,17 @@
     {/if}
     {include type-generics.latte, generics: $type->generics}
   </span>
+{elseif ($type instanceof Kirameki\ApiDocGenerator\Types\TemplateVarType) }
+  {varType Kirameki\ApiDocGenerator\Types\TemplateVarType $type}
+  <span class="type">
+    <span class="no-link template-var">
+      {$type->name}
+    </span>
+  </span>
 {else}
   {varType Kirameki\ApiDocGenerator\Types\NamedVarType $type}
   <span class="type">
-    <span class="no-link">
+    <span class="no-link named-var">
       {$type->name}
     </span>
     {include type-generics.latte, generics: $type->generics}

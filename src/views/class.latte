@@ -1,6 +1,5 @@
 {layout layout.latte}
 {varType Kirameki\ApiDocGenerator\Components\ClassDefinition $class}
-{varType Kirameki\ApiDocGenerator\Support\StructureMap $structureMap}
 {block content}
 <main class="structure">
   <div class="basic-info">
@@ -154,6 +153,9 @@
           {foreach $class->methods as $method}
             {varType Kirameki\ApiDocGenerator\Components\MethodDefinition $method}
             <li>
+              <a id="{$method->id}" class="anchor" href="{$class->outputPath}#{$method->id}">
+                <i class="fa-solid fa-link"></i>
+              </a>
               <div class="signature">
                 <span class="modifiers">
                   {if $method->isFinal}

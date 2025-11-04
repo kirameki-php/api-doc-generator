@@ -11,6 +11,7 @@ use Kirameki\ApiDocGenerator\Types\StructureVarType;
 use Kirameki\ApiDocGenerator\Types\VarType;
 use Kirameki\Collections\Vec;
 use Kirameki\Text\Str;
+use PHPStan\PhpDocParser\Ast\Type\TypeNode;
 use ReflectionClass;
 use ReflectionClassConstant;
 use ReflectionMethod;
@@ -45,7 +46,7 @@ class ClassDefinition implements StructureDefinition, Stringable
     }
 
     /**
-     * @var array<TemplateDefinition>
+     * @var list<TemplateDefinition>
      */
     public array $templates {
         get => $this->templates ??= $this->resolveTemplates();
@@ -124,19 +125,37 @@ class ClassDefinition implements StructureDefinition, Stringable
     }
 
     /**
+     * @var TypeResolver
+     */
+    protected TypeResolver $typeResolver {
+        get => $this->typeResolver;
+    }
+
+    /**
+     * @var string
+     */
+    public string $outputPath {
+        get => $this->outputPath ??= new Vec(Str::split($this->name, '\\'))
+            ->map(Str::toKebabCase(...))
+            ->prepend('classes')
+            ->join('/') . '.html';
+    }
+
+    /**
      * @param ReflectionClass<object> $reflection
      * @param ClassFile $file
      * @param CommentParser $docParser
-     * @param TypeResolver $typeResolver
      * @param UrlResolver $urlResolver
+     * @param TypeResolver|null $typeResolver
      */
     public function __construct(
         protected readonly ReflectionClass $reflection,
         protected readonly ClassFile $file,
         protected readonly CommentParser $docParser,
-        protected readonly TypeResolver $typeResolver,
         protected readonly UrlResolver $urlResolver,
+        ?TypeResolver $typeResolver = null,
     ) {
+        $this->typeResolver = $typeResolver ?? new TypeResolver($this->phpDoc, $this->file, $this->docParser, $this->urlResolver);
     }
 
     /**
@@ -149,10 +168,10 @@ class ClassDefinition implements StructureDefinition, Stringable
             $templates[] = new TemplateDefinition(
                 $tag->name,
                 $tag->bound
-                    ? $this->typeResolver->resolveFromNode($tag->bound)
+                    ? $this->getTypeFromNode($tag->bound)
                     : null,
                 $tag->default
-                    ? $this->typeResolver->resolveFromNode($tag->default)
+                    ? $this->getTypeFromNode($tag->default)
                     : null,
             );
         }
@@ -166,7 +185,7 @@ class ClassDefinition implements StructureDefinition, Stringable
     {
         $node = $this->phpDoc->extends?->type;
         if ($node !== null) {
-            return $this->typeResolver->resolveFromNode($node);
+            return $this->getTypeFromNode($node);
         }
 
         $reflection = $this->reflection->getParentClass();
@@ -183,7 +202,7 @@ class ClassDefinition implements StructureDefinition, Stringable
     {
         $types = [];
         foreach ($this->phpDoc->implements as $tag) {
-            $types[$tag->type->type->name] = $this->typeResolver->resolveFromNode($tag->type);
+            $types[$tag->type->type->name] = $this->getTypeFromNode($tag->type);
         }
 
         foreach ($this->file->implements as $if) {
@@ -197,6 +216,15 @@ class ClassDefinition implements StructureDefinition, Stringable
     }
 
     /**
+     * @param TypeNode $node
+     * @return VarType
+     */
+    protected function getTypeFromNode(TypeNode $node): VarType
+    {
+        return $this->typeResolver->resolveFromNode($node);
+    }
+
+    /**
      * @param ReflectionClass<object> $reflection
      * @return ClassDefinition
      */
@@ -206,20 +234,9 @@ class ClassDefinition implements StructureDefinition, Stringable
             $reflection,
             $this->file,
             $this->docParser,
-            $this->typeResolver,
             $this->urlResolver,
+            $this->typeResolver,
         );
-    }
-
-    /**
-     * @return string
-     */
-    public function getHtmlPath(): string
-    {
-        return new Vec(Str::split($this->name, '\\'))
-            ->map(Str::toKebabCase(...))
-            ->prepend('classes')
-            ->join('/') . '.html';
     }
 
     /**

@@ -6,6 +6,8 @@ use Kirameki\ApiDocGenerator\Support\CommentParser;
 use Kirameki\ApiDocGenerator\Support\TypeResolver;
 use Kirameki\ApiDocGenerator\Types\VarType;
 use Kirameki\Core\Exceptions\UnreachableException;
+use Kirameki\Text\Str;
+use Kirameki\Text\Utf8;
 use ReflectionMethod;
 use function dump;
 
@@ -66,6 +68,13 @@ class MethodDefinition extends MemberDefinition
     }
 
     /**
+     * @var string
+     */
+    public string $id {
+        get => 'method-' . Str::toKebabCase($this->reflection->getName());
+    }
+
+    /**
      * @param ReflectionMethod $reflection
      * @param CommentParser $docParser
      * @param TypeResolver $typeResolver
@@ -84,7 +93,7 @@ class MethodDefinition extends MemberDefinition
     protected function resolveReturnType(): VarType
     {
         return $this->phpDoc->return !== null
-            ? $this->typeResolver->resolveFromNode($this->phpDoc->return->type)
+            ? $this->typeResolver->resolveFromNode($this->phpDoc->return->type, $this->phpDoc)
             : $this->typeResolver->resolveFromReflection($this->reflection->getReturnType());
     }
 }

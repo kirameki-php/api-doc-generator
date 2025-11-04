@@ -3,9 +3,11 @@
 namespace Kirameki\ApiDocGenerator\Support;
 
 use Kirameki\ApiDocGenerator\Components\ClassDefinition;
+use Kirameki\ApiDocGenerator\Components\StructureDefinition;
 use Kirameki\ApiDocGenerator\Types\IntersectionVarType;
 use Kirameki\ApiDocGenerator\Types\NamedVarType;
 use Kirameki\ApiDocGenerator\Types\StructureVarType;
+use Kirameki\ApiDocGenerator\Types\TemplateVarType;
 use Kirameki\ApiDocGenerator\Types\UnionVarType;
 use Kirameki\ApiDocGenerator\Types\VarType;
 use Kirameki\Core\Exceptions\UnreachableException;
@@ -29,6 +31,7 @@ use function array_map;
 use function array_values;
 use function class_exists;
 use function enum_exists;
+use function in_array;
 use function interface_exists;
 use function is_string;
 use function trait_exists;
@@ -36,11 +39,13 @@ use function trait_exists;
 class TypeResolver
 {
     /**
+     * @param PhpDoc $structureDoc
      * @param ClassFile $file
      * @param CommentParser $docParser
      * @param UrlResolver $urlResolver
      */
     public function __construct(
+        protected readonly PhpDoc $structureDoc,
         protected readonly ClassFile $file,
         protected readonly CommentParser $docParser,
         protected readonly UrlResolver $urlResolver,
@@ -49,32 +54,37 @@ class TypeResolver
 
     /**
      * @param TypeNode $node
+     * @param PhpDoc|null $doc
      * @return VarType
      */
-    public function resolveFromNode(TypeNode $node): VarType
+    public function resolveFromNode(TypeNode $node, ?PhpDoc $doc = null): VarType
     {
         if ($node instanceof UnionTypeNode) {
-            return new UnionVarType(array_map($this->resolveFromNode(...), $node->types));
+            return new UnionVarType(
+                array_map(fn(TypeNode $n) => $this->resolveFromNode($n, $doc), $node->types),
+            );
         }
 
         if ($node instanceof IntersectionTypeNode) {
-            return new IntersectionVarType(array_map($this->resolveFromNode(...), $node->types));
+            return new IntersectionVarType(
+                array_map(fn(TypeNode $n) => $this->resolveFromNode($n, $doc), $node->types),
+            );
         }
 
         if ($node instanceof GenericTypeNode) {
             return $this->convertNameToVarType(
                 $node->type->name,
-                array_values(array_map($this->resolveFromNode(...), $node->genericTypes)),
+                array_values(array_map(fn($n) => $this->resolveFromNode($n, $doc), $node->genericTypes)),
             );
         }
 
         if ($node instanceof IdentifierTypeNode) {
-            return $this->convertNameToVarType($node->name);
+            return $this->convertNameToVarType($node->name, [], $doc);
         }
 
         if ($node instanceof ConstTypeNode) {
             if ($node->constExpr instanceof ConstExprIntegerNode) {
-                return $this->convertNameToVarType($node->constExpr->value);
+                return $this->convertNameToVarType($node->constExpr->value, [], $doc);
             }
             // TODO add support for other const types
             throw new UnreachableException();
@@ -99,15 +109,19 @@ class TypeResolver
     public function resolveFromReflection(?ReflectionType $type): VarType
     {
         if ($type instanceof ReflectionIntersectionType) {
-            return new IntersectionVarType(array_map($this->resolveFromReflection(...), $type->getTypes()));
+            return new IntersectionVarType(
+                array_map(fn($t) => $this->resolveFromReflection($t), $type->getTypes())
+            );
         }
 
         if ($type instanceof ReflectionUnionType) {
-            return new UnionVarType(array_map($this->resolveFromReflection(...), $type->getTypes()));
+            return new UnionVarType(
+                array_map(fn($t) => $this->resolveFromReflection($t), $type->getTypes())
+            );
         }
 
         if ($type instanceof ReflectionNamedType) {
-            return $this->convertNameToVarType($type->getName());
+            return $this->convertNameToVarType($type->getName(), []);
         }
 
         return new NamedVarType('mixed');
@@ -116,28 +130,36 @@ class TypeResolver
     /**
      * @param string $name
      * @param list<VarType> $generics
+     * @param PhpDoc|null $doc
      * @return VarType
      */
-    protected function convertNameToVarType(string $name, array $generics = []): VarType
+    protected function convertNameToVarType(string $name, array $generics, ?PhpDoc $doc = null): VarType
     {
         $fqn = $this->getFullyQualifiedName($this->file, $name) ?? $name;
 
         if (class_exists($fqn)) {
             $reflection = new ReflectionClass($fqn);
-            $definition = new ClassDefinition($reflection, $this->file, $this->docParser, $this, $this->urlResolver);
+            $definition = new ClassDefinition($reflection, $this->file, $this->docParser, $this->urlResolver, $this);
             return new StructureVarType($definition, $generics);
         }
 
         if (interface_exists($fqn)) {
             $reflection = new ReflectionClass($fqn);
-            $definition = new ClassDefinition($reflection, $this->file, $this->docParser, $this, $this->urlResolver);
+            $definition = new ClassDefinition($reflection, $this->file, $this->docParser, $this->urlResolver, $this);
             return new StructureVarType($definition, $generics);
         }
 
         if (enum_exists($fqn)) {
             $reflection = new ReflectionEnum($fqn);
-            $definition = new ClassDefinition($reflection, $this->file, $this->docParser, $this, $this->urlResolver);
+            $definition = new ClassDefinition($reflection, $this->file, $this->docParser, $this->urlResolver, $this);
             return new StructureVarType($definition, $generics);
+        }
+
+        if (
+            in_array($fqn, array_map(fn($t) => $t->name, $this->structureDoc->templates), true) ||
+            in_array($fqn, array_map(fn($t) => $t->name, $doc->templates ?? []), true)
+        ) {
+            return new TemplateVarType($fqn);
         }
 
         return new NamedVarType($fqn, $generics);
