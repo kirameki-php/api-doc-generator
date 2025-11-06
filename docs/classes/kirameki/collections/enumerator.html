@@ -159,10 +159,10 @@
             </li>
         </ul>
       </div>
-      <div class="methods">
+      <div class="methods-wrapper">
         <h3>Methods</h3>
-        <ul>
-            <li>
+        <ul class="methods">
+            <li class="method">
               <a id="method---construct" class="anchor" href="classes/kirameki/collections/enumerator.html#method---construct">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -171,7 +171,26 @@
                   public
                   function
                 </span>
-                __construct():
+                <span class="name">
+                  <span class="method-name-start">__construct(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  </span>
+                          </span>
+                        <var>$items</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-array">[...]</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -184,7 +203,7 @@
                 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-get-iterator" class="anchor" href="classes/kirameki/collections/enumerator.html#method-get-iterator">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -193,7 +212,8 @@
                   public
                   function
                 </span>
-                getIterator():
+                <span class="name">
+                    getIterator():
                 <span class="return">
   <span class="type">
       <a href="https://www.php.net/manual/class.traversable.php" class="external-link" target="_blank">
@@ -222,7 +242,7 @@
                 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-count" class="anchor" href="classes/kirameki/collections/enumerator.html#method-count">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -231,7 +251,26 @@
                   public
                   function
                 </span>
-                count():
+                <span class="name">
+                  <span class="method-name-start">count(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -248,7 +287,7 @@ again and cause an infinite loop.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-lazy" class="anchor" href="classes/kirameki/collections/enumerator.html#method-lazy">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -257,7 +296,8 @@ again and cause an infinite loop.</p>
                   public
                   function
                 </span>
-                lazy():
+                <span class="name">
+                    lazy():
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -273,7 +313,7 @@ some functions like <code>chunk</code>, <code>each</code>, <code>map</code>, and
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-eager" class="anchor" href="classes/kirameki/collections/enumerator.html#method-eager">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -282,7 +322,8 @@ some functions like <code>chunk</code>, <code>each</code>, <code>map</code>, and
                   public
                   function
                 </span>
-                eager():
+                <span class="name">
+                    eager():
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -297,7 +338,7 @@ some functions like <code>chunk</code>, <code>each</code>, <code>map</code>, and
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-is-lazy" class="anchor" href="classes/kirameki/collections/enumerator.html#method-is-lazy">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -306,7 +347,8 @@ some functions like <code>chunk</code>, <code>each</code>, <code>map</code>, and
                   public
                   function
                 </span>
-                isLazy():
+                <span class="name">
+                    isLazy():
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -321,7 +363,7 @@ some functions like <code>chunk</code>, <code>each</code>, <code>map</code>, and
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-is-eager" class="anchor" href="classes/kirameki/collections/enumerator.html#method-is-eager">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -330,7 +372,8 @@ some functions like <code>chunk</code>, <code>each</code>, <code>map</code>, and
                   public
                   function
                 </span>
-                isEager():
+                <span class="name">
+                    isEager():
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -345,7 +388,7 @@ some functions like <code>chunk</code>, <code>each</code>, <code>map</code>, and
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-tap" class="anchor" href="classes/kirameki/collections/enumerator.html#method-tap">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -354,7 +397,24 @@ some functions like <code>chunk</code>, <code>each</code>, <code>map</code>, and
                   public
                   function
                 </span>
-                tap():
+                <span class="name">
+                  <span class="method-name-start">tap(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$callback</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -369,7 +429,7 @@ some functions like <code>chunk</code>, <code>each</code>, <code>map</code>, and
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-reindex" class="anchor" href="classes/kirameki/collections/enumerator.html#method-reindex">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -379,7 +439,8 @@ some functions like <code>chunk</code>, <code>each</code>, <code>map</code>, and
                     abstract
                   function
                 </span>
-                reindex():
+                <span class="name">
+                    reindex():
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -397,7 +458,7 @@ re-indexed if it is a vector (Vec), but not when it is a hash-table (Map).</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-all" class="anchor" href="classes/kirameki/collections/enumerator.html#method-all">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -406,7 +467,8 @@ re-indexed if it is a vector (Vec), but not when it is a hash-table (Map).</p>
                   public
                   function
                 </span>
-                all():
+                <span class="name">
+                    all():
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -437,7 +499,7 @@ re-indexed if it is a vector (Vec), but not when it is a hash-table (Map).</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-at" class="anchor" href="classes/kirameki/collections/enumerator.html#method-at">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -446,7 +508,24 @@ re-indexed if it is a vector (Vec), but not when it is a hash-table (Map).</p>
                   public
                   function
                 </span>
-                at():
+                <span class="name">
+                  <span class="method-name-start">at(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$index</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link template-name">
@@ -462,7 +541,7 @@ Throws <code>IndexOutOfBoundsException</code> if the index does not exist.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-at-or" class="anchor" href="classes/kirameki/collections/enumerator.html#method-at-or">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -471,7 +550,37 @@ Throws <code>IndexOutOfBoundsException</code> if the index does not exist.</p>
                   public
                   function
                 </span>
-                atOr():
+                <span class="name">
+                  <span class="method-name-start">atOr(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$index</var>
+                        <span class="default-set">
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                          </span>
+                        <var>$default</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link template-name">
@@ -494,7 +603,7 @@ Returns <code>$default</code> if the given index does not exist.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-at-or-null" class="anchor" href="classes/kirameki/collections/enumerator.html#method-at-or-null">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -503,7 +612,24 @@ Returns <code>$default</code> if the given index does not exist.</p>
                   public
                   function
                 </span>
-                atOrNull():
+                <span class="name">
+                  <span class="method-name-start">atOrNull(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$index</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link template-name">
@@ -526,7 +652,7 @@ Returns <strong>null</strong> if the given index does not exist.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-chunk" class="anchor" href="classes/kirameki/collections/enumerator.html#method-chunk">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -535,7 +661,24 @@ Returns <strong>null</strong> if the given index does not exist.</p>
                   public
                   function
                 </span>
-                chunk():
+                <span class="name">
+                  <span class="method-name-start">chunk(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$size</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
       <a href="classes/kirameki/collections/vec.html">
@@ -560,7 +703,7 @@ Returns <strong>null</strong> if the given index does not exist.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-coalesce" class="anchor" href="classes/kirameki/collections/enumerator.html#method-coalesce">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -569,7 +712,8 @@ Returns <strong>null</strong> if the given index does not exist.</p>
                   public
                   function
                 </span>
-                coalesce():
+                <span class="name">
+                    coalesce():
                 <span class="return">
   <span class="type">
     <span class="no-link template-name">
@@ -585,7 +729,7 @@ Throws <code>InvalidArgumentException</code> if empty or all elements are <stron
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-coalesce-or-null" class="anchor" href="classes/kirameki/collections/enumerator.html#method-coalesce-or-null">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -594,7 +738,8 @@ Throws <code>InvalidArgumentException</code> if empty or all elements are <stron
                   public
                   function
                 </span>
-                coalesceOrNull():
+                <span class="name">
+                    coalesceOrNull():
                 <span class="return">
   <span class="type">
     <span class="no-link template-name">
@@ -617,7 +762,7 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-collect" class="anchor" href="classes/kirameki/collections/enumerator.html#method-collect">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -626,7 +771,24 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
                   public
                   function
                 </span>
-                collect():
+                <span class="name">
+                  <span class="method-name-start">collect(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$callback</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
       <a href="classes/kirameki/collections/vec.html">
@@ -651,7 +813,7 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-contains" class="anchor" href="classes/kirameki/collections/enumerator.html#method-contains">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -660,7 +822,24 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
                   public
                   function
                 </span>
-                contains():
+                <span class="name">
+                  <span class="method-name-start">contains(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                          </span>
+                        <var>$value</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -675,7 +854,7 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-contains-all" class="anchor" href="classes/kirameki/collections/enumerator.html#method-contains-all">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -684,7 +863,24 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
                   public
                   function
                 </span>
-                containsAll():
+                <span class="name">
+                  <span class="method-name-start">containsAll(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  </span>
+                          </span>
+                        <var>$values</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -700,7 +896,7 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-contains-any" class="anchor" href="classes/kirameki/collections/enumerator.html#method-contains-any">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -709,7 +905,24 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
                   public
                   function
                 </span>
-                containsAny():
+                <span class="name">
+                  <span class="method-name-start">containsAny(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  </span>
+                          </span>
+                        <var>$values</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -725,7 +938,7 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-contains-none" class="anchor" href="classes/kirameki/collections/enumerator.html#method-contains-none">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -734,7 +947,24 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
                   public
                   function
                 </span>
-                containsNone():
+                <span class="name">
+                  <span class="method-name-start">containsNone(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  </span>
+                          </span>
+                        <var>$values</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -750,7 +980,7 @@ collection, <strong>false</strong> otherwise.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-contains-slice" class="anchor" href="classes/kirameki/collections/enumerator.html#method-contains-slice">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -759,7 +989,24 @@ collection, <strong>false</strong> otherwise.</p>
                   public
                   function
                 </span>
-                containsSlice():
+                <span class="name">
+                  <span class="method-name-start">containsSlice(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  </span>
+                          </span>
+                        <var>$values</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -775,7 +1022,7 @@ collection, <strong>false</strong> otherwise.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-trait-count" class="anchor" href="classes/kirameki/collections/enumerator.html#method-trait-count">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -784,7 +1031,26 @@ collection, <strong>false</strong> otherwise.</p>
                   public
                   function
                 </span>
-                traitCount():
+                <span class="name">
+                  <span class="method-name-start">traitCount(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -816,7 +1082,7 @@ If a condition is given, it will only increase the count if the condition return
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-count-is" class="anchor" href="classes/kirameki/collections/enumerator.html#method-count-is">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -825,7 +1091,24 @@ If a condition is given, it will only increase the count if the condition return
                   public
                   function
                 </span>
-                countIs():
+                <span class="name">
+                  <span class="method-name-start">countIs(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$size</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -840,7 +1123,7 @@ If a condition is given, it will only increase the count if the condition return
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-count-is-between" class="anchor" href="classes/kirameki/collections/enumerator.html#method-count-is-between">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -849,7 +1132,37 @@ If a condition is given, it will only increase the count if the condition return
                   public
                   function
                 </span>
-                countIsBetween():
+                <span class="name">
+                  <span class="method-name-start">countIsBetween(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$start</var>
+                        <span class="default-set">
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$end</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -866,7 +1179,7 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-diff" class="anchor" href="classes/kirameki/collections/enumerator.html#method-diff">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -875,7 +1188,39 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                   public
                   function
                 </span>
-                diff():
+                <span class="name">
+                  <span class="method-name-start">diff(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  </span>
+                          </span>
+                        <var>$items</var>
+                        <span class="default-set">
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$by</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -890,7 +1235,7 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-does-not-contain" class="anchor" href="classes/kirameki/collections/enumerator.html#method-does-not-contain">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -899,7 +1244,24 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                   public
                   function
                 </span>
-                doesNotContain():
+                <span class="name">
+                  <span class="method-name-start">doesNotContain(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                          </span>
+                        <var>$value</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -914,7 +1276,7 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-drop-every" class="anchor" href="classes/kirameki/collections/enumerator.html#method-drop-every">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -923,7 +1285,24 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                   public
                   function
                 </span>
-                dropEvery():
+                <span class="name">
+                  <span class="method-name-start">dropEvery(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$nth</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -938,7 +1317,7 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-drop-first" class="anchor" href="classes/kirameki/collections/enumerator.html#method-drop-first">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -947,7 +1326,24 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                   public
                   function
                 </span>
-                dropFirst():
+                <span class="name">
+                  <span class="method-name-start">dropFirst(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$amount</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -962,7 +1358,7 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-drop-if" class="anchor" href="classes/kirameki/collections/enumerator.html#method-drop-if">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -971,7 +1367,24 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                   public
                   function
                 </span>
-                dropIf():
+                <span class="name">
+                  <span class="method-name-start">dropIf(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -986,7 +1399,7 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-drop-last" class="anchor" href="classes/kirameki/collections/enumerator.html#method-drop-last">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -995,7 +1408,24 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                   public
                   function
                 </span>
-                dropLast():
+                <span class="name">
+                  <span class="method-name-start">dropLast(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$amount</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -1010,7 +1440,7 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-drop-until" class="anchor" href="classes/kirameki/collections/enumerator.html#method-drop-until">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1019,7 +1449,24 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                   public
                   function
                 </span>
-                dropUntil():
+                <span class="name">
+                  <span class="method-name-start">dropUntil(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -1034,7 +1481,7 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-drop-while" class="anchor" href="classes/kirameki/collections/enumerator.html#method-drop-while">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1043,7 +1490,24 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                   public
                   function
                 </span>
-                dropWhile():
+                <span class="name">
+                  <span class="method-name-start">dropWhile(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -1058,7 +1522,7 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-duplicates" class="anchor" href="classes/kirameki/collections/enumerator.html#method-duplicates">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1067,7 +1531,8 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                   public
                   function
                 </span>
-                duplicates():
+                <span class="name">
+                    duplicates():
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -1082,7 +1547,7 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-each" class="anchor" href="classes/kirameki/collections/enumerator.html#method-each">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1091,7 +1556,24 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                   public
                   function
                 </span>
-                each():
+                <span class="name">
+                  <span class="method-name-start">each(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$callback</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -1106,7 +1588,7 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-ensure-count-is" class="anchor" href="classes/kirameki/collections/enumerator.html#method-ensure-count-is">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1115,7 +1597,24 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                   public
                   function
                 </span>
-                ensureCountIs():
+                <span class="name">
+                  <span class="method-name-start">ensureCountIs(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$size</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -1131,7 +1630,7 @@ Throws <code>CountMismatchException</code> if count is not equal to <code>$size<
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-ensure-element-type" class="anchor" href="classes/kirameki/collections/enumerator.html#method-ensure-element-type">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1140,7 +1639,24 @@ Throws <code>CountMismatchException</code> if count is not equal to <code>$size<
                   public
                   function
                 </span>
-                ensureElementType():
+                <span class="name">
+                  <span class="method-name-start">ensureElementType(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                          </span>
+                        <var>$type</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -1158,7 +1674,7 @@ Empty collections are considered valid.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-ends-with" class="anchor" href="classes/kirameki/collections/enumerator.html#method-ends-with">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1167,7 +1683,24 @@ Empty collections are considered valid.</p>
                   public
                   function
                 </span>
-                endsWith():
+                <span class="name">
+                  <span class="method-name-start">endsWith(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  </span>
+                          </span>
+                        <var>$values</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -1182,7 +1715,7 @@ Empty collections are considered valid.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-filter" class="anchor" href="classes/kirameki/collections/enumerator.html#method-filter">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1191,7 +1724,24 @@ Empty collections are considered valid.</p>
                   public
                   function
                 </span>
-                filter():
+                <span class="name">
+                  <span class="method-name-start">filter(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -1207,7 +1757,7 @@ Empty collections are considered valid.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-first" class="anchor" href="classes/kirameki/collections/enumerator.html#method-first">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1216,7 +1766,26 @@ Empty collections are considered valid.</p>
                   public
                   function
                 </span>
-                first():
+                <span class="name">
+                  <span class="method-name-start">first(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link template-name">
@@ -1234,7 +1803,7 @@ Throws <code>EmptyNotAllowedException</code> if collection is empty.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-first-index" class="anchor" href="classes/kirameki/collections/enumerator.html#method-first-index">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1243,7 +1812,24 @@ Throws <code>EmptyNotAllowedException</code> if collection is empty.</p>
                   public
                   function
                 </span>
-                firstIndex():
+                <span class="name">
+                  <span class="method-name-start">firstIndex(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -1259,7 +1845,7 @@ Throws <code>NoMatchFoundException</code> if no condition is met.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-first-index-or-null" class="anchor" href="classes/kirameki/collections/enumerator.html#method-first-index-or-null">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1268,7 +1854,24 @@ Throws <code>NoMatchFoundException</code> if no condition is met.</p>
                   public
                   function
                 </span>
-                firstIndexOrNull():
+                <span class="name">
+                  <span class="method-name-start">firstIndexOrNull(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -1291,7 +1894,7 @@ Returns <strong>null</strong> if there were no matches.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-first-or" class="anchor" href="classes/kirameki/collections/enumerator.html#method-first-or">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1300,7 +1903,39 @@ Returns <strong>null</strong> if there were no matches.</p>
                   public
                   function
                 </span>
-                firstOr():
+                <span class="name">
+                  <span class="method-name-start">firstOr(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                          </span>
+                        <var>$default</var>
+                        <span class="default-set">
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link template-name">
@@ -1324,7 +1959,7 @@ If condition has no matches, value of <code>$default</code> is returned.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-first-or-null" class="anchor" href="classes/kirameki/collections/enumerator.html#method-first-or-null">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1333,7 +1968,26 @@ If condition has no matches, value of <code>$default</code> is returned.</p>
                   public
                   function
                 </span>
-                firstOrNull():
+                <span class="name">
+                  <span class="method-name-start">firstOrNull(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link template-name">
@@ -1357,7 +2011,7 @@ If <code>$condition</code> is set, the first element which meets the condition i
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-fold" class="anchor" href="classes/kirameki/collections/enumerator.html#method-fold">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1366,7 +2020,37 @@ If <code>$condition</code> is set, the first element which meets the condition i
                   public
                   function
                 </span>
-                fold():
+                <span class="name">
+                  <span class="method-name-start">fold(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                          </span>
+                        <var>$initial</var>
+                        <span class="default-set">
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$callback</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link template-name">
@@ -1381,7 +2065,7 @@ If <code>$condition</code> is set, the first element which meets the condition i
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-group-by" class="anchor" href="classes/kirameki/collections/enumerator.html#method-group-by">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1390,7 +2074,24 @@ If <code>$condition</code> is set, the first element which meets the condition i
                   public
                   function
                 </span>
-                groupBy():
+                <span class="name">
+                  <span class="method-name-start">groupBy(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$callback</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
       <a href="classes/kirameki/collections/map.html">
@@ -1422,7 +2123,7 @@ returned by <code>$callback</code>.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-instantiate" class="anchor" href="classes/kirameki/collections/enumerator.html#method-instantiate">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1432,7 +2133,24 @@ returned by <code>$callback</code>.</p>
                     abstract
                   function
                 </span>
-                instantiate():
+                <span class="name">
+                  <span class="method-name-start">instantiate(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                          </span>
+                        <var>$iterable</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -1447,7 +2165,7 @@ returned by <code>$callback</code>.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-intersect" class="anchor" href="classes/kirameki/collections/enumerator.html#method-intersect">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1456,7 +2174,24 @@ returned by <code>$callback</code>.</p>
                   public
                   function
                 </span>
-                intersect():
+                <span class="name">
+                  <span class="method-name-start">intersect(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  </span>
+                          </span>
+                        <var>$items</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -1471,7 +2206,7 @@ returned by <code>$callback</code>.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-is-empty" class="anchor" href="classes/kirameki/collections/enumerator.html#method-is-empty">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1480,7 +2215,8 @@ returned by <code>$callback</code>.</p>
                   public
                   function
                 </span>
-                isEmpty():
+                <span class="name">
+                    isEmpty():
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -1495,7 +2231,7 @@ returned by <code>$callback</code>.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-is-not-empty" class="anchor" href="classes/kirameki/collections/enumerator.html#method-is-not-empty">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1504,7 +2240,8 @@ returned by <code>$callback</code>.</p>
                   public
                   function
                 </span>
-                isNotEmpty():
+                <span class="name">
+                    isNotEmpty():
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -1519,7 +2256,7 @@ returned by <code>$callback</code>.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-join" class="anchor" href="classes/kirameki/collections/enumerator.html#method-join">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1528,7 +2265,54 @@ returned by <code>$callback</code>.</p>
                   public
                   function
                 </span>
-                join():
+                <span class="name">
+                  <span class="method-name-start">join(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                          </span>
+                        <var>$glue</var>
+                        <span class="default-set">
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                          </span>
+                        <var>$prefix</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                          </span>
+                        <var>$suffix</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -1545,7 +2329,7 @@ also be added to the result string.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-key-by" class="anchor" href="classes/kirameki/collections/enumerator.html#method-key-by">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1554,7 +2338,39 @@ also be added to the result string.</p>
                   public
                   function
                 </span>
-                keyBy():
+                <span class="name">
+                  <span class="method-name-start">keyBy(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$callback</var>
+                        <span class="default-set">
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                          </span>
+                        <var>$overwrite</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-bool">false</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
       <a href="classes/kirameki/collections/map.html">
@@ -1589,7 +2405,7 @@ suppress this error.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-last" class="anchor" href="classes/kirameki/collections/enumerator.html#method-last">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1598,7 +2414,26 @@ suppress this error.</p>
                   public
                   function
                 </span>
-                last():
+                <span class="name">
+                  <span class="method-name-start">last(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link template-name">
@@ -1616,7 +2451,7 @@ Throws <code>EmptyNotAllowedException</code> if collection is empty.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-last-index" class="anchor" href="classes/kirameki/collections/enumerator.html#method-last-index">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1625,7 +2460,26 @@ Throws <code>EmptyNotAllowedException</code> if collection is empty.</p>
                   public
                   function
                 </span>
-                lastIndex():
+                <span class="name">
+                  <span class="method-name-start">lastIndex(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -1642,7 +2496,7 @@ Throws <code>EmptyNotAllowedException</code> if collection is empty.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-last-index-or-null" class="anchor" href="classes/kirameki/collections/enumerator.html#method-last-index-or-null">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1651,7 +2505,26 @@ Throws <code>EmptyNotAllowedException</code> if collection is empty.</p>
                   public
                   function
                 </span>
-                lastIndexOrNull():
+                <span class="name">
+                  <span class="method-name-start">lastIndexOrNull(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -1674,7 +2547,7 @@ Returns <strong>null</strong> if there were no matches.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-last-or" class="anchor" href="classes/kirameki/collections/enumerator.html#method-last-or">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1683,7 +2556,39 @@ Returns <strong>null</strong> if there were no matches.</p>
                   public
                   function
                 </span>
-                lastOr():
+                <span class="name">
+                  <span class="method-name-start">lastOr(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                          </span>
+                        <var>$default</var>
+                        <span class="default-set">
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link template-name">
@@ -1707,7 +2612,7 @@ Returns the value of <code>$default</code> if no condition met.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-last-or-null" class="anchor" href="classes/kirameki/collections/enumerator.html#method-last-or-null">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1716,7 +2621,26 @@ Returns the value of <code>$default</code> if no condition met.</p>
                   public
                   function
                 </span>
-                lastOrNull():
+                <span class="name">
+                  <span class="method-name-start">lastOrNull(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link template-name">
@@ -1740,7 +2664,7 @@ Returns <strong>null</strong> if no element matches the <code>$condition</code> 
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-map-with-key" class="anchor" href="classes/kirameki/collections/enumerator.html#method-map-with-key">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1749,7 +2673,39 @@ Returns <strong>null</strong> if no element matches the <code>$condition</code> 
                   public
                   function
                 </span>
-                mapWithKey():
+                <span class="name">
+                  <span class="method-name-start">mapWithKey(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$callback</var>
+                        <span class="default-set">
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                          </span>
+                        <var>$overwrite</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-bool">false</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
       <a href="classes/kirameki/collections/map.html">
@@ -1780,7 +2736,7 @@ Returns <strong>null</strong> if no element matches the <code>$condition</code> 
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-max" class="anchor" href="classes/kirameki/collections/enumerator.html#method-max">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1789,7 +2745,26 @@ Returns <strong>null</strong> if no element matches the <code>$condition</code> 
                   public
                   function
                 </span>
-                max():
+                <span class="name">
+                  <span class="method-name-start">max(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$by</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link template-name">
@@ -1808,7 +2783,7 @@ Throws <code>EmptyNotAllowedException</code> if collection is empty.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-max-or-null" class="anchor" href="classes/kirameki/collections/enumerator.html#method-max-or-null">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1817,7 +2792,26 @@ Throws <code>EmptyNotAllowedException</code> if collection is empty.</p>
                   public
                   function
                 </span>
-                maxOrNull():
+                <span class="name">
+                  <span class="method-name-start">maxOrNull(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$by</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link template-name">
@@ -1843,7 +2837,7 @@ Throws <code>InvalidElementException</code> if collection contains NAN.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-merge" class="anchor" href="classes/kirameki/collections/enumerator.html#method-merge">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1852,7 +2846,25 @@ Throws <code>InvalidElementException</code> if collection contains NAN.</p>
                   public
                   function
                 </span>
-                merge():
+                <span class="name">
+                  <span class="method-name-start">merge(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          ...
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  </span>
+                          </span>
+                        <var>$iterables</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -1872,7 +2884,7 @@ iterable that comes later will overwrite the value in the key.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-merge-recursive" class="anchor" href="classes/kirameki/collections/enumerator.html#method-merge-recursive">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1881,7 +2893,39 @@ iterable that comes later will overwrite the value in the key.</p>
                   public
                   function
                 </span>
-                mergeRecursive():
+                <span class="name">
+                  <span class="method-name-start">mergeRecursive(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  </span>
+                          </span>
+                        <var>$iterable</var>
+                        <span class="default-set">
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$depth</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                              <span class="value value-constant">PHP_INT_MAX</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -1898,7 +2942,7 @@ Will merge recursively up to the given depth.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-min" class="anchor" href="classes/kirameki/collections/enumerator.html#method-min">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1907,7 +2951,26 @@ Will merge recursively up to the given depth.</p>
                   public
                   function
                 </span>
-                min():
+                <span class="name">
+                  <span class="method-name-start">min(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$by</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link template-name">
@@ -1926,7 +2989,7 @@ Throws <code>InvalidElementException</code> if collection contains NAN.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-min-or-null" class="anchor" href="classes/kirameki/collections/enumerator.html#method-min-or-null">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1935,7 +2998,26 @@ Throws <code>InvalidElementException</code> if collection contains NAN.</p>
                   public
                   function
                 </span>
-                minOrNull():
+                <span class="name">
+                  <span class="method-name-start">minOrNull(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$by</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link template-name">
@@ -1961,7 +3043,7 @@ Throws <code>InvalidElementException</code> if collection contains NAN.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-min-max" class="anchor" href="classes/kirameki/collections/enumerator.html#method-min-max">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1970,7 +3052,26 @@ Throws <code>InvalidElementException</code> if collection contains NAN.</p>
                   public
                   function
                 </span>
-                minMax():
+                <span class="name">
+                  <span class="method-name-start">minMax(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$by</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -1999,7 +3100,7 @@ Throws <code>InvalidElementException</code> if collection contains NAN.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-partition" class="anchor" href="classes/kirameki/collections/enumerator.html#method-partition">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2008,7 +3109,24 @@ Throws <code>InvalidElementException</code> if collection contains NAN.</p>
                   public
                   function
                 </span>
-                partition():
+                <span class="name">
+                  <span class="method-name-start">partition(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -2026,7 +3144,7 @@ the second collection.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-pipe" class="anchor" href="classes/kirameki/collections/enumerator.html#method-pipe">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2035,7 +3153,24 @@ the second collection.</p>
                   public
                   function
                 </span>
-                pipe():
+                <span class="name">
+                  <span class="method-name-start">pipe(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$callback</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link template-name">
@@ -2051,7 +3186,7 @@ so it can be used in a chain.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-prioritize" class="anchor" href="classes/kirameki/collections/enumerator.html#method-prioritize">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2060,7 +3195,39 @@ so it can be used in a chain.</p>
                   public
                   function
                 </span>
-                prioritize():
+                <span class="name">
+                  <span class="method-name-start">prioritize(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$limit</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -2075,7 +3242,7 @@ so it can be used in a chain.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-ratio" class="anchor" href="classes/kirameki/collections/enumerator.html#method-ratio">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2084,7 +3251,24 @@ so it can be used in a chain.</p>
                   public
                   function
                 </span>
-                ratio():
+                <span class="name">
+                  <span class="method-name-start">ratio(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -2100,7 +3284,7 @@ Throws <code>EmptyNotAllowedException</code> if collection is empty.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-ratio-or-null" class="anchor" href="classes/kirameki/collections/enumerator.html#method-ratio-or-null">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2109,7 +3293,24 @@ Throws <code>EmptyNotAllowedException</code> if collection is empty.</p>
                   public
                   function
                 </span>
-                ratioOrNull():
+                <span class="name">
+                  <span class="method-name-start">ratioOrNull(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -2132,7 +3333,7 @@ Returns <strong>null</strong> if the collection is empty.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-reduce" class="anchor" href="classes/kirameki/collections/enumerator.html#method-reduce">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2141,7 +3342,24 @@ Returns <strong>null</strong> if the collection is empty.</p>
                   public
                   function
                 </span>
-                reduce():
+                <span class="name">
+                  <span class="method-name-start">reduce(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$callback</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link template-name">
@@ -2158,7 +3376,7 @@ Throws <code>EmptyNotAllowedException</code> if the collection is empty.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-reduce-or" class="anchor" href="classes/kirameki/collections/enumerator.html#method-reduce-or">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2167,7 +3385,37 @@ Throws <code>EmptyNotAllowedException</code> if the collection is empty.</p>
                   public
                   function
                 </span>
-                reduceOr():
+                <span class="name">
+                  <span class="method-name-start">reduceOr(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$callback</var>
+                        <span class="default-set">
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                          </span>
+                        <var>$default</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link template-name">
@@ -2184,7 +3432,7 @@ Returns <code>$default</code> if the collection is empty.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-reduce-or-null" class="anchor" href="classes/kirameki/collections/enumerator.html#method-reduce-or-null">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2193,7 +3441,24 @@ Returns <code>$default</code> if the collection is empty.</p>
                   public
                   function
                 </span>
-                reduceOrNull():
+                <span class="name">
+                  <span class="method-name-start">reduceOrNull(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$callback</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link template-name">
@@ -2217,7 +3482,7 @@ Returns <strong>null</strong> if the collection is empty.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-replace" class="anchor" href="classes/kirameki/collections/enumerator.html#method-replace">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2226,7 +3491,68 @@ Returns <strong>null</strong> if the collection is empty.</p>
                   public
                   function
                 </span>
-                replace():
+                <span class="name">
+                  <span class="method-name-start">replace(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                          </span>
+                        <var>$search</var>
+                        <span class="default-set">
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                          </span>
+                        <var>$replacement</var>
+                        <span class="default-set">
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$limit</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          &
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$count</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-default">0</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -2242,7 +3568,7 @@ but with the <code>$search</code> value replaced with the <code>$replacement</co
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-reverse" class="anchor" href="classes/kirameki/collections/enumerator.html#method-reverse">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2251,7 +3577,8 @@ but with the <code>$search</code> value replaced with the <code>$replacement</co
                   public
                   function
                 </span>
-                reverse():
+                <span class="name">
+                    reverse():
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -2267,7 +3594,7 @@ in reverse order.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-rotate" class="anchor" href="classes/kirameki/collections/enumerator.html#method-rotate">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2276,7 +3603,24 @@ in reverse order.</p>
                   public
                   function
                 </span>
-                rotate():
+                <span class="name">
+                  <span class="method-name-start">rotate(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$steps</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -2293,7 +3637,7 @@ to the left instead.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-sample" class="anchor" href="classes/kirameki/collections/enumerator.html#method-sample">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2302,7 +3646,26 @@ to the left instead.</p>
                   public
                   function
                 </span>
-                sample():
+                <span class="name">
+                  <span class="method-name-start">sample(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="classes/random/randomizer.html">
+        Random\Randomizer
+      </a>
+  </span>
+                          </span>
+                        <var>$randomizer</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link template-name">
@@ -2318,7 +3681,7 @@ Throws <code>EmptyNotAllowedException</code> if the collection is empty.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-sample-many" class="anchor" href="classes/kirameki/collections/enumerator.html#method-sample-many">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2327,7 +3690,54 @@ Throws <code>EmptyNotAllowedException</code> if the collection is empty.</p>
                   public
                   function
                 </span>
-                sampleMany():
+                <span class="name">
+                  <span class="method-name-start">sampleMany(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$amount</var>
+                        <span class="default-set">
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                          </span>
+                        <var>$replace</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-bool">false</span>
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="classes/random/randomizer.html">
+        Random\Randomizer
+      </a>
+  </span>
+                          </span>
+                        <var>$randomizer</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
       <a href="classes/kirameki/collections/vec.html">
@@ -2354,7 +3764,7 @@ Throws <code>InvalidArgumentException</code> if <code>$amount</code> is larger t
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-sample-or" class="anchor" href="classes/kirameki/collections/enumerator.html#method-sample-or">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2363,7 +3773,39 @@ Throws <code>InvalidArgumentException</code> if <code>$amount</code> is larger t
                   public
                   function
                 </span>
-                sampleOr():
+                <span class="name">
+                  <span class="method-name-start">sampleOr(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                          </span>
+                        <var>$default</var>
+                        <span class="default-set">
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="classes/random/randomizer.html">
+        Random\Randomizer
+      </a>
+  </span>
+                          </span>
+                        <var>$randomizer</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link template-name">
@@ -2386,7 +3828,7 @@ Returns <code>$default</code> if the collection is empty.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-sample-or-null" class="anchor" href="classes/kirameki/collections/enumerator.html#method-sample-or-null">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2395,7 +3837,26 @@ Returns <code>$default</code> if the collection is empty.</p>
                   public
                   function
                 </span>
-                sampleOrNull():
+                <span class="name">
+                  <span class="method-name-start">sampleOrNull(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="classes/random/randomizer.html">
+        Random\Randomizer
+      </a>
+  </span>
+                          </span>
+                        <var>$randomizer</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link template-name">
@@ -2418,7 +3879,7 @@ Returns <strong>null</strong> if the collection is empty.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-satisfy-all" class="anchor" href="classes/kirameki/collections/enumerator.html#method-satisfy-all">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2427,7 +3888,24 @@ Returns <strong>null</strong> if the collection is empty.</p>
                   public
                   function
                 </span>
-                satisfyAll():
+                <span class="name">
+                  <span class="method-name-start">satisfyAll(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -2444,7 +3922,7 @@ the collection is empty, <strong>false</strong> otherwise.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-satisfy-any" class="anchor" href="classes/kirameki/collections/enumerator.html#method-satisfy-any">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2453,7 +3931,24 @@ the collection is empty, <strong>false</strong> otherwise.</p>
                   public
                   function
                 </span>
-                satisfyAny():
+                <span class="name">
+                  <span class="method-name-start">satisfyAny(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -2470,7 +3965,7 @@ if any iterations that run through the <code>$condition</code> returned <strong>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-satisfy-none" class="anchor" href="classes/kirameki/collections/enumerator.html#method-satisfy-none">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2479,7 +3974,24 @@ if any iterations that run through the <code>$condition</code> returned <strong>
                   public
                   function
                 </span>
-                satisfyNone():
+                <span class="name">
+                  <span class="method-name-start">satisfyNone(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -2496,7 +4008,7 @@ if all the iterations that run through the <code>$condition</code> returned <str
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-satisfy-once" class="anchor" href="classes/kirameki/collections/enumerator.html#method-satisfy-once">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2505,7 +4017,24 @@ if all the iterations that run through the <code>$condition</code> returned <str
                   public
                   function
                 </span>
-                satisfyOnce():
+                <span class="name">
+                  <span class="method-name-start">satisfyOnce(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -2522,7 +4051,7 @@ if iterations that run through the <code>$condition</code> returned <strong>true
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-shuffle" class="anchor" href="classes/kirameki/collections/enumerator.html#method-shuffle">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2531,7 +4060,26 @@ if iterations that run through the <code>$condition</code> returned <strong>true
                   public
                   function
                 </span>
-                shuffle():
+                <span class="name">
+                  <span class="method-name-start">shuffle(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="classes/random/randomizer.html">
+        Random\Randomizer
+      </a>
+  </span>
+                          </span>
+                        <var>$randomizer</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -2546,7 +4094,7 @@ if iterations that run through the <code>$condition</code> returned <strong>true
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-single" class="anchor" href="classes/kirameki/collections/enumerator.html#method-single">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2555,7 +4103,26 @@ if iterations that run through the <code>$condition</code> returned <strong>true
                   public
                   function
                 </span>
-                single():
+                <span class="name">
+                  <span class="method-name-start">single(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link template-name">
@@ -2575,7 +4142,7 @@ Throws <code>EmptyNotAllowedException</code> if <code>$iterable</code> is empty.
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-slice" class="anchor" href="classes/kirameki/collections/enumerator.html#method-slice">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2584,7 +4151,39 @@ Throws <code>EmptyNotAllowedException</code> if <code>$iterable</code> is empty.
                   public
                   function
                 </span>
-                slice():
+                <span class="name">
+                  <span class="method-name-start">slice(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$offset</var>
+                        <span class="default-set">
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$length</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                              <span class="value value-constant">PHP_INT_MAX</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -2599,7 +4198,7 @@ Throws <code>EmptyNotAllowedException</code> if <code>$iterable</code> is empty.
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-slide" class="anchor" href="classes/kirameki/collections/enumerator.html#method-slide">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2608,7 +4207,24 @@ Throws <code>EmptyNotAllowedException</code> if <code>$iterable</code> is empty.
                   public
                   function
                 </span>
-                slide():
+                <span class="name">
+                  <span class="method-name-start">slide(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$size</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
       <a href="classes/kirameki/collections/vec.html">
@@ -2634,7 +4250,7 @@ Also known as sliding window.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-sort" class="anchor" href="classes/kirameki/collections/enumerator.html#method-sort">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2643,7 +4259,54 @@ Also known as sliding window.</p>
                   public
                   function
                 </span>
-                sort():
+                <span class="name">
+                  <span class="method-name-start">sort(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="classes/kirameki/collections/sort-order.html">
+        Kirameki\Collections\SortOrder
+      </a>
+  </span>
+                          </span>
+                        <var>$order</var>
+                        <span class="default-set">
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$by</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$flag</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                              <span class="value value-constant">SORT_REGULAR</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -2658,7 +4321,7 @@ Also known as sliding window.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-sort-asc" class="anchor" href="classes/kirameki/collections/enumerator.html#method-sort-asc">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2667,7 +4330,41 @@ Also known as sliding window.</p>
                   public
                   function
                 </span>
-                sortAsc():
+                <span class="name">
+                  <span class="method-name-start">sortAsc(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$by</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$flag</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                              <span class="value value-constant">SORT_REGULAR</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -2682,7 +4379,7 @@ Also known as sliding window.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-sort-desc" class="anchor" href="classes/kirameki/collections/enumerator.html#method-sort-desc">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2691,7 +4388,41 @@ Also known as sliding window.</p>
                   public
                   function
                 </span>
-                sortDesc():
+                <span class="name">
+                  <span class="method-name-start">sortDesc(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$by</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$flag</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                              <span class="value value-constant">SORT_REGULAR</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -2706,7 +4437,7 @@ Also known as sliding window.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-sort-with" class="anchor" href="classes/kirameki/collections/enumerator.html#method-sort-with">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2715,7 +4446,24 @@ Also known as sliding window.</p>
                   public
                   function
                 </span>
-                sortWith():
+                <span class="name">
+                  <span class="method-name-start">sortWith(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$comparator</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -2730,7 +4478,7 @@ Also known as sliding window.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-split-after" class="anchor" href="classes/kirameki/collections/enumerator.html#method-split-after">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2739,7 +4487,24 @@ Also known as sliding window.</p>
                   public
                   function
                 </span>
-                splitAfter():
+                <span class="name">
+                  <span class="method-name-start">splitAfter(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
       <a href="classes/kirameki/collections/vec.html">
@@ -2764,7 +4529,7 @@ Also known as sliding window.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-split-after-index" class="anchor" href="classes/kirameki/collections/enumerator.html#method-split-after-index">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2773,7 +4538,24 @@ Also known as sliding window.</p>
                   public
                   function
                 </span>
-                splitAfterIndex():
+                <span class="name">
+                  <span class="method-name-start">splitAfterIndex(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$index</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
       <a href="classes/kirameki/collections/vec.html">
@@ -2798,7 +4580,7 @@ Also known as sliding window.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-split-before" class="anchor" href="classes/kirameki/collections/enumerator.html#method-split-before">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2807,7 +4589,24 @@ Also known as sliding window.</p>
                   public
                   function
                 </span>
-                splitBefore():
+                <span class="name">
+                  <span class="method-name-start">splitBefore(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
       <a href="classes/kirameki/collections/vec.html">
@@ -2832,7 +4631,7 @@ Also known as sliding window.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-split-before-index" class="anchor" href="classes/kirameki/collections/enumerator.html#method-split-before-index">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2841,7 +4640,24 @@ Also known as sliding window.</p>
                   public
                   function
                 </span>
-                splitBeforeIndex():
+                <span class="name">
+                  <span class="method-name-start">splitBeforeIndex(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$index</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
       <a href="classes/kirameki/collections/vec.html">
@@ -2866,7 +4682,7 @@ Also known as sliding window.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-split-evenly" class="anchor" href="classes/kirameki/collections/enumerator.html#method-split-evenly">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2875,7 +4691,24 @@ Also known as sliding window.</p>
                   public
                   function
                 </span>
-                splitEvenly():
+                <span class="name">
+                  <span class="method-name-start">splitEvenly(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$parts</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
       <a href="classes/kirameki/collections/vec.html">
@@ -2900,7 +4733,7 @@ Also known as sliding window.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-starts-with" class="anchor" href="classes/kirameki/collections/enumerator.html#method-starts-with">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2909,7 +4742,24 @@ Also known as sliding window.</p>
                   public
                   function
                 </span>
-                startsWith():
+                <span class="name">
+                  <span class="method-name-start">startsWith(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  </span>
+                          </span>
+                        <var>$values</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -2924,7 +4774,7 @@ Also known as sliding window.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-take-every" class="anchor" href="classes/kirameki/collections/enumerator.html#method-take-every">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2933,7 +4783,24 @@ Also known as sliding window.</p>
                   public
                   function
                 </span>
-                takeEvery():
+                <span class="name">
+                  <span class="method-name-start">takeEvery(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$nth</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -2948,7 +4815,7 @@ Also known as sliding window.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-take-first" class="anchor" href="classes/kirameki/collections/enumerator.html#method-take-first">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2957,7 +4824,24 @@ Also known as sliding window.</p>
                   public
                   function
                 </span>
-                takeFirst():
+                <span class="name">
+                  <span class="method-name-start">takeFirst(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$amount</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -2973,7 +4857,7 @@ with those elements.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-take-if" class="anchor" href="classes/kirameki/collections/enumerator.html#method-take-if">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -2982,7 +4866,24 @@ with those elements.</p>
                   public
                   function
                 </span>
-                takeIf():
+                <span class="name">
+                  <span class="method-name-start">takeIf(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -2997,7 +4898,7 @@ with those elements.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-take-instance-of" class="anchor" href="classes/kirameki/collections/enumerator.html#method-take-instance-of">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -3006,7 +4907,24 @@ with those elements.</p>
                   public
                   function
                 </span>
-                takeInstanceOf():
+                <span class="name">
+                  <span class="method-name-start">takeInstanceOf(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                          </span>
+                        <var>$class</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -3021,7 +4939,7 @@ with those elements.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-take-last" class="anchor" href="classes/kirameki/collections/enumerator.html#method-take-last">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -3030,7 +4948,24 @@ with those elements.</p>
                   public
                   function
                 </span>
-                takeLast():
+                <span class="name">
+                  <span class="method-name-start">takeLast(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$amount</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -3046,7 +4981,7 @@ with those elements.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-take-until" class="anchor" href="classes/kirameki/collections/enumerator.html#method-take-until">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -3055,7 +4990,24 @@ with those elements.</p>
                   public
                   function
                 </span>
-                takeUntil():
+                <span class="name">
+                  <span class="method-name-start">takeUntil(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -3070,7 +5022,7 @@ with those elements.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-take-while" class="anchor" href="classes/kirameki/collections/enumerator.html#method-take-while">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -3079,7 +5031,24 @@ with those elements.</p>
                   public
                   function
                 </span>
-                takeWhile():
+                <span class="name">
+                  <span class="method-name-start">takeWhile(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -3094,7 +5063,7 @@ with those elements.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-to-array" class="anchor" href="classes/kirameki/collections/enumerator.html#method-to-array">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -3103,7 +5072,26 @@ with those elements.</p>
                   public
                   function
                 </span>
-                toArray():
+                <span class="name">
+                  <span class="method-name-start">toArray(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$depth</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                              <span class="value value-constant">PHP_INT_MAX</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -3134,7 +5122,7 @@ with those elements.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-to-json" class="anchor" href="classes/kirameki/collections/enumerator.html#method-to-json">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -3143,7 +5131,26 @@ with those elements.</p>
                   public
                   function
                 </span>
-                toJson():
+                <span class="name">
+                  <span class="method-name-start">toJson(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                          </span>
+                        <var>$pretty</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-bool">false</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -3158,7 +5165,7 @@ with those elements.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-unique" class="anchor" href="classes/kirameki/collections/enumerator.html#method-unique">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -3167,7 +5174,26 @@ with those elements.</p>
                   public
                   function
                 </span>
-                unique():
+                <span class="name">
+                  <span class="method-name-start">unique(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$by</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -3186,7 +5212,7 @@ doing <code>Arr::unique([1, true])</code> will result in: <code>[1, true]</code>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-when" class="anchor" href="classes/kirameki/collections/enumerator.html#method-when">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -3195,7 +5221,59 @@ doing <code>Arr::unique([1, true])</code> will result in: <code>[1, true]</code>
                   public
                   function
                 </span>
-                when():
+                <span class="name">
+                  <span class="method-name-start">when(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+
+                          </span>
+                        <var>$bool</var>
+                        <span class="default-set">
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$callback</var>
+                        <span class="default-set">
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$fallback</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link template-name">
@@ -3211,7 +5289,7 @@ is <strong>true</strong>, calls <code>$fallback</code> otherwise.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-when-empty" class="anchor" href="classes/kirameki/collections/enumerator.html#method-when-empty">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -3220,7 +5298,39 @@ is <strong>true</strong>, calls <code>$fallback</code> otherwise.</p>
                   public
                   function
                 </span>
-                whenEmpty():
+                <span class="name">
+                  <span class="method-name-start">whenEmpty(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$callback</var>
+                        <span class="default-set">
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$fallback</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link template-name">
@@ -3236,7 +5346,7 @@ calls <code>$fallback</code> otherwise.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-when-not-empty" class="anchor" href="classes/kirameki/collections/enumerator.html#method-when-not-empty">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -3245,7 +5355,39 @@ calls <code>$fallback</code> otherwise.</p>
                   public
                   function
                 </span>
-                whenNotEmpty():
+                <span class="name">
+                  <span class="method-name-start">whenNotEmpty(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$callback</var>
+                        <span class="default-set">
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$fallback</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link template-name">
@@ -3261,7 +5403,7 @@ empty, calls <code>$fallback</code> otherwise.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-without" class="anchor" href="classes/kirameki/collections/enumerator.html#method-without">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -3270,7 +5412,24 @@ empty, calls <code>$fallback</code> otherwise.</p>
                   public
                   function
                 </span>
-                without():
+                <span class="name">
+                  <span class="method-name-start">without(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                          </span>
+                        <var>$value</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -3285,7 +5444,7 @@ empty, calls <code>$fallback</code> otherwise.</p>
 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-as-array-recursive" class="anchor" href="classes/kirameki/collections/enumerator.html#method-as-array-recursive">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -3294,7 +5453,52 @@ empty, calls <code>$fallback</code> otherwise.</p>
                   protected
                   function
                 </span>
-                asArrayRecursive():
+                <span class="name">
+                  <span class="method-name-start">asArrayRecursive(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  </span>
+                          </span>
+                        <var>$items</var>
+                        <span class="default-set">
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$depth</var>
+                        <span class="default-set">
+                        </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                          </span>
+                        <var>$validate</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-bool">false</span>
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
     <span class="no-link named-var">
@@ -3323,7 +5527,7 @@ empty, calls <code>$fallback</code> otherwise.</p>
                 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-new-map" class="anchor" href="classes/kirameki/collections/enumerator.html#method-new-map">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -3332,7 +5536,24 @@ empty, calls <code>$fallback</code> otherwise.</p>
                   protected
                   function
                 </span>
-                newMap():
+                <span class="name">
+                  <span class="method-name-start">newMap(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  </span>
+                          </span>
+                        <var>$iterable</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
       <a href="classes/kirameki/collections/map.html">
@@ -3361,7 +5582,7 @@ empty, calls <code>$fallback</code> otherwise.</p>
                 
               </div>
             </li>
-            <li>
+            <li class="method">
               <a id="method-new-vec" class="anchor" href="classes/kirameki/collections/enumerator.html#method-new-vec">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -3370,7 +5591,24 @@ empty, calls <code>$fallback</code> otherwise.</p>
                   protected
                   function
                 </span>
-                newVec():
+                <span class="name">
+                  <span class="method-name-start">newVec(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  </span>
+                          </span>
+                        <var>$iterable</var>
+                        <span class="default-set">
+                        </span>
+
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
   <span class="type">
       <a href="classes/kirameki/collections/vec.html">

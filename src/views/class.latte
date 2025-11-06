@@ -147,12 +147,12 @@
       </div>
     {/if}
     {if $class->methods !== []}
-      <div class="methods">
+      <div class="methods-wrapper">
         <h3>Methods</h3>
-        <ul>
+        <ul class="methods">
           {foreach $class->methods as $method}
             {varType Kirameki\ApiDocGenerator\Components\MethodDefinition $method}
-            <li>
+            <li class="method">
               <a id="{$method->id}" class="anchor" href="{$class->outputPath}#{$method->id}">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -170,7 +170,54 @@
                   {/if}
                   function
                 </span>
-                {$method->name}():
+                <span class="name">
+                  {if ($method->parameters !== [])}
+                  <span class="method-name-start">{$method->name}(</span>
+                  <ul class="parameters">
+                    {foreach $method->parameters as $parameter}
+                      {varType Kirameki\ApiDocGenerator\Components\ParameterDefinition $parameter}
+                      <li class="parameter">
+                        {if $parameter->isPassedByReference}
+                          &
+                        {/if}
+                        {if $parameter->isVariadic}
+                          ...
+                        {/if}
+                        {if $parameter->type !== null}
+                          <span class="types">
+                          {include type.latte, type: $parameter->type}
+                          </span>
+                        {/if}
+                        <var>${$parameter->name}</var>
+                        <span class="default-set">
+                          {if $parameter->hasDefault}
+                            <span class="assignment">=</span>
+                            {if $parameter->defaultConstant}
+                              <span class="value value-constant">{$parameter->defaultConstant}</span>
+                            {else}
+                              {var $defaultValue = $parameter->defaultValue}
+                              {if is_string($defaultValue)}
+                                <span class="value value-string">"{$defaultValue}"</span>
+                              {elseif is_array($defaultValue)}
+                                <span class="value value-array">[...]</span>
+                              {elseif $defaultValue === null}
+                                <span class="value value-null">null</span>
+                              {elseif is_bool($defaultValue)}
+                                <span class="value value-bool">{$defaultValue ? 'true' : 'false'}</span>
+                              {else}
+                                <span class="value value-default">{$defaultValue}</span>
+                              {/if}
+                            {/if}
+                          {/if}
+                        </span>
+                        {sep}<span class="delimiter">,</span>{/sep}
+                      </li>
+                    {/foreach}
+                  </ul>
+                  <span class="method-name-end">):</span>
+                  {else}
+                    {$method->name}():
+                  {/if}
                 <span class="return">
                   {include type.latte, type: $method->returnType}
                 </span>

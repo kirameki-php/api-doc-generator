@@ -112,7 +112,7 @@ class ClassDefinition implements StructureDefinition, Stringable
      */
     public array $methods {
         get => $this->methods ??= array_map(
-            fn(ReflectionMethod $ref) => new MethodDefinition($ref, $this->docParser, $this->typeResolver),
+            fn(ReflectionMethod $ref) => new MethodDefinition($this, $ref, $this->docParser, $this->typeResolver),
             $this->reflection->getMethods(),
         );
     }

@@ -186,25 +186,24 @@ blockquote {
         }
     }
 }
-.methods {
+.methods-wrapper {
     padding-top: 1rem;
-
     h3 {
         padding: 0.25rem 0;
         border-bottom: 1px solid #e5e7eb;
     }
-    ul {
-        display: flex;
-        flex-direction: column;
+}
+ul.methods {
+    display: flex;
+    flex-direction: column;
 
-        li {
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-            position: relative;
-        }
-        li:last-child {
-            border-bottom: none;
-        }
+    li.method {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        position: relative;
+    }
+    li.method:last-child {
+        border-bottom: none;
     }
     .anchor {
         position: absolute;
@@ -222,12 +221,42 @@ blockquote {
         background-color: #f6f7f8;
         border-radius: 0.25rem;
         margin: 0.75rem 0;
+        line-height: 1.5rem;
 
+        .name {
+
+        }
         .return {
             display: inline-flex;
 
             .delimiter {
                 color: #6b7280;
+            }
+        }
+        .parameters {
+            margin-left: 1.5rem;
+            .parameter {
+                display: flex;
+                flex-direction: row;
+                margin-right: 0.5rem;
+                .types {
+                    display: flex;
+                    margin-right: 0.5rem;
+                }
+                var {
+                    color: #1f8179;
+                    font-style: normal;
+                }
+                .default-set {
+                    display: inline-flex;
+                }
+                .assignment {
+                    color: #6b7280;
+                    margin: 0 0.5rem;
+                }
+                .delimiter {
+                    color: #6b7280;
+                }
             }
         }
     }

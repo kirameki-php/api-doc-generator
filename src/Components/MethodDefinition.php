@@ -9,6 +9,7 @@ use Kirameki\Core\Exceptions\UnreachableException;
 use Kirameki\Text\Str;
 use Kirameki\Text\Utf8;
 use ReflectionMethod;
+use ReflectionParameter;
 use function dump;
 
 class MethodDefinition extends MemberDefinition
@@ -25,6 +26,16 @@ class MethodDefinition extends MemberDefinition
      */
     public string $comment {
         get => $this->comment ??= (string) $this->reflection->getDocComment();
+    }
+
+    /**
+     * @var list<ParameterDefinition>
+     */
+    public array $parameters {
+        get => $this->parameters ??= array_map(
+            fn (ReflectionParameter $param) => new ParameterDefinition($this->class, $this, $param, $this->typeResolver),
+            $this->reflection->getParameters()
+        );
     }
 
     /**
@@ -75,11 +86,13 @@ class MethodDefinition extends MemberDefinition
     }
 
     /**
+     * @param ClassDefinition $class
      * @param ReflectionMethod $reflection
      * @param CommentParser $docParser
      * @param TypeResolver $typeResolver
      */
     public function __construct(
+        protected ClassDefinition $class,
         protected ReflectionMethod $reflection,
         CommentParser $docParser,
         protected TypeResolver $typeResolver,
