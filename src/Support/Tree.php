@@ -6,6 +6,9 @@ use IteratorAggregate;
 use Kirameki\ApiDocGenerator\Components\ClassDefinition;
 use Traversable;
 
+/**
+ * @implements IteratorAggregate<string, ClassDefinition>
+ */
 class Tree implements IteratorAggregate
 {
     /**

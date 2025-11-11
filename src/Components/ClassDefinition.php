@@ -142,6 +142,13 @@ class ClassDefinition implements StructureDefinition, Stringable
     }
 
     /**
+     * @var string
+     */
+    public string $url {
+        get => $this->url ??= $this->urlResolver->resolve($this) ?? '';
+    }
+
+    /**
      * @param ReflectionClass<object> $reflection
      * @param ClassFile $file
      * @param CommentParser $docParser
@@ -155,7 +162,12 @@ class ClassDefinition implements StructureDefinition, Stringable
         protected readonly UrlResolver $urlResolver,
         ?TypeResolver $typeResolver = null,
     ) {
-        $this->typeResolver = $typeResolver ?? new TypeResolver($this->phpDoc, $this->file, $this->docParser, $this->urlResolver);
+        $this->typeResolver = $typeResolver ?? new TypeResolver(
+            $this->phpDoc,
+            $this->file,
+            $this->docParser,
+            $this->urlResolver,
+        );
     }
 
     /**

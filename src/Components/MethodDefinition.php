@@ -7,10 +7,8 @@ use Kirameki\ApiDocGenerator\Support\TypeResolver;
 use Kirameki\ApiDocGenerator\Types\VarType;
 use Kirameki\Core\Exceptions\UnreachableException;
 use Kirameki\Text\Str;
-use Kirameki\Text\Utf8;
 use ReflectionMethod;
 use ReflectionParameter;
-use function dump;
 
 class MethodDefinition extends MemberDefinition
 {

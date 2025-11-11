@@ -33,7 +33,7 @@ class ConstantDefinition
      * @var bool
      */
     public bool $isFinal {
-        get => $this->reflection->isFinal;
+        get => $this->reflection->isFinal ?? false;
     }
 
     /**

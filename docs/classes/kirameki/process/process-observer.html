@@ -38,11 +38,6 @@
         ExponentialBackoff
       </a>
     </li>
-    <li>
-      <a href="classes/kirameki/backoff/jitter-strategy.html" title="Kirameki\Backoff\JitterStrategy">
-        JitterStrategy
-      </a>
-    </li>
 </ul>
     </li>
     <li>
@@ -184,11 +179,6 @@
     <li>
       <a href="classes/kirameki/collections/range.html" title="Kirameki\Collections\Range">
         Range
-      </a>
-    </li>
-    <li>
-      <a href="classes/kirameki/collections/sort-order.html" title="Kirameki\Collections\SortOrder">
-        SortOrder
       </a>
     </li>
     <li>
@@ -354,18 +344,6 @@
 <ul>
     <li>
       <div class="sidebar-folder">
-        Configs
-      </div>
-<ul>
-    <li>
-      <a href="classes/kirameki/dumper/configs/debug-info.html" title="Kirameki\Dumper\Configs\DebugInfo">
-        DebugInfo
-      </a>
-    </li>
-</ul>
-    </li>
-    <li>
-      <div class="sidebar-folder">
         Decorators
       </div>
 <ul>
@@ -484,11 +462,6 @@
       </a>
     </li>
     <li>
-      <a href="classes/kirameki/dumper/placeholder.html" title="Kirameki\Dumper\Placeholder">
-        Placeholder
-      </a>
-    </li>
-    <li>
       <a href="classes/kirameki/dumper/writer.html" title="Kirameki\Dumper\Writer">
         Writer
       </a>
@@ -539,11 +512,6 @@
         Http
       </div>
 <ul>
-    <li>
-      <a href="classes/kirameki/http/http-method.html" title="Kirameki\Http\HttpMethod">
-        HttpMethod
-      </a>
-    </li>
     <li>
       <a href="classes/kirameki/http/status-code.html" title="Kirameki\Http\StatusCode">
         StatusCode
@@ -650,11 +618,6 @@
     <li>
       <a href="classes/kirameki/storage/file.html" title="Kirameki\Storage\File">
         File
-      </a>
-    </li>
-    <li>
-      <a href="classes/kirameki/storage/file-type.html" title="Kirameki\Storage\FileType">
-        FileType
       </a>
     </li>
     <li>
@@ -864,11 +827,6 @@
 </ul>
     </li>
     <li>
-      <a href="classes/kirameki/time/day-of-week.html" title="Kirameki\Time\DayOfWeek">
-        DayOfWeek
-      </a>
-    </li>
-    <li>
       <a href="classes/kirameki/time/instant.html" title="Kirameki\Time\Instant">
         Instant
       </a>
@@ -876,11 +834,6 @@
     <li>
       <a href="classes/kirameki/time/time.html" title="Kirameki\Time\Time">
         Time
-      </a>
-    </li>
-    <li>
-      <a href="classes/kirameki/time/unit.html" title="Kirameki\Time\Unit">
-        Unit
       </a>
     </li>
 </ul>
@@ -909,184 +862,351 @@
         <h3>Properties</h3>
         <ul>
             <li>
-              <div class="property-signature">
-                <span class="property-modifiers">
+              <div class="signature">
+                <span class="modifiers">
                     static
                   protected
-                  self
                 </span>
-                <span class="property-name">$instance</span>
+                <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+                <span class="var-name">$instance</span>
               </div>
-              <div class="property-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span>  <span class="phpdoc-type">static</span></div>
+              <div class="comment">
+                
               </div>
             </li>
             <li>
-              <div class="property-signature">
-                <span class="property-modifiers">
+              <div class="signature">
+                <span class="modifiers">
                     static
                   protected
-                  int
                 </span>
-                <span class="property-name">$processCount</span>
+                <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                </span>
+                <span class="var-name">$processCount</span>
               </div>
-              <div class="property-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span>  <span class="phpdoc-type">int</span></div>
+              <div class="comment">
+                
               </div>
             </li>
             <li>
-              <div class="property-signature">
-                <span class="property-modifiers">
+              <div class="signature">
+                <span class="modifiers">
                     static
                   protected
-                  ?Kirameki\Event\Listeners\EventListener
                 </span>
-                <span class="property-name">$signalHandler</span>
+                <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      EventListener
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+      <span class="no-link structure-name">
+        Kirameki\Process\SignalEvent
+      </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+                </span>
+                <span class="var-name">$signalHandler</span>
               </div>
-              <div class="property-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span>  <span class="phpdoc-type">(EventListener&lt;SignalEvent&gt;|null)</span></div>
+              <div class="comment">
+                
               </div>
             </li>
             <li>
-              <div class="property-signature">
-                <span class="property-modifiers">
+              <div class="signature">
+                <span class="modifiers">
                   protected
-                  array
                 </span>
-                <span class="property-name">$exitedBeforeRegistered</span>
+                <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      array
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                </span>
+                <span class="var-name">$exitedBeforeRegistered</span>
               </div>
-              <div class="property-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span>  <span class="phpdoc-type">array&lt;int, int&gt;</span></div>
+              <div class="comment">
+                
               </div>
             </li>
             <li>
-              <div class="property-signature">
-                <span class="property-modifiers">
+              <div class="signature">
+                <span class="modifiers">
                   protected
-                  array
                 </span>
-                <span class="property-name">$exitCallbacks</span>
+                <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      array
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  Closure
+  <span class="parentheses">(</span>
+
+
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+
+  <span class="parentheses">)</span>:
+  <span class="type">
+    <span class="no-link named-var">
+      void
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                </span>
+                <span class="var-name">$exitCallbacks</span>
               </div>
-              <div class="property-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span>  <span class="phpdoc-type">array&lt;int, Closure(int): void&gt;</span></div>
+              <div class="comment">
+                
               </div>
             </li>
         </ul>
       </div>
-      <div class="methods">
+      <div class="methods-wrapper">
         <h3>Methods</h3>
-        <ul>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+        <ul class="methods">
+            <li class="method">
+              <a id="method-observe" class="anchor" href="classes/kirameki/process/process-observer.html#method-observe">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                     static
                   function
                 </span>
-                observe():
+                <span class="name">
+                    observe():
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       self
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Observation MUST start before any process is spawned or there is a chance<br />
+              <div class="comment">
+                <p>Observation MUST start before any process is spawned or there is a chance<br />
 a process exits before the observer has a change to register a handler.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">self</span></div>
+
+
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-get-process-count" class="anchor" href="classes/kirameki/process/process-observer.html#method-get-process-count">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                     static
                   function
                 </span>
-                getProcessCount():
+                <span class="name">
+                    getProcessCount():
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       int
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">int</span></div>
+              <div class="comment">
+                
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method---construct" class="anchor" href="classes/kirameki/process/process-observer.html#method---construct">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   protected
                   function
                 </span>
-                __construct():
+                <span class="name">
+                    __construct():
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       mixed
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>There should only be one observer instance which is registered<br />
+              <div class="comment">
+                <p>There should only be one observer instance which is registered<br />
 through observeSignal, so make this private to make sure<br />
 people don't initialize this accidentally.</p>
-</div>
+
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-handle-signal" class="anchor" href="classes/kirameki/process/process-observer.html#method-handle-signal">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   protected
                   function
                 </span>
-                handleSignal():
+                <span class="name">
+                  <span class="method-name-start">handleSignal(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <span class="no-link structure-name">
+        Kirameki\Process\SignalEvent
+      </span>
+  </span>
+                          </span>
+                        <var>$event</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       void
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>WARNING: this method is called even for ALL SIGCHLD signals, which include signals<br />
+              <div class="comment">
+                <p>WARNING: this method is called even for ALL SIGCHLD signals, which include signals<br />
 that were not called through ProcessManager (e.g. calling proc_open() directly).<br />
 Which means that $this-&gt;exitedBeforeRegistered may contain exit codes that are not<br />
 related to ProcessManager. Thus, we will clear this array when all process called<br />
 through ProcessManager have exited.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">SignalEvent</span> <span class="phpdoc-var-name">$event</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
+
+
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-on-exit" class="anchor" href="classes/kirameki/process/process-observer.html#method-on-exit">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                   function
                 </span>
-                onExit():
+                <span class="name">
+                  <span class="method-name-start">onExit(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$pid</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$callback</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       void
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$pid</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Closure(int): void</span> <span class="phpdoc-var-name">$callback</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
+              <div class="comment">
+                
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-pre-process-exit" class="anchor" href="classes/kirameki/process/process-observer.html#method-pre-process-exit">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   protected
                   function
                 </span>
-                preProcessExit():
+                <span class="name">
+                    preProcessExit():
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       void
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
+              <div class="comment">
                 
               </div>
             </li>

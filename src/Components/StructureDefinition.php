@@ -41,4 +41,11 @@ interface StructureDefinition
     public string $outputPath {
         get;
     }
+
+    /**
+     * @var string
+     */
+    public string $url {
+        get;
+    }
 }

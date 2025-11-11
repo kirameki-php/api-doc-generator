@@ -38,11 +38,6 @@
         ExponentialBackoff
       </a>
     </li>
-    <li>
-      <a href="classes/kirameki/backoff/jitter-strategy.html" title="Kirameki\Backoff\JitterStrategy">
-        JitterStrategy
-      </a>
-    </li>
 </ul>
     </li>
     <li>
@@ -184,11 +179,6 @@
     <li>
       <a href="classes/kirameki/collections/range.html" title="Kirameki\Collections\Range">
         Range
-      </a>
-    </li>
-    <li>
-      <a href="classes/kirameki/collections/sort-order.html" title="Kirameki\Collections\SortOrder">
-        SortOrder
       </a>
     </li>
     <li>
@@ -354,18 +344,6 @@
 <ul>
     <li>
       <div class="sidebar-folder">
-        Configs
-      </div>
-<ul>
-    <li>
-      <a href="classes/kirameki/dumper/configs/debug-info.html" title="Kirameki\Dumper\Configs\DebugInfo">
-        DebugInfo
-      </a>
-    </li>
-</ul>
-    </li>
-    <li>
-      <div class="sidebar-folder">
         Decorators
       </div>
 <ul>
@@ -484,11 +462,6 @@
       </a>
     </li>
     <li>
-      <a href="classes/kirameki/dumper/placeholder.html" title="Kirameki\Dumper\Placeholder">
-        Placeholder
-      </a>
-    </li>
-    <li>
       <a href="classes/kirameki/dumper/writer.html" title="Kirameki\Dumper\Writer">
         Writer
       </a>
@@ -539,11 +512,6 @@
         Http
       </div>
 <ul>
-    <li>
-      <a href="classes/kirameki/http/http-method.html" title="Kirameki\Http\HttpMethod">
-        HttpMethod
-      </a>
-    </li>
     <li>
       <a href="classes/kirameki/http/status-code.html" title="Kirameki\Http\StatusCode">
         StatusCode
@@ -650,11 +618,6 @@
     <li>
       <a href="classes/kirameki/storage/file.html" title="Kirameki\Storage\File">
         File
-      </a>
-    </li>
-    <li>
-      <a href="classes/kirameki/storage/file-type.html" title="Kirameki\Storage\FileType">
-        FileType
       </a>
     </li>
     <li>
@@ -864,11 +827,6 @@
 </ul>
     </li>
     <li>
-      <a href="classes/kirameki/time/day-of-week.html" title="Kirameki\Time\DayOfWeek">
-        DayOfWeek
-      </a>
-    </li>
-    <li>
       <a href="classes/kirameki/time/instant.html" title="Kirameki\Time\Instant">
         Instant
       </a>
@@ -876,11 +834,6 @@
     <li>
       <a href="classes/kirameki/time/time.html" title="Kirameki\Time\Time">
         Time
-      </a>
-    </li>
-    <li>
-      <a href="classes/kirameki/time/unit.html" title="Kirameki\Time\Unit">
-        Unit
       </a>
     </li>
 </ul>
@@ -909,10 +862,31 @@
       extends:
       <ul>
         <li>
-            <a href="https://www.php.net/manual/class.datetimeimmutable.php">
-              DateTimeImmutable
-            </a>
+  <span class="type">
+      <a href="https://www.php.net/manual/class.datetimeimmutable.php" class="external-link" target="_blank">
+        DateTimeImmutable
+      </a>
+  </span>
         </li>
+      </ul>
+    </div>
+    <div class="implements">
+      implements:
+      <ul>
+          <li>
+  <span class="type">
+      <a href="https://www.php.net/manual/class.jsonserializable.php" class="external-link" target="_blank">
+        JsonSerializable
+      </a>
+  </span>
+          </li>
+          <li>
+  <span class="type">
+      <a href="https://www.php.net/manual/class.stringable.php" class="external-link" target="_blank">
+        Stringable
+      </a>
+  </span>
+          </li>
       </ul>
     </div>
       <div class="constants">
@@ -924,7 +898,7 @@
                   public
                 </span>
                 <span class="type">string</span>
-                <span class="name">Kirameki\Time\Instant</span>
+                <span class="name">MIN</span>
                 <span class="assignment"> = </span>
                   <span class="value value-string">"0001-01-01 00:00:00.000000+00:00"</span>
               </div>
@@ -935,7 +909,7 @@
                   public
                 </span>
                 <span class="type">string</span>
-                <span class="name">Kirameki\Time\Instant</span>
+                <span class="name">MAX</span>
                 <span class="assignment"> = </span>
                   <span class="value value-string">"9999-12-31 23:59:59.999999+00:00"</span>
               </div>
@@ -946,7 +920,7 @@
                   public
                 </span>
                 <span class="type">string</span>
-                <span class="name">Kirameki\Time\Instant</span>
+                <span class="name">ATOM</span>
                 <span class="assignment"> = </span>
                   <span class="value value-string">"Y-m-d\TH:i:sP"</span>
               </div>
@@ -957,7 +931,7 @@
                   public
                 </span>
                 <span class="type">string</span>
-                <span class="name">Kirameki\Time\Instant</span>
+                <span class="name">COOKIE</span>
                 <span class="assignment"> = </span>
                   <span class="value value-string">"l, d-M-Y H:i:s T"</span>
               </div>
@@ -968,7 +942,7 @@
                   public
                 </span>
                 <span class="type">string</span>
-                <span class="name">Kirameki\Time\Instant</span>
+                <span class="name">ISO8601</span>
                 <span class="assignment"> = </span>
                   <span class="value value-string">"Y-m-d\TH:i:sO"</span>
               </div>
@@ -979,7 +953,7 @@
                   public
                 </span>
                 <span class="type">string</span>
-                <span class="name">Kirameki\Time\Instant</span>
+                <span class="name">ISO8601_EXPANDED</span>
                 <span class="assignment"> = </span>
                   <span class="value value-string">"X-m-d\TH:i:sP"</span>
               </div>
@@ -990,7 +964,7 @@
                   public
                 </span>
                 <span class="type">string</span>
-                <span class="name">Kirameki\Time\Instant</span>
+                <span class="name">RFC822</span>
                 <span class="assignment"> = </span>
                   <span class="value value-string">"D, d M y H:i:s O"</span>
               </div>
@@ -1001,7 +975,7 @@
                   public
                 </span>
                 <span class="type">string</span>
-                <span class="name">Kirameki\Time\Instant</span>
+                <span class="name">RFC850</span>
                 <span class="assignment"> = </span>
                   <span class="value value-string">"l, d-M-y H:i:s T"</span>
               </div>
@@ -1012,7 +986,7 @@
                   public
                 </span>
                 <span class="type">string</span>
-                <span class="name">Kirameki\Time\Instant</span>
+                <span class="name">RFC1036</span>
                 <span class="assignment"> = </span>
                   <span class="value value-string">"D, d M y H:i:s O"</span>
               </div>
@@ -1023,7 +997,7 @@
                   public
                 </span>
                 <span class="type">string</span>
-                <span class="name">Kirameki\Time\Instant</span>
+                <span class="name">RFC1123</span>
                 <span class="assignment"> = </span>
                   <span class="value value-string">"D, d M Y H:i:s O"</span>
               </div>
@@ -1034,7 +1008,7 @@
                   public
                 </span>
                 <span class="type">string</span>
-                <span class="name">Kirameki\Time\Instant</span>
+                <span class="name">RFC7231</span>
                 <span class="assignment"> = </span>
                   <span class="value value-string">"D, d M Y H:i:s \G\M\T"</span>
               </div>
@@ -1045,7 +1019,7 @@
                   public
                 </span>
                 <span class="type">string</span>
-                <span class="name">Kirameki\Time\Instant</span>
+                <span class="name">RFC2822</span>
                 <span class="assignment"> = </span>
                   <span class="value value-string">"D, d M Y H:i:s O"</span>
               </div>
@@ -1056,7 +1030,7 @@
                   public
                 </span>
                 <span class="type">string</span>
-                <span class="name">Kirameki\Time\Instant</span>
+                <span class="name">RFC3339</span>
                 <span class="assignment"> = </span>
                   <span class="value value-string">"Y-m-d\TH:i:sP"</span>
               </div>
@@ -1067,7 +1041,7 @@
                   public
                 </span>
                 <span class="type">string</span>
-                <span class="name">Kirameki\Time\Instant</span>
+                <span class="name">RFC3339_EXTENDED</span>
                 <span class="assignment"> = </span>
                   <span class="value value-string">"Y-m-d\TH:i:s.vP"</span>
               </div>
@@ -1078,7 +1052,7 @@
                   public
                 </span>
                 <span class="type">string</span>
-                <span class="name">Kirameki\Time\Instant</span>
+                <span class="name">RSS</span>
                 <span class="assignment"> = </span>
                   <span class="value value-string">"D, d M Y H:i:s O"</span>
               </div>
@@ -1089,1427 +1063,3145 @@
                   public
                 </span>
                 <span class="type">string</span>
-                <span class="name">Kirameki\Time\Instant</span>
+                <span class="name">W3C</span>
                 <span class="assignment"> = </span>
                   <span class="value value-string">"Y-m-d\TH:i:sP"</span>
               </div>
             </li>
         </ul>
       </div>
-      <div class="methods">
+      <div class="methods-wrapper">
         <h3>Methods</h3>
-        <ul>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+        <ul class="methods">
+            <li class="method">
+              <a id="method---construct" class="anchor" href="classes/kirameki/time/instant.html#method---construct">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                   function
                 </span>
-                __construct():
+                <span class="name">
+                  <span class="method-name-start">__construct(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.datetimeinterface.php" class="external-link" target="_blank">
+        DateTimeInterface
+      </a>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type">
+    <span class="no-link named-var">
+      float
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+                          </span>
+                        <var>$time</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       mixed
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|float|DateTimeInterface|null)</span> <span class="phpdoc-var-name">$time</span></div>
+              <div class="comment">
+                
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-min" class="anchor" href="classes/kirameki/time/instant.html#method-min">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                     static
                   function
                 </span>
-                min():
+                <span class="name">
+                    min():
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       static
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
+              <div class="comment">
+                
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-max" class="anchor" href="classes/kirameki/time/instant.html#method-max">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                     static
                   function
                 </span>
-                max():
+                <span class="name">
+                    max():
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       static
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
+              <div class="comment">
+                
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-create-from-format" class="anchor" href="classes/kirameki/time/instant.html#method-create-from-format">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                     static
                   function
                 </span>
-                createFromFormat():
+                <span class="name">
+                  <span class="method-name-start">createFromFormat(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                          </span>
+                        <var>$format</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                          </span>
+                        <var>$datetime</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.datetimezone.php" class="external-link" target="_blank">
+        DateTimeZone
+      </a>
+  </span>
+                          </span>
+                        <var>$timezone</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       static
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@inheritDoc</span> </div>
+              <div class="comment">
+                
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method---serialize" class="anchor" href="classes/kirameki/time/instant.html#method---serialize">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                   function
                 </span>
-                __serialize():
+                <span class="name">
+                    __serialize():
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       array
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
+              <div class="comment">
                 
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method---unserialize" class="anchor" href="classes/kirameki/time/instant.html#method---unserialize">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                   function
                 </span>
-                __unserialize():
+                <span class="name">
+                  <span class="method-name-start">__unserialize(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      array
+    </span>
+  </span>
+                          </span>
+                        <var>$data</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       void
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
+              <div class="comment">
                 
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method---wakeup" class="anchor" href="classes/kirameki/time/instant.html#method---wakeup">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                   function
                 </span>
-                __wakeup():
+                <span class="name">
+                    __wakeup():
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       mixed
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
+              <div class="comment">
                 
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method---set-state" class="anchor" href="classes/kirameki/time/instant.html#method---set-state">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                     static
                   function
                 </span>
-                __set_state():
+                <span class="name">
+                  <span class="method-name-start">__set_state(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      array
+    </span>
+  </span>
+                          </span>
+                        <var>$array</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       mixed
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
+              <div class="comment">
                 
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-create-from-timestamp" class="anchor" href="classes/kirameki/time/instant.html#method-create-from-timestamp">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                     static
                   function
                 </span>
-                createFromTimestamp():
-                <span class="return">
-    <span class="no-link">
-      mixed
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                    static
-                  function
-                </span>
-                getLastErrors():
-                <span class="return">
-    <span class="no-link">
-      mixed
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                format():
-                <span class="return">
-    <span class="no-link">
-      mixed
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                getTimezone():
-                <span class="return">
-    <span class="no-link">
-      mixed
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                getOffset():
-                <span class="return">
-    <span class="no-link">
-      mixed
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                getTimestamp():
-                <span class="return">
-    <span class="no-link">
-      mixed
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                getMicrosecond():
-                <span class="return">
-    <span class="no-link">
+                <span class="name">
+                  <span class="method-name-start">createFromTimestamp(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
       int
     </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                diff():
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type">
+    <span class="no-link named-var">
+      float
+    </span>
+  </span>
+
+                          </span>
+                        <var>$timestamp</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       mixed
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
+              <div class="comment">
                 
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-get-last-errors" class="anchor" href="classes/kirameki/time/instant.html#method-get-last-errors">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
+                    static
                   function
                 </span>
-                modify():
+                <span class="name">
+                    getLastErrors():
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       mixed
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
+              <div class="comment">
                 
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-format" class="anchor" href="classes/kirameki/time/instant.html#method-format">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                   function
                 </span>
-                add():
+                <span class="name">
+                  <span class="method-name-start">format(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                          </span>
+                        <var>$format</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       mixed
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
+              <div class="comment">
                 
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-get-timezone" class="anchor" href="classes/kirameki/time/instant.html#method-get-timezone">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                   function
                 </span>
-                sub():
+                <span class="name">
+                    getTimezone():
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       mixed
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
+              <div class="comment">
                 
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-get-offset" class="anchor" href="classes/kirameki/time/instant.html#method-get-offset">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                   function
                 </span>
-                setTimezone():
+                <span class="name">
+                    getOffset():
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       mixed
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
+              <div class="comment">
                 
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-get-timestamp" class="anchor" href="classes/kirameki/time/instant.html#method-get-timestamp">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                   function
                 </span>
-                setTime():
+                <span class="name">
+                    getTimestamp():
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       mixed
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
+              <div class="comment">
                 
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-get-microsecond" class="anchor" href="classes/kirameki/time/instant.html#method-get-microsecond">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                   function
                 </span>
-                setDate():
+                <span class="name">
+                    getMicrosecond():
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-diff" class="anchor" href="classes/kirameki/time/instant.html#method-diff">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">diff(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.datetimeinterface.php" class="external-link" target="_blank">
+        DateTimeInterface
+      </a>
+  </span>
+                          </span>
+                        <var>$targetObject</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                          </span>
+                        <var>$absolute</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-bool">false</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
       mixed
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
+              <div class="comment">
                 
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-modify" class="anchor" href="classes/kirameki/time/instant.html#method-modify">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                   function
                 </span>
-                setISODate():
+                <span class="name">
+                  <span class="method-name-start">modify(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                          </span>
+                        <var>$modifier</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       mixed
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
+              <div class="comment">
                 
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-add" class="anchor" href="classes/kirameki/time/instant.html#method-add">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                   function
                 </span>
-                setTimestamp():
+                <span class="name">
+                  <span class="method-name-start">add(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.dateinterval.php" class="external-link" target="_blank">
+        DateInterval
+      </a>
+  </span>
+                          </span>
+                        <var>$interval</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       mixed
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
+              <div class="comment">
                 
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-sub" class="anchor" href="classes/kirameki/time/instant.html#method-sub">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                   function
                 </span>
-                setMicrosecond():
+                <span class="name">
+                  <span class="method-name-start">sub(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.dateinterval.php" class="external-link" target="_blank">
+        DateInterval
+      </a>
+  </span>
+                          </span>
+                        <var>$interval</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-set-timezone" class="anchor" href="classes/kirameki/time/instant.html#method-set-timezone">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">setTimezone(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.datetimezone.php" class="external-link" target="_blank">
+        DateTimeZone
+      </a>
+  </span>
+                          </span>
+                        <var>$timezone</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-set-time" class="anchor" href="classes/kirameki/time/instant.html#method-set-time">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">setTime(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$hour</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$minute</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$second</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-default">0</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$microsecond</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-default">0</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-set-date" class="anchor" href="classes/kirameki/time/instant.html#method-set-date">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">setDate(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$year</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$month</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$day</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-set-iso-date" class="anchor" href="classes/kirameki/time/instant.html#method-set-iso-date">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">setISODate(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$year</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$week</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$dayOfWeek</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-default">1</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-set-timestamp" class="anchor" href="classes/kirameki/time/instant.html#method-set-timestamp">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">setTimestamp(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$timestamp</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-set-microsecond" class="anchor" href="classes/kirameki/time/instant.html#method-set-microsecond">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">setMicrosecond(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$microsecond</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
       static
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
+              <div class="comment">
                 
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-create-from-mutable" class="anchor" href="classes/kirameki/time/instant.html#method-create-from-mutable">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                     static
                   function
                 </span>
-                createFromMutable():
+                <span class="name">
+                  <span class="method-name-start">createFromMutable(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.datetime.php" class="external-link" target="_blank">
+        DateTime
+      </a>
+  </span>
+                          </span>
+                        <var>$object</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       mixed
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
+              <div class="comment">
                 
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-create-from-interface" class="anchor" href="classes/kirameki/time/instant.html#method-create-from-interface">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                     static
                   function
                 </span>
-                createFromInterface():
+                <span class="name">
+                  <span class="method-name-start">createFromInterface(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.datetimeinterface.php" class="external-link" target="_blank">
+        DateTimeInterface
+      </a>
+  </span>
+                          </span>
+                        <var>$object</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
-    <span class="no-link">
-      DateTimeImmutable
-    </span>
+  <span class="type">
+      <a href="https://www.php.net/manual/class.datetimeimmutable.php" class="external-link" target="_blank">
+        DateTimeImmutable
+      </a>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@inheritDoc</span> </div>
+              <div class="comment">
+                
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-now" class="anchor" href="classes/kirameki/time/instant.html#method-now">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                     static
                   function
                 </span>
-                now():
+                <span class="name">
+                    now():
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       static
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
+              <div class="comment">
+                
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-create-from-format-compat" class="anchor" href="classes/kirameki/time/instant.html#method-create-from-format-compat">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                     static
                   function
                 </span>
-                createFromFormatCompat():
+                <span class="name">
+                  <span class="method-name-start">createFromFormatCompat(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                          </span>
+                        <var>$format</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                          </span>
+                        <var>$datetime</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.datetimezone.php" class="external-link" target="_blank">
+        DateTimeZone
+      </a>
+  </span>
+                          </span>
+                        <var>$timezone</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       static
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$format</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$datetime</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(DateTimeZone|null)</span> <span class="phpdoc-var-name">$timezone</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@throws</span> <span class="phpdoc-type">InvalidFormatException</span></div>
+              <div class="comment">
+                
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-throw-last-error" class="anchor" href="classes/kirameki/time/instant.html#method-throw-last-error">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   protected
                     static
                   function
                 </span>
-                throwLastError():
+                <span class="name">
+                  <span class="method-name-start">throwLastError(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      array
+    </span>
+  </span>
+                          </span>
+                        <var>$errors</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                          </span>
+                        <var>$datetime</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       never
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">array{errors: list&lt;string&gt;, warnings: list&lt;string&gt;}</span> <span class="phpdoc-var-name">$errors</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$datetime</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">never</span></div>
+              <div class="comment">
+                
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-get-year" class="anchor" href="classes/kirameki/time/instant.html#method-get-year">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                   function
                 </span>
-                getYear():
+                <span class="name">
+                    getYear():
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       int
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">int</span></div>
+              <div class="comment">
+                
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-get-month" class="anchor" href="classes/kirameki/time/instant.html#method-get-month">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                   function
                 </span>
-                getMonth():
+                <span class="name">
+                    getMonth():
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       int
     </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link named-var">
+      1
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link named-var">
+      12
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">int&lt;1, 12&gt;</span></div>
+              <div class="comment">
+                
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-get-day" class="anchor" href="classes/kirameki/time/instant.html#method-get-day">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                   function
                 </span>
-                getDay():
+                <span class="name">
+                    getDay():
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       int
     </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link named-var">
+      1
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link named-var">
+      31
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">int&lt;1, 31&gt;</span></div>
+              <div class="comment">
+                
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-get-hours" class="anchor" href="classes/kirameki/time/instant.html#method-get-hours">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                   function
                 </span>
-                getHours():
+                <span class="name">
+                    getHours():
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       int
     </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link named-var">
+      0
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link named-var">
+      23
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">int&lt;0, 23&gt;</span></div>
+              <div class="comment">
+                
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-get-minutes" class="anchor" href="classes/kirameki/time/instant.html#method-get-minutes">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                   function
                 </span>
-                getMinutes():
+                <span class="name">
+                    getMinutes():
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       int
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Returns minutes (0-59)</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">int</span></div>
+              <div class="comment">
+                <p>Returns minutes (0-59)</p>
+
+
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-get-seconds" class="anchor" href="classes/kirameki/time/instant.html#method-get-seconds">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                   function
                 </span>
-                getSeconds():
+                <span class="name">
+                    getSeconds():
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       float
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">float</span></div>
+              <div class="comment">
+                
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-set" class="anchor" href="classes/kirameki/time/instant.html#method-set">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                   function
                 </span>
-                set():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|null)</span> <span class="phpdoc-var-name">$years</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|null)</span> <span class="phpdoc-var-name">$months</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|null)</span> <span class="phpdoc-var-name">$days</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|null)</span> <span class="phpdoc-var-name">$hours</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|null)</span> <span class="phpdoc-var-name">$minutes</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(float|null)</span> <span class="phpdoc-var-name">$seconds</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                shift():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|null)</span> <span class="phpdoc-var-name">$years</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|null)</span> <span class="phpdoc-var-name">$months</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|null)</span> <span class="phpdoc-var-name">$days</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|null)</span> <span class="phpdoc-var-name">$hours</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|null)</span> <span class="phpdoc-var-name">$minutes</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(float|null)</span> <span class="phpdoc-var-name">$seconds</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                addYears():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$amount</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                addMonths():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$amount</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$overflow</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                addDays():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$amount</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                addHours():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$amount</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                addMinutes():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$amount</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                addSeconds():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|float)</span> <span class="phpdoc-var-name">$amount</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                subtractYears():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$amount</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                subtractMonths():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$amount</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$overflow</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                subtractDays():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$amount</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                subtractHours():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$amount</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                subtractMinutes():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$amount</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                subtractSeconds():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|float)</span> <span class="phpdoc-var-name">$amount</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                addUnit():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Unit</span> <span class="phpdoc-var-name">$unit</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|float)</span> <span class="phpdoc-var-name">$amount</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                addUnitWithClamping():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Unit</span> <span class="phpdoc-var-name">$unit</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|float)</span> <span class="phpdoc-var-name">$amount</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Unit</span> <span class="phpdoc-var-name">$clamp</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                subtractUnit():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Unit</span> <span class="phpdoc-var-name">$unit</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|float)</span> <span class="phpdoc-var-name">$amount</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                subtractUnitWithClamping():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Unit</span> <span class="phpdoc-var-name">$unit</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|float)</span> <span class="phpdoc-var-name">$amount</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Unit</span> <span class="phpdoc-var-name">$clamp</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                toStartOfUnit():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Unit</span> <span class="phpdoc-var-name">$unit</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                toEndOfUnit():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Unit</span> <span class="phpdoc-var-name">$unit</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                toStartOfYear():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                toEndOfYear():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                toStartOfMonth():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                toEndOfMonth():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                toStartOfDay():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                toEndOfDay():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                toStartOfHour():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                toEndOfHour():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                toStartOfMinute():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                toEndOfMinute():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                toStartOfSecond():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                toEndOfSecond():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                clamp():
-                <span class="return">
-    <span class="no-link">
-      static
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(static|null)</span> <span class="phpdoc-var-name">$lower</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(static|null)</span> <span class="phpdoc-var-name">$upper</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">static</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                between():
-                <span class="return">
-    <span class="no-link">
-      bool
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">static</span> <span class="phpdoc-var-name">$min</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">static</span> <span class="phpdoc-var-name">$max</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                isPast():
-                <span class="return">
-    <span class="no-link">
-      bool
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(static|null)</span> <span class="phpdoc-var-name">$context</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                isFuture():
-                <span class="return">
-    <span class="no-link">
-      bool
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(static|null)</span> <span class="phpdoc-var-name">$context</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                getDaysInMonth():
-                <span class="return">
-    <span class="no-link">
+                <span class="name">
+                  <span class="method-name-start">set(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
       int
     </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">int</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                getDayOfYear():
-                <span class="return">
-    <span class="no-link">
+  </span>
+                          </span>
+                        <var>$years</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
       int
     </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Returns the day of the year (1-366)</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">int</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                isLeapYear():
-                <span class="return">
-    <span class="no-link">
-      bool
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                jsonSerialize():
-                <span class="return">
-    <span class="no-link">
-      string
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@inheritDoc</span> </div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                toDateTimeImmutable():
-                <span class="return">
-    <span class="no-link">
-      DateTimeImmutable
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">DateTimeImmutable</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                toInt():
-                <span class="return">
-    <span class="no-link">
+  </span>
+                          </span>
+                        <var>$months</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
       int
     </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">int</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                toFloat():
-                <span class="return">
-    <span class="no-link">
+  </span>
+                          </span>
+                        <var>$days</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$hours</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$minutes</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
       float
     </span>
+  </span>
+                          </span>
+                        <var>$seconds</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">float</span></div>
+              <div class="comment">
+                
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-shift" class="anchor" href="classes/kirameki/time/instant.html#method-shift">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                   function
                 </span>
-                toString():
-                <span class="return">
-    <span class="no-link">
-      string
+                <span class="name">
+                  <span class="method-name-start">shift(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
     </span>
+  </span>
+                          </span>
+                        <var>$years</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$months</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$days</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$hours</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$minutes</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type">
+    <span class="no-link named-var">
+      float
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+                          </span>
+                        <var>$seconds</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span></div>
+              <div class="comment">
+                
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-add-years" class="anchor" href="classes/kirameki/time/instant.html#method-add-years">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                   function
                 </span>
-                __toString():
-                <span class="return">
-    <span class="no-link">
-      string
+                <span class="name">
+                  <span class="method-name-start">addYears(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
     </span>
+  </span>
+                          </span>
+                        <var>$amount</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@inheritDoc</span> </div>
+              <div class="comment">
+                
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-add-months" class="anchor" href="classes/kirameki/time/instant.html#method-add-months">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">addMonths(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$amount</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                          </span>
+                        <var>$overflow</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-bool">false</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-add-days" class="anchor" href="classes/kirameki/time/instant.html#method-add-days">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">addDays(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$amount</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-add-hours" class="anchor" href="classes/kirameki/time/instant.html#method-add-hours">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">addHours(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$amount</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-add-minutes" class="anchor" href="classes/kirameki/time/instant.html#method-add-minutes">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">addMinutes(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$amount</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-add-seconds" class="anchor" href="classes/kirameki/time/instant.html#method-add-seconds">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">addSeconds(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type">
+    <span class="no-link named-var">
+      float
+    </span>
+  </span>
+
+                          </span>
+                        <var>$amount</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-subtract-years" class="anchor" href="classes/kirameki/time/instant.html#method-subtract-years">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">subtractYears(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$amount</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-subtract-months" class="anchor" href="classes/kirameki/time/instant.html#method-subtract-months">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">subtractMonths(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$amount</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                          </span>
+                        <var>$overflow</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-bool">false</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-subtract-days" class="anchor" href="classes/kirameki/time/instant.html#method-subtract-days">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">subtractDays(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$amount</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-subtract-hours" class="anchor" href="classes/kirameki/time/instant.html#method-subtract-hours">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">subtractHours(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$amount</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-subtract-minutes" class="anchor" href="classes/kirameki/time/instant.html#method-subtract-minutes">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">subtractMinutes(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$amount</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-subtract-seconds" class="anchor" href="classes/kirameki/time/instant.html#method-subtract-seconds">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">subtractSeconds(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type">
+    <span class="no-link named-var">
+      float
+    </span>
+  </span>
+
+                          </span>
+                        <var>$amount</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-add-unit" class="anchor" href="classes/kirameki/time/instant.html#method-add-unit">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">addUnit(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <span class="no-link structure-name">
+        Kirameki\Time\Unit
+      </span>
+  </span>
+                          </span>
+                        <var>$unit</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type">
+    <span class="no-link named-var">
+      float
+    </span>
+  </span>
+
+                          </span>
+                        <var>$amount</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-add-unit-with-clamping" class="anchor" href="classes/kirameki/time/instant.html#method-add-unit-with-clamping">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">addUnitWithClamping(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <span class="no-link structure-name">
+        Kirameki\Time\Unit
+      </span>
+  </span>
+                          </span>
+                        <var>$unit</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type">
+    <span class="no-link named-var">
+      float
+    </span>
+  </span>
+
+                          </span>
+                        <var>$amount</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <span class="no-link structure-name">
+        Kirameki\Time\Unit
+      </span>
+  </span>
+                          </span>
+                        <var>$clamp</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-subtract-unit" class="anchor" href="classes/kirameki/time/instant.html#method-subtract-unit">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">subtractUnit(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <span class="no-link structure-name">
+        Kirameki\Time\Unit
+      </span>
+  </span>
+                          </span>
+                        <var>$unit</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type">
+    <span class="no-link named-var">
+      float
+    </span>
+  </span>
+
+                          </span>
+                        <var>$amount</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-subtract-unit-with-clamping" class="anchor" href="classes/kirameki/time/instant.html#method-subtract-unit-with-clamping">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">subtractUnitWithClamping(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <span class="no-link structure-name">
+        Kirameki\Time\Unit
+      </span>
+  </span>
+                          </span>
+                        <var>$unit</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type">
+    <span class="no-link named-var">
+      float
+    </span>
+  </span>
+
+                          </span>
+                        <var>$amount</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <span class="no-link structure-name">
+        Kirameki\Time\Unit
+      </span>
+  </span>
+                          </span>
+                        <var>$clamp</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-to-start-of-unit" class="anchor" href="classes/kirameki/time/instant.html#method-to-start-of-unit">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">toStartOfUnit(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <span class="no-link structure-name">
+        Kirameki\Time\Unit
+      </span>
+  </span>
+                          </span>
+                        <var>$unit</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-to-end-of-unit" class="anchor" href="classes/kirameki/time/instant.html#method-to-end-of-unit">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">toEndOfUnit(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <span class="no-link structure-name">
+        Kirameki\Time\Unit
+      </span>
+  </span>
+                          </span>
+                        <var>$unit</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-to-start-of-year" class="anchor" href="classes/kirameki/time/instant.html#method-to-start-of-year">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                    toStartOfYear():
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-to-end-of-year" class="anchor" href="classes/kirameki/time/instant.html#method-to-end-of-year">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                    toEndOfYear():
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-to-start-of-month" class="anchor" href="classes/kirameki/time/instant.html#method-to-start-of-month">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                    toStartOfMonth():
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-to-end-of-month" class="anchor" href="classes/kirameki/time/instant.html#method-to-end-of-month">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                    toEndOfMonth():
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-to-start-of-day" class="anchor" href="classes/kirameki/time/instant.html#method-to-start-of-day">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                    toStartOfDay():
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-to-end-of-day" class="anchor" href="classes/kirameki/time/instant.html#method-to-end-of-day">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                    toEndOfDay():
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-to-start-of-hour" class="anchor" href="classes/kirameki/time/instant.html#method-to-start-of-hour">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                    toStartOfHour():
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-to-end-of-hour" class="anchor" href="classes/kirameki/time/instant.html#method-to-end-of-hour">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                    toEndOfHour():
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-to-start-of-minute" class="anchor" href="classes/kirameki/time/instant.html#method-to-start-of-minute">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                    toStartOfMinute():
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-to-end-of-minute" class="anchor" href="classes/kirameki/time/instant.html#method-to-end-of-minute">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                    toEndOfMinute():
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-to-start-of-second" class="anchor" href="classes/kirameki/time/instant.html#method-to-start-of-second">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                    toStartOfSecond():
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-to-end-of-second" class="anchor" href="classes/kirameki/time/instant.html#method-to-end-of-second">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                    toEndOfSecond():
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-clamp" class="anchor" href="classes/kirameki/time/instant.html#method-clamp">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">clamp(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      self
+    </span>
+  </span>
+                          </span>
+                        <var>$lower</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      self
+    </span>
+  </span>
+                          </span>
+                        <var>$upper</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-between" class="anchor" href="classes/kirameki/time/instant.html#method-between">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">between(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      self
+    </span>
+  </span>
+                          </span>
+                        <var>$min</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      self
+    </span>
+  </span>
+                          </span>
+                        <var>$max</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-is-past" class="anchor" href="classes/kirameki/time/instant.html#method-is-past">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">isPast(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      self
+    </span>
+  </span>
+                          </span>
+                        <var>$context</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-is-future" class="anchor" href="classes/kirameki/time/instant.html#method-is-future">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">isFuture(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      self
+    </span>
+  </span>
+                          </span>
+                        <var>$context</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-get-days-in-month" class="anchor" href="classes/kirameki/time/instant.html#method-get-days-in-month">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                    getDaysInMonth():
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-get-day-of-year" class="anchor" href="classes/kirameki/time/instant.html#method-get-day-of-year">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                    getDayOfYear():
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                <p>Returns the day of the year (1-366)</p>
+
+
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-is-leap-year" class="anchor" href="classes/kirameki/time/instant.html#method-is-leap-year">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                    isLeapYear():
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-json-serialize" class="anchor" href="classes/kirameki/time/instant.html#method-json-serialize">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                    jsonSerialize():
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-to-date-time-immutable" class="anchor" href="classes/kirameki/time/instant.html#method-to-date-time-immutable">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                    toDateTimeImmutable():
+                <span class="return">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.datetimeimmutable.php" class="external-link" target="_blank">
+        DateTimeImmutable
+      </a>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-to-int" class="anchor" href="classes/kirameki/time/instant.html#method-to-int">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                    toInt():
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-to-float" class="anchor" href="classes/kirameki/time/instant.html#method-to-float">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                    toFloat():
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      float
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-to-string" class="anchor" href="classes/kirameki/time/instant.html#method-to-string">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                    toString():
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method---to-string" class="anchor" href="classes/kirameki/time/instant.html#method---to-string">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                    __toString():
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-ensure-positive" class="anchor" href="classes/kirameki/time/instant.html#method-ensure-positive">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   protected
                     static
                   function
                 </span>
-                ensurePositive():
-                <span class="return">
-    <span class="no-link">
+                <span class="name">
+                  <span class="method-name-start">ensurePositive(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
       int
     </span>
+  </span>
     <span class="delimiter">|</span>
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       float
     </span>
+  </span>
 
+                          </span>
+                        <var>$amount</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link template-name">
+      TNum
+    </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TNum</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">TNum</span> <span class="phpdoc-var-name">$amount</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">TNum</span></div>
+              <div class="comment">
+                
               </div>
             </li>
         </ul>

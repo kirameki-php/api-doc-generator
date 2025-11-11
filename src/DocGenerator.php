@@ -22,6 +22,7 @@ use UnitEnum;
 use function array_flip;
 use function class_exists;
 use function dirname;
+use function dump;
 use function enum_exists;
 use function file_get_contents;
 use function file_put_contents;
@@ -64,7 +65,7 @@ class DocGenerator
                 $reflection = $this->getClassIfExists($storable, $path, $namespace);
                 if ($reflection !== null &&
                     (
-                        //true ||
+                        true ||
                         $reflection->getShortName() === 'Map' ||
                         $reflection->getShortName() === 'Enumerator'
                     )
@@ -130,10 +131,10 @@ class DocGenerator
             ->toString();
 
        return match(true) {
+            enum_exists($classString) => new ReflectionEnum($classString),
             class_exists($classString),
             interface_exists($classString),
             trait_exists($classString) => new ReflectionClass($classString),
-            enum_exists($classString) => new ReflectionEnum($classString),
             default => null,
        };
     }

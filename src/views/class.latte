@@ -86,10 +86,10 @@
                 {if $value instanceof \UnitEnum}
                   <span class="value value-enum">{$value::class}::{$value->name}</span>
                 {elseif is_array($value)}
-                  <div class="value value-array">
+                  <span class="value value-array">
                     [
-                    <ul>
                       {foreach $value as $key => $item}
+                        {first}<ul>{/first}
                         <li>
                           {if is_string($key)}
                             "<span class="array-key-string">{$key}</span>" =>
@@ -102,9 +102,10 @@
                             <span class="array-value-default">{$item}</span>
                           {/if}
                         </li>
+                        {last}</ul>{/last}
                       {/foreach}
                     ]
-                  </div>
+                  </span>
                 {elseif is_string($value)}
                   <span class="value value-string">"{$value}"</span>
                 {else}
@@ -133,7 +134,7 @@
                   {/if}
                   {$property->visibility->value}
                 </span>
-                <span class="var-type">
+                <span class="types">
                   {include type.latte, type: $property->type}
                 </span>
                 <span class="var-name">${$property->name}</span>
@@ -189,28 +190,30 @@
                           </span>
                         {/if}
                         <var>${$parameter->name}</var>
-                        <span class="default-set">
-                          {if $parameter->hasDefault}
+                        {if $parameter->hasDefault}
+                          <span class="default-set">
                             <span class="assignment">=</span>
                             {if $parameter->defaultConstant}
                               <span class="value value-constant">{$parameter->defaultConstant}</span>
                             {else}
                               {var $defaultValue = $parameter->defaultValue}
-                              {if is_string($defaultValue)}
+                              {if is_object($defaultValue)}
+                                <span class="value value-object">new {get_class($defaultValue)}(...)</span>
+                              {elseif is_string($defaultValue)}
                                 <span class="value value-string">"{$defaultValue}"</span>
                               {elseif is_array($defaultValue)}
                                 <span class="value value-array">[...]</span>
-                              {elseif $defaultValue === null}
-                                <span class="value value-null">null</span>
                               {elseif is_bool($defaultValue)}
                                 <span class="value value-bool">{$defaultValue ? 'true' : 'false'}</span>
+                              {elseif $defaultValue === null}
+                                <span class="value value-null">null</span>
                               {else}
                                 <span class="value value-default">{$defaultValue}</span>
                               {/if}
                             {/if}
-                          {/if}
-                        </span>
-                        {sep}<span class="delimiter">,</span>{/sep}
+                          </span>
+                        {/if}
+                        <span class="delimiter">,</span>
                       </li>
                     {/foreach}
                   </ul>

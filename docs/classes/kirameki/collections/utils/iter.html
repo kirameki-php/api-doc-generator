@@ -38,11 +38,6 @@
         ExponentialBackoff
       </a>
     </li>
-    <li>
-      <a href="classes/kirameki/backoff/jitter-strategy.html" title="Kirameki\Backoff\JitterStrategy">
-        JitterStrategy
-      </a>
-    </li>
 </ul>
     </li>
     <li>
@@ -184,11 +179,6 @@
     <li>
       <a href="classes/kirameki/collections/range.html" title="Kirameki\Collections\Range">
         Range
-      </a>
-    </li>
-    <li>
-      <a href="classes/kirameki/collections/sort-order.html" title="Kirameki\Collections\SortOrder">
-        SortOrder
       </a>
     </li>
     <li>
@@ -354,18 +344,6 @@
 <ul>
     <li>
       <div class="sidebar-folder">
-        Configs
-      </div>
-<ul>
-    <li>
-      <a href="classes/kirameki/dumper/configs/debug-info.html" title="Kirameki\Dumper\Configs\DebugInfo">
-        DebugInfo
-      </a>
-    </li>
-</ul>
-    </li>
-    <li>
-      <div class="sidebar-folder">
         Decorators
       </div>
 <ul>
@@ -484,11 +462,6 @@
       </a>
     </li>
     <li>
-      <a href="classes/kirameki/dumper/placeholder.html" title="Kirameki\Dumper\Placeholder">
-        Placeholder
-      </a>
-    </li>
-    <li>
       <a href="classes/kirameki/dumper/writer.html" title="Kirameki\Dumper\Writer">
         Writer
       </a>
@@ -539,11 +512,6 @@
         Http
       </div>
 <ul>
-    <li>
-      <a href="classes/kirameki/http/http-method.html" title="Kirameki\Http\HttpMethod">
-        HttpMethod
-      </a>
-    </li>
     <li>
       <a href="classes/kirameki/http/status-code.html" title="Kirameki\Http\StatusCode">
         StatusCode
@@ -650,11 +618,6 @@
     <li>
       <a href="classes/kirameki/storage/file.html" title="Kirameki\Storage\File">
         File
-      </a>
-    </li>
-    <li>
-      <a href="classes/kirameki/storage/file-type.html" title="Kirameki\Storage\FileType">
-        FileType
       </a>
     </li>
     <li>
@@ -864,11 +827,6 @@
 </ul>
     </li>
     <li>
-      <a href="classes/kirameki/time/day-of-week.html" title="Kirameki\Time\DayOfWeek">
-        DayOfWeek
-      </a>
-    </li>
-    <li>
       <a href="classes/kirameki/time/instant.html" title="Kirameki\Time\Instant">
         Instant
       </a>
@@ -876,11 +834,6 @@
     <li>
       <a href="classes/kirameki/time/time.html" title="Kirameki\Time\Time">
         Time
-      </a>
-    </li>
-    <li>
-      <a href="classes/kirameki/time/unit.html" title="Kirameki\Time\Unit">
-        Unit
       </a>
     </li>
 </ul>
@@ -906,553 +859,1900 @@
     </div>
   </div>
   <div class="details">
-      <div class="methods">
+      <div class="methods-wrapper">
         <h3>Methods</h3>
-        <ul>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+        <ul class="methods">
+            <li class="method">
+              <a id="method-chunk" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-chunk">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                     static
                   function
                 </span>
-                chunk():
-                <span class="return">
-    <span class="no-link">
-      Generator
+                <span class="name">
+                  <span class="method-name-start">chunk(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
     </span>
+  </span>
+                          </span>
+                        <var>$iterable</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$size</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                          </span>
+                        <var>$reindex</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-bool">false</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
+        Generator
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link named-var">
+      array
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TKey
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Creates a Generator which chunks elements into given size and passes it to the Generator.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TKey, TValue&gt;</span> <span class="phpdoc-var-name">$iterable</span><div class="phpdoc-description"><p>Iterable to be traversed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$size</span><div class="phpdoc-description"><p>Size of each chunk. Must be &gt;= 1.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$reindex</span><div class="phpdoc-description"><p>If set to <strong>true</strong> the array will be re-indexed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Generator&lt;int, array&lt;TKey, TValue&gt;&gt;</span></div>
+              <div class="comment">
+                <p>Creates a Generator which chunks elements into given size and passes it to the Generator.</p>
+
+
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-collect" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-collect">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                     static
                   function
                 </span>
-                collect():
-                <span class="return">
-    <span class="no-link">
-      Generator
+                <span class="name">
+                  <span class="method-name-start">collect(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
     </span>
+  </span>
+                          </span>
+                        <var>$iterable</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$callback</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
+        Generator
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TMapValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Creates a Generator that will send the result of the Generator returned by the <code>$callback</code>.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TMapValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TKey, TValue&gt;</span> <span class="phpdoc-var-name">$iterable</span><div class="phpdoc-description"><p>Iterable to be traversed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Closure(TValue, TKey): Generator&lt;int, TMapValue&gt;</span> <span class="phpdoc-var-name">$callback</span><div class="phpdoc-description"><p>Closure that will be called for each key/value. The returned value will be yielded.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Generator&lt;int, TMapValue&gt;</span></div>
+              <div class="comment">
+                <p>Creates a Generator that will send the result of the Generator returned by the <code>$callback</code>.</p>
+
+
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-drop-first" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-drop-first">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                     static
                   function
                 </span>
-                dropFirst():
-                <span class="return">
-    <span class="no-link">
-      Generator
+                <span class="name">
+                  <span class="method-name-start">dropFirst(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
     </span>
+  </span>
+                          </span>
+                        <var>$iterable</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$amount</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                          </span>
+                        <var>$reindex</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-bool">false</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
+        Generator
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TKey
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Creates a Generator which iterates after the given amount.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TKey, TValue&gt;</span> <span class="phpdoc-var-name">$iterable</span><div class="phpdoc-description"><p>Iterable to be traversed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$amount</span><div class="phpdoc-description"><p>Amount of elements to drop from the front. Must be &gt;= 0.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$reindex</span><div class="phpdoc-description"><p>If set to <strong>true</strong> the array will be re-indexed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Generator&lt;TKey, TValue&gt;</span></div>
+              <div class="comment">
+                <p>Creates a Generator which iterates after the given amount.</p>
+
+
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-drop-if" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-drop-if">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                     static
                   function
                 </span>
-                dropIf():
-                <span class="return">
-    <span class="no-link">
-      Generator
+                <span class="name">
+                  <span class="method-name-start">dropIf(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
     </span>
+  </span>
+                          </span>
+                        <var>$iterable</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                          </span>
+                        <var>$reindex</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-bool">false</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
+        Generator
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TKey
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Creates a Generator that will send the key/value to the generator if the condition is <strong>false</strong>.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TKey, TValue&gt;</span> <span class="phpdoc-var-name">$iterable</span><div class="phpdoc-description"><p>Iterable to be traversed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Closure(TValue, TKey): bool</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>A condition that should return a boolean.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$reindex</span><div class="phpdoc-description"><p>If set to <strong>true</strong> the array will be re-indexed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Generator&lt;TKey, TValue&gt;</span></div>
+              <div class="comment">
+                <p>Creates a Generator that will send the key/value to the generator if the condition is <strong>false</strong>.</p>
+
+
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-drop-until" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-drop-until">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                     static
                   function
                 </span>
-                dropUntil():
-                <span class="return">
-    <span class="no-link">
-      Generator
+                <span class="name">
+                  <span class="method-name-start">dropUntil(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
     </span>
+  </span>
+                          </span>
+                        <var>$iterable</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                          </span>
+                        <var>$reindex</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-bool">false</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
+        Generator
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TKey
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Creates a Generator which iterates and drop values until the condition returns <strong>true</strong>.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TKey, TValue&gt;</span> <span class="phpdoc-var-name">$iterable</span><div class="phpdoc-description"><p>Iterable to be traversed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Closure(TValue, TKey): bool</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>A condition that should return a boolean value.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$reindex</span><div class="phpdoc-description"><p>If set to <strong>true</strong> the array will be re-indexed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Generator&lt;TKey, TValue&gt;</span></div>
+              <div class="comment">
+                <p>Creates a Generator which iterates and drop values until the condition returns <strong>true</strong>.</p>
+
+
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-drop-while" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-drop-while">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                     static
                   function
                 </span>
-                dropWhile():
-                <span class="return">
-    <span class="no-link">
-      Generator
+                <span class="name">
+                  <span class="method-name-start">dropWhile(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
     </span>
+  </span>
+                          </span>
+                        <var>$iterable</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                          </span>
+                        <var>$reindex</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-bool">false</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
+        Generator
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TKey
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Creates a Generator which iterates and drop values while the condition returns <strong>true</strong>.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TKey, TValue&gt;</span> <span class="phpdoc-var-name">$iterable</span><div class="phpdoc-description"><p>Iterable to be traversed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Closure(TValue, TKey): bool</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>A condition that should return a boolean.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$reindex</span><div class="phpdoc-description"><p>If set to <strong>true</strong> the array will be re-indexed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Generator&lt;TKey, TValue&gt;</span></div>
+              <div class="comment">
+                <p>Creates a Generator which iterates and drop values while the condition returns <strong>true</strong>.</p>
+
+
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-each" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-each">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                     static
                   function
                 </span>
-                each():
-                <span class="return">
-    <span class="no-link">
-      Generator
+                <span class="name">
+                  <span class="method-name-start">each(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
     </span>
+  </span>
+                          </span>
+                        <var>$iterable</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$callback</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
+        Generator
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TKey
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Iterates through <code>$iterable</code> and invoke <code>$callback</code> for each element.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TKey, TValue&gt;</span> <span class="phpdoc-var-name">$iterable</span><div class="phpdoc-description"><p>Iterable to be traversed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Closure(TValue, TKey): (mixed | void)</span> <span class="phpdoc-var-name">$callback</span><div class="phpdoc-description"><p>Callback which is called for every element of <code>$iterable</code>.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Generator&lt;TKey, TValue&gt;</span></div>
+              <div class="comment">
+                <p>Iterates through <code>$iterable</code> and invoke <code>$callback</code> for each element.</p>
+
+
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-flat-map" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-flat-map">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                     static
                   function
                 </span>
-                flatMap():
-                <span class="return">
-    <span class="no-link">
-      Generator
+                <span class="name">
+                  <span class="method-name-start">flatMap(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
     </span>
+  </span>
+                          </span>
+                        <var>$iterable</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$callback</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
+        Generator
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TMapValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Creates a Generator that will map and also flatten the result of the callback.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TMapValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TKey, TValue&gt;</span> <span class="phpdoc-var-name">$iterable</span><div class="phpdoc-description"><p>Iterable to be traversed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Closure(TValue, TKey): iterable&lt;int, TMapValue&gt;</span> <span class="phpdoc-var-name">$callback</span><div class="phpdoc-description"><p>Closure that will be called for each key/value. The returned value will be yielded.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Generator&lt;int, TMapValue&gt;</span></div>
+              <div class="comment">
+                <p>Creates a Generator that will map and also flatten the result of the callback.</p>
+
+
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-flatten" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-flatten">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                     static
                   function
                 </span>
-                flatten():
-                <span class="return">
-    <span class="no-link">
-      Generator
+                <span class="name">
+                  <span class="method-name-start">flatten(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
     </span>
+  </span>
+                          </span>
+                        <var>$iterable</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$depth</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-default">1</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
+        Generator
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Creates a Generator that will flatten any iterable value.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TKey, mixed&gt;</span> <span class="phpdoc-var-name">$iterable</span><div class="phpdoc-description"><p>Iterable to be traversed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$depth</span><div class="phpdoc-description"><p>Depth must be &gt;= 1. Default: 1.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Generator&lt;mixed, mixed&gt;</span></div>
+              <div class="comment">
+                <p>Creates a Generator that will flatten any iterable value.</p>
+
+
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-flatten-impl" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-flatten-impl">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   protected
                     static
                   function
                 </span>
-                flattenImpl():
-                <span class="return">
-    <span class="no-link">
-      Generator
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Actual implementation for flatten.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TKey, mixed&gt;</span> <span class="phpdoc-var-name">$iterable</span><div class="phpdoc-description"><p>Iterable to be traversed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$depth</span><div class="phpdoc-description"><p>Depth must be &gt;= 1. Default: 1.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Generator&lt;mixed, mixed&gt;</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                    static
-                  function
-                </span>
-                replace():
-                <span class="return">
-    <span class="no-link">
-      Generator
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Returns an array which contains keys and values from <code>$iterable</code><br />
-but with the <code>$search</code> value replaced with the <code>$replacement</code> value.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TKey, TValue&gt;</span> <span class="phpdoc-var-name">$iterable</span><div class="phpdoc-description"><p>Iterable to be traversed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">TValue</span> <span class="phpdoc-var-name">$search</span><div class="phpdoc-description"><p>The value to replace.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">TValue</span> <span class="phpdoc-var-name">$replacement</span><div class="phpdoc-description"><p>Replacement for the searched value.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(int|null)</span> <span class="phpdoc-var-name">$limit</span><div class="phpdoc-description"><p>[Optional] Sets a limit to number of times a replacement can take place.<br />
-Defaults to <strong>null</strong>.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">&$count</span><div class="phpdoc-description"><p>[Optional][Reference] Sets the number of times replacements occurred.<br />
-Any value previously set will be reset.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Generator&lt;TKey, TValue&gt;</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                    static
-                  function
-                </span>
-                keys():
-                <span class="return">
-    <span class="no-link">
-      Generator
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Creates a Generator that will send the key to the generator as value.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TKey, mixed&gt;</span> <span class="phpdoc-var-name">$iterable</span><div class="phpdoc-description"><p>Iterable to be traversed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Generator&lt;int, TKey&gt;</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                    static
-                  function
-                </span>
-                map():
-                <span class="return">
-    <span class="no-link">
-      Generator
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Creates a Generator that will send the result of the closure as value to the generator.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TMapValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TKey, TValue&gt;</span> <span class="phpdoc-var-name">$iterable</span><div class="phpdoc-description"><p>Iterable to be traversed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Closure(TValue, TKey): TMapValue</span> <span class="phpdoc-var-name">$callback</span><div class="phpdoc-description"><p>Closure which the result will be mapped as value.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Generator&lt;TKey, TMapValue&gt;</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                    static
-                  function
-                </span>
-                mapWithKey():
-                <span class="return">
-    <span class="no-link">
-      Generator
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Creates a Generator that will map and also flatten the result of the callback.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TMapKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TMapValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TKey, TValue&gt;</span> <span class="phpdoc-var-name">$iterable</span><div class="phpdoc-description"><p>Iterable to be traversed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Closure(TValue, TKey): iterable&lt;TMapKey, TMapValue&gt;</span> <span class="phpdoc-var-name">$callback</span><div class="phpdoc-description"><p>Closure that will be called for each key/value. The returned value will be yielded.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Generator&lt;TMapKey, TMapValue&gt;</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                    static
-                  function
-                </span>
-                repeat():
-                <span class="return">
-    <span class="no-link">
-      Generator
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Creates a Generator that will repeat through the iterable for a given amount of times.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TKey, TValue&gt;</span> <span class="phpdoc-var-name">$iterable</span><div class="phpdoc-description"><p>Iterable to be traversed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$times</span><div class="phpdoc-description"><p>Amount of times the iterable will be repeated.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Generator&lt;TKey, TValue&gt;</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                    static
-                  function
-                </span>
-                slice():
-                <span class="return">
-    <span class="no-link">
-      Generator
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Creates a Generator that will iterate starting from the offset up to the given length.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TKey, TValue&gt;</span> <span class="phpdoc-var-name">$iterable</span><div class="phpdoc-description"><p>Iterable to be traversed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$offset</span><div class="phpdoc-description"><p>If offset is non-negative, the sequence will start at that offset.<br />
-If offset is negative, the sequence will start that far from the end.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$length</span><div class="phpdoc-description"><p>If length is given and is positive, then the sequence will have up to that many elements in it.<br />
-If the iterable is shorter than the length, then only the available array elements will be present.<br />
-If length is given and is negative then the sequence will stop that many elements from the end.<br />
-If it is omitted, then the sequence will have everything from offset up until the end.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$reindex</span><div class="phpdoc-description"><p>If set to <strong>true</strong> the array will be re-indexed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Generator&lt;TKey, TValue&gt;</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                    static
-                  function
-                </span>
-                takeFirst():
-                <span class="return">
-    <span class="no-link">
-      Generator
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Creates a Generator which takes the given amount of values.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TKey, TValue&gt;</span> <span class="phpdoc-var-name">$iterable</span><div class="phpdoc-description"><p>$iterable Iterable to be traversed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$amount</span><div class="phpdoc-description"><p>Amount of elements to take. Must be &gt;= 0.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Generator&lt;TKey, TValue&gt;</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                    static
-                  function
-                </span>
-                slide():
-                <span class="return">
-    <span class="no-link">
-      Generator
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Creates a Generator that yields sub-slices of <code>$size</code>.<br />
-Also known as sliding window.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TKey, TValue&gt;</span> <span class="phpdoc-var-name">$iterable</span><div class="phpdoc-description"><p>Iterable to be traversed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$size</span><div class="phpdoc-description"><p>Size of the window. Must be &gt;= 1.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$reindex</span><div class="phpdoc-description"><p>If set to <strong>true</strong> the array will be re-indexed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Generator&lt;int, array&lt;TKey, TValue&gt;&gt;</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                    static
-                  function
-                </span>
-                takeIf():
-                <span class="return">
-    <span class="no-link">
-      Generator
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Creates a Generator that will send the key/value to the generator if the condition is <strong>true</strong>.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TKey, TValue&gt;</span> <span class="phpdoc-var-name">$iterable</span><div class="phpdoc-description"><p>Iterable to be traversed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Closure(TValue, TKey): bool</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>A condition that should return a boolean.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$reindex</span><div class="phpdoc-description"><p>[Optional] Result will be re-indexed if <strong>true</strong>.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Generator&lt;TKey, TValue&gt;</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                    static
-                  function
-                </span>
-                takeInstanceOf():
-                <span class="return">
-    <span class="no-link">
-      Generator
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Iterates over each element in $iterable and takes only the elements that are instances of the given class.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TClass</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TKey, mixed&gt;</span> <span class="phpdoc-var-name">$iterable</span><div class="phpdoc-description"><p>Iterable to be traversed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">class-string&lt;TClass&gt;</span> <span class="phpdoc-var-name">$class</span><div class="phpdoc-description"><p>Class to be checked with <code>instanceof</code>.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$reindex</span><div class="phpdoc-description"><p>[Optional] Result will be re-indexed if <strong>true</strong>.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Generator&lt;TKey, TClass&gt;</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                    static
-                  function
-                </span>
-                takeUntil():
-                <span class="return">
-    <span class="no-link">
-      Generator
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Creates a Generator which iterates and sends key/value to the generator until the condition returns <strong>true</strong>.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TKey, TValue&gt;</span> <span class="phpdoc-var-name">$iterable</span><div class="phpdoc-description"><p>Iterable to be traversed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Closure(TValue, TKey): bool</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>A break condition that should return false when loop should stop.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Generator&lt;TKey, TValue&gt;</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                    static
-                  function
-                </span>
-                takeWhile():
-                <span class="return">
-    <span class="no-link">
-      Generator
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Creates a Generator which iterates and sends key/value to the generator while the condition returns <strong>true</strong>.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TKey, TValue&gt;</span> <span class="phpdoc-var-name">$iterable</span><div class="phpdoc-description"><p>Iterable to be traversed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Closure(TValue, TKey): bool</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>A condition that should return a boolean value.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Generator&lt;TKey, TValue&gt;</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                    static
-                  function
-                </span>
-                values():
-                <span class="return">
-    <span class="no-link">
-      Generator
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Creates a Generator that will send only the value to the generator.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">iterable&lt;TKey, TValue&gt;</span> <span class="phpdoc-var-name">$iterable</span><div class="phpdoc-description"><p>Iterable to be traversed.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Generator&lt;int, TValue&gt;</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  private
-                    static
-                  function
-                </span>
-                verifyBool():
-                <span class="return">
-    <span class="no-link">
-      bool
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Invoke the condition closure and make sure that it returns a boolean value.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Closure(TValue, TKey): bool</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>The condition that returns a boolean value.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">TKey</span> <span class="phpdoc-var-name">$key</span><div class="phpdoc-description"><p>the 2nd argument for the condition closure.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">TValue</span> <span class="phpdoc-var-name">$val</span><div class="phpdoc-description"><p>1st argument for the condition closure.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  private
-                    static
-                  function
-                </span>
-                verifyIterable():
-                <span class="return">
-    <span class="no-link">
+                <span class="name">
+                  <span class="method-name-start">flattenImpl(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
       iterable
     </span>
+  </span>
+                          </span>
+                        <var>$iterable</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$depth</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-default">1</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
+        Generator
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-description"><p>Invoke the condition closure and make sure that it returns an iterable value.</p>
-</div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TMapKey</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@template</span> <span class="phpdoc-type">TMapValue</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">Closure(TValue, TKey): iterable&lt;TMapKey, TMapValue&gt;</span> <span class="phpdoc-var-name">$condition</span><div class="phpdoc-description"><p>The condition that returns a boolean value.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">TKey</span> <span class="phpdoc-var-name">$key</span><div class="phpdoc-description"><p>the 2nd argument for the condition closure.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">TValue</span> <span class="phpdoc-var-name">$val</span><div class="phpdoc-description"><p>1st argument for the condition closure.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">iterable&lt;TMapKey, TMapValue&gt;</span></div>
+              <div class="comment">
+                <p>Actual implementation for flatten.</p>
+
+
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-replace" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-replace">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                    static
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">replace(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  </span>
+                          </span>
+                        <var>$iterable</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                          </span>
+                        <var>$search</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                          </span>
+                        <var>$replacement</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$limit</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          &
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$count</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-default">0</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
+        Generator
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TKey
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                <p>Returns an array which contains keys and values from <code>$iterable</code><br />
+but with the <code>$search</code> value replaced with the <code>$replacement</code> value.</p>
+
+
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-keys" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-keys">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                    static
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">keys(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  </span>
+                          </span>
+                        <var>$iterable</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
+        Generator
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TKey
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                <p>Creates a Generator that will send the key to the generator as value.</p>
+
+
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-map" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-map">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                    static
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">map(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  </span>
+                          </span>
+                        <var>$iterable</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$callback</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
+        Generator
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TKey
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TMapValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                <p>Creates a Generator that will send the result of the closure as value to the generator.</p>
+
+
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-map-with-key" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-map-with-key">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                    static
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">mapWithKey(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  </span>
+                          </span>
+                        <var>$iterable</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$callback</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
+        Generator
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TMapKey
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TMapValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                <p>Creates a Generator that will map and also flatten the result of the callback.</p>
+
+
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-repeat" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-repeat">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                    static
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">repeat(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  </span>
+                          </span>
+                        <var>$iterable</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$times</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
+        Generator
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TKey
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                <p>Creates a Generator that will repeat through the iterable for a given amount of times.</p>
+
+
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-slice" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-slice">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                    static
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">slice(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  </span>
+                          </span>
+                        <var>$iterable</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$offset</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$length</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                              <span class="value value-constant">PHP_INT_MAX</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                          </span>
+                        <var>$reindex</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-bool">false</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
+        Generator
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TKey
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                <p>Creates a Generator that will iterate starting from the offset up to the given length.</p>
+
+
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-take-first" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-take-first">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                    static
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">takeFirst(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  </span>
+                          </span>
+                        <var>$iterable</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$amount</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
+        Generator
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TKey
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                <p>Creates a Generator which takes the given amount of values.</p>
+
+
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-slide" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-slide">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                    static
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">slide(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  </span>
+                          </span>
+                        <var>$iterable</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$size</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                          </span>
+                        <var>$reindex</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-bool">false</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
+        Generator
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link named-var">
+      array
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TKey
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                <p>Creates a Generator that yields sub-slices of <code>$size</code>.<br />
+Also known as sliding window.</p>
+
+
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-take-if" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-take-if">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                    static
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">takeIf(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  </span>
+                          </span>
+                        <var>$iterable</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                          </span>
+                        <var>$reindex</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-bool">false</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
+        Generator
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TKey
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                <p>Creates a Generator that will send the key/value to the generator if the condition is <strong>true</strong>.</p>
+
+
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-take-instance-of" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-take-instance-of">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                    static
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">takeInstanceOf(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  </span>
+                          </span>
+                        <var>$iterable</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                          </span>
+                        <var>$class</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                          </span>
+                        <var>$reindex</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-bool">false</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
+        Generator
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TKey
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TClass
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                <p>Iterates over each element in $iterable and takes only the elements that are instances of the given class.</p>
+
+
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-take-until" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-take-until">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                    static
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">takeUntil(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  </span>
+                          </span>
+                        <var>$iterable</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
+        Generator
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TKey
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                <p>Creates a Generator which iterates and sends key/value to the generator until the condition returns <strong>true</strong>.</p>
+
+
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-take-while" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-take-while">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                    static
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">takeWhile(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  </span>
+                          </span>
+                        <var>$iterable</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
+        Generator
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TKey
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                <p>Creates a Generator which iterates and sends key/value to the generator while the condition returns <strong>true</strong>.</p>
+
+
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-values" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-values">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                    static
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">values(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  </span>
+                          </span>
+                        <var>$iterable</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
+        Generator
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                <p>Creates a Generator that will send only the value to the generator.</p>
+
+
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-verify-bool" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-verify-bool">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  private
+                    static
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">verifyBool(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                          </span>
+                        <var>$key</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                          </span>
+                        <var>$val</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                <p>Invoke the condition closure and make sure that it returns a boolean value.</p>
+
+
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-verify-iterable" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-verify-iterable">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  private
+                    static
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">verifyIterable(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+                          </span>
+                        <var>$condition</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                          </span>
+                        <var>$key</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                          </span>
+                        <var>$val</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TMapKey
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link template-name">
+      TMapValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                <p>Invoke the condition closure and make sure that it returns an iterable value.</p>
+
+
               </div>
             </li>
         </ul>

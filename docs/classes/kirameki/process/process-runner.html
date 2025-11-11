@@ -38,11 +38,6 @@
         ExponentialBackoff
       </a>
     </li>
-    <li>
-      <a href="classes/kirameki/backoff/jitter-strategy.html" title="Kirameki\Backoff\JitterStrategy">
-        JitterStrategy
-      </a>
-    </li>
 </ul>
     </li>
     <li>
@@ -184,11 +179,6 @@
     <li>
       <a href="classes/kirameki/collections/range.html" title="Kirameki\Collections\Range">
         Range
-      </a>
-    </li>
-    <li>
-      <a href="classes/kirameki/collections/sort-order.html" title="Kirameki\Collections\SortOrder">
-        SortOrder
       </a>
     </li>
     <li>
@@ -354,18 +344,6 @@
 <ul>
     <li>
       <div class="sidebar-folder">
-        Configs
-      </div>
-<ul>
-    <li>
-      <a href="classes/kirameki/dumper/configs/debug-info.html" title="Kirameki\Dumper\Configs\DebugInfo">
-        DebugInfo
-      </a>
-    </li>
-</ul>
-    </li>
-    <li>
-      <div class="sidebar-folder">
         Decorators
       </div>
 <ul>
@@ -484,11 +462,6 @@
       </a>
     </li>
     <li>
-      <a href="classes/kirameki/dumper/placeholder.html" title="Kirameki\Dumper\Placeholder">
-        Placeholder
-      </a>
-    </li>
-    <li>
       <a href="classes/kirameki/dumper/writer.html" title="Kirameki\Dumper\Writer">
         Writer
       </a>
@@ -539,11 +512,6 @@
         Http
       </div>
 <ul>
-    <li>
-      <a href="classes/kirameki/http/http-method.html" title="Kirameki\Http\HttpMethod">
-        HttpMethod
-      </a>
-    </li>
     <li>
       <a href="classes/kirameki/http/status-code.html" title="Kirameki\Http\StatusCode">
         StatusCode
@@ -650,11 +618,6 @@
     <li>
       <a href="classes/kirameki/storage/file.html" title="Kirameki\Storage\File">
         File
-      </a>
-    </li>
-    <li>
-      <a href="classes/kirameki/storage/file-type.html" title="Kirameki\Storage\FileType">
-        FileType
       </a>
     </li>
     <li>
@@ -864,11 +827,6 @@
 </ul>
     </li>
     <li>
-      <a href="classes/kirameki/time/day-of-week.html" title="Kirameki\Time\DayOfWeek">
-        DayOfWeek
-      </a>
-    </li>
-    <li>
       <a href="classes/kirameki/time/instant.html" title="Kirameki\Time\Instant">
         Instant
       </a>
@@ -876,11 +834,6 @@
     <li>
       <a href="classes/kirameki/time/time.html" title="Kirameki\Time\Time">
         Time
-      </a>
-    </li>
-    <li>
-      <a href="classes/kirameki/time/unit.html" title="Kirameki\Time\Unit">
-        Unit
       </a>
     </li>
 </ul>
@@ -909,24 +862,27 @@
       implements:
       <ul>
           <li>
-              <a href="https://www.php.net/manual/class.iteratoraggregate.php" class="external-link" target="_blank">
-                IteratorAggregate
-              </a>
-<span class="generics">
-  <span class="brace">&lt;</span>
-    <span class="generic">
-      <span class="name">
-        int
-      </span>
+  <span class="type">
+      <a href="https://www.php.net/manual/class.iteratoraggregate.php" class="external-link" target="_blank">
+        IteratorAggregate
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link named-var">
+      int
     </span>
-    <span class="delimiter">,</span>
-    <span class="generic">
-      <span class="name">
-        string
-      </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link named-var">
+      string
     </span>
+  </span>
 
-  <span class="brace">&gt;</span>
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
           </li>
       </ul>
     </div>
@@ -934,427 +890,834 @@
         <h3>Properties</h3>
         <ul>
             <li>
-              <div class="property-signature">
-                <span class="property-modifiers">
+              <div class="signature">
+                <span class="modifiers">
                   protected
-                  ?Kirameki\Stream\FileStream
                 </span>
-                <span class="property-name">$stdin</span>
+                <span class="types">
+  <span class="type">
+      <span class="no-link structure-name">
+        Kirameki\Stream\FileStream
+      </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+                </span>
+                <span class="var-name">$stdin</span>
               </div>
-              <div class="property-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span>  <span class="phpdoc-type">(FileStream|null)</span></div>
+              <div class="comment">
+                
               </div>
             </li>
             <li>
-              <div class="property-signature">
-                <span class="property-modifiers">
+              <div class="signature">
+                <span class="modifiers">
                   protected
-                  Kirameki\Stream\FileStream
                 </span>
-                <span class="property-name">$stdout</span>
+                <span class="types">
+  <span class="type">
+      <span class="no-link structure-name">
+        Kirameki\Stream\FileStream
+      </span>
+  </span>
+                </span>
+                <span class="var-name">$stdout</span>
               </div>
-              <div class="property-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span>  <span class="phpdoc-type">FileStream</span></div>
+              <div class="comment">
+                
               </div>
             </li>
             <li>
-              <div class="property-signature">
-                <span class="property-modifiers">
+              <div class="signature">
+                <span class="modifiers">
                   protected
-                  Kirameki\Stream\FileStream
                 </span>
-                <span class="property-name">$stderr</span>
+                <span class="types">
+  <span class="type">
+      <span class="no-link structure-name">
+        Kirameki\Stream\FileStream
+      </span>
+  </span>
+                </span>
+                <span class="var-name">$stderr</span>
               </div>
-              <div class="property-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@var</span>  <span class="phpdoc-type">FileStream</span></div>
+              <div class="comment">
+                
               </div>
             </li>
             <li>
-              <div class="property-signature">
-                <span class="property-modifiers">
+              <div class="signature">
+                <span class="modifiers">
                     readonly
                   protected
-                  mixed
                 </span>
-                <span class="property-name">$process</span>
+                <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                </span>
+                <span class="var-name">$process</span>
               </div>
-              <div class="property-comment">
+              <div class="comment">
                 
               </div>
             </li>
             <li>
-              <div class="property-signature">
-                <span class="property-modifiers">
+              <div class="signature">
+                <span class="modifiers">
                   protected
-                  Kirameki\Process\ProcessObserver
                 </span>
-                <span class="property-name">$observer</span>
+                <span class="types">
+  <span class="type">
+      <span class="no-link structure-name">
+        Kirameki\Process\ProcessObserver
+      </span>
+  </span>
+                </span>
+                <span class="var-name">$observer</span>
               </div>
-              <div class="property-comment">
+              <div class="comment">
                 
               </div>
             </li>
             <li>
-              <div class="property-signature">
-                <span class="property-modifiers">
+              <div class="signature">
+                <span class="modifiers">
                     readonly
                   public
-                  Kirameki\Process\ProcessInfo
                 </span>
-                <span class="property-name">$info</span>
+                <span class="types">
+  <span class="type">
+      <span class="no-link structure-name">
+        Kirameki\Process\ProcessInfo
+      </span>
+  </span>
+                </span>
+                <span class="var-name">$info</span>
               </div>
-              <div class="property-comment">
+              <div class="comment">
                 
               </div>
             </li>
             <li>
-              <div class="property-signature">
-                <span class="property-modifiers">
+              <div class="signature">
+                <span class="modifiers">
                     readonly
                   protected
-                  array
                 </span>
-                <span class="property-name">$pipes</span>
+                <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      array
+    </span>
+  </span>
+                </span>
+                <span class="var-name">$pipes</span>
               </div>
-              <div class="property-comment">
+              <div class="comment">
                 
               </div>
             </li>
             <li>
-              <div class="property-signature">
-                <span class="property-modifiers">
+              <div class="signature">
+                <span class="modifiers">
                     readonly
                   protected
-                  ?Kirameki\Event\EventHandler
                 </span>
-                <span class="property-name">$onFinished</span>
+                <span class="types">
+  <span class="type">
+      <span class="no-link structure-name">
+        Kirameki\Event\EventHandler
+      </span>
+  </span>
+                </span>
+                <span class="var-name">$onFinished</span>
               </div>
-              <div class="property-comment">
+              <div class="comment">
                 
               </div>
             </li>
             <li>
-              <div class="property-signature">
-                <span class="property-modifiers">
+              <div class="signature">
+                <span class="modifiers">
                   protected
-                  ?Kirameki\Process\ProcessResult
                 </span>
-                <span class="property-name">$result</span>
+                <span class="types">
+  <span class="type">
+      <span class="no-link structure-name">
+        Kirameki\Process\ProcessResult
+      </span>
+  </span>
+                </span>
+                <span class="var-name">$result</span>
               </div>
-              <div class="property-comment">
+              <div class="comment">
                 
               </div>
             </li>
         </ul>
       </div>
-      <div class="methods">
+      <div class="methods-wrapper">
         <h3>Methods</h3>
-        <ul>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+        <ul class="methods">
+            <li class="method">
+              <a id="method---construct" class="anchor" href="classes/kirameki/process/process-runner.html#method---construct">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                   function
                 </span>
-                __construct():
-                <span class="return">
-    <span class="no-link">
+                <span class="name">
+                  <span class="method-name-start">__construct(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
       mixed
     </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">resource</span> <span class="phpdoc-var-name">$process</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">ProcessObserver</span> <span class="phpdoc-var-name">$observer</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">ProcessInfo</span> <span class="phpdoc-var-name">$info</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">array&lt;int, resource&gt;</span> <span class="phpdoc-var-name">$pipes</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">EventHandler&lt;ProcessFinished&gt;</span> <span class="phpdoc-var-name">$onFinished</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(ProcessResult|null)</span> <span class="phpdoc-var-name">$result</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                __destruct():
+  </span>
+                          </span>
+                        <var>$process</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <span class="no-link structure-name">
+        Kirameki\Process\ProcessObserver
+      </span>
+  </span>
+                          </span>
+                        <var>$observer</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <span class="no-link structure-name">
+        Kirameki\Process\ProcessInfo
+      </span>
+  </span>
+                          </span>
+                        <var>$info</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      array
+    </span>
+  </span>
+                          </span>
+                        <var>$pipes</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <span class="no-link structure-name">
+        Kirameki\Event\EventHandler
+      </span>
+  </span>
+                          </span>
+                        <var>$onFinished</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <span class="no-link structure-name">
+        Kirameki\Process\ProcessResult
+      </span>
+  </span>
+                          </span>
+                        <var>$result</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       mixed
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
+              <div class="comment">
+                
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method---destruct" class="anchor" href="classes/kirameki/process/process-runner.html#method---destruct">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   public
                   function
                 </span>
-                isRunning():
+                <span class="name">
+                    __destruct():
                 <span class="return">
-    <span class="no-link">
-      bool
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                isDone():
-                <span class="return">
-    <span class="no-link">
-      bool
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                getIterator():
-                <span class="return">
-    <span class="no-link">
-      Iterator
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">Iterator&lt;int, string&gt;</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                wait():
-                <span class="return">
-    <span class="no-link">
-      Kirameki\Process\ProcessResult
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$usleep</span><div class="phpdoc-description"><p>[Optional] Defaults to 10ms.</p>
-</div></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">ProcessResult</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                signal():
-                <span class="return">
-    <span class="no-link">
-      bool
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$signal</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                terminate():
-                <span class="return">
-    <span class="no-link">
-      bool
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">(float|null)</span> <span class="phpdoc-var-name">$timeoutSeconds</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                writeToStdin():
-                <span class="return">
-    <span class="no-link">
-      bool
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">string</span> <span class="phpdoc-var-name">$input</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">bool</span> <span class="phpdoc-var-name">$appendEol</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">bool</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                readStdoutBuffer():
-                <span class="return">
-    <span class="no-link">
-      string
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  public
-                  function
-                </span>
-                readStderrBuffer():
-                <span class="return">
-    <span class="no-link">
-      string
-    </span>
-                </span>
-              </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span></div>
-              </div>
-            </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  protected
-                  function
-                </span>
-                onSigChld():
-                <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       void
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$exitCode</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
+              <div class="comment">
+                
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  protected
+            <li class="method">
+              <a id="method-is-running" class="anchor" href="classes/kirameki/process/process-runner.html#method-is-running">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
                   function
                 </span>
-                handleExit():
+                <span class="name">
+                    isRunning():
                 <span class="return">
-    <span class="no-link">
-      void
+  <span class="type">
+    <span class="no-link named-var">
+      bool
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$code</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
+              <div class="comment">
+                
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
-                  protected
+            <li class="method">
+              <a id="method-is-done" class="anchor" href="classes/kirameki/process/process-runner.html#method-is-done">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
                   function
                 </span>
-                readPipe():
+                <span class="name">
+                    isDone():
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-get-iterator" class="anchor" href="classes/kirameki/process/process-runner.html#method-get-iterator">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                    getIterator():
+                <span class="return">
+  <span class="type">
+      <a href="https://www.php.net/manual/class.iterator.php" class="external-link" target="_blank">
+        Iterator
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type">
+    <span class="no-link named-var">
       string
     </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">resource</span> <span class="phpdoc-var-name">$pipe</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">FileStream</span> <span class="phpdoc-var-name">$buffer</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">string</span></div>
+              <div class="comment">
+                
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-wait" class="anchor" href="classes/kirameki/process/process-runner.html#method-wait">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">wait(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$usleep</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-default">10000</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+      <span class="no-link structure-name">
+        Kirameki\Process\ProcessResult
+      </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-signal" class="anchor" href="classes/kirameki/process/process-runner.html#method-signal">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">signal(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$signal</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-terminate" class="anchor" href="classes/kirameki/process/process-runner.html#method-terminate">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">terminate(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      float
+    </span>
+  </span>
+                          </span>
+                        <var>$timeoutSeconds</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-write-to-stdin" class="anchor" href="classes/kirameki/process/process-runner.html#method-write-to-stdin">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">writeToStdin(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                          </span>
+                        <var>$input</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                          </span>
+                        <var>$appendEol</var>
+                          <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-bool">true</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-read-stdout-buffer" class="anchor" href="classes/kirameki/process/process-runner.html#method-read-stdout-buffer">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                    readStdoutBuffer():
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-read-stderr-buffer" class="anchor" href="classes/kirameki/process/process-runner.html#method-read-stderr-buffer">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  public
+                  function
+                </span>
+                <span class="name">
+                    readStderrBuffer():
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-on-sig-chld" class="anchor" href="classes/kirameki/process/process-runner.html#method-on-sig-chld">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   protected
                   function
                 </span>
-                drainPipes():
+                <span class="name">
+                  <span class="method-name-start">onSigChld(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$exitCode</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
                 <span class="return">
-    <span class="no-link">
+  <span class="type">
+    <span class="no-link named-var">
       void
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">void</span></div>
+              <div class="comment">
+                
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-handle-exit" class="anchor" href="classes/kirameki/process/process-runner.html#method-handle-exit">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   protected
                   function
                 </span>
-                makeStdioStream():
-                <span class="return">
-    <span class="no-link">
-      Kirameki\Stream\FileStream
+                <span class="name">
+                  <span class="method-name-start">handleExit(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
     </span>
+  </span>
+                          </span>
+                        <var>$code</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      void
+    </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">FileStream</span></div>
+              <div class="comment">
+                
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-read-pipe" class="anchor" href="classes/kirameki/process/process-runner.html#method-read-pipe">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   protected
                   function
                 </span>
-                buildResult():
-                <span class="return">
-    <span class="no-link">
-      Kirameki\Process\ProcessResult
+                <span class="name">
+                  <span class="method-name-start">readPipe(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      mixed
     </span>
+  </span>
+                          </span>
+                        <var>$pipe</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+      <span class="no-link structure-name">
+        Kirameki\Stream\FileStream
+      </span>
+  </span>
+                          </span>
+                        <var>$buffer</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@param</span>  <span class="phpdoc-type">int</span> <span class="phpdoc-var-name">$exitCode</span></div><div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">ProcessResult</span></div>
+              <div class="comment">
+                
               </div>
             </li>
-            <li>
-              <div class="method-signature">
-                <span class="method-modifiers">
+            <li class="method">
+              <a id="method-drain-pipes" class="anchor" href="classes/kirameki/process/process-runner.html#method-drain-pipes">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
                   protected
                   function
                 </span>
-                getResult():
+                <span class="name">
+                    drainPipes():
                 <span class="return">
-    <span class="no-link">
-      Kirameki\Process\ProcessResult
+  <span class="type">
+    <span class="no-link named-var">
+      void
     </span>
+  </span>
                 </span>
               </div>
-              <div class="method-comment">
-                <div class="phpdoc-tag"><span class="phpdoc-tag-name">@return</span>  <span class="phpdoc-type">ProcessResult</span></div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-make-stdio-stream" class="anchor" href="classes/kirameki/process/process-runner.html#method-make-stdio-stream">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  protected
+                  function
+                </span>
+                <span class="name">
+                    makeStdioStream():
+                <span class="return">
+  <span class="type">
+      <span class="no-link structure-name">
+        Kirameki\Stream\FileStream
+      </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-build-result" class="anchor" href="classes/kirameki/process/process-runner.html#method-build-result">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  protected
+                  function
+                </span>
+                <span class="name">
+                  <span class="method-name-start">buildResult(</span>
+                  <ul class="parameters">
+                      <li class="parameter">
+                          <span class="types">
+  <span class="type">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                          </span>
+                        <var>$exitCode</var>
+                        <span class="delimiter">,</span>
+                      </li>
+                  </ul>
+                  <span class="method-name-end">):</span>
+                <span class="return">
+  <span class="type">
+      <span class="no-link structure-name">
+        Kirameki\Process\ProcessResult
+      </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li class="method">
+              <a id="method-get-result" class="anchor" href="classes/kirameki/process/process-runner.html#method-get-result">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <div class="signature">
+                <span class="modifiers">
+                  protected
+                  function
+                </span>
+                <span class="name">
+                    getResult():
+                <span class="return">
+  <span class="type">
+      <span class="no-link structure-name">
+        Kirameki\Process\ProcessResult
+      </span>
+  </span>
+                </span>
+              </div>
+              <div class="comment">
+                
               </div>
             </li>
         </ul>

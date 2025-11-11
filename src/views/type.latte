@@ -14,14 +14,18 @@
 {elseif ($type instanceof Kirameki\ApiDocGenerator\Types\StructureVarType)}
   {varType Kirameki\ApiDocGenerator\Types\StructureVarType $type}
   <span class="type">
-    {if $type->structure->namespace !== ''}
-      <a href="{$type->structure->outputPath}">
+    {if str_starts_with($type->structure->url, '/')}
+      <a href="{$type->structure->url}">
+        {$type->structure}
+      </a>
+    {elseif str_starts_with($type->structure->url, 'https://')}
+      <a href="{$type->structure->url}" class="external-link" target="_blank">
         {$type->structure}
       </a>
     {else}
-      <a href="https://www.php.net/manual/class.{$type->structure->name|lower}.php" class="external-link" target="_blank">
+      <span class="no-link structure-name">
         {$type->structure}
-      </a>
+      </span>
     {/if}
     {include type-generics.latte, generics: $type->generics}
   </span>
@@ -32,6 +36,27 @@
       {$type->name}
     </span>
   </span>
+{elseif ($type instanceof Kirameki\ApiDocGenerator\Types\ConditionalVarType) }
+  {varType Kirameki\ApiDocGenerator\Types\ConditionalVarType $type}
+  (
+  {$type->variable} is {include type.latte, type: $type->matchType}
+  ?
+  {include type.latte, type: $type->trueType}
+  :
+  {include type.latte, type: $type->falseType}
+  )
+{elseif ($type instanceof Kirameki\ApiDocGenerator\Types\CallableVarType) }
+  {varType Kirameki\ApiDocGenerator\Types\CallableVarType $type}
+  {$type->name}
+  <span class="parentheses">(</span>
+  {foreach $type->parameters as $parameter}
+    {if $parameter->isVariadic}<span class="variadic">... </span>{/if}
+    {if $parameter->byReference}<span class="by-reference">&amp;</span>{/if}
+    {include type.latte, type: $parameter->type}
+    {sep}<span class="delimiter">, </span>{/sep}
+  {/foreach}
+  <span class="parentheses">)</span>:
+  {include type.latte, type: $type->returnType}
 {else}
   {varType Kirameki\ApiDocGenerator\Types\NamedVarType $type}
   <span class="type">

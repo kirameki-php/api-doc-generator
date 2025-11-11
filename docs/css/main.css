@@ -171,11 +171,7 @@ blockquote {
             padding-bottom: 0.5rem;
 
             .signature {
-                font-family: var(--code-font-family);
-                padding: 0.5rem;
-                background-color: #f6f7f8;
-                border-radius: 0.25rem;
-                margin: 0.75rem 0;
+                display: flex;
             }
             .var-name {
                 color: #1f8135;
@@ -187,9 +183,9 @@ blockquote {
     }
 }
 .methods-wrapper {
-    padding-top: 1rem;
     h3 {
-        padding: 0.25rem 0;
+        margin: 0.5rem 0;
+        padding: 0.25rem;
         border-bottom: 1px solid #e5e7eb;
     }
 }
@@ -198,9 +194,10 @@ ul.methods {
     flex-direction: column;
 
     li.method {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
         position: relative;
+        border-radius: 0.5rem;
+        border-bottom: 1px dashed #e7e8ef;
+        padding: 1rem 0;
     }
     li.method:last-child {
         border-bottom: none;
@@ -208,24 +205,17 @@ ul.methods {
     .anchor {
         position: absolute;
         margin-left: -1.3rem;
-        margin-top: 1.3rem;
+        margin-top: 1rem;
         opacity: 0;
-        height: calc(100% - 1.5rem);
+        height: calc(100% - 1rem);
     }
     li:hover .anchor {
         opacity: 1;
     }
+
     .signature {
-        font-family: var(--code-font-family);
-        padding: 0.5rem;
-        background-color: #f6f7f8;
-        border-radius: 0.25rem;
-        margin: 0.75rem 0;
-        line-height: 1.5rem;
+        gap: 0.5rem;
 
-        .name {
-
-        }
         .return {
             display: inline-flex;
 
@@ -237,13 +227,10 @@ ul.methods {
             margin-left: 1.5rem;
             .parameter {
                 display: flex;
-                flex-direction: row;
                 margin-right: 0.5rem;
-                .types {
-                    display: flex;
-                    margin-right: 0.5rem;
-                }
+
                 var {
+                    margin-left: 0.5rem;
                     color: #1f8179;
                     font-style: normal;
                 }
@@ -264,19 +251,36 @@ ul.methods {
 .modifiers {
     color: #2453b5;
 }
+
+.signature {
+    font-family: var(--code-font-family);
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    line-height: 1.5rem;
+    background-color: #f6f7f8;
+    gap: 0.5rem;
+}
+.types {
+    display: inline-flex;
+}
 .type {
     display: inline-flex;
-    flex-direction: row;
 }
 .template-name {
     color: #068baa;
 }
 .comment {
     padding: 0.5rem;
-    margin-top: 0.5rem;
-    margin-bottom: 1.5rem;
     opacity: 60%;
     line-height: 1.5;
+
+    p {
+        margin: 0.5rem 0;
+    }
+
+    p:has(+ pre) {
+        margin: 0;
+    }
 
     code {
         font-family: var(--code-font-family);
@@ -288,7 +292,6 @@ ul.methods {
     pre code {
         display: block;
         padding: 0.4rem 0.5rem;
-        margin: 0.25rem 0;
         overflow-x: auto;
     }
 }

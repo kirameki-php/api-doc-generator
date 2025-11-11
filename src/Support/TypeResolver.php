@@ -3,9 +3,11 @@
 namespace Kirameki\ApiDocGenerator\Support;
 
 use Kirameki\ApiDocGenerator\Components\ClassDefinition;
-use Kirameki\ApiDocGenerator\Components\StructureDefinition;
+use Kirameki\ApiDocGenerator\Types\CallableVarType;
+use Kirameki\ApiDocGenerator\Types\ConditionalVarType;
 use Kirameki\ApiDocGenerator\Types\IntersectionVarType;
 use Kirameki\ApiDocGenerator\Types\NamedVarType;
+use Kirameki\ApiDocGenerator\Types\ParameterVarType;
 use Kirameki\ApiDocGenerator\Types\StructureVarType;
 use Kirameki\ApiDocGenerator\Types\TemplateVarType;
 use Kirameki\ApiDocGenerator\Types\UnionVarType;
@@ -13,6 +15,8 @@ use Kirameki\ApiDocGenerator\Types\VarType;
 use Kirameki\Core\Exceptions\UnreachableException;
 use PHPStan\PhpDocParser\Ast\ConstExpr\ConstExprIntegerNode;
 use PHPStan\PhpDocParser\Ast\Type\ArrayShapeNode;
+use PHPStan\PhpDocParser\Ast\Type\CallableTypeNode;
+use PHPStan\PhpDocParser\Ast\Type\ConditionalTypeForParameterNode;
 use PHPStan\PhpDocParser\Ast\Type\ConstTypeNode;
 use PHPStan\PhpDocParser\Ast\Type\GenericTypeNode;
 use PHPStan\PhpDocParser\Ast\Type\IdentifierTypeNode;
@@ -30,6 +34,7 @@ use Stringable;
 use function array_map;
 use function array_values;
 use function class_exists;
+use function dump;
 use function enum_exists;
 use function in_array;
 use function interface_exists;
@@ -97,6 +102,27 @@ class TypeResolver
 
         if ($node instanceof ThisTypeNode) {
             return new NamedVarType('$this');
+        }
+
+        if ($node instanceof ConditionalTypeForParameterNode) {
+            return new ConditionalVarType(
+                $node->parameterName,
+                $this->resolveFromNode($node->targetType, $doc),
+                $this->resolveFromNode($node->if, $doc),
+                $this->resolveFromNode($node->else, $doc),
+            );
+        }
+
+        if ($node instanceof CallableTypeNode) {
+            return new CallableVarType(
+                $node->identifier->name,
+                array_values(array_map(fn($n) => new ParameterVarType(
+                    $this->resolveFromNode($n->type, $doc),
+                    $n->isReference,
+                    $n->isVariadic,
+                ), $node->parameters)),
+                $this->resolveFromNode($node->returnType, $doc),
+            );
         }
 
         throw new UnreachableException();
