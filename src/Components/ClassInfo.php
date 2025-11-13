@@ -22,7 +22,7 @@ use function array_values;
 use function dump;
 use function ksort;
 
-class ClassDefinition implements StructureDefinition, Stringable
+class ClassInfo implements StructureInfo, Stringable
 {
     /**
      * @var string
@@ -46,7 +46,7 @@ class ClassDefinition implements StructureDefinition, Stringable
     }
 
     /**
-     * @var list<TemplateDefinition>
+     * @var list<TemplateInfo>
      */
     public array $templates {
         get => $this->templates ??= $this->resolveTemplates();
@@ -88,31 +88,31 @@ class ClassDefinition implements StructureDefinition, Stringable
     }
 
     /**
-     * @var list<ConstantDefinition>
+     * @var list<ConstantInfo>
      */
     public array $constants {
         get => $this->constants ??= array_map(
-            fn(ReflectionClassConstant $ref) => new ConstantDefinition($this, $ref),
+            fn(ReflectionClassConstant $ref) => new ConstantInfo($this, $ref),
             $this->reflection->getReflectionConstants(),
         );
     }
 
     /**
-     * @var list<PropertyDefinition>
+     * @var list<PropertyInfo>
      */
     public array $properties {
         get => $this->properties ??= array_map(
-            fn(ReflectionProperty $ref) => new PropertyDefinition($ref, $this->docParser, $this->typeResolver),
+            fn(ReflectionProperty $ref) => new PropertyInfo($ref, $this->docParser, $this->typeResolver),
             $this->reflection->getProperties(),
         );
     }
 
     /**
-     * @var list<MethodDefinition>
+     * @var list<MethodInfo>
      */
     public array $methods {
         get => $this->methods ??= array_map(
-            fn(ReflectionMethod $ref) => new MethodDefinition($this, $ref, $this->docParser, $this->typeResolver),
+            fn(ReflectionMethod $ref) => new MethodInfo($this, $ref, $this->docParser, $this->typeResolver),
             $this->reflection->getMethods(),
         );
     }
@@ -171,13 +171,13 @@ class ClassDefinition implements StructureDefinition, Stringable
     }
 
     /**
-     * @return list<TemplateDefinition>
+     * @return list<TemplateInfo>
      */
     protected function resolveTemplates(): array
     {
         $templates = [];
         foreach ($this->phpDoc->templates as $tag) {
-            $templates[] = new TemplateDefinition(
+            $templates[] = new TemplateInfo(
                 $tag->name,
                 $tag->bound
                     ? $this->getTypeFromNode($tag->bound)
@@ -238,11 +238,11 @@ class ClassDefinition implements StructureDefinition, Stringable
 
     /**
      * @param ReflectionClass<object> $reflection
-     * @return ClassDefinition
+     * @return ClassInfo
      */
-    protected function instantiate(ReflectionClass $reflection): ClassDefinition
+    protected function instantiate(ReflectionClass $reflection): ClassInfo
     {
-        return new ClassDefinition(
+        return new ClassInfo(
             $reflection,
             $this->file,
             $this->docParser,

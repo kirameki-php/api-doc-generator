@@ -2,7 +2,7 @@
 
 namespace Kirameki\ApiDocGenerator\Support;
 
-use Kirameki\ApiDocGenerator\Components\StructureDefinition;
+use Kirameki\ApiDocGenerator\Components\StructureInfo;
 use function in_array;
 use function strtolower;
 
@@ -17,10 +17,10 @@ class UrlResolver
     }
 
     /**
-     * @param StructureDefinition $structure
+     * @param StructureInfo $structure
      * @return string|null
      */
-    public function resolve(StructureDefinition $structure): ?string
+    public function resolve(StructureInfo $structure): ?string
     {
         if ($this->structureMap->exists($structure->name)) {
             return $structure->outputPath;

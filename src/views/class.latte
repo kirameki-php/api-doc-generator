@@ -1,10 +1,11 @@
 {layout layout.latte}
-{varType Kirameki\ApiDocGenerator\Components\ClassDefinition $class}
+{varType Kirameki\ApiDocGenerator\Components\ClassInfo $class}
 {block content}
 <main class="structure">
-  <div class="basic-info">
+  <div class="basics">
     <div class="namespace">
-      namespace <b>{$class->namespace}</b>
+      <span class="keyword">namespace</span>
+      <span class="name">{$class->namespace}</span>
     </div>
     <div class="declaration">
       <span class="modifiers">
@@ -25,7 +26,7 @@
         <span class="generics">
           <span class="brace">&lt;</span>
           {foreach $class->templates as $template}
-            {varType Kirameki\ApiDocGenerator\Components\TemplateDefinition $template}
+            {varType Kirameki\ApiDocGenerator\Components\TemplateInfo $template}
             <span class="generic">
               <span class="template-name">{$template->name}</span>
               {if $template->bound instanceof Kirameki\ApiDocGenerator\Types\VarType}
@@ -42,7 +43,7 @@
       </span>
     </div>
   </div>
-  <div class="details">
+  <div class="internals">
     {if $class->parent !== null}
     <div class="extends">
       extends:
@@ -70,7 +71,7 @@
         <h3>Constants</h3>
         <ul>
           {foreach $class->constants as $constant}
-            {varType Kirameki\ApiDocGenerator\Components\ConstantDefinition $constant}
+            {varType Kirameki\ApiDocGenerator\Components\ConstantInfo $constant}
             <li>
               <div class="constant-signature">
                 <span class="modifiers">
@@ -88,8 +89,9 @@
                 {elseif is_array($value)}
                   <span class="value value-array">
                     [
+                    {if $value !== []}
+                      <ul>
                       {foreach $value as $key => $item}
-                        {first}<ul>{/first}
                         <li>
                           {if is_string($key)}
                             "<span class="array-key-string">{$key}</span>" =>
@@ -102,8 +104,9 @@
                             <span class="array-value-default">{$item}</span>
                           {/if}
                         </li>
-                        {last}</ul>{/last}
                       {/foreach}
+                      </ul>
+                    {/if}
                     ]
                   </span>
                 {elseif is_string($value)}
@@ -122,7 +125,7 @@
         <h3>Properties</h3>
         <ul>
           {foreach $class->properties as $property}
-            {varType Kirameki\ApiDocGenerator\Components\PropertyDefinition $property}
+            {varType Kirameki\ApiDocGenerator\Components\PropertyInfo $property}
             <li>
               <div class="signature">
                 <span class="modifiers">
@@ -134,13 +137,11 @@
                   {/if}
                   {$property->visibility->value}
                 </span>
-                <span class="types">
-                  {include type.latte, type: $property->type}
-                </span>
+                {include type.latte, type: $property->type}
                 <span class="var-name">${$property->name}</span>
               </div>
               <div class="comment">
-                {$property->commentAsMarkdown()|noescape}
+                {implode("\n", $property->phpDoc->texts)|markdown|noescape}
               </div>
             </li>
           {/foreach}
@@ -152,12 +153,12 @@
         <h3>Methods</h3>
         <ul class="methods">
           {foreach $class->methods as $method}
-            {varType Kirameki\ApiDocGenerator\Components\MethodDefinition $method}
+            {varType Kirameki\ApiDocGenerator\Components\MethodInfo $method}
             <li class="method">
               <a id="{$method->id}" class="anchor" href="{$class->outputPath}#{$method->id}">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   {if $method->isFinal}
                     final
@@ -169,14 +170,13 @@
                   {if $method->isAbstract}
                     abstract
                   {/if}
-                  function
                 </span>
                 <span class="name">
                   {if ($method->parameters !== [])}
                   <span class="method-name-start">{$method->name}(</span>
                   <ul class="parameters">
                     {foreach $method->parameters as $parameter}
-                      {varType Kirameki\ApiDocGenerator\Components\ParameterDefinition $parameter}
+                      {varType Kirameki\ApiDocGenerator\Components\ParameterInfo $parameter}
                       <li class="parameter">
                         {if $parameter->isPassedByReference}
                           &
@@ -185,9 +185,7 @@
                           ...
                         {/if}
                         {if $parameter->type !== null}
-                          <span class="types">
                           {include type.latte, type: $parameter->type}
-                          </span>
                         {/if}
                         <var>${$parameter->name}</var>
                         {if $parameter->hasDefault}
@@ -213,21 +211,40 @@
                             {/if}
                           </span>
                         {/if}
-                        <span class="delimiter">,</span>
+                        {sep}<span class="delimiter">,</span>{/sep}
                       </li>
                     {/foreach}
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                   {else}
-                    {$method->name}():
+                    {$method->name}():&nbsp;
                   {/if}
                 <span class="return">
                   {include type.latte, type: $method->returnType}
                 </span>
-              </div>
-              <div class="comment">
-                {$method->commentAsMarkdown()|noescape}
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  {implode("\n", $method->phpDoc->texts)|markdown|noescape}
+                </div>
+                {if $method->parameters !== []}
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                      {foreach $method->parameters as $parameter}
+                        {varType Kirameki\ApiDocGenerator\Components\ParameterInfo $parameter}
+                        {if $parameter->docType !== null}
+                          <tr class="parameter">
+                            <td class="name"><var>${$parameter->name}</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description">{$parameter->description|markdown|noescape}</td>
+                          </tr>
+                        {/if}
+                      {/foreach}
+                    </table>
+                  </div>
+                {/if}
+              </section>
             </li>
           {/foreach}
         </ul>

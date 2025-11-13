@@ -844,9 +844,10 @@
 
 </nav>
 <main class="structure">
-  <div class="basic-info">
+  <div class="basics">
     <div class="namespace">
-      namespace <b>Kirameki\Core</b>
+      <span class="keyword">namespace</span>
+      <span class="name">Kirameki\Core</span>
     </div>
     <div class="declaration">
       <span class="modifiers">
@@ -858,7 +859,7 @@
       </span>
     </div>
   </div>
-  <div class="details">
+  <div class="internals">
       <div class="properties">
         <h3>Properties</h3>
         <ul>
@@ -868,13 +869,11 @@
                     readonly
                   public
                 </span>
-                <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                </span>
                 <span class="var-name">$major</span>
               </div>
               <div class="comment">
@@ -887,13 +886,11 @@
                     readonly
                   public
                 </span>
-                <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                </span>
                 <span class="var-name">$minor</span>
               </div>
               <div class="comment">
@@ -906,13 +903,11 @@
                     readonly
                   public
                 </span>
-                <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                </span>
                 <span class="var-name">$patch</span>
               </div>
               <div class="comment">
@@ -928,583 +923,702 @@
               <a id="method-parse" class="anchor" href="classes/kirameki/core/version.html#method-parse">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">parse(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$value</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       self
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$value</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-try-parse" class="anchor" href="classes/kirameki/core/version.html#method-try-parse">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">tryParse(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$value</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       self
     </span>
   </span>
-    <span class="delimiter">|</span>
-  <span class="type">
-    <span class="no-link named-var">
-      null
-    </span>
-  </span>
-
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$value</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-zero" class="anchor" href="classes/kirameki/core/version.html#method-zero">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
-                    zero():
+                    zero():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       self
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method---construct" class="anchor" href="classes/kirameki/core/version.html#method---construct">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">__construct(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$major</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$minor</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$patch</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       mixed
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$major</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$minor</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$patch</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method---to-string" class="anchor" href="classes/kirameki/core/version.html#method---to-string">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    __toString():
+                    __toString():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-to-string" class="anchor" href="classes/kirameki/core/version.html#method-to-string">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    toString():
+                    toString():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-compare-to" class="anchor" href="classes/kirameki/core/version.html#method-compare-to">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">compareTo(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
-      <span class="no-link structure-name">
+  <span class="type type-structure">
+      <a href="classes/kirameki/core/comparable.html">
         Kirameki\Core\Comparable
-      </span>
+      </a>
   </span>
-                          </span>
                         <var>$other</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$other</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-is-major-update" class="anchor" href="classes/kirameki/core/version.html#method-is-major-update">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">isMajorUpdate(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       self
     </span>
   </span>
-                          </span>
                         <var>$from</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$from</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-is-minor-update" class="anchor" href="classes/kirameki/core/version.html#method-is-minor-update">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">isMinorUpdate(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       self
     </span>
   </span>
-                          </span>
                         <var>$from</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$from</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-is-patch-update" class="anchor" href="classes/kirameki/core/version.html#method-is-patch-update">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">isPatchUpdate(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       self
     </span>
   </span>
-                          </span>
                         <var>$from</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$from</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-is-equal-to" class="anchor" href="classes/kirameki/core/version.html#method-is-equal-to">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">isEqualTo(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
-      <span class="no-link structure-name">
+  <span class="type type-structure">
+      <a href="classes/kirameki/core/comparable.html">
         Kirameki\Core\Comparable
-      </span>
+      </a>
   </span>
-                          </span>
                         <var>$other</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$other</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-is-not-equal-to" class="anchor" href="classes/kirameki/core/version.html#method-is-not-equal-to">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">isNotEqualTo(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
-      <span class="no-link structure-name">
+  <span class="type type-structure">
+      <a href="classes/kirameki/core/comparable.html">
         Kirameki\Core\Comparable
-      </span>
+      </a>
   </span>
-                          </span>
                         <var>$other</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$other</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-is-less-than" class="anchor" href="classes/kirameki/core/version.html#method-is-less-than">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">isLessThan(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
-      <span class="no-link structure-name">
+  <span class="type type-structure">
+      <a href="classes/kirameki/core/comparable.html">
         Kirameki\Core\Comparable
-      </span>
+      </a>
   </span>
-                          </span>
                         <var>$other</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$other</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-is-less-than-or-equal-to" class="anchor" href="classes/kirameki/core/version.html#method-is-less-than-or-equal-to">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">isLessThanOrEqualTo(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
-      <span class="no-link structure-name">
+  <span class="type type-structure">
+      <a href="classes/kirameki/core/comparable.html">
         Kirameki\Core\Comparable
-      </span>
+      </a>
   </span>
-                          </span>
                         <var>$other</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$other</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-is-greater-than" class="anchor" href="classes/kirameki/core/version.html#method-is-greater-than">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">isGreaterThan(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
-      <span class="no-link structure-name">
+  <span class="type type-structure">
+      <a href="classes/kirameki/core/comparable.html">
         Kirameki\Core\Comparable
-      </span>
+      </a>
   </span>
-                          </span>
                         <var>$other</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$other</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-is-greater-than-or-equal-to" class="anchor" href="classes/kirameki/core/version.html#method-is-greater-than-or-equal-to">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">isGreaterThanOrEqualTo(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
-      <span class="no-link structure-name">
+  <span class="type type-structure">
+      <a href="classes/kirameki/core/comparable.html">
         Kirameki\Core\Comparable
-      </span>
+      </a>
   </span>
-                          </span>
                         <var>$other</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$other</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
         </ul>
       </div>

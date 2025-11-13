@@ -844,9 +844,10 @@
 
 </nav>
 <main class="structure">
-  <div class="basic-info">
+  <div class="basics">
     <div class="namespace">
-      namespace <b>Kirameki\Text</b>
+      <span class="keyword">namespace</span>
+      <span class="name">Kirameki\Text</span>
     </div>
     <div class="declaration">
       <span class="modifiers">
@@ -857,15 +858,15 @@
       </span>
     </div>
   </div>
-  <div class="details">
+  <div class="internals">
     <div class="extends">
       extends:
       <ul>
         <li>
-  <span class="type">
-      <span class="no-link structure-name">
+  <span class="type type-structure">
+      <a href="classes/kirameki/text/str-object.html">
         Kirameki\Text\StrObject
-      </span>
+      </a>
   </span>
         </li>
       </ul>
@@ -879,13 +880,11 @@
                     static
                   protected
                 </span>
-                <span class="types">
-  <span class="type">
-      <span class="no-link structure-name">
+  <span class="type type-structure">
+      <a href="classes/kirameki/text/str.html">
         Kirameki\Text\Str
-      </span>
+      </a>
   </span>
-                </span>
                 <span class="var-name">$ref</span>
               </div>
               <div class="comment">
@@ -898,13 +897,11 @@
                 <span class="modifiers">
                   protected
                 </span>
-                <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                </span>
                 <span class="var-name">$value</span>
               </div>
               <div class="comment">
@@ -920,1408 +917,1677 @@
               <a id="method---construct" class="anchor" href="classes/kirameki/text/utf8-object.html#method---construct">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">__construct(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$value</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-string">""</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       mixed
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$value</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-byte-length" class="anchor" href="classes/kirameki/text/utf8-object.html#method-byte-length">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    byteLength():
+                    byteLength():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-cut" class="anchor" href="classes/kirameki/text/utf8-object.html#method-cut">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">cut(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$position</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$ellipsis</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-string">""</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$position</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$ellipsis</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-from" class="anchor" href="classes/kirameki/text/utf8-object.html#method-from">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">from(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$value</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$value</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-json-serialize" class="anchor" href="classes/kirameki/text/utf8-object.html#method-json-serialize">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    jsonSerialize():
+                    jsonSerialize():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method---to-string" class="anchor" href="classes/kirameki/text/utf8-object.html#method---to-string">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    __toString():
+                    __toString():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-append" class="anchor" href="classes/kirameki/text/utf8-object.html#method-append">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">append(</span>
                   <ul class="parameters">
                       <li class="parameter">
                           ...
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$string</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Appends the given string(s) to the end of the current string.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Appends the given string(s) to the end of the current string.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$string</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-append-format" class="anchor" href="classes/kirameki/text/utf8-object.html#method-append-format">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">appendFormat(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$format</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
                           ...
-                          <span class="types">
-  <span class="type">
+  <span class="type type-union">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
     <span class="delimiter">|</span>
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
     <span class="delimiter">|</span>
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       float
     </span>
   </span>
 
-                          </span>
+  </span>
                         <var>$values</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Appends the given string(s) to the end of the current string.<br />
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Appends the given string(s) to the end of the current string.<br />
 The string(s) will be formatted using sprintf().</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$format</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$values</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-basename" class="anchor" href="classes/kirameki/text/utf8-object.html#method-basename">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">basename(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$suffix</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-string">""</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$suffix</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-between" class="anchor" href="classes/kirameki/text/utf8-object.html#method-between">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">between(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$from</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$to</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$from</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$to</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-between-furthest" class="anchor" href="classes/kirameki/text/utf8-object.html#method-between-furthest">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">betweenFurthest(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$from</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$to</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$from</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$to</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-between-last" class="anchor" href="classes/kirameki/text/utf8-object.html#method-between-last">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">betweenLast(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$from</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$to</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$from</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$to</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-capitalize" class="anchor" href="classes/kirameki/text/utf8-object.html#method-capitalize">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    capitalize():
+                    capitalize():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-chunk" class="anchor" href="classes/kirameki/text/utf8-object.html#method-chunk">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">chunk(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$size</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$limit</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-null">null</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
-      list
+      array
     </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$size</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$limit</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-contains" class="anchor" href="classes/kirameki/text/utf8-object.html#method-contains">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">contains(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$needle</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$needle</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-contains-all" class="anchor" href="classes/kirameki/text/utf8-object.html#method-contains-all">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">containsAll(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       array
     </span>
   </span>
-                          </span>
                         <var>$needles</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$needles</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-contains-any" class="anchor" href="classes/kirameki/text/utf8-object.html#method-contains-any">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">containsAny(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       array
     </span>
   </span>
-                          </span>
                         <var>$needles</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$needles</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-contains-pattern" class="anchor" href="classes/kirameki/text/utf8-object.html#method-contains-pattern">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">containsPattern(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$pattern</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$pattern</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-count" class="anchor" href="classes/kirameki/text/utf8-object.html#method-count">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">count(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$substring</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                          </span>
                         <var>$overlapping</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-bool">false</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$substring</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$overlapping</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-decapitalize" class="anchor" href="classes/kirameki/text/utf8-object.html#method-decapitalize">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    decapitalize():
+                    decapitalize():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-dirname" class="anchor" href="classes/kirameki/text/utf8-object.html#method-dirname">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">dirname(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$levels</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-default">1</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$levels</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-does-not-contain" class="anchor" href="classes/kirameki/text/utf8-object.html#method-does-not-contain">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">doesNotContain(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$substring</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$substring</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-does-not-end-with" class="anchor" href="classes/kirameki/text/utf8-object.html#method-does-not-end-with">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">doesNotEndWith(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$suffix</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$suffix</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-does-not-start-with" class="anchor" href="classes/kirameki/text/utf8-object.html#method-does-not-start-with">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">doesNotStartWith(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$prefix</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$prefix</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-drop-first" class="anchor" href="classes/kirameki/text/utf8-object.html#method-drop-first">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">dropFirst(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$amount</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$amount</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-drop-last" class="anchor" href="classes/kirameki/text/utf8-object.html#method-drop-last">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">dropLast(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$amount</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$amount</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-ends-with" class="anchor" href="classes/kirameki/text/utf8-object.html#method-ends-with">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">endsWith(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$suffix</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$suffix</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-ends-with-any" class="anchor" href="classes/kirameki/text/utf8-object.html#method-ends-with-any">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">endsWithAny(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$suffixes</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$suffixes</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-ends-with-none" class="anchor" href="classes/kirameki/text/utf8-object.html#method-ends-with-none">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">endsWithNone(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$suffixes</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$suffixes</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-equals" class="anchor" href="classes/kirameki/text/utf8-object.html#method-equals">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">equals(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$string</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$string</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>String to compare against.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-equals-any" class="anchor" href="classes/kirameki/text/utf8-object.html#method-equals-any">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">equalsAny(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$strings</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$strings</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Strings to compare against.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-index-of-first" class="anchor" href="classes/kirameki/text/utf8-object.html#method-index-of-first">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">indexOfFirst(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$needle</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$offset</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-default">0</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-    <span class="delimiter">|</span>
-  <span class="type">
-    <span class="no-link named-var">
-      null
-    </span>
-  </span>
-
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$needle</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$offset</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-index-of-last" class="anchor" href="classes/kirameki/text/utf8-object.html#method-index-of-last">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">indexOfLast(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$needle</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$offset</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-default">0</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-    <span class="delimiter">|</span>
-  <span class="type">
-    <span class="no-link named-var">
-      null
-    </span>
-  </span>
-
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$needle</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$offset</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-insert-at" class="anchor" href="classes/kirameki/text/utf8-object.html#method-insert-at">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">insertAt(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$insert</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$position</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$insert</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$position</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-interpolate" class="anchor" href="classes/kirameki/text/utf8-object.html#method-interpolate">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">interpolate(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$replace</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$delimiterStart</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
@@ -2330,641 +2596,731 @@ The string(s) will be formatted using sprintf().</p>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$delimiterEnd</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-string">"}"</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$replace</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$delimiterStart</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$delimiterEnd</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-is-blank" class="anchor" href="classes/kirameki/text/utf8-object.html#method-is-blank">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    isBlank():
+                    isBlank():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-is-not-blank" class="anchor" href="classes/kirameki/text/utf8-object.html#method-is-not-blank">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    isNotBlank():
+                    isNotBlank():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-length" class="anchor" href="classes/kirameki/text/utf8-object.html#method-length">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    length():
+                    length():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-match-all" class="anchor" href="classes/kirameki/text/utf8-object.html#method-match-all">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">matchAll(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$pattern</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       array
     </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link named-var">
-      array
-    </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$pattern</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-match-first" class="anchor" href="classes/kirameki/text/utf8-object.html#method-match-first">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">matchFirst(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$pattern</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$pattern</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-match-first-or-null" class="anchor" href="classes/kirameki/text/utf8-object.html#method-match-first-or-null">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">matchFirstOrNull(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$pattern</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-    <span class="delimiter">|</span>
-  <span class="type">
-    <span class="no-link named-var">
-      null
-    </span>
-  </span>
-
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$pattern</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-match-last" class="anchor" href="classes/kirameki/text/utf8-object.html#method-match-last">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">matchLast(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$pattern</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$pattern</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-match-last-or-null" class="anchor" href="classes/kirameki/text/utf8-object.html#method-match-last-or-null">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">matchLastOrNull(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$pattern</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-    <span class="delimiter">|</span>
-  <span class="type">
-    <span class="no-link named-var">
-      null
-    </span>
-  </span>
-
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$pattern</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-pad-both" class="anchor" href="classes/kirameki/text/utf8-object.html#method-pad-both">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">padBoth(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$length</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$pad</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-string">" "</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$length</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$pad</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-pad-start" class="anchor" href="classes/kirameki/text/utf8-object.html#method-pad-start">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">padStart(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$length</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$pad</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-string">" "</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$length</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$pad</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-pad-end" class="anchor" href="classes/kirameki/text/utf8-object.html#method-pad-end">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">padEnd(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$length</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$pad</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-string">" "</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$length</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$pad</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-pipe" class="anchor" href="classes/kirameki/text/utf8-object.html#method-pipe">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">pipe(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
         Closure
       </a>
   </span>
-                          </span>
                         <var>$callback</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
-    <span class="no-link template-name">
-      TPipe
+  <span class="type type-named">
+    <span class="no-link named-var">
+      mixed
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Passes <code>$this</code> to the given callback and returns the result,<br />
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Passes <code>$this</code> to the given callback and returns the result,<br />
 so it can be used in a chain.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$callback</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Callback which will receive $this as argument.<br />
+The result of the callback will be returned.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-prepend" class="anchor" href="classes/kirameki/text/utf8-object.html#method-prepend">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">prepend(</span>
                   <ul class="parameters">
                       <li class="parameter">
                           ...
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$string</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$string</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-range" class="anchor" href="classes/kirameki/text/utf8-object.html#method-range">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">range(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$start</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$end</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$start</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$end</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-remove" class="anchor" href="classes/kirameki/text/utf8-object.html#method-remove">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">remove(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$substring</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$limit</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
@@ -2974,1476 +3330,1735 @@ so it can be used in a chain.</p>
                       </li>
                       <li class="parameter">
                           &
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$count</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-default">0</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$substring</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$limit</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$count</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-remove-first" class="anchor" href="classes/kirameki/text/utf8-object.html#method-remove-first">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">removeFirst(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$substring</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$substring</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-remove-last" class="anchor" href="classes/kirameki/text/utf8-object.html#method-remove-last">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">removeLast(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$substring</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$substring</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-repeat" class="anchor" href="classes/kirameki/text/utf8-object.html#method-repeat">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">repeat(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$times</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$times</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-replace" class="anchor" href="classes/kirameki/text/utf8-object.html#method-replace">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">replace(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$search</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$replace</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$search</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$replace</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-replace-first" class="anchor" href="classes/kirameki/text/utf8-object.html#method-replace-first">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">replaceFirst(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$search</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$replace</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$search</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$replace</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-replace-last" class="anchor" href="classes/kirameki/text/utf8-object.html#method-replace-last">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">replaceLast(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$search</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$replace</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$search</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$replace</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-replace-match" class="anchor" href="classes/kirameki/text/utf8-object.html#method-replace-match">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">replaceMatch(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$pattern</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$replacement</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$limit</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-null">null</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$pattern</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$replacement</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Replacement for the found pattern.<br />
+Can be a string or a closure that returns a string.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$limit</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-replace-match-with-callback" class="anchor" href="classes/kirameki/text/utf8-object.html#method-replace-match-with-callback">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">replaceMatchWithCallback(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$pattern</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
         Closure
       </a>
   </span>
-                          </span>
                         <var>$callback</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$limit</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-null">null</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$pattern</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$callback</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Replacement for the found pattern.<br />
+Can be a string or a closure that returns a string.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$limit</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-reverse" class="anchor" href="classes/kirameki/text/utf8-object.html#method-reverse">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    reverse():
+                    reverse():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-split" class="anchor" href="classes/kirameki/text/utf8-object.html#method-split">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">split(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$separator</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$limit</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-null">null</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
-      list
+      array
     </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$separator</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$limit</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-split-match" class="anchor" href="classes/kirameki/text/utf8-object.html#method-split-match">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">splitMatch(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$pattern</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$limit</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-null">null</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
-      list
+      array
     </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$pattern</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$limit</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-starts-with" class="anchor" href="classes/kirameki/text/utf8-object.html#method-starts-with">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">startsWith(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$prefix</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$prefix</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-starts-with-any" class="anchor" href="classes/kirameki/text/utf8-object.html#method-starts-with-any">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">startsWithAny(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$prefixes</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$prefixes</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-starts-with-none" class="anchor" href="classes/kirameki/text/utf8-object.html#method-starts-with-none">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">startsWithNone(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$prefixes</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$prefixes</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-substring" class="anchor" href="classes/kirameki/text/utf8-object.html#method-substring">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">substring(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$offset</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$length</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-null">null</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$offset</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$length</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-substring-after" class="anchor" href="classes/kirameki/text/utf8-object.html#method-substring-after">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">substringAfter(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$search</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$search</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>The substring to look for.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-substring-after-last" class="anchor" href="classes/kirameki/text/utf8-object.html#method-substring-after-last">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">substringAfterLast(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$search</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$search</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>The substring to look for.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-substring-before" class="anchor" href="classes/kirameki/text/utf8-object.html#method-substring-before">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">substringBefore(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$search</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$search</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>The substring to look for.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-substring-before-last" class="anchor" href="classes/kirameki/text/utf8-object.html#method-substring-before-last">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">substringBeforeLast(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$search</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$search</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>The substring to look for.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-surround" class="anchor" href="classes/kirameki/text/utf8-object.html#method-surround">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">surround(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$prefix</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$suffix</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$prefix</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$suffix</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-take-first" class="anchor" href="classes/kirameki/text/utf8-object.html#method-take-first">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">takeFirst(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$position</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$position</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-take-last" class="anchor" href="classes/kirameki/text/utf8-object.html#method-take-last">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">takeLast(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$position</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$position</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-tap" class="anchor" href="classes/kirameki/text/utf8-object.html#method-tap">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">tap(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
         Closure
       </a>
   </span>
-                          </span>
                         <var>$callback</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
-      $this
+      static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Invokes <code>$callback</code> with <code>$this</code> as argument and returns <code>$this</code>.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Invokes <code>$callback</code> with <code>$this</code> as argument and returns <code>$this</code>.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$callback</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Callback to be invoked.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-to-bool" class="anchor" href="classes/kirameki/text/utf8-object.html#method-to-bool">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    toBool():
+                    toBool():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-to-bool-or-null" class="anchor" href="classes/kirameki/text/utf8-object.html#method-to-bool-or-null">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    toBoolOrNull():
+                    toBoolOrNull():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-    <span class="delimiter">|</span>
-  <span class="type">
-    <span class="no-link named-var">
-      null
-    </span>
-  </span>
-
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-to-camel-case" class="anchor" href="classes/kirameki/text/utf8-object.html#method-to-camel-case">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    toCamelCase():
+                    toCamelCase():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-to-float" class="anchor" href="classes/kirameki/text/utf8-object.html#method-to-float">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    toFloat():
+                    toFloat():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       float
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-to-float-or-null" class="anchor" href="classes/kirameki/text/utf8-object.html#method-to-float-or-null">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    toFloatOrNull():
+                    toFloatOrNull():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       float
     </span>
   </span>
-    <span class="delimiter">|</span>
-  <span class="type">
-    <span class="no-link named-var">
-      null
-    </span>
-  </span>
-
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-to-int" class="anchor" href="classes/kirameki/text/utf8-object.html#method-to-int">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    toInt():
+                    toInt():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-to-int-or-null" class="anchor" href="classes/kirameki/text/utf8-object.html#method-to-int-or-null">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    toIntOrNull():
+                    toIntOrNull():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-    <span class="delimiter">|</span>
-  <span class="type">
-    <span class="no-link named-var">
-      null
-    </span>
-  </span>
-
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-to-kebab-case" class="anchor" href="classes/kirameki/text/utf8-object.html#method-to-kebab-case">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    toKebabCase():
+                    toKebabCase():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-to-lower-case" class="anchor" href="classes/kirameki/text/utf8-object.html#method-to-lower-case">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    toLowerCase():
+                    toLowerCase():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-to-pascal-case" class="anchor" href="classes/kirameki/text/utf8-object.html#method-to-pascal-case">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    toPascalCase():
+                    toPascalCase():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-to-snake-case" class="anchor" href="classes/kirameki/text/utf8-object.html#method-to-snake-case">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    toSnakeCase():
+                    toSnakeCase():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-to-string" class="anchor" href="classes/kirameki/text/utf8-object.html#method-to-string">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    toString():
+                    toString():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-to-upper-case" class="anchor" href="classes/kirameki/text/utf8-object.html#method-to-upper-case">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    toUpperCase():
+                    toUpperCase():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-trim" class="anchor" href="classes/kirameki/text/utf8-object.html#method-trim">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">trim(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$characters</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-null">null</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$characters</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-trim-start" class="anchor" href="classes/kirameki/text/utf8-object.html#method-trim-start">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">trimStart(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$characters</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-null">null</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$characters</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-trim-end" class="anchor" href="classes/kirameki/text/utf8-object.html#method-trim-end">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">trimEnd(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$characters</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-null">null</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$characters</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
         </ul>
       </div>

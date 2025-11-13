@@ -844,9 +844,10 @@
 
 </nav>
 <main class="structure">
-  <div class="basic-info">
+  <div class="basics">
     <div class="namespace">
-      namespace <b>Kirameki\Event\Listeners</b>
+      <span class="keyword">namespace</span>
+      <span class="name">Kirameki\Event\Listeners</span>
     </div>
     <div class="declaration">
       <span class="modifiers">
@@ -861,10 +862,10 @@
               <span class="template-name">TEvent</span>
                 <span class="bound-delimiter"> as </span>
                 <span class="bound">
-  <span class="type">
-      <span class="no-link structure-name">
+  <span class="type type-structure">
+      <a href="classes/kirameki/event/event.html">
         Kirameki\Event\Event
-      </span>
+      </a>
   </span>
                 </span>
             </span>
@@ -873,7 +874,7 @@
       </span>
     </div>
   </div>
-  <div class="details">
+  <div class="internals">
       <div class="properties">
         <h3>Properties</h3>
         <ul>
@@ -882,14 +883,13 @@
                 <span class="modifiers">
                   public
                 </span>
-                <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       class-string
     </span>
   <span class="generics">
     <span class="brace">&lt;</span>
-  <span class="type">
+  <span class="type type-template">
     <span class="no-link template-name">
       TEvent
     </span>
@@ -898,7 +898,6 @@
     <span class="brace">&gt;</span>
   </span>
   </span>
-                </span>
                 <span class="var-name">$eventClass</span>
               </div>
               <div class="comment">
@@ -914,39 +913,48 @@
               <a id="method---invoke" class="anchor" href="classes/kirameki/event/listeners/event-listener.html#method---invoke">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     abstract
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">__invoke(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
-      <span class="no-link structure-name">
+  <span class="type type-structure">
+      <a href="classes/kirameki/event/event.html">
         Kirameki\Event\Event
-      </span>
+      </a>
   </span>
-                          </span>
                         <var>$event</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$event</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
         </ul>
       </div>

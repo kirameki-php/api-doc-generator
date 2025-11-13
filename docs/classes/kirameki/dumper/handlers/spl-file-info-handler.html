@@ -844,9 +844,10 @@
 
 </nav>
 <main class="structure">
-  <div class="basic-info">
+  <div class="basics">
     <div class="namespace">
-      namespace <b>Kirameki\Dumper\Handlers</b>
+      <span class="keyword">namespace</span>
+      <span class="name">Kirameki\Dumper\Handlers</span>
     </div>
     <div class="declaration">
       <span class="modifiers">
@@ -857,15 +858,15 @@
       </span>
     </div>
   </div>
-  <div class="details">
+  <div class="internals">
     <div class="extends">
       extends:
       <ul>
         <li>
-  <span class="type">
-      <span class="no-link structure-name">
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/handlers/class-handler.html">
         Kirameki\Dumper\Handlers\ClassHandler
-      </span>
+      </a>
   </span>
         </li>
       </ul>
@@ -878,13 +879,11 @@
                 <span class="modifiers">
                   protected
                 </span>
-                <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       Color
     </span>
   </span>
-                </span>
                 <span class="var-name">$scalarColor</span>
               </div>
               <div class="comment">
@@ -896,13 +895,11 @@
                 <span class="modifiers">
                   protected
                 </span>
-                <span class="types">
-  <span class="type">
-      <span class="no-link structure-name">
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/formatter.html">
         Kirameki\Dumper\Formatter
-      </span>
+      </a>
   </span>
-                </span>
                 <span class="var-name">$formatter</span>
               </div>
               <div class="comment">
@@ -915,13 +912,11 @@
                     readonly
                   protected
                 </span>
-                <span class="types">
-  <span class="type">
-      <span class="no-link structure-name">
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/decorators/decorator.html">
         Kirameki\Dumper\Decorators\Decorator
-      </span>
+      </a>
   </span>
-                </span>
                 <span class="var-name">$decorator</span>
               </div>
               <div class="comment">
@@ -934,13 +929,11 @@
                     readonly
                   protected
                 </span>
-                <span class="types">
-  <span class="type">
-      <span class="no-link structure-name">
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/config.html">
         Kirameki\Dumper\Config
-      </span>
+      </a>
   </span>
-                </span>
                 <span class="var-name">$config</span>
               </div>
               <div class="comment">
@@ -956,735 +949,864 @@
               <a id="method-handle" class="anchor" href="classes/kirameki/dumper/handlers/spl-file-info-handler.html#method-handle">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">handle(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       object
     </span>
   </span>
-                          </span>
                         <var>$var</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$id</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$depth</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
-      <span class="no-link structure-name">
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/object-tracker.html">
         Kirameki\Dumper\ObjectTracker
-      </span>
+      </a>
   </span>
-                          </span>
                         <var>$tracker</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$var</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$id</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$depth</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$tracker</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-get-properties" class="anchor" href="classes/kirameki/dumper/handlers/spl-file-info-handler.html#method-get-properties">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   protected
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">getProperties(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       object
     </span>
   </span>
-                          </span>
                         <var>$var</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       array
     </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link named-var">
-      mixed
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$var</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-get-property-name" class="anchor" href="classes/kirameki/dumper/handlers/spl-file-info-handler.html#method-get-property-name">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   protected
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">getPropertyName(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.reflectionproperty.php" class="external-link" target="_blank">
         ReflectionProperty
       </a>
   </span>
-                          </span>
                         <var>$reflection</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$reflection</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-get-property-value" class="anchor" href="classes/kirameki/dumper/handlers/spl-file-info-handler.html#method-get-property-value">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   protected
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">getPropertyValue(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       object
     </span>
   </span>
-                          </span>
                         <var>$var</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.reflectionproperty.php" class="external-link" target="_blank">
         ReflectionProperty
       </a>
   </span>
-                          </span>
                         <var>$reflection</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       mixed
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$var</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$reflection</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-get-debug-info" class="anchor" href="classes/kirameki/dumper/handlers/spl-file-info-handler.html#method-get-debug-info">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   protected
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">getDebugInfo(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       object
     </span>
   </span>
-                          </span>
                         <var>$var</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       array
     </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link named-var">
-      string
-    </span>
   </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link named-var">
-      mixed
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type">
-    <span class="no-link named-var">
-      null
-    </span>
-  </span>
-
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$var</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-colorize-name" class="anchor" href="classes/kirameki/dumper/handlers/spl-file-info-handler.html#method-colorize-name">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   protected
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">colorizeName(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$name</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$name</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-is-uninitialized-property-error" class="anchor" href="classes/kirameki/dumper/handlers/spl-file-info-handler.html#method-is-uninitialized-property-error">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   protected
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">isUninitializedPropertyError(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.error.php" class="external-link" target="_blank">
         Error
       </a>
   </span>
-                          </span>
                         <var>$error</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.reflectionproperty.php" class="external-link" target="_blank">
         ReflectionProperty
       </a>
   </span>
-                          </span>
                         <var>$ref</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$error</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$ref</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method---construct" class="anchor" href="classes/kirameki/dumper/handlers/spl-file-info-handler.html#method---construct">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">__construct(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
-      <span class="no-link structure-name">
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/formatter.html">
         Kirameki\Dumper\Formatter
-      </span>
+      </a>
   </span>
-                          </span>
                         <var>$formatter</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
-      <span class="no-link structure-name">
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/decorators/decorator.html">
         Kirameki\Dumper\Decorators\Decorator
-      </span>
+      </a>
   </span>
-                          </span>
                         <var>$decorator</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
-      <span class="no-link structure-name">
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/config.html">
         Kirameki\Dumper\Config
-      </span>
+      </a>
   </span>
-                          </span>
                         <var>$config</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       mixed
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$formatter</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$decorator</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$config</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-indent" class="anchor" href="classes/kirameki/dumper/handlers/spl-file-info-handler.html#method-indent">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   protected
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">indent(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$string</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$depth</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$string</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$depth</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-line" class="anchor" href="classes/kirameki/dumper/handlers/spl-file-info-handler.html#method-line">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   protected
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">line(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$string</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$depth</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$string</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$depth</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-eol" class="anchor" href="classes/kirameki/dumper/handlers/spl-file-info-handler.html#method-eol">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   protected
-                  function
                 </span>
                 <span class="name">
-                    eol():
+                    eol():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-colorize-comment" class="anchor" href="classes/kirameki/dumper/handlers/spl-file-info-handler.html#method-colorize-comment">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   protected
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">colorizeComment(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$comment</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$comment</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-colorize-scalar" class="anchor" href="classes/kirameki/dumper/handlers/spl-file-info-handler.html#method-colorize-scalar">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   protected
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">colorizeScalar(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       mixed
     </span>
   </span>
-                          </span>
                         <var>$value</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$value</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-colorize-key" class="anchor" href="classes/kirameki/dumper/handlers/spl-file-info-handler.html#method-colorize-key">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   protected
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">colorizeKey(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-union">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
     <span class="delimiter">|</span>
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
 
-                          </span>
+  </span>
                         <var>$key</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$key</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-colorize-delimiter" class="anchor" href="classes/kirameki/dumper/handlers/spl-file-info-handler.html#method-colorize-delimiter">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   protected
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">colorizeDelimiter(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$delimiter</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$delimiter</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-colorize" class="anchor" href="classes/kirameki/dumper/handlers/spl-file-info-handler.html#method-colorize">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   protected
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">colorize(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$value</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-structure">
       <span class="no-link structure-name">
         SouthPointe\Ansi\Codes\Color
       </span>
   </span>
-                          </span>
                         <var>$color</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$value</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$color</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
         </ul>
       </div>

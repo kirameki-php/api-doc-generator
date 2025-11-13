@@ -3,11 +3,11 @@
 namespace Kirameki\ApiDocGenerator\Support;
 
 use IteratorAggregate;
-use Kirameki\ApiDocGenerator\Components\ClassDefinition;
+use Kirameki\ApiDocGenerator\Components\ClassInfo;
 use Traversable;
 
 /**
- * @implements IteratorAggregate<string, ClassDefinition>
+ * @implements IteratorAggregate<string, ClassInfo>
  */
 class Tree implements IteratorAggregate
 {
@@ -17,7 +17,7 @@ class Tree implements IteratorAggregate
     public array $namespaces = [];
 
     /**
-     * @var array<string, ClassDefinition>
+     * @var array<string, ClassInfo>
      */
     public array $classes = [];
 
@@ -34,7 +34,7 @@ class Tree implements IteratorAggregate
     }
 
     /**
-     * @return Traversable<string, ClassDefinition>
+     * @return Traversable<string, ClassInfo>
      */
     public function getIterator(): Traversable
     {

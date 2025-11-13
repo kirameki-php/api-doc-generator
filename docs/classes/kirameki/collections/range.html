@@ -844,9 +844,10 @@
 
 </nav>
 <main class="structure">
-  <div class="basic-info">
+  <div class="basics">
     <div class="namespace">
-      namespace <b>Kirameki\Collections</b>
+      <span class="keyword">namespace</span>
+      <span class="name">Kirameki\Collections</span>
     </div>
     <div class="declaration">
       <span class="modifiers">
@@ -859,31 +860,31 @@
       </span>
     </div>
   </div>
-  <div class="details">
+  <div class="internals">
     <div class="implements">
       implements:
       <ul>
           <li>
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.countable.php" class="external-link" target="_blank">
         Countable
       </a>
   </span>
           </li>
           <li>
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.iteratoraggregate.php" class="external-link" target="_blank">
         IteratorAggregate
       </a>
   <span class="generics">
     <span class="brace">&lt;</span>
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
       <span class="delimiter">,</span>
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       mixed
     </span>
@@ -904,13 +905,11 @@
                     readonly
                   private
                 </span>
-                <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                </span>
                 <span class="var-name">$start</span>
               </div>
               <div class="comment">
@@ -923,13 +922,11 @@
                     readonly
                   private
                 </span>
-                <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                </span>
                 <span class="var-name">$end</span>
               </div>
               <div class="comment">
@@ -942,13 +939,11 @@
                     readonly
                   private
                 </span>
-                <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                </span>
                 <span class="var-name">$includeEnd</span>
               </div>
               <div class="comment">
@@ -964,234 +959,227 @@
               <a id="method---construct" class="anchor" href="classes/kirameki/collections/range.html#method---construct">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">__construct(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$start</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$end</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                          </span>
                         <var>$includeEnd</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-bool">true</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       mixed
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$start</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Starting number of the range.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$end</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Ending number of the range.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$includeEnd</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Whether to include the end number or not.<br />
+Defaults to <strong>true</strong>.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-count" class="anchor" href="classes/kirameki/collections/range.html#method-count">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    count():
+                    count():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-get-iterator" class="anchor" href="classes/kirameki/collections/range.html#method-get-iterator">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    getIterator():
+                    getIterator():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.traversable.php" class="external-link" target="_blank">
         Traversable
       </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-all" class="anchor" href="classes/kirameki/collections/range.html#method-all">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    all():
+                    all():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       array
     </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-min" class="anchor" href="classes/kirameki/collections/range.html#method-min">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    min():
+                    min():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-max" class="anchor" href="classes/kirameki/collections/range.html#method-max">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    max():
+                    max():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-includes-end" class="anchor" href="classes/kirameki/collections/range.html#method-includes-end">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    includesEnd():
+                    includesEnd():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
         </ul>
       </div>

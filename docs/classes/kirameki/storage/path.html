@@ -844,9 +844,10 @@
 
 </nav>
 <main class="structure">
-  <div class="basic-info">
+  <div class="basics">
     <div class="namespace">
-      namespace <b>Kirameki\Storage</b>
+      <span class="keyword">namespace</span>
+      <span class="name">Kirameki\Storage</span>
     </div>
     <div class="declaration">
       <span class="modifiers">
@@ -858,12 +859,12 @@
       </span>
     </div>
   </div>
-  <div class="details">
+  <div class="internals">
     <div class="implements">
       implements:
       <ul>
           <li>
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.stringable.php" class="external-link" target="_blank">
         Stringable
       </a>
@@ -879,13 +880,11 @@
                 <span class="modifiers">
                   protected
                 </span>
-                <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                </span>
                 <span class="var-name">$value</span>
               </div>
               <div class="comment">
@@ -901,470 +900,520 @@
               <a id="method-combine" class="anchor" href="classes/kirameki/storage/path.html#method-combine">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">combine(</span>
                   <ul class="parameters">
                       <li class="parameter">
                           ...
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$paths</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Combines multiple paths into one, ensuring there are no duplicate slashes.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Combines multiple paths into one, ensuring there are no duplicate slashes.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$paths</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-of" class="anchor" href="classes/kirameki/storage/path.html#method-of">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">of(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$path</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       self
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$path</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method---construct" class="anchor" href="classes/kirameki/storage/path.html#method---construct">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   protected
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">__construct(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$value</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       mixed
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$value</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-is-absolute" class="anchor" href="classes/kirameki/storage/path.html#method-is-absolute">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    isAbsolute():
+                    isAbsolute():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-is-relative" class="anchor" href="classes/kirameki/storage/path.html#method-is-relative">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    isRelative():
+                    isRelative():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-ends-with" class="anchor" href="classes/kirameki/storage/path.html#method-ends-with">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">endsWith(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$suffix</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$suffix</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-segments" class="anchor" href="classes/kirameki/storage/path.html#method-segments">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">segments(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                          </span>
                         <var>$normalize</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-bool">true</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       array
     </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Splits the path into its segments.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Splits the path into its segments.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$normalize</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Whether to normalize the segments by resolving <code>.</code> and <code>..</code>.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-normalize" class="anchor" href="classes/kirameki/storage/path.html#method-normalize">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    normalize():
+                    normalize():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Normalizes a path by resolving <code>.</code> and <code>..</code> segments and removing redundant slashes.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Normalizes a path by resolving <code>.</code> and <code>..</code> segments and removing redundant slashes.</p>
 
-
-              </div>
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-normalize-segments" class="anchor" href="classes/kirameki/storage/path.html#method-normalize-segments">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   protected
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">normalizeSegments(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                          </span>
                         <var>$preserveLeadingSlash</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-bool">false</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
-      list
+      array
     </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Normalizes an array of path segments by resolving <code>.</code> and <code>..</code> segments and removing redundant slashes.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Normalizes an array of path segments by resolving <code>.</code> and <code>..</code> segments and removing redundant slashes.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$preserveLeadingSlash</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-append" class="anchor" href="classes/kirameki/storage/path.html#method-append">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">append(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-union">
+  <span class="type type-named">
     <span class="no-link named-var">
       self
     </span>
   </span>
     <span class="delimiter">|</span>
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
 
-                          </span>
+  </span>
                         <var>$subpath</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
-      $this
+      self
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$subpath</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-to-storable" class="anchor" href="classes/kirameki/storage/path.html#method-to-storable">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">toStorable(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                          </span>
                         <var>$followSymlink</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-bool">true</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
-      <span class="no-link structure-name">
+  <span class="type type-structure">
+      <a href="classes/kirameki/storage/storable.html">
         Kirameki\Storage\Storable
-      </span>
+      </a>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Converts the path to a Storable instance (File, Directory, or Symlink).</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Converts the path to a Storable instance (File, Directory, or Symlink).</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$followSymlink</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Whether to follow symlinks when determining the type.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method---to-string" class="anchor" href="classes/kirameki/storage/path.html#method---to-string">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    __toString():
+                    __toString():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-to-string" class="anchor" href="classes/kirameki/storage/path.html#method-to-string">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    toString():
+                    toString():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
         </ul>
       </div>

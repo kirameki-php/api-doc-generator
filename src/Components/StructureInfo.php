@@ -2,10 +2,7 @@
 
 namespace Kirameki\ApiDocGenerator\Components;
 
-use Kirameki\Collections\Vec;
-use Kirameki\Text\Str;
-
-interface StructureDefinition
+interface StructureInfo
 {
     /**
      * @var string
@@ -29,7 +26,7 @@ interface StructureDefinition
     }
 
     /**
-     * @var list<TemplateDefinition>
+     * @var list<TemplateInfo>
      */
     public array $templates {
         get;

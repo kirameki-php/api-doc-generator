@@ -6,6 +6,7 @@ use Kirameki\Core\Exceptions\UnreachableException;
 use League\CommonMark\MarkdownConverter;
 use PHPStan\PhpDocParser\Ast\PhpDoc\ExtendsTagValueNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\ImplementsTagValueNode;
+use PHPStan\PhpDocParser\Ast\PhpDoc\ParamTagValueNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocTagNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocTextNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\ReturnTagValueNode;
@@ -14,7 +15,6 @@ use PHPStan\PhpDocParser\Ast\PhpDoc\VarTagValueNode;
 use PHPStan\PhpDocParser\Lexer\Lexer;
 use PHPStan\PhpDocParser\Parser\PhpDocParser;
 use PHPStan\PhpDocParser\Parser\TokenIterator;
-use function dump;
 use function str_replace;
 
 class CommentParser
@@ -23,13 +23,11 @@ class CommentParser
      * @param Lexer $lexer
      * @param PhpDocParser $parser
      * @param ClassFile $file
-     * @param MarkdownConverter $markdownConverter
      */
     public function __construct(
         protected Lexer $lexer,
         protected PhpDocParser $parser,
         protected ClassFile $file,
-        protected MarkdownConverter $markdownConverter,
     ) {
     }
 
@@ -51,6 +49,7 @@ class CommentParser
         $implements = [];
         $return = null;
         $var = null;
+        $params = [];
         $texts = [];
 
         foreach ($nodes as $node) {
@@ -62,10 +61,11 @@ class CommentParser
                     $val instanceof ExtendsTagValueNode => $extends = $val,
                     $val instanceof ReturnTagValueNode => $return = $val,
                     $val instanceof VarTagValueNode => $var = $val,
+                    $val instanceof ParamTagValueNode => $params[$val->parameterName] = $val,
                     default => null,
                 };
             } elseif ($node instanceof PhpDocTextNode) {
-                $texts[]= $this->toMarkdown($node->text);
+                $texts[]= $node->text;
             } else {
                 throw new UnreachableException();
             }
@@ -76,14 +76,8 @@ class CommentParser
             $implements,
             $return,
             $var,
+            $params,
             $texts,
         );
-    }
-
-    protected function toMarkdown(string $text): string
-    {
-        return $this->markdownConverter
-            ->convert(str_replace("\n", "  \n ", $text))
-            ->getContent();
     }
 }

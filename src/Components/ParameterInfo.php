@@ -6,7 +6,7 @@ use Kirameki\ApiDocGenerator\Support\TypeResolver;
 use Kirameki\ApiDocGenerator\Types\VarType;
 use ReflectionParameter;
 
-class ParameterDefinition
+class ParameterInfo
 {
     /**
      * @var string
@@ -16,17 +16,24 @@ class ParameterDefinition
     }
 
     /**
-     * @var VarType|null
+     * @var string
      */
-    public ?VarType $type {
-        get => $this->type ??= $this->typeResolver->resolveFromReflection($this->reflection->getType());
+    public string $description {
+        get => $this->description ??= $this->resolveDescription();
     }
 
     /**
-     * @var bool
+     * @var VarType|null
      */
-    public bool $isOptional {
-        get => $this->reflection->isOptional();
+    public ?VarType $type {
+        get => $this->type ??= $this->resolveType();
+    }
+
+    /**
+     * @var VarType|null
+     */
+    public ?VarType $docType {
+        get => $this->docType ??= $this->resolveDocType();
     }
 
     /**
@@ -65,18 +72,45 @@ class ParameterDefinition
     }
 
     /**
-     * @param ClassDefinition $class
-     * @param MethodDefinition $method
+     * @param ClassInfo $class
+     * @param MethodInfo $method
      * @param ReflectionParameter $reflection
      * @param TypeResolver $typeResolver
-     * @param PropertyDefinition|null $promotedProperty
+     * @param PropertyInfo|null $promotedProperty
      */
     public function __construct(
-        protected readonly ClassDefinition $class,
-        protected readonly MethodDefinition $method,
+        protected readonly ClassInfo $class,
+        protected readonly MethodInfo $method,
         protected readonly ReflectionParameter $reflection,
         protected readonly TypeResolver $typeResolver,
-        protected readonly ?PropertyDefinition $promotedProperty = null,
+        protected readonly ?PropertyInfo $promotedProperty = null,
     ) {
+    }
+
+    /**
+     * @return string
+     */
+    protected function resolveDescription(): string
+    {
+        return $this->method->phpDoc->params['$' . $this->name]->description ?? '';
+    }
+
+    /**
+     * @return VarType|null
+     */
+    protected function resolveDocType(): ?VarType
+    {
+        $node = $this->method->phpDoc->params['$' . $this->name] ?? null;
+        return $node !== null
+            ? $this->typeResolver->resolveFromNode($node->type, $this->method->phpDoc)
+            : $this->type;
+    }
+
+    /**
+     * @return VarType|null
+     */
+    protected function resolveType(): ?VarType
+    {
+        return $this->typeResolver->resolveFromReflection($this->reflection->getType());
     }
 }

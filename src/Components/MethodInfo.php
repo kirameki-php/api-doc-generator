@@ -10,7 +10,7 @@ use Kirameki\Text\Str;
 use ReflectionMethod;
 use ReflectionParameter;
 
-class MethodDefinition extends MemberDefinition
+class MethodInfo extends MemberInfo
 {
     /**
      * @var string
@@ -27,12 +27,12 @@ class MethodDefinition extends MemberDefinition
     }
 
     /**
-     * @var list<ParameterDefinition>
+     * @var list<ParameterInfo>
      */
     public array $parameters {
         get => $this->parameters ??= array_map(
-            fn (ReflectionParameter $param) => new ParameterDefinition($this->class, $this, $param, $this->typeResolver),
-            $this->reflection->getParameters()
+            fn (ReflectionParameter $param) => new ParameterInfo($this->class, $this, $param, $this->typeResolver),
+            $this->reflection->getParameters(),
         );
     }
 
@@ -41,6 +41,13 @@ class MethodDefinition extends MemberDefinition
      */
     public VarType $returnType {
         get => $this->returnType ??= $this->resolveReturnType();
+    }
+
+    /**
+     * @var VarType
+     */
+    public VarType $returnDocType {
+        get => $this->returnDocType ??= $this->resolveReturnDocType();
     }
 
     /**
@@ -84,13 +91,13 @@ class MethodDefinition extends MemberDefinition
     }
 
     /**
-     * @param ClassDefinition $class
+     * @param ClassInfo $class
      * @param ReflectionMethod $reflection
      * @param CommentParser $docParser
      * @param TypeResolver $typeResolver
      */
     public function __construct(
-        protected ClassDefinition $class,
+        protected ClassInfo $class,
         protected ReflectionMethod $reflection,
         CommentParser $docParser,
         protected TypeResolver $typeResolver,
@@ -101,10 +108,15 @@ class MethodDefinition extends MemberDefinition
     /**
      * @return VarType
      */
-    protected function resolveReturnType(): VarType
+    protected function resolveReturnDocType(): VarType
     {
         return $this->phpDoc->return !== null
             ? $this->typeResolver->resolveFromNode($this->phpDoc->return->type, $this->phpDoc)
-            : $this->typeResolver->resolveFromReflection($this->reflection->getReturnType());
+            : $this->returnType;
+    }
+
+    protected function resolveReturnType(): VarType
+    {
+        return $this->typeResolver->resolveFromReflection($this->reflection->getReturnType());
     }
 }

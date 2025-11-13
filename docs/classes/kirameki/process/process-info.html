@@ -844,9 +844,10 @@
 
 </nav>
 <main class="structure">
-  <div class="basic-info">
+  <div class="basics">
     <div class="namespace">
-      namespace <b>Kirameki\Process</b>
+      <span class="keyword">namespace</span>
+      <span class="name">Kirameki\Process</span>
     </div>
     <div class="declaration">
       <span class="modifiers">
@@ -858,7 +859,7 @@
       </span>
     </div>
   </div>
-  <div class="details">
+  <div class="internals">
       <div class="properties">
         <h3>Properties</h3>
         <ul>
@@ -868,20 +869,20 @@
                     readonly
                   public
                 </span>
-                <span class="types">
-  <span class="type">
+  <span class="type type-union">
+  <span class="type type-named">
     <span class="no-link named-var">
       array
     </span>
   </span>
     <span class="delimiter">|</span>
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
 
-                </span>
+  </span>
                 <span class="var-name">$definedCommand</span>
               </div>
               <div class="comment">
@@ -894,20 +895,20 @@
                     readonly
                   public
                 </span>
-                <span class="types">
-  <span class="type">
+  <span class="type type-union">
+  <span class="type type-named">
     <span class="no-link named-var">
       array
     </span>
   </span>
     <span class="delimiter">|</span>
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
 
-                </span>
+  </span>
                 <span class="var-name">$executedCommand</span>
               </div>
               <div class="comment">
@@ -920,13 +921,11 @@
                     readonly
                   public
                 </span>
-                <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                </span>
                 <span class="var-name">$workingDirectory</span>
               </div>
               <div class="comment">
@@ -939,13 +938,11 @@
                     readonly
                   public
                 </span>
-                <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       array
     </span>
   </span>
-                </span>
                 <span class="var-name">$envs</span>
               </div>
               <div class="comment">
@@ -958,13 +955,11 @@
                     readonly
                   public
                 </span>
-                <span class="types">
-  <span class="type">
-      <span class="no-link structure-name">
+  <span class="type type-structure">
+      <a href="classes/kirameki/process/timeout-info.html">
         Kirameki\Process\TimeoutInfo
-      </span>
+      </a>
   </span>
-                </span>
                 <span class="var-name">$timeout</span>
               </div>
               <div class="comment">
@@ -977,13 +972,11 @@
                     readonly
                   public
                 </span>
-                <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                </span>
                 <span class="var-name">$termSignal</span>
               </div>
               <div class="comment">
@@ -996,13 +989,11 @@
                     readonly
                   public
                 </span>
-                <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       array
     </span>
   </span>
-                </span>
                 <span class="var-name">$exceptedExitCodes</span>
               </div>
               <div class="comment">
@@ -1015,13 +1006,11 @@
                     readonly
                   public
                 </span>
-                <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                </span>
                 <span class="var-name">$pid</span>
               </div>
               <div class="comment">
@@ -1037,129 +1026,163 @@
               <a id="method---construct" class="anchor" href="classes/kirameki/process/process-info.html#method---construct">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">__construct(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-union">
+  <span class="type type-named">
     <span class="no-link named-var">
       array
     </span>
   </span>
     <span class="delimiter">|</span>
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
 
-                          </span>
+  </span>
                         <var>$definedCommand</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-union">
+  <span class="type type-named">
     <span class="no-link named-var">
       array
     </span>
   </span>
     <span class="delimiter">|</span>
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
 
-                          </span>
+  </span>
                         <var>$executedCommand</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$workingDirectory</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       array
     </span>
   </span>
-                          </span>
                         <var>$envs</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
-      <span class="no-link structure-name">
+  <span class="type type-structure">
+      <a href="classes/kirameki/process/timeout-info.html">
         Kirameki\Process\TimeoutInfo
-      </span>
+      </a>
   </span>
-                          </span>
                         <var>$timeout</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$termSignal</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       array
     </span>
   </span>
-                          </span>
                         <var>$exceptedExitCodes</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$pid</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       mixed
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$definedCommand</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$executedCommand</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$workingDirectory</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$envs</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$timeout</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$termSignal</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$exceptedExitCodes</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$pid</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
         </ul>
       </div>

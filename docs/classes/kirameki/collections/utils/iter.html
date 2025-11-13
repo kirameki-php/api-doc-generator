@@ -844,9 +844,10 @@
 
 </nav>
 <main class="structure">
-  <div class="basic-info">
+  <div class="basics">
     <div class="namespace">
-      namespace <b>Kirameki\Collections\Utils</b>
+      <span class="keyword">namespace</span>
+      <span class="name">Kirameki\Collections\Utils</span>
     </div>
     <div class="declaration">
       <span class="modifiers">
@@ -858,7 +859,7 @@
       </span>
     </div>
   </div>
-  <div class="details">
+  <div class="internals">
       <div class="methods-wrapper">
         <h3>Methods</h3>
         <ul class="methods">
@@ -866,825 +867,790 @@
               <a id="method-chunk" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-chunk">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">chunk(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$iterable</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$size</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                          </span>
                         <var>$reindex</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-bool">false</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
         Generator
       </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link named-var">
-      array
-    </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TKey
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Creates a Generator which chunks elements into given size and passes it to the Generator.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Creates a Generator which chunks elements into given size and passes it to the Generator.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$iterable</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Iterable to be traversed.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$size</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Size of each chunk. Must be &gt;= 1.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$reindex</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>If set to <strong>true</strong> the array will be re-indexed.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-collect" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-collect">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">collect(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$iterable</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
         Closure
       </a>
   </span>
-                          </span>
                         <var>$callback</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
         Generator
       </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TMapValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Creates a Generator that will send the result of the Generator returned by the <code>$callback</code>.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Creates a Generator that will send the result of the Generator returned by the <code>$callback</code>.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$iterable</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Iterable to be traversed.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$callback</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Closure that will be called for each key/value. The returned value will be yielded.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-drop-first" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-drop-first">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">dropFirst(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$iterable</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$amount</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                          </span>
                         <var>$reindex</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-bool">false</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
         Generator
       </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TKey
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Creates a Generator which iterates after the given amount.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Creates a Generator which iterates after the given amount.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$iterable</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Iterable to be traversed.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$amount</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Amount of elements to drop from the front. Must be &gt;= 0.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$reindex</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>If set to <strong>true</strong> the array will be re-indexed.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-drop-if" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-drop-if">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">dropIf(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$iterable</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
         Closure
       </a>
   </span>
-                          </span>
                         <var>$condition</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                          </span>
                         <var>$reindex</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-bool">false</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
         Generator
       </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TKey
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Creates a Generator that will send the key/value to the generator if the condition is <strong>false</strong>.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Creates a Generator that will send the key/value to the generator if the condition is <strong>false</strong>.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$iterable</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Iterable to be traversed.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$condition</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>A condition that should return a boolean.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$reindex</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>If set to <strong>true</strong> the array will be re-indexed.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-drop-until" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-drop-until">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">dropUntil(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$iterable</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
         Closure
       </a>
   </span>
-                          </span>
                         <var>$condition</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                          </span>
                         <var>$reindex</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-bool">false</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
         Generator
       </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TKey
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Creates a Generator which iterates and drop values until the condition returns <strong>true</strong>.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Creates a Generator which iterates and drop values until the condition returns <strong>true</strong>.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$iterable</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Iterable to be traversed.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$condition</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>A condition that should return a boolean value.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$reindex</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>If set to <strong>true</strong> the array will be re-indexed.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-drop-while" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-drop-while">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">dropWhile(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$iterable</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
         Closure
       </a>
   </span>
-                          </span>
                         <var>$condition</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                          </span>
                         <var>$reindex</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-bool">false</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
         Generator
       </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TKey
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Creates a Generator which iterates and drop values while the condition returns <strong>true</strong>.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Creates a Generator which iterates and drop values while the condition returns <strong>true</strong>.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$iterable</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Iterable to be traversed.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$condition</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>A condition that should return a boolean.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$reindex</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>If set to <strong>true</strong> the array will be re-indexed.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-each" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-each">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">each(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$iterable</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
         Closure
       </a>
   </span>
-                          </span>
                         <var>$callback</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
         Generator
       </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TKey
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Iterates through <code>$iterable</code> and invoke <code>$callback</code> for each element.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Iterates through <code>$iterable</code> and invoke <code>$callback</code> for each element.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$iterable</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Iterable to be traversed.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$callback</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Callback which is called for every element of <code>$iterable</code>.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-flat-map" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-flat-map">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">flatMap(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$iterable</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
         Closure
       </a>
   </span>
-                          </span>
                         <var>$callback</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
         Generator
       </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TMapValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Creates a Generator that will map and also flatten the result of the callback.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Creates a Generator that will map and also flatten the result of the callback.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$iterable</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Iterable to be traversed.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$callback</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Closure that will be called for each key/value. The returned value will be yielded.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-flatten" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-flatten">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">flatten(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$iterable</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$depth</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-default">1</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
         Generator
       </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link named-var">
-      mixed
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link named-var">
-      mixed
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Creates a Generator that will flatten any iterable value.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Creates a Generator that will flatten any iterable value.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$iterable</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Iterable to be traversed.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$depth</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Depth must be &gt;= 1. Default: 1.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-flatten-impl" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-flatten-impl">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   protected
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">flattenImpl(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$iterable</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$depth</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-default">1</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
         Generator
       </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link named-var">
-      mixed
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link named-var">
-      mixed
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Actual implementation for flatten.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Actual implementation for flatten.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$iterable</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Iterable to be traversed.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$depth</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Depth must be &gt;= 1. Default: 1.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-replace" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-replace">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">replace(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$iterable</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       mixed
     </span>
   </span>
-                          </span>
                         <var>$search</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       mixed
     </span>
   </span>
-                          </span>
                         <var>$replacement</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$limit</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
@@ -1694,353 +1660,350 @@
                       </li>
                       <li class="parameter">
                           &
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$count</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-default">0</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
         Generator
       </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TKey
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Returns an array which contains keys and values from <code>$iterable</code><br />
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Returns an array which contains keys and values from <code>$iterable</code><br />
 but with the <code>$search</code> value replaced with the <code>$replacement</code> value.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$iterable</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Iterable to be traversed.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$search</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>The value to replace.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$replacement</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Replacement for the searched value.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$limit</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>[Optional] Sets a limit to number of times a replacement can take place.<br />
+Defaults to <strong>null</strong>.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$count</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>[Optional][Reference] Sets the number of times replacements occurred.<br />
+Any value previously set will be reset.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-keys" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-keys">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">keys(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$iterable</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
         Generator
       </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TKey
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Creates a Generator that will send the key to the generator as value.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Creates a Generator that will send the key to the generator as value.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$iterable</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Iterable to be traversed.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-map" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-map">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">map(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$iterable</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
         Closure
       </a>
   </span>
-                          </span>
                         <var>$callback</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
         Generator
       </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TKey
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TMapValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Creates a Generator that will send the result of the closure as value to the generator.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Creates a Generator that will send the result of the closure as value to the generator.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$iterable</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Iterable to be traversed.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$callback</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Closure which the result will be mapped as value.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-map-with-key" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-map-with-key">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">mapWithKey(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$iterable</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
         Closure
       </a>
   </span>
-                          </span>
                         <var>$callback</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
         Generator
       </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TMapKey
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TMapValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Creates a Generator that will map and also flatten the result of the callback.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Creates a Generator that will map and also flatten the result of the callback.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$iterable</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Iterable to be traversed.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$callback</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Closure that will be called for each key/value. The returned value will be yielded.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-repeat" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-repeat">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">repeat(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$iterable</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$times</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
         Generator
       </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TKey
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Creates a Generator that will repeat through the iterable for a given amount of times.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Creates a Generator that will repeat through the iterable for a given amount of times.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$iterable</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Iterable to be traversed.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$times</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Amount of times the iterable will be repeated.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-slice" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-slice">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">slice(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$iterable</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$offset</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$length</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
@@ -2049,711 +2012,716 @@ but with the <code>$search</code> value replaced with the <code>$replacement</co
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                          </span>
                         <var>$reindex</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-bool">false</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
         Generator
       </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TKey
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Creates a Generator that will iterate starting from the offset up to the given length.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Creates a Generator that will iterate starting from the offset up to the given length.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$iterable</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Iterable to be traversed.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$offset</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>If offset is non-negative, the sequence will start at that offset.<br />
+If offset is negative, the sequence will start that far from the end.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$length</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>If length is given and is positive, then the sequence will have up to that many elements in it.<br />
+If the iterable is shorter than the length, then only the available array elements will be present.<br />
+If length is given and is negative then the sequence will stop that many elements from the end.<br />
+If it is omitted, then the sequence will have everything from offset up until the end.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$reindex</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>If set to <strong>true</strong> the array will be re-indexed.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-take-first" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-take-first">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">takeFirst(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$iterable</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$amount</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
         Generator
       </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TKey
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Creates a Generator which takes the given amount of values.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Creates a Generator which takes the given amount of values.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$iterable</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>$iterable Iterable to be traversed.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$amount</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Amount of elements to take. Must be &gt;= 0.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-slide" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-slide">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">slide(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$iterable</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$size</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                          </span>
                         <var>$reindex</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-bool">false</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
         Generator
       </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link named-var">
-      array
-    </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TKey
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Creates a Generator that yields sub-slices of <code>$size</code>.<br />
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Creates a Generator that yields sub-slices of <code>$size</code>.<br />
 Also known as sliding window.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$iterable</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Iterable to be traversed.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$size</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Size of the window. Must be &gt;= 1.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$reindex</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>If set to <strong>true</strong> the array will be re-indexed.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-take-if" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-take-if">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">takeIf(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$iterable</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
         Closure
       </a>
   </span>
-                          </span>
                         <var>$condition</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                          </span>
                         <var>$reindex</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-bool">false</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
         Generator
       </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TKey
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Creates a Generator that will send the key/value to the generator if the condition is <strong>true</strong>.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Creates a Generator that will send the key/value to the generator if the condition is <strong>true</strong>.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$iterable</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Iterable to be traversed.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$condition</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>A condition that should return a boolean.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$reindex</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>[Optional] Result will be re-indexed if <strong>true</strong>.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-take-instance-of" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-take-instance-of">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">takeInstanceOf(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$iterable</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$class</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                          </span>
                         <var>$reindex</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-bool">false</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
         Generator
       </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TKey
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TClass
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Iterates over each element in $iterable and takes only the elements that are instances of the given class.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Iterates over each element in $iterable and takes only the elements that are instances of the given class.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$iterable</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Iterable to be traversed.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$class</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Class to be checked with <code>instanceof</code>.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$reindex</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>[Optional] Result will be re-indexed if <strong>true</strong>.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-take-until" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-take-until">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">takeUntil(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$iterable</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
         Closure
       </a>
   </span>
-                          </span>
                         <var>$condition</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
         Generator
       </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TKey
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Creates a Generator which iterates and sends key/value to the generator until the condition returns <strong>true</strong>.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Creates a Generator which iterates and sends key/value to the generator until the condition returns <strong>true</strong>.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$iterable</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Iterable to be traversed.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$condition</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>A break condition that should return false when loop should stop.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-take-while" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-take-while">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">takeWhile(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$iterable</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
         Closure
       </a>
   </span>
-                          </span>
                         <var>$condition</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
         Generator
       </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TKey
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Creates a Generator which iterates and sends key/value to the generator while the condition returns <strong>true</strong>.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Creates a Generator which iterates and sends key/value to the generator while the condition returns <strong>true</strong>.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$iterable</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Iterable to be traversed.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$condition</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>A condition that should return a boolean value.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-values" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-values">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">values(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
   </span>
-                          </span>
                         <var>$iterable</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.generator.php" class="external-link" target="_blank">
         Generator
       </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Creates a Generator that will send only the value to the generator.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Creates a Generator that will send only the value to the generator.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$iterable</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>Iterable to be traversed.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-verify-bool" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-verify-bool">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   private
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">verifyBool(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
         Closure
       </a>
   </span>
-                          </span>
                         <var>$condition</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       mixed
     </span>
   </span>
-                          </span>
                         <var>$key</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       mixed
     </span>
   </span>
-                          </span>
                         <var>$val</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Invoke the condition closure and make sure that it returns a boolean value.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Invoke the condition closure and make sure that it returns a boolean value.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$condition</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>The condition that returns a boolean value.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$key</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>the 2nd argument for the condition closure.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$val</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>1st argument for the condition closure.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-verify-iterable" class="anchor" href="classes/kirameki/collections/utils/iter.html#method-verify-iterable">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   private
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">verifyIterable(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-structure">
       <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
         Closure
       </a>
   </span>
-                          </span>
                         <var>$condition</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       mixed
     </span>
   </span>
-                          </span>
                         <var>$key</var>
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       mixed
     </span>
   </span>
-                          </span>
                         <var>$val</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       iterable
     </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TMapKey
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type">
-    <span class="no-link template-name">
-      TMapValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Invoke the condition closure and make sure that it returns an iterable value.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Invoke the condition closure and make sure that it returns an iterable value.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$condition</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>The condition that returns a boolean value.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$key</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>the 2nd argument for the condition closure.</p>
+</td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$val</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"><p>1st argument for the condition closure.</p>
+</td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
         </ul>
       </div>

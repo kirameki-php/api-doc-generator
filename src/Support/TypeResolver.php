@@ -2,7 +2,7 @@
 
 namespace Kirameki\ApiDocGenerator\Support;
 
-use Kirameki\ApiDocGenerator\Components\ClassDefinition;
+use Kirameki\ApiDocGenerator\Components\ClassInfo;
 use Kirameki\ApiDocGenerator\Types\CallableVarType;
 use Kirameki\ApiDocGenerator\Types\ConditionalVarType;
 use Kirameki\ApiDocGenerator\Types\IntersectionVarType;
@@ -14,6 +14,7 @@ use Kirameki\ApiDocGenerator\Types\UnionVarType;
 use Kirameki\ApiDocGenerator\Types\VarType;
 use Kirameki\Core\Exceptions\UnreachableException;
 use PHPStan\PhpDocParser\Ast\ConstExpr\ConstExprIntegerNode;
+use PHPStan\PhpDocParser\Ast\ConstExpr\ConstExprStringNode;
 use PHPStan\PhpDocParser\Ast\Type\ArrayShapeNode;
 use PHPStan\PhpDocParser\Ast\Type\CallableTypeNode;
 use PHPStan\PhpDocParser\Ast\Type\ConditionalTypeForParameterNode;
@@ -91,6 +92,9 @@ class TypeResolver
             if ($node->constExpr instanceof ConstExprIntegerNode) {
                 return $this->convertNameToVarType($node->constExpr->value, [], $doc);
             }
+            if ($node->constExpr instanceof ConstExprStringNode) {
+                return $this->convertNameToVarType($node->constExpr->value, [], $doc);
+            }
             // TODO add support for other const types
             throw new UnreachableException();
         }
@@ -165,19 +169,19 @@ class TypeResolver
 
         if (class_exists($fqn)) {
             $reflection = new ReflectionClass($fqn);
-            $definition = new ClassDefinition($reflection, $this->file, $this->docParser, $this->urlResolver, $this);
+            $definition = new ClassInfo($reflection, $this->file, $this->docParser, $this->urlResolver, $this);
             return new StructureVarType($definition, $generics);
         }
 
         if (interface_exists($fqn)) {
             $reflection = new ReflectionClass($fqn);
-            $definition = new ClassDefinition($reflection, $this->file, $this->docParser, $this->urlResolver, $this);
+            $definition = new ClassInfo($reflection, $this->file, $this->docParser, $this->urlResolver, $this);
             return new StructureVarType($definition, $generics);
         }
 
         if (enum_exists($fqn)) {
             $reflection = new ReflectionEnum($fqn);
-            $definition = new ClassDefinition($reflection, $this->file, $this->docParser, $this->urlResolver, $this);
+            $definition = new ClassInfo($reflection, $this->file, $this->docParser, $this->urlResolver, $this);
             return new StructureVarType($definition, $generics);
         }
 

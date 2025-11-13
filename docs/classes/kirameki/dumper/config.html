@@ -844,9 +844,10 @@
 
 </nav>
 <main class="structure">
-  <div class="basic-info">
+  <div class="basics">
     <div class="namespace">
-      namespace <b>Kirameki\Dumper</b>
+      <span class="keyword">namespace</span>
+      <span class="name">Kirameki\Dumper</span>
     </div>
     <div class="declaration">
       <span class="modifiers">
@@ -857,7 +858,7 @@
       </span>
     </div>
   </div>
-  <div class="details">
+  <div class="internals">
       <div class="constants">
         <h3>Constants</h3>
         <ul>
@@ -883,20 +884,20 @@
                     static
                   protected
                 </span>
-                <span class="types">
-  <span class="type">
+  <span class="type type-union">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
     <span class="delimiter">|</span>
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       null
     </span>
   </span>
 
-                </span>
+  </span>
                 <span class="var-name">$default</span>
               </div>
               <div class="comment">
@@ -909,13 +910,11 @@
                     readonly
                   public
                 </span>
-                <span class="types">
-  <span class="type">
-      <span class="no-link structure-name">
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/formatter.html">
         Kirameki\Dumper\Formatter
-      </span>
+      </a>
   </span>
-                </span>
                 <span class="var-name">$formatter</span>
               </div>
               <div class="comment">
@@ -928,13 +927,11 @@
                     readonly
                   public
                 </span>
-                <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                </span>
                 <span class="var-name">$decorator</span>
               </div>
               <div class="comment">
@@ -947,13 +944,11 @@
                     readonly
                   public
                 </span>
-                <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                </span>
                 <span class="var-name">$indentSize</span>
               </div>
               <div class="comment">
@@ -966,13 +961,11 @@
                     readonly
                   public
                 </span>
-                <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                </span>
                 <span class="var-name">$maxStringLength</span>
               </div>
               <div class="comment">
@@ -985,13 +978,11 @@
                     readonly
                   public
                 </span>
-                <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                </span>
                 <span class="var-name">$dateTimeFormat</span>
               </div>
               <div class="comment">
@@ -1004,13 +995,11 @@
                     readonly
                   public
                 </span>
-                <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                </span>
                 <span class="var-name">$propertyFilter</span>
               </div>
               <div class="comment">
@@ -1023,13 +1012,11 @@
                     readonly
                   public
                 </span>
-                <span class="types">
-  <span class="type">
+  <span class="type type-structure">
       <span class="no-link structure-name">
         Kirameki\Dumper\Configs\DebugInfo
       </span>
   </span>
-                </span>
                 <span class="var-name">$debugInfo</span>
               </div>
               <div class="comment">
@@ -1042,13 +1029,11 @@
                     readonly
                   public
                 </span>
-                <span class="types">
-  <span class="type">
-      <span class="no-link structure-name">
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/writer.html">
         Kirameki\Dumper\Writer
-      </span>
+      </a>
   </span>
-                </span>
                 <span class="var-name">$writer</span>
               </div>
               <div class="comment">
@@ -1064,84 +1049,91 @@
               <a id="method-get-default" class="anchor" href="classes/kirameki/dumper/config.html#method-get-default">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
-                    getDefault():
+                    getDefault():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-set-default" class="anchor" href="classes/kirameki/dumper/config.html#method-set-default">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
                     static
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">setDefault(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       self
     </span>
   </span>
-                          </span>
                         <var>$instance</var>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$instance</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method---construct" class="anchor" href="classes/kirameki/dumper/config.html#method---construct">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">__construct(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
-      <span class="no-link structure-name">
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/formatter.html">
         Kirameki\Dumper\Formatter
-      </span>
+      </a>
   </span>
-                          </span>
                         <var>$formatter</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
@@ -1150,13 +1142,11 @@
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$decorator</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
@@ -1165,13 +1155,11 @@
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$indentSize</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
@@ -1180,13 +1168,11 @@
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$maxStringLength</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
@@ -1195,13 +1181,11 @@
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                          </span>
                         <var>$dateTimeFormat</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
@@ -1210,13 +1194,11 @@
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                          </span>
                         <var>$propertyFilter</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
@@ -1225,13 +1207,11 @@
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-structure">
       <span class="no-link structure-name">
         Kirameki\Dumper\Configs\DebugInfo
       </span>
   </span>
-                          </span>
                         <var>$debugInfo</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
@@ -1240,102 +1220,150 @@
                         <span class="delimiter">,</span>
                       </li>
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
-      <span class="no-link structure-name">
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/writer.html">
         Kirameki\Dumper\Writer
-      </span>
+      </a>
   </span>
-                          </span>
                         <var>$writer</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-object">new Kirameki\Dumper\Writer(...)</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       mixed
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$formatter</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$decorator</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$indentSize</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$maxStringLength</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$dateTimeFormat</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$propertyFilter</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$debugInfo</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                          <tr class="parameter">
+                            <td class="name"><var>$writer</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-make-formatter" class="anchor" href="classes/kirameki/dumper/config.html#method-make-formatter">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   protected
-                  function
                 </span>
                 <span class="name">
-                    makeFormatter():
+                    makeFormatter():&nbsp;
                 <span class="return">
-  <span class="type">
-      <span class="no-link structure-name">
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/formatter.html">
         Kirameki\Dumper\Formatter
-      </span>
+      </a>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-make-default-decorator" class="anchor" href="classes/kirameki/dumper/config.html#method-make-default-decorator">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   protected
-                  function
                 </span>
                 <span class="name">
-                    makeDefaultDecorator():
+                    makeDefaultDecorator():&nbsp;
                 <span class="return">
-  <span class="type">
-    <span class="no-link named-var">
-      Decorator
-    </span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/decorators/decorator.html">
+        Kirameki\Dumper\Decorators\Decorator
+      </a>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-guess-decorator-name" class="anchor" href="classes/kirameki/dumper/config.html#method-guess-decorator-name">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   protected
-                  function
                 </span>
                 <span class="name">
-                    guessDecoratorName():
+                    guessDecoratorName():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
         </ul>
       </div>

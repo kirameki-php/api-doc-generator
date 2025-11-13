@@ -2,7 +2,7 @@
 
 namespace Kirameki\ApiDocGenerator;
 
-use Kirameki\ApiDocGenerator\Components\ClassDefinition;
+use Kirameki\ApiDocGenerator\Components\ClassInfo;
 use Kirameki\ApiDocGenerator\Support\ClassFile;
 use Kirameki\ApiDocGenerator\Support\CommentParserFactory;
 use Kirameki\ApiDocGenerator\Support\StructureMap;
@@ -80,7 +80,7 @@ class DocGenerator
                         $file = new ClassFile($reflection);
                         $docParser = $this->docParserFactory->createFor($file);
                         $urlResolver = new UrlResolver($this->structureMap);
-                        $classDef = new ClassDefinition($reflection, $file, $docParser, $urlResolver);
+                        $classDef = new ClassInfo($reflection, $file, $docParser, $urlResolver);
                         $this->structureMap->add($classDef);
                         $this->appendToTree($tree, $classDef);
                     }
@@ -102,7 +102,7 @@ class DocGenerator
         file_put_contents("{$docsPath}/main.html", $html);
 
         foreach (Iter::flatten($tree, 100) as $class) {
-            /** @var ClassDefinition $class */
+            /** @var ClassInfo $class */
             $html = $this->renderer->render(Path::of(__DIR__ . '/views/class.latte'), [
                 'sidebarHtml' => $sidebarHtml,
                 'structureMap' => $this->structureMap,
@@ -141,10 +141,10 @@ class DocGenerator
 
     /**
      * @param Tree $tree
-     * @param ClassDefinition $classInfo
+     * @param ClassInfo $classInfo
      * @return void
      */
-    protected function appendToTree(Tree $tree, ClassDefinition $classInfo): void
+    protected function appendToTree(Tree $tree, ClassInfo $classInfo): void
     {
         $parts = explode('\\', $classInfo->namespace);
         $current = $tree;

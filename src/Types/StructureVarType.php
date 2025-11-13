@@ -2,16 +2,16 @@
 
 namespace Kirameki\ApiDocGenerator\Types;
 
-use Kirameki\ApiDocGenerator\Components\StructureDefinition;
+use Kirameki\ApiDocGenerator\Components\StructureInfo;
 
 class StructureVarType implements VarType
 {
     /**
-     * @param StructureDefinition $structure
+     * @param StructureInfo $structure
      * @param list<VarType> $generics
      */
     public function __construct(
-        public readonly StructureDefinition $structure,
+        public readonly StructureInfo $structure,
         public readonly array $generics = [],
     ) {
     }

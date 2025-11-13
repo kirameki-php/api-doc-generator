@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f11b0d80-afbf-412b-9a1d-8e88f298fae1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Types/CallableVarType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Types/ParameterVarType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/MemberInfo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/classes/kirameki/backoff/exponential-backoff.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/kirameki/backoff/exponential-backoff.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/classes/kirameki/clock/clock-interface.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/kirameki/clock/clock-interface.html" afterDir="false" />
@@ -136,17 +135,26 @@
       <change beforePath="$PROJECT_DIR$/docs/classes/kirameki/time/instant.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/kirameki/time/instant.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/classes/kirameki/time/time.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/kirameki/time/time.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ClassDefinition.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ClassDefinition.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ConstantDefinition.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ConstantDefinition.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MethodDefinition.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MethodDefinition.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/StructureDefinition.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/StructureDefinition.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ClassDefinition.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ClassInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ConstantDefinition.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ConstantInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MemberDefinition.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MethodDefinition.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MethodInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ParameterDefinition.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ParameterInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/PropertyDefinition.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/PropertyInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/StructureDefinition.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/StructureInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/TemplateDefinition.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TemplateInfo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DocGenerator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DocGenerator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PageRenderer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PageRenderer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Support/CommentParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Support/CommentParser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Support/CommentParserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Support/CommentParserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Support/PhpDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Support/PhpDoc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Support/StructureMap.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Support/StructureMap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Support/Tree.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Support/Tree.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Support/TypeResolver.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Support/TypeResolver.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Support/UrlResolver.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Support/UrlResolver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Types/ConstVarType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Types/ConditionalVarType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Types/StructureVarType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Types/StructureVarType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/class.latte" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/class.latte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/sidebar.latte" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/sidebar.latte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/type.latte" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/type.latte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -181,6 +189,7 @@
     <setting file="jar://$APPLICATION_HOME_DIR$/plugins/php-impl/lib/php.jar!/stubs/Reflection/ReflectionProperty.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/vendor/kirameki/utils/src/Dumper/Config.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/vendor/kirameki/utils/src/Dumper/Handlers/ClassHandler.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/vendor/phpstan/phpdoc-parser/src/Ast/PhpDoc/PhpDocTextNode.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP brew">
     <include_path>
@@ -234,21 +243,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "refactor",
-    "last_opened_file_path": "/Users/taka-mac/Projects/kirameki/api-doc-generator/src/views",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "php.override.implement.member.chooser.php.doc": "NONE",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;refactor&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/taka-mac/Projects/kirameki/api-doc-generator/src/views&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/views" />
@@ -296,7 +305,8 @@
       <workItem from="1761401343874" duration="45287000" />
       <workItem from="1761744271175" duration="391000" />
       <workItem from="1761745350208" duration="19708000" />
-      <workItem from="1761996852156" duration="57126000" />
+      <workItem from="1761996852156" duration="79393000" />
+      <workItem from="1763039619673" duration="463000" />
     </task>
     <servers />
   </component>

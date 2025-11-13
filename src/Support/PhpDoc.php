@@ -4,6 +4,7 @@ namespace Kirameki\ApiDocGenerator\Support;
 
 use PHPStan\PhpDocParser\Ast\PhpDoc\ExtendsTagValueNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\ImplementsTagValueNode;
+use PHPStan\PhpDocParser\Ast\PhpDoc\ParamTagValueNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\ReturnTagValueNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\TemplateTagValueNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\VarTagValueNode;
@@ -16,6 +17,7 @@ class PhpDoc
      * @param list<ImplementsTagValueNode> $implements
      * @param ReturnTagValueNode|null $return
      * @param VarTagValueNode|null $var
+     * @param array<string, ParamTagValueNode> $params
      * @param list<string> $texts
      */
     public function __construct(
@@ -24,6 +26,7 @@ class PhpDoc
         public readonly array $implements,
         public readonly ?ReturnTagValueNode $return,
         public readonly ?VarTagValueNode $var,
+        public readonly array $params,
         public readonly array $texts,
     ) {
     }

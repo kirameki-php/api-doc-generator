@@ -8,7 +8,7 @@ use Kirameki\ApiDocGenerator\Types\VarType;
 use Kirameki\Core\Exceptions\UnreachableException;
 use ReflectionProperty;
 
-class PropertyDefinition extends MemberDefinition
+class PropertyInfo extends MemberInfo
 {
     /**
      * @var string

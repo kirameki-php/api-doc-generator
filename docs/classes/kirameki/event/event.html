@@ -844,9 +844,10 @@
 
 </nav>
 <main class="structure">
-  <div class="basic-info">
+  <div class="basics">
     <div class="namespace">
-      namespace <b>Kirameki\Event</b>
+      <span class="keyword">namespace</span>
+      <span class="name">Kirameki\Event</span>
     </div>
     <div class="declaration">
       <span class="modifiers">
@@ -858,7 +859,7 @@
       </span>
     </div>
   </div>
-  <div class="details">
+  <div class="internals">
       <div class="properties">
         <h3>Properties</h3>
         <ul>
@@ -867,13 +868,11 @@
                 <span class="modifiers">
                   protected
                 </span>
-                <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                </span>
                 <span class="var-name">$evictCallback</span>
               </div>
               <div class="comment">
@@ -885,13 +884,11 @@
                 <span class="modifiers">
                   protected
                 </span>
-                <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                </span>
                 <span class="var-name">$cancelled</span>
               </div>
               <div class="comment">
@@ -907,142 +904,151 @@
               <a id="method-evict-callback" class="anchor" href="classes/kirameki/event/event.html#method-evict-callback">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
                   <span class="method-name-start">evictCallback(</span>
                   <ul class="parameters">
                       <li class="parameter">
-                          <span class="types">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                          </span>
                         <var>$toggle</var>
                           <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-bool">true</span>
                           </span>
-                        <span class="delimiter">,</span>
+
                       </li>
                   </ul>
-                  <span class="method-name-end">):</span>
+                  <span class="method-name-end">):&nbsp;</span>
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
-      $this
+      static
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Mark signal callback for removal.<br />
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Mark signal callback for removal.<br />
 When this is set to <strong>true</strong>, the signal callback will be removed.</p>
 
-
-              </div>
+                </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                          <tr class="parameter">
+                            <td class="name"><var>$toggle</var></td>
+                            <td class="delimiter"></td>
+                            <td class="description"></td>
+                          </tr>
+                    </table>
+                  </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-will-evict-callback" class="anchor" href="classes/kirameki/event/event.html#method-will-evict-callback">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    willEvictCallback():
+                    willEvictCallback():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Returns whether the signal callback should be removed.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Returns whether the signal callback should be removed.</p>
 
-
-              </div>
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-cancel" class="anchor" href="classes/kirameki/event/event.html#method-cancel">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    cancel():
+                    cancel():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-is-cancelled" class="anchor" href="classes/kirameki/event/event.html#method-is-cancelled">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    isCancelled():
+                    isCancelled():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                
-              </div>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  
+                </div>
+              </section>
             </li>
             <li class="method">
               <a id="method-reset-after-call" class="anchor" href="classes/kirameki/event/event.html#method-reset-after-call">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <div class="signature">
+              <section class="signature">
                 <span class="modifiers">
                   public
-                  function
                 </span>
                 <span class="name">
-                    resetAfterCall():
+                    resetAfterCall():&nbsp;
                 <span class="return">
-  <span class="type">
+  <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
                 </span>
-              </div>
-              <div class="comment">
-                <p>Resets all changes after passing it to each callback.</p>
+              </section>
+              <section class="details comment">
+                <div class="text">
+                  <p>Resets all changes after passing it to each callback.</p>
 
-
-
-              </div>
+                </div>
+              </section>
             </li>
         </ul>
       </div>

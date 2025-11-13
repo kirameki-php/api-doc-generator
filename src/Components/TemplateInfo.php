@@ -4,7 +4,7 @@ namespace Kirameki\ApiDocGenerator\Components;
 
 use Kirameki\ApiDocGenerator\Types\VarType;
 
-class TemplateDefinition
+class TemplateInfo
 {
     public function __construct(
         public readonly string $name,

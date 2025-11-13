@@ -6,7 +6,7 @@ use Kirameki\Core\Exceptions\UnreachableException;
 use Kirameki\Text\Str;
 use ReflectionClassConstant;
 
-class ConstantDefinition
+class ConstantInfo
 {
     /**
      * @var string
@@ -63,11 +63,11 @@ class ConstantDefinition
     }
 
     /**
-     * @param ClassDefinition $class
+     * @param ClassInfo $class
      * @param ReflectionClassConstant $reflection
      */
     public function __construct(
-        protected ClassDefinition $class,
+        protected ClassInfo $class,
         protected ReflectionClassConstant $reflection,
     ) {
     }
