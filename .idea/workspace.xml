@@ -133,6 +133,7 @@
       <change beforePath="$PROJECT_DIR$/docs/classes/kirameki/time/instant.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/kirameki/time/instant.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/classes/kirameki/time/time.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/kirameki/time/time.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MethodInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MethodInfo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Support/CommentParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Support/CommentParser.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Support/PhpDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Support/PhpDoc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/class.latte" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/class.latte" afterDir="false" />
@@ -288,7 +289,7 @@
       <workItem from="1761745350208" duration="19708000" />
       <workItem from="1761996852156" duration="79393000" />
       <workItem from="1763039619673" duration="2500000" />
-      <workItem from="1763122640177" duration="10513000" />
+      <workItem from="1763122640177" duration="11412000" />
     </task>
     <servers />
   </component>

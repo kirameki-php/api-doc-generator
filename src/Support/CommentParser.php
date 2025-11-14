@@ -11,6 +11,7 @@ use PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocTagNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocTextNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\ReturnTagValueNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\TemplateTagValueNode;
+use PHPStan\PhpDocParser\Ast\PhpDoc\ThrowsTagValueNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\VarTagValueNode;
 use PHPStan\PhpDocParser\Lexer\Lexer;
 use PHPStan\PhpDocParser\Parser\PhpDocParser;
@@ -50,6 +51,7 @@ class CommentParser
         $return = null;
         $var = null;
         $params = [];
+        $throws = [];
         $texts = [];
 
         foreach ($nodes as $node) {
@@ -62,6 +64,7 @@ class CommentParser
                     $val instanceof ReturnTagValueNode => $return = $val,
                     $val instanceof VarTagValueNode => $var = $val,
                     $val instanceof ParamTagValueNode => $params[$val->parameterName] = $val,
+                    $var instanceof ThrowsTagValueNode => $throws[] = $val,
                     default => null,
                 };
             } elseif ($node instanceof PhpDocTextNode) {
@@ -77,6 +80,7 @@ class CommentParser
             $var,
             $return,
             $params,
+            $throws,
             $texts,
         );
     }

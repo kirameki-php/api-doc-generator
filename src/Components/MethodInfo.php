@@ -90,8 +90,18 @@ class MethodInfo extends MemberInfo
         };
     }
 
+    /**
+     * @var list<TemplateInfo>
+     */
     public array $templates {
         get => $this->templates ??= $this->resolveTemplates();
+    }
+
+    /**
+     * @var list<VarType>
+     */
+    public array $throws {
+        get => $this->throws ??= $this->resolveThrows();
     }
 
     /**
@@ -134,6 +144,18 @@ class MethodInfo extends MemberInfo
             );
         }
         return $templates;
+    }
+
+    /**
+     * @return list<VarType>
+     */
+    protected function resolveThrows(): array
+    {
+        $throws = [];
+        foreach ($this->phpDoc->throws as $throw) {
+            $throws[] = $this->typeResolver->resolveFromNode($throw->type, $this->phpDoc);
+        }
+        return $throws;
     }
 
     /**

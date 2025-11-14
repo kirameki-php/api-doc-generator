@@ -1,7 +1,7 @@
 :root {
     --code-font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
-    --code-font-size: 13px;
-    --phpdoc-code-font-size: 12px;
+    --code-font-size: 13.5px;
+    --phpdoc-code-font-size: 12.5px;
 }
 html {
     scroll-behavior: smooth;
@@ -229,11 +229,10 @@ blockquote {
                         }
                     }
                 }
-                .signature.no-parameters {
+                .signature.single-line {
                     display: flex;
-
-                    .parameters {
-                        display: none;
+                    ul.parameters {
+                        margin-left: 0;
                     }
                 }
                 .details {
