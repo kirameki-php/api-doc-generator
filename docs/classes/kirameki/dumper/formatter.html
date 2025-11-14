@@ -872,7 +872,7 @@
         Kirameki\Dumper\Decorators\Decorator
       </a>
   </span>
-                <span class="var-name">$decorator</span>
+                <var>$decorator</var>
               </div>
               <div class="comment">
                 
@@ -888,7 +888,7 @@
         Kirameki\Dumper\Config
       </a>
   </span>
-                <span class="var-name">$config</span>
+                <var>$config</var>
               </div>
               <div class="comment">
                 
@@ -904,7 +904,7 @@
         Kirameki\Dumper\Handlers\NullHandler
       </a>
   </span>
-                <span class="var-name">$nullHandler</span>
+                <var>$nullHandler</var>
               </div>
               <div class="comment">
                 
@@ -920,7 +920,7 @@
         Kirameki\Dumper\Handlers\ScalarHandler
       </a>
   </span>
-                <span class="var-name">$scalarHandler</span>
+                <var>$scalarHandler</var>
               </div>
               <div class="comment">
                 
@@ -936,7 +936,7 @@
         Kirameki\Dumper\Handlers\ArrayHandler
       </a>
   </span>
-                <span class="var-name">$arrayHandler</span>
+                <var>$arrayHandler</var>
               </div>
               <div class="comment">
                 
@@ -952,7 +952,7 @@
         Kirameki\Dumper\Handlers\ResourceHandler
       </a>
   </span>
-                <span class="var-name">$resourceHandler</span>
+                <var>$resourceHandler</var>
               </div>
               <div class="comment">
                 
@@ -968,7 +968,7 @@
         Kirameki\Dumper\Handlers\ClassHandlerFactory
       </a>
   </span>
-                <span class="var-name">$classHandlerFactory</span>
+                <var>$classHandlerFactory</var>
               </div>
               <div class="comment">
                 
@@ -983,23 +983,28 @@
               <a id="method---construct" class="anchor" href="classes/kirameki/dumper/formatter.html#method---construct">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  public
-                </span>
-                <span class="name">
-                  <span class="method-name-start">__construct(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
-  <span class="type type-structure">
-      <a href="classes/kirameki/dumper/decorators/decorator.html">
-        Kirameki\Dumper\Decorators\Decorator
-      </a>
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    __construct
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      Decorator
+    </span>
   </span>
                         <var>$decorator</var>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
   <span class="type type-structure">
       <a href="classes/kirameki/dumper/config.html">
         Kirameki\Dumper\Config
@@ -1007,140 +1012,200 @@
   </span>
                         <var>$config</var>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
+  <span class="type type-union">
   <span class="type type-structure">
       <a href="classes/kirameki/dumper/handlers/null-handler.html">
         Kirameki\Dumper\Handlers\NullHandler
       </a>
   </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+  </span>
                         <var>$nullHandler</var>
-                          <span class="default-set">
+                        <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-null">null</span>
                           </span>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
+  <span class="type type-union">
   <span class="type type-structure">
       <a href="classes/kirameki/dumper/handlers/scalar-handler.html">
         Kirameki\Dumper\Handlers\ScalarHandler
       </a>
   </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+  </span>
                         <var>$scalarHandler</var>
-                          <span class="default-set">
+                        <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-null">null</span>
                           </span>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
+  <span class="type type-union">
   <span class="type type-structure">
       <a href="classes/kirameki/dumper/handlers/array-handler.html">
         Kirameki\Dumper\Handlers\ArrayHandler
       </a>
   </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+  </span>
                         <var>$arrayHandler</var>
-                          <span class="default-set">
+                        <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-null">null</span>
                           </span>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
+  <span class="type type-union">
   <span class="type type-structure">
       <a href="classes/kirameki/dumper/handlers/resource-handler.html">
         Kirameki\Dumper\Handlers\ResourceHandler
       </a>
   </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+  </span>
                         <var>$resourceHandler</var>
-                          <span class="default-set">
+                        <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-null">null</span>
                           </span>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
+  <span class="type type-union">
   <span class="type type-structure">
       <a href="classes/kirameki/dumper/handlers/class-handler-factory.html">
         Kirameki\Dumper\Handlers\ClassHandlerFactory
       </a>
   </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+  </span>
                         <var>$classHandlerFactory</var>
-                          <span class="default-set">
+                        <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-null">null</span>
                           </span>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       mixed
     </span>
   </span>
-                </span>
-              </section>
-              <section class="details comment">
-                <div class="text">
-                  
+                  </span>
                 </div>
+              </section>
+              <section class="details">
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$decorator</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$config</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$nullHandler</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$scalarHandler</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$arrayHandler</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$resourceHandler</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$classHandlerFactory</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$decorator</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$config</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$nullHandler</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$scalarHandler</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$arrayHandler</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$resourceHandler</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$classHandlerFactory</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method-format" class="anchor" href="classes/kirameki/dumper/formatter.html#method-format">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  public
-                </span>
-                <span class="name">
-                  <span class="method-name-start">format(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    format
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       mixed
@@ -1148,90 +1213,127 @@
   </span>
                         <var>$var</var>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
                         <var>$depth</var>
-                          <span class="default-set">
+                        <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-default">0</span>
                           </span>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
+  <span class="type type-union">
   <span class="type type-structure">
       <a href="classes/kirameki/dumper/object-tracker.html">
         Kirameki\Dumper\ObjectTracker
       </a>
   </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+  </span>
                         <var>$tracker</var>
-                          <span class="default-set">
+                        <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-null">null</span>
                           </span>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                </span>
-              </section>
-              <section class="details comment">
-                <div class="text">
-                  
+                  </span>
                 </div>
+              </section>
+              <section class="details">
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$var</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$depth</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$tracker</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$var</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$depth</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$tracker</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method-format-null" class="anchor" href="classes/kirameki/dumper/formatter.html#method-format-null">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  protected
-                </span>
-                <span class="name">
-                    formatNull():&nbsp;
-                <span class="return">
+              <section class="signature no-parameters">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    formatNull
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                </span>
+                  </span>
+                </div>
               </section>
-              <section class="details comment">
-                <div class="text">
-                  
+              <section class="details">
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
                 </div>
               </section>
             </li>
@@ -1239,44 +1341,28 @@
               <a id="method-format-scalar" class="anchor" href="classes/kirameki/dumper/formatter.html#method-format-scalar">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  protected
-                </span>
-                <span class="name">
-                  <span class="method-name-start">formatScalar(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
-  <span class="type type-union">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    formatScalar
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
-      string
+      scalar
     </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      float
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-
   </span>
                         <var>$var</var>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       int
@@ -1284,59 +1370,84 @@
   </span>
                         <var>$depth</var>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                </span>
-              </section>
-              <section class="details comment">
-                <div class="text">
-                  
+                  </span>
                 </div>
+              </section>
+              <section class="details">
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$var</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$depth</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$var</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$depth</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method-format-array" class="anchor" href="classes/kirameki/dumper/formatter.html#method-format-array">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  protected
-                </span>
-                <span class="name">
-                  <span class="method-name-start">formatArray(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    formatArray
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       array
     </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
   </span>
                         <var>$var</var>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       int
@@ -1344,8 +1455,8 @@
   </span>
                         <var>$depth</var>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
   <span class="type type-structure">
       <a href="classes/kirameki/dumper/object-tracker.html">
         Kirameki\Dumper\ObjectTracker
@@ -1353,55 +1464,70 @@
   </span>
                         <var>$tracker</var>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                </span>
-              </section>
-              <section class="details comment">
-                <div class="text">
-                  
+                  </span>
                 </div>
+              </section>
+              <section class="details">
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$var</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$depth</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$tracker</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$var</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$depth</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$tracker</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method-format-object" class="anchor" href="classes/kirameki/dumper/formatter.html#method-format-object">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  protected
-                </span>
-                <span class="name">
-                  <span class="method-name-start">formatObject(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    formatObject
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       object
@@ -1409,8 +1535,8 @@
   </span>
                         <var>$var</var>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       int
@@ -1418,8 +1544,8 @@
   </span>
                         <var>$depth</var>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
   <span class="type type-structure">
       <a href="classes/kirameki/dumper/object-tracker.html">
         Kirameki\Dumper\ObjectTracker
@@ -1427,64 +1553,79 @@
   </span>
                         <var>$tracker</var>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                </span>
-              </section>
-              <section class="details comment">
-                <div class="text">
-                  
+                  </span>
                 </div>
+              </section>
+              <section class="details">
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$var</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$depth</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$tracker</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$var</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$depth</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$tracker</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method-format-resource" class="anchor" href="classes/kirameki/dumper/formatter.html#method-format-resource">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  protected
-                </span>
-                <span class="name">
-                  <span class="method-name-start">formatResource(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    formatResource
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
-      mixed
+      resource
     </span>
   </span>
                         <var>$var</var>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       int
@@ -1492,50 +1633,65 @@
   </span>
                         <var>$depth</var>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                </span>
-              </section>
-              <section class="details comment">
-                <div class="text">
-                  
+                  </span>
                 </div>
+              </section>
+              <section class="details">
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$var</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$depth</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$var</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$depth</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method-format-unknown" class="anchor" href="classes/kirameki/dumper/formatter.html#method-format-unknown">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  protected
-                </span>
-                <span class="name">
-                  <span class="method-name-start">formatUnknown(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    formatUnknown
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       mixed
@@ -1543,8 +1699,8 @@
   </span>
                         <var>$var</var>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       int
@@ -1552,110 +1708,149 @@
   </span>
                         <var>$depth</var>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                </span>
-              </section>
-              <section class="details comment">
-                <div class="text">
-                  
+                  </span>
                 </div>
+              </section>
+              <section class="details">
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$var</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$depth</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$var</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$depth</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method-set-class-handler" class="anchor" href="classes/kirameki/dumper/formatter.html#method-set-class-handler">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  public
-                </span>
-                <span class="name">
-                  <span class="method-name-start">setClassHandler(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    setClassHandler
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
-      string
+      class-string
     </span>
   </span>
                         <var>$class</var>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
+  <span class="type type-callable">
   <span class="type type-structure">
       <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
         Closure
       </a>
   </span>
+    <span class="parenthesis">(</span>
+    <span class="parenthesis">):&nbsp;</span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/handlers/class-handler.html">
+        Kirameki\Dumper\Handlers\ClassHandler
+      </a>
+  </span>
+  </span>
                         <var>$callback</var>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
-                </span>
-              </section>
-              <section class="details comment">
-                <div class="text">
-                  
+                  </span>
                 </div>
+              </section>
+              <section class="details">
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$class</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$callback</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$class</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$callback</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      void
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method-get-class-handler" class="anchor" href="classes/kirameki/dumper/formatter.html#method-get-class-handler">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  protected
-                </span>
-                <span class="name">
-                  <span class="method-name-start">getClassHandler(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    getClassHandler
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       object
@@ -1663,54 +1858,82 @@
   </span>
                         <var>$var</var>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-structure">
       <a href="classes/kirameki/dumper/handlers/class-handler.html">
         Kirameki\Dumper\Handlers\ClassHandler
       </a>
   </span>
-                </span>
-              </section>
-              <section class="details comment">
-                <div class="text">
-                  
+                  </span>
                 </div>
+              </section>
+              <section class="details">
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$var</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$var</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/handlers/class-handler.html">
+        Kirameki\Dumper\Handlers\ClassHandler
+      </a>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method-get-class-handler-factory" class="anchor" href="classes/kirameki/dumper/formatter.html#method-get-class-handler-factory">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  protected
-                </span>
-                <span class="name">
-                    getClassHandlerFactory():&nbsp;
-                <span class="return">
+              <section class="signature no-parameters">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    getClassHandlerFactory
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-structure">
       <a href="classes/kirameki/dumper/handlers/class-handler-factory.html">
         Kirameki\Dumper\Handlers\ClassHandlerFactory
       </a>
   </span>
-                </span>
+                  </span>
+                </div>
               </section>
-              <section class="details comment">
-                <div class="text">
-                  
+              <section class="details">
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/handlers/class-handler-factory.html">
+        Kirameki\Dumper\Handlers\ClassHandlerFactory
+      </a>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
                 </div>
               </section>
             </li>
@@ -1718,23 +1941,91 @@
               <a id="method-make-default-class-resolvers" class="anchor" href="classes/kirameki/dumper/formatter.html#method-make-default-class-resolvers">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  protected
-                </span>
-                <span class="name">
-                    makeDefaultClassResolvers():&nbsp;
-                <span class="return">
+              <section class="signature no-parameters">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    makeDefaultClassResolvers
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       array
     </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      class-string
+    </span>
   </span>
-                </span>
+      <span class="delimiter">,</span>
+  <span class="type type-callable">
+  <span class="type type-structure">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+    <span class="parenthesis">(</span>
+    <span class="parenthesis">):&nbsp;</span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/handlers/class-handler.html">
+        Kirameki\Dumper\Handlers\ClassHandler
+      </a>
+  </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                  </span>
+                </div>
               </section>
-              <section class="details comment">
-                <div class="text">
-                  
+              <section class="details">
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      array
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      class-string
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type type-callable">
+  <span class="type type-structure">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+    <span class="parenthesis">(</span>
+    <span class="parenthesis">):&nbsp;</span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/handlers/class-handler.html">
+        Kirameki\Dumper\Handlers\ClassHandler
+      </a>
+  </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
                 </div>
               </section>
             </li>
@@ -1742,23 +2033,59 @@
               <a id="method-make-fallback-class-handler-resolver" class="anchor" href="classes/kirameki/dumper/formatter.html#method-make-fallback-class-handler-resolver">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  protected
-                </span>
-                <span class="name">
-                    makeFallbackClassHandlerResolver():&nbsp;
-                <span class="return">
+              <section class="signature no-parameters">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    makeFallbackClassHandlerResolver
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
+  <span class="type type-callable">
   <span class="type type-structure">
       <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
         Closure
       </a>
   </span>
-                </span>
+    <span class="parenthesis">(</span>
+    <span class="parenthesis">):&nbsp;</span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/handlers/class-handler.html">
+        Kirameki\Dumper\Handlers\ClassHandler
+      </a>
+  </span>
+  </span>
+                  </span>
+                </div>
               </section>
-              <section class="details comment">
-                <div class="text">
-                  
+              <section class="details">
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-callable">
+  <span class="type type-structure">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+    <span class="parenthesis">(</span>
+    <span class="parenthesis">):&nbsp;</span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/handlers/class-handler.html">
+        Kirameki\Dumper\Handlers\ClassHandler
+      </a>
+  </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
                 </div>
               </section>
             </li>

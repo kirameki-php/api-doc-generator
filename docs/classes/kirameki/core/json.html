@@ -879,15 +879,20 @@
               <a id="method-encode" class="anchor" href="classes/kirameki/core/json.html#method-encode">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  public
-                    static
-                </span>
-                <span class="name">
-                  <span class="method-name-start">encode(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                      static
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    encode
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       mixed
@@ -895,72 +900,91 @@
   </span>
                         <var>$data</var>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
                         <var>$formatted</var>
-                          <span class="default-set">
+                        <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-bool">false</span>
                           </span>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                </span>
+                  </span>
+                </div>
               </section>
-              <section class="details comment">
-                <div class="text">
-                  <p>Encode data as JSON string.</p>
+              <section class="details">
+                  <div class="comment">
+                    <p>Encode data as JSON string.</p>
 <p>Example:</p>
 <pre><code class="language-php">Json::encode(true); // 'true'  
 Json::encode(['a' =&gt; 1]); // '{&quot;a&quot;:1}'  
 Json::encode(['a' =&gt; 1], true); // &quot;{\n    &quot;a&quot;: 1\n}&quot;  
 </code></pre>
 
-                </div>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$data</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"><p>The data being encoded. String data must be UTF-8 encoded.</p>
+                        <tr class="parameter">
+                          <td class="name"><var>$data</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"><p>The data being encoded. String data must be UTF-8 encoded.</p>
 </td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$formatted</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"><p>[Optional] Format JSON in a human-readable format. Defaults to <strong>false</strong>.</p>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$formatted</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"><p>[Optional] Format JSON in a human-readable format. Defaults to <strong>false</strong>.</p>
 </td>
-                          </tr>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                    <div class="description comment"><p>JSON encoded string.</p>
+</div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method-decode" class="anchor" href="classes/kirameki/core/json.html#method-decode">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  public
-                    static
-                </span>
-                <span class="name">
-                  <span class="method-name-start">decode(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                      static
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    decode
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       string
@@ -968,52 +992,71 @@ Json::encode(['a' =&gt; 1], true); // &quot;{\n    &quot;a&quot;: 1\n}&quot;
   </span>
                         <var>$json</var>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       mixed
     </span>
   </span>
-                </span>
+                  </span>
+                </div>
               </section>
-              <section class="details comment">
-                <div class="text">
-                  <p>Decodes a JSON string.</p>
+              <section class="details">
+                  <div class="comment">
+                    <p>Decodes a JSON string.</p>
 <p>Example:</p>
 <pre><code class="language-php">Json::decode('true'); // true  
 Json::decode('{&quot;a&quot;:1}'); // ['a' =&gt; 1]  
 </code></pre>
 
-                </div>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$json</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"><p>The value being decoded. Must be a valid UTF-8 encoded string.</p>
+                        <tr class="parameter">
+                          <td class="name"><var>$json</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"><p>The value being decoded. Must be a valid UTF-8 encoded string.</p>
 </td>
-                          </tr>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                    <div class="description comment"><p>Decoded data.</p>
+</div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method-validate" class="anchor" href="classes/kirameki/core/json.html#method-validate">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  public
-                    static
-                </span>
-                <span class="name">
-                  <span class="method-name-start">validate(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                      static
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    validate
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       string
@@ -1021,20 +1064,22 @@ Json::decode('{&quot;a&quot;:1}'); // ['a' =&gt; 1]
   </span>
                         <var>$json</var>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                </span>
+                  </span>
+                </div>
               </section>
-              <section class="details comment">
-                <div class="text">
-                  <p>Validate a JSON string.</p>
+              <section class="details">
+                  <div class="comment">
+                    <p>Validate a JSON string.</p>
 <p>Example:</p>
 <pre><code class="language-php">Json::validate('true'); // true  
 Json::validate('[]'); // true  
@@ -1042,42 +1087,72 @@ Json::validate('{&quot;a&quot;:1}'); // true
 Json::validate('{'); // false  
 </code></pre>
 
-                </div>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$json</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"><p>The value being validated. Must be a valid UTF-8 encoded string.</p>
+                        <tr class="parameter">
+                          <td class="name"><var>$json</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"><p>The value being validated. Must be a valid UTF-8 encoded string.</p>
 </td>
-                          </tr>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                    <div class="description comment"><p><strong>true</strong> if valid JSON, <strong>false</strong> otherwise.</p>
+</div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method---construct" class="anchor" href="classes/kirameki/core/json.html#method---construct">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                    final
-                  public
-                </span>
-                <span class="name">
-                    __construct():&nbsp;
-                <span class="return">
+              <section class="signature no-parameters">
+                <div class="signature-start">
+                  <span class="modifiers">
+                      final
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    __construct
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       mixed
     </span>
   </span>
-                </span>
+                  </span>
+                </div>
               </section>
-              <section class="details comment">
-                <div class="text">
-                  
+              <section class="details">
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
                 </div>
               </section>
             </li>

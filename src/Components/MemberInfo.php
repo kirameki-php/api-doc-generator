@@ -57,6 +57,9 @@ abstract class MemberInfo
         get => $this->phpDoc ??= $this->docParser->parse($this->comment);
     }
 
+    /**
+     * @param CommentParser $docParser
+     */
     public function __construct(
         protected readonly CommentParser $docParser,
     ) {

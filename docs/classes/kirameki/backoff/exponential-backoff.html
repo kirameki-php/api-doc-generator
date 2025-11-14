@@ -894,7 +894,7 @@
   </span>
 
   </span>
-                <span class="var-name">$catchExceptions</span>
+                <var>$catchExceptions</var>
               </div>
               <div class="comment">
                 
@@ -911,7 +911,7 @@
       int
     </span>
   </span>
-                <span class="var-name">$baseDelayMilliseconds</span>
+                <var>$baseDelayMilliseconds</var>
               </div>
               <div class="comment">
                 
@@ -928,7 +928,7 @@
       int
     </span>
   </span>
-                <span class="var-name">$maxDelayMilliseconds</span>
+                <var>$maxDelayMilliseconds</var>
               </div>
               <div class="comment">
                 
@@ -945,7 +945,7 @@
       float
     </span>
   </span>
-                <span class="var-name">$stepMultiplier</span>
+                <var>$stepMultiplier</var>
               </div>
               <div class="comment">
                 
@@ -962,7 +962,7 @@
         Kirameki\Backoff\JitterStrategy
       </span>
   </span>
-                <span class="var-name">$jitterStrategy</span>
+                <var>$jitterStrategy</var>
               </div>
               <div class="comment">
                 
@@ -978,7 +978,7 @@
         Random\Randomizer
       </a>
   </span>
-                <span class="var-name">$randomizer</span>
+                <var>$randomizer</var>
               </div>
               <div class="comment">
                 
@@ -994,7 +994,7 @@
         Kirameki\System\Sleep
       </a>
   </span>
-                <span class="var-name">$sleep</span>
+                <var>$sleep</var>
               </div>
               <div class="comment">
                 
@@ -1009,196 +1009,275 @@
               <a id="method---construct" class="anchor" href="classes/kirameki/backoff/exponential-backoff.html#method---construct">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  public
-                </span>
-                <span class="name">
-                  <span class="method-name-start">__construct(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    __construct
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-union">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      class-string
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
   <span class="type type-structure">
-      <a href="https://www.php.net/manual/class.traversable.php" class="external-link" target="_blank">
-        Traversable
+      <a href="https://www.php.net/manual/class.throwable.php" class="external-link" target="_blank">
+        Throwable
       </a>
   </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
     <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      class-string
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-structure">
+      <a href="https://www.php.net/manual/class.throwable.php" class="external-link" target="_blank">
+        Throwable
+      </a>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-callable">
   <span class="type type-structure">
       <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
         Closure
       </a>
   </span>
-    <span class="delimiter">|</span>
+    <span class="parenthesis">(</span>
+
+
+  <span class="type type-structure">
+      <a href="https://www.php.net/manual/class.throwable.php" class="external-link" target="_blank">
+        Throwable
+      </a>
+  </span>
+
+    <span class="parenthesis">):&nbsp;</span>
   <span class="type type-named">
     <span class="no-link named-var">
-      array
+      bool
     </span>
   </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
   </span>
 
   </span>
                         <var>$catchExceptions</var>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
                         <var>$baseDelayMilliseconds</var>
-                          <span class="default-set">
+                        <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-default">5</span>
                           </span>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
                         <var>$maxDelayMilliseconds</var>
-                          <span class="default-set">
+                        <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-default">1000</span>
                           </span>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       float
     </span>
   </span>
                         <var>$stepMultiplier</var>
-                          <span class="default-set">
+                        <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-default">2</span>
                           </span>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
   <span class="type type-structure">
       <span class="no-link structure-name">
         Kirameki\Backoff\JitterStrategy
       </span>
   </span>
                         <var>$jitterStrategy</var>
-                          <span class="default-set">
+                        <span class="default-set">
                             <span class="assignment">=</span>
                               <span class="value value-constant">Kirameki\Backoff\JitterStrategy::Full</span>
                           </span>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
+  <span class="type type-union">
   <span class="type type-structure">
       <a href="https://www.php.net/manual/class.random-randomizer.php" class="external-link" target="_blank">
         Random\Randomizer
       </a>
   </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+  </span>
                         <var>$randomizer</var>
-                          <span class="default-set">
+                        <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-null">null</span>
                           </span>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
+  <span class="type type-union">
   <span class="type type-structure">
       <a href="classes/kirameki/system/sleep.html">
         Kirameki\System\Sleep
       </a>
   </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+  </span>
                         <var>$sleep</var>
-                          <span class="default-set">
+                        <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-null">null</span>
                           </span>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       mixed
     </span>
   </span>
-                </span>
-              </section>
-              <section class="details comment">
-                <div class="text">
-                  
+                  </span>
                 </div>
+              </section>
+              <section class="details">
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$catchExceptions</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"><p>Throwable classes that should be retried.</p>
+                        <tr class="parameter">
+                          <td class="name"><var>$catchExceptions</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"><p>Throwable classes that should be retried.</p>
 </td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$baseDelayMilliseconds</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"><p>The base delay in milliseconds to start with.</p>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$baseDelayMilliseconds</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"><p>The base delay in milliseconds to start with.</p>
 </td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$maxDelayMilliseconds</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"><p>The maximum delay in milliseconds to cap at.</p>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$maxDelayMilliseconds</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"><p>The maximum delay in milliseconds to cap at.</p>
 </td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$stepMultiplier</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"><p>The multiplier to increase the delay by each attempt.</p>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$stepMultiplier</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"><p>The multiplier to increase the delay by each attempt.</p>
 </td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$jitterStrategy</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"><p>The jitter algorithm to use.</p>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$jitterStrategy</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"><p>The jitter algorithm to use.</p>
 </td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$randomizer</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"><p>The randomizer instance to use. Will default to a new instance if not provided.</p>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$randomizer</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"><p>The randomizer instance to use. Will default to a new instance if not provided.</p>
 </td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$sleep</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"><p>The sleep instance to use. Will default to a new instance if not provided.</p>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$sleep</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"><p>The sleep instance to use. Will default to a new instance if not provided.</p>
 </td>
-                          </tr>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method-run" class="anchor" href="classes/kirameki/backoff/exponential-backoff.html#method-run">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  public
-                </span>
-                <span class="name">
-                  <span class="method-name-start">run(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    run
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       int
@@ -1206,59 +1285,99 @@
   </span>
                         <var>$maxAttempts</var>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
+  <span class="type type-callable">
   <span class="type type-structure">
       <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
         Closure
       </a>
   </span>
-                        <var>$call</var>
+    <span class="parenthesis">(</span>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+
   <span class="type type-named">
     <span class="no-link named-var">
-      mixed
+      int
     </span>
   </span>
-                </span>
+
+    <span class="parenthesis">):&nbsp;</span>
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TResult
+    </span>
+  </span>
+  </span>
+                        <var>$call</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TResult
+    </span>
+  </span>
+                  </span>
+                </div>
               </section>
-              <section class="details comment">
-                <div class="text">
-                  
+              <section class="details">
+                <div class="templates">
+                  <h4>Templates:</h4>
+                  <ul class="template-list">
+                      <li class="template">
+                        <span class="template-name">TResult</span>
+                      </li>
+                  </ul>
                 </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$maxAttempts</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$call</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$maxAttempts</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$call</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TResult
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method-sleep" class="anchor" href="classes/kirameki/backoff/exponential-backoff.html#method-sleep">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  protected
-                </span>
-                <span class="name">
-                  <span class="method-name-start">sleep(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    sleep
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       int
@@ -1266,45 +1385,60 @@
   </span>
                         <var>$milliseconds</var>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
-                </span>
-              </section>
-              <section class="details comment">
-                <div class="text">
-                  
+                  </span>
                 </div>
+              </section>
+              <section class="details">
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$milliseconds</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$milliseconds</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      void
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method-random" class="anchor" href="classes/kirameki/backoff/exponential-backoff.html#method-random">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  protected
-                </span>
-                <span class="name">
-                  <span class="method-name-start">random(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    random
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       int
@@ -1312,8 +1446,8 @@
   </span>
                         <var>$min</var>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       int
@@ -1321,50 +1455,65 @@
   </span>
                         <var>$max</var>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                </span>
-              </section>
-              <section class="details comment">
-                <div class="text">
-                  
+                  </span>
                 </div>
+              </section>
+              <section class="details">
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$min</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$max</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$min</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$max</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method-can-retry" class="anchor" href="classes/kirameki/backoff/exponential-backoff.html#method-can-retry">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  protected
-                </span>
-                <span class="name">
-                  <span class="method-name-start">canRetry(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    canRetry
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       int
@@ -1372,8 +1521,8 @@
   </span>
                         <var>$attempts</var>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       int
@@ -1381,8 +1530,8 @@
   </span>
                         <var>$maxAttempts</var>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
   <span class="type type-structure">
       <a href="https://www.php.net/manual/class.throwable.php" class="external-link" target="_blank">
         Throwable
@@ -1390,55 +1539,70 @@
   </span>
                         <var>$exception</var>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                </span>
-              </section>
-              <section class="details comment">
-                <div class="text">
-                  
+                  </span>
                 </div>
+              </section>
+              <section class="details">
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$attempts</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$maxAttempts</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$exception</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$attempts</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$maxAttempts</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$exception</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method-calculate-delay" class="anchor" href="classes/kirameki/backoff/exponential-backoff.html#method-calculate-delay">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  public
-                </span>
-                <span class="name">
-                  <span class="method-name-start">calculateDelay(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    calculateDelay
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       int
@@ -1446,8 +1610,8 @@
   </span>
                         <var>$retries</var>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       int
@@ -1455,50 +1619,65 @@
   </span>
                         <var>$previousDelay</var>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                </span>
-              </section>
-              <section class="details comment">
-                <div class="text">
-                  
+                  </span>
                 </div>
+              </section>
+              <section class="details">
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$retries</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$previousDelay</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$retries</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$previousDelay</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method-add-jitter" class="anchor" href="classes/kirameki/backoff/exponential-backoff.html#method-add-jitter">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  protected
-                </span>
-                <span class="name">
-                  <span class="method-name-start">addJitter(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    addJitter
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       int
@@ -1506,8 +1685,8 @@
   </span>
                         <var>$delay</var>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       int
@@ -1515,50 +1694,65 @@
   </span>
                         <var>$previousDelay</var>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                </span>
-              </section>
-              <section class="details comment">
-                <div class="text">
-                  
+                  </span>
                 </div>
+              </section>
+              <section class="details">
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$delay</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$previousDelay</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$delay</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$previousDelay</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method-apply-no-jitter" class="anchor" href="classes/kirameki/backoff/exponential-backoff.html#method-apply-no-jitter">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  protected
-                </span>
-                <span class="name">
-                  <span class="method-name-start">applyNoJitter(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    applyNoJitter
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       int
@@ -1566,45 +1760,60 @@
   </span>
                         <var>$delay</var>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                </span>
-              </section>
-              <section class="details comment">
-                <div class="text">
-                  
+                  </span>
                 </div>
+              </section>
+              <section class="details">
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$delay</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$delay</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method-apply-full-jitter" class="anchor" href="classes/kirameki/backoff/exponential-backoff.html#method-apply-full-jitter">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  protected
-                </span>
-                <span class="name">
-                  <span class="method-name-start">applyFullJitter(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    applyFullJitter
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       int
@@ -1612,45 +1821,60 @@
   </span>
                         <var>$delay</var>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                </span>
-              </section>
-              <section class="details comment">
-                <div class="text">
-                  
+                  </span>
                 </div>
+              </section>
+              <section class="details">
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$delay</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$delay</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method-apply-equal-jitter" class="anchor" href="classes/kirameki/backoff/exponential-backoff.html#method-apply-equal-jitter">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  protected
-                </span>
-                <span class="name">
-                  <span class="method-name-start">applyEqualJitter(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    applyEqualJitter
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       int
@@ -1658,45 +1882,60 @@
   </span>
                         <var>$delay</var>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                </span>
-              </section>
-              <section class="details comment">
-                <div class="text">
-                  
+                  </span>
                 </div>
+              </section>
+              <section class="details">
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$delay</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$delay</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method-apply-decorrelated-jitter" class="anchor" href="classes/kirameki/backoff/exponential-backoff.html#method-apply-decorrelated-jitter">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  protected
-                </span>
-                <span class="name">
-                  <span class="method-name-start">applyDecorrelatedJitter(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    applyDecorrelatedJitter
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       int
@@ -1704,45 +1943,60 @@
   </span>
                         <var>$previousDelay</var>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                </span>
-              </section>
-              <section class="details comment">
-                <div class="text">
-                  
+                  </span>
                 </div>
+              </section>
+              <section class="details">
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$previousDelay</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$previousDelay</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method-clamp-delay" class="anchor" href="classes/kirameki/backoff/exponential-backoff.html#method-clamp-delay">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  protected
-                </span>
-                <span class="name">
-                  <span class="method-name-start">clampDelay(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    clampDelay
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       int
@@ -1750,31 +2004,41 @@
   </span>
                         <var>$delay</var>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                </span>
-              </section>
-              <section class="details comment">
-                <div class="text">
-                  
+                  </span>
                 </div>
+              </section>
+              <section class="details">
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$delay</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$delay</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
         </ul>

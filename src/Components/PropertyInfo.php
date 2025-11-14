@@ -84,6 +84,9 @@ class PropertyInfo extends MemberInfo
         parent::__construct($docParser);
     }
 
+    /**
+     * @return VarType
+     */
     protected function resolveType(): VarType
     {
         return $this->phpDoc->var !== null

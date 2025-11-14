@@ -16,7 +16,7 @@ main {
 }
 a {
     text-decoration: none;
-    color: #3e68ba;
+    color: #1958cd;
 }
 a:hover {
     text-decoration: underline;
@@ -29,9 +29,8 @@ li {
 }
 var {
     font-family: var(--code-font-family);
-    font-size: var(--code-font-size);
     font-style: normal;
-    color: #1f8179;
+    color: #118383;
 }
 blockquote {
     margin-left: 0.1rem;
@@ -80,6 +79,10 @@ blockquote {
 
         .declaration {
             font-size: 1.1rem;
+
+            .signature {
+                gap: 0.5rem;
+            }
         }
         .namespace {
             font-size: var(--code-font-size);
@@ -157,13 +160,6 @@ blockquote {
                     border-bottom: 1px dashed #c7cdd5;
                     padding-top: 0.5rem;
                     padding-bottom: 0.5rem;
-
-                    .signature {
-                        display: flex;
-                    }
-                    .var-name {
-                        color: #1f8135;
-                    }
                 }
                 li:last-child {
                     border-bottom: none;
@@ -183,36 +179,42 @@ blockquote {
 
             li.method {
                 position: relative;
-                border-radius: 0.5rem;
                 border-bottom: 1px dashed #e7e8ef;
-                padding: 1rem 0;
+                padding: 1.5rem 0;
 
                 .signature {
-                    .name {
+                    .signature-start {
                         display: inline-flex;
-                        flex-flow: wrap;
                     }
-                    .return {
+                    .signature-end {
                         display: inline-flex;
 
-                        .delimiter {
-                            color: #6b7280;
+                        .return {
+                            display: inline-flex;
+
+                            .delimiter {
+                                color: #6b7280;
+                            }
                         }
                     }
                     ul.parameters {
                         display: flex;
-                        flex-flow: wrap;
+                        flex-direction: column;
+                        margin-left: 2rem;
 
                         li.parameter {
-                            display: inline-flex;
+                            display: flex;
                             margin-right: 0.5rem;
 
                             var {
                                 margin-left: 0.5rem;
-                                font-size: inherit;
                             }
                             .default-set {
                                 display: inline-flex;
+
+                                .value {
+                                    color: #936;
+                                }
                             }
                             .assignment {
                                 color: #6b7280;
@@ -224,18 +226,32 @@ blockquote {
                         }
                         li.parameter:last-child {
                             margin-right: 0;
-
-                            .delimiter {
-                                display: none;
-                            }
                         }
+                    }
+                }
+                .signature.no-parameters {
+                    display: flex;
+
+                    .parameters {
+                        display: none;
                     }
                 }
                 .details {
                     display: flex;
                     flex-direction: column;
-                    gap: 0.5rem;
+                    gap: 1.5rem;
+                    margin: 1rem;
 
+                    h4 {
+                        margin-bottom: 0.5rem;
+                    }
+                    .templates {
+                        .template-list {
+                            font-family: var(--code-font-family);
+                            font-size: var(--code-font-size);
+                            margin: 0.25rem 0.5rem;
+                        }
+                    }
                     .parameters {
                         display: flex;
                         flex-direction: column;
@@ -243,16 +259,21 @@ blockquote {
                         table {
                             border-spacing: 0;
                             tr {
+                                vertical-align: baseline;
+
                                 td.name {
                                     padding: 0.25rem 0.5rem;
                                     width: 0;
                                     white-space: nowrap;
                                     vertical-align: baseline;
+
+                                    var {
+                                        font-size: var(--code-font-size);
+                                    }
                                 }
                                 td.delimiter {
                                     width: 0;
                                     vertical-align: baseline;
-                                    color: #6b7280;
                                 }
                                 td.description {
                                     padding: 0.25rem 0.5rem;
@@ -262,6 +283,13 @@ blockquote {
                             tr:hover {
                                 background-color: #f9f9fb;
                             }
+                        }
+                    }
+                    .return {
+                        .return-type {
+                            display: flex;
+                            padding: 0 0.5rem;
+                            font-size: var(--code-font-size);
                         }
                     }
                 }
@@ -294,28 +322,44 @@ blockquote {
             color: #6b7280;
         }
         .delimiter {
-            color: #6b7280;
             margin-right: 0.25rem;
         }
     }
     .template-name {
-        color: #068baa;
+        color: #5c84cd;
     }
     .modifiers {
+        color: #2453b5;
+        display: inline-flex;
+    }
+    .named-var {
         color: #2453b5;
     }
     .signature {
         font-family: var(--code-font-family);
         padding: 0.75rem 1rem;
         border-radius: 0.5rem;
-        background-color: #f6f7f8;
-        gap: 0.5rem;
+        background-color: #f3f3f6;
         line-height: 1.5;
     }
+    .default-set {
+        display: inline-flex;
+
+        .value {
+            color: #936;
+        }
+    }
+    .assignment {
+        color: #6b7280;
+        margin: 0 0.5rem;
+    }
+    .parenthesis,
+    .delimiter {
+        color: #6b7280;
+    }
     .comment {
-        padding: 0.75rem;
-        opacity: 70%;
         line-height: 1.5;
+        color: #666e6e;
 
         p {
             margin: 0.5rem 0;
@@ -326,15 +370,13 @@ blockquote {
         p:last-child {
             margin-bottom: 0;
         }
-
         p:has(+ pre) {
             margin: 0;
         }
-
         code {
             font-family: var(--code-font-family);
             font-size: var(--phpdoc-code-font-size);
-            background-color: #f2f2f4;
+            background-color: #f6f6f6;
             padding: 0.15rem;
             border-radius: 0.25rem;
         }

@@ -74,8 +74,8 @@ class CommentParser
             $templates,
             $extends,
             $implements,
-            $return,
             $var,
+            $return,
             $params,
             $texts,
         );

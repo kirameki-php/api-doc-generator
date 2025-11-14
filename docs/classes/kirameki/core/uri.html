@@ -872,7 +872,7 @@
       string
     </span>
   </span>
-                <span class="var-name">$protocol</span>
+                <var>$protocol</var>
               </div>
               <div class="comment">
                 
@@ -888,7 +888,7 @@
       string
     </span>
   </span>
-                <span class="var-name">$userinfo</span>
+                <var>$userinfo</var>
               </div>
               <div class="comment">
                 
@@ -904,7 +904,7 @@
       string
     </span>
   </span>
-                <span class="var-name">$host</span>
+                <var>$host</var>
               </div>
               <div class="comment">
                 
@@ -920,7 +920,7 @@
       string
     </span>
   </span>
-                <span class="var-name">$authority</span>
+                <var>$authority</var>
               </div>
               <div class="comment">
                 
@@ -936,24 +936,7 @@
       string
     </span>
   </span>
-                <span class="var-name">$origin</span>
-              </div>
-              <div class="comment">
-                
-              </div>
-            </li>
-            <li>
-              <div class="signature">
-                <span class="modifiers">
-                    readonly
-                  public
-                </span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                <span class="var-name">$scheme</span>
+                <var>$origin</var>
               </div>
               <div class="comment">
                 
@@ -970,7 +953,24 @@
       string
     </span>
   </span>
-                <span class="var-name">$hostname</span>
+                <var>$scheme</var>
+              </div>
+              <div class="comment">
+                
+              </div>
+            </li>
+            <li>
+              <div class="signature">
+                <span class="modifiers">
+                    readonly
+                  public
+                </span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                <var>$hostname</var>
               </div>
               <div class="comment">
                 
@@ -987,7 +987,7 @@
       int
     </span>
   </span>
-                <span class="var-name">$port</span>
+                <var>$port</var>
               </div>
               <div class="comment">
                 
@@ -1004,7 +1004,7 @@
       string
     </span>
   </span>
-                <span class="var-name">$path</span>
+                <var>$path</var>
               </div>
               <div class="comment">
                 
@@ -1021,7 +1021,7 @@
       string
     </span>
   </span>
-                <span class="var-name">$query</span>
+                <var>$query</var>
               </div>
               <div class="comment">
                 
@@ -1038,7 +1038,7 @@
       string
     </span>
   </span>
-                <span class="var-name">$fragment</span>
+                <var>$fragment</var>
               </div>
               <div class="comment">
                 
@@ -1055,7 +1055,7 @@
       string
     </span>
   </span>
-                <span class="var-name">$username</span>
+                <var>$username</var>
               </div>
               <div class="comment">
                 
@@ -1072,7 +1072,7 @@
       string
     </span>
   </span>
-                <span class="var-name">$password</span>
+                <var>$password</var>
               </div>
               <div class="comment">
                 
@@ -1087,15 +1087,20 @@
               <a id="method-parse" class="anchor" href="classes/kirameki/core/uri.html#method-parse">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  public
-                    static
-                </span>
-                <span class="name">
-                  <span class="method-name-start">parse(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                      static
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    parse
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       string
@@ -1103,45 +1108,60 @@
   </span>
                         <var>$uri</var>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
-      self
+      static
     </span>
   </span>
-                </span>
-              </section>
-              <section class="details comment">
-                <div class="text">
-                  
+                  </span>
                 </div>
+              </section>
+              <section class="details">
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$uri</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$uri</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method---construct" class="anchor" href="classes/kirameki/core/uri.html#method---construct">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  public
-                </span>
-                <span class="name">
-                  <span class="method-name-start">__construct(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    __construct
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       string
@@ -1149,8 +1169,8 @@
   </span>
                         <var>$scheme</var>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       string
@@ -1158,167 +1178,265 @@
   </span>
                         <var>$hostname</var>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
                         <var>$port</var>
-                          <span class="default-set">
+                        <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-null">null</span>
                           </span>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                         <var>$path</var>
-                          <span class="default-set">
+                        <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-string">""</span>
                           </span>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                         <var>$query</var>
-                          <span class="default-set">
+                        <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-string">""</span>
                           </span>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                         <var>$fragment</var>
-                          <span class="default-set">
+                        <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-string">""</span>
                           </span>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                         <var>$username</var>
-                          <span class="default-set">
+                        <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-string">""</span>
                           </span>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
                         <var>$password</var>
-                          <span class="default-set">
+                        <span class="default-set">
                             <span class="assignment">=</span>
                                 <span class="value value-string">""</span>
                           </span>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       mixed
     </span>
   </span>
-                </span>
-              </section>
-              <section class="details comment">
-                <div class="text">
-                  
+                  </span>
                 </div>
+              </section>
+              <section class="details">
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$scheme</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$hostname</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$port</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$path</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$query</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$fragment</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$username</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$password</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$scheme</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$hostname</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$port</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$path</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$query</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$fragment</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$username</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$password</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method-parse-query" class="anchor" href="classes/kirameki/core/uri.html#method-parse-query">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  public
-                </span>
-                <span class="name">
-                    parseQuery():&nbsp;
-                <span class="return">
+              <section class="signature no-parameters">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    parseQuery
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       array
     </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-union">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      array
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
   </span>
-                </span>
+      <span class="delimiter">,</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                  </span>
+                </div>
               </section>
-              <section class="details comment">
-                <div class="text">
-                  
+              <section class="details">
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      array
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-union">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      array
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
                 </div>
               </section>
             </li>
@@ -1326,23 +1444,41 @@
               <a id="method-get-protocol-component" class="anchor" href="classes/kirameki/core/uri.html#method-get-protocol-component">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  public
-                </span>
-                <span class="name">
-                    getProtocolComponent():&nbsp;
-                <span class="return">
+              <section class="signature no-parameters">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    getProtocolComponent
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                </span>
+                  </span>
+                </div>
               </section>
-              <section class="details comment">
-                <div class="text">
-                  
+              <section class="details">
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
                 </div>
               </section>
             </li>
@@ -1350,23 +1486,41 @@
               <a id="method-get-user-info-component" class="anchor" href="classes/kirameki/core/uri.html#method-get-user-info-component">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  public
-                </span>
-                <span class="name">
-                    getUserInfoComponent():&nbsp;
-                <span class="return">
+              <section class="signature no-parameters">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    getUserInfoComponent
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                </span>
+                  </span>
+                </div>
               </section>
-              <section class="details comment">
-                <div class="text">
-                  
+              <section class="details">
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
                 </div>
               </section>
             </li>
@@ -1374,23 +1528,41 @@
               <a id="method-get-query-component" class="anchor" href="classes/kirameki/core/uri.html#method-get-query-component">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  public
-                </span>
-                <span class="name">
-                    getQueryComponent():&nbsp;
-                <span class="return">
+              <section class="signature no-parameters">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    getQueryComponent
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                </span>
+                  </span>
+                </div>
               </section>
-              <section class="details comment">
-                <div class="text">
-                  
+              <section class="details">
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
                 </div>
               </section>
             </li>
@@ -1398,23 +1570,41 @@
               <a id="method-get-fragment-component" class="anchor" href="classes/kirameki/core/uri.html#method-get-fragment-component">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  public
-                </span>
-                <span class="name">
-                    getFragmentComponent():&nbsp;
-                <span class="return">
+              <section class="signature no-parameters">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    getFragmentComponent
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                </span>
+                  </span>
+                </div>
               </section>
-              <section class="details comment">
-                <div class="text">
-                  
+              <section class="details">
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
                 </div>
               </section>
             </li>
@@ -1422,23 +1612,41 @@
               <a id="method-to-string" class="anchor" href="classes/kirameki/core/uri.html#method-to-string">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  public
-                </span>
-                <span class="name">
-                    toString():&nbsp;
-                <span class="return">
+              <section class="signature no-parameters">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    toString
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                </span>
+                  </span>
+                </div>
               </section>
-              <section class="details comment">
-                <div class="text">
-                  
+              <section class="details">
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
                 </div>
               </section>
             </li>
@@ -1446,23 +1654,41 @@
               <a id="method---to-string" class="anchor" href="classes/kirameki/core/uri.html#method---to-string">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  public
-                </span>
-                <span class="name">
-                    __toString():&nbsp;
-                <span class="return">
+              <section class="signature no-parameters">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    __toString
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                </span>
+                  </span>
+                </div>
               </section>
-              <section class="details comment">
-                <div class="text">
-                  
+              <section class="details">
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
                 </div>
               </section>
             </li>

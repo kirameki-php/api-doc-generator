@@ -6,6 +6,11 @@ use Kirameki\ApiDocGenerator\Types\VarType;
 
 class TemplateInfo
 {
+    /**
+     * @param string $name
+     * @param VarType|null $bound
+     * @param VarType|null $default
+     */
     public function __construct(
         public readonly string $name,
         public readonly VarType|null $bound = null,

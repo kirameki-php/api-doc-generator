@@ -919,7 +919,7 @@
     <span class="brace">&gt;</span>
   </span>
   </span>
-                <span class="var-name">$eventClass</span>
+                <var>$eventClass</var>
               </div>
               <div class="comment">
                 
@@ -936,7 +936,7 @@
         Closure
       </a>
   </span>
-                <span class="var-name">$callback</span>
+                <var>$callback</var>
               </div>
               <div class="comment">
                 
@@ -951,23 +951,41 @@
               <a id="method-evict-after-invocation" class="anchor" href="classes/kirameki/event/listeners/callback-once-listener.html#method-evict-after-invocation">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  public
-                </span>
-                <span class="name">
-                    evictAfterInvocation():&nbsp;
-                <span class="return">
+              <section class="signature no-parameters">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    evictAfterInvocation
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                </span>
+                  </span>
+                </div>
               </section>
-              <section class="details comment">
-                <div class="text">
-                  
+              <section class="details">
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
                 </div>
               </section>
             </li>
@@ -975,74 +993,121 @@
               <a id="method---construct" class="anchor" href="classes/kirameki/event/listeners/callback-once-listener.html#method---construct">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  public
-                </span>
-                <span class="name">
-                  <span class="method-name-start">__construct(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    __construct
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
-      string
+      class-string
     </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TEvent
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
   </span>
                         <var>$eventClass</var>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
+  <span class="type type-callable">
   <span class="type type-structure">
       <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
         Closure
       </a>
   </span>
-                        <var>$callback</var>
+    <span class="parenthesis">(</span>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TEvent
+    </span>
+  </span>
+
+    <span class="parenthesis">):&nbsp;</span>
   <span class="type type-named">
     <span class="no-link named-var">
       mixed
     </span>
   </span>
-                </span>
-              </section>
-              <section class="details comment">
-                <div class="text">
-                  
+  </span>
+                        <var>$callback</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                  </span>
                 </div>
+              </section>
+              <section class="details">
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$eventClass</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$callback</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$eventClass</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$callback</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method---invoke" class="anchor" href="classes/kirameki/event/listeners/callback-once-listener.html#method---invoke">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  public
-                </span>
-                <span class="name">
-                  <span class="method-name-start">__invoke(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    __invoke
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-structure">
       <a href="classes/kirameki/event/event.html">
         Kirameki\Event\Event
@@ -1050,31 +1115,41 @@
   </span>
                         <var>$event</var>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
-                </span>
-              </section>
-              <section class="details comment">
-                <div class="text">
-                  
+                  </span>
                 </div>
+              </section>
+              <section class="details">
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$event</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$event</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      void
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
         </ul>

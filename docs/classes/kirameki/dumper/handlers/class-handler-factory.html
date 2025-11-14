@@ -888,7 +888,7 @@
     <span class="brace">&gt;</span>
   </span>
   </span>
-                <span class="var-name">$resolved</span>
+                <var>$resolved</var>
               </div>
               <div class="comment">
                 
@@ -913,7 +913,7 @@
   </span>
 
   </span>
-                <span class="var-name">$fallback</span>
+                <var>$fallback</var>
               </div>
               <div class="comment">
                 
@@ -929,7 +929,7 @@
       array
     </span>
   </span>
-                <span class="var-name">$resolvers</span>
+                <var>$resolvers</var>
               </div>
               <div class="comment">
                 
@@ -945,7 +945,7 @@
         Closure
       </a>
   </span>
-                <span class="var-name">$fallbackResolver</span>
+                <var>$fallbackResolver</var>
               </div>
               <div class="comment">
                 
@@ -960,166 +960,254 @@
               <a id="method---construct" class="anchor" href="classes/kirameki/dumper/handlers/class-handler-factory.html#method---construct">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  public
-                </span>
-                <span class="name">
-                  <span class="method-name-start">__construct(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    __construct
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
       array
     </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      class-string
+    </span>
   </span>
-                        <var>$resolvers</var>
-                        <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+      <span class="delimiter">,</span>
+  <span class="type type-callable">
   <span class="type type-structure">
       <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
         Closure
       </a>
   </span>
+    <span class="parenthesis">(</span>
+    <span class="parenthesis">):&nbsp;</span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/handlers/class-handler.html">
+        Kirameki\Dumper\Handlers\ClassHandler
+      </a>
+  </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                        <var>$resolvers</var>
+                        <span class="delimiter">,</span>
+                    </li>
+                    <li class="parameter">
+  <span class="type type-callable">
+  <span class="type type-structure">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+    <span class="parenthesis">(</span>
+    <span class="parenthesis">):&nbsp;</span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/handlers/class-handler.html">
+        Kirameki\Dumper\Handlers\ClassHandler
+      </a>
+  </span>
+  </span>
                         <var>$fallbackResolver</var>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       mixed
     </span>
   </span>
-                </span>
-              </section>
-              <section class="details comment">
-                <div class="text">
-                  
+                  </span>
                 </div>
+              </section>
+              <section class="details">
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$resolvers</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$fallbackResolver</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$resolvers</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$fallbackResolver</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method-set" class="anchor" href="classes/kirameki/dumper/handlers/class-handler-factory.html#method-set">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  public
-                </span>
-                <span class="name">
-                  <span class="method-name-start">set(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    set
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
-      string
+      class-string
     </span>
   </span>
                         <var>$class</var>
                         <span class="delimiter">,</span>
-                      </li>
-                      <li class="parameter">
+                    </li>
+                    <li class="parameter">
+  <span class="type type-callable">
   <span class="type type-structure">
       <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
         Closure
       </a>
   </span>
+    <span class="parenthesis">(</span>
+    <span class="parenthesis">):&nbsp;</span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/handlers/class-handler.html">
+        Kirameki\Dumper\Handlers\ClassHandler
+      </a>
+  </span>
+  </span>
                         <var>$callback</var>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
-                </span>
-              </section>
-              <section class="details comment">
-                <div class="text">
-                  
+                  </span>
                 </div>
+              </section>
+              <section class="details">
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$class</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
-                          <tr class="parameter">
-                            <td class="name"><var>$callback</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$class</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$callback</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      void
+    </span>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
             <li class="method">
               <a id="method-get" class="anchor" href="classes/kirameki/dumper/handlers/class-handler-factory.html#method-get">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature">
-                <span class="modifiers">
-                  public
-                </span>
-                <span class="name">
-                  <span class="method-name-start">get(</span>
-                  <ul class="parameters">
-                      <li class="parameter">
+              <section class="signature ">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    get
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
-      string
+      class-string
     </span>
   </span>
                         <var>$class</var>
 
-                      </li>
-                  </ul>
-                  <span class="method-name-end">):&nbsp;</span>
-                <span class="return">
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  ):&nbsp;
+                  <span class="return">
   <span class="type type-structure">
       <a href="classes/kirameki/dumper/handlers/class-handler.html">
         Kirameki\Dumper\Handlers\ClassHandler
       </a>
   </span>
-                </span>
-              </section>
-              <section class="details comment">
-                <div class="text">
-                  
+                  </span>
                 </div>
+              </section>
+              <section class="details">
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
-                          <tr class="parameter">
-                            <td class="name"><var>$class</var></td>
-                            <td class="delimiter"></td>
-                            <td class="description"></td>
-                          </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$class</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
                     </table>
                   </div>
+                <div class="return">
+                  <h4>Returns:</h4>
+                  <div class="return-type">
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/handlers/class-handler.html">
+        Kirameki\Dumper\Handlers\ClassHandler
+      </a>
+  </span>
+                    <div class="description comment"></div>
+                  </div>
+                </div>
               </section>
             </li>
         </ul>

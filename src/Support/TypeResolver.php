@@ -2,6 +2,7 @@
 
 namespace Kirameki\ApiDocGenerator\Support;
 
+use Closure;
 use Kirameki\ApiDocGenerator\Components\ClassInfo;
 use Kirameki\ApiDocGenerator\Types\CallableVarType;
 use Kirameki\ApiDocGenerator\Types\ConditionalVarType;
@@ -118,8 +119,11 @@ class TypeResolver
         }
 
         if ($node instanceof CallableTypeNode) {
+            $name = $node->identifier->name === Closure::class
+                ? new StructureVarType($this->instantiateClassInfo(new ReflectionClass(Closure::class)))
+                : new NamedVarType($node->identifier->name);
             return new CallableVarType(
-                $node->identifier->name,
+                $name,
                 array_values(array_map(fn($n) => new ParameterVarType(
                     $this->resolveFromNode($n->type, $doc),
                     $n->isReference,
@@ -169,19 +173,19 @@ class TypeResolver
 
         if (class_exists($fqn)) {
             $reflection = new ReflectionClass($fqn);
-            $definition = new ClassInfo($reflection, $this->file, $this->docParser, $this->urlResolver, $this);
+            $definition = $this->instantiateClassInfo($reflection);
             return new StructureVarType($definition, $generics);
         }
 
         if (interface_exists($fqn)) {
             $reflection = new ReflectionClass($fqn);
-            $definition = new ClassInfo($reflection, $this->file, $this->docParser, $this->urlResolver, $this);
+            $definition = $this->instantiateClassInfo($reflection);
             return new StructureVarType($definition, $generics);
         }
 
         if (enum_exists($fqn)) {
             $reflection = new ReflectionEnum($fqn);
-            $definition = new ClassInfo($reflection, $this->file, $this->docParser, $this->urlResolver, $this);
+            $definition = $this->instantiateClassInfo($reflection);
             return new StructureVarType($definition, $generics);
         }
 
@@ -193,6 +197,17 @@ class TypeResolver
         }
 
         return new NamedVarType($fqn, $generics);
+    }
+
+    public function instantiateClassInfo(ReflectionClass $reflection): ClassInfo
+    {
+        return new ClassInfo(
+            $reflection,
+            $this->file,
+            $this->docParser,
+            $this->urlResolver,
+            $this,
+        );
     }
 
     /**

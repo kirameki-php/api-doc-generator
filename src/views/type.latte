@@ -54,15 +54,15 @@
 {elseif ($type instanceof Kirameki\ApiDocGenerator\Types\CallableVarType) }
   {varType Kirameki\ApiDocGenerator\Types\CallableVarType $type}
   <span class="type type-callable">
-    {$type->name}
-    <span class="parentheses">(</span>
+    {include type.latte, type: $type->name}
+    <span class="parenthesis">(</span>
     {foreach $type->parameters as $parameter}
       {if $parameter->isVariadic}<span class="variadic">... </span>{/if}
       {if $parameter->byReference}<span class="by-reference">&amp;</span>{/if}
       {include type.latte, type: $parameter->type}
       {sep}<span class="delimiter">,&nbsp;</span>{/sep}
     {/foreach}
-    <span class="parentheses">)</span>:&nbsp;
+    <span class="parenthesis">):&nbsp;</span>
     {include type.latte, type: $type->returnType}
   </span>
 {elseif ($type instanceof Kirameki\ApiDocGenerator\Types\NamedVarType) }

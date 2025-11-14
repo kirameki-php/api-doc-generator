@@ -24,8 +24,8 @@ class PhpDoc
         public readonly array $templates,
         public readonly ?ExtendsTagValueNode $extends,
         public readonly array $implements,
-        public readonly ?ReturnTagValueNode $return,
         public readonly ?VarTagValueNode $var,
+        public readonly ?ReturnTagValueNode $return,
         public readonly array $params,
         public readonly array $texts,
     ) {

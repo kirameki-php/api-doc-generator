@@ -51,6 +51,13 @@ class MethodInfo extends MemberInfo
     }
 
     /**
+     * @var string
+     */
+    public string $returnDescription {
+        get => $this->returnDescription ??= $this->phpDoc->return->description ?? '';
+    }
+
+    /**
      * @var bool
      */
     public bool $isFinal {
@@ -83,6 +90,10 @@ class MethodInfo extends MemberInfo
         };
     }
 
+    public array $templates {
+        get => $this->templates ??= $this->resolveTemplates();
+    }
+
     /**
      * @var string
      */
@@ -103,6 +114,26 @@ class MethodInfo extends MemberInfo
         protected TypeResolver $typeResolver,
     ) {
         parent::__construct($docParser);
+    }
+
+    /**
+     * @return list<TemplateInfo>
+     */
+    protected function resolveTemplates(): array
+    {
+        $templates = [];
+        foreach ($this->phpDoc->templates as $tpl) {
+            $bound = $tpl->bound
+                ? $this->typeResolver->resolveFromNode($tpl->bound, $this->phpDoc)
+                : null;
+            $default = $tpl->default ? $this->typeResolver->resolveFromNode($tpl->default, $this->phpDoc) : null;
+            $templates[] = new TemplateInfo(
+                $tpl->name,
+                $bound,
+                $default,
+            );
+        }
+        return $templates;
     }
 
     /**
