@@ -19,7 +19,7 @@ class ConstantInfo
      * @var string
      */
     public string $namespace {
-        get => $this->class->namespace;
+        get => $this->structure->namespace;
     }
 
     /**
@@ -63,11 +63,11 @@ class ConstantInfo
     }
 
     /**
-     * @param ClassInfo $class
+     * @param StructureInfo $structure
      * @param ReflectionClassConstant $reflection
      */
     public function __construct(
-        protected ClassInfo $class,
+        protected StructureInfo $structure,
         protected ReflectionClassConstant $reflection,
     ) {
     }

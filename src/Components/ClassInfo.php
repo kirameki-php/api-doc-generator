@@ -2,9 +2,9 @@
 
 namespace Kirameki\ApiDocGenerator\Components;
 
-use Kirameki\ApiDocGenerator\Support\ClassFile;
-use Kirameki\ApiDocGenerator\Support\CommentParser;
 use Kirameki\ApiDocGenerator\Support\PhpDoc;
+use Kirameki\ApiDocGenerator\Support\PhpFile;
+use Kirameki\ApiDocGenerator\Support\CommentParser;
 use Kirameki\ApiDocGenerator\Support\TypeResolver;
 use Kirameki\ApiDocGenerator\Support\UrlResolver;
 use Kirameki\ApiDocGenerator\Types\StructureVarType;
@@ -16,14 +16,17 @@ use ReflectionClass;
 use ReflectionClassConstant;
 use ReflectionMethod;
 use ReflectionProperty;
-use Stringable;
 use function array_map;
 use function array_values;
-use function dump;
 use function ksort;
 
-class ClassInfo implements StructureInfo, Stringable
+class ClassInfo implements StructureInfo
 {
+    /**
+     * @var string
+     */
+    public string $type = 'class';
+
     /**
      * @var string
      */
@@ -43,13 +46,6 @@ class ClassInfo implements StructureInfo, Stringable
      */
     public string $basename {
         get => Str::substringAfterLast($this->name, '\\');
-    }
-
-    /**
-     * @var list<TemplateInfo>
-     */
-    public array $templates {
-        get => $this->templates ??= $this->resolveTemplates();
     }
 
     /**
@@ -74,6 +70,13 @@ class ClassInfo implements StructureInfo, Stringable
     }
 
     /**
+     * @var list<TemplateInfo>
+     */
+    public array $templates {
+        get => $this->templates ??= $this->resolveTemplates();
+    }
+
+    /**
      * @var VarType|null
      */
     public ?VarType $parent {
@@ -85,6 +88,13 @@ class ClassInfo implements StructureInfo, Stringable
      */
     public array $interfaces {
         get => $this->interfaces ??= $this->resolveInterfaces();
+    }
+
+    /**
+     * @var list<VarType>
+     */
+    public array $traits {
+        get => $this->traits ??= $this->resolveTraits();
     }
 
     /**
@@ -112,7 +122,7 @@ class ClassInfo implements StructureInfo, Stringable
      */
     public array $methods {
         get => $this->methods ??= array_map(
-            fn(ReflectionMethod $ref) => new MethodInfo($this, $ref, $this->docParser, $this->typeResolver),
+            fn(ReflectionMethod $ref) => new MethodInfo($ref, $this->docParser, $this->typeResolver),
             $this->reflection->getMethods(),
         );
     }
@@ -136,9 +146,9 @@ class ClassInfo implements StructureInfo, Stringable
      */
     public string $outputPath {
         get => $this->outputPath ??= new Vec(Str::split($this->name, '\\'))
-            ->map(Str::toKebabCase(...))
-            ->prepend('classes')
-            ->join('/') . '.html';
+                ->map(Str::toKebabCase(...))
+                ->prepend('classes')
+                ->join('/') . '.html';
     }
 
     /**
@@ -150,14 +160,14 @@ class ClassInfo implements StructureInfo, Stringable
 
     /**
      * @param ReflectionClass<object> $reflection
-     * @param ClassFile $file
+     * @param PhpFile $file
      * @param CommentParser $docParser
      * @param UrlResolver $urlResolver
      * @param TypeResolver|null $typeResolver
      */
     public function __construct(
         protected readonly ReflectionClass $reflection,
-        protected readonly ClassFile $file,
+        protected readonly PhpFile $file,
         protected readonly CommentParser $docParser,
         protected readonly UrlResolver $urlResolver,
         ?TypeResolver $typeResolver = null,
@@ -191,6 +201,28 @@ class ClassInfo implements StructureInfo, Stringable
     }
 
     /**
+     * @return list<VarType>
+     */
+    protected function resolveTraits(): array
+    {
+        $traits = [];
+        foreach ($this->reflection->getTraits() as $reflection) {
+            $comments = $this->file->traits[$reflection->getName()] ?? null;
+            if ($comments !== null) {
+                $doc = $this->docParser->parse($comments);
+                if ($doc->use !== null) {
+                    $traits[$reflection->getName()] = $this->getTypeFromNode($doc->use->type);
+                }
+            }
+
+            $traits[$reflection->getName()] ??= new StructureVarType(
+                new TraitInfo($reflection, $this->file, $this->docParser, $this->urlResolver, $this->typeResolver),
+            );
+        }
+        return array_values($traits);
+    }
+
+    /**
      * @return VarType|null
      */
     protected function resolveParent(): ?VarType
@@ -204,7 +236,7 @@ class ClassInfo implements StructureInfo, Stringable
         if ($reflection === false) {
             return null;
         }
-        return new StructureVarType($this->instantiate($reflection));
+        return new StructureVarType($this->instantiateClass($reflection));
     }
 
     /**
@@ -219,12 +251,27 @@ class ClassInfo implements StructureInfo, Stringable
 
         foreach ($this->file->implements as $if) {
             $reflection = new ReflectionClass($if);
-            $types[$reflection->getName()] ??= new StructureVarType($this->instantiate($reflection));
+            $types[$reflection->getName()] ??= new StructureVarType($this->instantiateClass($reflection));
         }
 
         ksort($types, SORT_NATURAL);
 
         return array_values($types);
+    }
+
+    /**
+     * @param ReflectionClass<object> $reflection
+     * @return ClassInfo
+     */
+    protected function instantiateClass(ReflectionClass $reflection): ClassInfo
+    {
+        return new ClassInfo(
+            $reflection,
+            $this->file,
+            $this->docParser,
+            $this->urlResolver,
+            $this->typeResolver,
+        );
     }
 
     /**
@@ -234,21 +281,6 @@ class ClassInfo implements StructureInfo, Stringable
     protected function getTypeFromNode(TypeNode $node): VarType
     {
         return $this->typeResolver->resolveFromNode($node);
-    }
-
-    /**
-     * @param ReflectionClass<object> $reflection
-     * @return ClassInfo
-     */
-    protected function instantiate(ReflectionClass $reflection): ClassInfo
-    {
-        return new ClassInfo(
-            $reflection,
-            $this->file,
-            $this->docParser,
-            $this->urlResolver,
-            $this->typeResolver,
-        );
     }
 
     /**

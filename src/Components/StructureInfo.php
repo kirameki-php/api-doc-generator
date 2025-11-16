@@ -2,7 +2,9 @@
 
 namespace Kirameki\ApiDocGenerator\Components;
 
-interface StructureInfo
+use Stringable;
+
+interface StructureInfo extends Stringable
 {
     /**
      * @var string

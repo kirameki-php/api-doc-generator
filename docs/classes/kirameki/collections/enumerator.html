@@ -157,6 +157,11 @@
 </ul>
     </li>
     <li>
+      <a href="classes/kirameki/collections/enumerable.html" title="Kirameki\Collections\Enumerable">
+        Enumerable
+      </a>
+    </li>
+    <li>
       <a href="classes/kirameki/collections/enumerator.html" title="Kirameki\Collections\Enumerator">
         Enumerator
       </a>
@@ -174,6 +179,11 @@
     <li>
       <a href="classes/kirameki/collections/map-mutable.html" title="Kirameki\Collections\MapMutable">
         MapMutable
+      </a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/mutates-self.html" title="Kirameki\Collections\MutatesSelf">
+        MutatesSelf
       </a>
     </li>
     <li>
@@ -288,11 +298,26 @@
         UnreachableException
       </a>
     </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/with-context.html" title="Kirameki\Core\Exceptions\WithContext">
+        WithContext
+      </a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/with-json-serialize.html" title="Kirameki\Core\Exceptions\WithJsonSerialize">
+        WithJsonSerialize
+      </a>
+    </li>
 </ul>
     </li>
     <li>
       <a href="classes/kirameki/core/comparable.html" title="Kirameki\Core\Comparable">
         Comparable
+      </a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/comparison.html" title="Kirameki\Core\Comparison">
+        Comparison
       </a>
     </li>
     <li>
@@ -655,6 +680,31 @@
 </ul>
     </li>
     <li>
+      <a href="classes/kirameki/stream/can-lock.html" title="Kirameki\Stream\CanLock">
+        CanLock
+      </a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/can-read.html" title="Kirameki\Stream\CanRead">
+        CanRead
+      </a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/can-scan.html" title="Kirameki\Stream\CanScan">
+        CanScan
+      </a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/can-seek.html" title="Kirameki\Stream\CanSeek">
+        CanSeek
+      </a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/can-write.html" title="Kirameki\Stream\CanWrite">
+        CanWrite
+      </a>
+    </li>
+    <li>
       <a href="classes/kirameki/stream/file-reader.html" title="Kirameki\Stream\FileReader">
         FileReader
       </a>
@@ -722,6 +772,11 @@
     <li>
       <a href="classes/kirameki/stream/temp-stream.html" title="Kirameki\Stream\TempStream">
         TempStream
+      </a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/throws-error.html" title="Kirameki\Stream\ThrowsError">
+        ThrowsError
       </a>
     </li>
     <li>
@@ -827,6 +882,11 @@
 </ul>
     </li>
     <li>
+      <a href="classes/kirameki/time/helpers.html" title="Kirameki\Time\Helpers">
+        Helpers
+      </a>
+    </li>
+    <li>
       <a href="classes/kirameki/time/instant.html" title="Kirameki\Time\Instant">
         Instant
       </a>
@@ -914,6 +974,34 @@
           </li>
       </ul>
     </div>
+      <div class="traits">
+        use:
+        <ul>
+            <li>
+  <span class="type type-structure">
+      <a href="classes/kirameki/collections/enumerable.html">
+        Kirameki\Collections\Enumerable
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TKey
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+            </li>
+        </ul>
+      </div>
       <div class="properties">
         <h3>Properties</h3>
         <ul>
@@ -1001,14 +1089,7 @@
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      mixed
-    </span>
-  </span>
-                  </span>
+                  )
                 </div>
               </section>
               <section class="details">
@@ -1026,15 +1107,8 @@
                 <div class="return">
                   <h4>Returns:</h4>
                   <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      mixed
-    </span>
-  </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -1054,8 +1128,9 @@
                   (
                 </div>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-structure">
       <a href="https://www.php.net/manual/class.traversable.php" class="external-link" target="_blank">
         Traversable
@@ -1077,7 +1152,7 @@
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1107,8 +1182,6 @@
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -1143,14 +1216,15 @@
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1181,8 +1255,6 @@ again and cause an infinite loop.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1201,14 +1273,15 @@ again and cause an infinite loop.</p>
                   (
                 </div>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1228,8 +1301,6 @@ some functions like <code>chunk</code>, <code>each</code>, <code>map</code>, and
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1248,14 +1319,15 @@ some functions like <code>chunk</code>, <code>each</code>, <code>map</code>, and
                   (
                 </div>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1273,8 +1345,6 @@ some functions like <code>chunk</code>, <code>each</code>, <code>map</code>, and
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -1294,14 +1364,15 @@ some functions like <code>chunk</code>, <code>each</code>, <code>map</code>, and
                   (
                 </div>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1319,8 +1390,6 @@ some functions like <code>chunk</code>, <code>each</code>, <code>map</code>, and
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -1340,14 +1409,15 @@ some functions like <code>chunk</code>, <code>each</code>, <code>map</code>, and
                   (
                 </div>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1365,8 +1435,6 @@ some functions like <code>chunk</code>, <code>each</code>, <code>map</code>, and
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -1414,14 +1482,15 @@ some functions like <code>chunk</code>, <code>each</code>, <code>map</code>, and
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       $this
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1451,8 +1520,6 @@ some functions like <code>chunk</code>, <code>each</code>, <code>map</code>, and
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1472,14 +1539,15 @@ some functions like <code>chunk</code>, <code>each</code>, <code>map</code>, and
                   (
                 </div>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1501,8 +1569,6 @@ re-indexed if it is a vector (Vec), but not when it is a hash-table (Map).</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1521,8 +1587,9 @@ re-indexed if it is a vector (Vec), but not when it is a hash-table (Map).</p>
                   (
                 </div>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -1544,7 +1611,7 @@ re-indexed if it is a vector (Vec), but not when it is a hash-table (Map).</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1579,8 +1646,6 @@ re-indexed if it is a vector (Vec), but not when it is a hash-table (Map).</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1610,14 +1675,15 @@ re-indexed if it is a vector (Vec), but not when it is a hash-table (Map).</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1647,8 +1713,6 @@ Throws <code>IndexOutOfBoundsException</code> if the index does not exist.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -1688,8 +1752,9 @@ Throws <code>IndexOutOfBoundsException</code> if the index does not exist.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -1704,7 +1769,7 @@ Throws <code>IndexOutOfBoundsException</code> if the index does not exist.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1758,8 +1823,6 @@ Returns <code>$default</code> if the given index does not exist.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1789,8 +1852,9 @@ Returns <code>$default</code> if the given index does not exist.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -1805,7 +1869,7 @@ Returns <code>$default</code> if the given index does not exist.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1844,8 +1908,6 @@ Returns <strong>null</strong> if the given index does not exist.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -1892,8 +1954,9 @@ Returns <strong>null</strong> if the given index does not exist.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-structure">
       <a href="classes/kirameki/collections/vec.html">
         Kirameki\Collections\Vec
@@ -1909,7 +1972,7 @@ Returns <strong>null</strong> if the given index does not exist.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1949,8 +2012,6 @@ Returns <strong>null</strong> if the given index does not exist.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1969,14 +2030,15 @@ Returns <strong>null</strong> if the given index does not exist.</p>
                   (
                 </div>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1996,8 +2058,6 @@ Throws <code>InvalidArgumentException</code> if empty or all elements are <stron
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -2016,8 +2076,9 @@ Throws <code>InvalidArgumentException</code> if empty or all elements are <stron
                   (
                 </div>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -2032,7 +2093,7 @@ Throws <code>InvalidArgumentException</code> if empty or all elements are <stron
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2060,8 +2121,6 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -2133,8 +2192,9 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-structure">
       <a href="classes/kirameki/collections/vec.html">
         Kirameki\Collections\Vec
@@ -2150,7 +2210,7 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2198,8 +2258,6 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -2229,14 +2287,15 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2265,8 +2324,6 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -2313,14 +2370,15 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2350,8 +2408,6 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -2398,14 +2454,15 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2435,8 +2492,6 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -2483,14 +2538,15 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2520,8 +2576,6 @@ collection, <strong>false</strong> otherwise.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -2568,14 +2622,15 @@ collection, <strong>false</strong> otherwise.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2605,8 +2660,6 @@ collection, <strong>false</strong> otherwise.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -2675,8 +2728,9 @@ collection, <strong>false</strong> otherwise.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       int
@@ -2698,7 +2752,7 @@ collection, <strong>false</strong> otherwise.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2746,8 +2800,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -2777,14 +2829,15 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2813,8 +2866,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -2854,14 +2905,15 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2898,8 +2950,6 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -3009,14 +3059,15 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3052,8 +3103,6 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -3083,14 +3132,15 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3119,8 +3169,6 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -3151,14 +3199,15 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3187,8 +3236,6 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -3219,14 +3266,15 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3255,8 +3303,6 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -3312,14 +3358,15 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3350,8 +3397,6 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -3381,14 +3426,15 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3417,8 +3463,6 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -3474,14 +3518,15 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3510,8 +3555,6 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -3567,14 +3610,15 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3604,8 +3648,6 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -3624,14 +3666,15 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                   (
                 </div>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3649,8 +3692,6 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -3715,14 +3756,15 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3751,8 +3793,6 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -3783,14 +3823,15 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       $this
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3821,8 +3862,6 @@ Throws <code>CountMismatchException</code> if count is not equal to <code>$size<
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -3852,14 +3891,15 @@ Throws <code>CountMismatchException</code> if count is not equal to <code>$size<
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       $this
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3891,8 +3931,6 @@ Empty collections are considered valid.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -3939,14 +3977,15 @@ Empty collections are considered valid.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3975,8 +4014,6 @@ Empty collections are considered valid.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -4032,14 +4069,15 @@ Empty collections are considered valid.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -4070,8 +4108,6 @@ Empty collections are considered valid.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -4140,14 +4176,15 @@ Empty collections are considered valid.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -4180,8 +4217,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -4237,14 +4272,15 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -4274,8 +4310,6 @@ Throws <code>NoMatchFoundException</code> if no condition is met.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -4331,8 +4365,9 @@ Throws <code>NoMatchFoundException</code> if no condition is met.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-named">
     <span class="no-link named-var">
@@ -4347,7 +4382,7 @@ Throws <code>NoMatchFoundException</code> if no condition is met.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -4386,8 +4421,6 @@ Returns <strong>null</strong> if there were no matches.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -4465,8 +4498,9 @@ Returns <strong>null</strong> if there were no matches.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -4481,7 +4515,7 @@ Returns <strong>null</strong> if there were no matches.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -4536,8 +4570,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -4606,8 +4638,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -4622,7 +4655,7 @@ Defaults to <strong>null</strong>.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -4663,8 +4696,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -4737,14 +4768,15 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       U
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -4789,8 +4821,6 @@ The returned value would be used as $result for the subsequent call.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -4846,8 +4876,9 @@ The returned value would be used as $result for the subsequent call.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-structure">
       <a href="classes/kirameki/collections/map.html">
         Kirameki\Collections\Map
@@ -4869,7 +4900,7 @@ The returned value would be used as $result for the subsequent call.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -4932,8 +4963,6 @@ returned by <code>$callback</code>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -4980,14 +5009,15 @@ returned by <code>$callback</code>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -5016,8 +5046,6 @@ returned by <code>$callback</code>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -5064,14 +5092,15 @@ returned by <code>$callback</code>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -5101,8 +5130,6 @@ returned by <code>$callback</code>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -5121,14 +5148,15 @@ returned by <code>$callback</code>.</p>
                   (
                 </div>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -5146,8 +5174,6 @@ returned by <code>$callback</code>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -5167,14 +5193,15 @@ returned by <code>$callback</code>.</p>
                   (
                 </div>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -5192,8 +5219,6 @@ returned by <code>$callback</code>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -5268,14 +5293,15 @@ returned by <code>$callback</code>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -5318,8 +5344,6 @@ also be added to the result string.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -5388,8 +5412,9 @@ also be added to the result string.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-structure">
       <a href="classes/kirameki/collections/map.html">
         Kirameki\Collections\Map
@@ -5411,7 +5436,7 @@ also be added to the result string.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -5484,8 +5509,6 @@ If <strong>false</strong>, exception will be thrown on duplicate keys.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -5553,14 +5576,15 @@ If <strong>false</strong>, exception will be thrown on duplicate keys.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -5593,8 +5617,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -5663,14 +5685,15 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -5702,8 +5725,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -5772,8 +5793,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-named">
     <span class="no-link named-var">
@@ -5788,7 +5810,7 @@ Defaults to <strong>null</strong>.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -5828,8 +5850,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -5907,8 +5927,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -5923,7 +5944,7 @@ Defaults to <strong>null</strong>.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -5978,8 +5999,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -6048,8 +6067,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -6064,7 +6084,7 @@ Defaults to <strong>null</strong>.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -6105,8 +6125,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -6191,8 +6209,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-structure">
       <a href="classes/kirameki/collections/map.html">
         Kirameki\Collections\Map
@@ -6214,7 +6233,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -6286,8 +6305,6 @@ If <strong>false</strong>, exception will be thrown on duplicate keys.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -6355,14 +6372,15 @@ If <strong>false</strong>, exception will be thrown on duplicate keys.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -6396,8 +6414,6 @@ Returned value will be used to determine the largest number.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -6466,8 +6482,9 @@ Returned value will be used to determine the largest number.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -6482,7 +6499,7 @@ Returned value will be used to determine the largest number.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -6526,8 +6543,6 @@ Must be int or float.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -6575,14 +6590,15 @@ Must be int or float.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -6616,8 +6632,6 @@ iterable that comes later will overwrite the value in the key.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -6693,14 +6707,15 @@ iterable that comes later will overwrite the value in the key.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -6736,8 +6751,6 @@ Will merge recursively up to the given depth.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -6806,14 +6819,15 @@ Will merge recursively up to the given depth.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -6848,8 +6862,6 @@ Must be int or float.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -6918,8 +6930,9 @@ Must be int or float.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -6934,7 +6947,7 @@ Must be int or float.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -6978,8 +6991,6 @@ Must be int or float.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -7048,8 +7059,9 @@ Must be int or float.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -7065,7 +7077,7 @@ Must be int or float.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -7109,8 +7121,6 @@ Returned value will be used to determine the highest number.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -7166,14 +7176,15 @@ Returned value will be used to determine the highest number.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array&#123;static, static}
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -7205,8 +7216,6 @@ the second collection.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -7254,14 +7263,15 @@ the second collection.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TPipe
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -7300,8 +7310,6 @@ The result of the callback will be returned.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -7379,14 +7387,15 @@ The result of the callback will be returned.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -7421,8 +7430,6 @@ The result of the callback will be returned.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -7478,14 +7485,15 @@ The result of the callback will be returned.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       float
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -7515,8 +7523,6 @@ Throws <code>EmptyNotAllowedException</code> if collection is empty.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -7572,8 +7578,9 @@ Throws <code>EmptyNotAllowedException</code> if collection is empty.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-named">
     <span class="no-link named-var">
@@ -7588,7 +7595,7 @@ Throws <code>EmptyNotAllowedException</code> if collection is empty.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -7627,8 +7634,6 @@ Returns <strong>null</strong> if the collection is empty.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -7692,14 +7697,15 @@ Returns <strong>null</strong> if the collection is empty.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -7732,8 +7738,6 @@ Third argument contains the current key.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -7806,14 +7810,15 @@ Third argument contains the current key.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -7860,8 +7865,6 @@ Third argument contains the current key.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -7925,8 +7928,9 @@ Third argument contains the current key.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -7941,7 +7945,7 @@ Third argument contains the current key.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -7983,8 +7987,6 @@ Third argument contains the current key.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -8060,14 +8062,15 @@ Third argument contains the current key.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8118,8 +8121,6 @@ Any value previously set will be reset.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -8138,14 +8139,15 @@ Any value previously set will be reset.</p>
                   (
                 </div>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8164,8 +8166,6 @@ in reverse order.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -8196,14 +8196,15 @@ in reverse order.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8234,8 +8235,6 @@ to the left instead.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -8279,14 +8278,15 @@ to the left instead.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8318,8 +8318,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -8385,8 +8383,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-structure">
       <a href="classes/kirameki/collections/vec.html">
         Kirameki\Collections\Vec
@@ -8402,7 +8401,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8459,8 +8458,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -8512,8 +8509,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -8528,7 +8526,7 @@ Defaults to <strong>null</strong>.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8584,8 +8582,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -8628,8 +8624,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -8644,7 +8641,7 @@ Defaults to <strong>null</strong>.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8685,8 +8682,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -8742,14 +8737,15 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8780,8 +8776,6 @@ the collection is empty, <strong>false</strong> otherwise.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -8837,14 +8831,15 @@ the collection is empty, <strong>false</strong> otherwise.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8875,8 +8870,6 @@ if any iterations that run through the <code>$condition</code> returned <strong>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -8932,14 +8925,15 @@ if any iterations that run through the <code>$condition</code> returned <strong>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8970,8 +8964,6 @@ if all the iterations that run through the <code>$condition</code> returned <str
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -9027,14 +9019,15 @@ if all the iterations that run through the <code>$condition</code> returned <str
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -9065,8 +9058,6 @@ if iterations that run through the <code>$condition</code> returned <strong>true
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -9110,14 +9101,15 @@ if iterations that run through the <code>$condition</code> returned <strong>true
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -9148,8 +9140,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -9218,14 +9208,15 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -9260,8 +9251,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -9305,14 +9294,15 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -9352,8 +9342,6 @@ If it is omitted, then the sequence will have everything from offset up until th
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -9383,8 +9371,9 @@ If it is omitted, then the sequence will have everything from offset up until th
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-structure">
       <a href="classes/kirameki/collections/vec.html">
         Kirameki\Collections\Vec
@@ -9400,7 +9389,7 @@ If it is omitted, then the sequence will have everything from offset up until th
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -9440,8 +9429,6 @@ Also known as sliding window.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -9532,14 +9519,15 @@ Also known as sliding window.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -9582,8 +9570,6 @@ Defaults to <code>SORT_REGULAR</code>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -9665,14 +9651,15 @@ Defaults to <code>SORT_REGULAR</code>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -9709,8 +9696,6 @@ Defaults to <code>SORT_REGULAR</code>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -9792,14 +9777,15 @@ Defaults to <code>SORT_REGULAR</code>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -9836,8 +9822,6 @@ Defaults to <code>SORT_REGULAR</code>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -9893,14 +9877,15 @@ Defaults to <code>SORT_REGULAR</code>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -9930,8 +9915,6 @@ Utilize the spaceship operator (<code>&lt;=&gt;</code>) to easily compare two va
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -9987,8 +9970,9 @@ Utilize the spaceship operator (<code>&lt;=&gt;</code>) to easily compare two va
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-structure">
       <a href="classes/kirameki/collections/vec.html">
         Kirameki\Collections\Vec
@@ -10004,7 +9988,7 @@ Utilize the spaceship operator (<code>&lt;=&gt;</code>) to easily compare two va
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -10044,8 +10028,6 @@ Utilize the spaceship operator (<code>&lt;=&gt;</code>) to easily compare two va
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -10075,8 +10057,9 @@ Utilize the spaceship operator (<code>&lt;=&gt;</code>) to easily compare two va
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-structure">
       <a href="classes/kirameki/collections/vec.html">
         Kirameki\Collections\Vec
@@ -10092,7 +10075,7 @@ Utilize the spaceship operator (<code>&lt;=&gt;</code>) to easily compare two va
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -10132,8 +10115,6 @@ Negative index will count from the end.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -10189,8 +10170,9 @@ Negative index will count from the end.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-structure">
       <a href="classes/kirameki/collections/vec.html">
         Kirameki\Collections\Vec
@@ -10206,7 +10188,7 @@ Negative index will count from the end.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -10246,8 +10228,6 @@ Negative index will count from the end.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -10277,8 +10257,9 @@ Negative index will count from the end.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-structure">
       <a href="classes/kirameki/collections/vec.html">
         Kirameki\Collections\Vec
@@ -10294,7 +10275,7 @@ Negative index will count from the end.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -10335,8 +10316,6 @@ Negative index will count from the end.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -10366,8 +10345,9 @@ Negative index will count from the end.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-structure">
       <a href="classes/kirameki/collections/vec.html">
         Kirameki\Collections\Vec
@@ -10383,7 +10363,7 @@ Negative index will count from the end.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -10422,8 +10402,6 @@ Negative index will count from the end.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -10470,14 +10448,15 @@ Negative index will count from the end.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -10506,8 +10485,6 @@ Negative index will count from the end.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -10538,14 +10515,15 @@ Negative index will count from the end.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -10574,8 +10552,6 @@ Negative index will count from the end.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -10606,14 +10582,15 @@ Negative index will count from the end.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -10643,8 +10620,6 @@ with those elements.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -10700,14 +10675,15 @@ with those elements.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -10737,8 +10713,6 @@ with those elements.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -10779,14 +10753,15 @@ with those elements.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -10832,8 +10807,6 @@ with those elements.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -10863,14 +10836,15 @@ with those elements.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -10900,8 +10874,6 @@ with those elements.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -10957,14 +10929,15 @@ with those elements.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -10994,8 +10967,6 @@ taking of elements from the collection.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -11051,14 +11022,15 @@ taking of elements from the collection.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -11088,8 +11060,6 @@ taking of elements from the collection.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -11140,8 +11110,9 @@ taking of elements from the collection.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -11163,7 +11134,7 @@ taking of elements from the collection.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -11209,8 +11180,6 @@ taking of elements from the collection.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -11244,14 +11213,15 @@ taking of elements from the collection.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -11281,8 +11251,6 @@ Defaults to <strong>false</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -11351,14 +11319,15 @@ Defaults to <strong>false</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -11393,8 +11362,6 @@ Returned value will be used to check for duplicates.<br />
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -11516,14 +11483,15 @@ Returned value will be used to check for duplicates.<br />
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TReturn
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -11573,8 +11541,6 @@ is <strong>true</strong>, calls <code>$fallback</code> otherwise.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -11661,14 +11627,15 @@ is <strong>true</strong>, calls <code>$fallback</code> otherwise.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TReturn
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -11712,8 +11679,6 @@ calls <code>$fallback</code> otherwise.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -11800,14 +11765,15 @@ calls <code>$fallback</code> otherwise.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TReturn
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -11852,8 +11818,6 @@ empty, calls <code>$fallback</code> otherwise.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -11883,14 +11847,15 @@ empty, calls <code>$fallback</code> otherwise.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -11919,8 +11884,6 @@ empty, calls <code>$fallback</code> otherwise.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -11989,8 +11952,9 @@ empty, calls <code>$fallback</code> otherwise.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -12012,7 +11976,7 @@ empty, calls <code>$fallback</code> otherwise.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -12063,8 +12027,6 @@ empty, calls <code>$fallback</code> otherwise.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -12110,8 +12072,9 @@ empty, calls <code>$fallback</code> otherwise.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-structure">
       <a href="classes/kirameki/collections/map.html">
         Kirameki\Collections\Map
@@ -12133,7 +12096,7 @@ empty, calls <code>$fallback</code> otherwise.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -12193,8 +12156,6 @@ empty, calls <code>$fallback</code> otherwise.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -12240,8 +12201,9 @@ empty, calls <code>$fallback</code> otherwise.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-structure">
       <a href="classes/kirameki/collections/vec.html">
         Kirameki\Collections\Vec
@@ -12257,7 +12219,7 @@ empty, calls <code>$fallback</code> otherwise.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -12299,8 +12261,6 @@ empty, calls <code>$fallback</code> otherwise.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>

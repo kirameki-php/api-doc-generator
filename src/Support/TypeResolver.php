@@ -4,6 +4,7 @@ namespace Kirameki\ApiDocGenerator\Support;
 
 use Closure;
 use Kirameki\ApiDocGenerator\Components\ClassInfo;
+use Kirameki\ApiDocGenerator\Components\TraitInfo;
 use Kirameki\ApiDocGenerator\Types\CallableVarType;
 use Kirameki\ApiDocGenerator\Types\ConditionalVarType;
 use Kirameki\ApiDocGenerator\Types\IntersectionVarType;
@@ -47,13 +48,13 @@ class TypeResolver
 {
     /**
      * @param PhpDoc $structureDoc
-     * @param ClassFile $file
+     * @param PhpFile $file
      * @param CommentParser $docParser
      * @param UrlResolver $urlResolver
      */
     public function __construct(
         protected readonly PhpDoc $structureDoc,
-        protected readonly ClassFile $file,
+        protected readonly PhpFile $file,
         protected readonly CommentParser $docParser,
         protected readonly UrlResolver $urlResolver,
     ) {
@@ -189,6 +190,12 @@ class TypeResolver
             return new StructureVarType($definition, $generics);
         }
 
+        if (trait_exists($fqn)) {
+            $reflection = new ReflectionClass($fqn);
+            $definition = $this->instantiateTraitInfo($reflection);
+            return new StructureVarType($definition, $generics);
+        }
+
         if (
             in_array($fqn, array_map(fn($t) => $t->name, $this->structureDoc->templates), true) ||
             in_array($fqn, array_map(fn($t) => $t->name, $doc->templates ?? []), true)
@@ -199,6 +206,10 @@ class TypeResolver
         return new NamedVarType($fqn, $generics);
     }
 
+    /**
+     * @param ReflectionClass<object> $reflection
+     * @return ClassInfo
+     */
     public function instantiateClassInfo(ReflectionClass $reflection): ClassInfo
     {
         return new ClassInfo(
@@ -211,14 +222,29 @@ class TypeResolver
     }
 
     /**
+     * @param ReflectionClass<object> $reflection
+     * @return TraitInfo
+     */
+    public function instantiateTraitInfo(ReflectionClass $reflection): TraitInfo
+    {
+        return new TraitInfo(
+            $reflection,
+            $this->file,
+            $this->docParser,
+            $this->urlResolver,
+            $this,
+        );
+    }
+
+    /**
      * Resolves the fully qualified class name from a given name within the context of a class file.
      *
-     * @param ClassFile $file
+     * @param PhpFile $file
      * @param string|Stringable $name
      * @return string|null
      */
     public function getFullyQualifiedName(
-        ClassFile $file,
+        PhpFile $file,
         string|Stringable $name,
     ): ?string
     {

@@ -157,6 +157,11 @@
 </ul>
     </li>
     <li>
+      <a href="classes/kirameki/collections/enumerable.html" title="Kirameki\Collections\Enumerable">
+        Enumerable
+      </a>
+    </li>
+    <li>
       <a href="classes/kirameki/collections/enumerator.html" title="Kirameki\Collections\Enumerator">
         Enumerator
       </a>
@@ -174,6 +179,11 @@
     <li>
       <a href="classes/kirameki/collections/map-mutable.html" title="Kirameki\Collections\MapMutable">
         MapMutable
+      </a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/mutates-self.html" title="Kirameki\Collections\MutatesSelf">
+        MutatesSelf
       </a>
     </li>
     <li>
@@ -288,11 +298,26 @@
         UnreachableException
       </a>
     </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/with-context.html" title="Kirameki\Core\Exceptions\WithContext">
+        WithContext
+      </a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/with-json-serialize.html" title="Kirameki\Core\Exceptions\WithJsonSerialize">
+        WithJsonSerialize
+      </a>
+    </li>
 </ul>
     </li>
     <li>
       <a href="classes/kirameki/core/comparable.html" title="Kirameki\Core\Comparable">
         Comparable
+      </a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/comparison.html" title="Kirameki\Core\Comparison">
+        Comparison
       </a>
     </li>
     <li>
@@ -655,6 +680,31 @@
 </ul>
     </li>
     <li>
+      <a href="classes/kirameki/stream/can-lock.html" title="Kirameki\Stream\CanLock">
+        CanLock
+      </a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/can-read.html" title="Kirameki\Stream\CanRead">
+        CanRead
+      </a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/can-scan.html" title="Kirameki\Stream\CanScan">
+        CanScan
+      </a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/can-seek.html" title="Kirameki\Stream\CanSeek">
+        CanSeek
+      </a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/can-write.html" title="Kirameki\Stream\CanWrite">
+        CanWrite
+      </a>
+    </li>
+    <li>
       <a href="classes/kirameki/stream/file-reader.html" title="Kirameki\Stream\FileReader">
         FileReader
       </a>
@@ -722,6 +772,11 @@
     <li>
       <a href="classes/kirameki/stream/temp-stream.html" title="Kirameki\Stream\TempStream">
         TempStream
+      </a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/throws-error.html" title="Kirameki\Stream\ThrowsError">
+        ThrowsError
       </a>
     </li>
     <li>
@@ -825,6 +880,11 @@
       </a>
     </li>
 </ul>
+    </li>
+    <li>
+      <a href="classes/kirameki/time/helpers.html" title="Kirameki\Time\Helpers">
+        Helpers
+      </a>
     </li>
     <li>
       <a href="classes/kirameki/time/instant.html" title="Kirameki\Time\Instant">
@@ -951,14 +1011,15 @@
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -993,8 +1054,6 @@ Utf8::byteLength('👨‍👨‍👧‍👦'); // 25
                     <div class="description comment"><p>The byte size of the given string.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -1035,14 +1094,15 @@ Utf8::byteLength('👨‍👨‍👧‍👦'); // 25
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1081,8 +1141,6 @@ Utf8::contains('', ''); // true
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -1136,14 +1194,15 @@ Utf8::contains('', ''); // true
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1192,8 +1251,6 @@ Utf8::cut('あいう', 1); // '' since あ is 3 bytes long.
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1233,14 +1290,15 @@ Utf8::cut('あいう', 1); // '' since あ is 3 bytes long.
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1281,8 +1339,6 @@ Utf8::endsWith('abc', ['a', 'b']); // false
                     <div class="description comment"><p>Returns <strong>true</strong> if <code>$string</code> ends with <code>$suffix</code>, <strong>false</strong> otherwise.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -1336,14 +1392,15 @@ Utf8::endsWith('abc', ['a', 'b']); // false
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1386,8 +1443,6 @@ Utf8::firstIndexOf('abb', 'b', 3); // null
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -1441,14 +1496,15 @@ Utf8::firstIndexOf('abb', 'b', 3); // null
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1492,8 +1548,6 @@ Utf8::indexOfLast('abb', 'b', 3); // null
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1524,14 +1578,15 @@ Utf8::indexOfLast('abb', 'b', 3); // null
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1565,8 +1620,6 @@ Utf8::length('👨‍👨‍👧‍👦'); // 1
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -1633,14 +1686,15 @@ Utf8::length('👨‍👨‍👧‍👦'); // 1
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1695,8 +1749,6 @@ If the value is lower than the length of <code>$string</code>, the current strin
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1727,14 +1779,15 @@ If the value is lower than the length of <code>$string</code>, the current strin
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1758,8 +1811,6 @@ If the value is lower than the length of <code>$string</code>, the current strin
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -1800,14 +1851,15 @@ If the value is lower than the length of <code>$string</code>, the current strin
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1848,8 +1900,6 @@ Utf8::startsWith('abc', 'b'); // false
                     <div class="description comment"><p>Returns <strong>true</strong> if <code>$string</code> starts with <code>$prefix</code>, <strong>false</strong> otherwise.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -1903,14 +1953,15 @@ Utf8::startsWith('abc', 'b'); // false
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1957,8 +2008,6 @@ Utf8::substring('👨‍👨‍👧‍👦', 1, 'not found'); // 'not found'
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1989,14 +2038,15 @@ Utf8::substring('👨‍👨‍👧‍👦', 1, 'not found'); // 'not found'
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2032,8 +2082,6 @@ Utf8::toLowerCase('ÇĞİÖŞÜ'); // 'çği̇öşü'
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -2064,14 +2112,15 @@ Utf8::toLowerCase('ÇĞİÖŞÜ'); // 'çği̇öşü'
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2104,8 +2153,6 @@ Utf8::toUpperCase('çği̇öşü'); // ÇĞİÖŞÜ
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -2159,14 +2206,15 @@ Utf8::toUpperCase('çği̇öşü'); // ÇĞİÖŞÜ
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2207,8 +2255,6 @@ Defaults to PCRE spaces. (<a href="https://www.pcre.org/original/doc/html/pcrepa
                     <div class="description comment"><p>The trimmed string.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -2262,14 +2308,15 @@ Defaults to PCRE spaces. (<a href="https://www.pcre.org/original/doc/html/pcrepa
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2310,8 +2357,6 @@ Defaults to PCRE spaces. (<a href="https://www.pcre.org/original/doc/html/pcrepa
                     <div class="description comment"><p>The trimmed string.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -2365,14 +2410,15 @@ Defaults to PCRE spaces. (<a href="https://www.pcre.org/original/doc/html/pcrepa
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2414,8 +2460,6 @@ Defaults to PCRE spaces. (<a href="https://www.pcre.org/original/doc/html/pcrepa
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -2435,14 +2479,15 @@ Defaults to PCRE spaces. (<a href="https://www.pcre.org/original/doc/html/pcrepa
                   (
                 </div>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2456,8 +2501,6 @@ Defaults to PCRE spaces. (<a href="https://www.pcre.org/original/doc/html/pcrepa
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -2478,14 +2521,15 @@ Defaults to PCRE spaces. (<a href="https://www.pcre.org/original/doc/html/pcrepa
                   (
                 </div>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2499,8 +2543,6 @@ Defaults to PCRE spaces. (<a href="https://www.pcre.org/original/doc/html/pcrepa
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -2532,14 +2574,15 @@ Defaults to PCRE spaces. (<a href="https://www.pcre.org/original/doc/html/pcrepa
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-structure">
       <a href="classes/kirameki/text/str-object.html">
         Kirameki\Text\StrObject
       </a>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2563,8 +2606,6 @@ Defaults to PCRE spaces. (<a href="https://www.pcre.org/original/doc/html/pcrepa
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -2614,14 +2655,15 @@ Defaults to PCRE spaces. (<a href="https://www.pcre.org/original/doc/html/pcrepa
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2667,8 +2709,6 @@ Str::between('no tag', '&lt;', '&gt;'); // 'no tag'
                     <div class="description comment"><p>The extracted part of the string.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -2718,14 +2758,15 @@ Str::between('no tag', '&lt;', '&gt;'); // 'no tag'
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2771,8 +2812,6 @@ Str::betweenFurthest('no tag', '&lt;', '&gt;'); // 'no tag'
                     <div class="description comment"><p>The extracted part of the string.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -2822,14 +2861,15 @@ Str::betweenFurthest('no tag', '&lt;', '&gt;'); // 'no tag'
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2876,8 +2916,6 @@ Str::betweenLast('no tag', '&lt;', '&gt;'); // 'no tag'
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -2908,14 +2946,15 @@ Str::betweenLast('no tag', '&lt;', '&gt;'); // 'no tag'
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2950,8 +2989,6 @@ Str::capitalize('éclore'); // 'Éclore'
                     <div class="description comment"><p>The string that was capitalized.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -3014,8 +3051,9 @@ Str::capitalize('éclore'); // 'Éclore'
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       list
@@ -3031,7 +3069,7 @@ Str::capitalize('éclore'); // 'Éclore'
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3088,8 +3126,6 @@ Str::chunk('TestTestTest', 4, 2); // ['Test', 'Test']
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -3121,14 +3157,15 @@ Str::chunk('TestTestTest', 4, 2); // ['Test', 'Test']
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3161,8 +3198,6 @@ Str::chunk('TestTestTest', 4, 2); // ['Test', 'Test']
                     <div class="description comment"><p>The string that was concatenated.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -3219,14 +3254,15 @@ Str::chunk('TestTestTest', 4, 2); // ['Test', 'Test']
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3268,8 +3304,6 @@ This must contain at least one substring or exception is thrown.</p>
                     <div class="description comment"><p>Returns <strong>true</strong> if all strings in <code>$substrings</code> are in <code>$string</code>, <strong>false</strong> otherwise.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -3326,14 +3360,15 @@ This must contain at least one substring or exception is thrown.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3375,8 +3410,6 @@ This must contain at least one value or exception is thrown.</p>
                     <div class="description comment"><p>Returns true if any strings in <code>$substrings</code> are in <code>$string</code>, false otherwise.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -3433,14 +3466,15 @@ This must contain at least one value or exception is thrown.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3483,8 +3517,6 @@ This must contain at least one value or exception is thrown.</p>
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -3524,14 +3556,15 @@ This must contain at least one value or exception is thrown.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3571,8 +3604,6 @@ Str::containsPattern('foo', '/bar/'); // false
                     <div class="description comment"><p>Returns <strong>true</strong> if the pattern matches <strong>false</strong> otherwise.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -3626,14 +3657,15 @@ Str::containsPattern('foo', '/bar/'); // false
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3682,8 +3714,6 @@ Str::count('foo', ''); // Exception: Search string must be non-empty.
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -3714,14 +3744,15 @@ Str::count('foo', ''); // Exception: Search string must be non-empty.
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3755,8 +3786,6 @@ Works on all multibyte characters that can be decapitalized.</p>
                     <div class="description comment"><p>The string that was de-capitalized.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -3797,14 +3826,15 @@ Works on all multibyte characters that can be decapitalized.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3843,8 +3873,6 @@ Works on all multibyte characters that can be decapitalized.</p>
                     <div class="description comment"><p>Returns <strong>false</strong> if <code>$substring</code> is in <code>$string</code>, <strong>true</strong> otherwise.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -3885,14 +3913,15 @@ Works on all multibyte characters that can be decapitalized.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3934,8 +3963,6 @@ Str::doesNotEndWith('abc', ['a', 'b', 'c', 'd']); // false because 'abc' ends wi
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -3975,14 +4002,15 @@ Str::doesNotEndWith('abc', ['a', 'b', 'c', 'd']); // false because 'abc' ends wi
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -4024,8 +4052,6 @@ Str::doesNotStartWith('abc', 'a'); // false
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -4065,14 +4091,15 @@ Str::doesNotStartWith('abc', 'a'); // false
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -4115,8 +4142,6 @@ If the given amount is greater than the string length, an empty string is return
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -4156,14 +4181,15 @@ If the given amount is greater than the string length, an empty string is return
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -4204,8 +4230,6 @@ If the given amount is greater than the string length, an empty string is return
                     <div class="description comment"><p>The extracted part of the string.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -4262,14 +4286,15 @@ If the given amount is greater than the string length, an empty string is return
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -4310,8 +4335,6 @@ Str::endsWithAny('abc', ['a', 'b']); // false
                     <div class="description comment"><p>Returns <strong>true</strong> if <code>$string</code> ends with <code>$suffix</code>, <strong>false</strong> otherwise.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -4368,14 +4391,15 @@ Str::endsWithAny('abc', ['a', 'b']); // false
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -4417,8 +4441,6 @@ Str::endsWithNone('abc', 'x'); // true because 'abc' ends with 'c'
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -4458,14 +4480,15 @@ Str::endsWithNone('abc', 'x'); // true because 'abc' ends with 'c'
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -4505,8 +4528,6 @@ Str::firstIndexOf('abb', 'b', 3); // null
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -4563,14 +4584,15 @@ Str::firstIndexOf('abb', 'b', 3); // null
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -4606,8 +4628,6 @@ Will return <strong>true</strong> if at least one string in the list is equal to
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -4657,14 +4677,15 @@ Will return <strong>true</strong> if at least one string in the list is equal to
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -4711,8 +4732,6 @@ Str::insertAt('abc', 'xyz', -1); // 'abcxyz'
                     <div class="description comment"><p>String which contains <code>$insert</code> string at <code>$position</code>.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -4810,14 +4829,15 @@ Str::insertAt('abc', 'xyz', -1); // 'abcxyz'
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -4857,8 +4877,6 @@ Str::insertAt('abc', 'xyz', -1); // 'abcxyz'
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -4889,14 +4907,15 @@ Str::insertAt('abc', 'xyz', -1); // 'abcxyz'
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -4931,8 +4950,6 @@ Str::isBlank('0'); // false
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -4963,14 +4980,15 @@ Str::isBlank('0'); // false
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -5005,8 +5023,6 @@ Str::isNotBlank(''); // false
                     <div class="description comment"><p>Returns <strong>false</strong> if variable is empty string or null. <strong>true</strong> otherwise.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -5047,8 +5063,9 @@ Str::isNotBlank(''); // false
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -5080,7 +5097,7 @@ Str::isNotBlank(''); // false
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -5147,8 +5164,6 @@ Str::matchAll('abcabc', '/(?&lt;p1&gt;a)bc/'); // [['abc', 'abc'], 'p1' =&gt; ['
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -5188,14 +5203,15 @@ Str::matchAll('abcabc', '/(?&lt;p1&gt;a)bc/'); // [['abc', 'abc'], 'p1' =&gt; ['
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -5236,8 +5252,6 @@ Str::matchFirst('abcabc', '/z/'); // NoMatchException
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -5277,8 +5291,9 @@ Str::matchFirst('abcabc', '/z/'); // NoMatchException
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-named">
     <span class="no-link named-var">
@@ -5293,7 +5308,7 @@ Str::matchFirst('abcabc', '/z/'); // NoMatchException
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -5343,8 +5358,6 @@ Str::matchFirstOrNull('abcabc', '/z/'); // null
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -5384,14 +5397,15 @@ Str::matchFirstOrNull('abcabc', '/z/'); // null
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -5432,8 +5446,6 @@ Str::matchLast('abcabc', '/z/'); // NoMatchException
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -5473,8 +5485,9 @@ Str::matchLast('abcabc', '/z/'); // NoMatchException
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-named">
     <span class="no-link named-var">
@@ -5489,7 +5502,7 @@ Str::matchLast('abcabc', '/z/'); // NoMatchException
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -5538,8 +5551,6 @@ Str::matchLastOrNull('abcabc', '/z/'); // null
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -5593,14 +5604,15 @@ Str::matchLastOrNull('abcabc', '/z/'); // null
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -5647,8 +5659,6 @@ If the value is lower than the length, the current string will be returned as-is
                     <div class="description comment"><p>The padded string.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -5702,14 +5712,15 @@ If the value is lower than the length, the current string will be returned as-is
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -5758,8 +5769,6 @@ If the value is lower than the length, the current string will be returned as-is
                     <div class="description comment"><p>The padded string.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -5813,14 +5822,15 @@ If the value is lower than the length, the current string will be returned as-is
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -5870,8 +5880,6 @@ If the value is lower than the length, the current string will be returned as-is
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -5920,14 +5928,15 @@ If the value is lower than the length, the current string will be returned as-is
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -5970,8 +5979,6 @@ The starting index must be bigger or equal to the ending index.</p>
                     <div class="description comment"><p>The substring of given range.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -6048,14 +6055,15 @@ The starting index must be bigger or equal to the ending index.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -6112,8 +6120,6 @@ Any value previously set will be reset.</p>
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -6153,14 +6159,15 @@ Any value previously set will be reset.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -6199,8 +6206,6 @@ Any value previously set will be reset.</p>
                     <div class="description comment"><p>Returns string with <code>$substring</code> removed.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -6241,14 +6246,15 @@ Any value previously set will be reset.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -6287,8 +6293,6 @@ Any value previously set will be reset.</p>
                     <div class="description comment"><p>Returns string with <code>$substring</code> removed.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -6329,14 +6333,15 @@ Any value previously set will be reset.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -6376,8 +6381,6 @@ Str::repeat('abc', 2); // 'abcabc'
                     <div class="description comment"><p>The repeated string.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -6463,14 +6466,15 @@ Str::repeat('abc', 2); // 'abcabc'
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -6531,8 +6535,6 @@ Any value previously set will be reset.</p>
                     <div class="description comment"><p>String with the replaced values.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -6596,14 +6598,15 @@ Any value previously set will be reset.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -6654,8 +6657,6 @@ Any value previously set will be reset.</p>
                     <div class="description comment"><p>String with the replaced values.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -6719,14 +6720,15 @@ Any value previously set will be reset.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -6777,8 +6779,6 @@ Any value previously set will be reset.</p>
                     <div class="description comment"><p>String with the replaced values.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -6864,14 +6864,15 @@ Any value previously set will be reset.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -6932,8 +6933,6 @@ Any value previously set will be reset.</p>
                     <div class="description comment"><p>String with the replaced values.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -7061,14 +7060,15 @@ Any value previously set will be reset.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -7129,8 +7129,6 @@ Any value previously set will be reset.</p>
                     <div class="description comment"><p>String with the replaced values.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -7193,8 +7191,9 @@ Any value previously set will be reset.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       list
@@ -7210,7 +7209,7 @@ Any value previously set will be reset.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -7266,8 +7265,6 @@ Str::split('abcbd', 'b', 2); // ['a', 'cbd']
                     <div class="description comment"><p>Returns an array of strings created by splitting.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -7330,8 +7327,9 @@ Str::split('abcbd', 'b', 2); // ['a', 'cbd']
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       list
@@ -7347,7 +7345,7 @@ Str::split('abcbd', 'b', 2); // ['a', 'cbd']
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -7391,8 +7389,6 @@ Str::split('abcbd', 'b', 2); // ['a', 'cbd']
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -7449,14 +7445,15 @@ Str::split('abcbd', 'b', 2); // ['a', 'cbd']
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -7497,8 +7494,6 @@ Str::startsWithAny('abc', ['b', 'c']); // false
                     <div class="description comment"><p>Returns <strong>true</strong> if <code>$string</code> starts with <code>$prefix</code>, <strong>false</strong> otherwise.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -7555,14 +7550,15 @@ Str::startsWithAny('abc', ['b', 'c']); // false
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -7604,8 +7600,6 @@ Str::startsWithNone('abc', ['x', 'y', 'z']); // true
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -7645,14 +7639,15 @@ Str::startsWithNone('abc', ['x', 'y', 'z']); // true
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -7694,8 +7689,6 @@ Str::substringAfter('abc', '_'); // 'abc'
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -7735,14 +7728,15 @@ Str::substringAfter('abc', '_'); // 'abc'
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -7785,8 +7779,6 @@ If no match is found, the entire <code>$string</code> is returned.</p>
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -7826,14 +7818,15 @@ If no match is found, the entire <code>$string</code> is returned.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -7875,8 +7868,6 @@ Str::substringBefore('abc', '_'); // 'abc'
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -7916,14 +7907,15 @@ Str::substringBefore('abc', '_'); // 'abc'
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -7964,8 +7956,6 @@ Str::substringBeforeLast('abc', '_'); // 'abc'
                     <div class="description comment"><p>The extracted part of the string.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -8015,14 +8005,15 @@ Str::substringBeforeLast('abc', '_'); // 'abc'
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8068,8 +8059,6 @@ Str::surround('bar', '[', ']'); // [bar]
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -8109,14 +8098,15 @@ Str::surround('bar', '[', ']'); // [bar]
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8158,8 +8148,6 @@ If the given amount is greater than the string length, the given string is retur
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -8199,14 +8187,15 @@ If the given amount is greater than the string length, the given string is retur
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8248,8 +8237,6 @@ If the given amount is greater than the string length, the given string is retur
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -8280,8 +8267,9 @@ If the given amount is greater than the string length, the given string is retur
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-named">
     <span class="no-link named-var">
@@ -8296,7 +8284,7 @@ If the given amount is greater than the string length, the given string is retur
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8345,8 +8333,6 @@ Str::toBoolOrNull('👨‍👨‍👧‍👦'); // null
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -8377,14 +8363,15 @@ Str::toBoolOrNull('👨‍👨‍👧‍👦'); // null
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8426,8 +8413,6 @@ Str::toBool('👨‍👨‍👧‍👦'); // ParseException: &quot;👨‍👨�
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -8458,14 +8443,15 @@ Str::toBool('👨‍👨‍👧‍👦'); // ParseException: &quot;👨‍👨�
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8501,8 +8487,6 @@ Str::toCamelCase('camel_case'); // 'camelCase'
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -8533,14 +8517,15 @@ Str::toCamelCase('camel_case'); // 'camelCase'
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       float
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8578,8 +8563,6 @@ Str::toFloat(''); // ParseException: &quot;&quot; is not a valid float string.
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -8625,8 +8608,9 @@ Str::toFloat(''); // ParseException: &quot;&quot; is not a valid float string.
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-named">
     <span class="no-link named-var">
@@ -8641,7 +8625,7 @@ Str::toFloat(''); // ParseException: &quot;&quot; is not a valid float string.
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8697,8 +8681,6 @@ For internal use. Defaults to <strong>false</strong>.</p>
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -8729,8 +8711,9 @@ For internal use. Defaults to <strong>false</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-named">
     <span class="no-link named-var">
@@ -8745,7 +8728,7 @@ For internal use. Defaults to <strong>false</strong>.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8779,8 +8762,6 @@ For internal use. Defaults to <strong>false</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -8811,14 +8792,15 @@ For internal use. Defaults to <strong>false</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8856,8 +8838,6 @@ Str::toInt('1.0'); // RuntimeException: &quot;1.0&quot; is not a valid integer s
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -8888,8 +8868,9 @@ Str::toInt('1.0'); // RuntimeException: &quot;1.0&quot; is not a valid integer s
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-named">
     <span class="no-link named-var">
@@ -8904,7 +8885,7 @@ Str::toInt('1.0'); // RuntimeException: &quot;1.0&quot; is not a valid integer s
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8952,8 +8933,6 @@ Str::toIntOrNull(str_repeat('1', 20)); // null
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -8984,14 +8963,15 @@ Str::toIntOrNull(str_repeat('1', 20)); // null
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -9028,8 +9008,6 @@ Str::toKebabCase('HTTPClient'); // 'http-client'
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -9060,14 +9038,15 @@ Str::toKebabCase('HTTPClient'); // 'http-client'
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -9104,8 +9083,6 @@ Str::toPascalCase('FooBar'); // 'FooBar'
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -9136,14 +9113,15 @@ Str::toPascalCase('FooBar'); // 'FooBar'
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -9179,8 +9157,6 @@ Str::toSnakeCase('HTTPClient'); // 'http_client'
                     <div class="description comment"><p>Snake-cased string.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -9221,14 +9197,15 @@ Str::toSnakeCase('HTTPClient'); // 'http_client'
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -9269,8 +9246,6 @@ Str::withPrefix('_foo', '_'); // &quot;_foo&quot;
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -9310,14 +9285,15 @@ Str::withPrefix('_foo', '_'); // &quot;_foo&quot;
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -9357,8 +9333,6 @@ Str::withSuffix('foo_', '_'); // &quot;foo_&quot;
                     <div class="description comment"><p>String with the given suffix.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>

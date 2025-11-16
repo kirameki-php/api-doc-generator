@@ -3,32 +3,31 @@
 namespace Kirameki\ApiDocGenerator\Support;
 
 use Kirameki\Core\Exceptions\UnreachableException;
-use League\CommonMark\MarkdownConverter;
+use PHPStan\PhpDocParser\Ast\PhpDoc\DeprecatedTagValueNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\ExtendsTagValueNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\ImplementsTagValueNode;
+use PHPStan\PhpDocParser\Ast\PhpDoc\ParamOutTagValueNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\ParamTagValueNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocTagNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocTextNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\ReturnTagValueNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\TemplateTagValueNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\ThrowsTagValueNode;
+use PHPStan\PhpDocParser\Ast\PhpDoc\UsesTagValueNode;
 use PHPStan\PhpDocParser\Ast\PhpDoc\VarTagValueNode;
 use PHPStan\PhpDocParser\Lexer\Lexer;
 use PHPStan\PhpDocParser\Parser\PhpDocParser;
 use PHPStan\PhpDocParser\Parser\TokenIterator;
-use function str_replace;
 
 class CommentParser
 {
     /**
      * @param Lexer $lexer
      * @param PhpDocParser $parser
-     * @param ClassFile $file
      */
     public function __construct(
         protected Lexer $lexer,
         protected PhpDocParser $parser,
-        protected ClassFile $file,
     ) {
     }
 
@@ -51,12 +50,16 @@ class CommentParser
         $return = null;
         $var = null;
         $params = [];
+        $paramOuts = [];
         $throws = [];
+        $use = null;
+        $deprecated = null;
         $texts = [];
 
         foreach ($nodes as $node) {
             if ($node instanceof PhpDocTagNode) {
                 $val = $node->value;
+
                 match (true) {
                     $val instanceof TemplateTagValueNode => $templates[] = $val,
                     $val instanceof ImplementsTagValueNode => $implements[] = $val,
@@ -64,7 +67,10 @@ class CommentParser
                     $val instanceof ReturnTagValueNode => $return = $val,
                     $val instanceof VarTagValueNode => $var = $val,
                     $val instanceof ParamTagValueNode => $params[$val->parameterName] = $val,
-                    $var instanceof ThrowsTagValueNode => $throws[] = $val,
+                    $val instanceof ThrowsTagValueNode => $throws[] = $val,
+                    $val instanceof UsesTagValueNode => $use = $val,
+                    $val instanceof ParamOutTagValueNode => $paramOuts[$val->parameterName] = $val,
+                    $val instanceof DeprecatedTagValueNode => $deprecated = $val,
                     default => null,
                 };
             } elseif ($node instanceof PhpDocTextNode) {
@@ -80,8 +86,11 @@ class CommentParser
             $var,
             $return,
             $params,
+            $paramOuts,
             $throws,
+            $use,
             $texts,
+            $deprecated,
         );
     }
 }

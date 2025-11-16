@@ -157,6 +157,11 @@
 </ul>
     </li>
     <li>
+      <a href="classes/kirameki/collections/enumerable.html" title="Kirameki\Collections\Enumerable">
+        Enumerable
+      </a>
+    </li>
+    <li>
       <a href="classes/kirameki/collections/enumerator.html" title="Kirameki\Collections\Enumerator">
         Enumerator
       </a>
@@ -174,6 +179,11 @@
     <li>
       <a href="classes/kirameki/collections/map-mutable.html" title="Kirameki\Collections\MapMutable">
         MapMutable
+      </a>
+    </li>
+    <li>
+      <a href="classes/kirameki/collections/mutates-self.html" title="Kirameki\Collections\MutatesSelf">
+        MutatesSelf
       </a>
     </li>
     <li>
@@ -288,11 +298,26 @@
         UnreachableException
       </a>
     </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/with-context.html" title="Kirameki\Core\Exceptions\WithContext">
+        WithContext
+      </a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/exceptions/with-json-serialize.html" title="Kirameki\Core\Exceptions\WithJsonSerialize">
+        WithJsonSerialize
+      </a>
+    </li>
 </ul>
     </li>
     <li>
       <a href="classes/kirameki/core/comparable.html" title="Kirameki\Core\Comparable">
         Comparable
+      </a>
+    </li>
+    <li>
+      <a href="classes/kirameki/core/comparison.html" title="Kirameki\Core\Comparison">
+        Comparison
       </a>
     </li>
     <li>
@@ -655,6 +680,31 @@
 </ul>
     </li>
     <li>
+      <a href="classes/kirameki/stream/can-lock.html" title="Kirameki\Stream\CanLock">
+        CanLock
+      </a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/can-read.html" title="Kirameki\Stream\CanRead">
+        CanRead
+      </a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/can-scan.html" title="Kirameki\Stream\CanScan">
+        CanScan
+      </a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/can-seek.html" title="Kirameki\Stream\CanSeek">
+        CanSeek
+      </a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/can-write.html" title="Kirameki\Stream\CanWrite">
+        CanWrite
+      </a>
+    </li>
+    <li>
       <a href="classes/kirameki/stream/file-reader.html" title="Kirameki\Stream\FileReader">
         FileReader
       </a>
@@ -722,6 +772,11 @@
     <li>
       <a href="classes/kirameki/stream/temp-stream.html" title="Kirameki\Stream\TempStream">
         TempStream
+      </a>
+    </li>
+    <li>
+      <a href="classes/kirameki/stream/throws-error.html" title="Kirameki\Stream\ThrowsError">
+        ThrowsError
       </a>
     </li>
     <li>
@@ -827,6 +882,11 @@
 </ul>
     </li>
     <li>
+      <a href="classes/kirameki/time/helpers.html" title="Kirameki\Time\Helpers">
+        Helpers
+      </a>
+    </li>
+    <li>
       <a href="classes/kirameki/time/instant.html" title="Kirameki\Time\Instant">
         Instant
       </a>
@@ -889,10 +949,10 @@
                   private
                 </span>
   <span class="type type-union">
-  <span class="type type-structure">
-      <a href="https://www.php.net/manual/class.random-randomizer.php" class="external-link" target="_blank">
-        Random\Randomizer
-      </a>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      Randomizer
+    </span>
   </span>
     <span class="delimiter">|</span>
   <span class="type type-named">
@@ -930,14 +990,7 @@
                   (
                 </div>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      mixed
-    </span>
-  </span>
-                  </span>
+                  )
                 </div>
               </section>
               <section class="details">
@@ -948,15 +1001,8 @@
                 <div class="return">
                   <h4>Returns:</h4>
                   <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      mixed
-    </span>
-  </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -1014,8 +1060,9 @@
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       list
@@ -1031,7 +1078,7 @@
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1091,8 +1138,6 @@ Arr::append([1, 2], 3, 4); // [1, 2, 3, 4]
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1148,14 +1193,15 @@ Arr::append([1, 2], 3, 4); // [1, 2, 3, 4]
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1216,8 +1262,6 @@ Arr::at([6], 1); // IndexOutOfBoundsException
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -1283,8 +1327,9 @@ Arr::at([6], 1); // IndexOutOfBoundsException
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -1299,7 +1344,7 @@ Arr::at([6], 1); // IndexOutOfBoundsException
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1378,8 +1423,6 @@ Arr::atOr(['a' =&gt; 1, 'b' =&gt; 2], 0); // 1
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1435,8 +1478,9 @@ Arr::atOr(['a' =&gt; 1, 'b' =&gt; 2], 0); // 1
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -1451,7 +1495,7 @@ Arr::atOr(['a' =&gt; 1, 'b' =&gt; 2], 0); // 1
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1521,8 +1565,6 @@ Arr::atOrNull([6], 1); // null
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1569,14 +1611,15 @@ Arr::atOrNull([6], 1); // null
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       float
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1650,8 +1693,6 @@ Arr::average([0.1, 0.1]); // 0.1
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1698,8 +1739,9 @@ Arr::average([0.1, 0.1]); // 0.1
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-named">
     <span class="no-link named-var">
@@ -1714,7 +1756,7 @@ Arr::average([0.1, 0.1]); // 0.1
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -1797,8 +1839,6 @@ Arr::averageOrNull([0.1, 0.1]); // 0.1
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1876,8 +1916,9 @@ Arr::averageOrNull([0.1, 0.1]); // 0.1
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       list
@@ -1909,7 +1950,7 @@ Arr::averageOrNull([0.1, 0.1]); // 0.1
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2001,8 +2042,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -2050,14 +2089,15 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2089,8 +2129,6 @@ $array = ['a' =&gt; 1, 'b' =&gt; 2]; Arr::clear($array); // []
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -2138,14 +2176,15 @@ $array = ['a' =&gt; 1, 'b' =&gt; 2]; Arr::clear($array); // []
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2199,8 +2238,6 @@ Arr::coalesce([null, null]); // InvalidArgumentException
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -2247,8 +2284,9 @@ Arr::coalesce([null, null]); // InvalidArgumentException
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -2263,7 +2301,7 @@ Arr::coalesce([null, null]); // InvalidArgumentException
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2327,8 +2365,6 @@ Arr::coalesceOrNull([]); // null
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -2384,14 +2420,15 @@ Arr::coalesceOrNull([]); // null
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2451,8 +2488,6 @@ Arr::contains(['a' =&gt; 1], 'a'); // false
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -2525,14 +2560,15 @@ Arr::contains(['a' =&gt; 1], 'a'); // false
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2592,8 +2628,6 @@ Arr::containsAll([1], []); // true
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -2666,14 +2700,15 @@ Arr::containsAll([1], []); // true
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2733,8 +2768,6 @@ Arr::containsAllKeys([1], []); // true
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -2807,14 +2840,15 @@ Arr::containsAllKeys([1], []); // true
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -2873,8 +2907,6 @@ Arr::containsAny([1, 2, 3], []) // false
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -2947,14 +2979,15 @@ Arr::containsAny([1, 2, 3], []) // false
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3015,8 +3048,6 @@ Arr::containsAnyKeys(['a' =&gt; 1], []); // false
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -3072,14 +3103,15 @@ Arr::containsAnyKeys(['a' =&gt; 1], []); // false
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3136,8 +3168,6 @@ Arr::containsKey(['a' =&gt; 1], 1); // false
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -3210,14 +3240,15 @@ Arr::containsKey(['a' =&gt; 1], 1); // false
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3276,8 +3307,6 @@ Arr::containsNone([1, 2], [2]); // false
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -3350,14 +3379,15 @@ Arr::containsNone([1, 2], [2]); // false
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3416,8 +3446,6 @@ Arr::containsSlice([1, 2, 3, 4], [2, 4]); // false
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -3512,8 +3540,9 @@ Arr::containsSlice([1, 2, 3, 4], [2, 4]); // false
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       int
@@ -3535,7 +3564,7 @@ Arr::containsSlice([1, 2, 3, 4], [2, 4]); // false
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3611,8 +3640,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -3770,8 +3797,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -3793,7 +3821,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -3882,8 +3910,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -4025,8 +4051,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -4048,7 +4075,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -4137,8 +4164,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -4194,14 +4219,15 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -4262,8 +4288,6 @@ Arr::doesNotContain(['a' =&gt; 1], 'a'); // true
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -4319,14 +4343,15 @@ Arr::doesNotContain(['a' =&gt; 1], 'a'); // true
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -4383,8 +4408,6 @@ Arr::notContainsKey(['a' =&gt; 1], 1); // true
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -4454,8 +4477,9 @@ Arr::notContainsKey(['a' =&gt; 1], 1); // true
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -4477,7 +4501,7 @@ Arr::notContainsKey(['a' =&gt; 1], 1); // true
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -4552,8 +4576,6 @@ Arr::notContainsKey(['a' =&gt; 1], 1); // true
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -4632,8 +4654,9 @@ Arr::notContainsKey(['a' =&gt; 1], 1); // true
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -4655,7 +4678,7 @@ Arr::notContainsKey(['a' =&gt; 1], 1); // true
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -4738,8 +4761,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -4843,8 +4864,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -4866,7 +4888,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -4949,8 +4971,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -5058,8 +5078,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -5081,7 +5102,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -5176,8 +5197,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -5233,8 +5252,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -5256,7 +5276,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -5331,8 +5351,6 @@ Arr::dropLast(['a' =&gt; 1, 'b' =&gt; 2], 1); // ['a' =&gt; 1]
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -5436,8 +5454,9 @@ Arr::dropLast(['a' =&gt; 1, 'b' =&gt; 2], 1); // ['a' =&gt; 1]
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -5459,7 +5478,7 @@ Arr::dropLast(['a' =&gt; 1, 'b' =&gt; 2], 1); // ['a' =&gt; 1]
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -5541,8 +5560,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -5646,8 +5663,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -5669,7 +5687,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -5752,8 +5770,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -5822,8 +5838,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -5845,7 +5862,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -5922,8 +5939,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"><p>An array containing duplicate values.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -6005,14 +6020,15 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -6075,8 +6091,6 @@ Arr::each(['a' =&gt; 1, 'b' =&gt; 2], function($v, $k) =&gt; {
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -6149,14 +6163,15 @@ Arr::each(['a' =&gt; 1, 'b' =&gt; 2], function($v, $k) =&gt; {
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -6216,8 +6231,6 @@ Arr::endsWith([1, 2, 3], [1, 2, 3, 4]); // false
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -6273,14 +6286,15 @@ Arr::endsWith([1, 2, 3], [1, 2, 3, 4]); // false
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -6335,8 +6349,6 @@ Throws <code>CountMismatchException</code> if count is not equal to <code>$size<
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -6393,14 +6405,15 @@ Throws <code>CountMismatchException</code> if count is not equal to <code>$size<
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -6457,8 +6470,6 @@ Empty <code>$iterable</code> are considered valid.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -6531,14 +6542,15 @@ Empty <code>$iterable</code> are considered valid.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -6594,8 +6606,6 @@ Throws <code>MissingKeyException</code> if <code>$iterable</code> contains fewer
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -6699,8 +6709,9 @@ Throws <code>MissingKeyException</code> if <code>$iterable</code> contains fewer
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -6722,7 +6733,7 @@ Throws <code>MissingKeyException</code> if <code>$iterable</code> contains fewer
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -6807,8 +6818,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -6903,14 +6912,15 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -6973,8 +6983,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -7065,14 +7073,15 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -7133,8 +7142,6 @@ Arr::firstIndex([1], fn($v, $k) =&gt; false); // NoMatchFoundException
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -7225,8 +7232,9 @@ Arr::firstIndex([1], fn($v, $k) =&gt; false); // NoMatchFoundException
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-named">
     <span class="no-link named-var">
@@ -7241,7 +7249,7 @@ Arr::firstIndex([1], fn($v, $k) =&gt; false); // NoMatchFoundException
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -7311,8 +7319,6 @@ Arr::firstIndexOrNull([1], fn($v, $k) =&gt; false); // null
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -7407,14 +7413,15 @@ Arr::firstIndexOrNull([1], fn($v, $k) =&gt; false); // null
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TKey
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -7476,8 +7483,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -7572,8 +7577,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -7588,7 +7594,7 @@ Defaults to <strong>null</strong>.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -7658,8 +7664,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -7763,8 +7767,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -7779,7 +7784,7 @@ Defaults to <strong>null</strong>.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -7858,8 +7863,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -7954,8 +7957,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -7970,7 +7974,7 @@ Defaults to <strong>null</strong>.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8042,8 +8046,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -8141,8 +8143,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       list
@@ -8158,7 +8161,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8230,8 +8233,6 @@ Arr::flatMap([['a' =&gt; 1], [2]], fn($a) =&gt; $a); // [1, 2]
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -8291,8 +8292,9 @@ Arr::flatMap([['a' =&gt; 1], [2]], fn($a) =&gt; $a); // [1, 2]
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       list
@@ -8308,7 +8310,7 @@ Arr::flatMap([['a' =&gt; 1], [2]], fn($a) =&gt; $a); // [1, 2]
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8372,8 +8374,6 @@ Depth must be &gt;= 1. Default: 1.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -8433,8 +8433,9 @@ Depth must be &gt;= 1. Default: 1.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -8456,7 +8457,7 @@ Depth must be &gt;= 1. Default: 1.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8543,8 +8544,6 @@ If set to <strong>false</strong> and a duplicate key is found, a DuplicateKeyExc
                     <div class="description comment"><p>The flipped array.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -8643,14 +8642,15 @@ If set to <strong>false</strong> and a duplicate key is found, a DuplicateKeyExc
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       U
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8720,8 +8720,6 @@ The returned value would be used as $result for the subsequent call.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -8768,8 +8766,9 @@ The returned value would be used as $result for the subsequent call.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -8791,7 +8790,7 @@ The returned value would be used as $result for the subsequent call.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8863,8 +8862,6 @@ Arr::from((function () {
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -8920,14 +8917,15 @@ Arr::from((function () {
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -8987,8 +8985,6 @@ Arr::get(['a' =&gt; 1], key: 'c'); // InvalidKeyException: Undefined array key &
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -9054,8 +9050,9 @@ Arr::get(['a' =&gt; 1], key: 'c'); // InvalidKeyException: Undefined array key &
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -9070,7 +9067,7 @@ Arr::get(['a' =&gt; 1], key: 'c'); // InvalidKeyException: Undefined array key &
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -9148,8 +9145,6 @@ Arr::getOr([1, 2], key: 0, default: 9); // 1
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -9205,8 +9200,9 @@ Arr::getOr([1, 2], key: 0, default: 9); // 1
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -9221,7 +9217,7 @@ Arr::getOr([1, 2], key: 0, default: 9); // 1
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -9290,8 +9286,6 @@ Arr::getOrNull(['a' =&gt; 1], 'b'); // null
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -9395,8 +9389,9 @@ Arr::getOrNull(['a' =&gt; 1], 'b'); // null
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -9443,7 +9438,7 @@ Arr::getOrNull(['a' =&gt; 1], 'b'); // null
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -9562,8 +9557,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -9680,14 +9673,15 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -9772,8 +9766,6 @@ Defaults to <strong>false</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -9868,8 +9860,9 @@ Defaults to <strong>false</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -9891,7 +9884,7 @@ Defaults to <strong>false</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -9974,8 +9967,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -10047,8 +10038,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -10070,7 +10062,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -10145,8 +10137,6 @@ Arr::intersectKeys([1, 2, 3], [1, 3]); // [1, 2]
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -10193,14 +10183,15 @@ Arr::intersectKeys([1, 2, 3], [1, 3]); // [1, 2]
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -10233,8 +10224,6 @@ Arr::isEmpty([]); // true
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -10282,14 +10271,15 @@ Arr::isEmpty([]); // true
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -10323,8 +10313,6 @@ Arr::isList([]); // true
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -10372,14 +10360,15 @@ Arr::isList([]); // true
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -10433,8 +10422,6 @@ Arr::isMap([]); // true
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -10481,14 +10468,15 @@ Arr::isMap([]); // true
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -10521,8 +10509,6 @@ Arr::isNotEmpty([]); // false
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -10623,14 +10609,15 @@ Arr::isNotEmpty([]); // false
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -10683,8 +10670,6 @@ Arr::join([1, 2], ', ', '[', ']'); // &quot;[1, 2]&quot;
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -10741,8 +10726,9 @@ Arr::join([1, 2], ', ', '[', ']'); // &quot;[1, 2]&quot;
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-named">
     <span class="no-link named-var">
@@ -10757,7 +10743,7 @@ Arr::join([1, 2], ', ', '[', ']'); // &quot;[1, 2]&quot;
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -10825,8 +10811,6 @@ Arr::keyAt(['a' =&gt; 1, 'b' =&gt; 2], -2); // &quot;a&quot;
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -10882,8 +10866,9 @@ Arr::keyAt(['a' =&gt; 1, 'b' =&gt; 2], -2); // &quot;a&quot;
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-named">
     <span class="no-link named-var">
@@ -10904,7 +10889,7 @@ Arr::keyAt(['a' =&gt; 1, 'b' =&gt; 2], -2); // &quot;a&quot;
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -10977,8 +10962,6 @@ Arr::keyAtOrNull(['a' =&gt; 1, 'b' =&gt; 2], -2); // &quot;a&quot;
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -11073,8 +11056,9 @@ Arr::keyAtOrNull(['a' =&gt; 1, 'b' =&gt; 2], -2); // &quot;a&quot;
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -11096,7 +11080,7 @@ Arr::keyAtOrNull(['a' =&gt; 1, 'b' =&gt; 2], -2); // &quot;a&quot;
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -11192,8 +11176,6 @@ If <strong>false</strong>, exception will be thrown on duplicate keys.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -11240,8 +11222,9 @@ If <strong>false</strong>, exception will be thrown on duplicate keys.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       list
@@ -11257,7 +11240,7 @@ If <strong>false</strong>, exception will be thrown on duplicate keys.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -11316,8 +11299,6 @@ Arr::keys(['a' =&gt; 1, 'b' =&gt; 2]); // ['a', 'b']
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -11412,14 +11393,15 @@ Arr::keys(['a' =&gt; 1, 'b' =&gt; 2]); // ['a', 'b']
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -11482,8 +11464,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -11578,14 +11558,15 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -11647,8 +11628,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -11743,8 +11722,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-named">
     <span class="no-link named-var">
@@ -11759,7 +11739,7 @@ Defaults to <strong>null</strong>.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -11829,8 +11809,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -11925,14 +11903,15 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TKey
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -11994,8 +11973,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -12090,8 +12067,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -12106,7 +12084,7 @@ Defaults to <strong>null</strong>.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -12176,8 +12154,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -12281,8 +12257,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -12297,7 +12274,7 @@ Defaults to <strong>null</strong>.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -12377,8 +12354,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -12473,8 +12448,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -12489,7 +12465,7 @@ Defaults to <strong>null</strong>.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -12561,8 +12537,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -12644,11 +12618,14 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-conditional">
     (
-    $iterable is   <span class="type type-named">
+    <var>$iterable</var>
+    &nbsp;is&nbsp;
+  <span class="type type-named">
     <span class="no-link named-var">
       list
     </span>
@@ -12663,8 +12640,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-
-    ?
+    &nbsp;?&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       list
@@ -12680,7 +12656,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-    :
+    &nbsp;:&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -12704,7 +12680,7 @@ Defaults to <strong>null</strong>.</p>
   </span>
     )
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -12763,7 +12739,9 @@ Arr::map(['a', 'b', 'c'], fn($i, $k) =&gt; $k) // [0, 1, 2]
                   <div class="return-type">
   <span class="type type-conditional">
     (
-    $iterable is   <span class="type type-named">
+    <var>$iterable</var>
+    &nbsp;is&nbsp;
+  <span class="type type-named">
     <span class="no-link named-var">
       list
     </span>
@@ -12778,8 +12756,7 @@ Arr::map(['a', 'b', 'c'], fn($i, $k) =&gt; $k) // [0, 1, 2]
     <span class="brace">&gt;</span>
   </span>
   </span>
-
-    ?
+    &nbsp;?&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       list
@@ -12795,7 +12772,7 @@ Arr::map(['a', 'b', 'c'], fn($i, $k) =&gt; $k) // [0, 1, 2]
     <span class="brace">&gt;</span>
   </span>
   </span>
-    :
+    &nbsp;:&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -12821,8 +12798,6 @@ Arr::map(['a', 'b', 'c'], fn($i, $k) =&gt; $k) // [0, 1, 2]
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -12933,8 +12908,9 @@ Arr::map(['a', 'b', 'c'], fn($i, $k) =&gt; $k) // [0, 1, 2]
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -12956,7 +12932,7 @@ Arr::map(['a', 'b', 'c'], fn($i, $k) =&gt; $k) // [0, 1, 2]
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -13050,8 +13026,6 @@ If <strong>false</strong>, exception will be thrown on duplicate keys.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -13155,14 +13129,15 @@ If <strong>false</strong>, exception will be thrown on duplicate keys.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -13228,8 +13203,6 @@ Must be int or float.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -13333,8 +13306,9 @@ Must be int or float.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -13349,7 +13323,7 @@ Must be int or float.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -13425,8 +13399,6 @@ Must be int or float.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -13474,27 +13446,13 @@ Must be int or float.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-conditional">
     (
-    $iterables is   <span class="type type-named">
-    <span class="no-link named-var">
-      list
-    </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-
-    ?
+    <var>$iterables</var>
+    &nbsp;is&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       list
@@ -13510,7 +13468,23 @@ Must be int or float.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-    :
+    &nbsp;?&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      list
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+    &nbsp;:&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -13534,7 +13508,7 @@ Must be int or float.</p>
   </span>
     )
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -13592,23 +13566,8 @@ Arr::merge(['a' =&gt; 1], ['a' =&gt; 2]); // ['a' =&gt; 2]
                   <div class="return-type">
   <span class="type type-conditional">
     (
-    $iterables is   <span class="type type-named">
-    <span class="no-link named-var">
-      list
-    </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-
-    ?
+    <var>$iterables</var>
+    &nbsp;is&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       list
@@ -13624,7 +13583,23 @@ Arr::merge(['a' =&gt; 1], ['a' =&gt; 2]); // ['a' =&gt; 2]
     <span class="brace">&gt;</span>
   </span>
   </span>
-    :
+    &nbsp;?&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      list
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+    &nbsp;:&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -13650,8 +13625,6 @@ Arr::merge(['a' =&gt; 1], ['a' =&gt; 2]); // ['a' =&gt; 2]
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -13753,8 +13726,9 @@ Arr::merge(['a' =&gt; 1], ['a' =&gt; 2]); // ['a' =&gt; 2]
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -13776,7 +13750,7 @@ Arr::merge(['a' =&gt; 1], ['a' =&gt; 2]); // ['a' =&gt; 2]
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -13853,8 +13827,6 @@ Will merge recursively up to the given depth.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -13958,14 +13930,15 @@ Will merge recursively up to the given depth.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -14032,8 +14005,6 @@ Must be int or float.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -14137,8 +14108,9 @@ Must be int or float.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -14153,7 +14125,7 @@ Must be int or float.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -14229,8 +14201,6 @@ Must be int or float.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -14334,14 +14304,15 @@ Must be int or float.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array&#123;min: TValue, max: TValue}
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -14405,8 +14376,6 @@ Returned value will be used to determine the highest number.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -14510,14 +14479,15 @@ Returned value will be used to determine the highest number.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array&#123;min: TValue, max: TValue}
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -14581,8 +14551,6 @@ Returned value will be used to determine the smallest and highest number.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -14614,8 +14582,9 @@ Returned value will be used to determine the smallest and highest number.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -14637,7 +14606,7 @@ Returned value will be used to determine the smallest and highest number.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -14677,8 +14646,6 @@ Returned value will be used to determine the smallest and highest number.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -14744,8 +14711,9 @@ Returned value will be used to determine the smallest and highest number.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       list
@@ -14761,7 +14729,7 @@ Returned value will be used to determine the smallest and highest number.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -14829,8 +14797,6 @@ Arr::padLeft(['a' =&gt; 1], 2, 2); // TypeMismatchException
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -14895,8 +14861,9 @@ Arr::padLeft(['a' =&gt; 1], 2, 2); // TypeMismatchException
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       list
@@ -14912,7 +14879,7 @@ Arr::padLeft(['a' =&gt; 1], 2, 2); // TypeMismatchException
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -14979,8 +14946,6 @@ Arr::padRight(['a' =&gt; 1], 2, 2); // TypeMismatchException
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -15084,14 +15049,15 @@ Arr::padRight(['a' =&gt; 1], 2, 2); // TypeMismatchException
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array&#123;array&lt;TKey, TValue&gt;, array&lt;TKey, TValue&gt;}
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -15161,8 +15127,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -15210,14 +15174,15 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -15270,8 +15235,6 @@ Arr::pop($array); // EmptyNotAllowedException
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -15329,8 +15292,9 @@ Arr::pop($array); // EmptyNotAllowedException
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -15352,7 +15316,7 @@ Arr::pop($array); // EmptyNotAllowedException
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -15428,8 +15392,6 @@ Arr::popMany($array, 1); // null
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -15477,8 +15439,9 @@ Arr::popMany($array, 1); // null
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -15493,7 +15456,7 @@ Arr::popMany($array, 1); // null
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -15556,8 +15519,6 @@ Arr::popOrNull($array); // null
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -15614,8 +15575,9 @@ Arr::popOrNull($array); // null
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       list
@@ -15631,7 +15593,7 @@ Arr::popOrNull($array); // null
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -15690,8 +15652,6 @@ Arr::prepend([1, 2], 3, 4); // $array will be [1, 2, 3, 4]
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -15817,8 +15777,9 @@ Arr::prepend([1, 2], 3, 4); // $array will be [1, 2, 3, 4]
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -15840,7 +15801,7 @@ Arr::prepend([1, 2], 3, 4); // $array will be [1, 2, 3, 4]
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -15928,8 +15889,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -15976,14 +15935,15 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -16056,8 +16016,6 @@ Arr::product([]) // 1
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -16137,14 +16095,15 @@ Arr::product([]) // 1
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -16212,8 +16171,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -16302,8 +16259,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -16318,7 +16276,7 @@ Defaults to <strong>null</strong>.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -16405,8 +16363,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -16485,8 +16441,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -16501,7 +16458,7 @@ Defaults to <strong>null</strong>.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -16578,8 +16535,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -16702,8 +16657,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -16725,7 +16681,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -16815,8 +16771,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -16868,14 +16822,15 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -16923,8 +16878,6 @@ $array = ['a' =&gt; 1]; Arr::push($array, 1); // TypeMismatchException
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -17006,14 +16959,15 @@ $array = ['a' =&gt; 1]; Arr::push($array, 1); // TypeMismatchException
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       float
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -17073,8 +17027,6 @@ Arr::ratio([], fn($r, $v) =&gt; true); // null
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -17156,8 +17108,9 @@ Arr::ratio([], fn($r, $v) =&gt; true); // null
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-named">
     <span class="no-link named-var">
@@ -17172,7 +17125,7 @@ Arr::ratio([], fn($r, $v) =&gt; true); // null
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -17241,8 +17194,6 @@ Arr::ratioOrNull([], fn($r, $v) =&gt; true); // null
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -17332,14 +17283,15 @@ Arr::ratioOrNull([], fn($r, $v) =&gt; true); // null
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -17400,8 +17352,6 @@ Third argument contains the current key.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -17500,8 +17450,9 @@ Third argument contains the current key.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -17516,7 +17467,7 @@ Third argument contains the current key.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -17596,8 +17547,6 @@ Third argument contains the current key.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -17687,8 +17636,9 @@ Third argument contains the current key.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -17703,7 +17653,7 @@ Third argument contains the current key.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -17775,8 +17725,6 @@ Third argument contains the current key.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -17824,14 +17772,15 @@ Third argument contains the current key.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -17882,8 +17831,6 @@ Arr::reindex($array); // $array will be [1]
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -17985,8 +17932,9 @@ Arr::reindex($array); // $array will be [1]
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       list
@@ -18002,7 +17950,7 @@ Arr::reindex($array); // $array will be [1]
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -18086,8 +18034,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -18159,8 +18105,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       list
@@ -18176,7 +18123,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -18244,8 +18191,6 @@ Note: All keys will be discarded.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -18347,8 +18292,9 @@ Note: All keys will be discarded.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -18370,7 +18316,7 @@ Note: All keys will be discarded.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -18466,8 +18412,6 @@ Any value previously set will be reset.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -18536,8 +18480,9 @@ Any value previously set will be reset.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -18559,7 +18504,7 @@ Any value previously set will be reset.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -18635,8 +18580,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -18715,8 +18658,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -18738,7 +18682,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -18824,8 +18768,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -18872,10 +18814,10 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                     <li class="parameter">
   <span class="type type-union">
-  <span class="type type-structure">
-      <a href="https://www.php.net/manual/class.random-randomizer.php" class="external-link" target="_blank">
-        Random\Randomizer
-      </a>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      Randomizer
+    </span>
   </span>
     <span class="delimiter">|</span>
   <span class="type type-named">
@@ -18894,14 +18836,15 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -18963,8 +18906,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -19011,10 +18952,10 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                     <li class="parameter">
   <span class="type type-union">
-  <span class="type type-structure">
-      <a href="https://www.php.net/manual/class.random-randomizer.php" class="external-link" target="_blank">
-        Random\Randomizer
-      </a>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      Randomizer
+    </span>
   </span>
     <span class="delimiter">|</span>
   <span class="type type-named">
@@ -19033,14 +18974,15 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TKey
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -19102,8 +19044,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -19150,10 +19090,10 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                     <li class="parameter">
   <span class="type type-union">
-  <span class="type type-structure">
-      <a href="https://www.php.net/manual/class.random-randomizer.php" class="external-link" target="_blank">
-        Random\Randomizer
-      </a>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      Randomizer
+    </span>
   </span>
     <span class="delimiter">|</span>
   <span class="type type-named">
@@ -19172,8 +19112,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -19188,7 +19129,7 @@ Defaults to <strong>null</strong>.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -19259,8 +19200,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -19329,10 +19268,10 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                     <li class="parameter">
   <span class="type type-union">
-  <span class="type type-structure">
-      <a href="https://www.php.net/manual/class.random-randomizer.php" class="external-link" target="_blank">
-        Random\Randomizer
-      </a>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      Randomizer
+    </span>
   </span>
     <span class="delimiter">|</span>
   <span class="type type-named">
@@ -19351,8 +19290,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       list
@@ -19368,7 +19308,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -19455,8 +19395,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -19525,10 +19463,10 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                     <li class="parameter">
   <span class="type type-union">
-  <span class="type type-structure">
-      <a href="https://www.php.net/manual/class.random-randomizer.php" class="external-link" target="_blank">
-        Random\Randomizer
-      </a>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      Randomizer
+    </span>
   </span>
     <span class="delimiter">|</span>
   <span class="type type-named">
@@ -19547,8 +19485,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       list
@@ -19564,7 +19503,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -19651,8 +19590,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -19708,10 +19645,10 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                     <li class="parameter">
   <span class="type type-union">
-  <span class="type type-structure">
-      <a href="https://www.php.net/manual/class.random-randomizer.php" class="external-link" target="_blank">
-        Random\Randomizer
-      </a>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      Randomizer
+    </span>
   </span>
     <span class="delimiter">|</span>
   <span class="type type-named">
@@ -19730,8 +19667,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -19746,7 +19684,7 @@ Defaults to <strong>null</strong>.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -19826,8 +19764,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -19874,10 +19810,10 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                     <li class="parameter">
   <span class="type type-union">
-  <span class="type type-structure">
-      <a href="https://www.php.net/manual/class.random-randomizer.php" class="external-link" target="_blank">
-        Random\Randomizer
-      </a>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      Randomizer
+    </span>
   </span>
     <span class="delimiter">|</span>
   <span class="type type-named">
@@ -19896,8 +19832,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -19912,7 +19849,7 @@ Defaults to <strong>null</strong>.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -19982,8 +19919,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -20065,14 +20000,15 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -20133,8 +20069,6 @@ Arr::satisfyAll([]); // true
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -20216,14 +20150,15 @@ Arr::satisfyAll([]); // true
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -20284,8 +20219,6 @@ Arr::satisfyAny([]); // false
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -20367,14 +20300,15 @@ Arr::satisfyAny([]); // false
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -20435,8 +20369,6 @@ Arr::satisfyNone([]); // true
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -20518,14 +20450,15 @@ Arr::satisfyNone([]); // true
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -20586,8 +20519,6 @@ Arr::satisfyOnce([]); // false
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -20654,14 +20585,15 @@ Arr::satisfyOnce([]); // false
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -20725,8 +20657,6 @@ Arr::set($map, 'b', 3); // $map is now ['a' =&gt; 2, 'b' =&gt; 3]
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -20793,14 +20723,15 @@ Arr::set($map, 'b', 3); // $map is now ['a' =&gt; 2, 'b' =&gt; 3]
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -20865,8 +20796,6 @@ Arr::setIfExists($map, 'b', 1); // false (and $map is still ['a' =&gt; 2])
                     <div class="description comment"><p><strong>true</strong> if set, <strong>false</strong> otherwise.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -20933,14 +20862,15 @@ Arr::setIfExists($map, 'b', 1); // false (and $map is still ['a' =&gt; 2])
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -21007,8 +20937,6 @@ Arr::setIfNotExists($map, 'b', 1); // true (and $map is now ['a' =&gt; 1, 'b' =&
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -21056,14 +20984,15 @@ Arr::setIfNotExists($map, 'b', 1); // true (and $map is now ['a' =&gt; 1, 'b' =&
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -21119,8 +21048,6 @@ Arr::shift($empty); // EmptyNotAllowedException
                     <div class="description comment"><p>The shifted value.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -21178,8 +21105,9 @@ Arr::shift($empty); // EmptyNotAllowedException
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -21201,7 +21129,7 @@ Arr::shift($empty); // EmptyNotAllowedException
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -21278,8 +21206,6 @@ Must be an integer with value &gt;= 1.</p>
 </div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -21327,8 +21253,9 @@ Must be an integer with value &gt;= 1.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -21343,7 +21270,7 @@ Must be an integer with value &gt;= 1.</p>
   </span>
 
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -21408,8 +21335,6 @@ Arr::shiftOrNull($empty); // null
                     <div class="description comment"><p>The shifted value.</p>
 </div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -21479,10 +21404,10 @@ Arr::shiftOrNull($empty); // null
                     </li>
                     <li class="parameter">
   <span class="type type-union">
-  <span class="type type-structure">
-      <a href="https://www.php.net/manual/class.random-randomizer.php" class="external-link" target="_blank">
-        Random\Randomizer
-      </a>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      Randomizer
+    </span>
   </span>
     <span class="delimiter">|</span>
   <span class="type type-named">
@@ -21501,8 +21426,9 @@ Arr::shiftOrNull($empty); // null
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -21524,7 +21450,7 @@ Arr::shiftOrNull($empty); // null
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -21604,8 +21530,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -21700,14 +21624,15 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -21771,8 +21696,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -21864,8 +21787,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -21887,7 +21811,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -21977,8 +21901,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -22056,8 +21978,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       list
@@ -22089,7 +22012,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -22182,8 +22105,6 @@ If <strong>null</strong>, the result will be re-indexed only if it's a list.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -22229,10 +22150,10 @@ If <strong>null</strong>, the result will be re-indexed only if it's a list.</p>
                         <span class="delimiter">,</span>
                     </li>
                     <li class="parameter">
-  <span class="type type-structure">
-      <span class="no-link structure-name">
-        Kirameki\Collections\SortOrder
-      </span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      SortOrder
+    </span>
   </span>
                         <var>$order</var>
                         <span class="delimiter">,</span>
@@ -22321,8 +22242,9 @@ If <strong>null</strong>, the result will be re-indexed only if it's a list.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -22344,7 +22266,7 @@ If <strong>null</strong>, the result will be re-indexed only if it's a list.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -22436,8 +22358,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -22567,8 +22487,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -22590,7 +22511,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -22682,8 +22603,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -22752,8 +22671,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -22775,7 +22695,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -22857,8 +22777,6 @@ Defaults to <code>SORT_REGULAR</code>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -22918,8 +22836,9 @@ Defaults to <code>SORT_REGULAR</code>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -22941,7 +22860,7 @@ Defaults to <code>SORT_REGULAR</code>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -23017,8 +22936,6 @@ Defaults to <code>SORT_REGULAR</code>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -23078,8 +22995,9 @@ Defaults to <code>SORT_REGULAR</code>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -23101,7 +23019,7 @@ Defaults to <code>SORT_REGULAR</code>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -23176,8 +23094,6 @@ Defaults to <code>SORT_REGULAR</code>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -23307,8 +23223,9 @@ Defaults to <code>SORT_REGULAR</code>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -23330,7 +23247,7 @@ Defaults to <code>SORT_REGULAR</code>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -23420,8 +23337,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -23525,8 +23440,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -23548,7 +23464,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -23631,8 +23547,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -23713,8 +23627,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -23736,7 +23651,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -23811,8 +23726,6 @@ Utilize the spaceship operator (<code>&lt;=&gt;</code>) to easily compare two va
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -23916,8 +23829,9 @@ Utilize the spaceship operator (<code>&lt;=&gt;</code>) to easily compare two va
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       list
@@ -23949,7 +23863,7 @@ Utilize the spaceship operator (<code>&lt;=&gt;</code>) to easily compare two va
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -24042,8 +23956,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -24121,14 +24033,15 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array&#123;0: array&lt;TKey, TValue&gt;, 1: array&lt;TKey, TValue&gt;}
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -24196,8 +24109,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -24301,8 +24212,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       list
@@ -24334,7 +24246,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -24427,8 +24339,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -24506,14 +24416,15 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array&#123;0: array&lt;TKey, TValue&gt;, 1: array&lt;TKey, TValue&gt;}
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -24580,8 +24491,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -24660,8 +24569,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       list
@@ -24693,7 +24603,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -24787,8 +24697,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -24860,14 +24768,15 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -24925,8 +24834,6 @@ Arr::startsWith([1, 2, 3], [1, 2, 3, 4]); // false
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -24973,14 +24880,15 @@ Arr::startsWith([1, 2, 3], [1, 2, 3, 4]); // false
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -25053,8 +24961,6 @@ Arr::sum([]) // 0
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -25133,8 +25039,9 @@ Arr::sum([]) // 0
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -25156,7 +25063,7 @@ Arr::sum([]) // 0
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -25241,8 +25148,6 @@ Throws <code>InvalidArgumentException</code> if the given key does not exist.</p
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -25378,8 +25283,9 @@ Throws <code>InvalidArgumentException</code> if the given key does not exist.</p
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       list
@@ -25395,7 +25301,7 @@ Throws <code>InvalidArgumentException</code> if the given key does not exist.</p
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -25466,8 +25372,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -25536,8 +25440,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -25559,7 +25464,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -25635,8 +25540,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -25692,8 +25595,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -25715,7 +25619,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -25789,8 +25693,6 @@ Arr::takeFirst(['a' =&gt; 1, 'b' =&gt; 2], 1); // ['a' =&gt; 1]
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -25894,8 +25796,9 @@ Arr::takeFirst(['a' =&gt; 1, 'b' =&gt; 2], 1); // ['a' =&gt; 1]
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -25917,7 +25820,7 @@ Arr::takeFirst(['a' =&gt; 1, 'b' =&gt; 2], 1); // ['a' =&gt; 1]
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -26001,8 +25904,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -26091,8 +25992,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -26114,7 +26016,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -26192,8 +26094,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -26301,8 +26201,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -26324,7 +26225,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -26428,8 +26329,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -26507,8 +26406,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -26530,7 +26430,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -26613,8 +26513,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -26695,8 +26593,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -26718,7 +26617,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -26792,8 +26691,6 @@ Arr::takeUntil(['b' =&gt; 1, 'a' =&gt; 3], fn($v) =&gt; $v &gt; 2); // ['b' =&gt
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -26875,8 +26772,9 @@ Arr::takeUntil(['b' =&gt; 1, 'a' =&gt; 3], fn($v) =&gt; $v &gt; 2); // ['b' =&gt
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -26898,7 +26796,7 @@ Arr::takeUntil(['b' =&gt; 1, 'a' =&gt; 3], fn($v) =&gt; $v &gt; 2); // ['b' =&gt
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -26973,8 +26871,6 @@ Arr::takeWhile(['a' =&gt; 1, 'b' =&gt; 4], fn($v) =&gt; $v &lt; 4); // ['a' =&gt
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -27043,14 +26939,15 @@ Arr::takeWhile(['a' =&gt; 1, 'b' =&gt; 4], fn($v) =&gt; $v &lt; 4); // ['a' =&gt
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -27110,8 +27007,6 @@ Defaults to <strong>null</strong>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -27228,8 +27123,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -27251,7 +27147,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -27340,8 +27236,6 @@ Defaults to <strong>null</strong>.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -27388,8 +27282,9 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       list
@@ -27405,7 +27300,7 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -27467,8 +27362,6 @@ Arr::values([1 =&gt; 1, 0 =&gt; 2]) // [1, 2]
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -27541,8 +27434,9 @@ Arr::values([1 =&gt; 1, 0 =&gt; 2]) // [1, 2]
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -27564,7 +27458,7 @@ Arr::values([1 =&gt; 1, 0 =&gt; 2]) // [1, 2]
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -27635,8 +27529,6 @@ if the corresponding key does not exist <code>$iterable</code>.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -27715,8 +27607,9 @@ if the corresponding key does not exist <code>$iterable</code>.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -27738,7 +27631,7 @@ if the corresponding key does not exist <code>$iterable</code>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -27820,8 +27713,6 @@ If <strong>null</strong>, the result will be re-indexed only if it's a list.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -27869,8 +27760,9 @@ If <strong>null</strong>, the result will be re-indexed only if it's a list.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       list
@@ -27911,7 +27803,7 @@ If <strong>null</strong>, the result will be re-indexed only if it's a list.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -27991,8 +27883,6 @@ Arr::zip([1], [2, 3]); // [[1, 2]]
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -28023,14 +27913,15 @@ Arr::zip([1], [2, 3]); // [[1, 2]]
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       array-key
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -28058,8 +27949,6 @@ Arr::zip([1], [2, 3]); // [[1, 2]]
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -28091,14 +27980,15 @@ Arr::zip([1], [2, 3]); // [[1, 2]]
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -28127,8 +28017,6 @@ Used for checking for duplicates.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -28203,14 +28091,15 @@ Used for checking for duplicates.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -28271,8 +28160,6 @@ Used for checking for duplicates.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -28294,10 +28181,10 @@ Used for checking for duplicates.</p>
                 <ul class="parameters">
                     <li class="parameter">
   <span class="type type-union">
-  <span class="type type-structure">
-      <a href="https://www.php.net/manual/class.random-randomizer.php" class="external-link" target="_blank">
-        Random\Randomizer
-      </a>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      Randomizer
+    </span>
   </span>
     <span class="delimiter">|</span>
   <span class="type type-named">
@@ -28312,14 +28199,15 @@ Used for checking for duplicates.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -28348,8 +28236,6 @@ Used for checking for duplicates.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -28369,14 +28255,15 @@ Used for checking for duplicates.</p>
                   (
                 </div>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
-  <span class="type type-structure">
-      <a href="https://www.php.net/manual/class.random-randomizer.php" class="external-link" target="_blank">
-        Random\Randomizer
-      </a>
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      Randomizer
+    </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -28387,15 +28274,13 @@ Used for checking for duplicates.</p>
                 <div class="return">
                   <h4>Returns:</h4>
                   <div class="return-type">
-  <span class="type type-structure">
-      <a href="https://www.php.net/manual/class.random-randomizer.php" class="external-link" target="_blank">
-        Random\Randomizer
-      </a>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      Randomizer
+    </span>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -28468,14 +28353,15 @@ Used for checking for duplicates.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -28504,8 +28390,6 @@ Used for checking for duplicates.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>
@@ -28553,14 +28437,15 @@ Used for checking for duplicates.</p>
                     </li>
                 </ul>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -28585,8 +28470,6 @@ Used for checking for duplicates.</p>
                     <div class="description comment"></div>
                   </div>
                 </div>
-                <div class="throws">
-                </div>
               </section>
             </li>
             <li class="method">
@@ -28606,14 +28489,15 @@ Used for checking for duplicates.</p>
                   (
                 </div>
                 <div class="signature-end">
-                  ):&nbsp;
-                  <span class="return">
+                  )
+                    <span class="return">
+                      :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
       self
     </span>
   </span>
-                  </span>
+                    </span>
                 </div>
               </section>
               <section class="details">
@@ -28631,8 +28515,6 @@ Used for checking for duplicates.</p>
   </span>
                     <div class="description comment"></div>
                   </div>
-                </div>
-                <div class="throws">
                 </div>
               </section>
             </li>

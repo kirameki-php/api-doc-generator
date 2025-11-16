@@ -293,6 +293,9 @@ blockquote {
                     }
                 }
             }
+            li.method:first-child {
+                padding-top: 0.5rem;
+            }
             li.method:last-child {
                 border-bottom: none;
             }

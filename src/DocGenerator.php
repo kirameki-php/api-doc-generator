@@ -3,13 +3,16 @@
 namespace Kirameki\ApiDocGenerator;
 
 use Kirameki\ApiDocGenerator\Components\ClassInfo;
-use Kirameki\ApiDocGenerator\Support\ClassFile;
+use Kirameki\ApiDocGenerator\Components\StructureInfo;
+use Kirameki\ApiDocGenerator\Components\TraitInfo;
+use Kirameki\ApiDocGenerator\Support\PhpFile;
 use Kirameki\ApiDocGenerator\Support\CommentParserFactory;
 use Kirameki\ApiDocGenerator\Support\StructureMap;
 use Kirameki\ApiDocGenerator\Support\Tree;
 use Kirameki\ApiDocGenerator\Support\TypeResolver;
 use Kirameki\ApiDocGenerator\Support\UrlResolver;
 use Kirameki\Collections\Utils\Iter;
+use Kirameki\Core\Exceptions\UnreachableException;
 use Kirameki\Core\Json;
 use Kirameki\Storage\Directory;
 use Kirameki\Storage\Path;
@@ -59,6 +62,9 @@ class DocGenerator
     public function generate(): void
     {
         $tree = new Tree();
+        $docParser = $this->docParserFactory->create();
+        $urlResolver = new UrlResolver($this->structureMap);
+
         foreach ($this->pathMap as $path => $namespace) {
             $dir = new Directory("{$this->projectRoot}/{$path}");
             foreach ($dir->scanRecursively() as $storable) {
@@ -74,15 +80,16 @@ class DocGenerator
                         // TODO implement EnumInfo
                     }
                     else if ($reflection->isTrait()) {
-                        // TODO implement TraitInfo
+                        $file = new PhpFile($reflection);
+                        $info = new TraitInfo($reflection, $file, $docParser, $urlResolver);
+                        $this->structureMap->add($info);
+                        $this->appendToTree($tree, $info);
                     }
                     else {
-                        $file = new ClassFile($reflection);
-                        $docParser = $this->docParserFactory->createFor($file);
-                        $urlResolver = new UrlResolver($this->structureMap);
-                        $classDef = new ClassInfo($reflection, $file, $docParser, $urlResolver);
-                        $this->structureMap->add($classDef);
-                        $this->appendToTree($tree, $classDef);
+                        $file = new PhpFile($reflection);
+                        $info = new ClassInfo($reflection, $file, $docParser, $urlResolver);
+                        $this->structureMap->add($info);
+                        $this->appendToTree($tree, $info);
                     }
                 }
             }
@@ -101,14 +108,14 @@ class DocGenerator
         ]);
         file_put_contents("{$docsPath}/main.html", $html);
 
-        foreach (Iter::flatten($tree, 100) as $class) {
-            /** @var ClassInfo $class */
-            $html = $this->renderer->render(Path::of(__DIR__ . '/views/class.latte'), [
-                'sidebarHtml' => $sidebarHtml,
-                'structureMap' => $this->structureMap,
-                'class' => $class,
-            ]);
-            $filePath = "{$docsPath}/{$class->outputPath}";
+        foreach (Iter::flatten($tree, 100) as $info) {
+            $path = match(true) {
+                $info instanceof ClassInfo,
+                $info instanceof TraitInfo => Path::of(__DIR__ . '/views/class.latte'),
+                default => throw new UnreachableException(),
+            };
+            $html = $this->renderer->render($path, ['sidebarHtml' => $sidebarHtml, 'info' => $info]);
+            $filePath = "{$docsPath}/{$info->outputPath}";
             @mkdir(dirname($filePath), 0755, true);
             file_put_contents($filePath, $html);
         }
@@ -141,16 +148,16 @@ class DocGenerator
 
     /**
      * @param Tree $tree
-     * @param ClassInfo $classInfo
+     * @param StructureInfo $info
      * @return void
      */
-    protected function appendToTree(Tree $tree, ClassInfo $classInfo): void
+    protected function appendToTree(Tree $tree, StructureInfo $info): void
     {
-        $parts = explode('\\', $classInfo->namespace);
+        $parts = explode('\\', $info->namespace);
         $current = $tree;
         foreach ($parts as $part) {
             $current = $current->namespaces[$part] ??= new Tree();
         }
-        $current->classes[$classInfo->basename] = $classInfo;
+        $current->classes[$info->basename] = $info;
     }
 }

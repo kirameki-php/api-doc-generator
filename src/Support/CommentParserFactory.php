@@ -47,8 +47,8 @@ class CommentParserFactory
         ]);
     }
 
-    public function createFor(ClassFile $file): CommentParser
+    public function create(): CommentParser
     {
-        return new CommentParser($this->lexer, $this->parser, $file);
+        return new CommentParser($this->lexer, $this->parser);
     }
 }

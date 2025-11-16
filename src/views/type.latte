@@ -44,10 +44,12 @@
   <span class="type type-conditional">
     {varType Kirameki\ApiDocGenerator\Types\ConditionalVarType $type}
     (
-    {$type->variable} is {include type.latte, type: $type->matchType}
-    ?
+    <var>{$type->variable}</var>
+    &nbsp;is&nbsp;
+    {include type.latte, type: $type->matchType}
+    &nbsp;?&nbsp;
     {include type.latte, type: $type->trueType}
-    :
+    &nbsp;:&nbsp;
     {include type.latte, type: $type->falseType}
     )
   </span>
@@ -73,6 +75,6 @@
     </span>
     {include type-generics.latte, generics: $type->generics}
   </span>
+{elseif ($type === null) }
 {else}
-  {dump($type)}
 {/if}

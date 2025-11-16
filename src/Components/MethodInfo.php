@@ -9,6 +9,7 @@ use Kirameki\Core\Exceptions\UnreachableException;
 use Kirameki\Text\Str;
 use ReflectionMethod;
 use ReflectionParameter;
+use function in_array;
 
 class MethodInfo extends MemberInfo
 {
@@ -31,7 +32,7 @@ class MethodInfo extends MemberInfo
      */
     public array $parameters {
         get => $this->parameters ??= array_map(
-            fn (ReflectionParameter $param) => new ParameterInfo($this->class, $this, $param, $this->typeResolver),
+            fn (ReflectionParameter $param) => new ParameterInfo($this, $param, $this->typeResolver),
             $this->reflection->getParameters(),
         );
     }
@@ -44,9 +45,9 @@ class MethodInfo extends MemberInfo
     }
 
     /**
-     * @var VarType
+     * @var VarType|null
      */
-    public VarType $returnDocType {
+    public ?VarType $returnDocType {
         get => $this->returnDocType ??= $this->resolveReturnDocType();
     }
 
@@ -112,13 +113,11 @@ class MethodInfo extends MemberInfo
     }
 
     /**
-     * @param ClassInfo $class
      * @param ReflectionMethod $reflection
      * @param CommentParser $docParser
      * @param TypeResolver $typeResolver
      */
     public function __construct(
-        protected ClassInfo $class,
         protected ReflectionMethod $reflection,
         CommentParser $docParser,
         protected TypeResolver $typeResolver,
@@ -159,10 +158,14 @@ class MethodInfo extends MemberInfo
     }
 
     /**
-     * @return VarType
+     * @return VarType|null
      */
-    protected function resolveReturnDocType(): VarType
+    protected function resolveReturnDocType(): ?VarType
     {
+        if (in_array($this->name, ['__construct', '__destruct'], true)) {
+            return null;
+        }
+
         return $this->phpDoc->return !== null
             ? $this->typeResolver->resolveFromNode($this->phpDoc->return->type, $this->phpDoc)
             : $this->returnType;

@@ -72,14 +72,12 @@ class ParameterInfo
     }
 
     /**
-     * @param ClassInfo $class
      * @param MethodInfo $method
      * @param ReflectionParameter $reflection
      * @param TypeResolver $typeResolver
      * @param PropertyInfo|null $promotedProperty
      */
     public function __construct(
-        protected readonly ClassInfo $class,
         protected readonly MethodInfo $method,
         protected readonly ReflectionParameter $reflection,
         protected readonly TypeResolver $typeResolver,
