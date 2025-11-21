@@ -249,30 +249,51 @@
                     {implode("\n", $method->phpDoc->texts)|markdown|noescape}
                   </div>
                 {/if}
-                {if $method->templates !== []}
-                <div class="templates">
-                  <h4>Templates:</h4>
-                  <ul class="template-list">
-                    {foreach $method->templates as $template}
-                      {varType Kirameki\ApiDocGenerator\Components\TemplateInfo $template}
-                      <li class="template">
-                        <span class="template-name">{$template->name}</span>
-                        {if $template->bound instanceof Kirameki\ApiDocGenerator\Types\VarType}
-                          <span class="bound-delimiter"> as </span>
-                          <span class="bound">
-                            {include type.latte, type: $template->bound}
-                          </span>
-                        {/if}
-                        {if $template->default instanceof Kirameki\ApiDocGenerator\Types\VarType}
-                          <span class="default-delimiter"> = </span>
-                          <span class="default">
-                            {include type.latte, type: $template->default}
-                          </span>
-                        {/if}
-                      </li>
+                {if $method->declaringClass !== null || $method->declaredInterfaces !== []}
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                    {if $method->declaringClass !== null}
+                      <div class="declaration">
+                        <var class="type-icon type-{$method->declaringClass->type}">
+                          {substr($method->declaringClass->type, 0, 1)}
+                        </var>
+                        {include type.latte, type: new Kirameki\ApiDocGenerator\Types\StructureVarType($method->declaringClass)}
+                      </div>
+                    {/if}
+                    {foreach $method->declaredInterfaces as $interface}
+                      <div class="declaration">
+                        <var class="type-icon type-{$interface->type}">
+                          {substr($interface->type, 0, 1)}
+                        </var>
+                        {include type.latte, type: new Kirameki\ApiDocGenerator\Types\StructureVarType($interface)}
+                      </div>
                     {/foreach}
-                  </ul>
-                </div>
+                  </div>
+                {/if}
+                {if $method->templates !== []}
+                  <div class="templates">
+                    <h4>Templates:</h4>
+                    <ul class="template-list">
+                      {foreach $method->templates as $template}
+                        {varType Kirameki\ApiDocGenerator\Components\TemplateInfo $template}
+                        <li class="template">
+                          <span class="template-name">{$template->name}</span>
+                          {if $template->bound instanceof Kirameki\ApiDocGenerator\Types\VarType}
+                            <span class="bound-delimiter"> as </span>
+                            <span class="bound">
+                              {include type.latte, type: $template->bound}
+                            </span>
+                          {/if}
+                          {if $template->default instanceof Kirameki\ApiDocGenerator\Types\VarType}
+                            <span class="default-delimiter"> = </span>
+                            <span class="default">
+                              {include type.latte, type: $template->default}
+                            </span>
+                          {/if}
+                        </li>
+                      {/foreach}
+                    </ul>
+                  </div>
                 {/if}
                 {if $method->parameters !== []}
                   <div class="parameters">
@@ -289,13 +310,15 @@
                     </table>
                   </div>
                 {/if}
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-                    {include type.latte, type: $method->returnDocType}
-                    <div class="description comment">{$method->returnDescription|markdown|noescape}</div>
+                {if $method->returnDocType !== null}
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+                      {include type.latte, type: $method->returnDocType}
+                      <div class="description comment">{$method->returnDescription|markdown|noescape}</div>
+                    </div>
                   </div>
-                </div>
+                {/if}
                 {if $method->throws !== []}
                   <div class="throws">
                     <h4>Throws:</h4>

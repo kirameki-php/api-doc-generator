@@ -14,10 +14,10 @@ use Kirameki\Text\Str;
 use PHPStan\PhpDocParser\Ast\Type\TypeNode;
 use ReflectionClass;
 use ReflectionClassConstant;
-use ReflectionMethod;
 use ReflectionProperty;
 use function array_map;
 use function array_values;
+use function assert;
 use function ksort;
 
 class ClassInfo implements StructureInfo
@@ -118,13 +118,10 @@ class ClassInfo implements StructureInfo
     }
 
     /**
-     * @var list<MethodInfo>
+     * @var array<string, MethodInfo>
      */
     public array $methods {
-        get => $this->methods ??= array_map(
-            fn(ReflectionMethod $ref) => new MethodInfo($ref, $this->docParser, $this->typeResolver),
-            $this->reflection->getMethods(),
-        );
+        get => $this->methods ??= $this->resolveMethods();
     }
 
     /**
@@ -137,9 +134,7 @@ class ClassInfo implements StructureInfo
     /**
      * @var TypeResolver
      */
-    protected TypeResolver $typeResolver {
-        get => $this->typeResolver;
-    }
+    protected TypeResolver $typeResolver;
 
     /**
      * @var string
@@ -166,7 +161,7 @@ class ClassInfo implements StructureInfo
      * @param TypeResolver|null $typeResolver
      */
     public function __construct(
-        protected readonly ReflectionClass $reflection,
+        public readonly ReflectionClass $reflection,
         protected readonly PhpFile $file,
         protected readonly CommentParser $docParser,
         protected readonly UrlResolver $urlResolver,
@@ -206,16 +201,16 @@ class ClassInfo implements StructureInfo
     protected function resolveTraits(): array
     {
         $traits = [];
-        foreach ($this->reflection->getTraits() as $reflection) {
-            $comments = $this->file->traits[$reflection->getName()] ?? null;
-            if ($comments !== null) {
-                $doc = $this->docParser->parse($comments);
-                if ($doc->use !== null) {
-                    $traits[$reflection->getName()] = $this->getTypeFromNode($doc->use->type);
-                }
+        foreach ($this->file->traits as $comment) {
+            $doc = $this->docParser->parse($comment);
+            if ($doc->use !== null) {
+                $node = $this->getTypeFromNode($doc->use->type);
+                assert($node instanceof StructureVarType);
+                $traits[$node->structure->name] = $node;
             }
-
-            $traits[$reflection->getName()] ??= new StructureVarType(
+        }
+        foreach ($this->reflection->getTraits() as $name => $reflection) {
+            $traits[$name] ??= new StructureVarType(
                 new TraitInfo($reflection, $this->file, $this->docParser, $this->urlResolver, $this->typeResolver),
             );
         }
@@ -231,7 +226,6 @@ class ClassInfo implements StructureInfo
         if ($node !== null) {
             return $this->getTypeFromNode($node);
         }
-
         $reflection = $this->reflection->getParentClass();
         if ($reflection === false) {
             return null;
@@ -248,22 +242,32 @@ class ClassInfo implements StructureInfo
         foreach ($this->phpDoc->implements as $tag) {
             $types[$tag->type->type->name] = $this->getTypeFromNode($tag->type);
         }
-
         foreach ($this->file->implements as $if) {
             $reflection = new ReflectionClass($if);
             $types[$reflection->getName()] ??= new StructureVarType($this->instantiateClass($reflection));
         }
-
         ksort($types, SORT_NATURAL);
-
         return array_values($types);
+    }
+
+    /**
+     * @return array<string, MethodInfo>
+     */
+    protected function resolveMethods(): array
+    {
+        $methods = [];
+        foreach ($this->reflection->getMethods() as $ref) {
+            $methods[$ref->getName()] = new MethodInfo($this, $ref, $this->docParser, $this->typeResolver);
+        }
+        ksort($methods, SORT_NATURAL);
+        return $methods;
     }
 
     /**
      * @param ReflectionClass<object> $reflection
      * @return ClassInfo
      */
-    protected function instantiateClass(ReflectionClass $reflection): ClassInfo
+    public function instantiateClass(ReflectionClass $reflection): ClassInfo
     {
         return new ClassInfo(
             $reflection,

@@ -990,10 +990,10 @@
     </span>
   </span>
       <span class="delimiter">,</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      EventHandler
-    </span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/event/event-handler.html">
+        Kirameki\Event\EventHandler
+      </a>
   <span class="generics">
     <span class="brace">&lt;</span>
   <span class="type type-structure">
@@ -1021,123 +1021,39 @@
         <h3>Methods</h3>
         <ul class="methods">
             <li class="method">
-              <a id="method-handle" class="anchor" href="classes/kirameki/process/signal.html#method-handle">
+              <a id="method---construct" class="anchor" href="classes/kirameki/process/signal.html#method---construct">
                 <i class="fa-solid fa-link"></i>
               </a>
-              <section class="signature multi-line">
+              <section class="signature single-line">
                 <div class="signature-start">
                   <span class="modifiers">
+                      final
                     public
-                      static
                   </span>
                   &nbsp;
                   <span class="name">
-                    handle
+                    __construct
                   </span>
                   (
                 </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-                        <var>$signal</var>
-                        <span class="delimiter">,</span>
-                    </li>
-                    <li class="parameter">
-  <span class="type type-callable">
-  <span class="type type-structure">
-      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
-        Closure
-      </a>
-  </span>
-    <span class="parenthesis">(</span>
-
-
-  <span class="type type-structure">
-      <a href="classes/kirameki/process/signal-event.html">
-        Kirameki\Process\SignalEvent
-      </a>
-  </span>
-
-    <span class="parenthesis">):&nbsp;</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      mixed
-    </span>
-  </span>
-  </span>
-                        <var>$callback</var>
-
-                    </li>
-                </ul>
                 <div class="signature-end">
                   )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      CallbackListener
-    </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type type-structure">
-      <a href="classes/kirameki/process/signal-event.html">
-        Kirameki\Process\SignalEvent
-      </a>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-                    </span>
                 </div>
               </section>
               <section class="details">
-                  <div class="comment">
-                    <p>Adds <code>$callback</code> to the signal handler.</p>
-
-                  </div>
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$signal</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"><p>Signal number to handle.</p>
-</td>
-                        </tr>
-                        <tr class="parameter">
-                          <td class="name"><var>$callback</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"><p>Callback to be invoked when the signal is received.</p>
-</td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      CallbackListener
-    </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
   <span class="type type-structure">
-      <a href="classes/kirameki/process/signal-event.html">
-        Kirameki\Process\SignalEvent
+      <a href="classes/kirameki/core/static-class.html">
+        Kirameki\Core\StaticClass
       </a>
   </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-                    <div class="description comment"></div>
+                      </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1189,17 +1105,17 @@
                 </div>
               </section>
               <section class="details">
-                <div class="templates">
-                  <h4>Templates:</h4>
-                  <ul class="template-list">
-                      <li class="template">
-                        <span class="template-name">TListener</span>
-                          <span class="bound-delimiter"> as </span>
-                          <span class="bound">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      EventListener
-    </span>
+                  <div class="templates">
+                    <h4>Templates:</h4>
+                    <ul class="template-list">
+                        <li class="template">
+                          <span class="template-name">TListener</span>
+                            <span class="bound-delimiter"> as </span>
+                            <span class="bound">
+  <span class="type type-structure">
+      <a href="classes/kirameki/event/listeners/event-listener.html">
+        Kirameki\Event\Listeners\EventListener
+      </a>
   <span class="generics">
     <span class="brace">&lt;</span>
   <span class="type type-structure">
@@ -1211,10 +1127,10 @@
     <span class="brace">&gt;</span>
   </span>
   </span>
-                          </span>
-                      </li>
-                  </ul>
-                </div>
+                            </span>
+                        </li>
+                    </ul>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
@@ -1230,17 +1146,17 @@
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-template">
     <span class="no-link template-name">
       TListener
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1298,17 +1214,510 @@
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-clear-all-handlers" class="anchor" href="classes/kirameki/process/signal.html#method-clear-all-handlers">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                      static
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    clearAllHandlers
+                  </span>
+                  (
                 </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      void
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="comment">
+                    <p>Clears all the signal handlers.</p>
+
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      void
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-clear-handler" class="anchor" href="classes/kirameki/process/signal.html#method-clear-handler">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                      static
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    clearHandler
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                        <var>$signal</var>
+                        <span class="delimiter">,</span>
+                    </li>
+                    <li class="parameter">
+  <span class="type type-structure">
+      <a href="classes/kirameki/event/listeners/event-listener.html">
+        Kirameki\Event\Listeners\EventListener
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/process/signal-event.html">
+        Kirameki\Process\SignalEvent
+      </a>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                        <var>$listener</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="comment">
+                    <p>Clear the given <code>$callback</code> for the specified signal.<br />
+Returns the number of callbacks removed.</p>
+
+                  </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$signal</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$listener</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-clear-handlers" class="anchor" href="classes/kirameki/process/signal.html#method-clear-handlers">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                      static
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    clearHandlers
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                        <var>$signal</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="comment">
+                    <p>Clears the signal handlers for the specified signal.</p>
+
+                  </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$signal</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"><p>Signal to clear.</p>
+</td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-create-signal-event" class="anchor" href="classes/kirameki/process/signal.html#method-create-signal-event">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                      static
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    createSignalEvent
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                        <var>$signal</var>
+                        <span class="delimiter">,</span>
+                    </li>
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      array&#123;pid: int, status: (int | false), code: int}
+    </span>
+  </span>
+                        <var>$siginfo</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-structure">
+      <a href="classes/kirameki/process/signal-event.html">
+        Kirameki\Process\SignalEvent
+      </a>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="comment">
+                    <p>Creates a new signal event.<br />
+Event will be marked for termination if the signal is a termination signal.</p>
+
+                  </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$signal</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"><p>Signal number to be set.</p>
+</td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$siginfo</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"><p>Signal information from <code>pcntl_signal(...)</code> to be set.</p>
+</td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-structure">
+      <a href="classes/kirameki/process/signal-event.html">
+        Kirameki\Process\SignalEvent
+      </a>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-get-name-of" class="anchor" href="classes/kirameki/process/signal.html#method-get-name-of">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                      static
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    getNameOf
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      1
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      31
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                        <var>$signal</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="comment">
+                    <p>Get the name of the signal from the signal number.</p>
+
+                  </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$signal</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-handle" class="anchor" href="classes/kirameki/process/signal.html#method-handle">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                      static
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    handle
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                        <var>$signal</var>
+                        <span class="delimiter">,</span>
+                    </li>
+                    <li class="parameter">
+  <span class="type type-callable">
+  <span class="type type-structure">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+    <span class="parenthesis">(</span>
+
+
+  <span class="type type-structure">
+      <a href="classes/kirameki/process/signal-event.html">
+        Kirameki\Process\SignalEvent
+      </a>
+  </span>
+
+    <span class="parenthesis">):&nbsp;</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+  </span>
+                        <var>$callback</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-structure">
+      <a href="classes/kirameki/event/listeners/callback-listener.html">
+        Kirameki\Event\Listeners\CallbackListener
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/process/signal-event.html">
+        Kirameki\Process\SignalEvent
+      </a>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="comment">
+                    <p>Adds <code>$callback</code> to the signal handler.</p>
+
+                  </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$signal</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"><p>Signal number to handle.</p>
+</td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$callback</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"><p>Callback to be invoked when the signal is received.</p>
+</td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-structure">
+      <a href="classes/kirameki/event/listeners/callback-listener.html">
+        Kirameki\Event\Listeners\CallbackListener
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/process/signal-event.html">
+        Kirameki\Process\SignalEvent
+      </a>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
               </section>
             </li>
             <li class="method">
@@ -1384,17 +1793,17 @@ with the given (signal number + 128) as specified in<br />
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1446,9 +1855,9 @@ with the given (signal number + 128) as specified in<br />
                     <p>Returns all the registered signals.</p>
 
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -1470,411 +1879,9 @@ with the given (signal number + 128) as specified in<br />
     <span class="brace">&gt;</span>
   </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-clear-handler" class="anchor" href="classes/kirameki/process/signal.html#method-clear-handler">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                      static
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    clearHandler
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-                        <var>$signal</var>
-                        <span class="delimiter">,</span>
-                    </li>
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      EventListener
-    </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type type-structure">
-      <a href="classes/kirameki/process/signal-event.html">
-        Kirameki\Process\SignalEvent
-      </a>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-                        <var>$listener</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="comment">
-                    <p>Clear the given <code>$callback</code> for the specified signal.<br />
-Returns the number of callbacks removed.</p>
-
-                  </div>
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$signal</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                        <tr class="parameter">
-                          <td class="name"><var>$listener</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-clear-handlers" class="anchor" href="classes/kirameki/process/signal.html#method-clear-handlers">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                      static
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    clearHandlers
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-                        <var>$signal</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="comment">
-                    <p>Clears the signal handlers for the specified signal.</p>
-
-                  </div>
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$signal</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"><p>Signal to clear.</p>
-</td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-clear-all-handlers" class="anchor" href="classes/kirameki/process/signal.html#method-clear-all-handlers">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                      static
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    clearAllHandlers
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      void
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="comment">
-                    <p>Clears all the signal handlers.</p>
-
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      void
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-get-name-of" class="anchor" href="classes/kirameki/process/signal.html#method-get-name-of">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                      static
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    getNameOf
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      1
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      31
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-                        <var>$signal</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="comment">
-                    <p>Get the name of the signal from the signal number.</p>
-
-                  </div>
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$signal</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-create-signal-event" class="anchor" href="classes/kirameki/process/signal.html#method-create-signal-event">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    protected
-                      static
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    createSignalEvent
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-                        <var>$signal</var>
-                        <span class="delimiter">,</span>
-                    </li>
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      array&#123;pid: int, status: (int | false), code: int}
-    </span>
-  </span>
-                        <var>$siginfo</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-structure">
-      <a href="classes/kirameki/process/signal-event.html">
-        Kirameki\Process\SignalEvent
-      </a>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="comment">
-                    <p>Creates a new signal event.<br />
-Event will be marked for termination if the signal is a termination signal.</p>
-
-                  </div>
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$signal</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"><p>Signal number to be set.</p>
-</td>
-                        </tr>
-                        <tr class="parameter">
-                          <td class="name"><var>$siginfo</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"><p>Signal information from <code>pcntl_signal(...)</code> to be set.</p>
-</td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-structure">
-      <a href="classes/kirameki/process/signal-event.html">
-        Kirameki\Process\SignalEvent
-      </a>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method---construct" class="anchor" href="classes/kirameki/process/signal.html#method---construct">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                      final
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    __construct
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-                    <div class="description comment"></div>
-                  </div>
-                </div>
               </section>
             </li>
         </ul>

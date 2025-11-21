@@ -4,11 +4,13 @@ namespace Kirameki\ApiDocGenerator\Components;
 
 use Kirameki\ApiDocGenerator\Support\CommentParser;
 use Kirameki\ApiDocGenerator\Support\TypeResolver;
+use Kirameki\ApiDocGenerator\Types\StructureVarType;
 use Kirameki\ApiDocGenerator\Types\VarType;
 use Kirameki\Core\Exceptions\UnreachableException;
 use Kirameki\Text\Str;
 use ReflectionMethod;
 use ReflectionParameter;
+use function dump;
 use function in_array;
 
 class MethodInfo extends MemberInfo
@@ -113,11 +115,27 @@ class MethodInfo extends MemberInfo
     }
 
     /**
+     * @var ClassInfo|null
+     */
+    public ?ClassInfo $declaringClass {
+        get => $this->declaringClass ??= $this->resolveDeclaringClass();
+    }
+
+    /**
+     * @var list<ClassInfo>
+     */
+    public array $declaredInterfaces {
+        get => $this->declaredInterfaces ??= $this->resolvedDeclaredInterfaces();
+    }
+
+    /**
+     * @param ClassInfo $class
      * @param ReflectionMethod $reflection
      * @param CommentParser $docParser
      * @param TypeResolver $typeResolver
      */
     public function __construct(
+        protected ClassInfo $class,
         protected ReflectionMethod $reflection,
         CommentParser $docParser,
         protected TypeResolver $typeResolver,
@@ -171,8 +189,60 @@ class MethodInfo extends MemberInfo
             : $this->returnType;
     }
 
+    /**
+     * @return VarType
+     */
     protected function resolveReturnType(): VarType
     {
         return $this->typeResolver->resolveFromReflection($this->reflection->getReturnType());
+    }
+
+    /**
+     * @return ClassInfo|null
+     */
+    protected function resolveDeclaringClass(): ?ClassInfo
+    {
+        $reflection = $this->reflection->getDeclaringClass();
+
+        $class = $this->class->instantiateClass($reflection);
+
+        if ($declaringTrait = $this->tryGetDeclaringTrait($class)) {
+            return $declaringTrait;
+        }
+
+        if ($reflection->getName() !== $this->class->name) {
+            return $class;
+        }
+
+        return null;
+    }
+
+    protected function tryGetDeclaringTrait(ClassInfo $class): ?TraitInfo
+    {
+        foreach ($class->traits as $trait) {
+            if ($trait instanceof StructureVarType && $trait->structure instanceof TraitInfo) {
+                if (isset($trait->structure->methods[$this->name])) {
+                    return $trait->structure;
+                }
+            }
+        }
+        return null;
+    }
+
+    /**
+     * @return list<ClassInfo>
+     */
+    protected function resolvedDeclaredInterfaces(): array
+    {
+        $interfaces = [];
+        foreach ($this->class->reflection->getInterfaces() as $interface) {
+            foreach ($interface->getMethods() as $method) {
+                if ($method->getName() === $this->name) {
+                    $interfaces[] = $this->class->instantiateClass($interface);
+                    break;
+                }
+            }
+        }
+        return $interfaces;
     }
 }

@@ -923,18 +923,17 @@
         <h3>Methods</h3>
         <ul class="methods">
             <li class="method">
-              <a id="method-now" class="anchor" href="classes/kirameki/time/helpers.html#method-now">
+              <a id="method---to-string" class="anchor" href="classes/kirameki/time/helpers.html#method---to-string">
                 <i class="fa-solid fa-link"></i>
               </a>
               <section class="signature single-line">
                 <div class="signature-start">
                   <span class="modifiers">
                     public
-                      static
                   </span>
                   &nbsp;
                   <span class="name">
-                    now
+                    __toString
                   </span>
                   (
                 </div>
@@ -944,50 +943,49 @@
                       :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
-      static
+      string
     </span>
   </span>
                     </span>
                 </div>
               </section>
               <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
-      static
+      string
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
-              <a id="method-create-from-interface" class="anchor" href="classes/kirameki/time/helpers.html#method-create-from-interface">
+              <a id="method-add-days" class="anchor" href="classes/kirameki/time/helpers.html#method-add-days">
                 <i class="fa-solid fa-link"></i>
               </a>
               <section class="signature multi-line">
                 <div class="signature-start">
                   <span class="modifiers">
                     public
-                      static
                   </span>
                   &nbsp;
                   <span class="name">
-                    createFromInterface
+                    addDays
                   </span>
                   (
                 </div>
                 <ul class="parameters">
                     <li class="parameter">
-  <span class="type type-structure">
-      <a href="https://www.php.net/manual/class.datetimeinterface.php" class="external-link" target="_blank">
-        DateTimeInterface
-      </a>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
   </span>
-                        <var>$object</var>
+                        <var>$amount</var>
 
                     </li>
                 </ul>
@@ -995,10 +993,10 @@
                   )
                     <span class="return">
                       :&nbsp;
-  <span class="type type-structure">
-      <a href="https://www.php.net/manual/class.datetimeimmutable.php" class="external-link" target="_blank">
-        DateTimeImmutable
-      </a>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
   </span>
                     </span>
                 </div>
@@ -1008,23 +1006,722 @@
                     <h4>Parameters:</h4>
                     <table>
                         <tr class="parameter">
-                          <td class="name"><var>$object</var></td>
+                          <td class="name"><var>$amount</var></td>
                           <td class="delimiter"></td>
                           <td class="description comment"></td>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-structure">
-      <a href="https://www.php.net/manual/class.datetimeimmutable.php" class="external-link" target="_blank">
-        DateTimeImmutable
-      </a>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-add-hours" class="anchor" href="classes/kirameki/time/helpers.html#method-add-hours">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    addHours
+                  </span>
+                  (
                 </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                        <var>$amount</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$amount</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-add-minutes" class="anchor" href="classes/kirameki/time/helpers.html#method-add-minutes">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    addMinutes
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                        <var>$amount</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$amount</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-add-months" class="anchor" href="classes/kirameki/time/helpers.html#method-add-months">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    addMonths
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                        <var>$amount</var>
+                        <span class="delimiter">,</span>
+                    </li>
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                        <var>$overflow</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-bool">false</span>
+                          </span>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$amount</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$overflow</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-add-seconds" class="anchor" href="classes/kirameki/time/helpers.html#method-add-seconds">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    addSeconds
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-union">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      float
+    </span>
+  </span>
+
+  </span>
+                        <var>$amount</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$amount</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-add-unit" class="anchor" href="classes/kirameki/time/helpers.html#method-add-unit">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    addUnit
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-structure">
+      <span class="no-link structure-name">
+        Kirameki\Time\Unit
+      </span>
+  </span>
+                        <var>$unit</var>
+                        <span class="delimiter">,</span>
+                    </li>
+                    <li class="parameter">
+  <span class="type type-union">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      float
+    </span>
+  </span>
+
+  </span>
+                        <var>$amount</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$unit</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$amount</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-add-unit-with-clamping" class="anchor" href="classes/kirameki/time/helpers.html#method-add-unit-with-clamping">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    addUnitWithClamping
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-structure">
+      <span class="no-link structure-name">
+        Kirameki\Time\Unit
+      </span>
+  </span>
+                        <var>$unit</var>
+                        <span class="delimiter">,</span>
+                    </li>
+                    <li class="parameter">
+  <span class="type type-union">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      float
+    </span>
+  </span>
+
+  </span>
+                        <var>$amount</var>
+                        <span class="delimiter">,</span>
+                    </li>
+                    <li class="parameter">
+  <span class="type type-structure">
+      <span class="no-link structure-name">
+        Kirameki\Time\Unit
+      </span>
+  </span>
+                        <var>$clamp</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$unit</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$amount</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$clamp</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-add-years" class="anchor" href="classes/kirameki/time/helpers.html#method-add-years">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    addYears
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                        <var>$amount</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$amount</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-between" class="anchor" href="classes/kirameki/time/helpers.html#method-between">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    between
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                        <var>$min</var>
+                        <span class="delimiter">,</span>
+                    </li>
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                        <var>$max</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$min</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$max</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-clamp" class="anchor" href="classes/kirameki/time/helpers.html#method-clamp">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    clamp
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-union">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+  </span>
+                        <var>$lower</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                    </li>
+                    <li class="parameter">
+  <span class="type type-union">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+  </span>
+                        <var>$upper</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$lower</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$upper</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
               </section>
             </li>
             <li class="method">
@@ -1118,25 +1815,25 @@
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
                   <div class="throws">
                     <h4>Throws:</h4>
                     <ul class="throw-list">
                         <li class="throw">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      InvalidFormatException
-    </span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/time/exceptions/invalid-format-exception.html">
+        Kirameki\Time\Exceptions\InvalidFormatException
+      </a>
   </span>
                         </li>
                     </ul>
@@ -1144,7 +1841,70 @@
               </section>
             </li>
             <li class="method">
-              <a id="method-throw-last-error" class="anchor" href="classes/kirameki/time/helpers.html#method-throw-last-error">
+              <a id="method-create-from-interface" class="anchor" href="classes/kirameki/time/helpers.html#method-create-from-interface">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                      static
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    createFromInterface
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-structure">
+      <a href="https://www.php.net/manual/class.datetimeinterface.php" class="external-link" target="_blank">
+        DateTimeInterface
+      </a>
+  </span>
+                        <var>$object</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-structure">
+      <a href="https://www.php.net/manual/class.datetimeimmutable.php" class="external-link" target="_blank">
+        DateTimeImmutable
+      </a>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$object</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-structure">
+      <a href="https://www.php.net/manual/class.datetimeimmutable.php" class="external-link" target="_blank">
+        DateTimeImmutable
+      </a>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-ensure-positive" class="anchor" href="classes/kirameki/time/helpers.html#method-ensure-positive">
                 <i class="fa-solid fa-link"></i>
               </a>
               <section class="signature multi-line">
@@ -1155,27 +1915,18 @@
                   </span>
                   &nbsp;
                   <span class="name">
-                    throwLastError
+                    ensurePositive
                   </span>
                   (
                 </div>
                 <ul class="parameters">
                     <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      array&#123;errors: list&lt;string&gt;, warnings: list&lt;string&gt;}
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TNum
     </span>
   </span>
-                        <var>$errors</var>
-                        <span class="delimiter">,</span>
-                    </li>
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                        <var>$datetime</var>
+                        <var>$amount</var>
 
                     </li>
                 </ul>
@@ -1183,155 +1934,61 @@
                   )
                     <span class="return">
                       :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      never
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TNum
     </span>
   </span>
                     </span>
                 </div>
               </section>
               <section class="details">
+                  <div class="templates">
+                    <h4>Templates:</h4>
+                    <ul class="template-list">
+                        <li class="template">
+                          <span class="template-name">TNum</span>
+                            <span class="bound-delimiter"> as </span>
+                            <span class="bound">
+  <span class="type type-union">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      float
+    </span>
+  </span>
+
+  </span>
+                            </span>
+                        </li>
+                    </ul>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
                         <tr class="parameter">
-                          <td class="name"><var>$errors</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                        <tr class="parameter">
-                          <td class="name"><var>$datetime</var></td>
+                          <td class="name"><var>$amount</var></td>
                           <td class="delimiter"></td>
                           <td class="description comment"></td>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      never
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TNum
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-get-year" class="anchor" href="classes/kirameki/time/helpers.html#method-get-year">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    getYear
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-get-month" class="anchor" href="classes/kirameki/time/helpers.html#method-get-month">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    getMonth
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      1
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      12
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      1
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      12
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1378,9 +2035,9 @@
                 </div>
               </section>
               <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       int
@@ -1402,9 +2059,95 @@
     <span class="brace">&gt;</span>
   </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-get-day-of-year" class="anchor" href="classes/kirameki/time/helpers.html#method-get-day-of-year">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    getDayOfYear
+                  </span>
+                  (
                 </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="comment">
+                    <p>Returns the day of the year (1-366)</p>
+
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-get-days-in-month" class="anchor" href="classes/kirameki/time/helpers.html#method-get-days-in-month">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    getDaysInMonth
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
               </section>
             </li>
             <li class="method">
@@ -1451,9 +2194,9 @@
                 </div>
               </section>
               <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       int
@@ -1475,9 +2218,9 @@
     <span class="brace">&gt;</span>
   </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1512,17 +2255,90 @@
                     <p>Returns minutes (0-59)</p>
 
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-get-month" class="anchor" href="classes/kirameki/time/helpers.html#method-get-month">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    getMonth
+                  </span>
+                  (
                 </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      1
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      12
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      1
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      12
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
               </section>
             </li>
             <li class="method">
@@ -1553,17 +2369,332 @@
                 </div>
               </section>
               <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       float
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-get-year" class="anchor" href="classes/kirameki/time/helpers.html#method-get-year">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    getYear
+                  </span>
+                  (
                 </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-is-future" class="anchor" href="classes/kirameki/time/helpers.html#method-is-future">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    isFuture
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-union">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+  </span>
+                        <var>$context</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$context</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-is-leap-year" class="anchor" href="classes/kirameki/time/helpers.html#method-is-leap-year">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    isLeapYear
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-is-past" class="anchor" href="classes/kirameki/time/helpers.html#method-is-past">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    isPast
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-union">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+  </span>
+                        <var>$context</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$context</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-json-serialize" class="anchor" href="classes/kirameki/time/helpers.html#method-json-serialize">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    jsonSerialize
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-now" class="anchor" href="classes/kirameki/time/helpers.html#method-now">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                      static
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    now
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
               </section>
             </li>
             <li class="method">
@@ -1763,17 +2894,17 @@
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1973,21 +3104,21 @@
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
-              <a id="method-add-years" class="anchor" href="classes/kirameki/time/helpers.html#method-add-years">
+              <a id="method-subtract-days" class="anchor" href="classes/kirameki/time/helpers.html#method-subtract-days">
                 <i class="fa-solid fa-link"></i>
               </a>
               <section class="signature multi-line">
@@ -1997,7 +3128,7 @@
                   </span>
                   &nbsp;
                   <span class="name">
-                    addYears
+                    subtractDays
                   </span>
                   (
                 </div>
@@ -2035,21 +3166,21 @@
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
-              <a id="method-add-months" class="anchor" href="classes/kirameki/time/helpers.html#method-add-months">
+              <a id="method-subtract-hours" class="anchor" href="classes/kirameki/time/helpers.html#method-subtract-hours">
                 <i class="fa-solid fa-link"></i>
               </a>
               <section class="signature multi-line">
@@ -2059,87 +3190,7 @@
                   </span>
                   &nbsp;
                   <span class="name">
-                    addMonths
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-                        <var>$amount</var>
-                        <span class="delimiter">,</span>
-                    </li>
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                        <var>$overflow</var>
-                        <span class="default-set">
-                            <span class="assignment">=</span>
-                                <span class="value value-bool">false</span>
-                          </span>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$amount</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                        <tr class="parameter">
-                          <td class="name"><var>$overflow</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-add-days" class="anchor" href="classes/kirameki/time/helpers.html#method-add-days">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    addDays
+                    subtractHours
                   </span>
                   (
                 </div>
@@ -2177,21 +3228,21 @@
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
-              <a id="method-add-hours" class="anchor" href="classes/kirameki/time/helpers.html#method-add-hours">
+              <a id="method-subtract-minutes" class="anchor" href="classes/kirameki/time/helpers.html#method-subtract-minutes">
                 <i class="fa-solid fa-link"></i>
               </a>
               <section class="signature multi-line">
@@ -2201,7 +3252,7 @@
                   </span>
                   &nbsp;
                   <span class="name">
-                    addHours
+                    subtractMinutes
                   </span>
                   (
                 </div>
@@ -2239,212 +3290,17 @@
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-add-minutes" class="anchor" href="classes/kirameki/time/helpers.html#method-add-minutes">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    addMinutes
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-                        <var>$amount</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$amount</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-add-seconds" class="anchor" href="classes/kirameki/time/helpers.html#method-add-seconds">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    addSeconds
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-union">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      float
-    </span>
-  </span>
-
-  </span>
-                        <var>$amount</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$amount</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-subtract-years" class="anchor" href="classes/kirameki/time/helpers.html#method-subtract-years">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    subtractYears
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-                        <var>$amount</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$amount</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -2514,203 +3370,17 @@
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-subtract-days" class="anchor" href="classes/kirameki/time/helpers.html#method-subtract-days">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    subtractDays
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-                        <var>$amount</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$amount</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-subtract-hours" class="anchor" href="classes/kirameki/time/helpers.html#method-subtract-hours">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    subtractHours
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-                        <var>$amount</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$amount</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-subtract-minutes" class="anchor" href="classes/kirameki/time/helpers.html#method-subtract-minutes">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    subtractMinutes
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-                        <var>$amount</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$amount</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -2771,201 +3441,17 @@
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-add-unit" class="anchor" href="classes/kirameki/time/helpers.html#method-add-unit">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    addUnit
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-structure">
-      <span class="no-link structure-name">
-        Kirameki\Time\Unit
-      </span>
-  </span>
-                        <var>$unit</var>
-                        <span class="delimiter">,</span>
-                    </li>
-                    <li class="parameter">
-  <span class="type type-union">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      float
-    </span>
-  </span>
-
-  </span>
-                        <var>$amount</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$unit</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                        <tr class="parameter">
-                          <td class="name"><var>$amount</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-add-unit-with-clamping" class="anchor" href="classes/kirameki/time/helpers.html#method-add-unit-with-clamping">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    addUnitWithClamping
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-structure">
-      <span class="no-link structure-name">
-        Kirameki\Time\Unit
-      </span>
-  </span>
-                        <var>$unit</var>
-                        <span class="delimiter">,</span>
-                    </li>
-                    <li class="parameter">
-  <span class="type type-union">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      float
-    </span>
-  </span>
-
-  </span>
-                        <var>$amount</var>
-                        <span class="delimiter">,</span>
-                    </li>
-                    <li class="parameter">
-  <span class="type type-structure">
-      <span class="no-link structure-name">
-        Kirameki\Time\Unit
-      </span>
-  </span>
-                        <var>$clamp</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$unit</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                        <tr class="parameter">
-                          <td class="name"><var>$amount</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                        <tr class="parameter">
-                          <td class="name"><var>$clamp</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -3040,17 +3526,17 @@
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -3139,21 +3625,21 @@
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
-              <a id="method-to-start-of-unit" class="anchor" href="classes/kirameki/time/helpers.html#method-to-start-of-unit">
+              <a id="method-subtract-years" class="anchor" href="classes/kirameki/time/helpers.html#method-subtract-years">
                 <i class="fa-solid fa-link"></i>
               </a>
               <section class="signature multi-line">
@@ -3163,18 +3649,18 @@
                   </span>
                   &nbsp;
                   <span class="name">
-                    toStartOfUnit
+                    subtractYears
                   </span>
                   (
                 </div>
                 <ul class="parameters">
                     <li class="parameter">
-  <span class="type type-structure">
-      <span class="no-link structure-name">
-        Kirameki\Time\Unit
-      </span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
   </span>
-                        <var>$unit</var>
+                        <var>$amount</var>
 
                     </li>
                 </ul>
@@ -3195,23 +3681,346 @@
                     <h4>Parameters:</h4>
                     <table>
                         <tr class="parameter">
-                          <td class="name"><var>$unit</var></td>
+                          <td class="name"><var>$amount</var></td>
                           <td class="delimiter"></td>
                           <td class="description comment"></td>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-throw-last-error" class="anchor" href="classes/kirameki/time/helpers.html#method-throw-last-error">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                      static
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    throwLastError
+                  </span>
+                  (
                 </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      array&#123;errors: list&lt;string&gt;, warnings: list&lt;string&gt;}
+    </span>
+  </span>
+                        <var>$errors</var>
+                        <span class="delimiter">,</span>
+                    </li>
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                        <var>$datetime</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      never
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$errors</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$datetime</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      never
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-to-date-time-immutable" class="anchor" href="classes/kirameki/time/helpers.html#method-to-date-time-immutable">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    toDateTimeImmutable
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-structure">
+      <a href="https://www.php.net/manual/class.datetimeimmutable.php" class="external-link" target="_blank">
+        DateTimeImmutable
+      </a>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-structure">
+      <a href="https://www.php.net/manual/class.datetimeimmutable.php" class="external-link" target="_blank">
+        DateTimeImmutable
+      </a>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-to-end-of-day" class="anchor" href="classes/kirameki/time/helpers.html#method-to-end-of-day">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    toEndOfDay
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-to-end-of-hour" class="anchor" href="classes/kirameki/time/helpers.html#method-to-end-of-hour">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    toEndOfHour
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-to-end-of-minute" class="anchor" href="classes/kirameki/time/helpers.html#method-to-end-of-minute">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    toEndOfMinute
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-to-end-of-month" class="anchor" href="classes/kirameki/time/helpers.html#method-to-end-of-month">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    toEndOfMonth
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-to-end-of-second" class="anchor" href="classes/kirameki/time/helpers.html#method-to-end-of-second">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    toEndOfSecond
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
               </section>
             </li>
             <li class="method">
@@ -3263,58 +4072,17 @@
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-to-start-of-year" class="anchor" href="classes/kirameki/time/helpers.html#method-to-start-of-year">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    toStartOfYear
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -3345,1005 +4113,17 @@
                 </div>
               </section>
               <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-to-start-of-month" class="anchor" href="classes/kirameki/time/helpers.html#method-to-start-of-month">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    toStartOfMonth
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-to-end-of-month" class="anchor" href="classes/kirameki/time/helpers.html#method-to-end-of-month">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    toEndOfMonth
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-to-start-of-day" class="anchor" href="classes/kirameki/time/helpers.html#method-to-start-of-day">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    toStartOfDay
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-to-end-of-day" class="anchor" href="classes/kirameki/time/helpers.html#method-to-end-of-day">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    toEndOfDay
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-to-start-of-hour" class="anchor" href="classes/kirameki/time/helpers.html#method-to-start-of-hour">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    toStartOfHour
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-to-end-of-hour" class="anchor" href="classes/kirameki/time/helpers.html#method-to-end-of-hour">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    toEndOfHour
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-to-start-of-minute" class="anchor" href="classes/kirameki/time/helpers.html#method-to-start-of-minute">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    toStartOfMinute
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-to-end-of-minute" class="anchor" href="classes/kirameki/time/helpers.html#method-to-end-of-minute">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    toEndOfMinute
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-to-start-of-second" class="anchor" href="classes/kirameki/time/helpers.html#method-to-start-of-second">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    toStartOfSecond
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-to-end-of-second" class="anchor" href="classes/kirameki/time/helpers.html#method-to-end-of-second">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    toEndOfSecond
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-clamp" class="anchor" href="classes/kirameki/time/helpers.html#method-clamp">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    clamp
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-union">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      null
-    </span>
-  </span>
-
-  </span>
-                        <var>$lower</var>
-                        <span class="default-set">
-                            <span class="assignment">=</span>
-                                <span class="value value-null">null</span>
-                          </span>
-                        <span class="delimiter">,</span>
-                    </li>
-                    <li class="parameter">
-  <span class="type type-union">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      null
-    </span>
-  </span>
-
-  </span>
-                        <var>$upper</var>
-                        <span class="default-set">
-                            <span class="assignment">=</span>
-                                <span class="value value-null">null</span>
-                          </span>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$lower</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                        <tr class="parameter">
-                          <td class="name"><var>$upper</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-between" class="anchor" href="classes/kirameki/time/helpers.html#method-between">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    between
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                        <var>$min</var>
-                        <span class="delimiter">,</span>
-                    </li>
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                        <var>$max</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$min</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                        <tr class="parameter">
-                          <td class="name"><var>$max</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-is-past" class="anchor" href="classes/kirameki/time/helpers.html#method-is-past">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    isPast
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-union">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      null
-    </span>
-  </span>
-
-  </span>
-                        <var>$context</var>
-                        <span class="default-set">
-                            <span class="assignment">=</span>
-                                <span class="value value-null">null</span>
-                          </span>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$context</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-is-future" class="anchor" href="classes/kirameki/time/helpers.html#method-is-future">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    isFuture
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-union">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      null
-    </span>
-  </span>
-
-  </span>
-                        <var>$context</var>
-                        <span class="default-set">
-                            <span class="assignment">=</span>
-                                <span class="value value-null">null</span>
-                          </span>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$context</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-get-days-in-month" class="anchor" href="classes/kirameki/time/helpers.html#method-get-days-in-month">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    getDaysInMonth
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-get-day-of-year" class="anchor" href="classes/kirameki/time/helpers.html#method-get-day-of-year">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    getDayOfYear
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="comment">
-                    <p>Returns the day of the year (1-366)</p>
-
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-is-leap-year" class="anchor" href="classes/kirameki/time/helpers.html#method-is-leap-year">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    isLeapYear
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-json-serialize" class="anchor" href="classes/kirameki/time/helpers.html#method-json-serialize">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    jsonSerialize
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-to-date-time-immutable" class="anchor" href="classes/kirameki/time/helpers.html#method-to-date-time-immutable">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    toDateTimeImmutable
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-structure">
-      <a href="https://www.php.net/manual/class.datetimeimmutable.php" class="external-link" target="_blank">
-        DateTimeImmutable
-      </a>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-structure">
-      <a href="https://www.php.net/manual/class.datetimeimmutable.php" class="external-link" target="_blank">
-        DateTimeImmutable
-      </a>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-to-int" class="anchor" href="classes/kirameki/time/helpers.html#method-to-int">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    toInt
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -4374,17 +4154,366 @@
                 </div>
               </section>
               <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       float
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-to-int" class="anchor" href="classes/kirameki/time/helpers.html#method-to-int">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    toInt
+                  </span>
+                  (
                 </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-to-start-of-day" class="anchor" href="classes/kirameki/time/helpers.html#method-to-start-of-day">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    toStartOfDay
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-to-start-of-hour" class="anchor" href="classes/kirameki/time/helpers.html#method-to-start-of-hour">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    toStartOfHour
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-to-start-of-minute" class="anchor" href="classes/kirameki/time/helpers.html#method-to-start-of-minute">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    toStartOfMinute
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-to-start-of-month" class="anchor" href="classes/kirameki/time/helpers.html#method-to-start-of-month">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    toStartOfMonth
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-to-start-of-second" class="anchor" href="classes/kirameki/time/helpers.html#method-to-start-of-second">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    toStartOfSecond
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-to-start-of-unit" class="anchor" href="classes/kirameki/time/helpers.html#method-to-start-of-unit">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    toStartOfUnit
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-structure">
+      <span class="no-link structure-name">
+        Kirameki\Time\Unit
+      </span>
+  </span>
+                        <var>$unit</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$unit</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-to-start-of-year" class="anchor" href="classes/kirameki/time/helpers.html#method-to-start-of-year">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    toStartOfYear
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
               </section>
             </li>
             <li class="method">
@@ -4415,146 +4544,17 @@
                 </div>
               </section>
               <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method---to-string" class="anchor" href="classes/kirameki/time/helpers.html#method---to-string">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    __toString
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-ensure-positive" class="anchor" href="classes/kirameki/time/helpers.html#method-ensure-positive">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    protected
-                      static
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    ensurePositive
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TNum
-    </span>
-  </span>
-                        <var>$amount</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TNum
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="templates">
-                  <h4>Templates:</h4>
-                  <ul class="template-list">
-                      <li class="template">
-                        <span class="template-name">TNum</span>
-                          <span class="bound-delimiter"> as </span>
-                          <span class="bound">
-  <span class="type type-union">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      float
-    </span>
-  </span>
-
-  </span>
-                          </span>
-                      </li>
-                  </ul>
-                </div>
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$amount</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TNum
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
               </section>
             </li>
         </ul>

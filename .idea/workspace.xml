@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f11b0d80-afbf-412b-9a1d-8e88f298fae1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/TraitInfo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Support/PhpFile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/classes/kirameki/backoff/exponential-backoff.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/kirameki/backoff/exponential-backoff.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/classes/kirameki/clock/clock-interface.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/kirameki/clock/clock-interface.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/classes/kirameki/clock/fixed-clock.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/kirameki/clock/fixed-clock.html" afterDir="false" />
@@ -147,20 +146,13 @@
       <change beforePath="$PROJECT_DIR$/docs/classes/kirameki/time/instant.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/kirameki/time/instant.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/classes/kirameki/time/time.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/kirameki/time/time.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/ClassInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ClassInfo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ConstantInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ConstantInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MemberInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MemberInfo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/MethodInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MethodInfo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ParameterInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ParameterInfo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/StructureInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/StructureInfo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DocGenerator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DocGenerator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Support/ClassFile.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Support/CommentParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Support/CommentParser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Support/CommentParserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Support/CommentParserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Support/PhpDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Support/PhpDoc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Support/PhpFile.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Support/PhpFile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Support/TypeResolver.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Support/TypeResolver.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/class.latte" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/class.latte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/type.latte" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/type.latte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -322,6 +314,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

@@ -8,6 +8,7 @@
     "kirameki/utils": "dev-main",
     "latte/latte": "^3.0",
     "league/commonmark": "^2.7",
+    "nikic/php-parser": "^5.6",
     "phpstan/phpdoc-parser": "^2.3"
   },
   "require-dev": {

@@ -108,11 +108,11 @@ blockquote {
         .extends,
         .implements {
             display: flex;
+            align-items: baseline;
 
             ul {
                 display: flex;
                 flex-wrap: wrap;
-                align-items: center;
                 margin-left: 0.5rem;
                 font-family: var(--code-font-family);
                 font-size: var(--code-font-size);
@@ -132,6 +132,14 @@ blockquote {
             margin-left: 0.25rem;
             content: "|";
             color: #dadada;
+        }
+        .traits {
+            ul {
+                li {
+                    margin: 0.25rem 0.5rem;
+                    display: flex;
+                }
+            }
         }
         .constants {
             h3 {
@@ -249,6 +257,18 @@ blockquote {
                             font-family: var(--code-font-family);
                             font-size: var(--code-font-size);
                             margin: 0.25rem 0.5rem;
+                        }
+                    }
+                    .declared-in {
+                        .declaration {
+                            display: flex;
+                            align-items: center;
+                            padding: 0 0.5rem;
+                            font-size: var(--code-font-size);
+
+                            .type-icon {
+                                margin-right: 0.25rem;
+                            }
                         }
                     }
                     .parameters {
@@ -387,5 +407,20 @@ blockquote {
             padding: 0.4rem 0.5rem;
             overflow-x: auto;
         }
+    }
+    .type-icon {
+        border-radius: 1rem;
+        border: 1px solid #a5b4fc;
+        background-color: #f3f6ff;
+        color: #4c69ff;
+        font-size: 0.6rem;
+        font-weight: bold;
+        padding: 0.1rem 0.3rem;
+        text-transform: uppercase;
+    }
+    .type-icon.type-class {
+    }
+    .type-icon.type-trait {
+        border-style: dashed;
     }
 }

@@ -170,7 +170,7 @@ class TypeResolver
      */
     protected function convertNameToVarType(string $name, array $generics, ?PhpDoc $doc = null): VarType
     {
-        $fqn = $this->getFullyQualifiedName($this->file, $name) ?? $name;
+        $fqn = $this->getFullyQualifiedName($name) ?? $name;
 
         if (class_exists($fqn)) {
             $reflection = new ReflectionClass($fqn);
@@ -207,7 +207,7 @@ class TypeResolver
     }
 
     /**
-     * @param ReflectionClass<object> $reflection
+     * @param ReflectionClass<object>|ReflectionClass<Closure> $reflection
      * @return ClassInfo
      */
     public function instantiateClassInfo(ReflectionClass $reflection): ClassInfo
@@ -239,12 +239,10 @@ class TypeResolver
     /**
      * Resolves the fully qualified class name from a given name within the context of a class file.
      *
-     * @param PhpFile $file
      * @param string|Stringable $name
      * @return string|null
      */
     public function getFullyQualifiedName(
-        PhpFile $file,
         string|Stringable $name,
     ): ?string
     {
@@ -258,14 +256,14 @@ class TypeResolver
         }
 
         // When the type is imported via use statement
-        $class = $file->imports[$name] ?? null;
+        $class = $this->file->imports[$name] ?? null;
         if (is_string($class)) {
             return $class;
         }
 
         // When the type is a sibling class in the same namespace
         /** @var class-string $sibling */
-        $sibling = $file->reflection->getNamespaceName() . '\\' . $name;
+        $sibling = $this->file->reflection->getNamespaceName() . '\\' . $name;
         if (class_exists($sibling) || interface_exists($sibling) || trait_exists($sibling) || enum_exists($sibling)) {
             return $sibling;
         }

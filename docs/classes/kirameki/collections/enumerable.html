@@ -942,55 +942,6 @@
         <h3>Methods</h3>
         <ul class="methods">
             <li class="method">
-              <a id="method-reindex" class="anchor" href="classes/kirameki/collections/enumerable.html#method-reindex">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    protected
-                      abstract
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    reindex
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="comment">
-                    <p>On certain operations, there are options to reindex the array or not.<br />
-This is a helper method to determine whether the array should be re-indexed.<br />
-For example, when you remove an item from the array, the array should be<br />
-re-indexed if it is a vector (Vec), but not when it is a hash-table (Map).</p>
-
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
               <a id="method-all" class="anchor" href="classes/kirameki/collections/enumerable.html#method-all">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1038,9 +989,9 @@ re-indexed if it is a vector (Vec), but not when it is a hash-table (Map).</p>
                     <p>Returns the inner items as array.</p>
 
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -1062,9 +1013,151 @@ re-indexed if it is a vector (Vec), but not when it is a hash-table (Map).</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-as-array-recursive" class="anchor" href="classes/kirameki/collections/enumerable.html#method-as-array-recursive">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    asArrayRecursive
+                  </span>
+                  (
                 </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TKey
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                        <var>$items</var>
+                        <span class="delimiter">,</span>
+                    </li>
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                        <var>$depth</var>
+                        <span class="delimiter">,</span>
+                    </li>
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                        <var>$validate</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-bool">false</span>
+                          </span>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      array
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TKey
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$items</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$depth</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$validate</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      array
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TKey
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
               </section>
             </li>
             <li class="method">
@@ -1122,17 +1215,17 @@ Throws <code>IndexOutOfBoundsException</code> if the index does not exist.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1197,14 +1290,14 @@ Throws <code>IndexOutOfBoundsException</code> if the index does not exist.</p>
 Returns <code>$default</code> if the given index does not exist.</p>
 
                   </div>
-                <div class="templates">
-                  <h4>Templates:</h4>
-                  <ul class="template-list">
-                      <li class="template">
-                        <span class="template-name">TDefault</span>
-                      </li>
-                  </ul>
-                </div>
+                  <div class="templates">
+                    <h4>Templates:</h4>
+                    <ul class="template-list">
+                        <li class="template">
+                          <span class="template-name">TDefault</span>
+                        </li>
+                    </ul>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
@@ -1222,9 +1315,9 @@ Returns <code>$default</code> if the given index does not exist.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -1239,9 +1332,9 @@ Returns <code>$default</code> if the given index does not exist.</p>
   </span>
 
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1308,9 +1401,9 @@ Returns <strong>null</strong> if the given index does not exist.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -1325,9 +1418,9 @@ Returns <strong>null</strong> if the given index does not exist.</p>
   </span>
 
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1410,9 +1503,9 @@ Returns <strong>null</strong> if the given index does not exist.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-structure">
       <a href="classes/kirameki/collections/vec.html">
         Kirameki\Collections\Vec
@@ -1428,9 +1521,9 @@ Returns <strong>null</strong> if the given index does not exist.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1466,17 +1559,17 @@ Returns <strong>null</strong> if the given index does not exist.</p>
 Throws <code>InvalidArgumentException</code> if empty or all elements are <strong>null</strong>.</p>
 
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1521,9 +1614,9 @@ Throws <code>InvalidArgumentException</code> if empty or all elements are <stron
 Returns <strong>null</strong> if collection is empty or if all elements are <strong>null</strong>.</p>
 
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -1538,9 +1631,9 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
   </span>
 
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1637,14 +1730,14 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
                     <p>Returns a new <code>Vec</code> that contains the results sent from the Generator returned by the <code>$callback</code>.</p>
 
                   </div>
-                <div class="templates">
-                  <h4>Templates:</h4>
-                  <ul class="template-list">
-                      <li class="template">
-                        <span class="template-name">TMapValue</span>
-                      </li>
-                  </ul>
-                </div>
+                  <div class="templates">
+                    <h4>Templates:</h4>
+                    <ul class="template-list">
+                        <li class="template">
+                          <span class="template-name">TMapValue</span>
+                        </li>
+                    </ul>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
@@ -1656,9 +1749,9 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-structure">
       <a href="classes/kirameki/collections/vec.html">
         Kirameki\Collections\Vec
@@ -1674,9 +1767,9 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
     <span class="brace">&gt;</span>
   </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1733,17 +1826,17 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1817,17 +1910,17 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1901,17 +1994,17 @@ Returns <strong>null</strong> if collection is empty or if all elements are <str
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1985,17 +2078,17 @@ collection, <strong>false</strong> otherwise.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -2069,17 +2162,17 @@ collection, <strong>false</strong> otherwise.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -2192,9 +2285,9 @@ Defaults to <strong>null</strong>.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       int
@@ -2216,9 +2309,9 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -2275,17 +2368,17 @@ Defaults to <strong>null</strong>.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -2359,17 +2452,17 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -2511,17 +2604,17 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -2578,17 +2671,17 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -2645,17 +2738,17 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -2712,17 +2805,17 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -2805,17 +2898,17 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -2872,17 +2965,17 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -2964,17 +3057,17 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -3056,17 +3149,17 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -3101,17 +3194,17 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                     <p>Returns duplicate values.</p>
 
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -3202,155 +3295,17 @@ the numbers 1 and 10. Throws <code>InvalidArgumentException</code> if <code>$end
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-ensure-count-is" class="anchor" href="classes/kirameki/collections/enumerable.html#method-ensure-count-is">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    ensureCountIs
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-                        <var>$size</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      $this
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="comment">
-                    <p>Ensures that count of this collection is equal to <code>$size</code>.<br />
-Throws <code>CountMismatchException</code> if count is not equal to <code>$size</code>.</p>
-
-                  </div>
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$size</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"><p>Expected size of the iterable.</p>
-</td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      $this
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-ensure-element-type" class="anchor" href="classes/kirameki/collections/enumerable.html#method-ensure-element-type">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    ensureElementType
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                        <var>$type</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      $this
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="comment">
-                    <p>Ensures that all elements of the collection are of the given <code>$type</code>.<br />
-Throws <code>InvalidTypeException</code> if <code>$type</code> is not a valid type.<br />
-Throws <code>TypeMismatchException</code> if any element is not of the expected type.<br />
-Empty collections are considered valid.</p>
-
-                  </div>
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$type</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"><p>Type(s) to be checked against. Ex: 'int|string|null'</p>
-</td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      $this
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -3423,17 +3378,155 @@ Empty collections are considered valid.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-ensure-count-is" class="anchor" href="classes/kirameki/collections/enumerable.html#method-ensure-count-is">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    ensureCountIs
+                  </span>
+                  (
                 </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                        <var>$size</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      $this
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="comment">
+                    <p>Ensures that count of this collection is equal to <code>$size</code>.<br />
+Throws <code>CountMismatchException</code> if count is not equal to <code>$size</code>.</p>
+
+                  </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$size</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"><p>Expected size of the iterable.</p>
+</td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      $this
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-ensure-element-type" class="anchor" href="classes/kirameki/collections/enumerable.html#method-ensure-element-type">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    ensureElementType
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                        <var>$type</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      $this
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="comment">
+                    <p>Ensures that all elements of the collection are of the given <code>$type</code>.<br />
+Throws <code>InvalidTypeException</code> if <code>$type</code> is not a valid type.<br />
+Throws <code>TypeMismatchException</code> if any element is not of the expected type.<br />
+Empty collections are considered valid.</p>
+
+                  </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$type</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"><p>Type(s) to be checked against. Ex: 'int|string|null'</p>
+</td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      $this
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
               </section>
             </li>
             <li class="method">
@@ -3517,17 +3610,17 @@ Empty collections are considered valid.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -3626,17 +3719,17 @@ Defaults to <strong>null</strong>.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -3719,17 +3812,17 @@ Throws <code>NoMatchFoundException</code> if no condition is met.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -3821,9 +3914,9 @@ Returns <strong>null</strong> if there were no matches.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-union">
   <span class="type type-named">
     <span class="no-link named-var">
@@ -3838,9 +3931,9 @@ Returns <strong>null</strong> if there were no matches.</p>
   </span>
 
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -3944,14 +4037,14 @@ If <code>$condition</code> is set, the first element which meets the condition i
 If condition has no matches, value of <code>$default</code> is returned.</p>
 
                   </div>
-                <div class="templates">
-                  <h4>Templates:</h4>
-                  <ul class="template-list">
-                      <li class="template">
-                        <span class="template-name">TDefault</span>
-                      </li>
-                  </ul>
-                </div>
+                  <div class="templates">
+                    <h4>Templates:</h4>
+                    <ul class="template-list">
+                        <li class="template">
+                          <span class="template-name">TDefault</span>
+                        </li>
+                    </ul>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
@@ -3970,9 +4063,9 @@ Defaults to <strong>null</strong>.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -3987,9 +4080,9 @@ Defaults to <strong>null</strong>.</p>
   </span>
 
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -4096,9 +4189,9 @@ Defaults to <strong>null</strong>.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -4113,9 +4206,9 @@ Defaults to <strong>null</strong>.</p>
   </span>
 
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -4203,14 +4296,14 @@ Defaults to <strong>null</strong>.</p>
                     <p>Take all the values in the collection and fold it into a single value.</p>
 
                   </div>
-                <div class="templates">
-                  <h4>Templates:</h4>
-                  <ul class="template-list">
-                      <li class="template">
-                        <span class="template-name">U</span>
-                      </li>
-                  </ul>
-                </div>
+                  <div class="templates">
+                    <h4>Templates:</h4>
+                    <ul class="template-list">
+                        <li class="template">
+                          <span class="template-name">U</span>
+                        </li>
+                    </ul>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
@@ -4230,17 +4323,17 @@ The returned value would be used as $result for the subsequent call.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-template">
     <span class="no-link template-name">
       U
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -4328,22 +4421,22 @@ The returned value would be used as $result for the subsequent call.</p>
 returned by <code>$callback</code>.</p>
 
                   </div>
-                <div class="templates">
-                  <h4>Templates:</h4>
-                  <ul class="template-list">
-                      <li class="template">
-                        <span class="template-name">TGroupKey</span>
-                          <span class="bound-delimiter"> as </span>
-                          <span class="bound">
+                  <div class="templates">
+                    <h4>Templates:</h4>
+                    <ul class="template-list">
+                        <li class="template">
+                          <span class="template-name">TGroupKey</span>
+                            <span class="bound-delimiter"> as </span>
+                            <span class="bound">
   <span class="type type-named">
     <span class="no-link named-var">
       array-key
     </span>
   </span>
-                          </span>
-                      </li>
-                  </ul>
-                </div>
+                            </span>
+                        </li>
+                    </ul>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
@@ -4355,9 +4448,9 @@ returned by <code>$callback</code>.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-structure">
       <a href="classes/kirameki/collections/map.html">
         Kirameki\Collections\Map
@@ -4379,9 +4472,9 @@ returned by <code>$callback</code>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -4455,17 +4548,17 @@ returned by <code>$callback</code>.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -4538,17 +4631,17 @@ returned by <code>$callback</code>.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -4583,17 +4676,17 @@ returned by <code>$callback</code>.</p>
                     <p>Returns <strong>true</strong> if empty, <strong>false</strong> otherwise.</p>
 
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -4628,17 +4721,17 @@ returned by <code>$callback</code>.</p>
                     <p>Returns <strong>true</strong> if not empty, <strong>false</strong> otherwise.</p>
 
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -4753,17 +4846,17 @@ also be added to the result string.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -4867,22 +4960,22 @@ already exist in <code>$array</code> as a key. Set <code>$overwrite</code> to <s
 suppress this error.</p>
 
                   </div>
-                <div class="templates">
-                  <h4>Templates:</h4>
-                  <ul class="template-list">
-                      <li class="template">
-                        <span class="template-name">TNewKey</span>
-                          <span class="bound-delimiter"> as </span>
-                          <span class="bound">
+                  <div class="templates">
+                    <h4>Templates:</h4>
+                    <ul class="template-list">
+                        <li class="template">
+                          <span class="template-name">TNewKey</span>
+                            <span class="bound-delimiter"> as </span>
+                            <span class="bound">
   <span class="type type-named">
     <span class="no-link named-var">
       array-key
     </span>
   </span>
-                          </span>
-                      </li>
-                  </ul>
-                </div>
+                            </span>
+                        </li>
+                    </ul>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
@@ -4901,9 +4994,9 @@ If <strong>false</strong>, exception will be thrown on duplicate keys.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-structure">
       <a href="classes/kirameki/collections/map.html">
         Kirameki\Collections\Map
@@ -4925,9 +5018,9 @@ If <strong>false</strong>, exception will be thrown on duplicate keys.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -5026,17 +5119,17 @@ Defaults to <strong>null</strong>.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -5134,17 +5227,17 @@ Defaults to <strong>null</strong>.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -5250,9 +5343,9 @@ Defaults to <strong>null</strong>.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-union">
   <span class="type type-named">
     <span class="no-link named-var">
@@ -5267,9 +5360,9 @@ Defaults to <strong>null</strong>.</p>
   </span>
 
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -5373,14 +5466,14 @@ If <code>$condition</code> is set, the last element which meets the condition is
 Returns the value of <code>$default</code> if no condition met.</p>
 
                   </div>
-                <div class="templates">
-                  <h4>Templates:</h4>
-                  <ul class="template-list">
-                      <li class="template">
-                        <span class="template-name">TDefault</span>
-                      </li>
-                  </ul>
-                </div>
+                  <div class="templates">
+                    <h4>Templates:</h4>
+                    <ul class="template-list">
+                        <li class="template">
+                          <span class="template-name">TDefault</span>
+                        </li>
+                    </ul>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
@@ -5399,9 +5492,9 @@ Defaults to <strong>null</strong>.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -5416,9 +5509,9 @@ Defaults to <strong>null</strong>.</p>
   </span>
 
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -5525,9 +5618,9 @@ Defaults to <strong>null</strong>.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -5542,9 +5635,9 @@ Defaults to <strong>null</strong>.</p>
   </span>
 
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -5660,25 +5753,25 @@ Defaults to <strong>null</strong>.</p>
                     <p>Returns a new Map with key value pair returned for each iterable returned by calling <code>$callback</code>.</p>
 
                   </div>
-                <div class="templates">
-                  <h4>Templates:</h4>
-                  <ul class="template-list">
-                      <li class="template">
-                        <span class="template-name">TMapKey</span>
-                          <span class="bound-delimiter"> as </span>
-                          <span class="bound">
+                  <div class="templates">
+                    <h4>Templates:</h4>
+                    <ul class="template-list">
+                        <li class="template">
+                          <span class="template-name">TMapKey</span>
+                            <span class="bound-delimiter"> as </span>
+                            <span class="bound">
   <span class="type type-named">
     <span class="no-link named-var">
       array-key
     </span>
   </span>
-                          </span>
-                      </li>
-                      <li class="template">
-                        <span class="template-name">TMapValue</span>
-                      </li>
-                  </ul>
-                </div>
+                            </span>
+                        </li>
+                        <li class="template">
+                          <span class="template-name">TMapValue</span>
+                        </li>
+                    </ul>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
@@ -5697,9 +5790,9 @@ If <strong>false</strong>, exception will be thrown on duplicate keys.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-structure">
       <a href="classes/kirameki/collections/map.html">
         Kirameki\Collections\Map
@@ -5721,9 +5814,9 @@ If <strong>false</strong>, exception will be thrown on duplicate keys.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -5823,17 +5916,17 @@ Returned value will be used to determine the largest number.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -5943,9 +6036,9 @@ Must be int or float.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -5960,9 +6053,9 @@ Must be int or float.</p>
   </span>
 
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -6041,17 +6134,17 @@ iterable that comes later will overwrite the value in the key.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -6160,17 +6253,17 @@ Will merge recursively up to the given depth.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -6271,146 +6364,17 @@ Must be int or float.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-min-or-null" class="anchor" href="classes/kirameki/collections/enumerable.html#method-min-or-null">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    minOrNull
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-union">
-  <span class="type type-callable">
-  <span class="type type-structure">
-      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
-        Closure
-      </a>
-  </span>
-    <span class="parenthesis">(</span>
-
-
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-      <span class="delimiter">,&nbsp;</span>
-
-
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TKey
-    </span>
-  </span>
-
-    <span class="parenthesis">):&nbsp;</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      mixed
-    </span>
-  </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      null
-    </span>
-  </span>
-
-  </span>
-                        <var>$by</var>
-                        <span class="default-set">
-                            <span class="assignment">=</span>
-                                <span class="value value-null">null</span>
-                          </span>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-union">
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      null
-    </span>
-  </span>
-
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="comment">
-                    <p>Returns the smallest element in the collection.<br />
-If <code>$by</code> is given, each element will be passed to the closure and the<br />
-smallest value returned from the closure will be returned instead.<br />
-Returns <strong>null</strong> if the collection is empty.<br />
-Throws <code>InvalidElementException</code> if collection contains NAN.</p>
-
-                  </div>
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$by</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"><p>[Optional] Called for every element in the collection.<br />
-Returned value will be used to determine the smallest number.<br />
-Must be int or float.</p>
-</td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-union">
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      null
-    </span>
-  </span>
-
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -6520,9 +6484,9 @@ Returned value will be used to determine the highest number.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -6538,9 +6502,373 @@ Returned value will be used to determine the highest number.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-min-or-null" class="anchor" href="classes/kirameki/collections/enumerable.html#method-min-or-null">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    minOrNull
+                  </span>
+                  (
                 </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-union">
+  <span class="type type-callable">
+  <span class="type type-structure">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+    <span class="parenthesis">(</span>
+
+
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+      <span class="delimiter">,&nbsp;</span>
+
+
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TKey
+    </span>
+  </span>
+
+    <span class="parenthesis">):&nbsp;</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+  </span>
+                        <var>$by</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-union">
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="comment">
+                    <p>Returns the smallest element in the collection.<br />
+If <code>$by</code> is given, each element will be passed to the closure and the<br />
+smallest value returned from the closure will be returned instead.<br />
+Returns <strong>null</strong> if the collection is empty.<br />
+Throws <code>InvalidElementException</code> if collection contains NAN.</p>
+
+                  </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$by</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"><p>[Optional] Called for every element in the collection.<br />
+Returned value will be used to determine the smallest number.<br />
+Must be int or float.</p>
+</td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-union">
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-new-map" class="anchor" href="classes/kirameki/collections/enumerable.html#method-new-map">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    newMap
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TNewKey
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TNewValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                        <var>$iterable</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-structure">
+      <a href="classes/kirameki/collections/map.html">
+        Kirameki\Collections\Map
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TNewKey
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TNewValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="templates">
+                    <h4>Templates:</h4>
+                    <ul class="template-list">
+                        <li class="template">
+                          <span class="template-name">TNewKey</span>
+                            <span class="bound-delimiter"> as </span>
+                            <span class="bound">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      array-key
+    </span>
+  </span>
+                            </span>
+                        </li>
+                        <li class="template">
+                          <span class="template-name">TNewValue</span>
+                        </li>
+                    </ul>
+                  </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$iterable</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-structure">
+      <a href="classes/kirameki/collections/map.html">
+        Kirameki\Collections\Map
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TNewKey
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TNewValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-new-vec" class="anchor" href="classes/kirameki/collections/enumerable.html#method-new-vec">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    newVec
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TNewValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                        <var>$iterable</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-structure">
+      <a href="classes/kirameki/collections/vec.html">
+        Kirameki\Collections\Vec
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TNewValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="templates">
+                    <h4>Templates:</h4>
+                    <ul class="template-list">
+                        <li class="template">
+                          <span class="template-name">TNewValue</span>
+                        </li>
+                    </ul>
+                  </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$iterable</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-structure">
+      <a href="classes/kirameki/collections/vec.html">
+        Kirameki\Collections\Vec
+      </a>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TNewValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
               </section>
             </li>
             <li class="method">
@@ -6625,17 +6953,17 @@ the second collection.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       array&#123;static, static}
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -6699,14 +7027,14 @@ the second collection.</p>
 so it can be used in a chain.</p>
 
                   </div>
-                <div class="templates">
-                  <h4>Templates:</h4>
-                  <ul class="template-list">
-                      <li class="template">
-                        <span class="template-name">TPipe</span>
-                      </li>
-                  </ul>
-                </div>
+                  <div class="templates">
+                    <h4>Templates:</h4>
+                    <ul class="template-list">
+                        <li class="template">
+                          <span class="template-name">TPipe</span>
+                        </li>
+                    </ul>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
@@ -6719,17 +7047,17 @@ The result of the callback will be returned.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-template">
     <span class="no-link template-name">
       TPipe
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -6839,17 +7167,17 @@ The result of the callback will be returned.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -6932,17 +7260,17 @@ Throws <code>EmptyNotAllowedException</code> if collection is empty.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       float
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -7034,9 +7362,9 @@ Returns <strong>null</strong> if the collection is empty.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-union">
   <span class="type type-named">
     <span class="no-link named-var">
@@ -7051,9 +7379,9 @@ Returns <strong>null</strong> if the collection is empty.</p>
   </span>
 
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -7147,17 +7475,17 @@ Third argument contains the current key.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -7247,14 +7575,14 @@ Third argument contains the current key.</p>
 Returns <code>$default</code> if the collection is empty.</p>
 
                   </div>
-                <div class="templates">
-                  <h4>Templates:</h4>
-                  <ul class="template-list">
-                      <li class="template">
-                        <span class="template-name">TDefault</span>
-                      </li>
-                  </ul>
-                </div>
+                  <div class="templates">
+                    <h4>Templates:</h4>
+                    <ul class="template-list">
+                        <li class="template">
+                          <span class="template-name">TDefault</span>
+                        </li>
+                    </ul>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
@@ -7274,17 +7602,17 @@ Third argument contains the current key.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -7387,9 +7715,9 @@ Third argument contains the current key.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -7404,9 +7732,58 @@ Third argument contains the current key.</p>
   </span>
 
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-reindex" class="anchor" href="classes/kirameki/collections/enumerable.html#method-reindex">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                      abstract
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    reindex
+                  </span>
+                  (
                 </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="comment">
+                    <p>On certain operations, there are options to reindex the array or not.<br />
+This is a helper method to determine whether the array should be re-indexed.<br />
+For example, when you remove an item from the array, the array should be<br />
+re-indexed if it is a vector (Vec), but not when it is a hash-table (Map).</p>
+
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
               </section>
             </li>
             <li class="method">
@@ -7529,17 +7906,17 @@ Any value previously set will be reset.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -7575,17 +7952,17 @@ Any value previously set will be reset.</p>
 in reverse order.</p>
 
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -7644,17 +8021,17 @@ to the left instead.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -7675,10 +8052,10 @@ to the left instead.</p>
                 <ul class="parameters">
                     <li class="parameter">
   <span class="type type-union">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      Randomizer
-    </span>
+  <span class="type type-structure">
+      <a href="https://www.php.net/manual/class.random-randomizer.php" class="external-link" target="_blank">
+        Random\Randomizer
+      </a>
   </span>
     <span class="delimiter">|</span>
   <span class="type type-named">
@@ -7727,17 +8104,17 @@ Defaults to <strong>null</strong>.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -7780,10 +8157,10 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                     <li class="parameter">
   <span class="type type-union">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      Randomizer
-    </span>
+  <span class="type type-structure">
+      <a href="https://www.php.net/manual/class.random-randomizer.php" class="external-link" target="_blank">
+        Random\Randomizer
+      </a>
   </span>
     <span class="delimiter">|</span>
   <span class="type type-named">
@@ -7856,9 +8233,9 @@ Defaults to <strong>null</strong>.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-structure">
       <a href="classes/kirameki/collections/vec.html">
         Kirameki\Collections\Vec
@@ -7874,9 +8251,9 @@ Defaults to <strong>null</strong>.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -7906,10 +8283,10 @@ Defaults to <strong>null</strong>.</p>
                     </li>
                     <li class="parameter">
   <span class="type type-union">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      Randomizer
-    </span>
+  <span class="type type-structure">
+      <a href="https://www.php.net/manual/class.random-randomizer.php" class="external-link" target="_blank">
+        Random\Randomizer
+      </a>
   </span>
     <span class="delimiter">|</span>
   <span class="type type-named">
@@ -7954,14 +8331,14 @@ Defaults to <strong>null</strong>.</p>
 Returns <code>$default</code> if the collection is empty.</p>
 
                   </div>
-                <div class="templates">
-                  <h4>Templates:</h4>
-                  <ul class="template-list">
-                      <li class="template">
-                        <span class="template-name">TDefault</span>
-                      </li>
-                  </ul>
-                </div>
+                  <div class="templates">
+                    <h4>Templates:</h4>
+                    <ul class="template-list">
+                        <li class="template">
+                          <span class="template-name">TDefault</span>
+                        </li>
+                    </ul>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
@@ -7981,9 +8358,9 @@ Defaults to <strong>null</strong>.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -7998,9 +8375,9 @@ Defaults to <strong>null</strong>.</p>
   </span>
 
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -8021,10 +8398,10 @@ Defaults to <strong>null</strong>.</p>
                 <ul class="parameters">
                     <li class="parameter">
   <span class="type type-union">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      Randomizer
-    </span>
+  <span class="type type-structure">
+      <a href="https://www.php.net/manual/class.random-randomizer.php" class="external-link" target="_blank">
+        Random\Randomizer
+      </a>
   </span>
     <span class="delimiter">|</span>
   <span class="type type-named">
@@ -8082,9 +8459,9 @@ Defaults to <strong>null</strong>.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-union">
   <span class="type type-template">
     <span class="no-link template-name">
@@ -8099,9 +8476,9 @@ Defaults to <strong>null</strong>.</p>
   </span>
 
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -8185,17 +8562,17 @@ the collection is empty, <strong>false</strong> otherwise.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -8279,17 +8656,17 @@ if any iterations that run through the <code>$condition</code> returned <strong>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -8373,17 +8750,17 @@ if all the iterations that run through the <code>$condition</code> returned <str
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -8467,17 +8844,17 @@ if iterations that run through the <code>$condition</code> returned <strong>true
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -8498,10 +8875,10 @@ if iterations that run through the <code>$condition</code> returned <strong>true
                 <ul class="parameters">
                     <li class="parameter">
   <span class="type type-union">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      Randomizer
-    </span>
+  <span class="type type-structure">
+      <a href="https://www.php.net/manual/class.random-randomizer.php" class="external-link" target="_blank">
+        Random\Randomizer
+      </a>
   </span>
     <span class="delimiter">|</span>
   <span class="type type-named">
@@ -8549,17 +8926,17 @@ Defaults to <strong>null</strong>.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -8660,17 +9037,17 @@ Defaults to <strong>null</strong>.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -8750,17 +9127,17 @@ If it is omitted, then the sequence will have everything from offset up until th
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -8828,9 +9205,9 @@ Also known as sliding window.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-structure">
       <a href="classes/kirameki/collections/vec.html">
         Kirameki\Collections\Vec
@@ -8846,9 +9223,9 @@ Also known as sliding window.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -8979,17 +9356,17 @@ Defaults to <code>SORT_REGULAR</code>.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -9105,17 +9482,17 @@ Defaults to <code>SORT_REGULAR</code>.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -9231,17 +9608,17 @@ Defaults to <code>SORT_REGULAR</code>.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -9324,17 +9701,17 @@ Utilize the spaceship operator (<code>&lt;=&gt;</code>) to easily compare two va
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -9426,9 +9803,9 @@ Utilize the spaceship operator (<code>&lt;=&gt;</code>) to easily compare two va
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-structure">
       <a href="classes/kirameki/collections/vec.html">
         Kirameki\Collections\Vec
@@ -9444,9 +9821,9 @@ Utilize the spaceship operator (<code>&lt;=&gt;</code>) to easily compare two va
     <span class="brace">&gt;</span>
   </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -9514,9 +9891,9 @@ Negative index will count from the end.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-structure">
       <a href="classes/kirameki/collections/vec.html">
         Kirameki\Collections\Vec
@@ -9532,9 +9909,9 @@ Negative index will count from the end.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -9626,9 +10003,9 @@ Negative index will count from the end.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-structure">
       <a href="classes/kirameki/collections/vec.html">
         Kirameki\Collections\Vec
@@ -9644,9 +10021,9 @@ Negative index will count from the end.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -9714,9 +10091,9 @@ Negative index will count from the end.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-structure">
       <a href="classes/kirameki/collections/vec.html">
         Kirameki\Collections\Vec
@@ -9732,9 +10109,9 @@ Negative index will count from the end.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -9801,9 +10178,9 @@ Negative index will count from the end.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-structure">
       <a href="classes/kirameki/collections/vec.html">
         Kirameki\Collections\Vec
@@ -9819,9 +10196,9 @@ Negative index will count from the end.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -9894,17 +10271,17 @@ Negative index will count from the end.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -9961,17 +10338,17 @@ Negative index will count from the end.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -10029,17 +10406,17 @@ with those elements.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -10122,17 +10499,17 @@ with those elements.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -10188,22 +10565,22 @@ with those elements.</p>
                     <p>Iterates over each element in $iterable and takes only the elements that are instances of the given class.</p>
 
                   </div>
-                <div class="templates">
-                  <h4>Templates:</h4>
-                  <ul class="template-list">
-                      <li class="template">
-                        <span class="template-name">TClass</span>
-                          <span class="bound-delimiter"> as </span>
-                          <span class="bound">
+                  <div class="templates">
+                    <h4>Templates:</h4>
+                    <ul class="template-list">
+                        <li class="template">
+                          <span class="template-name">TClass</span>
+                            <span class="bound-delimiter"> as </span>
+                            <span class="bound">
   <span class="type type-named">
     <span class="no-link named-var">
       object
     </span>
   </span>
-                          </span>
-                      </li>
-                  </ul>
-                </div>
+                            </span>
+                        </li>
+                    </ul>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
@@ -10215,17 +10592,17 @@ with those elements.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -10283,17 +10660,17 @@ with those elements.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -10376,17 +10753,17 @@ taking of elements from the collection.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -10469,17 +10846,17 @@ taking of elements from the collection.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -10572,9 +10949,9 @@ taking of elements from the collection.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -10596,9 +10973,9 @@ taking of elements from the collection.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -10660,17 +11037,17 @@ Defaults to <strong>false</strong>.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -10771,17 +11148,17 @@ Returned value will be used to check for duplicates.<br />
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -10919,14 +11296,14 @@ Returned value will be used to check for duplicates.<br />
 is <strong>true</strong>, calls <code>$fallback</code> otherwise.</p>
 
                   </div>
-                <div class="templates">
-                  <h4>Templates:</h4>
-                  <ul class="template-list">
-                      <li class="template">
-                        <span class="template-name">TReturn</span>
-                      </li>
-                  </ul>
-                </div>
+                  <div class="templates">
+                    <h4>Templates:</h4>
+                    <ul class="template-list">
+                        <li class="template">
+                          <span class="template-name">TReturn</span>
+                        </li>
+                    </ul>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
@@ -10950,17 +11327,17 @@ is <strong>true</strong>, calls <code>$fallback</code> otherwise.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-template">
     <span class="no-link template-name">
       TReturn
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -11063,14 +11440,14 @@ is <strong>true</strong>, calls <code>$fallback</code> otherwise.</p>
 calls <code>$fallback</code> otherwise.</p>
 
                   </div>
-                <div class="templates">
-                  <h4>Templates:</h4>
-                  <ul class="template-list">
-                      <li class="template">
-                        <span class="template-name">TReturn</span>
-                      </li>
-                  </ul>
-                </div>
+                  <div class="templates">
+                    <h4>Templates:</h4>
+                    <ul class="template-list">
+                        <li class="template">
+                          <span class="template-name">TReturn</span>
+                        </li>
+                    </ul>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
@@ -11088,17 +11465,17 @@ calls <code>$fallback</code> otherwise.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-template">
     <span class="no-link template-name">
       TReturn
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -11201,14 +11578,14 @@ calls <code>$fallback</code> otherwise.</p>
 empty, calls <code>$fallback</code> otherwise.</p>
 
                   </div>
-                <div class="templates">
-                  <h4>Templates:</h4>
-                  <ul class="template-list">
-                      <li class="template">
-                        <span class="template-name">TReturn</span>
-                      </li>
-                  </ul>
-                </div>
+                  <div class="templates">
+                    <h4>Templates:</h4>
+                    <ul class="template-list">
+                        <li class="template">
+                          <span class="template-name">TReturn</span>
+                        </li>
+                    </ul>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
@@ -11226,17 +11603,17 @@ empty, calls <code>$fallback</code> otherwise.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-template">
     <span class="no-link template-name">
       TReturn
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -11293,394 +11670,17 @@ empty, calls <code>$fallback</code> otherwise.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-as-array-recursive" class="anchor" href="classes/kirameki/collections/enumerable.html#method-as-array-recursive">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    protected
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    asArrayRecursive
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      iterable
-    </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TKey
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-                        <var>$items</var>
-                        <span class="delimiter">,</span>
-                    </li>
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-                        <var>$depth</var>
-                        <span class="delimiter">,</span>
-                    </li>
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                        <var>$validate</var>
-                        <span class="default-set">
-                            <span class="assignment">=</span>
-                                <span class="value value-bool">false</span>
-                          </span>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      array
-    </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TKey
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      mixed
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$items</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                        <tr class="parameter">
-                          <td class="name"><var>$depth</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                        <tr class="parameter">
-                          <td class="name"><var>$validate</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      array
-    </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TKey
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      mixed
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-new-map" class="anchor" href="classes/kirameki/collections/enumerable.html#method-new-map">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    protected
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    newMap
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      iterable
-    </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TNewKey
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TNewValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-                        <var>$iterable</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-structure">
-      <a href="classes/kirameki/collections/map.html">
-        Kirameki\Collections\Map
-      </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TNewKey
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TNewValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="templates">
-                  <h4>Templates:</h4>
-                  <ul class="template-list">
-                      <li class="template">
-                        <span class="template-name">TNewKey</span>
-                          <span class="bound-delimiter"> as </span>
-                          <span class="bound">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      array-key
-    </span>
-  </span>
-                          </span>
-                      </li>
-                      <li class="template">
-                        <span class="template-name">TNewValue</span>
-                      </li>
-                  </ul>
-                </div>
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$iterable</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-structure">
-      <a href="classes/kirameki/collections/map.html">
-        Kirameki\Collections\Map
-      </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TNewKey
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TNewValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-new-vec" class="anchor" href="classes/kirameki/collections/enumerable.html#method-new-vec">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    protected
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    newVec
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      iterable
-    </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TNewValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-                        <var>$iterable</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-structure">
-      <a href="classes/kirameki/collections/vec.html">
-        Kirameki\Collections\Vec
-      </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TNewValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="templates">
-                  <h4>Templates:</h4>
-                  <ul class="template-list">
-                      <li class="template">
-                        <span class="template-name">TNewValue</span>
-                      </li>
-                  </ul>
-                </div>
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$iterable</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-structure">
-      <a href="classes/kirameki/collections/vec.html">
-        Kirameki\Collections\Vec
-      </a>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TNewValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
               </section>
             </li>
         </ul>

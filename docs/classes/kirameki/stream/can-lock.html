@@ -923,48 +923,6 @@
         <h3>Methods</h3>
         <ul class="methods">
             <li class="method">
-              <a id="method-get-resource" class="anchor" href="classes/kirameki/stream/can-lock.html#method-get-resource">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                      abstract
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    getResource
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      resource
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      resource
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
               <a id="method-exclusive-lock" class="anchor" href="classes/kirameki/stream/can-lock.html#method-exclusive-lock">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1017,17 +975,166 @@
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-get-resource" class="anchor" href="classes/kirameki/stream/can-lock.html#method-get-resource">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                      abstract
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    getResource
+                  </span>
+                  (
                 </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      resource
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      resource
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-shared-lock" class="anchor" href="classes/kirameki/stream/can-lock.html#method-shared-lock">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    sharedLock
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                        <var>$blocking</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-bool">true</span>
+                          </span>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$blocking</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-unlock" class="anchor" href="classes/kirameki/stream/can-lock.html#method-unlock">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    unlock
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
               </section>
             </li>
             <li class="method">
@@ -1086,14 +1193,14 @@
                 </div>
               </section>
               <section class="details">
-                <div class="templates">
-                  <h4>Templates:</h4>
-                  <ul class="template-list">
-                      <li class="template">
-                        <span class="template-name">TReturn</span>
-                      </li>
-                  </ul>
-                </div>
+                  <div class="templates">
+                    <h4>Templates:</h4>
+                    <ul class="template-list">
+                        <li class="template">
+                          <span class="template-name">TReturn</span>
+                        </li>
+                    </ul>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
@@ -1104,83 +1211,17 @@
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-template">
     <span class="no-link template-name">
       TReturn
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-shared-lock" class="anchor" href="classes/kirameki/stream/can-lock.html#method-shared-lock">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    sharedLock
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                        <var>$blocking</var>
-                        <span class="default-set">
-                            <span class="assignment">=</span>
-                                <span class="value value-bool">true</span>
-                          </span>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$blocking</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1239,14 +1280,14 @@
                 </div>
               </section>
               <section class="details">
-                <div class="templates">
-                  <h4>Templates:</h4>
-                  <ul class="template-list">
-                      <li class="template">
-                        <span class="template-name">TReturn</span>
-                      </li>
-                  </ul>
-                </div>
+                  <div class="templates">
+                    <h4>Templates:</h4>
+                    <ul class="template-list">
+                        <li class="template">
+                          <span class="template-name">TReturn</span>
+                        </li>
+                    </ul>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
@@ -1257,58 +1298,17 @@
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-template">
     <span class="no-link template-name">
       TReturn
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-unlock" class="anchor" href="classes/kirameki/stream/can-lock.html#method-unlock">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    unlock
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
               </section>
             </li>
         </ul>

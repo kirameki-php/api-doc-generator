@@ -928,16 +928,16 @@
                   protected
                 </span>
   <span class="type type-union">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      EventHandler
-    </span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/event/event-handler.html">
+        Kirameki\Event\EventHandler
+      </a>
   <span class="generics">
     <span class="brace">&lt;</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      ProcessStarted
-    </span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/process/events/process-started.html">
+        Kirameki\Process\Events\ProcessStarted
+      </a>
   </span>
 
     <span class="brace">&gt;</span>
@@ -963,16 +963,16 @@
                   protected
                 </span>
   <span class="type type-union">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      EventHandler
-    </span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/event/event-handler.html">
+        Kirameki\Event\EventHandler
+      </a>
   <span class="generics">
     <span class="brace">&lt;</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      ProcessFinished
-    </span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/process/events/process-finished.html">
+        Kirameki\Process\Events\ProcessFinished
+      </a>
   </span>
 
     <span class="brace">&gt;</span>
@@ -1310,10 +1310,10 @@
                     </li>
                     <li class="parameter">
   <span class="type type-union">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      FileStream
-    </span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/stream/file-stream.html">
+        Kirameki\Stream\FileStream
+      </a>
   </span>
     <span class="delimiter">|</span>
   <span class="type type-named">
@@ -1332,10 +1332,10 @@
                     </li>
                     <li class="parameter">
   <span class="type type-union">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      FileStream
-    </span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/stream/file-stream.html">
+        Kirameki\Stream\FileStream
+      </a>
   </span>
     <span class="delimiter">|</span>
   <span class="type type-named">
@@ -1403,26 +1403,20 @@
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-                    <div class="description comment"></div>
-                  </div>
-                </div>
               </section>
             </li>
             <li class="method">
-              <a id="method-in-directory" class="anchor" href="classes/kirameki/process/process-builder.html#method-in-directory">
+              <a id="method-build-info" class="anchor" href="classes/kirameki/process/process-builder.html#method-build-info">
                 <i class="fa-solid fa-link"></i>
               </a>
               <section class="signature multi-line">
                 <div class="signature-start">
                   <span class="modifiers">
-                    public
+                    protected
                   </span>
                   &nbsp;
                   <span class="name">
-                    inDirectory
+                    buildInfo
                   </span>
                   (
                 </div>
@@ -1437,12 +1431,31 @@
     <span class="delimiter">|</span>
   <span class="type type-named">
     <span class="no-link named-var">
-      null
+      list
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
     </span>
   </span>
 
+    <span class="brace">&gt;</span>
   </span>
-                        <var>$path</var>
+  </span>
+
+  </span>
+                        <var>$executedCommand</var>
+                        <span class="delimiter">,</span>
+                    </li>
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                        <var>$pid</var>
 
                     </li>
                 </ul>
@@ -1450,10 +1463,10 @@
                   )
                     <span class="return">
                       :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      $this
-    </span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/process/process-info.html">
+        Kirameki\Process\ProcessInfo
+      </a>
   </span>
                     </span>
                 </div>
@@ -1463,23 +1476,168 @@
                     <h4>Parameters:</h4>
                     <table>
                         <tr class="parameter">
-                          <td class="name"><var>$path</var></td>
+                          <td class="name"><var>$executedCommand</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$pid</var></td>
                           <td class="delimiter"></td>
                           <td class="description comment"></td>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-structure">
+      <a href="classes/kirameki/process/process-info.html">
+        Kirameki\Process\ProcessInfo
+      </a>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-build-shell-command" class="anchor" href="classes/kirameki/process/process-builder.html#method-build-shell-command">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    buildShellCommand
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-union">
   <span class="type type-named">
     <span class="no-link named-var">
-      $this
+      string
     </span>
   </span>
-                    <div class="description comment"></div>
-                  </div>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      list
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+
+  </span>
+                    </span>
                 </div>
+              </section>
+              <section class="details">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-union">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      list
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-build-timeout-command" class="anchor" href="classes/kirameki/process/process-builder.html#method-build-timeout-command">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    buildTimeoutCommand
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      list
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      list
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
               </section>
             </li>
             <li class="method">
@@ -1547,17 +1705,485 @@
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       $this
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-excepted-exit-codes" class="anchor" href="classes/kirameki/process/process-builder.html#method-excepted-exit-codes">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    exceptedExitCodes
+                  </span>
+                  (
                 </div>
+                <ul class="parameters">
+                    <li class="parameter">
+                        ...
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                        <var>$codes</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      $this
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$codes</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      $this
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-get-file-descriptor-spec" class="anchor" href="classes/kirameki/process/process-builder.html#method-get-file-descriptor-spec">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    getFileDescriptorSpec
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      array
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      array
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-in-directory" class="anchor" href="classes/kirameki/process/process-builder.html#method-in-directory">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    inDirectory
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-union">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+  </span>
+                        <var>$path</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      $this
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$path</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      $this
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-on-finished" class="anchor" href="classes/kirameki/process/process-builder.html#method-on-finished">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    onFinished
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-callable">
+  <span class="type type-structure">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+    <span class="parenthesis">(</span>
+
+
+  <span class="type type-structure">
+      <a href="classes/kirameki/process/events/process-finished.html">
+        Kirameki\Process\Events\ProcessFinished
+      </a>
+  </span>
+
+    <span class="parenthesis">):&nbsp;</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+  </span>
+                        <var>$callback</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      $this
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$callback</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      $this
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-on-started" class="anchor" href="classes/kirameki/process/process-builder.html#method-on-started">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    onStarted
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-callable">
+  <span class="type type-structure">
+      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
+        Closure
+      </a>
+  </span>
+    <span class="parenthesis">(</span>
+
+
+  <span class="type type-structure">
+      <a href="classes/kirameki/process/events/process-started.html">
+        Kirameki\Process\Events\ProcessStarted
+      </a>
+  </span>
+
+    <span class="parenthesis">):&nbsp;</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+  </span>
+                        <var>$callback</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      $this
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$callback</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      $this
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-start" class="anchor" href="classes/kirameki/process/process-builder.html#method-start">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    start
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-structure">
+      <a href="classes/kirameki/process/process-runner.html">
+        Kirameki\Process\ProcessRunner
+      </a>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-structure">
+      <a href="classes/kirameki/process/process-runner.html">
+        Kirameki\Process\ProcessRunner
+      </a>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-term-signal" class="anchor" href="classes/kirameki/process/process-builder.html#method-term-signal">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    termSignal
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                        <var>$signal</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      $this
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$signal</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      $this
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
               </section>
             </li>
             <li class="method">
@@ -1663,649 +2289,17 @@
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       $this
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-term-signal" class="anchor" href="classes/kirameki/process/process-builder.html#method-term-signal">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    termSignal
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-                        <var>$signal</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      $this
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$signal</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      $this
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-excepted-exit-codes" class="anchor" href="classes/kirameki/process/process-builder.html#method-excepted-exit-codes">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    exceptedExitCodes
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-                        ...
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-                        <var>$codes</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      $this
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$codes</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      $this
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-on-started" class="anchor" href="classes/kirameki/process/process-builder.html#method-on-started">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    onStarted
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-callable">
-  <span class="type type-structure">
-      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
-        Closure
-      </a>
-  </span>
-    <span class="parenthesis">(</span>
-
-
-  <span class="type type-named">
-    <span class="no-link named-var">
-      ProcessStarted
-    </span>
-  </span>
-
-    <span class="parenthesis">):&nbsp;</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      mixed
-    </span>
-  </span>
-  </span>
-                        <var>$callback</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      $this
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$callback</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      $this
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-on-finished" class="anchor" href="classes/kirameki/process/process-builder.html#method-on-finished">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    onFinished
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-callable">
-  <span class="type type-structure">
-      <a href="https://www.php.net/manual/class.closure.php" class="external-link" target="_blank">
-        Closure
-      </a>
-  </span>
-    <span class="parenthesis">(</span>
-
-
-  <span class="type type-named">
-    <span class="no-link named-var">
-      ProcessFinished
-    </span>
-  </span>
-
-    <span class="parenthesis">):&nbsp;</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      mixed
-    </span>
-  </span>
-  </span>
-                        <var>$callback</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      $this
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$callback</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      $this
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-start" class="anchor" href="classes/kirameki/process/process-builder.html#method-start">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    start
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-structure">
-      <a href="classes/kirameki/process/process-runner.html">
-        Kirameki\Process\ProcessRunner
-      </a>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-structure">
-      <a href="classes/kirameki/process/process-runner.html">
-        Kirameki\Process\ProcessRunner
-      </a>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-build-info" class="anchor" href="classes/kirameki/process/process-builder.html#method-build-info">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    protected
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    buildInfo
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-union">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      list
-    </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-
-  </span>
-                        <var>$executedCommand</var>
-                        <span class="delimiter">,</span>
-                    </li>
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-                        <var>$pid</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-structure">
-      <a href="classes/kirameki/process/process-info.html">
-        Kirameki\Process\ProcessInfo
-      </a>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$executedCommand</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                        <tr class="parameter">
-                          <td class="name"><var>$pid</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-structure">
-      <a href="classes/kirameki/process/process-info.html">
-        Kirameki\Process\ProcessInfo
-      </a>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-build-shell-command" class="anchor" href="classes/kirameki/process/process-builder.html#method-build-shell-command">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    buildShellCommand
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-union">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      list
-    </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-union">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      list
-    </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-build-timeout-command" class="anchor" href="classes/kirameki/process/process-builder.html#method-build-timeout-command">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    protected
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    buildTimeoutCommand
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      list
-    </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      list
-    </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-get-file-descriptor-spec" class="anchor" href="classes/kirameki/process/process-builder.html#method-get-file-descriptor-spec">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    protected
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    getFileDescriptorSpec
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      array
-    </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      mixed
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      array
-    </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      mixed
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
               </section>
             </li>
         </ul>

@@ -4,7 +4,6 @@ namespace Kirameki\ApiDocGenerator\Components;
 
 use Kirameki\ApiDocGenerator\Support\CommentParser;
 use Kirameki\ApiDocGenerator\Support\PhpDoc;
-use function implode;
 
 abstract class MemberInfo
 {

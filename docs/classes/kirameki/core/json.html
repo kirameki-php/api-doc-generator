@@ -936,6 +936,115 @@
         <h3>Methods</h3>
         <ul class="methods">
             <li class="method">
+              <a id="method---construct" class="anchor" href="classes/kirameki/core/json.html#method---construct">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                      final
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    __construct
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                </div>
+              </section>
+              <section class="details">
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
+  <span class="type type-structure">
+      <a href="classes/kirameki/core/static-class.html">
+        Kirameki\Core\StaticClass
+      </a>
+  </span>
+                      </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-decode" class="anchor" href="classes/kirameki/core/json.html#method-decode">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                      static
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    decode
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                        <var>$json</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="comment">
+                    <p>Decodes a JSON string.</p>
+<p>Example:</p>
+<pre><code class="language-php">Json::decode('true'); // true  
+Json::decode('{&quot;a&quot;:1}'); // ['a' =&gt; 1]  
+</code></pre>
+
+                  </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$json</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"><p>The value being decoded. Must be a valid UTF-8 encoded string.</p>
+</td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                      <div class="description comment"><p>Decoded data.</p>
+</div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
               <a id="method-encode" class="anchor" href="classes/kirameki/core/json.html#method-encode">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1014,91 +1123,18 @@ Json::encode(['a' =&gt; 1], true); // &quot;{\n    &quot;a&quot;: 1\n}&quot;
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                    <div class="description comment"><p>JSON encoded string.</p>
+                      <div class="description comment"><p>JSON encoded string.</p>
 </div>
+                    </div>
                   </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-decode" class="anchor" href="classes/kirameki/core/json.html#method-decode">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                      static
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    decode
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                        <var>$json</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      mixed
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="comment">
-                    <p>Decodes a JSON string.</p>
-<p>Example:</p>
-<pre><code class="language-php">Json::decode('true'); // true  
-Json::decode('{&quot;a&quot;:1}'); // ['a' =&gt; 1]  
-</code></pre>
-
-                  </div>
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$json</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"><p>The value being decoded. Must be a valid UTF-8 encoded string.</p>
-</td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      mixed
-    </span>
-  </span>
-                    <div class="description comment"><p>Decoded data.</p>
-</div>
-                  </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1162,47 +1198,18 @@ Json::validate('{'); // false
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       bool
     </span>
   </span>
-                    <div class="description comment"><p><strong>true</strong> if valid JSON, <strong>false</strong> otherwise.</p>
+                      <div class="description comment"><p><strong>true</strong> if valid JSON, <strong>false</strong> otherwise.</p>
 </div>
+                    </div>
                   </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method---construct" class="anchor" href="classes/kirameki/core/json.html#method---construct">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                      final
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    __construct
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-                    <div class="description comment"></div>
-                  </div>
-                </div>
               </section>
             </li>
         </ul>

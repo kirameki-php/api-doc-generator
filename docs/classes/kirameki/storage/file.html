@@ -1067,10 +1067,10 @@
                 <span class="modifiers">
                   public
                 </span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      Instant
-    </span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/time/instant.html">
+        Kirameki\Time\Instant
+      </a>
   </span>
                 <var>$atime</var>
               </div>
@@ -1083,10 +1083,10 @@
                 <span class="modifiers">
                   public
                 </span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      Instant
-    </span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/time/instant.html">
+        Kirameki\Time\Instant
+      </a>
   </span>
                 <var>$mtime</var>
               </div>
@@ -1099,10 +1099,10 @@
                 <span class="modifiers">
                   public
                 </span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      Instant
-    </span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/time/instant.html">
+        Kirameki\Time\Instant
+      </a>
   </span>
                 <var>$ctime</var>
               </div>
@@ -1164,598 +1164,6 @@
         <h3>Methods</h3>
         <ul class="methods">
             <li class="method">
-              <a id="method-open" class="anchor" href="classes/kirameki/storage/file.html#method-open">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    open
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                        <var>$mode</var>
-                        <span class="default-set">
-                            <span class="assignment">=</span>
-                                <span class="value value-string">"c+b"</span>
-                          </span>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      FileStream
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$mode</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      FileStream
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-read" class="anchor" href="classes/kirameki/storage/file.html#method-read">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    read
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-write" class="anchor" href="classes/kirameki/storage/file.html#method-write">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    write
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                        <var>$data</var>
-                        <span class="delimiter">,</span>
-                    </li>
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                        <var>$lock</var>
-                        <span class="default-set">
-                            <span class="assignment">=</span>
-                                <span class="value value-bool">true</span>
-                          </span>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      void
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$data</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                        <tr class="parameter">
-                          <td class="name"><var>$lock</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      void
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-replace" class="anchor" href="classes/kirameki/storage/file.html#method-replace">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    replace
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                        <var>$data</var>
-                        <span class="delimiter">,</span>
-                    </li>
-                    <li class="parameter">
-  <span class="type type-union">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      null
-    </span>
-  </span>
-
-  </span>
-                        <var>$tempFilePath</var>
-                        <span class="default-set">
-                            <span class="assignment">=</span>
-                                <span class="value value-null">null</span>
-                          </span>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      void
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$data</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                        <tr class="parameter">
-                          <td class="name"><var>$tempFilePath</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      void
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-delete" class="anchor" href="classes/kirameki/storage/file.html#method-delete">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    delete
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      void
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      void
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-copy-to" class="anchor" href="classes/kirameki/storage/file.html#method-copy-to">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    copyTo
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                        <var>$destination</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$destination</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-touch" class="anchor" href="classes/kirameki/storage/file.html#method-touch">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    touch
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-union">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      Instant
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      null
-    </span>
-  </span>
-
-  </span>
-                        <var>$mtime</var>
-                        <span class="default-set">
-                            <span class="assignment">=</span>
-                                <span class="value value-null">null</span>
-                          </span>
-                        <span class="delimiter">,</span>
-                    </li>
-                    <li class="parameter">
-  <span class="type type-union">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      Instant
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      null
-    </span>
-  </span>
-
-  </span>
-                        <var>$atime</var>
-                        <span class="default-set">
-                            <span class="assignment">=</span>
-                                <span class="value value-null">null</span>
-                          </span>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      void
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$mtime</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                        <tr class="parameter">
-                          <td class="name"><var>$atime</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      void
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-from-info" class="anchor" href="classes/kirameki/storage/file.html#method-from-info">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                      static
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    fromInfo
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-structure">
-      <a href="https://www.php.net/manual/class.splfileinfo.php" class="external-link" target="_blank">
-        SplFileInfo
-      </a>
-  </span>
-                        <var>$info</var>
-                        <span class="delimiter">,</span>
-                    </li>
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                        <var>$followSymlink</var>
-                        <span class="default-set">
-                            <span class="assignment">=</span>
-                                <span class="value value-bool">true</span>
-                          </span>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-union">
-  <span class="type type-structure">
-      <a href="https://www.php.net/manual/class.directory.php" class="external-link" target="_blank">
-        Directory
-      </a>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-structure">
-      <a href="classes/kirameki/storage/file.html">
-        Kirameki\Storage\File
-      </a>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-structure">
-      <a href="classes/kirameki/storage/symlink.html">
-        Kirameki\Storage\Symlink
-      </a>
-  </span>
-
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$info</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                        <tr class="parameter">
-                          <td class="name"><var>$followSymlink</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-union">
-  <span class="type type-structure">
-      <a href="https://www.php.net/manual/class.directory.php" class="external-link" target="_blank">
-        Directory
-      </a>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-structure">
-      <a href="classes/kirameki/storage/file.html">
-        Kirameki\Storage\File
-      </a>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-structure">
-      <a href="classes/kirameki/storage/symlink.html">
-        Kirameki\Storage\Symlink
-      </a>
-  </span>
-
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
               <a id="method---construct" class="anchor" href="classes/kirameki/storage/file.html#method---construct">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1808,6 +1216,19 @@
                 </div>
               </section>
               <section class="details">
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
+  <span class="type type-structure">
+      <a href="classes/kirameki/storage/storable.html">
+        Kirameki\Storage\Storable
+      </a>
+  </span>
+                      </div>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
@@ -1823,12 +1244,6 @@
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-                    <div class="description comment"></div>
-                  </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1874,6 +1289,19 @@
                 </div>
               </section>
               <section class="details">
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
+  <span class="type type-structure">
+      <a href="classes/kirameki/storage/storable.html">
+        Kirameki\Storage\Storable
+      </a>
+  </span>
+                      </div>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
@@ -1884,21 +1312,21 @@
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
-              <a id="method-dirname" class="anchor" href="classes/kirameki/storage/file.html#method-dirname">
+              <a id="method-chgrp" class="anchor" href="classes/kirameki/storage/file.html#method-chgrp">
                 <i class="fa-solid fa-link"></i>
               </a>
               <section class="signature multi-line">
@@ -1908,38 +1336,27 @@
                   </span>
                   &nbsp;
                   <span class="name">
-                    dirname
+                    chgrp
                   </span>
                   (
                 </div>
                 <ul class="parameters">
                     <li class="parameter">
+  <span class="type type-union">
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      1
-    </span>
   </span>
-      <span class="delimiter">,</span>
+    <span class="delimiter">|</span>
   <span class="type type-named">
     <span class="no-link named-var">
-      max
+      string
     </span>
   </span>
 
-    <span class="brace">&gt;</span>
   </span>
-  </span>
-                        <var>$levels</var>
-                        <span class="default-set">
-                            <span class="assignment">=</span>
-                                <span class="value value-default">1</span>
-                          </span>
+                        <var>$gid</var>
 
                     </li>
                 </ul>
@@ -1949,280 +1366,47 @@
                       :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
-      string
+      void
     </span>
   </span>
                     </span>
                 </div>
               </section>
               <section class="details">
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
+  <span class="type type-structure">
+      <a href="classes/kirameki/storage/storable.html">
+        Kirameki\Storage\Storable
+      </a>
+  </span>
+                      </div>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
                         <tr class="parameter">
-                          <td class="name"><var>$levels</var></td>
+                          <td class="name"><var>$gid</var></td>
                           <td class="delimiter"></td>
                           <td class="description comment"></td>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
-      string
+      void
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-real-path" class="anchor" href="classes/kirameki/storage/file.html#method-real-path">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    realPath
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-is-writable" class="anchor" href="classes/kirameki/storage/file.html#method-is-writable">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    isWritable
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-is-readable" class="anchor" href="classes/kirameki/storage/file.html#method-is-readable">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    isReadable
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-is-executable" class="anchor" href="classes/kirameki/storage/file.html#method-is-executable">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    isExecutable
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-is-link" class="anchor" href="classes/kirameki/storage/file.html#method-is-link">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    isLink
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-exists" class="anchor" href="classes/kirameki/storage/file.html#method-exists">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    exists
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      bool
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -2264,6 +1448,19 @@
                 </div>
               </section>
               <section class="details">
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
+  <span class="type type-structure">
+      <a href="classes/kirameki/storage/storable.html">
+        Kirameki\Storage\Storable
+      </a>
+  </span>
+                      </div>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
@@ -2274,17 +1471,17 @@
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -2363,6 +1560,19 @@
                 </div>
               </section>
               <section class="details">
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
+  <span class="type type-structure">
+      <a href="classes/kirameki/storage/storable.html">
+        Kirameki\Storage\Storable
+      </a>
+  </span>
+                      </div>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
@@ -2378,21 +1588,21 @@
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
-              <a id="method-chgrp" class="anchor" href="classes/kirameki/storage/file.html#method-chgrp">
+              <a id="method-copy-to" class="anchor" href="classes/kirameki/storage/file.html#method-copy-to">
                 <i class="fa-solid fa-link"></i>
               </a>
               <section class="signature multi-line">
@@ -2402,30 +1612,72 @@
                   </span>
                   &nbsp;
                   <span class="name">
-                    chgrp
+                    copyTo
                   </span>
                   (
                 </div>
                 <ul class="parameters">
                     <li class="parameter">
-  <span class="type type-union">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-    <span class="delimiter">|</span>
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-
-  </span>
-                        <var>$gid</var>
+                        <var>$destination</var>
 
                     </li>
                 </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$destination</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-delete" class="anchor" href="classes/kirameki/storage/file.html#method-delete">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    delete
+                  </span>
+                  (
+                </div>
                 <div class="signature-end">
                   )
                     <span class="return">
@@ -2439,27 +1691,506 @@
                 </div>
               </section>
               <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$gid</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-dirname" class="anchor" href="classes/kirameki/storage/file.html#method-dirname">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    dirname
+                  </span>
+                  (
                 </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      1
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      max
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                        <var>$levels</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-default">1</span>
+                          </span>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
+  <span class="type type-structure">
+      <a href="classes/kirameki/storage/storable.html">
+        Kirameki\Storage\Storable
+      </a>
+  </span>
+                      </div>
+                  </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$levels</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-exists" class="anchor" href="classes/kirameki/storage/file.html#method-exists">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    exists
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
+  <span class="type type-structure">
+      <a href="classes/kirameki/storage/storable.html">
+        Kirameki\Storage\Storable
+      </a>
+  </span>
+                      </div>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-from-info" class="anchor" href="classes/kirameki/storage/file.html#method-from-info">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                      static
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    fromInfo
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-structure">
+      <a href="https://www.php.net/manual/class.splfileinfo.php" class="external-link" target="_blank">
+        SplFileInfo
+      </a>
+  </span>
+                        <var>$info</var>
+                        <span class="delimiter">,</span>
+                    </li>
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                        <var>$followSymlink</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-bool">true</span>
+                          </span>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-union">
+  <span class="type type-structure">
+      <a href="https://www.php.net/manual/class.directory.php" class="external-link" target="_blank">
+        Directory
+      </a>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/storage/file.html">
+        Kirameki\Storage\File
+      </a>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/storage/symlink.html">
+        Kirameki\Storage\Symlink
+      </a>
+  </span>
+
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
+  <span class="type type-structure">
+      <a href="classes/kirameki/storage/storable.html">
+        Kirameki\Storage\Storable
+      </a>
+  </span>
+                      </div>
+                  </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$info</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$followSymlink</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-union">
+  <span class="type type-structure">
+      <a href="https://www.php.net/manual/class.directory.php" class="external-link" target="_blank">
+        Directory
+      </a>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/storage/file.html">
+        Kirameki\Storage\File
+      </a>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/storage/symlink.html">
+        Kirameki\Storage\Symlink
+      </a>
+  </span>
+
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-is-executable" class="anchor" href="classes/kirameki/storage/file.html#method-is-executable">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    isExecutable
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
+  <span class="type type-structure">
+      <a href="classes/kirameki/storage/storable.html">
+        Kirameki\Storage\Storable
+      </a>
+  </span>
+                      </div>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-is-link" class="anchor" href="classes/kirameki/storage/file.html#method-is-link">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    isLink
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
+  <span class="type type-structure">
+      <a href="classes/kirameki/storage/storable.html">
+        Kirameki\Storage\Storable
+      </a>
+  </span>
+                      </div>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-is-readable" class="anchor" href="classes/kirameki/storage/file.html#method-is-readable">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    isReadable
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
+  <span class="type type-structure">
+      <a href="classes/kirameki/storage/storable.html">
+        Kirameki\Storage\Storable
+      </a>
+  </span>
+                      </div>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-is-writable" class="anchor" href="classes/kirameki/storage/file.html#method-is-writable">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    isWritable
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
+  <span class="type type-structure">
+      <a href="classes/kirameki/storage/storable.html">
+        Kirameki\Storage\Storable
+      </a>
+  </span>
+                      </div>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
               </section>
             </li>
             <li class="method">
@@ -2501,6 +2232,19 @@
                 </div>
               </section>
               <section class="details">
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
+  <span class="type type-structure">
+      <a href="classes/kirameki/storage/storable.html">
+        Kirameki\Storage\Storable
+      </a>
+  </span>
+                      </div>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
@@ -2511,99 +2255,17 @@
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-resolve-type" class="anchor" href="classes/kirameki/storage/file.html#method-resolve-type">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    protected
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    resolveType
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-structure">
-      <span class="no-link structure-name">
-        Kirameki\Storage\FileType
-      </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-structure">
-      <span class="no-link structure-name">
-        Kirameki\Storage\FileType
-      </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-resolve-directory" class="anchor" href="classes/kirameki/storage/file.html#method-resolve-directory">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    protected
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    resolveDirectory
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-structure">
-      <a href="https://www.php.net/manual/class.directory.php" class="external-link" target="_blank">
-        Directory
-      </a>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-structure">
-      <a href="https://www.php.net/manual/class.directory.php" class="external-link" target="_blank">
-        Directory
-      </a>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -2634,17 +2296,570 @@
                 </div>
               </section>
               <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
+  <span class="type type-structure">
+      <a href="classes/kirameki/storage/storable.html">
+        Kirameki\Storage\Storable
+      </a>
+  </span>
+                      </div>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-structure">
       <a href="https://www.php.net/manual/class.splfileinfo.php" class="external-link" target="_blank">
         SplFileInfo
       </a>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-open" class="anchor" href="classes/kirameki/storage/file.html#method-open">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    open
+                  </span>
+                  (
                 </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                        <var>$mode</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-string">"c+b"</span>
+                          </span>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-structure">
+      <a href="classes/kirameki/stream/file-stream.html">
+        Kirameki\Stream\FileStream
+      </a>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$mode</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-structure">
+      <a href="classes/kirameki/stream/file-stream.html">
+        Kirameki\Stream\FileStream
+      </a>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-read" class="anchor" href="classes/kirameki/storage/file.html#method-read">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    read
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-real-path" class="anchor" href="classes/kirameki/storage/file.html#method-real-path">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    realPath
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
+  <span class="type type-structure">
+      <a href="classes/kirameki/storage/storable.html">
+        Kirameki\Storage\Storable
+      </a>
+  </span>
+                      </div>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-replace" class="anchor" href="classes/kirameki/storage/file.html#method-replace">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    replace
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                        <var>$data</var>
+                        <span class="delimiter">,</span>
+                    </li>
+                    <li class="parameter">
+  <span class="type type-union">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+  </span>
+                        <var>$tempFilePath</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      void
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$data</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$tempFilePath</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      void
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-resolve-directory" class="anchor" href="classes/kirameki/storage/file.html#method-resolve-directory">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    resolveDirectory
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-structure">
+      <a href="https://www.php.net/manual/class.directory.php" class="external-link" target="_blank">
+        Directory
+      </a>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
+  <span class="type type-structure">
+      <a href="classes/kirameki/storage/storable.html">
+        Kirameki\Storage\Storable
+      </a>
+  </span>
+                      </div>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-structure">
+      <a href="https://www.php.net/manual/class.directory.php" class="external-link" target="_blank">
+        Directory
+      </a>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-resolve-type" class="anchor" href="classes/kirameki/storage/file.html#method-resolve-type">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    resolveType
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-structure">
+      <span class="no-link structure-name">
+        Kirameki\Storage\FileType
+      </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
+  <span class="type type-structure">
+      <a href="classes/kirameki/storage/storable.html">
+        Kirameki\Storage\Storable
+      </a>
+  </span>
+                      </div>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-structure">
+      <span class="no-link structure-name">
+        Kirameki\Storage\FileType
+      </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-touch" class="anchor" href="classes/kirameki/storage/file.html#method-touch">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    touch
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-union">
+  <span class="type type-structure">
+      <a href="classes/kirameki/time/instant.html">
+        Kirameki\Time\Instant
+      </a>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+  </span>
+                        <var>$mtime</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+                        <span class="delimiter">,</span>
+                    </li>
+                    <li class="parameter">
+  <span class="type type-union">
+  <span class="type type-structure">
+      <a href="classes/kirameki/time/instant.html">
+        Kirameki\Time\Instant
+      </a>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+  </span>
+                        <var>$atime</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-null">null</span>
+                          </span>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      void
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$mtime</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$atime</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      void
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-write" class="anchor" href="classes/kirameki/storage/file.html#method-write">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    write
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                        <var>$data</var>
+                        <span class="delimiter">,</span>
+                    </li>
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                        <var>$lock</var>
+                        <span class="default-set">
+                            <span class="assignment">=</span>
+                                <span class="value value-bool">true</span>
+                          </span>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      void
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$data</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$lock</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      void
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
               </section>
             </li>
         </ul>

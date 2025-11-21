@@ -942,97 +942,17 @@
         <h3>Methods</h3>
         <ul class="methods">
             <li class="method">
-              <a id="method-instantiate" class="anchor" href="classes/kirameki/collections/mutates-self.html#method-instantiate">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                      abstract
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    instantiate
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      iterable
-    </span>
-  <span class="generics">
-    <span class="brace">&lt;</span>
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TKey
-    </span>
-  </span>
-      <span class="delimiter">,</span>
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-
-    <span class="brace">&gt;</span>
-  </span>
-  </span>
-                        <var>$iterable</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$iterable</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      static
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-reindex" class="anchor" href="classes/kirameki/collections/mutates-self.html#method-reindex">
+              <a id="method-clear" class="anchor" href="classes/kirameki/collections/mutates-self.html#method-clear">
                 <i class="fa-solid fa-link"></i>
               </a>
               <section class="signature single-line">
                 <div class="signature-start">
                   <span class="modifiers">
-                    protected
-                      abstract
+                    public
                   </span>
                   &nbsp;
                   <span class="name">
-                    reindex
+                    clear
                   </span>
                   (
                 </div>
@@ -1042,24 +962,28 @@
                       :&nbsp;
   <span class="type type-named">
     <span class="no-link named-var">
-      bool
+      $this
     </span>
   </span>
                     </span>
                 </div>
               </section>
               <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="comment">
+                    <p>Clears all items in the collection.</p>
+
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
-      bool
+      $this
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1107,9 +1031,9 @@
                 </div>
               </section>
               <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       array
@@ -1131,207 +1055,9 @@
     <span class="brace">&gt;</span>
   </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-offset-set" class="anchor" href="classes/kirameki/collections/mutates-self.html#method-offset-set">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    offsetSet
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-union">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      null
-    </span>
-  </span>
-
-  </span>
-                        <var>$offset</var>
-                        <span class="delimiter">,</span>
-                    </li>
-                    <li class="parameter">
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-                        <var>$value</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      void
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$offset</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                        <tr class="parameter">
-                          <td class="name"><var>$value</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      void
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-offset-unset" class="anchor" href="classes/kirameki/collections/mutates-self.html#method-offset-unset">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    offsetUnset
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      mixed
-    </span>
-  </span>
-                        <var>$offset</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      void
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$offset</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      void
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-clear" class="anchor" href="classes/kirameki/collections/mutates-self.html#method-clear">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    clear
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      $this
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="comment">
-                    <p>Clears all items in the collection.</p>
-
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      $this
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1442,17 +1168,249 @@ Defaults to <strong>false</strong>.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       $this
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-instantiate" class="anchor" href="classes/kirameki/collections/mutates-self.html#method-instantiate">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                      abstract
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    instantiate
+                  </span>
+                  (
                 </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      iterable
+    </span>
+  <span class="generics">
+    <span class="brace">&lt;</span>
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TKey
+    </span>
+  </span>
+      <span class="delimiter">,</span>
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+
+    <span class="brace">&gt;</span>
+  </span>
+  </span>
+                        <var>$iterable</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$iterable</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      static
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-offset-set" class="anchor" href="classes/kirameki/collections/mutates-self.html#method-offset-set">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    offsetSet
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-union">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+  </span>
+                        <var>$offset</var>
+                        <span class="delimiter">,</span>
+                    </li>
+                    <li class="parameter">
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+                        <var>$value</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      void
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$offset</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$value</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      void
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-offset-unset" class="anchor" href="classes/kirameki/collections/mutates-self.html#method-offset-unset">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    offsetUnset
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                        <var>$offset</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      void
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$offset</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      void
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
               </section>
             </li>
             <li class="method">
@@ -1488,81 +1446,17 @@ Defaults to <strong>false</strong>.</p>
 Throws <code>EmptyNotAllowedException</code>, if the collection is empty.</p>
 
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-pop-or-null" class="anchor" href="classes/kirameki/collections/mutates-self.html#method-pop-or-null">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    popOrNull
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-union">
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      null
-    </span>
-  </span>
-
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="comment">
-                    <p>Pops the element off the end of the collection.<br />
-Returns <strong>null</strong>, if the collection is empty.</p>
-
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-union">
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      null
-    </span>
-  </span>
-
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1620,17 +1514,81 @@ Returns the popped elements in a new instance.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-pop-or-null" class="anchor" href="classes/kirameki/collections/mutates-self.html#method-pop-or-null">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    popOrNull
+                  </span>
+                  (
                 </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-union">
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="comment">
+                    <p>Pops the element off the end of the collection.<br />
+Returns <strong>null</strong>, if the collection is empty.</p>
+
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-union">
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
               </section>
             </li>
             <li class="method">
@@ -1688,212 +1646,17 @@ Throws <code>InvalidKeyException</code> if <code>$key</code> is not found.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-pull-or" class="anchor" href="classes/kirameki/collections/mutates-self.html#method-pull-or">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    pullOr
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TKey
-    </span>
-  </span>
-                        <var>$key</var>
-                        <span class="delimiter">,</span>
-                    </li>
-                    <li class="parameter">
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TDefault
-    </span>
-  </span>
-                        <var>$default</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-union">
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TDefault
-    </span>
-  </span>
-
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="comment">
-                    <p>Removes <code>$key</code> from the collection and returns the pulled value.<br />
-If <code>$key</code> is not found, value of <code>$default</code> is returned instead.</p>
-
-                  </div>
-                <div class="templates">
-                  <h4>Templates:</h4>
-                  <ul class="template-list">
-                      <li class="template">
-                        <span class="template-name">TDefault</span>
-                      </li>
-                  </ul>
-                </div>
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$key</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"><p>Key to be pulled from the collection.</p>
-</td>
-                        </tr>
-                        <tr class="parameter">
-                          <td class="name"><var>$default</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"><p>Default value to be returned if <code>$key</code> is not found.</p>
-</td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-union">
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TDefault
-    </span>
-  </span>
-
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-pull-or-null" class="anchor" href="classes/kirameki/collections/mutates-self.html#method-pull-or-null">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    pullOrNull
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TKey
-    </span>
-  </span>
-                        <var>$key</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-union">
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      null
-    </span>
-  </span>
-
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="comment">
-                    <p>Removes <code>$key</code> from the collection and returns the pulled value.<br />
-If <code>$key</code> is not found, <strong>null</strong> is returned instead.</p>
-
-                  </div>
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$key</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"><p>Key to be pulled from the collection.</p>
-</td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-union">
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      null
-    </span>
-  </span>
-
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1999,17 +1762,254 @@ If <code>$key</code> does not exist, the missing key will be added to <code>$mis
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-pull-or" class="anchor" href="classes/kirameki/collections/mutates-self.html#method-pull-or">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    pullOr
+                  </span>
+                  (
                 </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TKey
+    </span>
+  </span>
+                        <var>$key</var>
+                        <span class="delimiter">,</span>
+                    </li>
+                    <li class="parameter">
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TDefault
+    </span>
+  </span>
+                        <var>$default</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-union">
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TDefault
+    </span>
+  </span>
+
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="comment">
+                    <p>Removes <code>$key</code> from the collection and returns the pulled value.<br />
+If <code>$key</code> is not found, value of <code>$default</code> is returned instead.</p>
+
+                  </div>
+                  <div class="templates">
+                    <h4>Templates:</h4>
+                    <ul class="template-list">
+                        <li class="template">
+                          <span class="template-name">TDefault</span>
+                        </li>
+                    </ul>
+                  </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$key</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"><p>Key to be pulled from the collection.</p>
+</td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$default</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"><p>Default value to be returned if <code>$key</code> is not found.</p>
+</td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-union">
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TDefault
+    </span>
+  </span>
+
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-pull-or-null" class="anchor" href="classes/kirameki/collections/mutates-self.html#method-pull-or-null">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    pullOrNull
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TKey
+    </span>
+  </span>
+                        <var>$key</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-union">
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="comment">
+                    <p>Removes <code>$key</code> from the collection and returns the pulled value.<br />
+If <code>$key</code> is not found, <strong>null</strong> is returned instead.</p>
+
+                  </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$key</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"><p>Key to be pulled from the collection.</p>
+</td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-union">
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-reindex" class="anchor" href="classes/kirameki/collections/mutates-self.html#method-reindex">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                      abstract
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    reindex
+                  </span>
+                  (
+                </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      bool
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
               </section>
             </li>
             <li class="method">
@@ -2106,9 +2106,9 @@ Returns the keys of the removed value.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-structure">
       <a href="classes/kirameki/collections/vec.html">
         Kirameki\Collections\Vec
@@ -2124,9 +2124,9 @@ Returns the keys of the removed value.</p>
     <span class="brace">&gt;</span>
   </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -2162,81 +2162,17 @@ Returns the keys of the removed value.</p>
 Returns <strong>null</strong> if the collection is empty.</p>
 
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-template">
     <span class="no-link template-name">
       TValue
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-shift-or-null" class="anchor" href="classes/kirameki/collections/mutates-self.html#method-shift-or-null">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    shiftOrNull
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-union">
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      null
-    </span>
-  </span>
-
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="comment">
-                    <p>Shift an element off the beginning of the collection.<br />
-Returns <strong>null</strong> if the collection is empty.</p>
-
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-union">
-  <span class="type type-template">
-    <span class="no-link template-name">
-      TValue
-    </span>
-  </span>
-    <span class="delimiter">|</span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      null
-    </span>
-  </span>
-
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -2295,17 +2231,81 @@ Must be an integer with value &gt;= 1.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       static
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-shift-or-null" class="anchor" href="classes/kirameki/collections/mutates-self.html#method-shift-or-null">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    shiftOrNull
+                  </span>
+                  (
                 </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-union">
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="comment">
+                    <p>Shift an element off the beginning of the collection.<br />
+Returns <strong>null</strong> if the collection is empty.</p>
+
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-union">
+  <span class="type type-template">
+    <span class="no-link template-name">
+      TValue
+    </span>
+  </span>
+    <span class="delimiter">|</span>
+  <span class="type type-named">
+    <span class="no-link named-var">
+      null
+    </span>
+  </span>
+
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
               </section>
             </li>
         </ul>

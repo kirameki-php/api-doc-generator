@@ -2,28 +2,24 @@
 
 namespace Kirameki\ApiDocGenerator\Support;
 
+use PhpParser\Node\Stmt\Class_;
+use PhpParser\Node\Stmt\Namespace_;
+use PhpParser\Node\Stmt\TraitUse;
+use PhpParser\Node\Stmt\Use_;
+use PhpParser\ParserFactory;
 use ReflectionClass;
-use function array_key_exists;
+use UnitEnum;
+use function array_map;
 use function class_exists;
-use function count;
-use function dump;
 use function file_get_contents;
-use function in_array;
+use function implode;
 use function interface_exists;
-use function is_array;
-use function preg_split;
 use function trait_exists;
-use function trim;
-use const T_CLASS;
-use const T_ENUM;
-use const T_IMPLEMENTS;
-use const T_STRING;
-use const T_TRAIT;
 
 class PhpFile
 {
     /**
-     * @param ReflectionClass<object> $reflection
+     * @param ReflectionClass<object>|ReflectionClass<UnitEnum> $reflection
      * @param list<class-string> $implements
      * @param array<string, class-string> $imports
      * @param array<class-string, string> $traits
@@ -52,67 +48,36 @@ class PhpFile
             return;
         }
 
-        $inOuterBlock = true;
-        $tokens = token_get_all($code, TOKEN_PARSE);
-
-        foreach($tokens as $i => $token) {
-            if (!is_array($token)) {
-                continue;
-            }
-
-            if ($inOuterBlock && in_array($token[0], [T_CLASS, T_INTERFACE, T_TRAIT, T_ENUM], true)) {
-                $inOuterBlock = false;
-                continue;
-            }
-
-            if ($token[0] === T_IMPLEMENTS) {
-                $j = $i + 1;
-                while (($curr = $tokens[$j] ?? null) && $tokens[$j] !== '{') {
-                    if (is_array($curr)) {
-                        if ($curr[0] === T_STRING && interface_exists($curr[1])) {
-                            $this->implements[] = $curr[1];
+        $parser = new ParserFactory()->createForNewestSupportedVersion();
+        foreach ($parser->parse($code) ?? [] as $node) {
+            if ($node instanceof Namespace_) {
+                foreach ($node->stmts as $stmt) {
+                    if ($stmt instanceof Use_) {
+                        foreach ($stmt->uses as $use) {
+                            $class = $use->name->toString();
+                            $alias = $use->getAlias()->toString();
+                            if (class_exists($class) || interface_exists($class) || trait_exists($class)) {
+                                $this->imports[$alias] = $class;
+                            }
                         }
                     }
-                    $j++;
-                }
-            }
-
-            if ($token[0] === T_USE) {
-                if ($inOuterBlock) {
-                    $useStatement = '';
-                    $j = $i + 1;
-                    while (isset($tokens[$j]) && $tokens[$j] !== ';') {
-                        if (is_array($tokens[$j])) {
-                            $useStatement .= $tokens[$j][1];
-                        } else {
-                            $useStatement .= $tokens[$j];
+                    if ($stmt instanceof Class_) {
+                        if ($stmt->implements !== []) {
+                            foreach ($stmt->implements as $implement) {
+                                $interface = $implement->toString();
+                                if (interface_exists($interface)) {
+                                    $this->implements[] = $interface;
+                                }
+                            }
                         }
-                        $j++;
-                    }
-                    /** @var list<string> $useParts */
-                    $useParts = preg_split('/\s+as\s+/i', trim($useStatement));
-                    $class = trim($useParts[0]);
-                    if (count($useParts) === 2) {
-                        $alias = trim($useParts[1]);
-                    } else {
-                        $alias = $class;
-                    }
-                    if (class_exists($class) || interface_exists($class) || trait_exists($class)) {
-                        $this->imports[$alias] = $class;
-                    }
-                } else {
-                    if ($tokens[$i + 2][0] === T_STRING) {
-                        $trait = $tokens[$i + 2][1] ?? '';
-                        if (!trait_exists($trait) && array_key_exists($trait, $this->imports)) {
-                            $trait = $this->imports[$trait];
-                        }
-                        if (!trait_exists($trait)) {
-                            $trait = $this->reflection->getNamespaceName() . '\\' . $trait;
-                        }
-                        if (trait_exists($trait)) {
-                            $comment = trim($tokens[$i - 2][1] ?? '');
-                            if (str_starts_with($comment, '/**')) {
-                                $this->traits[$trait] = $comment;
+                        foreach ($stmt->stmts ?? [] as $classStmt) {
+                            if ($classStmt instanceof TraitUse) {
+                                /** @var class-string $trait */
+                                $trait = $classStmt->traits[0]->toString();
+                                $this->traits[$trait] = implode(', ', array_map(
+                                    fn($c) => $c->getText(),
+                                    $classStmt->getComments(),
+                                ));
                             }
                         }
                     }

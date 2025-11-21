@@ -939,10 +939,10 @@
                 <span class="modifiers">
                   protected
                 </span>
-  <span class="type type-named">
-    <span class="no-link named-var">
-      Color
-    </span>
+  <span class="type type-structure">
+      <span class="no-link structure-name">
+        SouthPointe\Ansi\Codes\Color
+      </span>
   </span>
                 <var>$scalarColor</var>
               </div>
@@ -1006,68 +1006,6 @@
         <h3>Methods</h3>
         <ul class="methods">
             <li class="method">
-              <a id="method-handle" class="anchor" href="classes/kirameki/dumper/handlers/null-handler.html#method-handle">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    public
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    handle
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      mixed
-    </span>
-  </span>
-                        <var>$var</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$var</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
               <a id="method---construct" class="anchor" href="classes/kirameki/dumper/handlers/null-handler.html#method---construct">
                 <i class="fa-solid fa-link"></i>
               </a>
@@ -1116,6 +1054,19 @@
                 </div>
               </section>
               <section class="details">
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/handlers/handler.html">
+        Kirameki\Dumper\Handlers\Handler
+      </a>
+  </span>
+                      </div>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
@@ -1136,16 +1087,10 @@
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-                    <div class="description comment"></div>
-                  </div>
-                </div>
               </section>
             </li>
             <li class="method">
-              <a id="method-indent" class="anchor" href="classes/kirameki/dumper/handlers/null-handler.html#method-indent">
+              <a id="method-colorize" class="anchor" href="classes/kirameki/dumper/handlers/null-handler.html#method-colorize">
                 <i class="fa-solid fa-link"></i>
               </a>
               <section class="signature multi-line">
@@ -1155,7 +1100,7 @@
                   </span>
                   &nbsp;
                   <span class="name">
-                    indent
+                    colorize
                   </span>
                   (
                 </div>
@@ -1166,16 +1111,16 @@
       string
     </span>
   </span>
-                        <var>$string</var>
+                        <var>$value</var>
                         <span class="delimiter">,</span>
                     </li>
                     <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
+  <span class="type type-structure">
+      <span class="no-link structure-name">
+        SouthPointe\Ansi\Codes\Color
+      </span>
   </span>
-                        <var>$depth</var>
+                        <var>$color</var>
 
                     </li>
                 </ul>
@@ -1192,149 +1137,45 @@
                 </div>
               </section>
               <section class="details">
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/handlers/handler.html">
+        Kirameki\Dumper\Handlers\Handler
+      </a>
+  </span>
+                      </div>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
                         <tr class="parameter">
-                          <td class="name"><var>$string</var></td>
+                          <td class="name"><var>$value</var></td>
                           <td class="delimiter"></td>
                           <td class="description comment"></td>
                         </tr>
                         <tr class="parameter">
-                          <td class="name"><var>$depth</var></td>
+                          <td class="name"><var>$color</var></td>
                           <td class="delimiter"></td>
                           <td class="description comment"></td>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-line" class="anchor" href="classes/kirameki/dumper/handlers/null-handler.html#method-line">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    protected
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    line
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                        <var>$string</var>
-                        <span class="delimiter">,</span>
-                    </li>
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      int
-    </span>
-  </span>
-                        <var>$depth</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$string</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                        <tr class="parameter">
-                          <td class="name"><var>$depth</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-eol" class="anchor" href="classes/kirameki/dumper/handlers/null-handler.html#method-eol">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    protected
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    eol
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1376,6 +1217,19 @@
                 </div>
               </section>
               <section class="details">
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/handlers/handler.html">
+        Kirameki\Dumper\Handlers\Handler
+      </a>
+  </span>
+                      </div>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
@@ -1386,21 +1240,21 @@
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
-              <a id="method-colorize-scalar" class="anchor" href="classes/kirameki/dumper/handlers/null-handler.html#method-colorize-scalar">
+              <a id="method-colorize-delimiter" class="anchor" href="classes/kirameki/dumper/handlers/null-handler.html#method-colorize-delimiter">
                 <i class="fa-solid fa-link"></i>
               </a>
               <section class="signature multi-line">
@@ -1410,7 +1264,7 @@
                   </span>
                   &nbsp;
                   <span class="name">
-                    colorizeScalar
+                    colorizeDelimiter
                   </span>
                   (
                 </div>
@@ -1418,10 +1272,10 @@
                     <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
-      mixed
+      string
     </span>
   </span>
-                        <var>$value</var>
+                        <var>$delimiter</var>
 
                     </li>
                 </ul>
@@ -1438,27 +1292,40 @@
                 </div>
               </section>
               <section class="details">
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/handlers/handler.html">
+        Kirameki\Dumper\Handlers\Handler
+      </a>
+  </span>
+                      </div>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
                         <tr class="parameter">
-                          <td class="name"><var>$value</var></td>
+                          <td class="name"><var>$delimiter</var></td>
                           <td class="delimiter"></td>
                           <td class="description comment"></td>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1509,6 +1376,19 @@
                 </div>
               </section>
               <section class="details">
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/handlers/handler.html">
+        Kirameki\Dumper\Handlers\Handler
+      </a>
+  </span>
+                      </div>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
@@ -1519,21 +1399,21 @@
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
-              <a id="method-colorize-delimiter" class="anchor" href="classes/kirameki/dumper/handlers/null-handler.html#method-colorize-delimiter">
+              <a id="method-colorize-scalar" class="anchor" href="classes/kirameki/dumper/handlers/null-handler.html#method-colorize-scalar">
                 <i class="fa-solid fa-link"></i>
               </a>
               <section class="signature multi-line">
@@ -1543,7 +1423,7 @@
                   </span>
                   &nbsp;
                   <span class="name">
-                    colorizeDelimiter
+                    colorizeScalar
                   </span>
                   (
                 </div>
@@ -1551,81 +1431,10 @@
                     <li class="parameter">
   <span class="type type-named">
     <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                        <var>$delimiter</var>
-
-                    </li>
-                </ul>
-                <div class="signature-end">
-                  )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                    </span>
-                </div>
-              </section>
-              <section class="details">
-                  <div class="parameters">
-                    <h4>Parameters:</h4>
-                    <table>
-                        <tr class="parameter">
-                          <td class="name"><var>$delimiter</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
-                    </table>
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method-colorize" class="anchor" href="classes/kirameki/dumper/handlers/null-handler.html#method-colorize">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature multi-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    protected
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    colorize
-                  </span>
-                  (
-                </div>
-                <ul class="parameters">
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      string
+      mixed
     </span>
   </span>
                         <var>$value</var>
-                        <span class="delimiter">,</span>
-                    </li>
-                    <li class="parameter">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      Color
-    </span>
-  </span>
-                        <var>$color</var>
 
                     </li>
                 </ul>
@@ -1642,6 +1451,19 @@
                 </div>
               </section>
               <section class="details">
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/handlers/handler.html">
+        Kirameki\Dumper\Handlers\Handler
+      </a>
+  </span>
+                      </div>
+                  </div>
                   <div class="parameters">
                     <h4>Parameters:</h4>
                     <table>
@@ -1650,24 +1472,313 @@
                           <td class="delimiter"></td>
                           <td class="description comment"></td>
                         </tr>
-                        <tr class="parameter">
-                          <td class="name"><var>$color</var></td>
-                          <td class="delimiter"></td>
-                          <td class="description comment"></td>
-                        </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       string
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-eol" class="anchor" href="classes/kirameki/dumper/handlers/null-handler.html#method-eol">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    eol
+                  </span>
+                  (
                 </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/handlers/handler.html">
+        Kirameki\Dumper\Handlers\Handler
+      </a>
+  </span>
+                      </div>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-handle" class="anchor" href="classes/kirameki/dumper/handlers/null-handler.html#method-handle">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    handle
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      mixed
+    </span>
+  </span>
+                        <var>$var</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$var</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-indent" class="anchor" href="classes/kirameki/dumper/handlers/null-handler.html#method-indent">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    indent
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                        <var>$string</var>
+                        <span class="delimiter">,</span>
+                    </li>
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                        <var>$depth</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/handlers/handler.html">
+        Kirameki\Dumper\Handlers\Handler
+      </a>
+  </span>
+                      </div>
+                  </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$string</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$depth</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-line" class="anchor" href="classes/kirameki/dumper/handlers/null-handler.html#method-line">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature multi-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    protected
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    line
+                  </span>
+                  (
+                </div>
+                <ul class="parameters">
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                        <var>$string</var>
+                        <span class="delimiter">,</span>
+                    </li>
+                    <li class="parameter">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      int
+    </span>
+  </span>
+                        <var>$depth</var>
+
+                    </li>
+                </ul>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="declared-in">
+                    <h4>Declared in:</h4>
+                      <div class="declaration">
+                        <var class="type-icon type-class">
+                          c
+                        </var>
+  <span class="type type-structure">
+      <a href="classes/kirameki/dumper/handlers/handler.html">
+        Kirameki\Dumper\Handlers\Handler
+      </a>
+  </span>
+                      </div>
+                  </div>
+                  <div class="parameters">
+                    <h4>Parameters:</h4>
+                    <table>
+                        <tr class="parameter">
+                          <td class="name"><var>$string</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                        <tr class="parameter">
+                          <td class="name"><var>$depth</var></td>
+                          <td class="delimiter"></td>
+                          <td class="description comment"></td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      string
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
               </section>
             </li>
         </ul>

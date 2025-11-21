@@ -963,10 +963,10 @@
                   protected
                 </span>
   <span class="type type-union">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      EventListener
-    </span>
+  <span class="type type-structure">
+      <a href="classes/kirameki/event/listeners/event-listener.html">
+        Kirameki\Event\Listeners\EventListener
+      </a>
   <span class="generics">
     <span class="brace">&lt;</span>
   <span class="type type-structure">
@@ -1079,50 +1079,31 @@
         <h3>Methods</h3>
         <ul class="methods">
             <li class="method">
-              <a id="method-observe" class="anchor" href="classes/kirameki/process/process-observer.html#method-observe">
+              <a id="method---construct" class="anchor" href="classes/kirameki/process/process-observer.html#method---construct">
                 <i class="fa-solid fa-link"></i>
               </a>
               <section class="signature single-line">
                 <div class="signature-start">
                   <span class="modifiers">
-                    public
-                      static
+                    protected
                   </span>
                   &nbsp;
                   <span class="name">
-                    observe
+                    __construct
                   </span>
                   (
                 </div>
                 <div class="signature-end">
                   )
-                    <span class="return">
-                      :&nbsp;
-  <span class="type type-named">
-    <span class="no-link named-var">
-      self
-    </span>
-  </span>
-                    </span>
                 </div>
               </section>
               <section class="details">
                   <div class="comment">
-                    <p>Observation MUST start before any process is spawned or there is a chance<br />
-a process exits before the observer has a change to register a handler.</p>
+                    <p>There should only be one observer instance which is registered<br />
+through observeSignal, so make this private to make sure<br />
+people don't initialize this accidentally.</p>
 
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-  <span class="type type-named">
-    <span class="no-link named-var">
-      self
-    </span>
-  </span>
-                    <div class="description comment"></div>
-                  </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1154,51 +1135,17 @@ a process exits before the observer has a change to register a handler.</p>
                 </div>
               </section>
               <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       int
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
-              </section>
-            </li>
-            <li class="method">
-              <a id="method---construct" class="anchor" href="classes/kirameki/process/process-observer.html#method---construct">
-                <i class="fa-solid fa-link"></i>
-              </a>
-              <section class="signature single-line">
-                <div class="signature-start">
-                  <span class="modifiers">
-                    protected
-                  </span>
-                  &nbsp;
-                  <span class="name">
-                    __construct
-                  </span>
-                  (
-                </div>
-                <div class="signature-end">
-                  )
-                </div>
-              </section>
-              <section class="details">
-                  <div class="comment">
-                    <p>There should only be one observer instance which is registered<br />
-through observeSignal, so make this private to make sure<br />
-people don't initialize this accidentally.</p>
-
-                  </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
-                    <div class="description comment"></div>
-                  </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1258,17 +1205,64 @@ through ProcessManager have exited.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
+              </section>
+            </li>
+            <li class="method">
+              <a id="method-observe" class="anchor" href="classes/kirameki/process/process-observer.html#method-observe">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              <section class="signature single-line">
+                <div class="signature-start">
+                  <span class="modifiers">
+                    public
+                      static
+                  </span>
+                  &nbsp;
+                  <span class="name">
+                    observe
+                  </span>
+                  (
                 </div>
+                <div class="signature-end">
+                  )
+                    <span class="return">
+                      :&nbsp;
+  <span class="type type-named">
+    <span class="no-link named-var">
+      self
+    </span>
+  </span>
+                    </span>
+                </div>
+              </section>
+              <section class="details">
+                  <div class="comment">
+                    <p>Observation MUST start before any process is spawned or there is a chance<br />
+a process exits before the observer has a change to register a handler.</p>
+
+                  </div>
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
+  <span class="type type-named">
+    <span class="no-link named-var">
+      self
+    </span>
+  </span>
+                      <div class="description comment"></div>
+                    </div>
+                  </div>
               </section>
             </li>
             <li class="method">
@@ -1351,17 +1345,17 @@ through ProcessManager have exited.</p>
                         </tr>
                     </table>
                   </div>
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
             <li class="method">
@@ -1392,17 +1386,17 @@ through ProcessManager have exited.</p>
                 </div>
               </section>
               <section class="details">
-                <div class="return">
-                  <h4>Returns:</h4>
-                  <div class="return-type">
+                  <div class="return">
+                    <h4>Returns:</h4>
+                    <div class="return-type">
   <span class="type type-named">
     <span class="no-link named-var">
       void
     </span>
   </span>
-                    <div class="description comment"></div>
+                      <div class="description comment"></div>
+                    </div>
                   </div>
-                </div>
               </section>
             </li>
         </ul>
