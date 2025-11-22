@@ -9,7 +9,6 @@ use PhpParser\Node\Stmt\TraitUse;
 use PhpParser\Node\Stmt\Use_;
 use PhpParser\ParserFactory;
 use ReflectionClass;
-use Stringable;
 use UnitEnum;
 use function array_map;
 use function class_exists;
@@ -95,7 +94,7 @@ class PhpFile
     protected function toFqn(string $name): string
     {
         // When the type is imported via use statement
-        $class = $this->file->imports[$name] ?? '';
+        $class = $this->imports[$name] ?? '';
         if (is_string($class) && (class_exists($class) || interface_exists($class) || trait_exists($class) || enum_exists($class))) {
             return $class;
         }
