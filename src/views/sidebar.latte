@@ -12,6 +12,7 @@
     <li>
       {varType Kirameki\ApiDocGenerator\Components\ClassInfo $leaf}
       <a href="{$leaf->outputPath}" title="{$leaf->name}">
+        {include type-icon.latte, target: $leaf}
         {$basename}
       </a>
     </li>

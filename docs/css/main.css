@@ -59,6 +59,12 @@ blockquote {
     li {
         margin: 0.5rem 0;
         font-size: 0.8rem;
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
     }
 
     .sidebar-folder {
@@ -408,19 +414,27 @@ blockquote {
             overflow-x: auto;
         }
     }
-    .type-icon {
-        border-radius: 1rem;
-        border: 1px solid #a5b4fc;
-        background-color: #f3f6ff;
-        color: #4c69ff;
-        font-size: 0.6rem;
-        font-weight: bold;
-        padding: 0.1rem 0.3rem;
-        text-transform: uppercase;
-    }
-    .type-icon.type-class {
-    }
-    .type-icon.type-trait {
-        border-style: dashed;
-    }
+}
+.type-icon {
+    border-radius: 1rem;
+    border: 1px solid #a5b4fc;
+    background-color: #f3f6ff;
+    color: #4c69ff;
+    font-size: 0.6rem;
+    font-weight: bold;
+    padding: 0.07rem 0.25rem;
+    text-transform: uppercase;
+}
+.type-icon.type-class.abstract {
+    border-style: dotted;
+}
+.type-icon.type-trait {
+    color: #a855f7;
+    border-color: #d8b6fc;
+    background-color: #faf5ff;
+}
+.type-icon.type-interface {
+    color: #16a34a;
+    border-color: #9fcfaf;
+    background-color: #f0fdf4;
 }

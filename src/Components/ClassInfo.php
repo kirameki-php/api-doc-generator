@@ -279,6 +279,21 @@ class ClassInfo implements StructureInfo
     }
 
     /**
+     * @param ReflectionClass<object> $reflection
+     * @return InterfaceInfo
+     */
+    public function instantiateInterface(ReflectionClass $reflection): InterfaceInfo
+    {
+        return new InterfaceInfo(
+            $reflection,
+            $this->file,
+            $this->docParser,
+            $this->urlResolver,
+            $this->typeResolver,
+        );
+    }
+
+    /**
      * @param TypeNode $node
      * @return VarType
      */

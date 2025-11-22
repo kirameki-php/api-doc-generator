@@ -10,6 +10,7 @@ use Kirameki\Core\Exceptions\UnreachableException;
 use Kirameki\Text\Str;
 use ReflectionMethod;
 use ReflectionParameter;
+use function array_values;
 use function dump;
 use function in_array;
 
@@ -238,11 +239,12 @@ class MethodInfo extends MemberInfo
         foreach ($this->class->reflection->getInterfaces() as $interface) {
             foreach ($interface->getMethods() as $method) {
                 if ($method->getName() === $this->name) {
-                    $interfaces[] = $this->class->instantiateClass($interface);
+                    $interfaces[$interface->name] = $this->class->instantiateInterface($interface);
                     break;
                 }
             }
         }
-        return $interfaces;
+        ksort($interfaces, SORT_NATURAL);
+        return array_values($interfaces);
     }
 }

@@ -254,17 +254,13 @@
                     <h4>Declared in:</h4>
                     {if $method->declaringClass !== null}
                       <div class="declaration">
-                        <var class="type-icon type-{$method->declaringClass->type}">
-                          {substr($method->declaringClass->type, 0, 1)}
-                        </var>
+                        {include type-icon.latte, target: $method->declaringClass}
                         {include type.latte, type: new Kirameki\ApiDocGenerator\Types\StructureVarType($method->declaringClass)}
                       </div>
                     {/if}
                     {foreach $method->declaredInterfaces as $interface}
                       <div class="declaration">
-                        <var class="type-icon type-{$interface->type}">
-                          {substr($interface->type, 0, 1)}
-                        </var>
+                        {include type-icon.latte, target: $interface}
                         {include type.latte, type: new Kirameki\ApiDocGenerator\Types\StructureVarType($interface)}
                       </div>
                     {/foreach}

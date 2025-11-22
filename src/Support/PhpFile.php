@@ -2,18 +2,22 @@
 
 namespace Kirameki\ApiDocGenerator\Support;
 
+use Kirameki\Core\Exceptions\UnreachableException;
 use PhpParser\Node\Stmt\Class_;
 use PhpParser\Node\Stmt\Namespace_;
 use PhpParser\Node\Stmt\TraitUse;
 use PhpParser\Node\Stmt\Use_;
 use PhpParser\ParserFactory;
 use ReflectionClass;
+use Stringable;
 use UnitEnum;
 use function array_map;
 use function class_exists;
+use function enum_exists;
 use function file_get_contents;
 use function implode;
 use function interface_exists;
+use function is_string;
 use function trait_exists;
 
 class PhpFile
@@ -65,9 +69,7 @@ class PhpFile
                         if ($stmt->implements !== []) {
                             foreach ($stmt->implements as $implement) {
                                 $interface = $implement->toString();
-                                if (interface_exists($interface)) {
-                                    $this->implements[] = $interface;
-                                }
+                                $this->implements[] = $this->toFqn($interface);
                             }
                         }
                         foreach ($stmt->stmts ?? [] as $classStmt) {
@@ -84,5 +86,30 @@ class PhpFile
                 }
             }
         }
+    }
+
+    /**
+     * @param string|class-string $name
+     * @return class-string
+     */
+    protected function toFqn(string $name): string
+    {
+        // When the type is imported via use statement
+        $class = $this->file->imports[$name] ?? '';
+        if (is_string($class) && (class_exists($class) || interface_exists($class) || trait_exists($class) || enum_exists($class))) {
+            return $class;
+        }
+
+        // When the type is a sibling class in the same namespace
+        $sibling = $this->reflection->getNamespaceName() . '\\' . $name;
+        if (class_exists($sibling) || interface_exists($sibling) || trait_exists($sibling) || enum_exists($sibling)) {
+            return $sibling;
+        }
+
+        if (class_exists($name) || interface_exists($name) || trait_exists($name) || enum_exists($name)) {
+            return $name;
+        }
+
+        throw new UnreachableException();
     }
 }
