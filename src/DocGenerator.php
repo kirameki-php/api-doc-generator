@@ -3,6 +3,7 @@
 namespace Kirameki\ApiDocGenerator;
 
 use Kirameki\ApiDocGenerator\Components\ClassInfo;
+use Kirameki\ApiDocGenerator\Components\InterfaceInfo;
 use Kirameki\ApiDocGenerator\Components\StructureInfo;
 use Kirameki\ApiDocGenerator\Components\TraitInfo;
 use Kirameki\ApiDocGenerator\Support\PhpFile;
@@ -83,6 +84,12 @@ class DocGenerator
                     else if ($reflection->isTrait()) {
                         $file = new PhpFile($reflection);
                         $info = new TraitInfo($reflection, $file, $docParser, $urlResolver);
+                        $this->structureMap->add($info);
+                        $this->appendToTree($tree, $info);
+                    }
+                    else if ($reflection->isInterface()) {
+                        $file = new PhpFile($reflection);
+                        $info = new InterfaceInfo($reflection, $file, $docParser, $urlResolver);
                         $this->structureMap->add($info);
                         $this->appendToTree($tree, $info);
                     }
