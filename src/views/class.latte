@@ -255,13 +255,13 @@
                     {if $method->declaringClass !== null}
                       <div class="declaration">
                         {include type-icon.latte, target: $method->declaringClass}
-                        {include type.latte, type: new Kirameki\ApiDocGenerator\Types\StructureVarType($method->declaringClass)}
+                        {include type.latte, type: $method->declaringClass}
                       </div>
                     {/if}
                     {foreach $method->declaredInterfaces as $interface}
                       <div class="declaration">
                         {include type-icon.latte, target: $interface}
-                        {include type.latte, type: new Kirameki\ApiDocGenerator\Types\StructureVarType($interface)}
+                        {include type.latte, type: $interface}
                       </div>
                     {/foreach}
                   </div>

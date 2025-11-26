@@ -2,30 +2,26 @@
 
 namespace Kirameki\ApiDocGenerator\Components;
 
-use Kirameki\ApiDocGenerator\Support\PhpDoc;
 use Kirameki\ApiDocGenerator\Support\PhpFile;
 use Kirameki\ApiDocGenerator\Support\CommentParser;
 use Kirameki\ApiDocGenerator\Support\TypeResolver;
 use Kirameki\ApiDocGenerator\Support\UrlResolver;
 use Kirameki\ApiDocGenerator\Types\StructureVarType;
 use Kirameki\ApiDocGenerator\Types\VarType;
-use Kirameki\Collections\Vec;
-use Kirameki\Text\Str;
-use PHPStan\PhpDocParser\Ast\Type\TypeNode;
 use ReflectionClass;
 use ReflectionClassConstant;
 use ReflectionProperty;
 use function array_map;
-use function array_values;
-use function assert;
 use function ksort;
 
-class ClassInfo implements StructureInfo
+class ClassInfo extends StructureInfo
 {
     /**
      * @var string
      */
-    public string $type = 'class';
+    public string $type {
+        get => 'class';
+    }
 
     /**
      * @var string
@@ -39,13 +35,6 @@ class ClassInfo implements StructureInfo
      */
     public string $namespace {
         get => $this->reflection->getNamespaceName();
-    }
-
-    /**
-     * @var string
-     */
-    public string $basename {
-        get => Str::substringAfterLast($this->name, '\\');
     }
 
     /**
@@ -73,28 +62,28 @@ class ClassInfo implements StructureInfo
      * @var list<TemplateInfo>
      */
     public array $templates {
-        get => $this->templates ??= $this->resolveTemplates();
+        get => $this->templates ??= $this->typeResolver->resolveTemplates();
     }
 
     /**
      * @var VarType|null
      */
     public ?VarType $parent {
-        get => $this->parent ??= $this->resolveParent();
+        get => $this->parent ??= $this->typeResolver->resolveParent();
     }
 
     /**
      * @var list<VarType>
      */
     public array $interfaces {
-        get => $this->interfaces ??= $this->resolveInterfaces();
+        get => $this->interfaces ??= $this->typeResolver->resolveInterfaces();
     }
 
     /**
      * @var list<VarType>
      */
     public array $traits {
-        get => $this->traits ??= $this->resolveTraits();
+        get => $this->traits ??= $this->typeResolver->resolveTraits();
     }
 
     /**
@@ -125,28 +114,6 @@ class ClassInfo implements StructureInfo
     }
 
     /**
-     * @var PhpDoc
-     */
-    protected PhpDoc $phpDoc {
-        get => $this->phpDoc ??= $this->docParser->parse((string) $this->reflection->getDocComment());
-    }
-
-    /**
-     * @var TypeResolver
-     */
-    protected TypeResolver $typeResolver;
-
-    /**
-     * @var string
-     */
-    public string $outputPath {
-        get => $this->outputPath ??= new Vec(Str::split($this->name, '\\'))
-                ->map(Str::toKebabCase(...))
-                ->prepend('classes')
-                ->join('/') . '.html';
-    }
-
-    /**
      * @var string
      */
     public string $url {
@@ -155,99 +122,16 @@ class ClassInfo implements StructureInfo
 
     /**
      * @param ReflectionClass<object> $reflection
-     * @param PhpFile $file
      * @param CommentParser $docParser
      * @param UrlResolver $urlResolver
-     * @param TypeResolver|null $typeResolver
+     * @param TypeResolver $typeResolver
      */
     public function __construct(
-        public readonly ReflectionClass $reflection,
-        protected readonly PhpFile $file,
+        protected readonly ReflectionClass $reflection,
         protected readonly CommentParser $docParser,
         protected readonly UrlResolver $urlResolver,
-        ?TypeResolver $typeResolver = null,
+        protected readonly TypeResolver $typeResolver,
     ) {
-        $this->typeResolver = $typeResolver ?? new TypeResolver(
-            $this->phpDoc,
-            $this->file,
-            $this->docParser,
-            $this->urlResolver,
-        );
-    }
-
-    /**
-     * @return list<TemplateInfo>
-     */
-    protected function resolveTemplates(): array
-    {
-        $templates = [];
-        foreach ($this->phpDoc->templates as $tag) {
-            $templates[] = new TemplateInfo(
-                $tag->name,
-                $tag->bound
-                    ? $this->getTypeFromNode($tag->bound)
-                    : null,
-                $tag->default
-                    ? $this->getTypeFromNode($tag->default)
-                    : null,
-            );
-        }
-        return $templates;
-    }
-
-    /**
-     * @return list<VarType>
-     */
-    protected function resolveTraits(): array
-    {
-        $traits = [];
-        foreach ($this->file->traits as $comment) {
-            $doc = $this->docParser->parse($comment);
-            if ($doc->use !== null) {
-                $node = $this->getTypeFromNode($doc->use->type);
-                assert($node instanceof StructureVarType);
-                $traits[$node->structure->name] = $node;
-            }
-        }
-        foreach ($this->reflection->getTraits() as $name => $reflection) {
-            $traits[$name] ??= new StructureVarType(
-                new TraitInfo($reflection, $this->file, $this->docParser, $this->urlResolver, $this->typeResolver),
-            );
-        }
-        return array_values($traits);
-    }
-
-    /**
-     * @return VarType|null
-     */
-    protected function resolveParent(): ?VarType
-    {
-        $node = $this->phpDoc->extends?->type;
-        if ($node !== null) {
-            return $this->getTypeFromNode($node);
-        }
-        $reflection = $this->reflection->getParentClass();
-        if ($reflection === false) {
-            return null;
-        }
-        return new StructureVarType($this->instantiateClass($reflection));
-    }
-
-    /**
-     * @return list<VarType>
-     */
-    protected function resolveInterfaces(): array
-    {
-        $types = [];
-        foreach ($this->phpDoc->implements as $tag) {
-            $types[$tag->type->type->name] = $this->getTypeFromNode($tag->type);
-        }
-        foreach ($this->file->implements as $if) {
-            $reflection = new ReflectionClass($if);
-            $types[$reflection->getName()] ??= new StructureVarType($this->instantiateClass($reflection));
-        }
-        ksort($types, SORT_NATURAL);
-        return array_values($types);
     }
 
     /**
@@ -264,49 +148,15 @@ class ClassInfo implements StructureInfo
     }
 
     /**
-     * @param ReflectionClass<object> $reflection
-     * @return ClassInfo
-     */
-    public function instantiateClass(ReflectionClass $reflection): ClassInfo
-    {
-        return new ClassInfo(
-            $reflection,
-            $this->file,
-            $this->docParser,
-            $this->urlResolver,
-            $this->typeResolver,
-        );
-    }
-
-    /**
-     * @param ReflectionClass<object> $reflection
-     * @return InterfaceInfo
-     */
-    public function instantiateInterface(ReflectionClass $reflection): InterfaceInfo
-    {
-        return new InterfaceInfo(
-            $reflection,
-            $this->file,
-            $this->docParser,
-            $this->urlResolver,
-            $this->typeResolver,
-        );
-    }
-
-    /**
-     * @param TypeNode $node
-     * @return VarType
-     */
-    protected function getTypeFromNode(TypeNode $node): VarType
-    {
-        return $this->typeResolver->resolveFromNode($node);
-    }
-
-    /**
      * @return string
      */
     public function __toString(): string
     {
         return $this->name;
+    }
+
+    public function toType(): StructureVarType
+    {
+        return new StructureVarType($this);
     }
 }

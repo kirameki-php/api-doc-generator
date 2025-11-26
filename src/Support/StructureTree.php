@@ -4,22 +4,23 @@ namespace Kirameki\ApiDocGenerator\Support;
 
 use IteratorAggregate;
 use Kirameki\ApiDocGenerator\Components\ClassInfo;
+use Kirameki\ApiDocGenerator\Components\StructureInfo;
 use Traversable;
 
 /**
- * @implements IteratorAggregate<string, ClassInfo>
+ * @implements IteratorAggregate<string, StructureInfo>
  */
-class Tree implements IteratorAggregate
+class StructureTree implements IteratorAggregate
 {
     /**
-     * @var array<string, Tree>
+     * @var array<string, StructureTree>
      */
     public array $namespaces = [];
 
     /**
-     * @var array<string, ClassInfo>
+     * @var array<string, StructureInfo>
      */
-    public array $classes = [];
+    public array $structures = [];
 
     /**
      * @return void
@@ -30,11 +31,11 @@ class Tree implements IteratorAggregate
         foreach ($this->namespaces as $namespace) {
             $namespace->sortRecursively();
         }
-        ksort($this->classes);
+        ksort($this->structures);
     }
 
     /**
-     * @return Traversable<string, ClassInfo>
+     * @return Traversable<string, StructureInfo>
      */
     public function getIterator(): Traversable
     {
@@ -43,7 +44,7 @@ class Tree implements IteratorAggregate
                 yield $name => $class;
             }
         }
-        foreach ($this->classes as $name => $class) {
+        foreach ($this->structures as $name => $class) {
             yield $name => $class;
         }
     }

@@ -6,10 +6,11 @@ use Kirameki\ApiDocGenerator\Components\ClassInfo;
 use Kirameki\ApiDocGenerator\Components\InterfaceInfo;
 use Kirameki\ApiDocGenerator\Components\StructureInfo;
 use Kirameki\ApiDocGenerator\Components\TraitInfo;
+use Kirameki\ApiDocGenerator\Support\CommentParser;
 use Kirameki\ApiDocGenerator\Support\PhpFile;
 use Kirameki\ApiDocGenerator\Support\CommentParserFactory;
 use Kirameki\ApiDocGenerator\Support\StructureMap;
-use Kirameki\ApiDocGenerator\Support\Tree;
+use Kirameki\ApiDocGenerator\Support\StructureTree;
 use Kirameki\ApiDocGenerator\Support\TypeResolver;
 use Kirameki\ApiDocGenerator\Support\UrlResolver;
 use Kirameki\Collections\Utils\Iter;
@@ -19,15 +20,12 @@ use Kirameki\Storage\Directory;
 use Kirameki\Storage\Path;
 use Kirameki\Storage\Storable;
 use Kirameki\Text\Str;
-use PhpParser\ParserFactory;
 use ReflectionClass;
 use ReflectionEnum;
 use ReflectionException;
-use UnitEnum;
 use function array_flip;
 use function class_exists;
 use function dirname;
-use function dump;
 use function enum_exists;
 use function file_get_contents;
 use function file_put_contents;
@@ -40,9 +38,25 @@ class DocGenerator
      */
     protected array $pathMap;
 
+    /**
+     * @var StructureMap
+     */
     protected StructureMap $structureMap;
 
-    protected CommentParserFactory $docParserFactory;
+    /**
+     * @var StructureTree
+     */
+    protected StructureTree $structureTree;
+
+    /**
+     * @var CommentParser
+     */
+    protected CommentParser $docParser;
+
+    /**
+     * @var UrlResolver
+     */
+    protected UrlResolver $urlResolver;
 
     /**
      * @param string $basePath
@@ -58,15 +72,13 @@ class DocGenerator
         $composer = Json::decode($composerContent);
         $this->pathMap = array_flip((array) $composer->autoload->{'psr-4'});
         $this->structureMap = new StructureMap();
-        $this->docParserFactory = new CommentParserFactory();
+        $this->structureTree = new StructureTree();
+        $this->docParser = CommentParserFactory::create();
+        $this->urlResolver = new UrlResolver($this->structureMap);
     }
 
     public function generate(): void
     {
-        $tree = new Tree();
-        $docParser = $this->docParserFactory->create();
-        $urlResolver = new UrlResolver($this->structureMap);
-
         foreach ($this->pathMap as $path => $namespace) {
             $dir = new Directory("{$this->projectRoot}/{$path}");
             foreach ($dir->scanRecursively() as $storable) {
@@ -78,37 +90,19 @@ class DocGenerator
                         $reflection->getShortName() === 'Enumerator'
                     )
                 ) {
-                    if ($reflection instanceof ReflectionEnum) {
-                        // TODO implement EnumInfo
-                    }
-                    else if ($reflection->isTrait()) {
-                        $file = new PhpFile($reflection);
-                        $info = new TraitInfo($reflection, $file, $docParser, $urlResolver);
-                        $this->structureMap->add($info);
-                        $this->appendToTree($tree, $info);
-                    }
-                    else if ($reflection->isInterface()) {
-                        $file = new PhpFile($reflection);
-                        $info = new InterfaceInfo($reflection, $file, $docParser, $urlResolver);
-                        $this->structureMap->add($info);
-                        $this->appendToTree($tree, $info);
-                    }
-                    else {
-                        $file = new PhpFile($reflection);
-                        $info = new ClassInfo($reflection, $file, $docParser, $urlResolver);
-                        $this->structureMap->add($info);
-                        $this->appendToTree($tree, $info);
-                    }
+                    $info = $this->generateStructureInfo($reflection);
+                    $this->structureMap->add($info);
+                    $this->appendToTree($info);
                 }
             }
         }
-        $tree->sortRecursively();
+        $this->structureTree->sortRecursively();
 
         $docsPath = dirname(__DIR__) . '/docs';
         @mkdir($docsPath, 0755);
 
         $sidebarHtml = $this->renderer->render(Path::of(__DIR__ . '/views/sidebar.latte'), [
-            'tree' => $tree,
+            'tree' => $this->structureTree,
         ]);
 
         $html = $this->renderer->render(Path::of(__DIR__ . '/views/index.latte'), [
@@ -116,10 +110,9 @@ class DocGenerator
         ]);
         file_put_contents("{$docsPath}/main.html", $html);
 
-        foreach (Iter::flatten($tree, 100) as $info) {
+        foreach (Iter::flatten($this->structureTree, 100) as $info) {
             $path = match(true) {
-                $info instanceof ClassInfo,
-                $info instanceof TraitInfo => Path::of(__DIR__ . '/views/class.latte'),
+                $info instanceof ClassInfo => Path::of(__DIR__ . '/views/class.latte'),
                 default => throw new UnreachableException(),
             };
             $html = $this->renderer->render($path, ['sidebarHtml' => $sidebarHtml, 'info' => $info]);
@@ -133,7 +126,7 @@ class DocGenerator
      * @param Storable $storable
      * @param string $path
      * @param string $namespace
-     * @return ReflectionClass<object>|ReflectionEnum<UnitEnum>|null
+     * @return ReflectionClass<object>|null
      * @throws ReflectionException
      */
     protected function getClassIfExists(Storable $storable, string $path, string $namespace): ReflectionClass|null
@@ -155,17 +148,48 @@ class DocGenerator
     }
 
     /**
-     * @param Tree $tree
+     * @param ReflectionClass<object> $reflection
+     * @return StructureInfo
+     */
+    protected function generateStructureInfo(ReflectionClass $reflection): StructureInfo
+    {
+        $typeResolver = $this->createTypeResolverFor($reflection);
+
+        if ($reflection instanceof ReflectionEnum) {
+            // TODO implement EnumInfo
+        }
+
+        if ($reflection->isTrait()) {
+            return new TraitInfo($reflection, $this->docParser, $this->urlResolver, $typeResolver);
+        }
+
+        if ($reflection->isInterface()) {
+            return new InterfaceInfo($reflection, $this->docParser, $this->urlResolver, $typeResolver);
+        }
+
+        return new ClassInfo($reflection, $this->docParser, $this->urlResolver, $typeResolver);
+    }
+
+    /**
+     * @param ReflectionClass<object> $reflection
+     * @return TypeResolver
+     */
+    protected function createTypeResolverFor(ReflectionClass $reflection): TypeResolver
+    {
+        return new TypeResolver($reflection, new PhpFile($reflection), $this->docParser, $this->urlResolver);
+    }
+
+    /**
      * @param StructureInfo $info
      * @return void
      */
-    protected function appendToTree(Tree $tree, StructureInfo $info): void
+    protected function appendToTree(StructureInfo $info): void
     {
         $parts = explode('\\', $info->namespace);
-        $current = $tree;
+        $current = $this->structureTree;
         foreach ($parts as $part) {
-            $current = $current->namespaces[$part] ??= new Tree();
+            $current = $current->namespaces[$part] ??= new StructureTree();
         }
-        $current->classes[$info->basename] = $info;
+        $current->structures[$info->basename] = $info;
     }
 }

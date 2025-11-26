@@ -2,21 +2,30 @@
 
 namespace Kirameki\ApiDocGenerator\Components;
 
+use Kirameki\Collections\Vec;
+use Kirameki\Text\Str;
 use Stringable;
 
-interface StructureInfo extends Stringable
+abstract class StructureInfo implements Stringable
 {
     /**
      * @var string
      */
-    public string $name {
+    public abstract string $type {
         get;
     }
 
     /**
      * @var string
      */
-    public string $namespace {
+    public abstract string $name {
+        get;
+    }
+
+    /**
+     * @var string
+     */
+    public abstract string $namespace {
         get;
     }
 
@@ -24,13 +33,13 @@ interface StructureInfo extends Stringable
      * @var string
      */
     public string $basename {
-        get;
+        get => Str::substringAfterLast($this->name, '\\');
     }
 
     /**
      * @var list<TemplateInfo>
      */
-    public array $templates {
+    public abstract array $templates {
         get;
     }
 
@@ -38,13 +47,23 @@ interface StructureInfo extends Stringable
      * @var string
      */
     public string $outputPath {
-        get;
+        get => $this->outputPath ??= new Vec(Str::split($this->name, '\\'))
+            ->map(Str::toKebabCase(...))
+            ->prepend('classes')
+            ->join('/') . '.html';
     }
 
     /**
      * @var string
      */
-    public string $url {
+    public abstract string $url {
+        get;
+    }
+
+    /**
+     * @var bool
+     */
+    public abstract bool $isAbstract {
         get;
     }
 }

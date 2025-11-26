@@ -1,4 +1,4 @@
-{varType Kirameki\ApiDocGenerator\Support\Tree $tree}
+{varType Kirameki\ApiDocGenerator\Support\StructureTree $tree}
 <ul>
   {foreach $tree->namespaces as $name => $_tree}
     <li>
@@ -8,11 +8,11 @@
       {include sidebar.latte, tree: $_tree}
     </li>
   {/foreach}
-  {foreach $tree->classes as $basename => $leaf}
+  {foreach $tree->structures as $basename => $leaf}
     <li>
       {varType Kirameki\ApiDocGenerator\Components\ClassInfo $leaf}
       <a href="{$leaf->outputPath}" title="{$leaf->name}">
-        {include type-icon.latte, target: $leaf}
+        {include type-icon.latte, target: $leaf->toType()}
         {$basename}
       </a>
     </li>

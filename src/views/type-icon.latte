@@ -1,2 +1,3 @@
-{varType Kirameki\ApiDocGenerator\Components\ClassInfo $target}
-<var class="type-icon type-{$target->type} {$target->isAbstract ? "abstract" : ""}">{substr($target->type, 0, 1)}</var>
+{varType Kirameki\ApiDocGenerator\Types\StructureVarType $target}
+{var $structure = $target->structure}
+<var class="type-icon type-{$structure->type} {$structure->isAbstract ? "abstract" : ""}">{substr($structure->type, 0, 1)}</var>

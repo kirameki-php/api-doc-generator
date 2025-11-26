@@ -11,44 +11,24 @@ use PHPStan\PhpDocParser\ParserConfig;
 class CommentParserFactory
 {
     /**
-     * @var ParserConfig
-     */
-    protected ParserConfig $config;
-
-    /**
-     * @var Lexer
-     */
-    protected Lexer $lexer {
-        get => $this->lexer ??= new Lexer($this->config);
-    }
-
-    /**
-     * @var PhpDocParser
-     */
-    protected PhpDocParser $parser {
-        get => $this->parser ??= new PhpDocParser(
-            $this->config,
-            new TypeParser($this->config, new ConstExprParser($this->config)),
-            new ConstExprParser($this->config),
-        );
-    }
-
-    /**
      * @param ParserConfig|null $config
+     * @return CommentParser
      */
-    public function __construct(
-        ?ParserConfig $config = null,
-    )
+    public static function create(?ParserConfig $config = null): CommentParser
     {
-        $this->config = $config ?? new ParserConfig([
+        $config ??= new ParserConfig([
             'lines' => true,
             'indexes' => true,
             'comments' => true,
         ]);
-    }
 
-    public function create(): CommentParser
-    {
-        return new CommentParser($this->lexer, $this->parser);
+        $lexer = new Lexer($config);
+        $parser = new PhpDocParser(
+            $config,
+            new TypeParser($config, new ConstExprParser($config)),
+            new ConstExprParser($config),
+        );
+
+        return new CommentParser($lexer, $parser);
     }
 }

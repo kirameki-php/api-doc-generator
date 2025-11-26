@@ -10,8 +10,6 @@ use Kirameki\Core\Exceptions\UnreachableException;
 use Kirameki\Text\Str;
 use ReflectionMethod;
 use ReflectionParameter;
-use function array_values;
-use function dump;
 use function in_array;
 
 class MethodInfo extends MemberInfo
@@ -116,17 +114,17 @@ class MethodInfo extends MemberInfo
     }
 
     /**
-     * @var ClassInfo|null
+     * @var VarType|null
      */
-    public ?ClassInfo $declaringClass {
-        get => $this->declaringClass ??= $this->resolveDeclaringClass();
+    public ?VarType $declaringClass {
+        get => $this->declaringClass ??= $this->typeResolver->resolveDeclaringClassForMethod($this->reflection);
     }
 
     /**
-     * @var list<ClassInfo>
+     * @var list<VarType>
      */
     public array $declaredInterfaces {
-        get => $this->declaredInterfaces ??= $this->resolvedDeclaredInterfaces();
+        get => $this->declaredInterfaces ??= $this->typeResolver->resolveDeclaredInterfacesForMethod($this->name);
     }
 
     /**
@@ -196,55 +194,5 @@ class MethodInfo extends MemberInfo
     protected function resolveReturnType(): VarType
     {
         return $this->typeResolver->resolveFromReflection($this->reflection->getReturnType());
-    }
-
-    /**
-     * @return ClassInfo|null
-     */
-    protected function resolveDeclaringClass(): ?ClassInfo
-    {
-        $reflection = $this->reflection->getDeclaringClass();
-
-        $class = $this->class->instantiateClass($reflection);
-
-        if ($declaringTrait = $this->tryGetDeclaringTrait($class)) {
-            return $declaringTrait;
-        }
-
-        if ($reflection->getName() !== $this->class->name) {
-            return $class;
-        }
-
-        return null;
-    }
-
-    protected function tryGetDeclaringTrait(ClassInfo $class): ?TraitInfo
-    {
-        foreach ($class->traits as $trait) {
-            if ($trait instanceof StructureVarType && $trait->structure instanceof TraitInfo) {
-                if (isset($trait->structure->methods[$this->name])) {
-                    return $trait->structure;
-                }
-            }
-        }
-        return null;
-    }
-
-    /**
-     * @return list<ClassInfo>
-     */
-    protected function resolvedDeclaredInterfaces(): array
-    {
-        $interfaces = [];
-        foreach ($this->class->reflection->getInterfaces() as $interface) {
-            foreach ($interface->getMethods() as $method) {
-                if ($method->getName() === $this->name) {
-                    $interfaces[$interface->name] = $this->class->instantiateInterface($interface);
-                    break;
-                }
-            }
-        }
-        ksort($interfaces, SORT_NATURAL);
-        return array_values($interfaces);
     }
 }

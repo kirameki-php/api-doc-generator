@@ -13,7 +13,9 @@ class InterfaceInfo extends ClassInfo
     /**
      * @var string
      */
-    public string $type = 'interface';
+    public string $type {
+        get => 'interface';
+    }
 
     /**
      * @var bool
@@ -24,21 +26,18 @@ class InterfaceInfo extends ClassInfo
 
     /**
      * @param ReflectionClass<object> $reflection
-     * @param PhpFile $file
      * @param CommentParser $docParser
      * @param UrlResolver $urlResolver
-     * @param TypeResolver|null $typeResolver
+     * @param TypeResolver $typeResolver
      */
     public function __construct(
         ReflectionClass $reflection,
-        PhpFile $file,
         CommentParser $docParser,
         UrlResolver $urlResolver,
-        ?TypeResolver $typeResolver = null,
+        TypeResolver $typeResolver,
     ) {
         parent::__construct(
             $reflection,
-            $file,
             $docParser,
             $urlResolver,
             $typeResolver,

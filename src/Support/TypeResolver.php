@@ -4,6 +4,8 @@ namespace Kirameki\ApiDocGenerator\Support;
 
 use Closure;
 use Kirameki\ApiDocGenerator\Components\ClassInfo;
+use Kirameki\ApiDocGenerator\Components\InterfaceInfo;
+use Kirameki\ApiDocGenerator\Components\TemplateInfo;
 use Kirameki\ApiDocGenerator\Components\TraitInfo;
 use Kirameki\ApiDocGenerator\Types\CallableVarType;
 use Kirameki\ApiDocGenerator\Types\ConditionalVarType;
@@ -30,36 +32,169 @@ use PHPStan\PhpDocParser\Ast\Type\UnionTypeNode;
 use ReflectionClass;
 use ReflectionEnum;
 use ReflectionIntersectionType;
+use ReflectionMethod;
 use ReflectionNamedType;
 use ReflectionType;
 use ReflectionUnionType;
 use Stringable;
+use UnitEnum;
 use function array_map;
 use function array_values;
+use function assert;
 use function class_exists;
-use function dump;
 use function enum_exists;
 use function in_array;
 use function interface_exists;
 use function is_string;
+use function ksort;
 use function trait_exists;
+use const SORT_NATURAL;
 
 class TypeResolver
 {
     /**
-     * @param PhpDoc $structureDoc
+     * @var PhpDoc
+     */
+    protected PhpDoc $phpDoc {
+        get => $this->phpDoc ??= $this->docParser->parse((string) $this->reflection->getDocComment());
+    }
+
+    /**
+     * @param ReflectionClass<object>|ReflectionClass<UnitEnum> $reflection
      * @param PhpFile $file
      * @param CommentParser $docParser
      * @param UrlResolver $urlResolver
      */
     public function __construct(
-        protected readonly PhpDoc $structureDoc,
+        protected readonly ReflectionClass $reflection,
         protected readonly PhpFile $file,
         protected readonly CommentParser $docParser,
         protected readonly UrlResolver $urlResolver,
     ) {
     }
 
+    /**
+     * @return list<TemplateInfo>
+     */
+    public function resolveTemplates(): array
+    {
+        $templates = [];
+        foreach ($this->phpDoc->templates as $tag) {
+            $templates[] = new TemplateInfo(
+                $tag->name,
+                $tag->bound
+                    ? $this->resolveFromNode($tag->bound)
+                    : null,
+                $tag->default
+                    ? $this->resolveFromNode($tag->default)
+                    : null,
+            );
+        }
+        return $templates;
+    }
+
+    /**
+     * @return VarType|null
+     */
+    public function resolveParent(): ?VarType
+    {
+        $node = $this->phpDoc->extends?->type;
+        if ($node !== null) {
+            return $this->resolveFromNode($node);
+        }
+        $reflection = $this->file->reflection->getParentClass();
+        if ($reflection === false) {
+            return null;
+        }
+        return $this->instantiateClassInfo($reflection)->toType();
+    }
+
+    /**
+     * @return list<VarType>
+     */
+    public function resolveInterfaces(): array
+    {
+        $types = [];
+        foreach ($this->phpDoc->implements as $tag) {
+            $types[$tag->type->type->name] = $this->resolveFromNode($tag->type);
+        }
+        foreach ($this->file->implements as $if) {
+            $reflection = new ReflectionClass($if);
+            $types[$reflection->getName()] ??= $this->instantiateClassInfo($reflection)->toType();
+        }
+        ksort($types, SORT_NATURAL);
+        return array_values($types);
+    }
+
+    /**
+     * @return list<VarType>
+     */
+    public function resolveTraits(): array
+    {
+        $traits = [];
+        foreach ($this->file->traits as $comment) {
+            $doc = $this->docParser->parse($comment);
+            if ($doc->use !== null) {
+                $node = $this->resolveFromNode($doc->use->type);
+                assert($node instanceof StructureVarType);
+                $traits[$node->structure->name] = $node;
+            }
+        }
+        foreach ($this->reflection->getTraits() as $name => $reflection) {
+            $traits[$name] ??= $this->instantiateTraitInfo($reflection)->toType();
+        }
+        return array_values($traits);
+    }
+
+    /**
+     * @return list<VarType>
+     */
+    public function resolveDeclaredInterfacesForMethod(string $name): array
+    {
+        $interfaces = [];
+        foreach ($this->reflection->getInterfaces() as $interface) {
+            foreach ($interface->getMethods() as $method) {
+                if ($method->getName() === $name) {
+                    $interfaces[$interface->name] = $this->instantiateInterfaceInfo($interface)->toType();
+                    break;
+                }
+            }
+        }
+        ksort($interfaces, SORT_NATURAL);
+        return array_values($interfaces);
+    }
+
+    /**
+     * @param ReflectionMethod $reflection
+     * @return VarType|null
+     */
+    public function resolveDeclaringClassForMethod(ReflectionMethod $reflection): ?VarType
+    {
+        $class = $this->instantiateClassInfo($reflection->getDeclaringClass());
+
+        if ($trait = $this->tryGetDeclaringTrait($reflection, $class)) {
+            return $trait->toType();
+        }
+
+        if ($reflection->getName() !== $this->reflection->name) {
+            return $class->toType();
+        }
+
+        return null;
+    }
+
+    protected function tryGetDeclaringTrait(ReflectionMethod $reflection, ClassInfo $class): ?TraitInfo
+    {
+        foreach ($class->traits as $trait) {
+            if ($trait instanceof StructureVarType && $trait->structure instanceof TraitInfo) {
+                $name = $reflection->name;
+                if ($trait->structure->methods[$name] ?? false) {
+                    return $trait->structure;
+                }
+            }
+        }
+        return null;
+    }
     /**
      * @param TypeNode $node
      * @param PhpDoc|null $doc
@@ -121,7 +256,7 @@ class TypeResolver
 
         if ($node instanceof CallableTypeNode) {
             $name = $node->identifier->name === Closure::class
-                ? new StructureVarType($this->instantiateClassInfo(new ReflectionClass(Closure::class)))
+                ? $this->instantiateClassInfo(new ReflectionClass(Closure::class))->toType()
                 : new NamedVarType($node->identifier->name);
             return new CallableVarType(
                 $name,
@@ -145,13 +280,13 @@ class TypeResolver
     {
         if ($type instanceof ReflectionIntersectionType) {
             return new IntersectionVarType(
-                array_map(fn($t) => $this->resolveFromReflection($t), $type->getTypes())
+                array_map(fn($t) => $this->resolveFromReflection($t), $type->getTypes()),
             );
         }
 
         if ($type instanceof ReflectionUnionType) {
             return new UnionVarType(
-                array_map(fn($t) => $this->resolveFromReflection($t), $type->getTypes())
+                array_map(fn($t) => $this->resolveFromReflection($t), $type->getTypes()),
             );
         }
 
@@ -197,7 +332,7 @@ class TypeResolver
         }
 
         if (
-            in_array($fqn, array_map(fn($t) => $t->name, $this->structureDoc->templates), true) ||
+            in_array($fqn, array_map(fn($t) => $t->name, $this->phpDoc->templates), true) ||
             in_array($fqn, array_map(fn($t) => $t->name, $doc->templates ?? []), true)
         ) {
             return new TemplateVarType($fqn);
@@ -207,33 +342,30 @@ class TypeResolver
     }
 
     /**
-     * @param ReflectionClass<object>|ReflectionClass<Closure> $reflection
+     * @param ReflectionClass<object> $reflection
      * @return ClassInfo
      */
-    public function instantiateClassInfo(ReflectionClass $reflection): ClassInfo
+    protected function instantiateClassInfo(ReflectionClass $reflection): ClassInfo
     {
-        return new ClassInfo(
-            $reflection,
-            $this->file,
-            $this->docParser,
-            $this->urlResolver,
-            $this,
-        );
+        return new ClassInfo($reflection, $this->docParser, $this->urlResolver, $this);
     }
 
     /**
      * @param ReflectionClass<object> $reflection
      * @return TraitInfo
      */
-    public function instantiateTraitInfo(ReflectionClass $reflection): TraitInfo
+    protected function instantiateTraitInfo(ReflectionClass $reflection): TraitInfo
     {
-        return new TraitInfo(
-            $reflection,
-            $this->file,
-            $this->docParser,
-            $this->urlResolver,
-            $this,
-        );
+        return new TraitInfo($reflection, $this->docParser, $this->urlResolver, $this);
+    }
+
+    /**
+     * @param ReflectionClass<object> $reflection
+     * @return InterfaceInfo
+     */
+    protected function instantiateInterfaceInfo(ReflectionClass $reflection): InterfaceInfo
+    {
+        return new InterfaceInfo($reflection, $this->docParser, $this->urlResolver, $this);
     }
 
     /**
@@ -263,7 +395,7 @@ class TypeResolver
 
         // When the type is a sibling class in the same namespace
         /** @var class-string $sibling */
-        $sibling = $this->file->reflection->getNamespaceName() . '\\' . $name;
+        $sibling = $this->reflection->getNamespaceName() . '\\' . $name;
         if (class_exists($sibling) || interface_exists($sibling) || trait_exists($sibling) || enum_exists($sibling)) {
             return $sibling;
         }
