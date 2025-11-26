@@ -2,49 +2,50 @@
 
 namespace Kirameki\ApiDocGenerator\Support;
 
-use Kirameki\ApiDocGenerator\Components\TraitInfo;
 use ReflectionClass;
-use ReflectionException;
 
 class TraitAliases
 {
     /**
-     * @var array<string, TraitAliasTarget>
+     * @var array<string, class-string>
      */
     protected array $aliases = [];
 
     /**
+     * @var array<class-string, array<string, string>>
+     */
+    protected array $flippedAliases = [];
+
+    /**
      * @param ReflectionClass<object> $reflection
-     * @throws ReflectionException
      */
     public function __construct(
         ReflectionClass $reflection,
     ) {
         foreach ($reflection->getTraitAliases() as $alias => $method) {
+            /** @var class-string $traitName */
             [$traitName, $method] = explode('::', $method, 2);
-            $this->aliases[$alias] = new TraitAliasTarget(
-                new TraitInfo(new ReflectionClass($traitName)),
-                $method,
-            );
+            $this->aliases[$alias] = $traitName;
+            $this->flippedAliases[$traitName][$method] = $alias;
         }
     }
 
     /**
-     * @param string $alias
-     * @param TraitAliasTarget $target
-     * @return void
+     * @param string $method
+     * @return class-string|null
      */
-    public function add(string $alias, TraitAliasTarget $target): void
+    public function getDeclaringTraitFor(string $method): ?string
     {
-        $this->aliases[$alias] = $target;
+        return $this->aliases[$method] ?? null;
     }
 
     /**
-     * @param string $alias
+     * @param string $trait
+     * @param string $method
      * @return bool
      */
-    public function exists(string $alias): bool
+    public function isAliased(string $trait, string $method): bool
     {
-        return isset($this->aliases[$alias]);
+        return isset($this->flippedAliases[$trait][$method]);
     }
 }

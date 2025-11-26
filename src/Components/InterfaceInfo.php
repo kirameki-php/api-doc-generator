@@ -3,7 +3,6 @@
 namespace Kirameki\ApiDocGenerator\Components;
 
 use Kirameki\ApiDocGenerator\Support\CommentParser;
-use Kirameki\ApiDocGenerator\Support\PhpFile;
 use Kirameki\ApiDocGenerator\Support\TypeResolver;
 use Kirameki\ApiDocGenerator\Support\UrlResolver;
 use ReflectionClass;

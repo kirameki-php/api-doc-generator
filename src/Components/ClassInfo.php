@@ -12,6 +12,7 @@ use ReflectionClass;
 use ReflectionClassConstant;
 use ReflectionProperty;
 use function array_map;
+use function dump;
 use function ksort;
 
 class ClassInfo extends StructureInfo
@@ -80,7 +81,7 @@ class ClassInfo extends StructureInfo
     }
 
     /**
-     * @var list<VarType>
+     * @var list<StructureVarType>
      */
     public array $traits {
         get => $this->traits ??= $this->typeResolver->resolveTraits();
@@ -141,7 +142,7 @@ class ClassInfo extends StructureInfo
     {
         $methods = [];
         foreach ($this->reflection->getMethods() as $ref) {
-            $methods[$ref->getName()] = new MethodInfo($this, $ref, $this->docParser, $this->typeResolver);
+            $methods[$ref->name] = new MethodInfo($this, $ref, $this->docParser, $this->typeResolver);
         }
         ksort($methods, SORT_NATURAL);
         return $methods;
@@ -155,8 +156,12 @@ class ClassInfo extends StructureInfo
         return $this->name;
     }
 
-    public function toType(): StructureVarType
+    /**
+     * @param list<VarType> $generics
+     * @return StructureVarType
+     */
+    public function toType(array $generics = []): StructureVarType
     {
-        return new StructureVarType($this);
+        return new StructureVarType($this, $generics);
     }
 }

@@ -11,6 +11,7 @@ use Kirameki\ApiDocGenerator\Support\PhpFile;
 use Kirameki\ApiDocGenerator\Support\CommentParserFactory;
 use Kirameki\ApiDocGenerator\Support\StructureMap;
 use Kirameki\ApiDocGenerator\Support\StructureTree;
+use Kirameki\ApiDocGenerator\Support\TraitAliases;
 use Kirameki\ApiDocGenerator\Support\TypeResolver;
 use Kirameki\ApiDocGenerator\Support\UrlResolver;
 use Kirameki\Collections\Utils\Iter;
@@ -85,8 +86,6 @@ class DocGenerator
                 $reflection = $this->getClassIfExists($storable, $path, $namespace);
                 if ($reflection !== null &&
                     (
-                        true ||
-                        $reflection->getShortName() === 'Map' ||
                         $reflection->getShortName() === 'Enumerator'
                     )
                 ) {
@@ -176,7 +175,13 @@ class DocGenerator
      */
     protected function createTypeResolverFor(ReflectionClass $reflection): TypeResolver
     {
-        return new TypeResolver($reflection, new PhpFile($reflection), $this->docParser, $this->urlResolver);
+        return new TypeResolver(
+            $reflection,
+            new PhpFile($reflection),
+            $this->docParser,
+            $this->urlResolver,
+            new TraitAliases($reflection),
+        );
     }
 
     /**
