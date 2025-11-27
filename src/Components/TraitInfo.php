@@ -12,7 +12,9 @@ class TraitInfo extends ClassInfo
     /**
      * @var string
      */
-    public string $type = 'trait';
+    public string $type {
+        get => 'trait';
+    }
 
     /**
      * @var bool

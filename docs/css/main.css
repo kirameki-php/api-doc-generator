@@ -178,6 +178,9 @@ blockquote {
                 li {
                     padding-top: 0.25rem;
                     padding-bottom: 0.25rem;
+                    .comment {
+                        margin: 0.25rem 0.5rem;
+                    }
                 }
             }
         }
@@ -239,6 +242,8 @@ blockquote {
                                 color: #6b7280;
                                 margin: 0 0.5rem;
                             }
+                            .reference,
+                            .variadic,
                             .delimiter {
                                 color: #6b7280;
                             }

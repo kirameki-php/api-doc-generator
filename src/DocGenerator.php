@@ -27,6 +27,7 @@ use ReflectionException;
 use function array_flip;
 use function class_exists;
 use function dirname;
+use function dump;
 use function enum_exists;
 use function file_get_contents;
 use function file_put_contents;
