@@ -122,7 +122,7 @@ class ClassInfo extends StructureInfo
     }
 
     /**
-     * @param ReflectionClass<object> $reflection
+     * @param ReflectionClass<covariant object> $reflection
      * @param CommentParser $docParser
      * @param UrlResolver $urlResolver
      * @param TypeResolver $typeResolver
@@ -146,22 +146,5 @@ class ClassInfo extends StructureInfo
         }
         ksort($methods, SORT_NATURAL);
         return $methods;
-    }
-
-    /**
-     * @return string
-     */
-    public function __toString(): string
-    {
-        return $this->name;
-    }
-
-    /**
-     * @param list<VarType> $generics
-     * @return StructureVarType
-     */
-    public function toType(array $generics = []): StructureVarType
-    {
-        return new StructureVarType($this, $generics);
     }
 }

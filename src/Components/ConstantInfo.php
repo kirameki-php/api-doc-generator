@@ -5,6 +5,7 @@ namespace Kirameki\ApiDocGenerator\Components;
 use Kirameki\Core\Exceptions\UnreachableException;
 use Kirameki\Text\Str;
 use ReflectionClassConstant;
+use ReflectionNamedType;
 
 class ConstantInfo
 {
@@ -40,7 +41,7 @@ class ConstantInfo
      * @var string|null
      */
     public ?string $type {
-        get => $this->reflection->getType()?->getName() ?? null;
+        get => $this->type ??= $this->resolveType();
     }
 
     /**
@@ -70,5 +71,14 @@ class ConstantInfo
         protected StructureInfo $structure,
         protected ReflectionClassConstant $reflection,
     ) {
+    }
+
+    protected function resolveType(): ?string
+    {
+        $refType = $this->reflection->getType();
+        if ($refType instanceof ReflectionNamedType) {
+            return $refType->getName();
+        }
+        return null;
     }
 }

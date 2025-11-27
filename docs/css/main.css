@@ -152,12 +152,16 @@ blockquote {
                 padding: 0.25rem 0;
                 border-bottom: 1px solid #e5e7eb;
             }
-            .constant-signature {
-                font-family: var(--code-font-family);
-                margin: 1rem 0.5rem;
+            li {
+                margin: 1rem 0.25rem;
 
-                .name {
-                    color: #811f5a;
+                .constant-signature {
+                    display: flex;
+                    gap: 0.5rem;
+                    font-family: var(--code-font-family);
+                    .name {
+                        color: #811f5a;
+                    }
                 }
             }
         }
@@ -165,18 +169,15 @@ blockquote {
             h3 {
                 padding: 0.25rem 0;
                 border-bottom: 1px solid #e5e7eb;
+                margin-bottom: 0.5rem;
             }
             ul {
                 display: flex;
                 flex-direction: column;
 
                 li {
-                    border-bottom: 1px dashed #c7cdd5;
-                    padding-top: 0.5rem;
-                    padding-bottom: 0.5rem;
-                }
-                li:last-child {
-                    border-bottom: none;
+                    padding-top: 0.25rem;
+                    padding-bottom: 0.25rem;
                 }
             }
         }
@@ -197,6 +198,10 @@ blockquote {
                 padding: 1.5rem 0;
 
                 .signature {
+                    padding: 0.75rem 1rem;
+                    border-radius: 0.5rem;
+                    background-color: #f3f3f6;
+
                     .signature-start {
                         display: inline-flex;
                     }
@@ -365,9 +370,6 @@ blockquote {
     }
     .signature {
         font-family: var(--code-font-family);
-        padding: 0.75rem 1rem;
-        border-radius: 0.5rem;
-        background-color: #f3f3f6;
         line-height: 1.5;
     }
     .default-set {
@@ -379,7 +381,6 @@ blockquote {
     }
     .assignment {
         color: #6b7280;
-        margin: 0 0.5rem;
     }
     .parenthesis,
     .delimiter {

@@ -2,6 +2,8 @@
 
 namespace Kirameki\ApiDocGenerator\Components;
 
+use Kirameki\ApiDocGenerator\Types\StructureVarType;
+use Kirameki\ApiDocGenerator\Types\VarType;
 use Kirameki\Collections\Vec;
 use Kirameki\Text\Str;
 use Stringable;
@@ -65,5 +67,22 @@ abstract class StructureInfo implements Stringable
      */
     public abstract bool $isAbstract {
         get;
+    }
+
+    /**
+     * @param list<VarType> $generics
+     * @return StructureVarType
+     */
+    public function toType(array $generics = []): StructureVarType
+    {
+        return new StructureVarType($this, $generics);
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString(): string
+    {
+        return $this->name;
     }
 }

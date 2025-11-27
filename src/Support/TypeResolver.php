@@ -61,11 +61,12 @@ class TypeResolver
     }
 
     /**
-     * @param ReflectionClass<object>|ReflectionClass<UnitEnum> $reflection
+     * @param ReflectionClass<covariant object> $reflection
      * @param PhpFile $file
      * @param CommentParser $docParser
      * @param UrlResolver $urlResolver
      * @param TraitAliases $traitAliases
+     * @param StructureMap $structureMap
      */
     public function __construct(
         protected readonly ReflectionClass $reflection,
@@ -73,6 +74,7 @@ class TypeResolver
         protected readonly CommentParser $docParser,
         protected readonly UrlResolver $urlResolver,
         protected readonly TraitAliases $traitAliases,
+        protected readonly StructureMap $structureMap,
     ) {
     }
 
@@ -109,7 +111,8 @@ class TypeResolver
         if ($reflection === false) {
             return null;
         }
-        return $this->newClassInfo($reflection)->toType();
+        $parent = $this->structureMap->get($reflection->name) ?? $this->getClassInfo($reflection);
+        return $parent->toType();
     }
 
     /**
@@ -123,7 +126,7 @@ class TypeResolver
         }
         foreach ($this->file->implements as $if) {
             $reflection = new ReflectionClass($if);
-            $types[$reflection->name] ??= $this->newClassInfo($reflection)->toType();
+            $types[$reflection->name] ??= $this->getClassInfo($reflection)->toType();
         }
         ksort($types, SORT_NATURAL);
         return array_values($types);
@@ -144,7 +147,7 @@ class TypeResolver
             }
         }
         foreach ($this->reflection->getTraits() as $name => $reflection) {
-            $traits[$name] ??= $this->newTraitInfo($reflection)->toType();
+            $traits[$name] ??= $this->getTraitInfo($reflection)->toType();
         }
         return array_values($traits);
     }
@@ -158,7 +161,7 @@ class TypeResolver
         foreach ($this->reflection->getInterfaces() as $interface) {
             foreach ($interface->getMethods() as $method) {
                 if ($method->getName() === $name) {
-                    $interfaces[$interface->name] = $this->newInterfaceInfo($interface)->toType();
+                    $interfaces[$interface->name] = $this->getInterfaceInfo($interface)->toType();
                     break;
                 }
             }
@@ -173,7 +176,7 @@ class TypeResolver
      */
     public function resolveDeclaringClassForMethod(ReflectionMethod $reflection): ?VarType
     {
-        $class = $this->newClassInfo($reflection->getDeclaringClass());
+        $class = $this->getClassInfo($reflection->getDeclaringClass());
 
         if ($trait = $this->tryGetDeclaringTrait($reflection, $class)) {
             return $trait->toType();
@@ -191,7 +194,7 @@ class TypeResolver
         $method = $reflection->name;
 
         if ($traitName = $this->traitAliases->getDeclaringTraitFor($method)) {
-            return $this->newTraitInfo(new ReflectionClass($traitName));
+            return $this->getTraitInfo(new ReflectionClass($traitName));
         }
 
         foreach ($class->traits as $type) {
@@ -266,7 +269,7 @@ class TypeResolver
 
         if ($node instanceof CallableTypeNode) {
             $name = $node->identifier->name === Closure::class
-                ? $this->newClassInfo(new ReflectionClass(Closure::class))->toType()
+                ? $this->getClassInfo(new ReflectionClass(Closure::class))->toType()
                 : new NamedVarType($node->identifier->name);
             return new CallableVarType(
                 $name,
@@ -318,19 +321,19 @@ class TypeResolver
         $fqn = $this->getFullyQualifiedName($name) ?? $name;
 
         if (class_exists($fqn)) {
-            return $this->newClassInfo(new ReflectionClass($fqn))->toType($generics);
+            return $this->getClassInfo(new ReflectionClass($fqn))->toType($generics);
         }
 
         if (interface_exists($fqn)) {
-            return $this->newClassInfo(new ReflectionClass($fqn))->toType($generics);
+            return $this->getClassInfo(new ReflectionClass($fqn))->toType($generics);
         }
 
         if (enum_exists($fqn)) {
-            return $this->newClassInfo(new ReflectionEnum($fqn))->toType($generics);
+            return $this->getClassInfo(new ReflectionEnum($fqn))->toType($generics);
         }
 
         if (trait_exists($fqn)) {
-            return $this->newTraitInfo(new ReflectionClass($fqn))->toType($generics);
+            return $this->getTraitInfo(new ReflectionClass($fqn))->toType($generics);
         }
 
         if (
@@ -344,29 +347,41 @@ class TypeResolver
     }
 
     /**
-     * @param ReflectionClass<object> $reflection
+     * @param ReflectionClass<covariant object> $reflection
      * @return ClassInfo
      */
-    protected function newClassInfo(ReflectionClass $reflection): ClassInfo
+    protected function getClassInfo(ReflectionClass $reflection): ClassInfo
     {
+        $classFromMap = $this->structureMap->get($reflection->name);
+        if ($classFromMap instanceof ClassInfo) {
+            return $classFromMap;
+        }
         return new ClassInfo($reflection, $this->docParser, $this->urlResolver, $this);
     }
 
     /**
-     * @param ReflectionClass<object> $reflection
+     * @param ReflectionClass<covariant object> $reflection
      * @return TraitInfo
      */
-    protected function newTraitInfo(ReflectionClass $reflection): TraitInfo
+    protected function getTraitInfo(ReflectionClass $reflection): TraitInfo
     {
+        $traitForMap = $this->structureMap->get($reflection->name);
+        if ($traitForMap instanceof TraitInfo) {
+            return $traitForMap;
+        }
         return new TraitInfo($reflection, $this->docParser, $this->urlResolver, $this);
     }
 
     /**
-     * @param ReflectionClass<object> $reflection
+     * @param ReflectionClass<covariant object> $reflection
      * @return InterfaceInfo
      */
-    protected function newInterfaceInfo(ReflectionClass $reflection): InterfaceInfo
+    protected function getInterfaceInfo(ReflectionClass $reflection): InterfaceInfo
     {
+        $interfaceForMap = $this->structureMap->get($reflection->name);
+        if ($interfaceForMap instanceof InterfaceInfo) {
+            return $interfaceForMap;
+        }
         return new InterfaceInfo($reflection, $this->docParser, $this->urlResolver, $this);
     }
 

@@ -1,7 +1,6 @@
 <?php declare(strict_types=1);
 
 use Kirameki\ApiDocGenerator\PageRenderer;
-use Kirameki\ApiDocGenerator\Support\CommentParserFactory;
 
 require 'vendor/autoload.php';
 

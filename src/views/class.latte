@@ -92,9 +92,11 @@
                   {/if}
                   {$constant->visibility->value}
                 </span>
-                <span class="type">{$constant->type}</span>
+                {if $constant->type}
+                  <span class="type">{$constant->type}</span>
+                {/if}
                 <span class="name">{$constant->name}</span>
-                <span class="assignment"> = </span>
+                <span class="assignment">=</span>
                 {var $value = $constant->value}
                 {if $value instanceof \UnitEnum}
                   <span class="value value-enum">{$value::class}::{$value->name}</span>

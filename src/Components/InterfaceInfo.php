@@ -24,7 +24,7 @@ class InterfaceInfo extends ClassInfo
     }
 
     /**
-     * @param ReflectionClass<object> $reflection
+     * @param ReflectionClass<covariant object> $reflection
      * @param CommentParser $docParser
      * @param UrlResolver $urlResolver
      * @param TypeResolver $typeResolver

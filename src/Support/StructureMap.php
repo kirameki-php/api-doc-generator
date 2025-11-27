@@ -22,6 +22,15 @@ class StructureMap
     }
 
     /**
+     * @param string $name
+     * @return StructureInfo|null
+     */
+    public function get(string $name): ?StructureInfo
+    {
+        return $this->map[$name] ?? null;
+    }
+
+    /**
      * @param string|Stringable $name
      * @return bool
      */

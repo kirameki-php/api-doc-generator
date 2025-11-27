@@ -86,6 +86,9 @@ class DocGenerator
                 $reflection = $this->getClassIfExists($storable, $path, $namespace);
                 if ($reflection !== null &&
                     (
+                        true ||
+                        $reflection->getShortName() === 'VecMutable' ||
+                        $reflection->getShortName() === 'Enumerable' ||
                         $reflection->getShortName() === 'Enumerator'
                     )
                 ) {
@@ -181,6 +184,7 @@ class DocGenerator
             $this->docParser,
             $this->urlResolver,
             new TraitAliases($reflection),
+            $this->structureMap,
         );
     }
 
